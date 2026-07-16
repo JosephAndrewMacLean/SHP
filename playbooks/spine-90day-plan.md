@@ -83,9 +83,14 @@ To add ~**25 qualified spine NPs/week** (47 → 72) without the impossible refer
 - **Insurance pre-qualification at intake** (13-person call center, via Kelly) so mismatched leads
   don't consume surgeon slots and inflate "no-show/cancel."
 - **Candidate matching → right door:** conservative/interventional (Oddo, Lee, Kassa, Singh) vs.
-  surgical (Varghese, Salar, Maslak, McCarty, Zamorano). **Route surgical candidates to the
-  higher-converting surgeons**, and use interventional/conservative as the front door that keeps a
-  patient in-system until they're a surgical candidate.
+  surgical (McCarty, Maslak, Varghese, Salar, Munk, Zamorano). Use interventional/conservative as the
+  front door that keeps a patient in-system until they're a surgical candidate.
+- **Route surgical candidates to the higher-converting surgeons — the data demands it.** Spine new
+  patients Jan–Jul 15 2026: **McCarty 480 · Maslak 309 · Salar 303 · Varghese 168 · Munk 113 ·
+  Zamorano 51.** **Dr. Salar absorbs ~21% of all spine new patients (303) while converting almost
+  none to surgery (~3%)** — that alone is a large block of wasted top-of-funnel. Redirecting Salar's
+  *surgical* candidates to McCarty/Maslak/Varghese is a concrete, no-new-spend lever on the ASC number.
+  (This is a clinical/ops routing decision — surface it to Katie + leadership, don't act unilaterally.)
 - **Deliverable:** a one-page qualification + routing rubric the call center and PLs both use.
 
 ### B. B2C / organic demand recovery — *the real −71 hole* — Owner: **Randall + Joe + Cardinal**

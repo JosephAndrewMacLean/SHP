@@ -19,6 +19,11 @@ That's the single biggest missed asset for the spine plan.
 | **Joseph Maslak, MD** | Board-certified, fellowship-trained spine surgeon — Cleveland Clinic training |
 | **Scott McCarty, MD** | Spine surgeon — integrated spine team |
 | **Lucia Zamorano, MD, FAANOS, FICS** | Neurosurgeon (spine/brain) — board-certified, fellowship-trained |
+| **A. Munk, MD** | Spine physician (appears in internal NP data, 113 spine NPs YTD 2026; confirm listing/role with practice) |
+
+> **Spine NP volume by physician (Jan–Jul 15 2026):** McCarty 480 · Maslak 309 · Salar 303 ·
+> Varghese 168 · Munk 113 · Zamorano 51. Volume ≠ conversion — route surgical candidates to the
+> higher-converting surgeons (see `playbooks/spine-90day-plan.md` §4A).
 
 ### Interventional / non-surgical spine (Pain Management)
 | Provider | Notes |
