@@ -118,6 +118,64 @@ impressions are non-branded** patients in research mode who never click.
 5. **Governance / brand consistency** — finish the Mendelson→Synergy migration; hold one
    brand standard; keep marketing promises (speed) aligned with what scheduling can deliver. → `marketing-director`
 
+## Business operating reality (from internal data — Jan–Jul 2026)
+
+Four internal datasets (B2C-vs-B2B attribution, the Spine Growth Operating Report, the
+Zocdoc+NextGen booking analysis, and the site crawl) show how the business actually runs.
+
+### Volume & channel mix (Jan–Jul 15, 2026)
+- **6,409 total new patients**: **25.1% B2B** (referral / physician-liaison driven) and
+  **74.9% B2C** (direct / consumer). B2C is the majority of every line.
+- By line: **Ortho 2,966** (27% B2B) · **Spine 1,360** (**32% B2B — highest referral
+  dependency**) · Foot 1,042 (12% B2B, most consumer-driven) · Hand 749 · Pain 292 (33% B2B).
+- Takeaway: **spine leans on referrals more than any other line**, so the referral engine
+  (Engine B in the spine playbook) is the highest-leverage spine lever — exactly what
+  leadership is now pushing on.
+
+### The spine mandate ("Gautam Direction")
+- **June 2026 baseline: 248 spine NPs = 79 B2B + 169 B2C. Target: 317/month (+69).**
+- Plan: **hold B2C flat, drive the gap through referrals** — lift PL/B2B spine from 79 →
+  **~150/month** (B2B mix rises 32% → 47%). Weekly spine target **72** (up from the 46–48 range).
+- Tracked on a **Weekly Spine Scorecard through Sept 2026** (currently unfilled) and a
+  **Universal Spine Target-Account list** (currently **empty — 0 accounts loaded**).
+- 30-day experiments already assigned: 2× spine target accounts; 2× PL spine field time;
+  build a tiered feeder account list (ortho, pain, chiro, urgent care, PCP, PT); shift ~80%
+  of SEO to spine; validate Liine booked-patient tracking before changing paid bidding.
+
+### The physician-liaison (referral) engine
+- Field team using **Map My Customer (MMC)** CRM. Q2-2025 productivity baseline:
+  **2,208 practice visits → 743 new patients (33.6 NP per 100 visits).**
+- **Huge producer variance:** Kristen ~**70 NP/100 visits** vs. others 6–40. Kristen (KJ)
+  carries **~51% of all B2B volume** (812 patients, 31% of her book is spine). Others: Jasmine
+  (JJ) 23%, Coty (CO) 12%, plus a ramping liaison (since March) and one whose volume stopped
+  after May. → **Concentration risk + a clear "coach everyone toward Kristen's playbook" opportunity.**
+
+### B2C booking behavior (Zocdoc + NextGen, Jul 2025–Jun 2026)
+- **The website is the best booking source, and it's free.** Effective new-patient capture:
+  **Synergy website 74.7%** and Booking Link 74.3% (both **$0 cost**) vs. **Zocdoc
+  Marketplace/Discovery 56.9%** (**$182,292 cost** over the year).
+- **Zocdoc "Sponsored"** is the least efficient: 1,408 new appts, **$100K cost, ~52% capture,
+  ~$136 cost per captured patient.** Spine via marketplace ≈ **$127 per captured patient**;
+  the same spine patient via the website costs nothing.
+- **Myth busted:** raw Zocdoc cancellation/churn (~41–54%) **overstates** leakage —
+  reschedules were NextGen-Kept in 439/445 cases. Real loss is the **~23–38% "no later kept
+  found."** And **166 canceled/no-show patients later self-rescheduled online and kept** —
+  a signal of **call-center / access friction** (patients booking around the phone).
+- Implication: **shift spend from paid Zocdoc toward the website booking path, and fix
+  phone/scheduling access** — both improve cost per captured patient without new demand.
+
+### Systems landscape
+- **NextGen** (EMR / new-patient source of truth) · **OrthoPlex** · **Map My Customer**
+  (liaison CRM) · **Liine** (call tracking, live June 2026) · **Zocdoc** (booking) · Google Ads.
+- Scheduling is **fragmented across NextGen / OrthoPlex / hybrid** — a "one source of truth"
+  evaluation is underway. Attribution is an **operational best-estimate** until the
+  NextGen-to-MMC crosswalk and Liine tracking are validated (don't present inferred B2C as confirmed).
+
+### People / roles referenced
+Joe (marketing/ops — the primary contact) · Gautam (leadership direction) · Kristen (PL team
+lead + top producer) · Coty, Jasmine (liaisons) · Randall (SEO) · Paul (paid/tracking) ·
+Santosh (analytics + scheduling systems). External: Power Digital / Cardinal (agencies).
+
 ## Guardrails reinforced by the audits
 
 - **Substantiation:** internal-database efficacy stats need real backup; never place a hard stat
