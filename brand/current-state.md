@@ -176,6 +176,41 @@ Joe (marketing/ops — the primary contact) · Gautam (leadership direction) · 
 lead + top producer) · Coty, Jasmine (liaisons) · Randall (SEO) · Paul (paid/tracking) ·
 Santosh (analytics + scheduling systems). External: Power Digital / Cardinal (agencies).
 
+## ⚠️ Budget reconciliation — the spine gap is a B2C problem, not a referral problem
+
+The **2026 New Patients by Channel budget** reframes the whole spine target and exposes why the
+"lift referrals 79 → 150" plan is both **misdiagnosed and likely impossible**.
+
+**2026 spine budget:** **3,295 NPs/year** (~305–315/month at plan). Channel split baked into the
+budget: **B2C + Natural 2,589 (79%)** and **B2B / referral only 706 (21%)**.
+
+**June 2026, budget vs. actual:**
+
+| June spine | Budget | Actual | Variance |
+|---|---|---|---|
+| Total | ~305 | 248 | **−57** |
+| B2C + Natural | ~240 | 169 | **−71 (the hole)** |
+| B2B / referral | ~65 | 79 | **+14 (above plan)** |
+
+**The shortfall is almost entirely on the B2C / natural / organic side. Referrals are already
+running ABOVE budget.** So the plan to close a ~57–69 gap by nearly **doubling** the referral team
+(79 → 150) tries to plug a **consumer-demand hole with referral effort** — it misreads where the
+gap is, and 150 would be ~2× the budgeted B2B contribution for the whole line.
+
+**Realistic implication (drives `playbooks/spine-90day-plan.md` — being revised):**
+1. **Fix the actual hole: B2C / organic spine demand + capture** — the −71 lives here. This is the
+   spine SEO/AIO condition hubs, website-booking share, access/phone fixes, and the (currently
+   missing) spine differentiation that makes the deep bench visible.
+2. **Grow the referral engine realistically, not impossibly** — it's already above plan; push it
+   from 79 toward a credible **~95–110** (quality of qualified candidates, not a near-double).
+3. **Qualify, don't just fill** — route the right patient to the right door (conservative/
+   interventional vs. surgical) using the 9-physician spine bench; marketing can raise candidate
+   quality but **cannot fix the clinical/surgical-conversion problem leadership flagged** — that's
+   an ops/clinical dependency, not a marketing deliverable.
+
+*(Note: internal notes indicate leadership already leans toward over-delivering on ortho to offset
+the spine shortfall — consistent with treating a 150-referral spine target as unrealistic.)*
+
 ## Guardrails reinforced by the audits
 
 - **Substantiation:** internal-database efficacy stats need real backup; never place a hard stat
