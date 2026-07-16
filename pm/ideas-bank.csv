@@ -1,0 +1,29 @@
+Idea ID,Idea (human-executable),Category,Evidence - what works / has worked,Impact,Effort,Cost,Quadrant,Owner,Linked Task,Status
+I-01,Shift spine booking to the free website path; steer reps to it,Booking,Website captures 74.7% of booked NPs at $0 vs paid Zocdoc 52-57%,High,Low,$,,Paul,B2C-B.1,Not Started
+I-02,Make 'how did you hear' + insurance pre-screen mandatory at intake,Call Center,Source asked only 60-70%; no-Medicaid mismatch drops patients post-click,High,Low,$,,Kelly,CC-A,Not Started
+I-03,Recover the 166 self-reschedulers with a daily re-book queue,Call Center,166 canceled/no-show patients self-rescheduled online and KEPT - pure recapture,Medium,Low,$,,Kelly,CC-B.1,Not Started
+I-04,Recover Sean's lost referral accounts first,Physician Liaison,Sean's departure dented spine ~2-3 NP/week - fastest referral win,Medium,Low,$,,Kristen,PL-B.1,Not Started
+I-05,Route surgical candidates to higher-converting surgeons,Spine,Salar absorbs ~21% of spine NPs (303) at ~3% conversion; McCarty/Maslak convert,High,Medium,$,,Joe,SP-A.3,Not Started
+I-06,Replicate Kristen's PL playbook via ride-alongs,Physician Liaison,Kristen ~70 NP/100 visits vs team 6-40 - spread the method,High,Medium,$,,Kristen,PL-C.1,Not Started
+I-07,Reserve + market same-week spine access,Spine,Same-week access is the verified differentiator; drives conversion,High,Medium,$,,Kelly,CC-A.4,Not Started
+I-08,"Scale PT-led, UGC-style athlete video storytelling",Content/Social,"Flagged in creative audit as the strongest, most authentic asset type",High,Medium,$$,,Randall,B2C-A,Not Started
+I-09,Interventional pain as the 'front door' to keep patients in-system,Spine,Deep bench (4 interventional MDs); conservative-first keeps patients until surgical,High,Medium,$,,Joe,SP-A.2,Not Started
+I-10,Closed-loop report-back to referrers after each visit,Physician Liaison,Best practice - referrers keep sending when kept informed,High,Medium,$,,Kristen,PL-D.3,Not Started
+I-11,Tier spine feeder accounts like the attorney-referral model,Physician Liaison,The tiered attorney-referral model already works internally,High,Medium,$,,Kristen,PL-A.3,Not Started
+I-12,Fix Troy Maps/GBP + kill the 'Oakland MRI' misdirect,Local/Brand,Local 'near me' intent is highest-converting; Troy pin/calls currently misdirect,High,Low,$,,Paul,GOV-A.1,Not Started
+I-13,Review-velocity program (BirdEye/Podium),Reputation,96% recommend / 82 sentiment; reviews drive local rankings + trust,Medium,Low,$,,Randall,,Not Started
+I-14,Physician-authored spine condition hubs (5),Content/SEO,Provider section already ranks (182K impressions); E-E-A-T wins YMYL,High,High,$$,,Randall,B2C-A.3,Not Started
+I-15,Kill worst-CPA paid Zocdoc 'Sponsored' spine spend,Paid,"Zocdoc Sponsored ~52% capture, ~$136/captured - the worst efficiency",Medium,Low,$,,Paul,B2C-B.2,Not Started
+I-16,Apply the ortho promo playbook to spine (Tue-Thu pushes),Demand,Ortho turned 75%->125% of plan in ~60 days using promos + ops,Medium,Low,$,,Joe,,Not Started
+I-17,"Ship spine differentiation messaging (MIS, neurosurgeon, younger surgeons)",Messaging,Creative audit: spine has NO differentiation anywhere today,Medium,Low,$,,Randall,B2C-A.4,Not Started
+I-18,Provider-to-provider lunch-and-learns with spine surgeons,Physician Liaison,Standard high-yield PL tactic; warm ortho relationships convert to spine,Medium,Medium,$$,,Kristen,PL-B.2,Not Started
+I-19,Referrer one-pager leave-behind (deep bench + how to refer),Physician Liaison,PL best practice; makes referring frictionless,Medium,Low,$,,Randall,PL-D.1,Not Started
+I-20,Direct-pay + financing path for non-covered spine candidates,Access/Revenue,Harmony Direct Pay exists; recovers otherwise-lost non-covered patients,Medium,Medium,$$,,Greg,SP-A.9,Not Started
+I-21,"Weekly OODA scorecard review (2-3 problems/wk, measure, stack)",Operating,This is leadership's own proven method behind the ortho turnaround,High,Low,$,,Joe,SP-B.2,Not Started
+I-22,FAQ + schema on spine pages for AI-Overview citations,SEO/AIO,AI answers on 40%+ healthcare SERPs; SHP has zero FAQ schema,Medium,Medium,$,,Randall,B2C-A.5,Not Started
+I-23,"Community events (Blue Water Festival tent, chambers) + screening booth",Community,Local presence builds trust; Haley/Mary already running events,Medium,Medium,$$,,Haley,,Not Started
+I-24,Provider-spotlight campaigns featuring spine surgeons,Content,Physician authority already indexed; humanizes the bench,Medium,Medium,$,,Haley,,Not Started
+I-25,Fix CWV / mobile performance regression,Technical,0 Good URLs since ~May 1; 70%+ of healthcare search is mobile,Medium,Medium,$,,Cardinal,B2C-B.4,Not Started
+I-26,Hospital-system / medical-association link building,Authority/PR,0 such links since 2012; strong competitors have 400+ referring domains,Medium,High,$,,Randall,,Not Started
+I-27,AI call-center for after-hours + source detection,Call Center,Phone-driven; 6-8 hrs/wk manual call-listening today,Medium,High,$$,,Kelly,CC-C,Not Started
+I-28,GLP-1 / ancillary email cadence (Dr. Abood),Email/Ancillary,Ancillary grew +22%; existing content to repurpose,Low,Low,$,,Randall,,Not Started
