@@ -5,8 +5,12 @@ healthcare organization. It contains a team of specialized marketing subagents.
 
 ## Context for every task
 
-- **Read `brand/brand-brief.md` first.** It's the shared source of truth for brand,
-  voice, audience, and — critically — compliance guardrails.
+- **Read `brand/brand-brief.md` and `brand/current-state.md` first.** The brief is the
+  source of truth for brand, voice, audience, and compliance guardrails. `current-state.md`
+  is the ground truth from the June 2026 audits (Organic/AIO, Creative/UX, Paid Media):
+  who Synergy actually is, the numbers, the gaps, what external agencies already own, and
+  where this in-house team has white space. Don't duplicate work the agencies own —
+  complement it.
 - This is **healthcare marketing**. Non-negotiables on all work:
   - No PHI or unconsented patient stories (HIPAA).
   - No unsubstantiated health claims or superiority claims (FTC).

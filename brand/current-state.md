@@ -1,0 +1,127 @@
+# Synergy Health Partners — Current State (from June 2026 audits)
+
+> Synthesized from three external audits: **Power Digital / Cardinal — Organic Search + AIO
+> Audit**, **Creative + UX Audit**, and **Paid Media Audit** (all June 2026). This is the
+> team's shared ground truth. Where audits disagree or data is a snapshot, it's noted.
+
+## Who Synergy actually is
+
+- **Integrated orthopedic + spine practice** in **metro Detroit, Michigan** — "everything
+  under one roof," same-week access, coordinated care. Website: **synergyhealth.org** (WordPress + Rank Math PRO).
+- **8 locations**, notably Livonia, Sterling Heights, Southfield, Troy, Rochester. Each clinic
+  effectively owns its county (61–73% of patients local) — this is a **location-specific
+  business, not a metro brand**.
+- **~42 physicians** (MD/DO/DPM) + ~38 allied-health providers. Provider content is already
+  indexed and strong (Providers section = 182,107 impressions).
+- **Rebrand in progress from "Mendelson Orthopaedic" (Mendelson Kornblum)** to Synergy —
+  and it's **incomplete behind the scenes**: `payment.mendelsonortho.com` bill-pay, YouTube
+  `@mendelsonortho`, and LinkedIn are all still legacy-branded.
+- Service lines: **Spine/Neck/Back, Orthopedics (knee, hip, shoulder, joint, sports med),
+  Hand & Wrist, Foot & Ankle (podiatry), Pain Management, Physical Therapy, Imaging/MRI.**
+
+## The business priority (confirmed)
+
+**New-patient growth in SPINE and ORTHO**, and proving marketing efficiency/profitability.
+Spine is a top growth line (**+89% growth**; Foot +114%; Pain declining). Patient base is
+trending **younger (median age 60→56, 18–34 share 15%→21%) and more commercial-pay
+(42%→52%)** — driven by the service-line shift.
+
+## Market opportunity (quantified)
+
+- **~4,800 obtainable ortho (Commercial + Medicare) patients/year currently going to
+  competitors**, concentrated in **under-penetrated Oakland County**. **Troy is the unlock**
+  for Oakland ortho/spine; **Southfield podiatry** is a near-term deepening opportunity.
+- Competitive tiers: **Win now** — independents (Michigan Orthopaedic Specialists, Detroit
+  Bone & Joint). **Primary competition** — regional systems (Henry Ford, Corewell/Beaumont).
+  **Long-term** — national (Cleveland Clinic, Mayo, HSS).
+- **Differentiators to lean on everywhere:** integrated ortho+spine under one roof, same-week
+  access, **96% recommend rate**, 82/100 patient sentiment (strengths: coordination, speed, clarity).
+
+## What's already in motion (external agencies)
+
+Two agencies are engaged, so the in-house team should **complement, not duplicate**:
+
+- **Power Digital / Cardinal** — running a **90-day Organic + AIO plan** (schema deployment,
+  technical fixes, spine condition hubs, local/AIO, measurement) and **Paid Media** (Google Ads
+  restructure, Liine conversion tracking, GEO/location targeting, PMax test).
+- **Liine** (call tracking + lead qualification) went live **June 2026** — the new source of
+  truth for new-patient conversions. Online scheduling tracking not yet functional.
+
+## The core problem in one line
+
+Synergy has the **search footprint of a dominant regional provider but converts like a much
+smaller one**: **1.18M organic impressions / 90 days → 13,668 clicks (1.15% CTR vs 3–5%
+benchmark); 80% of clicks are branded** (people who already know them), while **58% of
+impressions are non-branded** patients in research mode who never click.
+
+## Key gaps the audits surfaced (by discipline)
+
+**Technical / Organic (Power Digital / Cardinal owns most of this):**
+- Mobile performance **28/100**, **Core Web Vitals FAILED** — regression ~**May 1, 2026** took
+  238 Good URLs → 0, persisted 6 weeks. Logo.svg is 1MB.
+- Schema broken/partial: **Hospital @type cascade error on 234 pages** (incl. all 42 bios,
+  22–61 errors each), **zero FAQPage**, homepage wrong entity type, **sameAs pointing to
+  competitor `@mendelsonortho` YouTube**. **0 rich results in GSC. No llms.txt.**
+- On-page: **120 duplicate titles, ~85 missing meta descriptions (incl. homepage), 14 missing H1.**
+- **URL architecture mess:** 4 parallel structures for the same content (carpal tunnel has 3
+  URLs, TKA 4–15), legacy `/full-service-clinics/` and `/shp-*` URLs, Southfield has 9 variants.
+- **Content too complex:** 80% of pages read at **Grade 12+** (AI/patients want Grade 6–8);
+  **zero patient FAQ / decision-support pages**.
+- **Topical authority 31.8** vs 70 benchmark; **5 foundational spine hubs (stenosis, herniated
+  disc, sciatica, DDD, spondylolisthesis) at near-zero** presence.
+- **Thin backlinks:** 130 referring domains (82 are Google properties), **oldest editorial link
+  2012**, **0 links from Michigan hospital systems / medical associations** (competitors 400+).
+
+**Creative / UX / Messaging:**
+- Site is **built for patients who already know their diagnosis** — no symptom-aware entry
+  path for people still figuring out what's wrong.
+- **Nav overwhelm** (300+ links, 8 panels), **"Why Synergy" buried** low on nearly every page.
+- **Trust-eroding bugs:** "Disgnostics" typo, dead links, PT page CTA points to a spine
+  specialist, broken find-a-doctor filters, **Hand & Wrist page still shows spine template copy**.
+- **Not true paid landing pages** (full nav, easy exit); Sterling Heights LP **duplicates** the
+  general Ortho page (canonical points to parent).
+- **Compliance flags:** accessibility handled by a **bolted-on overlay widget** (ADA-lawsuit
+  risk) + WCAG contrast failures; **efficacy stat "92% report significant pain reduction" next
+  to an education disclaimer reads as a guarantee**; stats sourced to a **non-peer-reviewed
+  internal database** (substantiation risk).
+- **Spine has NO differentiation** — spine page uses the same generic "fellowship-trained,
+  coordinated care" as every specialty; the real spine story (younger surgeons, minimally
+  invasive, innovative tech) **isn't messaged anywhere**.
+- Organic social is **off-brand and weaker than the website**; **16:9 videos** underperform in
+  feed (need 9:16); videos open too clinical with dated renders and **double Mendelson end cards**.
+- **What's working:** PT-led, UGC-style storytelling with athletes; natural straight-on
+  provider shots (e.g., "Dr. Kyle" in-office). Scale this.
+
+**Paid Media:**
+- New-patient volume grew in 2025 but **flat since Q4 2025; CPA rising**; conversion volume
+  just tracks spend. Quality Score **~4/10**, Ad Strength average.
+- Conversion tracking mid-overhaul: moving off Calls-from-Ads/ZocDoc to **Liine qualified
+  leads / booked calls / online scheduling**. "Website New Patient Intent" is **overvalued at
+  $125 → should be $5**; new-patient booked call ≈ **$150** value.
+- **GEO targeting gaps:** nearly all spend on Livonia + Sterling Heights; **no Troy coverage,
+  Southfield near-zero, heavy location overlap.**
+- Spine ad campaign has only **4 ad groups** — needs ~10 (Back Pain, Neck Pain, Sciatica,
+  Herniated Disc, Spinal Stenosis, Spine Specialist, Spine Surgery, Injections, Spinal Fusion,
+  Pinched Nerve). PMax test recommended for Ortho.
+
+## Where the in-house team has white space (not covered by the agencies)
+
+1. **PR / earned media & authority** — audits flag **no media-relations or link program since
+   2012** and **0 hospital/medical-association links**. This is the single biggest un-owned lever
+   and it *also* feeds AIO citations. → `pr-specialist`
+2. **Referral-network engine** — PCPs, PT, chiro, pain management, ER, workers' comp. Not
+   addressed by any audit (they're all digital-demand focused). → `pr-specialist` + practice
+   leadership; see `playbooks/spine-patient-acquisition.md` Engine B.
+3. **Guerilla / community** — Oakland County / Troy activations, workshops, partnerships. → `guerilla-marketing-specialist`
+4. **Content production at scale** — physician-reviewed spine hubs, FAQs, recovery guides,
+   Grade 6–8 rewrites, candidacy content, UGC-style video scripts. → `content-creator`
+5. **Governance / brand consistency** — finish the Mendelson→Synergy migration; hold one
+   brand standard; keep marketing promises (speed) aligned with what scheduling can deliver. → `marketing-director`
+
+## Guardrails reinforced by the audits
+
+- **Substantiation:** internal-database efficacy stats need real backup; never place a hard stat
+  next to a disclaimer such that it reads as a guaranteed outcome (FTC).
+- **Accessibility:** move toward native WCAG remediation, not just the overlay widget (ADA).
+- **Don't over-promise speed** the scheduling system can't deliver — wait-time complaints are
+  the top sentiment risk and would poison AIO citations.

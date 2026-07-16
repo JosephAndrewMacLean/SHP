@@ -5,20 +5,28 @@
 
 ## Who we are
 
-Synergy Health Partners (SHP) is a healthcare organization focused on coordinated,
-patient-centered care. We connect patients, providers, and partners to deliver
-better outcomes with less friction.
+Synergy Health Partners (SHP) is an **integrated orthopedic + spine practice in metro
+Detroit, Michigan** — "everything under one roof," same-week access, coordinated care.
+Website: **synergyhealth.org**. (Formerly Mendelson Orthopaedic / Mendelson Kornblum;
+rebrand to Synergy is still in progress — some legacy `mendelsonortho` properties remain live.)
 
-> **Fill in / confirm the details below** — these are placeholders to be replaced
-> with SHP's real specifics. Agents should flag when they are working from
-> assumptions rather than confirmed facts.
+> **Confirmed facts below are drawn from the June 2026 audits. See `brand/current-state.md`
+> for the full grounding (audit synthesis, numbers, gaps, and where the team fits).**
+> Agents should still flag when they're working from assumption beyond what's recorded there.
 
-- **What we do:** [service lines — e.g. primary care, specialty networks, care coordination, value-based care]
-  - **Priority service line (confirmed):** **Spine care** — the current growth focus is
-    acquiring new spine patients. See `playbooks/spine-patient-acquisition.md`.
-- **Who we serve:** [patients, employers, payers, referring providers, communities]
-- **Geography:** [markets/regions served]
-- **Differentiators:** [what makes SHP different from other health systems/networks]
+- **What we do:** Spine/Neck/Back, Orthopedics (knee, hip, shoulder, joint, sports medicine),
+  Hand & Wrist, Foot & Ankle (podiatry), Pain Management, Physical Therapy, Imaging/MRI.
+  ~42 physicians + allied health across **8 locations** (Livonia, Sterling Heights, Southfield,
+  Troy, Rochester, and others).
+  - **Priority (confirmed): new-patient growth in SPINE and ORTHO.** Spine is a top growth
+    line. See `playbooks/spine-patient-acquisition.md`.
+- **Who we serve:** patients & caregivers (trending younger and more commercial-pay),
+  referring providers, and the local communities around each clinic.
+- **Geography:** metro Detroit / SE Michigan. **Under-penetrated Oakland County (esp. Troy)
+  is the biggest growth opening — ~4,800 obtainable ortho patients/yr currently go to
+  competitors.** Each clinic largely owns its county — market **location by location**, not as one metro brand.
+- **Differentiators:** integrated ortho + spine under one roof · **same-week access** ·
+  **96% recommend rate** · 82/100 patient sentiment (coordination, speed, clarity).
 
 ## Voice & tone
 
