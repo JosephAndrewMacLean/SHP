@@ -14,6 +14,8 @@ better outcomes with less friction.
 > assumptions rather than confirmed facts.
 
 - **What we do:** [service lines — e.g. primary care, specialty networks, care coordination, value-based care]
+  - **Priority service line (confirmed):** **Spine care** — the current growth focus is
+    acquiring new spine patients. See `playbooks/spine-patient-acquisition.md`.
 - **Who we serve:** [patients, employers, payers, referring providers, communities]
 - **Geography:** [markets/regions served]
 - **Differentiators:** [what makes SHP different from other health systems/networks]
