@@ -6,7 +6,7 @@
 
 **Team:** B2C Marketing — Synergy Health Partners
 **Location:** Hybrid (Troy, MI)
-**Reports To:** Director of B2C Marketing
+**Reports To:** Senior Director of Marketing
 **Salary:** Commensurate with experience
 **Target Start:** Upon approval
 
@@ -17,7 +17,7 @@ orthopedics**, and the B2C digital front is where much of that opportunity lives
 as AI reshapes how patients search for care. We're hiring a **Marketing & Technology Analyst**
 to be the execution engine behind that growth.
 
-This person is the **right hand to the Director of B2C Marketing** — the one who turns strategy
+This person is the **right hand to the Senior Director of Marketing** — the one who turns strategy
 into shipped work: SEO and content that ranks and converts, website and landing-page
 optimization, creative production, and performance data translated into action. Where leadership
 sets direction, this role **executes at the micro level** — page by page, keyword by keyword —
@@ -62,7 +62,7 @@ clinically substantive routes through medical review before it publishes.
 - Keep creative consistent with the Synergy brand and evolving rebrand standards
 
 ### 5. Data → Action & Performance Monitoring
-- **Proactively pull, interpret, and present** performance data to the Director — deliver insight
+- **Proactively pull, interpret, and present** performance data to the Senior Director — deliver insight
   and recommended next steps, not raw exports
 - Track KPIs across channels (rankings, CTR, CPA, conversion, ROAS, new-patient volume) and
   execute the changes the data calls for
