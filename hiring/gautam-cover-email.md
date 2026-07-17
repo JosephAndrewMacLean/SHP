@@ -31,7 +31,7 @@ be walked through each step.
 
 The intent is exactly what you described: precise enough that the investment catapults our spine
 new-patient numbers, in the same way the systems and infrastructure decisions have paid off on
-efficiency. Happy to adjust scope or level to fit the budget as you take it to the AMP leaders —
+efficiency. Happy to adjust scope or level to fit the budget as you take it to the EMT —
 just let me know what you need from me.
 
 Thanks,

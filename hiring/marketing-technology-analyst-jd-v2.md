@@ -2,7 +2,7 @@
 
 > Evolution of the Feb/March 2026 "Digital Marketing Specialist" rec, updated with the
 > learnings of the last 3–4 months and scoped to what actually moves B2C spine growth.
-> Draft pending leadership (AMP) review and budget approval.
+> Draft pending leadership (EMT) review and budget approval.
 
 **Team:** B2C Marketing — Synergy Health Partners
 **Location:** Hybrid (Troy, MI)
