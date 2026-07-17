@@ -4,11 +4,39 @@
 **Fills tracker tasks:** PL-A (tiered spine target-account universe) + PL-B (recover & expand spine referrals)
 **Status:** operating artifact, ready to run this week · **Date:** 2026-07-17
 
-> **Honesty flag on data.** Every account row below is marked **[SEED — replace with real Map My
-> Customer export]**. Practice names, cities, historical NP counts, and payer notes are illustrative
-> placeholders that show the team exactly what a "done" row looks like. They are **not** confirmed SHP
-> accounts. Do not visit, tier, or report on any seed row until it is replaced by a real MMC/NextGen
-> record. See §5 for the real data gaps.
+> **✅ REAL DATA NOW WIRED IN.** The illustrative seed rows below are **superseded** by the real
+> Map My Customer export — **`pm/spine-target-accounts-DATA.csv`** (1,975 real spine-feeder accounts,
+> Jul 16 2026 snapshot). Use the CSV as the working list; the seed rows/rubric below explain how it
+> was built. Only the per-account **spine-NP yield** is still missing (needs the NextGen crosswalk).
+
+## 0. Real account universe (from Map My Customer, Jul 16 2026) — `spine-target-accounts-DATA.csv`
+
+Filtered the 3,529 MMC company records to **1,975 spine-relevant feeder accounts** (excluded
+"DO NOT CALL"), auto-categorized and tiered by feeder value + engagement recency + hub proximity.
+
+- **By tier:** **T1 = 209** (high-value feeders, visited in the last ~6 mo — *the immediate hit list*) ·
+  T2 = 356 · T3 = 1,410.
+- **By feeder type:** Primary Care 1,034 · Urgent Care 205 · **Orthopedics 204** · **Pain Management 134** ·
+  **Chiropractic 114** · Physical Therapy 83 · **Spine 65** · Neurology 33 · **Attorney (WC/PI) 33** ·
+  Rheumatology 21 · PM&R 20 · Sports Med 16 · **Neurosurgery 11** · ER 2.
+- **By hub:** Livonia 310 · Sterling Heights 250 · Troy 198 · Southfield 157 · Port Huron 33 · Other/Metro 1,027.
+
+> **🚨 Biggest immediate finding — orphaned accounts.** Current PL ownership of spine-relevant accounts:
+> **Coty 738 · Jasmine 428 · Kristen 407 · Sean 251 · Roshelle Brockman 12 · (no owner) 139.**
+> **Sean has departed, so his 251 accounts + the 139 unowned = ~390 spine-feeder accounts with no
+> active liaison.** Reassigning these is the single fastest referral action (task **PL-B.1**) — it needs
+> zero new prospecting, just re-ownership and a visit.
+
+> **How tiers were assigned (applied to the real data):** feeder weight (Pain/PM&R/Spine/Neurosurgery = 5;
+> Chiro/Neurology = 4; Ortho/Rheum/PT/ER/Attorney/Sports = 3; PCP/Urgent Care = 2) × engagement recency
+> (visited ≤180 days). **T1** = weight ≥4 **and** recently visited; **T2** = weight ≥4 stale, or ≥3 recent;
+> **T3** = everything else (broad PCP/urgent-care base). This is a proxy until real per-account spine-NP
+> yield lands — then re-tier on **actual qualified spine NPs** (§1 rubric).
+
+---
+
+> **Note on the seed rows below.** They predate the real export and remain only to illustrate a "done"
+> row and the tiering rubric. **Work from the CSV, not the seed rows.** See §5 for remaining data gaps.
 
 > **Reality anchor.** Referral spine is already **above budget (79 vs. ~65)**. This list is a
 > **realistic qualified lift** — recover Sean's ~2–3 NP/week, then a tiered-expansion push toward
@@ -50,8 +78,10 @@ Referrers send where access is fast. Same-week access is the pitch, so drive tim
 | > 30 min (defensive/edge only) | 0 |
 
 ### Dimension C — Payer fit (0–3) — **also a gate**
-SHP takes **no Medicaid**. Commercial + Medicare mix is the target (patient base is trending
-commercial 42%→52%).
+Commercial + Medicare is the target mix (patient base trending commercial 42%→52%). **Medicaid is
+accepted only at *select* SHP providers (varies) — not universal** (see `brand/current-state.md`
+Payer reality), so a Medicaid-dominant practice is a poor spine-referral fit unless a spine provider
+is confirmed in-network with that plan. WC/PI and Auto No-Fault are commercial-equivalent and welcome.
 
 | Payer mix | Points | Gate effect |
 |---|---|---|

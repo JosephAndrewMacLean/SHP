@@ -44,28 +44,57 @@ New patient → continue. Established → route to their existing provider's sch
 > "Before I find you the soonest appointment, let me make sure we're **in-network** so there are no
 > surprises. **What insurance will you be using?**"
 
-Capture: carrier + plan type (e.g., "Blue Cross PPO," "Medicare"). Then branch:
+Capture: carrier + plan type (e.g., "Blue Cross PPO," "BCN HMO," "Medicare"). Then branch.
 
-**Branch A — Accepted commercial / Medicare plan → PROCEED to Step 3.**
-> "Great — we're in-network with that. Let's get you booked."
+> **✅ Real accepted-plans list (from the Feb 2026 insurance taxonomy — 29 carriers / 2,333
+> provider-location-plan rows; source of truth is the WordPress `insurance_carrier` taxonomy).**
 
-**Branch B — Medicaid, or a plan we don't accept, or uninsured/self-pay → DO NOT DEAD-END.**
-Synergy does **not accept Medicaid**. Route to **Harmony Health Direct Pay + financing** — keep the patient.
-> "We're not in-network with that plan for this service, **but we don't want that to stop you from
-> getting care.** We have a **Direct Pay program through Harmony Health** with transparent,
-> up-front pricing, and **financing options** so you can spread the cost out. Would you like me to
-> go over how that works and get you scheduled that way?"
+**Branch A — Accepted COMMERCIAL (PPO/HMO) → PROCEED, but check referral (2b).**
+Aetna · **Blue Cross Blue Shield of Michigan (PPO + BCN HMO)** · Cigna · Cofinity/PPOM ·
+Coventry/First Health · HAP · Humana · McLaren · Molina · MultiPlan/PHCS · Priority Health · United Healthcare.
+> "Great — we're in-network with that. Let me get you booked."
 
-- If **yes** → continue to Step 3 and book as a **Direct-Pay** patient (tag accordingly, Section 3).
-- If **unsure** → offer the Harmony Health Direct Pay info (pricing sheet / callback from the
-  direct-pay coordinator). **Log the lead — do not let it fall off.**
-- **Accuracy guardrail:** describe Direct Pay and financing *only* as they actually work. Do **not**
-  quote a specific price or interest rate you can't verify; hand verified specifics to the direct-pay
-  coordinator. Never imply Direct Pay is "insurance."
+**Branch A2 — Accepted MEDICARE → PROCEED (no referral).**
+Traditional Medicare (A&B) · Medicare Advantage: Aetna, BCN Advantage*, HAP, Humana, Meridian,
+Molina, Priority Health, UHC/AARP. (*BCN Advantage = HMO → needs referral, see 2b.)
 
-> **Verification note:** in-network status can vary by plan sub-type and physician. If you are not
-> certain a plan is accepted, say "let me confirm we're in-network and I'll lock in your time" —
-> do not guess. When in doubt, treat as **needs-verification**, not a hard no.
+**Branch A3 — AUTO ACCIDENT / WORKERS' COMP → PROCEED (no referral, and no copay for auto).**
+Michigan No-Fault PIP (all carriers) and Workers' Comp (all carriers) are accepted — this is a
+**high-value spine channel**. Capture the claim basics: carrier, **claim #**, **adjuster name/phone**,
+date of injury (auto: + police report if available; WC: + employer name).
+> "Because this is an auto/work injury, it's covered under your [PIP / workers'-comp] claim — I just
+> need a few claim details and I'll get you scheduled."
+
+**2b · REFERRAL CHECK — HMO plans need a PCP referral BEFORE the visit. Flag it, don't lose them.**
+Referral required: **BCN HMO · HAP HMO · McLaren HMO · Priority Health HMO · BCN Advantage.**
+(PPO, Traditional Medicare, Self-Pay, Auto, WC = **no referral**.)
+> "That plan needs a **referral from your primary-care doctor** before we can see you. I can still
+> hold you the soonest spine slot — reach out to your PCP for the referral and we'll confirm it. Want
+> me to hold that time?" → book as **referral-pending**; note it so the visit isn't denied.
+
+**Branch B — MEDICAID → VERIFY, don't reflexively decline. Acceptance VARIES BY PROVIDER.**
+Medicaid plans in the taxonomy: Blue Cross Complete · HAP Empowered · Meridian Medicaid · Molina
+Medicaid · Priority Health Medicaid · McLaren Medicaid — but **accepted only at select providers,
+not universally** (and not necessarily by every spine physician).
+> "Let me check which of our spine providers is in-network with your Medicaid plan — I don't want to
+> book you somewhere it isn't covered. Let me confirm and I'll lock in your time."
+- If a spine provider accepts it → book to **that** provider. If none does → offer **Harmony Health
+  Direct Pay + financing** (Branch C). **Never quote a flat "we don't take Medicaid" — verify first.**
+
+**Branch C — Uninsured / self-pay / truly out-of-network → DO NOT DEAD-END.**
+> "We don't want that to stop you from getting care. We have a **Direct Pay program through Harmony
+> Health** with transparent up-front pricing and **financing** to spread the cost. Want me to go over
+> it and get you scheduled that way?"
+- **Yes** → book as **Direct-Pay** (tag per Section 3). **Unsure** → hand to the direct-pay coordinator
+  + **log the lead, don't let it fall off.** Out-of-network callers: note many plans still reimburse
+  partially and billing can provide an estimate — don't turn them away.
+- **Accuracy guardrail:** describe Direct Pay/financing only as they truly work; **no** unverified price
+  or rate; never imply Direct Pay is "insurance."
+
+> **Verification note:** in-network status varies by plan sub-type, physician, and facility (surgery
+> centers/imaging differ). If unsure, say "let me confirm we're in-network and I'll lock in your time"
+> — treat as **needs-verification**, never a guess or a hard no. Prior auth (MRI/injections/surgery)
+> is handled by SHP after the consult (3–7 business days) — reassure, don't over-explain.
 
 ### Step 3 · RED-FLAG + CANDIDACY TRIAGE (short symptom screen — sort the door, don't diagnose)
 > "A couple quick questions so I get you to the **right kind of spine specialist**."
@@ -275,8 +304,10 @@ Never guess in-network status.
 - **Clinical sign-off (Katie / clinical):** the red-flag list, the triage questions, the surgical
   routing, and the Salar-redirect guidance are **DRAFT pending clinical approval** before go-live.
 - **Urgent escalation contact/path:** clinical triage line / nurse target — **Kelly + clinical to confirm.**
-- **Accepted-plan list:** exact accepted carriers/plan sub-types — **confirm current list with billing/RCM**
-  and post at every rep desk. (Confirmed: **no Medicaid.**)
+- **Accepted-plan list:** now wired from the real Feb 2026 taxonomy (29 carriers; see Step 2 and
+  `brand/current-state.md` Payer reality). **Medicaid = accepted at select providers, VARIES — verify
+  per spine provider; not a flat "no."** Confirm the current provider-level Medicaid + facility
+  participation with billing/RCM and post the accepted-plan card at every rep desk.
 - **Harmony Health Direct Pay:** pricing sheet, financing terms, and coordinator handoff — **confirm
   current details** so reps state them accurately.
 - **Line conversion tracking:** currently non-functional (compliance fix in progress) — Paul/Santosh.

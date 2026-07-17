@@ -211,6 +211,28 @@ gap is, and 150 would be ~2× the budgeted B2B contribution for the whole line.
 *(Note: internal notes indicate leadership already leans toward over-delivering on ortho to offset
 the spine shortfall — consistent with treating a 150-referral spine target as unrealistic.)*
 
+## ⚠️ Payer reality (corrected from the real insurance taxonomy, Feb 2026)
+
+Earlier notes said "SHP takes **no Medicaid**." The real `insurance_carrier` taxonomy (29 carriers,
+17 plan types, 2,333 provider-location-plan rows; Notion "Insurance Page — Content Spec") shows a
+more accurate picture — use this everywhere:
+
+- **Commercial (accepted):** Aetna · BCBSM (PPO + BCN HMO) · Cigna · Cofinity/PPOM · Coventry/First
+  Health · HAP · Humana · McLaren · Molina · MultiPlan/PHCS · Priority Health · United Healthcare.
+- **Medicare (accepted):** Traditional Medicare + MA (Aetna, BCN Advantage, HAP, Humana, Meridian,
+  Molina, Priority Health, UHC/AARP).
+- **Medicaid: accepted at SELECT providers only — VARIES by provider, not universal** (Blue Cross
+  Complete, HAP Empowered, Meridian, Molina, Priority Health, McLaren Medicaid). **Verify per provider;
+  do not treat as a flat "no."** For spine, confirm which spine physicians take which Medicaid plans.
+- **Referral required (HMO):** BCN HMO · HAP HMO · McLaren HMO · Priority Health HMO · BCN Advantage
+  (PCP referral before the visit). PPO / Traditional Medicare / Self-Pay / Auto / WC = no referral.
+- **Auto No-Fault PIP (all carriers) + Workers' Comp (all carriers):** accepted, no referral, no
+  copay for auto — a **high-value spine channel** (ties to the WC/PI attorney feeders).
+- **Uninsured / truly out-of-network:** **Harmony Health Direct Pay** + financing + self-pay bundles —
+  route, don't lose.
+- Surgery centers (Synergy Surgery Center + Genesys, Livonia) and imaging (Pure Open MRI/Instant
+  Imaging) have **separate** participation — verify facility coverage independently.
+
 ## Guardrails reinforced by the audits
 
 - **Substantiation:** internal-database efficacy stats need real backup; never place a hard stat
