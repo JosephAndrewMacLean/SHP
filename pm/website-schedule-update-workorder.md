@@ -27,7 +27,7 @@ VERIFY rows blocked on the sheet's own open flags (§6).**
 | **TREATMENT** | **Selective.** Only procedure-logistics pages | "Where this is done" module: office vs. ASC; EMG/injection **days by location** (days only) | `/treatment/emg` gets real "EMG days: Livonia Fri AM, Sterling Heights Mon AM…" content; injection pages get "procedure days at Livonia/SH"; ketamine mention only with clinical sign-off |
 | **CONDITION** | **NO.** Evergreen — schedules would rot here | "Who treats this" mini-team links to provider/location pages (which carry the days) | Nothing schedule-specific; add "spine care in Troy/SH/Livonia" links in the who-treats module |
 | **LEARNING HUB / GUIDE** | **NO.** | Guides' what-to-expect may say "first visits often available within the week" (Katie/Kelly-approved wording only) | No direct updates |
-| **GBP listings** (surface, not page) | **YES — mirror.** Each clinic's GBP mirrors its location module | Provider listings, services, hours consistency | Troy GBP gets the spine services + providers; this channel already converts (~375+ sessions) |
+| **GBP listings** (surface, not page) | **Separate track — do NOT blend with the website program** (Joe, 7/21). Listings consume the same schedule dataset on their own timeline; **the Oakland MRI listing and the Troy location GBP are explicitly excluded from website work** (distinct business entities — no shared categories, cross-pointed URLs, or merged reviews) | — | — |
 
 **Net-new content this file creates (beyond edits):**
 1. Troy spine module + Troy paid-LP variant (supply for the missing Troy campaign — hand to Cardinal).
@@ -48,7 +48,7 @@ physician rows here, confirm whether it's PT/MRI-only before its page claims a c
 
 ---
 
-## 2. The headline: Troy is now real (update FIRST — location page + GBP + hub chip)
+## 2. The headline: Troy is now real (the biggest content change — sequenced per the location-intent roadmap: main hubs first; GBP excluded)
 
 | Provider | Specialty | Troy days (publishable form) |
 |---|---|---|
@@ -59,8 +59,8 @@ physician rows here, confirm whether it's PT/MRI-only before its page claims a c
 | **Dr. Sorensen** | Podiatry | Wednesdays |
 | **Dr. Heil** (Sept 1) | Pain | Wednesdays (pending §6) |
 
-**Spine in Troy Mon–Thu.** Troy location page, Troy GBP, hub locations band, and the Cardinal
-campaign brief all update from this one table.
+**Spine in Troy Mon–Thu.** Troy location page, hub locations band, and the Cardinal campaign
+brief all update from this one table. (Troy GBP: separate listings track — see §1.)
 
 ## 3. PROVIDER-page rows (publishable)
 
@@ -104,13 +104,14 @@ sign-off (ops' own open question: "Want a spine physician on a Friday").
 - **Port Huron:** Yakasin Mon/Wed · Yacisen Wed alt./Thu · Kassa 1st & 3rd Thu · Munk monthly ·
   Abood occasional — **visiting-specialists module; replace stale Munk-centric copy.**
 - No separate Rochester page/listing exists or should exist — Troy (on Rochester Road) serves
-  that geography; add Rochester/Rochester Hills language to the Troy page + GBP (see §1 note).
+  that geography; add Rochester/Rochester Hills language to the Troy page (see §1 note).
 
 ## 5. Execution sequence
 
 1. Katie line-item confirm of §2–§4 (15 min) — go-signal = her blast + Orthoplex update.
 2. Paul: the single-source schedule modules (location + provider variants).
-3. Randall: Troy → Munk/PH staleness → Yacisen fix → the rest; GBP mirrors last.
+3. Randall: sequence per the location-intent roadmap (SH + Livonia modules first, then Troy,
+   then Munk/PH staleness → Yacisen fix → the rest). No GBP work in this program.
 4. Mitch email item 4 = confirm-extraction (already updated); register A8 answered-pending-
    confirm; V5 partially resolved (Yacisen, Munk, Zamorano-Troy).
 5. Re-check §6 items within a week of the blast.

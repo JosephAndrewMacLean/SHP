@@ -94,11 +94,12 @@ the surgeon modules; CODE outcomes when publishable (V2 substitute).
 - `/locations/livonia` (GA4 33) · `/sterling-heights` (31) · `/southfield` (24) ·
   `/port-huron` (58) + legacy `/full-service-clinics/port-huron/` (paid $644) + Southfield's
   7–9 indexed variants → consolidate variants; spine module per clinic (which spine docs, days,
-  true access promise). **Troy first for build-out — the Oakland unlock has no spine campaign
-  and no spine module.**
-- **GBP listings are converting** (location-listing campaigns: 375+ GA4 sessions) → listing
-  hygiene (categories, spine services, photos, Q&A) joins the location work; fix the
-  `scct`/UTM mangling that's breaking GA4 channel attribution (§8).
+  true access promise). **Sequencing per the location-intent roadmap: main hubs (SH, Livonia)
+  first, then Troy** — the Oakland unlock with no spine campaign and no spine module.
+- **GBP listings are converting** (location-listing campaigns: 375+ GA4 sessions) — but GBP is
+  a **separate track, not blended with the website program** (Joe 7/21); the Oakland MRI
+  listing and Troy GBP are explicitly excluded from website work. The `scct`/UTM attribution
+  fix (§8) stays in scope here because it breaks GA4, not because it's listings work.
 - Hyperlocal city pages: **gated on D3** (Joel Carr first-party city counts) — none built until
   the threshold list exists. Canonical self-referential (Paul).
 
@@ -194,7 +195,7 @@ superiority framing ("best spine surgeon in the Midwest" cannot run as-is).
 | **P4** | Decision/guide layer (6 guides) | Zero decision-support pages (knee page = proof) | A5, B1 interim, C4 |
 | **P5** | Differentiation aggregation + the two NEW procedure pages | "Spine has no differentiation" (partially contradicted — exists but scattered) | A1, A2, A9→B3, C3, D1 |
 | **P6** | Team module + provider QA (dedupe, Zamorano, matching) | Providers strong but no choosing journey; broken filters | A3, B2, B5, D2 |
-| **P7** | Location/GBP + hyperlocal | GEO targeting gaps (no Troy) | A8, C6 |
+| **P7** | Location pages + hyperlocal (GBP = separate track) | GEO targeting gaps (no Troy) | A8, C6 |
 | **P8** | Learning-hub refresh + purge | Dated content + rebrand remnants | A5, D3 |
 
 **Reading:** P0 is compliance exposure and needs no new content — do it immediately. P1 is the
