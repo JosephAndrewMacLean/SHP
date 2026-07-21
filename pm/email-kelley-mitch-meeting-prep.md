@@ -1,84 +1,80 @@
-# Email Draft — Kelley & Mitch: working-session invite + the spine opportunity
+# Email Draft — Kelley & Mitch: the data for our working session
 
 **From:** Joe · **To:** Kelley (call center / patient access), Mitch (imaging / ancillary services)
+**Context:** both already know about the meeting — this email delivers **the data** ahead of it.
 **Status: DRAFT for Joe to personalize and send.** Placeholders in [brackets].
-**Spirit:** no-surprises pre-brief — they hear everything here first, before any group setting.
 > Name check before sending: repo docs spell it "Kelly," Joe writes "Kelley" — confirm and make
 > it consistent everywhere (this draft uses Kelley).
 
 ---
 
-**Subject:** The spine patients already calling us — want to build the fix together?
-
-*(alt: "Working session invite: one front door for spine, MRI, and pain — you two are the key")*
+**Subject:** The data for our session — 32 calls, your lanes, and the spine opportunity
 
 Kelley and Mitch —
 
-I want to get just the two of you in a room with me — nobody else required — for a 90-minute
-working session the week of [July 27–31], and I want you to see everything I'm bringing before
-anyone else does. No surprises, ever. If you'd rather walk through it 1:1 first, I'd genuinely
-welcome that — grab any 30 minutes on my calendar this week. Anything that needs clinical,
-billing, or systems input (Katie, Dr. Oddo, Anna, Santosh, Greg), we'll frame as a
-recommendation in the room and I'll carry it to them afterward — that's my job, not yours.
+Ahead of our session the week of [July 27–31], here's the data we'll work from: **32 recent
+calls** (four batches), written up with all patient identifiers stripped. Both attachments are
+**confidential and just for us three** — nothing circulates further until you two have
+corrected the pack and co-signed it. You know things the transcripts don't; I'm expecting you
+to mark it up, not just read it.
 
-**Here's the short version.** I pulled 32 recent calls into a review pack with all patient
-identifiers stripped (attached, along with the draft meeting agenda — both confidential, just
-for us three for now). Two things jumped out, and neither one is
-about anyone's team doing bad work — the opposite, actually:
+One ground rule before any numbers: **every gap in this data is a missing tool, not a failing
+person.** No rep is named, nobody is graded, and the same calls contain the best practices
+we'll be spreading. Read the "wins" section first — it's the standard your own people set.
 
-**First, your people are already great on the phone.** The warmest, sharpest moments in those
-32 calls came from your teams — the imaging rep who checked the real participation list and
-beat a competitor's quote by half, the scheduler who took a caller's number so *we* owed the
-callback, the rep who booked a back-pain patient within days while the outside office was
-booked out to July 31.
-Nobody in this pack is graded and no rep is named. The pack exists to spread what your best
-people already do.
+**By the numbers (all 32 calls):**
 
-**Second, the system is quietly turning away spine patients your teams would have gladly
-helped.** Of 32 calls, one ended in a completed booking — not because anyone dropped the ball,
-but because the process asks callers to chase faxes, wait on referrals, and call us back. At
-least ten of those callers came to us *fleeing* a competitor's backlog or silence. The demand
-is real, it's already on our phones, and it's exactly the spine growth the practice needs by
-September.
+- **1 completed booking** — and that's a *system* baseline: these calls happened before any
+  script, facts card, or escalation path existed.
+- **Only 2 inquiries ended with us holding the callback duty** (one fully, one partially).
+  Everyone else left carrying follow-up that should be ours.
+- **"How did you hear about us?" was asked 0 times** — expected, it's never been scripted —
+  and it cost us trails to Henry Ford, Included Health, a DMC physician's peer referral, and
+  Corewell sending injection cases our way.
+- **At least 10 of 32 callers were fleeing a competitor** — slower, pricier, or silent. Demand
+  is defecting *to* us; the follow-through decides whether we keep it.
+- **4 transfers ended in voicemail or a mailbox that was never activated;** one caller waited
+  ~11 minutes and was never answered.
+- The prize: the spine plan values fixing this front door at **+6 to +9 new spine patients per
+  week, with the people we already have.**
 
-**Where I think the new-spine-patient gold is, in priority order:**
+**Kelley — your lane in one paragraph.** Your team's wins are the model: the rep who booked a
+back-pain patient within days while the outside office was booked to July 31, and real warmth
+on nearly every call. The data asks for tools, not effort: a capture-and-callback standard
+(name + number on every inquiry, we own the follow-up), the source question on every call, a
+completion worklist so held bookings don't evaporate, and a facts card so answers stop varying
+by desk. Also in your lane: the red-flag screen still can't run until leadership names the
+escalation path — that item is on me to carry, not on your team.
 
-1. **Catch and call back.** Capture a name and number on every inquiry — imaging, pain, or
-   spine — and put the follow-up on us, not the patient. Only 2 of 32 calls ended with us
-   holding the callback. This is the cheapest new-patient lever we own.
-2. **An acute-pain fast lane.** Pain management is the natural front door for most spine
-   callers, but today it sits behind a referral requirement and a ~2-week wait — and patients
-   in real pain go to whoever answers first. In our session I want us to draft the
-   recommendation and the exact questions for Dr. Oddo and Katie — how much of the referral
-   rule is payer vs. policy, and what an acute-pain lane could look like — and I'll carry it
-   to them personally.
-3. **One call for MRI + consult.** Mitch — this one's the reason I especially need you. Imaging
-   is often the ticket onto a surgeon's schedule, but your schedulers and Kelley's team can't
-   see each other's calendars, and orders are getting lost in fax routing between sites. I've
-   drafted one straw-man design — a **shared pending-imaging queue where your team keeps the
-   verification gate (safety screening, protocols, capacity — in writing)** — and I want you
-   to tear it up and rebuild it with me before it goes anywhere else.
-4. **Ask "how did you hear about us?" every time.** It went unasked 32 times, and we lost
-   trails to referral sources actively sending us patients — including a competitor referring
-   injection cases our way.
-5. **Put the answers on one card.** Prices, payers, procedures, real wait times — your best
-   people already know these; the card just makes everyone as good as your best person.
+**Mitch — your lane in one paragraph.** Your desks produced the sharpest facts moments in the
+set: the participation-list check that beat a Trinity quote by half, and the scheduler who took
+a caller's number so *we* owed the callback. The data shows your team working around missing
+plumbing: six different lead times quoted across calls with no shared capacity source (Troy
+had this-week openings while another site quoted ~3 weeks), orders lost to wrong fax numbers
+and site-siloed queues, cash pricing quoted three different ways ($837 vs. $594/$837 vs.
+~$290/$590 — the right answers exist and don't travel), and single-person functions with no
+backup. The straw man I've drafted is a **shared pending-imaging queue where your team keeps
+the verification gate — safety screening, protocols, capacity, in writing.** Tear it up and
+rebuild it with me; you own it or it doesn't happen.
 
-The meeting itself will run wins-first, with working agreements up front: we fix systems, not
-people; hard on the problem, easy on each other. Your prep is light — the pack has a one-page
-"sorting sheet" with a short checklist for each of you. If you'd like to bring one frontline
-voice from your team who lives this daily, they're welcome — entirely your call, not required.
+**The spine priorities we'll work, in order:** (1) catch and call back on every inquiry;
+(2) draft the acute-pain-access recommendation and the exact questions I'll carry to Dr. Oddo
+and Katie; (3) the pending-imaging queue — one call for MRI + consult; (4) the source question
+everywhere; (5) one facts/price card per desk.
 
-Can you send me two or three times that work the week of [July 27–31]? And again — 1:1 first
-if you'd like; I'll follow your lead.
+**What I need from each of you before we meet:** read your lane's checklist in the pack's
+sorting sheet (~15 min), mark anything the transcripts got wrong, and bring your real numbers —
+Kelley: call volumes and staffing; Mitch: true lead times by site and modality, and your
+single-person coverage list. If either of you wants to walk through it 1:1 first, grab any 30
+minutes on my calendar — happy to.
 
-The patients are already calling us. Let's make sure the phone system is as good as the people
-answering it.
+The patients are already calling us. This data just shows where the system drops them — and
+your teams are the ones who can fix it.
 
 Thanks,
 Joe
 
-**Attachments:** call-review pack (patient identifiers stripped; confidential) · draft working-session agenda
+**Attachments:** call-review pack (patient identifiers stripped; confidential) · working-session agenda
 
 ---
 
