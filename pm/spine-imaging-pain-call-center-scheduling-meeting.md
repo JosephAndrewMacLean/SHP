@@ -63,12 +63,12 @@ between the three lines without falling on the floor.**
 | Role in this meeting | Person | Brings (pre-work — see §5) |
 |---|---|---|
 | Convener / spine plan owner | **Joe** | The straw man (§6), decision list (§7) |
-| Call center / centralized scheduling | **Kelly** | Call volume by line, abandonment/speed-to-answer, top 10 failure calls (anonymized patterns, no PHI) |
+| Call center / centralized scheduling | **Kelly** | Call volume by line, abandonment/speed-to-answer; the call-review pack (`spine-imaging-pain-call-review-pack.md`) — her lane items from its sorting sheet |
 | Ops / ASC / clinical sign-off authority | **Katie** | Rulings on the 3 pending clinical items; ASC + consult capacity reality |
 | Surgical scheduling | **Anna** ⚠️ | How surgical booking actually works post-consult; where handoffs from Kelly's team break |
 | Pain Management (service-line lead) | **Dr. Anthony Oddo, DO** (Director of Pain Management) — or delegate | Pain/injection scheduling lead times; criteria his team wants applied at intake; prior-auth reality for injections |
 | Spine surgery representation | **Dr. Scott McCarty, MD** or designated spine lead ⚠️ | What a "decision-ready" surgical consult needs in hand (imaging, history) |
-| Diagnostic Imaging / ancillary services | **Mitch Misiak (Mgr, Ancillary Services)** ⚠️ | Modality capacity + slot lengths, order requirements, facility payer participation list, results turnaround |
+| Diagnostic Imaging / ancillary services | **Mitch Misiak (Mgr, Ancillary Services)** ⚠️ | Modality capacity + slot lengths, order requirements, facility payer participation list, results turnaround; his lane items from the call-review pack's sorting sheet |
 | Scheduling systems / analytics | **Santosh** | Systems map (NextGen/OrthoPlex/Accel/AutoFlow/E-Intake); where each schedule lives today; tagging feasibility |
 | Billing / RCM (payer + auth truth) | **Greg** ⚠️ | Facility-vs-practice participation answers; prior-auth turnaround by payer (MRI/injections) |
 | Tracking (optional, 15 min) | **Paul** | Liine status; "Oakland MRI" Troy call-misdirect fix status |
@@ -83,6 +83,10 @@ between the three lines without falling on the floor.**
 ## 5. Pre-reads + pre-work (send with the invite)
 
 **Read (15 min total):**
+- **`pm/spine-imaging-pain-call-review-pack.md` — 32 de-identified real calls, pre-sorted into
+  Kelly/Mitch/joint/meeting lanes.** This is the evidence base for the session; its §8 findings
+  and §9 decision candidates (D12–D19, incl. expanding D6 into the full pain-access policy)
+  extend the decision list in §7 below.
 - `playbooks/call-center-strategy.md` — the 6 pillars (5-min skim)
 - `pm/spine-intake-qualification-script.md` — the v1.0 spine script this meeting extends
 - `brand/current-state.md` → sections "Business operating reality" and "⚠️ Payer reality" —
