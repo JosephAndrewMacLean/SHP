@@ -2,8 +2,32 @@
 
 **Who:** Joe + Kristen (just the two of you — this is alignment, not review)
 **Goal:** she walks out owning the PL section of tomorrow's meeting, trusting the data because
-she's tested it herself, with her three decisions made. No internal daylight in the room.
+she's tested it herself, with her decisions made. No internal daylight in the room.
 **Bring:** her phone (app installed), one printout of the Week-1 protect list, this page.
+
+## Where you two actually are (from the Jul 17 + Jul 20 meeting notes — Notion)
+
+- **Fri Jul 17:** you walked her the provisional scoring; she pushed back — *visits ≠ value* —
+  and you agreed **her hierarchy** (repeat spine > one spine > ortho > any patient > visit-only).
+  **The v4 report implements exactly that**, and fixes the wedding-cake date bug found that day.
+  The gate sequence you agreed: **she validates → Santosh reviews → Gautam, targeted Tuesday.**
+- **Her open items from Friday:** validate account/data accuracy before Santosh sees it ·
+  cross-check the active-week metric against her records · clean Coty's inflated CRM list
+  (~1,000 companies from old Buxton/NextGen uploads).
+- **Sun Jul 20 (cut short by your emergency):** tier model walked with the PLs; **scrub criteria
+  agreed** (in-house-spine orthos, competitors, pediatric, addiction medicine, neurosurgeons);
+  rename tabs by PL; **outreach across all targets by Sept 30** (their 10/day ≈ 6-weeks-per-book math).
+- **Already done for her open items:** the source audit (cell-level match + banner reconciliation)
+  answers Friday's validation ask, and **`pm/spine-account-scrub-list.csv`** pre-runs Sunday's
+  scrub — 54 flags (24 pediatric, 15 in-house-spine verify, 10 possible competitors, 4
+  neurosurgeons, 2 addiction incl. **Gammons Medical**), producers marked KEEP. Her pass becomes a
+  20-minute review, not a rebuild. Note: **Henry Ford Seven Mile is Tier 1** and its drop has a
+  known cause (March EMR transition) — a reactivation play with a story, worth naming tomorrow.
+- **Decision 4 (add to §0:16 block): coverage mode.** Sunday's math ("every account once by
+  Sept 30") assumes ~all field days on this list with no producer revisits; the built calendar
+  protects producers on 2-week cycles + ortho days, deferring 276 low-scored accounts. Pick
+  consciously: full-coverage-once (≈5 spine days/wk, thinner protect cadence) or protect-first
+  (current build). Her call — both are defensible, but only one can be promised to Gautam.
 
 ---
 
