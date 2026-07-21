@@ -41,13 +41,13 @@ context. Process in `content-update-workflow.md`.
 ```
 SPINE PILLAR  /specialties/spine-back-and-neck/            [rebuild — pos 24.7 today]
 │
-├─ CONDITIONS  /conditions-we-treat/spine-neck-back-conditions/<condition>/
-│   spinal stenosis · herniated disc · sciatica · degenerative disc disease (NEW) ·
-│   spondylolisthesis · cervical radiculopathy · neck (cervical) fracture · back
-│   (vertebral) fracture · failed back surgery / adjacent segment (NEW — §5) ·
+├─ CONDITIONS  /conditions/<condition>/          [structure corrected per §4a — AI-features data]
+│   spinal stenosis · herniated disc · sciatica · degenerative disc disease (rebuild —
+│   exists, thin) · spondylolisthesis · cervical radiculopathy · neck (cervical) fracture ·
+│   back (vertebral) fracture · failed back surgery / adjacent segment (NEW — §5) ·
 │   arthritic back pain / facet arthritis
 │
-├─ TREATMENTS  /specialties/spine-back-and-neck/<treatment>/
+├─ TREATMENTS  /treatment/<treatment>/           [structure corrected per §4a]
 │   Surgical: lumbar laminectomy · microdiscectomy · ACDF · cervical disc replacement
 │   (ACDR — NEW) · cervical fusion · thoracic/lumbar fusion · thoracic/lumbar
 │   decompression · SI joint fusion · kyphoplasty/vertebroplasty · revision spine
@@ -111,6 +111,44 @@ Rules: never 301 a page-1 URL into a page-3 URL (move content to the primary fir
 weeks, then redirect) · every consolidation is one batch, logged, measured (workflow §4) ·
 sequence AFTER the first title/meta wave so effects are separable.
 
+### §4a — UPDATE (Jul 21 PM): the AI-features data flips the default direction
+
+The Generative-AI export (`gsc-ai-features-2026-07.md`) shows Google's AI surfaces cite the
+**new `/conditions/` + `/treatment/` structure 315:1** over the legacy `/specialties/` +
+`/conditions-we-treat/` structures — and where both variants exist, the new URL usually holds
+the better classic *position* too (laminectomy 10.1 vs 28.6; microdiscectomy 8.3 vs 54.2).
+The table above was drafted on 16-month impression totals, which over-weight legacy URLs'
+history. **Corrected rule: the primary URL for every condition/treatment topic is its
+`/conditions/<condition>/` or `/treatment/<treatment>/` URL; legacy variants consolidate INTO
+it** (content moves first, redirect after rankings hold — same safety rule as above).
+
+Row corrections to the table above:
+- **Laminectomy** → primary `/treatment/lumbar-laminectomy/` (AI 509 + better position); the
+  87.5K-impression `/specialties/.../lumbar-laminectomy/` content merges into it.
+- **Microdiscectomy** → primary `/treatment/microdiscectomy/` (already ranking 8.3; AI-cited).
+- **SI joint fusion** → primary `/treatment/sacroiliac-joint-fusion/` (AI 370).
+- **Kyphoplasty** → primary `/treatment/kyphoplasty-vertebroplasty/` (no migration to
+  /specialties/ — that guidance is reversed).
+- **The 5 condition hubs** → rebuild at the *existing* `/conditions/` URLs (stenosis,
+  herniated-disc, sciatica, cervical-radiculopathy, spondylolisthesis, degenerative-disc-disease
+  — all already live there, thin, and already earning AI citations: radiculopathy 276,
+  spondylolisthesis 274). Legacy `/conditions-we-treat/spine-neck-back-conditions/*` versions
+  301 in. *(Corrects §2/§5: DDD exists at `/conditions/degenerative-disc-disease/` — 25
+  impressions — it needs a rebuild, not creation.)*
+- **Unchanged:** neck/back fracture (already `/conditions/`) · ACDF + cervical fusion (no
+  new-structure URL exists yet — keep optimizing `/specialties/` in place; create the
+  `/treatment/` URL as part of the rebuild, or per Cardinal's migration map) · spine pillar
+  (`/specialties/spine-back-and-neck/` is a specialty landing, different animal) · the two
+  legacy location pages (Sterling Heights, Port Huron — still do not redirect prematurely).
+- **New pair for Cardinal's list:** finger amputation — `/treatment/finger-amputation-surgery/`
+  (13.3K impr, pos 8.3, AI 1,975) vs `/specialties/hand-upper-extremity/finger-amputation/`
+  (60K impr, pos 4.6, AI 71). Old still outranks in classic; needs a deliberate call.
+
+**Blocking check before ANY redirect ships:** confirm with Paul/Cardinal that
+`/conditions/` + `/treatment/` is the intended end-state of the migration (the data says
+Google has already decided; the humans who own the migration map get the final word).
+All NEW pages in this plan (§5 clusters, hub rebuilds) build on the new structure from day one.
+
 ## 5. The two NEW content clusters (whitespace with a business case)
 
 **A. Returning / revision spine patient** — leadership's target patient; **zero queries, zero
@@ -131,7 +169,7 @@ ACDR treatment page + "fusion vs. disc replacement" learning-hub comparison (a c
 decision-stage page-1 winner). Verify which SHP surgeons perform ACDR before drafting
 (credential accuracy — never overstate).
 
-## 6. Hyperlocal spine (the meeting's open question, answered safely)
+## 6. Hyperlocal spine (DECIDED — Joe, Jul 21: real clinics only, no suburb pages)
 
 GSC city demand (non-branded): near-me 47K impr · Livonia 13K · Sterling Heights 8.4K · Warren
 2.7K · Southfield 2.5K · Shelby Twp 2.5K · Royal Oak 1.3K · **Troy 788** · Clawson ~0.
@@ -141,11 +179,12 @@ GSC city demand (non-branded): near-me 47K impr · Livonia 13K · Sterling Heigh
   exists — pos 15.4; MRI's local pattern earns 7% CTR). Each: unique local proof — the surgeons
   who actually practice there, same-week availability, directions/landmarks, insurance, local FAQs.
   **Troy first** (Oakland County unlock; ad spend currently $0 there; organic footprint 788 impr).
-- **Do NOT spin up pages for every surrounding suburb** (the "hit every city — Troy, Clawson…"
-  idea). City pages for cities without a clinic, written thin and templated, are **doorway pages**
-  (Google spam policy) — the likely outcome is they don't rank, and at worst they drag sitewide
-  trust on a YMYL domain. And canonicalizing a Clawson page to Troy (discussed in the meeting)
-  just tells Google to ignore the Clawson page — it can't rank AND canonicalize away; pick one.
+- **No pages for surrounding suburbs — confirmed decision (Joe, Jul 21).** City pages for
+  cities without a clinic, written thin and templated, are **doorway pages** (Google spam
+  policy) — the likely outcome is they don't rank, and at worst they drag sitewide trust on a
+  YMYL domain. (And canonicalizing a Clawson page to Troy would just tell Google to ignore the
+  Clawson page — a page can't rank AND canonicalize away.) The nearby-suburb demand is served
+  by the clinic pages' "communities we serve" sections + GBP service areas, below.
 - **The compliant version of "hit every city":** each clinic's spine page carries a genuine
   "communities we serve" section (Troy page serves Clawson, Madison Heights, Royal Oak…) +
   GBP service-area settings + learning-hub content with local relevance. If a non-clinic city
@@ -156,11 +195,13 @@ GSC city demand (non-branded): near-me 47K impr · Livonia 13K · Sterling Heigh
 
 ## 7. Learning hub = the answer engine (feeds AEO/AIO/GEO, not just rankings)
 
-Reality check from the data: informational queries at good positions still get ~0 CTR (AI
-Overviews and snippets absorb the click). So the hub's job is **(a)** decision-stage queries
-that DO click (comparisons, candidacy, recovery timelines, cost/insurance), **(b)** being the
-cited source in AI answers (E-E-A-T + schema + llms.txt — with `aio-specialist`/Cardinal), and
-**(c)** internal-link fuel for the money pages. Launch set (each → one condition + one treatment
+Reality check, now quantified (`gsc-ai-features-2026-07.md`): AI surfaces are ~7.6% of SHP
+impressions and one trauma page earns 23% of them; informational queries at good positions get
+~0 CTR because the AI answer absorbs the click. So the hub's job is **(a)** decision-stage
+queries that DO click (comparisons, candidacy, recovery timelines, cost/insurance), **(b)**
+being the cited source in AI answers (E-E-A-T + schema + llms.txt — with `aio-specialist`/
+Cardinal; the young `/conditions/` hubs are already being cited), and **(c)** internal-link
+fuel for the money pages. Launch set (each → one condition + one treatment
 page): Laminectomy recovery week-by-week ("l4-l5 laminectomy recovery time" already pos 6.3) ·
 Do I need surgery for spinal stenosis? · Herniated disc: when it heals on its own · Fusion vs.
 disc replacement · Signs your back pain needs a specialist · Second-opinion guide (§5) ·
@@ -170,7 +211,9 @@ reviewer + date + FAQ block; hub index page gets crawlable category links (it's 
 
 ## 8. Measurement (GSC-only loop, monthly — no SEMrush, per meeting decision)
 
-Same-day-of-month export into `seo/data/YYYY-MM-DD/` → re-run `analyze_gsc.py` → compare:
+Same-day-of-month export of BOTH views — classic web into `seo/data/YYYY-MM-DD/` and the
+AI-features view into `seo/data/YYYY-MM-DD-ai-features/` — → run `analyze_gsc.py` +
+`analyze_gsc_ai.py` → compare:
 spine non-branded clicks/impr/CTR/avg-pos (goal: 48 queries → 150+ by Oct; commercial spine
 impressions up 5–10× off the tiny 1.5K base) · ortho tripwire (§1) · title/meta wave CTR deltas
 at 2 and 4 weeks (annotate change dates in GSC) · cluster pages: indexed → impressions →
@@ -184,7 +227,7 @@ canonical record is the monthly export in this repo.
 | When | What | Why first |
 |---|---|---|
 | **Wk 1–2 (by Aug 1)** | Title/meta wave 1 (`quick-wins-title-meta.md`) — no URL/content changes · fix mobile-render bug (workflow §6) · learning-hub index made crawlable | Zero-risk CTR recovery; separable measurement |
-| **Wk 2–4** | Rebuild spine pillar + 5 condition hubs (stenosis, herniated disc, sciatica, DDD-new, spondylolisthesis) to §3 standards · start medical-review pipeline · hand Cardinal the §4 consolidation list | The foundational build Google can't rank us without |
+| **Wk 2–4** | Rebuild spine pillar + 5 condition hubs at their `/conditions/` URLs (stenosis, herniated disc, sciatica, DDD, spondylolisthesis) to §3 standards · start medical-review pipeline · hand Cardinal the §4/§4a consolidation list | The foundational build Google can't rank us without |
 | **Wk 4–8** | Treatment primaries rebuilt (laminectomy, ACDF, microdiscectomy, cervical fusion) · ACDR page + fusion-vs-ACDR comparison · Troy spine page, Sterling Heights + Livonia next · learning hub 2/wk | Demand exists now (ACDF pos 3; laminectomy 87K impr stuck pos 28) |
 | **Wk 8–12** | Revision/returning-patient cluster (§5A) · remaining locations · consolidations execute (post-wave-1 data) · title/meta wave 2 from fresh export | Highest-value, lowest-volume — needs the authority base built first |
 | **Monthly** | Export → analyze → compare → next batch. Every batch logged (workflow §4) | The OODA loop leadership asked for |

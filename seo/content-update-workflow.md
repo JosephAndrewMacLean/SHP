@@ -45,8 +45,9 @@ onto each other's queries and trade rankings instead of rising (evidence:
 
 ## 3. The monthly loop (repeatable)
 
-1. GSC → Performance → Export (same scope: Web, 16 months) → drop CSVs into
-   `seo/data/YYYY-MM-DD/` → run `seo/data/analyze_gsc.py` (paths at top of script).
+1. GSC → Performance → Export (same scope: Web, 16 months) → `seo/data/YYYY-MM-DD/`, and the
+   same export with the **AI features** filter applied → `seo/data/YYYY-MM-DD-ai-features/`.
+   Run `seo/data/analyze_gsc.py` and `seo/data/analyze_gsc_ai.py` (folder args at top).
 2. Compare vs. prior month: spine non-branded (queries/impr/CTR/pos) · ortho tripwire
    (>15% non-branded click drop ×2 months = pause and diagnose) · CTR deltas on changed pages ·
    new-page indexing/positions.

@@ -26,9 +26,12 @@ GSC data (real Google data), not SEMrush estimates. This file is the shared grou
    impressions). The commercial queries that feed the spine funnel ("spine surgeon near me",
    "spine specialist near me", "back doctor near me") total only **~1,500 impressions in
    16 months** — SHP barely appears for them.
-5. **The 5 foundational condition hubs are effectively unindexed-in-practice:** spinal stenosis
-   pos **78.7 (0 clicks)** · sciatica pos 50.9 · cervical radiculopathy pos 61.4 (0 clicks) ·
-   herniated disc **39 impressions total** · DDD has no page in the data at all.
+5. **The foundational condition hubs are effectively invisible in classic search.** Legacy
+   `/conditions-we-treat/` versions: spinal stenosis pos **78.7 (0 clicks)** · sciatica pos
+   50.9 · cervical radiculopathy pos 61.4 (0 clicks). Newer `/conditions/` versions exist but
+   are thin (stenosis 509 impr pos 18.9 · herniated disc 417 impr pos 18.2 · DDD 25 impr) —
+   splitting each topic across two weak URLs. The `/conditions/` versions are the ones
+   Google's AI already cites (`gsc-ai-features-2026-07.md`) — rebuild there.
 6. **Zero revision-patient presence.** Not one query in the top 1,000 for failed back surgery,
    revision, adjacent segment, hardware pain, or spine second opinion — the exact
    returning-surgery patient leadership wants is a total content gap.
@@ -184,6 +187,13 @@ is non-negotiable. The audit's mobile CWV failure (28/100) remains Cardinal's te
   current clinic status before investing).
 - Legacy ortho blog earners (shoulder-injury guide 145K i, flying-with-joint-replacement 123K i):
   title/meta polish only — no rewrites, no URL moves, no content surgery.
+
+## Companion dataset
+
+The **Generative AI features** view (AI Overviews / AI Mode) is analyzed separately in
+`gsc-ai-features-2026-07.md` — impressions-only, 9-week window. Its headline: Google's AI
+cites the new `/conditions/` + `/treatment/` structure 315:1 over the legacy structures,
+which set the consolidation direction in the cluster map (§4a).
 
 ## What GSC cannot tell us (honesty box)
 

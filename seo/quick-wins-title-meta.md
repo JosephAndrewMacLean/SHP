@@ -23,6 +23,12 @@ provider counts, or on-site amenities must be verified before entering Rank Math
    treatment-research (should move) · **[Info]** informational (AI Overviews absorb clicks —
    partial recovery only) · **[Brand-bridge]** rebrand navigation.
 
+> **Jul 21 PM addendum (AI-features data):** Wave 1 stands as written — titles are per-URL,
+> cheap, and reversible. But consolidation targets changed (cluster map **§4a**: primaries flip
+> to `/conditions/` + `/treatment/`), so do **not** extend this wave to a duplicate URL of any
+> row here — one optimized URL per topic until its consolidation ships. Row 22 was retargeted
+> to the new-structure Dupuytren's URL accordingly.
+
 ---
 
 ## A. Spine (priority per the 80%-to-spine mandate)
@@ -130,8 +136,9 @@ demand at pos ~6. [Local] ⚠️ verify clinic's current status/services first.
 - Title: `Synergy Health Port Huron — Orthopedic Care & PT`
 - Meta: `Orthopedic specialists in Port Huron — joint, spine, hand, and foot care with on-site physical therapy. Book online or call to schedule.`
 
-**22. `/conditions-we-treat/hand-upper-extremity-conditions/dupuytrens-disease/`** — 81K impr,
-pos 30.4 (striking distance — real fix is content depth; title costs nothing now). [Decision]
+**22. `/conditions/dupuytrens-contracture/`** — 18.9K impr, pos 14.1, plus **1,013 AI-feature
+impressions** (vs ~0 for the legacy 81K-impr `/conditions-we-treat/...dupuytrens-disease/`
+version, which consolidates into this one per cluster map §4a — leave the legacy URL alone). [Decision]
 - Title: `Dupuytren's Contracture: Signs & Treatment | Synergy`
 - Meta: `Why fingers curl inward with Dupuytren's disease, when to see a hand specialist, and treatment options from injections to surgery. Metro Detroit.`
 
