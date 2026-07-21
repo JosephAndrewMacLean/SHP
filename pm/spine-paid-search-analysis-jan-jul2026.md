@@ -155,7 +155,42 @@ Grounded in this data + the June audit + the templates doc. Owners in brackets.
 Measure it: post-fix, judge LPs on **Liine qualified calls + real online bookings per click**
 (not NP Intent), on post-migration windows only, at the 4-week OODA cadence.
 
-## 7. Actions (routed per the process doc)
+## 7. GA4 post-migration read (May 21 – Jul 21 export, "SHP - New Site")
+
+First clean post-migration window. **Read the caveats first** — this export is only partially
+usable:
+
+**Data-quality issues (fix in GA4 before trusting any LP conversion metric):**
+- The export appears **filtered to converting sessions** (session-key-event rate = 1 on every
+  row; engagement 99.4%) — there is no denominator, so conversion *rates* per LP cannot be
+  computed from it. Re-export unfiltered (all sessions) with the same dimensions.
+- **"Key events" is inflated** (7,837 events across 2,398 sessions ≈ 3.3/session) — soft events
+  are counted as key events. Define ONE money event (booking submitted / qualified call) and
+  report on it; today's number is not bookings.
+- **Channel attribution is broken:** 1,565 sessions classified "Paid Search" carry
+  source/medium `google / organic`, and 661 are `(not set)`. Likely UTM/`scct` parameter
+  mangling or channel-group misconfig. → Santosh/Paul queue; until fixed, paid-vs-organic LP
+  splits in GA4 are unreliable.
+- Row sums (3,401) exceed the grand total (2,398) — sessions double-count across
+  dimension combos; use the grand total for level-setting only.
+
+**What it still shows (directionally):**
+- **The live new site runs on the `/specialty/` structure.** Converting sessions land on
+  `/specialty/*` 1,445 : 1 over `/specialties/*` — `/specialty/spine-neck-back` (322 sessions)
+  is the operating spine hub; `/specialty/orthopedic-services/livonia` (459) is the top
+  service LP; homepage 803. **This flips the era assumption in §4** (the `/specialties/` hub
+  was likely the *pre*-migration structure) and is why the semantic model's hub canonical is
+  now marked V6-decides.
+- **Spine share of converting sessions is 13.2%** (449 of 3,401 row-sessions) — the funnel
+  weakness confirmed on the new site: one hub page + thin provider-bio tail (McCarty 29,
+  Salar 27, Maslak 20, Varghese 14), with `/conditions/*` pages effectively absent from
+  converting entries.
+- **GBP location listings are a real converting channel** (location-listing campaigns:
+  MKOLI 192+ sessions etc.) — local-listing hygiene belongs in the location-page work.
+- A legacy Mendelson blog post still lands converting sessions (7) — purge-list confirmation.
+- **First AI-assistant referrals appeared** (3 sessions) — the GEO channel exists; baseline it.
+
+## 8. Actions (routed per the process doc)
 
 1. Hand this analysis to **Cardinal** (paid owner): Spine Conditions campaigns
    pause/restructure; Troy campaign gap; negative list from the $38K zero-conv tail;

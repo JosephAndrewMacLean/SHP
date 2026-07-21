@@ -92,9 +92,19 @@ mislabeled URLs. Full inventory: scratchpad site map; decisions here, execution 
 
 **Canonical set (the target):**
 
+> **⚠️ HUB DIRECTION IS OPEN — V6 decides.** The July index crawl suggested
+> `/specialties/spine-back-and-neck/` as the primary hub (it parents the procedure children).
+> But the **GA4 post-migration export (May 21–Jul 21, "SHP - New Site")** shows converting
+> sessions landing almost exclusively on the **`/specialty/` structure (1,445 sessions,
+> incl. `/specialty/spine-neck-back` 322) vs. 1 session on `/specialties/*`** — i.e., the live
+> new site operates on `/specialty/…`, and the `/specialties/…` URLs may be pre-migration
+> leftovers that Google still indexes. **Consolidate to ONE hub either way; which URL absorbs
+> which is Paul's V6 live-check call** (canonicals, redirects, which template is actually
+> served). Do not execute any 301 until V6 answers this.
+
 | Facet | Canonical home | Consolidates (301 after V6) |
 |---|---|---|
-| Hub | `/specialties/spine-back-and-neck/` | `/specialty/spine-neck-back/` + parameter/slash variants |
+| Hub | **ONE of** `/specialty/spine-neck-back/` (GA4 evidence: the live receiving page) **or** `/specialties/spine-back-and-neck/` (index evidence: parents the procedure children) — **V6 decides** | the losing twin + parameter/slash variants |
 | Conditions | `/conditions/{condition}` (the proven ranker — ganglion-cyst 261 kw) | all `/conditions-we-treat/spine-neck-back-conditions/*` twins; `/conditions/lumbar-stenosis/` → `/conditions/spinal-stenosis/`; root orphans (`/herniated-disc-microdiscectomy/`, `/degenerative-disc-disease-treatment/`) — **migrate their good copy first** (McKenzie, endoscopic, 3-T MRI) |
 | Surgical procedures | `/specialties/spine-back-and-neck/{procedure}` (keeps the hub's cluster) | `/treatment/` surgical twins (laminectomy, microdiscectomy, fusion, SI fusion) |
 | Injections / interventional | `/treatment/{injection}` (caudal-esi already ranks) | `/specialties/pain-management/` twins |
@@ -109,8 +119,9 @@ mislabeled URLs. Full inventory: scratchpad site map; decisions here, execution 
 **Job:** the front door for all three intents; orients by **symptom or diagnosis** (the site is
 currently built only for the already-diagnosed — zero symptom-named URLs sitewide); routes
 everything; carries the differentiation story that exists nowhere today.
-**URL:** `/specialties/spine-back-and-neck/` — **UPDATE** (rebuild in place; keep the URL, it
-already parents the surgical children).
+**URL:** the winning hub URL per the §2 V6 decision (GA4 evidence favors
+`/specialty/spine-neck-back/`; the diagram uses the hub as a concept, not a fixed URL) —
+**UPDATE** (rebuild in place on whichever URL V6 confirms as live).
 
 ```mermaid
 flowchart TD
