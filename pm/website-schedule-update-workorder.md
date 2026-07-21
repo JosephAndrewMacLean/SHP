@@ -1,142 +1,131 @@
 # Website Update Work Order — Clinic & ASC Schedule Redesign (7/13/2026 file)
 
-**Source:** `ASC_and_Clinci_Redesign_7132026_002.xlsx` (sheets: Proposed · Proposed July 2026 ·
-Current · Open Questions). Effective **July 1** for most changes; **Dr. Heil starts Sept 1**.
-**Owner:** Joe · **Build:** Paul (templates/modules) + Randall (page edits)
-**Status: DRAFT — publish-ready rows gated on Katie/Kelly confirmation (the scheduling blast +
-Orthoplex update per the 7/21 meeting); VERIFY rows blocked on the sheet's own open flags.**
+**Source:** `ASC_and_Clinci_Redesign_7132026_002.xlsx` (Proposed · Proposed July 2026 · Current ·
+Open Questions). Effective **July 1**; **Dr. Heil Sept 1**.
+**Owner:** Joe · **Build:** Paul (modules) + Randall (page edits)
+**Status: DRAFT — publish gated on Katie/Kelly confirmation (scheduling blast + Orthoplex update);
+VERIFY rows blocked on the sheet's own open flags (§6).**
 
-## 0. Publish rules (apply to every page)
+## 0. Publish rules (every page)
 
-1. **Publish DAYS + LOCATIONS, never hours.** Hour-level detail goes stale fastest and creates
-   over-promise risk; "Mondays and Thursdays in Troy — call to confirm today's schedule" is
-   durable and honest.
-2. **Never publish OR/hospital days** (SYN = Synergy Surgery Center, GEN = Genesys, HOSPITAL)
-   as availability — they are not patient-bookable clinic time. Surgeon pages say "surgery
-   days vary; clinic days below."
-3. **Collapse Week 1/Week 2 complexity.** Patients don't parse alternating weeks. If a day
-   alternates, say "select [day]s — call to confirm" or omit it.
-4. **Every schedule claim is sourced to this file + confirmation date** and carries a
-   "last updated" note in the CMS (not necessarily on-page).
-5. Anything in §4 VERIFY-FIRST does not publish until its flag clears.
+1. **Days + locations only — never hours** ("Mondays and Thursdays in Troy — call to confirm").
+2. **Never publish OR/hospital days** (SYN/GEN/HOSPITAL are not bookable clinic time).
+   Surgeon pages say "surgery days vary; clinic days below."
+3. **Collapse Week 1/Week 2** → "select [day]s" or omit.
+4. Every schedule claim carries a source + last-confirmed date in the CMS.
+5. §6 VERIFY items do not publish until cleared.
 
-## 1. The headline: Troy just became real (update the Troy page FIRST)
+---
 
-Weekly Troy clinic coverage in the redesign:
+## 1. PAGE-TYPE MAP — which page types carry schedule info, and what each adds
+
+| Page type | Carries schedule? | What it shows | What's NEW because of this file |
+|---|---|---|---|
+| **LOCATION** | **YES — the primary home.** One reusable "specialists here, by day" module per clinic (single data source feeds all 8) | Provider × specialty × days table; walk-in/urgent note | **Troy spine module** (the headline, §2); Livonia **"EMG & injection days"** block; Port Huron **"visiting specialists" cadence module** (monthly/1st-3rd patterns); Southfield podiatry-density story; scrub removed days |
+| **PROVIDER** | **YES — secondary.** "Clinic days & locations" module on every bio | Days-only line per location + "surgery days vary" | **Zamorano page CREATE** (Troy anchor — resolves half of V5); **Heil launch page** (build Aug, publish on confirmed schedule); Munk staleness fix; Yacisen geography fix; remove Mayo Thu-SH and McCarty Fri-Livonia wherever implied |
+| **HUB** (spine; ortho later) | **Access messaging only — no rosters** | "Spine clinics **Monday–Friday** across metro Detroit" (new, true post-redesign); team-module cards get **location chips** (Zamorano→Troy, Varghese→SH, Maslak→Liv/SH…) | The Friday-coverage claim (ops' open question, now answered); Troy added to the hub's locations band |
+| **TREATMENT** | **Selective.** Only procedure-logistics pages | "Where this is done" module: office vs. ASC; EMG/injection **days by location** (days only) | `/treatment/emg` gets real "EMG days: Livonia Fri AM, Sterling Heights Mon AM…" content; injection pages get "procedure days at Livonia/SH"; ketamine mention only with clinical sign-off |
+| **CONDITION** | **NO.** Evergreen — schedules would rot here | "Who treats this" mini-team links to provider/location pages (which carry the days) | Nothing schedule-specific; add "spine care in Troy/SH/Livonia" links in the who-treats module |
+| **LEARNING HUB / GUIDE** | **NO.** | Guides' what-to-expect may say "first visits often available within the week" (Katie/Kelly-approved wording only) | No direct updates |
+| **GBP listings** (surface, not page) | **YES — mirror.** Each clinic's GBP mirrors its location module | Provider listings, services, hours consistency | Troy GBP gets the spine services + providers; this channel already converts (~375+ sessions) |
+
+**Net-new content this file creates (beyond edits):**
+1. Troy spine module + Troy paid-LP variant (supply for the missing Troy campaign — hand to Cardinal).
+2. Zamorano provider page (CREATE — she has none/conflicting; Troy anchor is her content spine).
+3. Heil launch package (bio + Troy/pain modules + sports-pain angle) — prep in August, hold for §6.
+4. "EMG & nerve testing" and "injection day" logistics content (Livonia/SH) on the relevant treatment + location pages.
+5. **Home-visit podiatry callout** (Dr. F. Leff) — a real differentiator nobody markets; Southfield page + his bio.
+6. Port Huron "visiting specialists" module pattern (cadence-based: "Dr. Munk monthly · Dr. Kassa 1st & 3rd Thursdays").
+7. The **schedule data source** itself: Paul builds location/provider modules reading one dataset so the next redesign is a data edit, not 30 page edits.
+
+**Coverage gap to flag:** the file only schedules SH, Livonia, Southfield, Port Huron, Troy
+(+ ASC/hospitals). The other advertised clinics (e.g., Rochester) have no physician rows —
+confirm whether they're PT/MRI-only sites and make their location pages say what's actually
+there (a wrong "orthopedic clinic" promise at an unstaffed site is an access complaint factory).
+
+---
+
+## 2. The headline: Troy is now real (update FIRST — location page + GBP + hub chip)
 
 | Provider | Specialty | Troy days (publishable form) |
 |---|---|---|
-| **Dr. Zamorano** | Spine/neurosurgery | **Mondays + Thursdays** (9–5) — the Troy spine anchor |
-| **Dr. Salar** | Spine | Wednesday mornings (alt. weeks → "select Wednesdays") |
-| **Dr. Munk** | Spine (SI/iFuse) | **Wednesday afternoons (every week)** |
-| **Dr. Mayo** | Ortho/sports | Tuesday afternoons (every week) |
-| **Dr. Sorensen** | Podiatry | Wednesdays (midday/PM) |
-| **Dr. Heil** (Sept 1) | Pain/sports-pain | Wednesdays (pending §4 verify) |
+| **Dr. Zamorano** | Spine/neurosurgery | **Mondays + Thursdays** (Thu pending §6) |
+| **Dr. Salar** | Spine | Select Wednesday mornings |
+| **Dr. Munk** | Spine (SI) | **Wednesday afternoons — every week** |
+| **Dr. Mayo** | Ortho/sports | Tuesday afternoons |
+| **Dr. Sorensen** | Podiatry | Wednesdays |
+| **Dr. Heil** (Sept 1) | Pain | Wednesdays (pending §6) |
 
-**Spine is now in Troy four days a week (Mon, Wed AM+PM, Thu).** This unblocks the whole
-Troy program: the Troy location page gets a real spine module ("Spine specialists in Troy —
-Monday through Thursday"), the semantic model's Troy location build (model §3.2) gets its
-content, and the paid-analysis finding "no Troy campaign exists" now has supply to advertise.
-**Do this page first.**
+**Spine in Troy Mon–Thu.** Troy location page, Troy GBP, hub locations band, and the Cardinal
+campaign brief all update from this one table.
 
-## 2. Provider-page updates (publishable rows)
+## 3. PROVIDER-page rows (publishable)
 
-Legend: SH = Sterling Heights · Liv = Livonia · SF = Southfield · PH = Port Huron.
-"Publish as" = the days/locations line for the bio + location pages.
+SH = Sterling Heights · Liv = Livonia · SF = Southfield · PH = Port Huron.
 
-### Spine
-| Provider | Publish as | What changed vs. current site risk |
-|---|---|---|
-| Dr. Zamorano | Troy — Mon + Thu | Crawl found her SHP page conflicting/absent (V5). **This is her content anchor: build/fix the page around Troy** |
-| Dr. Salar | Livonia, Sterling Heights; Troy select Wed AMs | Adds Troy to his page (his bio = #1 page; add, don't disturb) |
-| Dr. Munk | Sterling Heights Wed AM + Troy Wed PM; Fri SH (10–1); PH monthly (wks 2&4 Tue) | **Fixes the stale "Port Huron starting Aug 12" copy** — he's SH/Troy-primary now, PH monthly. Update his misfiled hub-child page too |
-| Dr. Varghese | Livonia Tue; Sterling Heights Wed + **Fri** | **Adds Friday clinic (SH)** — new. (Sheet note: "Lost HOSPITAL (SMMH/S-choice)" — omit hospital refs) |
-| Dr. Maslak | Sterling Heights Mon; Livonia Wed + **Fri AM** (+ Thu alt. wks) | **Adds Friday Livonia clinic** — new |
-| Dr. McCarty | Livonia Mon + Tue (alt.); Sterling Heights Wed (added) + Thu; SF select Weds | Adds Livonia Mon + SH Wed clinics; **Fridays become surgery days — remove any Friday-clinic implication** |
+**Spine:** Zamorano — Troy Mon (+Thu pending) · Salar — Liv, SH; Troy select Wed AM · Munk —
+SH Wed AM + Fri, **Troy Wed PM**, PH monthly · Varghese — Liv Tue; SH Wed + **Fri (new)** ·
+Maslak — SH Mon; Liv Wed + **Fri AM (new)** (+ Thu alt.) · McCarty — Liv Mon/Tue; SH Wed
+(added)/Thu; SF select Wed; **no Friday clinic (now surgery day — scrub any implication)**.
 
-**The Friday answer:** ops' open question was "want a spine physician on a Friday" — the
-redesign answers it: **Maslak Fri AM (Livonia) + Varghese Fri (SH) + Munk Fri (SH)**. The
-spine hub and location pages may now say spine clinics run **Monday through Friday** across
-the network. (Access-promise sign-off: Katie/Kelly.)
+**Ortho:** D. Mendelson — SH Mon/Wed; Liv Thu · J. Mendelson — SH Tue/Thu; Liv select Wed ·
+S. Mendelson — SH Mon (+Thu alt.); Liv Tue/Thu alt.; Fri admin · A. Mendelson — Liv Mon/Thu ·
+Bhullar — Liv Tue/Fri (+Mon alt.); SF Wed; SH select Thu · Mayo — Liv Mon; **Troy Tue PM**;
+SH/Liv Fri alt.; **Thu SH clinic removed** · Yacisen — SH Wed (alt.) + Fri; PH Wed (alt.) +
+Thu (**fixes the Saginaw/Midland bio error**) · Yakasin — PH Mon/Wed.
 
-### Ortho / Sports
-| Provider | Publish as | Notes |
-|---|---|---|
-| Dr. David Mendelson | SH Mon + Wed; Livonia Thu | — |
-| Dr. Jeffrey Mendelson | SH Tue + Thu; Livonia select Weds | — |
-| Dr. Stephen Mendelson | SH Mon (+ Thu alt.); Livonia Tue/Thu (alt.) | Fri = admin, not clinic |
-| Dr. Alice Mendelson | Livonia Mon + Thu | — |
-| Dr. Bhullar | Livonia Tue/Fri (+ Mon alt.); SF Wed; SH select Thu | SF Wednesdays = real Southfield ortho presence |
-| Dr. Mayo | Livonia Mon; Troy Tue PM; SH or Livonia Fri (alt.) | **Thu SH clinic removed (now surgery day)** — pull it wherever listed |
-| Dr. Yacisen | SH Wed (alt.) + Fri; PH Wed (alt.) + Thu | **Fixes the bio's Saginaw/Midland error (V5): he's SH + Port Huron (+ Harbor Beach outreach)** |
-| Dr. Yakasin ("Jerry") | PH Mon + Wed | Port Huron ortho anchor |
+**Hand/Pod:** Bohm — Liv Mon PM + Fri AM (+Wed AM alt.); SH Tue (§6 flag) · Klein — SH Mon;
+"Livonia most days — call" until §6 clears · R. Leff — SF Mon–Wed + Fri · F. Leff — SF Tue;
+**home visits** (+ SH select Fri) · Green — SF Wed/Fri (+ select days §6) · Sorensen — SF
+Mon/Thu; **Troy Wed**.
 
-### Hand / Podiatry / Pain
-| Provider | Publish as | Notes |
-|---|---|---|
-| Dr. Bohm | Livonia Mon PM + Fri AM (+ Wed AM alt.); SH Tue | Pending "talk to Kyle" flag → §4 |
-| Dr. Klein | SH Mon (+ Thu PM alt.); Livonia Tue/Wed/Thu/Fri variants | Multiple "add Liv" cells + "discuss with Klein" → publish SH Mon + "Livonia most days — call" until confirmed |
-| Dr. R. Leff | SF Mon–Wed + Fri; Thu AM surgery | Slightly less SF clinic than before — keep "SF five days" claim OFF |
-| Dr. F. Leff | SF Tue (+ SH select Fri); home visits otherwise | "Home visits" is a differentiator — say it |
-| Dr. Green | SF Wed + Fri; Livonia/SH select days | "Move to Tue/Thu" note → §4 for the select days |
-| Dr. Sorensen | SF Mon + Thu; Troy Wed | — |
-| Dr. Kassa | SH Mon + Tue (+ Thu alt.); PH select Thu (1st/3rd); Livonia Fri AM (EMG) | — |
-| Dr. Lee | SF Mon; Livonia Wed + Fri | — |
-| Dr. Oddo | SH Mon + Thu; Livonia Tue (+ Wed alt.) | — |
-| Dr. Singh | Livonia Mon/Wed (+ Tue alt.); SH select Tue | Ketamine clinic mention only w/ clinical sign-off |
-| Dr. Heil | — hold — | §4: three conflicting schedule versions; starts Sept 1 |
-| Dr. Abood (PCP) | Livonia Mon (+ Thu most wks); SH Tue + Wed; SF select Thu; PH occasional | — |
+**Pain:** Kassa — SH Mon/Tue (+Thu alt.); PH 1st & 3rd Thu; Liv Fri AM EMG · Lee — SF Mon;
+Liv Wed/Fri · Oddo — SH Mon/Thu; Liv Tue (+Wed alt.) · Singh — Liv Mon/Wed (+Tue alt.); SH
+select Tue · Heil — **hold (§6)** · Abood (PCP) — Liv Mon (+Thu most); SH Tue/Wed; SF select
+Thu; PH occasional.
 
-## 3. Location-page updates (roster modules)
+**The Friday answer:** Maslak Fri AM (Liv) + Varghese Fri (SH) + Munk Fri (SH) → spine runs
+**Monday–Friday** networkwide. Hub + location access messaging may say so after Katie/Kelly
+sign-off (ops' own open question: "Want a spine physician on a Friday").
 
-Per location, the "specialists here, by day" module (days only):
+## 4. LOCATION-page modules (days-only rosters)
 
-- **Troy:** §1 table — the new flagship module.
-- **Sterling Heights:** deep bench daily; spine = Varghese (Wed/Fri), Maslak (Mon), Munk
-  (Wed AM/Fri), McCarty (Wed/Thu), Salar (Tue); plus ortho/hand/pain rows above.
-- **Livonia:** spine = Salar (Mon), McCarty (Mon/Tue), Maslak (Wed/Fri AM), Varghese (Tue);
-  pain heavy (Oddo/Singh/Lee); note Livonia hosts the EMG + procedure days (patient-facing:
-  "EMG and injection appointments in Livonia").
-- **Southfield:** McCarty select Weds (spine); Bhullar Wed (ortho); Lee Mon (pain);
-  podiatry-dense (R. Leff, Green, Sorensen, F. Leff). Fixes the near-empty Southfield story.
-- **Port Huron:** Yakasin Mon + Wed; Yacisen Wed (alt.) + Thu; Kassa select Thu; Munk monthly;
-  Abood occasional. **Replace the stale Munk-centric Port Huron copy.**
-- **Hyperlocal implication:** Troy's bench strengthens the D3 case for Clawson/Rochester-area
-  city pages once Joel's counts land.
-
-## 4. VERIFY-FIRST (the sheet's own open flags — do not publish)
-
-| Item | Flag in the file | Resolver |
-|---|---|---|
-| **Dr. Heil's week** | Three conflicting versions (spine sheet: Mon Troy… · pain section: Mon SH/Wed Troy · current: "ASC?/T/L?") + **name spelling "Heyl" vs meeting's "Heil"** | Katie/Kelly + credentialing before ANY publish (Sept 1 anyway) |
-| Zamorano Thu | "Needs to be moved" note + Wk2 Thu SYN row | Katie — publish Mon now, Thu after confirmation |
-| Zamorano 1st Monday | "1st Monday of the month block time @ hospital, Clinic on Tuesday" | Say "most Mondays" or note the exception |
-| Bohm Wed/Thu | "Lets talk to Kyle" + "Should one of these be Genesys" | Katie/Kyle |
-| Klein Livonia adds | "add Liv half day back on" / "Lets discuss with Klien" | Katie/Klein |
-| R. Leff Thursday | "Lets discuss with Randy" | Katie |
-| Green select days | "need to move to Tuesday or Thursday" | Katie |
-| McCarty Wk1 layout | "flipping SAM wed/thur week 1 would resolve top 2 issues" — may still flip | Katie/Mitch — publish the stable days (Liv Mon/Tue, SH Thu), hold Wed until settled |
-| Salar Wk2 Monday | "HOSPITAL/ SYN" ambiguity | Immaterial if hours aren't published (Mon = Livonia wk1 only → "select Mondays") |
+- **Troy:** §2 table — flagship.
+- **Sterling Heights:** spine daily (Varghese Wed/Fri · Maslak Mon · Munk Wed AM/Fri ·
+  McCarty Wed/Thu · Salar Tue) + ortho/hand/pain rows.
+- **Livonia:** spine Salar Mon · McCarty Mon/Tue · Maslak Wed/Fri AM · Varghese Tue; pain-heavy
+  (Oddo/Singh/Lee); **"EMG & injection appointments" block** (EMG: Kassa Fri AM, Belen select
+  days; procedure days Singh/Heil).
+- **Southfield:** McCarty select Wed (spine) · Bhullar Wed (ortho) · Lee Mon (pain) ·
+  podiatry-dense (R. Leff, Green, Sorensen, F. Leff) + home-visits callout.
+- **Port Huron:** Yakasin Mon/Wed · Yacisen Wed alt./Thu · Kassa 1st & 3rd Thu · Munk monthly ·
+  Abood occasional — **visiting-specialists module; replace stale Munk-centric copy.**
+- Other clinics (Rochester etc.): confirm services (see coverage gap, §1) before any roster claim.
 
 ## 5. Execution sequence
 
-1. **Confirm gate:** Katie's org-wide scheduling blast + Adam's Orthoplex update = the
-   go-signal per the 7/21 meeting. Send Katie this work order's §2/§3 tables for a
-   line-item yes/no (15 minutes).
-2. Paul builds the reusable **"providers at this location, by day" module** (one template,
-   eight pages) + the bio-page "clinic days" module — both consume a single
-   schedule-data source so the next redesign is a data edit, not a page edit.
-3. Randall executes page edits in publish-rule form (days only) — Troy first, then Munk/PH
-   staleness fixes, then the rest of §2/§3.
-4. **Register/email updates:** Mitch email item 4 (clinic rosters) is now "confirm my
-   extraction" not "tell me" — attach §2/§3. Register items A8 → answered-pending-confirm;
-   V5 partially resolved (Yacisen geography, Munk locations, Zamorano Troy anchor).
-5. Re-check within a week of the Katie blast for the §4 items that settle.
+1. Katie line-item confirm of §2–§4 (15 min) — go-signal = her blast + Orthoplex update.
+2. Paul: the single-source schedule modules (location + provider variants).
+3. Randall: Troy → Munk/PH staleness → Yacisen fix → the rest; GBP mirrors last.
+4. Mitch email item 4 = confirm-extraction (already updated); register A8 answered-pending-
+   confirm; V5 partially resolved (Yacisen, Munk, Zamorano-Troy).
+5. Re-check §6 items within a week of the blast.
 
-## 6. Marketing follow-ons this unlocks (not part of the page edits)
+## 6. VERIFY-FIRST (the sheet's own open flags — no publish)
 
-- Troy campaign supply now exists (paid finding: "no Troy campaign") — hand §1 to Cardinal.
-- "Spine clinics Monday–Friday" access message (post Katie/Kelly sign-off).
-- Zamorano's rebuilt page (V5) writes itself around the Troy anchor + neurosurgical spine.
-- Heil launch package (Sept 1): bio + Troy/pain modules + the sports-division angle from the
-  7/21 meeting — prep in August, publish on a confirmed schedule only.
+| Item | Flag | Resolver |
+|---|---|---|
+| **Heil's week** | 3 conflicting versions + "Heyl vs. Heil" spelling | Katie/Kelly + credentialing (Sept 1 anyway) |
+| Zamorano Thu | "Needs to be moved" + Wk2 Thu SYN row | Katie — publish Mon now |
+| Zamorano Mondays | "1st Monday of month = hospital block, clinic Tuesday" | "Most Mondays" wording |
+| Bohm Wed/Thu | "Lets talk to Kyle" / "Should one of these be Genesys" | Katie/Kyle |
+| Klein Livonia adds | "add Liv half day back on" / "discuss with Klein" | Katie/Klein |
+| R. Leff Thursday | "Lets discuss with Randy" | Katie |
+| Green select days | "need to move to Tuesday or Thursday" | Katie |
+| McCarty Wk1 Wed/Thu | "flipping SAM wed/thur would resolve top 2 issues" — may flip | Katie/Mitch — hold Wed, publish Liv Mon/Tue + SH Thu |
+
+## 7. Marketing follow-ons unlocked
+
+Troy campaign supply → Cardinal · "Spine Monday–Friday" access message (post sign-off) ·
+Zamorano page build (V5) · Heil Sept-1 launch package (sports-division angle) · home-visit
+podiatry story · EMG/injection logistics content feeding the interventional front door.
