@@ -197,7 +197,9 @@ flowchart TD
 for cities clearing the D3 first-party count gate** ("cities four and five on that list"),
 canonical self-referential (Paul), user-routed to the nearest office · migrate the Mazor X
 claim from Southfield's page to the hub (leave a local mention) · Paul's IP/geo-clustering
-tool as a future prioritization input.
+tool as a future prioritization input · **Troy altLabels include "Rochester Rd," "Rochester
+Hills," "Rochester MI" — there is no Rochester clinic; the Troy clinic is on Rochester Road
+(Joe, 7/21), so Rochester-area searches and hyperlocal candidates route to Troy.**
 
 ### 3.3 CONDITION page — example: Sciatica
 

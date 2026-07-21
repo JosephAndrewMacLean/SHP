@@ -38,10 +38,13 @@ VERIFY rows blocked on the sheet's own open flags (§6).**
 6. Port Huron "visiting specialists" module pattern (cadence-based: "Dr. Munk monthly · Dr. Kassa 1st & 3rd Thursdays").
 7. The **schedule data source** itself: Paul builds location/provider modules reading one dataset so the next redesign is a data edit, not 30 page edits.
 
-**Coverage gap to flag:** the file only schedules SH, Livonia, Southfield, Port Huron, Troy
-(+ ASC/hospitals). The other advertised clinics (e.g., Rochester) have no physician rows —
-confirm whether they're PT/MRI-only sites and make their location pages say what's actually
-there (a wrong "orthopedic clinic" promise at an unstaffed site is an access complaint factory).
+**Coverage note (corrected 7/21, per Joe):** the file schedules SH, Livonia, Southfield,
+Port Huron, Troy (+ ASC/hospitals). **There is NO Rochester location — the Troy clinic is on
+Rochester Road.** Any site/GBP/directory content implying a separate "Rochester" clinic is
+wrong and must be corrected to Troy. The naming is an SEO asset, not a gap: "Rochester Rd,"
+"Rochester Hills," and "Rochester MI" searches are served by Troy — add them as Troy-page
+altLabels and hyperlocal candidates routing to Troy. If any other advertised location lacks
+physician rows here, confirm whether it's PT/MRI-only before its page claims a clinic roster.
 
 ---
 
@@ -100,7 +103,8 @@ sign-off (ops' own open question: "Want a spine physician on a Friday").
   podiatry-dense (R. Leff, Green, Sorensen, F. Leff) + home-visits callout.
 - **Port Huron:** Yakasin Mon/Wed · Yacisen Wed alt./Thu · Kassa 1st & 3rd Thu · Munk monthly ·
   Abood occasional — **visiting-specialists module; replace stale Munk-centric copy.**
-- Other clinics (Rochester etc.): confirm services (see coverage gap, §1) before any roster claim.
+- No separate Rochester page/listing exists or should exist — Troy (on Rochester Road) serves
+  that geography; add Rochester/Rochester Hills language to the Troy page + GBP (see §1 note).
 
 ## 5. Execution sequence
 

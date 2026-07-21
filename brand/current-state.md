@@ -8,9 +8,11 @@
 
 - **Integrated orthopedic + spine practice** in **metro Detroit, Michigan** — "everything
   under one roof," same-week access, coordinated care. Website: **synergyhealth.org** (WordPress + Rank Math PRO).
-- **8 locations**, notably Livonia, Sterling Heights, Southfield, Troy, Rochester. Each clinic
+- **8 locations**, notably Livonia, Sterling Heights, Southfield, Troy, Port Huron. Each clinic
   effectively owns its county (61–73% of patients local) — this is a **location-specific
-  business, not a metro brand**.
+  business, not a metro brand**. *(Corrected 7/21/2026, per Joe: earlier notes listed
+  "Rochester" as a location — **there is no Rochester clinic; the Troy clinic is on Rochester
+  Road.** Treat Rochester/Rochester Hills as Troy-served geography.)*
 - **~42 physicians** (MD/DO/DPM) + ~38 allied-health providers. Provider content is already
   indexed and strong (Providers section = 182,107 impressions).
 - **Rebrand in progress from "Mendelson Orthopaedic" (Mendelson Kornblum)** to Synergy —
