@@ -60,7 +60,7 @@ Initiative numbers reference `spine-semantic-model.md` §5.
 | Wed 7/23 | **Cage match:** V3 (T-Lift real name, via McCarty), V4 (SI-fusion ownership: Varghese tryout vs. Munk/iFuse), V5 (medical-director attribution, Zamorano page, Munk/Yacisen locations) put to Mitch | Joe + Mitch |
 | Wed–Thu | **V6:** live canonical/redirect check across all duplicate pairs · plugin migrated to the practice Claude account (inside Santosh's governance) | Paul |
 | Fri 7/25 | **Triage meeting (Katie + Mitch + Kelly):** buzzword list v1 (the 2023/24 Oddo workflows — "radiculopathy… there's two or three") → seed of the consumer-language map | Katie/Mitch/Kelly, Joe observes |
-| All week | **Baselines cut and filed:** GSC non-branded spine (impressions/clicks/CTR, brand terms filtered incl. Mendelson/Kornblum misspellings), rankings for the 6 condition canons, Liine spine call quality, scorecard snapshot · Maslak hour booked · Randall: spine gap-analysis pass #1 (titles/metas only) | Joe / Randall |
+| All week | **Baselines cut and filed:** GSC non-branded spine (impressions/clicks/CTR, brand terms filtered incl. Mendelson/Kornblum misspellings), rankings for the 6 condition canons, Liine spine call quality, scorecard snapshot · Maslak hour booked · Randall: spine gap-analysis pass #1 (titles/metas only) · **All baselines use post-migration windows only (site migrated Apr 22; prefer Jun 1–Jul 19, post-Liine)** — paid baseline: `pm/spine-paid-search-analysis-jan-jul2026.md` (re-export month-segmented) | Joe / Randall |
 
 ### W1 · Jul 28–Aug 10 — Pilot + plumbing
 - **The endoscopic page is the pilot that times the gate chain:** Maslak hour → outline →
