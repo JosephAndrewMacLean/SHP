@@ -53,6 +53,10 @@ that the referral pathways between pages match how you actually want patients ro
 **You can skip Parts B and C entirely** — that's URL plumbing and work tracking. Your parts:
 this page, the A3 diagrams (do the arrows match clinical reality?), and Part D (routing).
 
+**The best way to review:** open `pm/mitch-review-packet.md` — it walks you through seven
+live pages on the site (one per page type), what each will become, and the 14 questions only
+you can answer. ~25 minutes, clickable, margin notes welcome.
+
 ---
 
 # PART A — THE MODEL

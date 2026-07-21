@@ -59,6 +59,11 @@ about 20 minutes on the agenda.
 
 Items 1–4 alone unblock three pages. Item 5 unblocks basically everything else.
 
+P.S. — If you'd rather react to real pages than a document: I built a 25-minute click-through
+of seven live pages on our site (one per page type — including where the endoscopic story is
+currently buried and the knee guide we're copying for spine) with 14 questions only you can
+answer. I'll bring it Wednesday, or send it ahead if you want a head start.
+
 Thanks — Joe
 
 ---
