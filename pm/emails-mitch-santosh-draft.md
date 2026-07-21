@@ -24,7 +24,9 @@ about 20 minutes on the agenda.
    history fit into that page?
 3. Who's officially Medical Director of Spine? Our site copy conflicts (Salar vs. Zamorano).
    Also: Munk's and Yacisen's actual current locations.
-4. Which spine physicians sit at which clinics, on which days? Troy matters most to me first.
+4. I've extracted the clinic rosters from the 7/13 ASC & Clinic Redesign sheet
+   (`pm/website-schedule-update-workorder.md`) — can you confirm my extraction is right,
+   especially the Troy lineup (Zamorano Mon+Thu, Salar select Wed AMs, Munk Wed PMs)?
 
 **Two decisions (no homework, just calls):**
 
