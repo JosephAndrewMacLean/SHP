@@ -106,6 +106,7 @@ observed constraint: deep 1:1 Santosh time is scarce. So:
 | D5 | Call-center triage tags + Liine call data | Kelly + Paul | Weekly | Whether routing content is producing *qualified* calls; known bug: Liine↔Zocdoc booked-online signal not reaching Google Ads (Joe + Paul tracking) |
 | D6 | Weekly Spine Scorecard (activity / output / efficiency) | Joe + Joel Carr | Weekly | The 4-week OODA review of every published change |
 | D7 | Payer/coverage reality (accepted plans by provider) | Sarah's team + Mitch Phase 3 | On change | Insurance-clarity modules; **Medicaid varies by provider — never a flat "no"** (`brand/current-state.md`) |
+| D8 | **Rater8 reviews/testimonials** (review source of record) | Joe + compliance screen | Per release | All patient-voiced content: testimonials, review modules, trust-strip counts — each passes the Rater8 quality screen (authentic · typical · consented for reuse · correctly attributed · no superlatives) before publish; see the register §9 Lane D |
 
 **Verification queue (claims that block work until verified):**
 

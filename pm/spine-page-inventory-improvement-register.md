@@ -127,22 +127,79 @@ the surgeon modules; CODE outcomes when publishable (V2 substitute).
 | Parameter-URL index pollution (`?y_source=`, GMBSocialClimb, `{ignore}?scct=`) | Crawl + Ads | Paul (canonicals/param handling) — part of V6 |
 | E-E-A-T apparatus sitewide | Crawl (zero markers) | Content pipeline + Mitch's reviewer roster |
 
-## 9. How Mitch helps (consolidated ask list)
+## 9. The clinical-input list, PRIORITIZED (four lanes + Cardinal weighting)
 
-1. **This week:** V3 (T-Lift real name) · V4 (SI-fusion ownership) · V5 (Zamorano page,
-   medical-director attribution, Munk/Yacisen locations) · Friday triage buzzword list.
-2. **Reviewer roster:** one named physician reviewer per condition/treatment/guide page — the
-   E-E-A-T engine. His Cage Match cadence (Wed) is the review batch slot.
-3. **Candidacy criteria** as CCM Plus matures (~mid-Sept): the "is this right for me?" blocks
-   on treatment pages and guides come from his surgical-criteria layer.
-4. **Surgeon matching matrix** (deformity/revision → Maslak; SI → per V4; motion preservation →
-   Salar; fusion-avoidance → Lee; complex/robotic → McCarty) — gates the team module + matching guide.
-5. **Broker the physician hours:** Maslak (endoscopic), Varghese (SI/sports), McCarty (T-Lift).
-6. **Ancillary routing content (his other hat):** the "I need an MRI first" paid bucket, the
-   converting MRI-facts post, and imaging/injection scheduling integration = ancillary-services
-   content he owns clinically — "bring your MRI / we can order imaging" modules, imaging
-   what-to-expect, 3-T MRI positioning.
-7. **Red-flag standardization** — one clinically approved escalation block, used everywhere.
+### Lane A — Mitch can likely answer fast (this week; from his head or one conversation)
+
+| # | Ask | Why fast | Unblocks |
+|---|---|---|---|
+| A1 | **V3:** real name/description of the "T-Lift / bone bag" procedure | One question to McCarty | T-Lift page build |
+| A2 | **V4:** SI-fusion ownership (Varghese tryout vs. Munk/iFuse legacy) | He knows the practice patterns | SI-fusion page + surgeon module |
+| A3 | **V5 (partial):** medical-director attribution; Munk/Yacisen true locations | Org knowledge | Team module accuracy |
+| A4 | **Triage buzzword list** — pull the 2023/24 Oddo/Kelly workflows ("two or three words") | Friday meeting already set; artifact exists | Symptom router + call-center sync |
+| A5 | **Reviewer roster:** name one physician reviewer per condition/treatment/guide | A decision, not a build | The entire E-E-A-T lane (P2) |
+| A6 | **Red-flag block sign-off** (standardize the stenosis page's bladder/bowel pattern) | Pattern already exists on-site | Every condition page + symptom router |
+| A7 | Validate the consumer-language ↔ condition map (batch review) | Wed cage-match batch | altLabel/routing layer |
+| A8 | Which spine physicians sit at each clinic + days | Scheduling knowledge | Location spine modules, Troy first |
+| A9 | Intro emails brokering the three physician hours (Maslak/Varghese/McCarty) | Two-line emails with Gautam's mandate | Lane B interviews |
+| A10 | Imaging-routing wording ("bring your MRI / we can order imaging if you need it") | His ancillary domain | The MRI-first bucket module on every LP |
+
+### Lane B — Takes time (build- or politics-dependent; weeks, not days)
+
+| # | Item | Clock | Notes |
+|---|---|---|---|
+| B1 | Candidacy criteria blocks ("is this right for me?") | CCM Plus ~8 wks (mid-Sept) | Don't hand-write ahead of the tool; interim = physician-reviewed general indications |
+| B2 | Surgeon matching matrix formalized + routing-ops sign-off | Weeks; **politically sensitive** (Salar redirection is a leadership call) | Gates team module + "which surgeon" guide — ship team module with neutral labels first if needed |
+| B3 | The three physician interview hours + their content review cycles | Physician calendars | The differentiation pages themselves |
+| B4 | Salar coaching outcome → Arabic/Farsi pages | 3-month window (~Oct) | Hard gate; no spend before |
+| B5 | Zamorano page resolution | Depends on her engagement + V5 attribution outcome | Politically loaded (equipment history); do last in provider QA |
+| B6 | Insurance-clarity / Turning Point-derived content | Phase 3 is "never done" | Publish plan-acceptance basics now (D7); deep coverage content follows the tool |
+| B7 | Ongoing per-page clinical review throughput | Standing Wed batches | The pilot times it; escalate if the batch overflows |
+
+### Lane C — Needs data before it can ship (CODE surveys / Joel Carr pulls)
+
+| # | Item | Data needed | Rule |
+|---|---|---|---|
+| C1 | **Every outcome stat** (replacing the V2 removals: 90%×2, 92%, 89%, 91%, 3-of-4/8-of-10) | CODE PRO surveys with n + instrument + date, or peer-reviewed citation | No number publishes without its source displayed |
+| C2 | "96% recommend" + "90% timely scheduling" trust-strip claims | Name the instrument (CODE? Rater8? survey vintage) | Source it or drop it from the hub hero |
+| C3 | Differentiation proof points (Mazor X, endoscopic recovery claims) | CODE/literature | Capability claims OK meanwhile ("first in Michigan" needs its own verification), outcome claims wait |
+| C4 | Recovery-timeline ranges on treatment pages | Clinically validated ranges (Mitch) ± CODE | Ranges, not promises |
+| C5 | Condition-page priority weighting | **V1** (the "98%" claim) + D1 NP volumes — Joel Carr | Build all six regardless; weight effort only after data |
+| C6 | Hyperlocal city list | **D3** first-party city counts — Joel Carr | Zero city pages before the threshold list |
+
+### Lane D — Needs Rater8 testimonial/review quality screen (trust + validity)
+
+Rater8 is the review source of record; nothing patient-voiced ships without this screen:
+**(a)** authentic + current, **(b)** typical result (no outlier-outcome implication — FTC),
+**(c)** documented consent for marketing reuse beyond the review platform (HIPAA),
+**(d)** accurate attribution (right physician, right practice era), **(e)** no superlative/
+superiority framing ("best spine surgeon in the Midwest" cannot run as-is).
+
+| # | Item | Screen focus |
+|---|---|---|
+| D1 | Surgical testimonials for treatment/differentiation pages (the 7/21 plan: "leverage surgical testimonials from our reviews") | a–e; match testimonial to the actual procedure |
+| D2 | Provider-page review modules (ratings + quotes) | a, d, e; volume + recency per surgeon |
+| D3 | The **Kornblum-credited robotic-spine testimonial** currently live | Re-attribute or replace (rebrand + attribution) |
+| D4 | Patient-story videos (in production) | Consent chain BEFORE edit lock; typicality framing |
+| D5 | Hub trust strip review counts | Only if Rater8 is the named source |
+
+### Cardinal-audit weighting (what to do first, per confirmed findings)
+
+| Priority | Work | Cardinal finding it clears | Lanes it draws on |
+|---|---|---|---|
+| **P0 — risk now** | V2 substantiation sweep: unsourced stats + superlative testimonial down/replaced | Substantiation/FTC risk (confirmed live on 7+ URLs) | C1, D3, D5 |
+| **P1 — the unlock** | URL consolidation + canonicals (V6 → 301 map) | 4-to-6 parallel structures; condition hubs built but strangled (their own 90-day work depends on it) | A2 (SI URLs), Paul |
+| **P2** | E-E-A-T apparatus on every clinical page | YMYL failure — zero "medically reviewed" markers (also feeds their AIO workstream) | A5, A6, B7 |
+| **P3** | Symptom-entry layer (hub router + condition openings + pinched-nerve entry) | "Built for the already-diagnosed" — zero symptom URLs sitewide | A4, A6, A7 |
+| **P4** | Decision/guide layer (6 guides) | Zero decision-support pages (knee page = proof) | A5, B1 interim, C4 |
+| **P5** | Differentiation aggregation + the two NEW procedure pages | "Spine has no differentiation" (partially contradicted — exists but scattered) | A1, A2, A9→B3, C3, D1 |
+| **P6** | Team module + provider QA (dedupe, Zamorano, matching) | Providers strong but no choosing journey; broken filters | A3, B2, B5, D2 |
+| **P7** | Location/GBP + hyperlocal | GEO targeting gaps (no Troy) | A8, C6 |
+| **P8** | Learning-hub refresh + purge | Dated content + rebrand remnants | A5, D3 |
+
+**Reading:** P0 is compliance exposure and needs no new content — do it immediately. P1 is the
+multiplier for everything Cardinal already built. P2–P4 are the patient-facing gap-closers and
+run on Lane A answers. P5–P8 ride behind the interviews, data, and Rater8 screens.
 
 ## 10. How Santosh helps (consolidated ask list)
 
