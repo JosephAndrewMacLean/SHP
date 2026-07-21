@@ -11,6 +11,7 @@ context** — see `content-update-workflow.md`.
 | `spine-content-cluster-map.md` | The strategy: spine cluster architecture, primary-URL decisions (§4 + §4a correction), hyperlocal plan (real clinics only — decided), new content clusters (revision patients, ACDR), ortho guardrails, roadmap |
 | `quick-wins-title-meta.md` | Wave 1 implementation: 25 title/meta rewrites, drafts pending human review |
 | `randall-execution-plan.md` | Randall's week-by-week execution checklist (starts Jul 22) — quick wins first, spine always in front |
+| `medical-review-guide.md` | Physician review process: the 3-question review, accuracy checklist, expertise-boost contributions, SLA, attestation, queue |
 | `content-update-workflow.md` | The operating process: batches, change log, monthly GSC loop, roles, what we never do |
 | `change-log.md` | Every shipped batch, dated — mirrors GSC annotations |
 | `data/2026-07-21/` | Raw GSC classic-web export (Web, last 16 months) |
