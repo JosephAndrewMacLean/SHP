@@ -12,7 +12,9 @@
 > counts, visit→appt lag, stamped cadence and next action. Companion files:
 > `pm/spine-referral-company-outcomes.csv` (the 385-company referral ledger),
 > `pm/sean-prospects-DATA.csv`, `pm/pl-route-days.csv` (85 built route days).
-> **Read the mined insights + this week's actions in `pm/spine-pl-account-insights.md`.**
+> **Read the mined insights + this week's actions in `pm/spine-pl-account-insights.md`, and the
+> week-by-week field calendar (Jul 22 → Oct 2) in `pm/spine-pl-weekly-visit-plan.md` /
+> `pm/pl-weekly-visit-schedule.csv`.**
 > `pm/spine-target-accounts-DATA.csv` (1,975 accounts) remains the wider prospecting universe only.
 
 ## 0. Account universe — corrected picture (Jul 21)

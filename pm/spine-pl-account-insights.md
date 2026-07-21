@@ -14,6 +14,7 @@ targeting), ATTR-B.3 (B2B split evidence), SP-B.2 (scorecard inputs).
 | `pm/spine-referral-company-outcomes.csv` | The **referral ledger**: all 385 MMC companies deterministically matched to 2026 B2B patients (1,287 patients, 391 spine) |
 | `pm/sean-prospects-DATA.csv` | Sean's 253-account overlay: 40 priority-routed, 102 route pool, 107 hold, 4 ownership reviews |
 | `pm/pl-route-days.csv` | All **85 built route days** (10 stops max): 18 Kristen · 31 Jasmine · 32 Coty · 4 Sean |
+| `pm/spine-pl-weekly-visit-plan.md` + `pm/pl-weekly-visit-schedule.csv` | **The week-by-week field calendar (added Jul 21):** Jul 22 → Oct 2, 987 scheduled stops — protect-first, prospects mixed into every day, per-PL money lists |
 
 > **Caveats that ride with every number (from the report's own methodology):** patient counts are
 > distinct attributed PER numbers, **not confirmed kept visits**; 82.5% of referral rows matched
@@ -223,7 +224,7 @@ For `Weekly Spine Scorecard` (now in the workbook, still unfilled):
 |---|---|---|---|
 | 1 | Re-protection sweep: 32 unvisited repeat-spine + 27 quiet producers (Next Action column pre-filled) | Kristen, Jasmine, Coty | start immediately |
 | 2 | Verify Sean's June-9 activity stall (logging vs. real); cover his 40 routed priorities either way; resolve the 4 cross-owner reviews | Kristen | Jul 24 |
-| 3 | Stamp planned dates on all 85 route days, Wave-1-heavy days first | each PL | Jul 24 |
+| 3 | Stamp planned dates on all 85 route days per the weekly calendar (`pm/spine-pl-weekly-visit-plan.md`) | each PL | Jul 24 |
 | 4 | Kessia orphan pass: re-own her ~290 visited companies (the real PL-B.1) | Kristen | Jul 28 |
 | 5 | Resolve top-15 unresolved referral sources in MMC | Santosh | Jul 28 |
 | 6 | Payer-fit scoring for the 146 Tier-1 accounts | Kelly | Jul 31 |
