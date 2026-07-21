@@ -203,6 +203,10 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-07-27,W2,Kristen,Day 01,First pass,7,SHEIKH MEDICAL CENTER,Reactivate,One Spine Patient,Tier 1,Wave 2,1,2,PCP,FARMINGTON,66.0,True
 2026-07-27,W2,Kristen,Day 01,First pass,8,Henry Ford Health - Family Medicine 8 Mile Livonia,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,5,PCP,Livonia,17.0,True
 2026-07-27,W2,Kristen,Day 01,First pass,9,Triumph chiropractic,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,2,Other / Verify,Livonia,17.0,True
+2026-07-27,W2,Kristen,Day 04 (pull-fwd),Protect overlay,0,MedPro Primary Care,Protect (LAPSED),Repeat Spine Referrer,Tier 1,Wave 1,2,4,Urgent Care,Madison Heights,31.0,True
+2026-07-27,W2,Kristen,Day 04 (pull-fwd),Protect overlay,0,Metro Medical Practice,Protect (LAPSED),Repeat Spine Referrer,Tier 1,Wave 1,2,3,PCP,Troy,59.0,True
+2026-07-27,W2,Kristen,Day 04 (pull-fwd),Protect overlay,0,Oakland Family Practice,Protect (LAPSED),Repeat Spine Referrer,Tier 1,Wave 1,2,17,PCP,Warren,31.0,True
+2026-07-27,W2,Kristen,Day 06 (pull-fwd),Protect overlay,0,Lifetime Family Care,Protect (LAPSED),Repeat Spine Referrer,Tier 1,Wave 1,3,3,PCP,Madison Heights,31.0,True
 2026-07-27,W2,Kristen,Day 07,First pass,1,DMC Orthopedics - Commerce Township,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,3,Orthopedic,,9.0,True
 2026-07-27,W2,Kristen,Day 07,First pass,10,DMC PRIMARY AND SPECIALTY CARE WEST BLOOMFIELD,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,6,PCP,WEST BLOOMFIELD,70.0,False
 2026-07-27,W2,Kristen,Day 07,First pass,2,Commerce Internal Medicine,Other cross-sell,Other Patient Referrer,Tier 3,Wave 2,0,1,PCP,Commerce Charter Township,51.0,True
@@ -233,6 +237,8 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-07-27,W2,Kristen,Day 10,First pass,7,Mark Sisson Law,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,1,Attorney / Legal,Bingham Farms,8.0,True
 2026-07-27,W2,Kristen,Day 10,First pass,8,"MEDICAL CENTER PEDIATRICS, PLLC",Other cross-sell,Other Patient Referrer,Tier 3,Wave 2,0,1,Pediatrics,BINGHAM FARMS,8.0,True
 2026-07-27,W2,Kristen,Day 10,First pass,9,ROSE MEDICINE,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,BINGHAM FARMS,8.0,True
+2026-07-27,W2,Kristen,Day 12 (pull-fwd),Protect overlay,0,GARDEN CITY FAMILY PHYSICIANS,Protect (LAPSED),Repeat Spine Referrer,Tier 1,Wave 1,3,6,PCP,GARDEN CITY,41.0,True
+2026-07-27,W2,Kristen,Day 14 (pull-fwd),Protect overlay,0,Medical Clinic of Northville,Protect (LAPSED),Repeat Spine Referrer,Tier 1,Wave 1,2,18,PCP,Northville,42.0,True
 2026-07-27,W2,Sean,Day 01,First pass,1,Toma & Yaldo Medical Center,Ortho cross-sell,Ortho Referrer,Tier 2,Core Sterling / Macomb Lane,0,1,PCP,Sterling Heights,120.0,True
 2026-07-27,W2,Sean,Day 01,First pass,10,Academic Internal Medicine (Ascension),Other cross-sell,Other Patient Referrer,Tier 3,Outside Sean Focus – Review,0,1,PCP,Washington,121.0,True
 2026-07-27,W2,Sean,Day 01,First pass,2,Michigan Primary Care - Sterling Heights,Reactivate,One Spine Patient,Tier 1,Core Sterling / Macomb Lane,1,1,PCP,Sterling Heights,42.0,True
@@ -342,7 +348,7 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-08-03,W3,Kristen,Day 05,Producer revisit,6,Park Medical Centers,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,12,PCP,Livonia,16.0,False
 2026-08-03,W3,Kristen,Day 06,First pass,1,Kids First Pediatrics,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,1,Other / Verify,Hazel Park,65.0,True
 2026-08-03,W3,Kristen,Day 06,First pass,10,SOUTHFIELD MEDICAL CLINIC AND PREMIER URGENT CARE AND WALK IN CLINIC,Reactivate,One Spine Patient,Tier 1,Wave 2,1,1,Urgent Care,SOUTHFIELD,45.0,True
-2026-08-03,W3,Kristen,Day 06,First pass,2,Lifetime Family Care,Protect (LAPSED),Repeat Spine Referrer,Tier 1,Wave 1,3,3,PCP,Madison Heights,31.0,True
+2026-08-03,W3,Kristen,Day 06,First pass,2,Lifetime Family Care,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,3,PCP,Madison Heights,31.0,False
 2026-08-03,W3,Kristen,Day 06,First pass,3,Corewell Urgent Care - Royal Oak,Other cross-sell,Other Patient Referrer,Tier 3,Wave 2,0,1,Urgent Care,Royal Oak,56.0,True
 2026-08-03,W3,Kristen,Day 06,First pass,4,Ross Gilders Law,Reactivate,One Spine Patient,Tier 1,Wave 2,1,3,Attorney / Legal,Royal Oak,105.0,True
 2026-08-03,W3,Kristen,Day 06,First pass,5,Superior Family Medicine - Health Venters Detroit -use this onea,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,2,PCP,Southfield,49.0,True
@@ -448,10 +454,10 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-08-10,W4,Kristen,Day 04,First pass,10,BASEL BRIKHO MEDICAL GROUP - use this one,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,1,PCP,STERLING HEIGHTS,41.0,True
 2026-08-10,W4,Kristen,Day 04,First pass,2,Troy Internal Medicine,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,1,PCP,Troy,62.0,True
 2026-08-10,W4,Kristen,Day 04,First pass,3,Clawson Internists,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,Clawson,1.0,True
-2026-08-10,W4,Kristen,Day 04,First pass,4,MedPro Primary Care,Protect (LAPSED),Repeat Spine Referrer,Tier 1,Wave 1,2,4,Urgent Care,Madison Heights,31.0,True
-2026-08-10,W4,Kristen,Day 04,First pass,5,Oakland Family Practice,Protect (LAPSED),Repeat Spine Referrer,Tier 1,Wave 1,2,17,PCP,Warren,31.0,True
+2026-08-10,W4,Kristen,Day 04,First pass,4,MedPro Primary Care,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,4,Urgent Care,Madison Heights,31.0,False
+2026-08-10,W4,Kristen,Day 04,First pass,5,Oakland Family Practice,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,17,PCP,Warren,31.0,False
 2026-08-10,W4,Kristen,Day 04,First pass,6,Sterling Family Medicine,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,2,PCP,Warren,3.0,True
-2026-08-10,W4,Kristen,Day 04,First pass,7,Metro Medical Practice,Protect (LAPSED),Repeat Spine Referrer,Tier 1,Wave 1,2,3,PCP,Troy,59.0,True
+2026-08-10,W4,Kristen,Day 04,First pass,7,Metro Medical Practice,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,3,PCP,Troy,59.0,False
 2026-08-10,W4,Kristen,Day 04,First pass,8,Purdy Chiropractic Center,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,1,Chiropractor,Sterling Heights,28.0,True
 2026-08-10,W4,Kristen,Day 04,First pass,9,Plumbrook Medical Center,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,1,PCP,Sterling Heights,24.0,True
 2026-08-10,W4,Kristen,Day 07,Producer revisit,1,DMC Orthopedics - Commerce Township,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,3,Orthopedic,,9.0,False
@@ -488,18 +494,11 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-08-17,W5,Coty,Day 02,Producer revisit,9,Community First Health Centers - New Haven,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,1,PCP,New Haven,16.0,False
 2026-08-17,W5,Coty,Day 04,Producer revisit,10,Be Well Medical Center,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,17,PCP,Berkley,86.0,False
 2026-08-17,W5,Coty,Day 04,Producer revisit,5,Preferred Medical Group,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,2,Orthopedic,Madison Heights,22.0,False
-2026-08-17,W5,Coty,Day 07,First pass,1,Henry Ford Macomb Orthopedic Surgery - Washington,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Washington,365.0,True
-2026-08-17,W5,Coty,Day 07,First pass,10,Macomb Family Medical Center,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,MACOMB,16.0,True
-2026-08-17,W5,Coty,Day 07,First pass,2,Gregory Gould DO,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,Washington,70.0,True
-2026-08-17,W5,Coty,Day 07,First pass,3,Alliance Washington Township,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,Washington,70.0,True
-2026-08-17,W5,Coty,Day 07,First pass,4,Washington Family Medicine,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,Shelby Township,70.0,True
-2026-08-17,W5,Coty,Day 07,First pass,5,Partners in Family Medicine,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,Shelby Township,57.0,True
-2026-08-17,W5,Coty,Day 07,First pass,6,Neuro Pain Consultants - Shelby,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Pain,,9.0,True
-2026-08-17,W5,Coty,Day 07,First pass,7,Get Well Urgent Care of Shelby,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Urgent Care,Shelby Township,9.0,True
-2026-08-17,W5,Coty,Day 07,First pass,8,Stonebridge Orthopedics,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Shelby Township,9.0,True
-2026-08-17,W5,Coty,Day 07,First pass,9,Schoenherr Family Practice,Protect,Repeat Spine Referrer,Tier 1,Wave 1,6,8,PCP,Shelby Township,9.0,True
 2026-08-17,W5,Coty,Day 11,Producer revisit,5,Oak Street Health - Eastgate,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,Roseville,140.0,False
 2026-08-17,W5,Coty,Day 11,Producer revisit,6,Oakland Primary Care,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,6,PCP,Warren,28.0,False
+2026-08-17,W5,Coty,Day 13·sweep,Producer sweep,3,Brighton Internal Medicine,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,1,PCP,Howell,0.0,True
+2026-08-17,W5,Coty,Day 15·sweep,Producer sweep,5,Premier Private Physicians,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,1,PCP,Troy,3.0,True
+2026-08-17,W5,Coty,Day 16·sweep,Producer sweep,7,Office of Josephine A. Iskander MD,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,1,PCP,Sterling Heights,3.0,True
 2026-08-17,W5,Coty,Day 17,Producer revisit,3,Epic Healthcare - Southfield,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,SOUTHFIELD,133.0,False
 2026-08-17,W5,Coty,Day 17,Producer revisit,4,EPIC Southfield - Telegraph Rd office,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,4,PCP,Southfield,49.0,False
 2026-08-17,W5,Jasmine,Day 02,Producer revisit,1,OAK STREET HEALTH CHERRY HILL,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,21,PCP,INKSTER,85.0,False
@@ -522,6 +521,7 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-08-17,W5,Jasmine,Day 08,First pass,8,"Fox Run, PC(delete)",Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Pain,Novi,15.0,True
 2026-08-17,W5,Jasmine,Day 08,First pass,9,DMC SPORTS MEDICINE NOVI,Protect,Repeat Spine Referrer,Tier 1,Wave 1,7,7,Orthopedic,NOVI,22.0,True
 2026-08-17,W5,Jasmine,Day 09,Producer revisit,5,NORLIVO INTERNAL MEDICINE,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,10,Orthopedic,Livonia,37.0,False
+2026-08-17,W5,Jasmine,Day 16·sweep,Producer sweep,2,"Trinity Health IHA Medical Group, Primary Care - Southeast Livonia",Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,3,PCP,Livonia,20.0,True
 2026-08-17,W5,Kristen,Day 02,Producer revisit,1,Corewell Internal Medicine Southfield,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,Southfield,50.0,False
 2026-08-17,W5,Kristen,Day 02,Producer revisit,10,Ivy Rehab - Farmington,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,3,PT,Farmington,38.0,False
 2026-08-17,W5,Kristen,Day 02,Producer revisit,2,Safir Law,Protect,Repeat Spine Referrer,Tier 1,Wave 2,2,2,Attorney / Legal,Southfield,139.0,False
@@ -540,10 +540,23 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-08-17,W5,Kristen,Day 06,Producer revisit,4,Ross Gilders Law,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,Attorney / Legal,Royal Oak,105.0,False
 2026-08-17,W5,Kristen,Day 06,Producer revisit,8,DEIGHTON FAMILY PRACTICE - use this one,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,SOUTHFIELD,48.0,False
 2026-08-17,W5,Kristen,Day 06,Producer revisit,9,Kajy Law,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,5,Attorney / Legal,Southfield,17.0,False
-2026-08-17,W5,Kristen,Day 11,Producer revisit,1,HENRY FORD MEDICAL CENTER FARMINGTON ROAD INTERNAL MEDICINE,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,WEST BLOOMFIELD,70.0,False
-2026-08-17,W5,Kristen,Day 11,Producer revisit,2,Center For Hollistic Medicine,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Other / Verify,WEST BLOOMFIELD,70.0,False
-2026-08-17,W5,Kristen,Day 11,Producer revisit,5,"MARY LEE, MD, PC",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,WEST BLOOMFIELD,70.0,False
-2026-08-17,W5,Kristen,Day 11,Producer revisit,7,Vanstone Injury Law,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,5,Attorney / Legal,,139.0,False
+2026-08-17,W5,Kristen,Day 08·sweep,Producer sweep,10,Henry Ford Health Medical Center - Seven Mile Road,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,LIVONIA,16.0,True
+2026-08-17,W5,Kristen,Day 08·sweep,Producer sweep,4,Hermann Banks MD PC,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,3,Neurology,Livonia,17.0,True
+2026-08-17,W5,Kristen,Day 08·sweep,Producer sweep,7,"AGHA INTERNAL MEDICINE AND ASSOCIATES, PC",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,LIVONIA,17.0,True
+2026-08-17,W5,Kristen,Day 08·sweep,Producer sweep,8,Brentwood Pediatric Associates,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,11,Pediatrics,Livonia,16.0,True
+2026-08-17,W5,Kristen,Day 08·sweep,Producer sweep,9,Village Medical - Livonia,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,6,PCP,Livonia,16.0,True
+2026-08-17,W5,Kristen,Day 13·sweep,Producer sweep,1,Lupo Chiropractic Center,Reactivate,One Spine Patient,Tier 1,Wave 2,1,1,Chiropractor,Roseville,73.0,True
+2026-08-17,W5,Kristen,Day 13·sweep,Producer sweep,10,Corewell Health-East,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,Warren,3.0,True
+2026-08-17,W5,Kristen,Day 13·sweep,Producer sweep,3,Henry Ford Warren Family Physicians,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,4,PCP,Warren,1.0,True
+2026-08-17,W5,Kristen,Day 13·sweep,Producer sweep,4,Northpointe Pediatrics,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,4,Pediatrics,Warren,1.0,True
+2026-08-17,W5,Kristen,Day 13·sweep,Producer sweep,5,Pulmonary & Medical Associates,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,8,PCP,Warren,3.0,True
+2026-08-17,W5,Kristen,Day 13·sweep,Producer sweep,7,"FERRIS, MARY C, MEDICAL GROUP",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,7,PCP,WARREN,3.0,True
+2026-08-17,W5,Kristen,Day 15·sweep,Producer sweep,10,Team Rehabilitation  - Washington,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PT,Washington,21.0,True
+2026-08-17,W5,Kristen,Day 15·sweep,Producer sweep,4,Swetech Medical Center,Reactivate,One Spine Patient,Tier 1,Wave 2,1,2,PCP,Clinton Township,31.0,True
+2026-08-17,W5,Kristen,Day 15·sweep,Producer sweep,8,MNP,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,11,PCP,Utica,24.0,True
+2026-08-17,W5,Kristen,Day 17·sweep,Producer sweep,1,Henry Ford Main Internal Medicine - Grosse Pointe,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,Grosse Pointe,9.0,True
+2026-08-17,W5,Kristen,Day 17·sweep,Producer sweep,6,Jefferson Family Practice (Cornerstone),Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,Grosse Pointe,9.0,True
+2026-08-17,W5,Kristen,Day 17·sweep,Producer sweep,9,"FAMILY CARE CENTER OF HAMTRAMCK, PC",Reactivate,One Spine Patient,Tier 1,Wave 2,1,4,PCP,HAMTRAMCK,58.0,True
 2026-08-17,W5,Sean,Day 02,Producer revisit,1,Ryan Medical Associates,Protect,Repeat Spine Referrer,Tier 1,Core Sterling / Macomb Lane,2,3,PCP,Warren,87.0,False
 2026-08-17,W5,Sean,Day 02,Producer revisit,10,Get Well Urgent Care - Sterling Heights,Convert to repeat,One Spine Patient,Tier 1,Core Sterling / Macomb Lane,1,2,Urgent Care,Sterling Heights,42.0,False
 2026-08-17,W5,Sean,Day 02,Producer revisit,5,Michigan Compassionate Care,Protect,Repeat Spine Referrer,Tier 1,Named Sean Priority,2,9,PCP,Warren,127.0,False
@@ -553,6 +566,16 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-08-17,W5,Sean,Day 04,Producer revisit,6,Henry Ford Medical Center - East Jefferson,Convert to repeat,One Spine Patient,Tier 1,Core Sterling / Macomb Lane,1,2,PCP,Saint Clair Shores,80.0,False
 2026-08-24,W6,Coty,Day 06,Producer revisit,10,Gratiot Family Medicine,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,Harper Woods,119.0,False
 2026-08-24,W6,Coty,Day 06,Producer revisit,4,Lakeview Medical Center,Protect,Repeat Spine Referrer,Tier 1,Wave 1,7,13,PCP,St. Clair Shores,7.0,False
+2026-08-24,W6,Coty,Day 07,First pass,1,Henry Ford Macomb Orthopedic Surgery - Washington,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Washington,365.0,True
+2026-08-24,W6,Coty,Day 07,First pass,10,Macomb Family Medical Center,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,MACOMB,16.0,True
+2026-08-24,W6,Coty,Day 07,First pass,2,Gregory Gould DO,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,Washington,70.0,True
+2026-08-24,W6,Coty,Day 07,First pass,3,Alliance Washington Township,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,Washington,70.0,True
+2026-08-24,W6,Coty,Day 07,First pass,4,Washington Family Medicine,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,Shelby Township,70.0,True
+2026-08-24,W6,Coty,Day 07,First pass,5,Partners in Family Medicine,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,Shelby Township,57.0,True
+2026-08-24,W6,Coty,Day 07,First pass,6,Neuro Pain Consultants - Shelby,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Pain,,9.0,True
+2026-08-24,W6,Coty,Day 07,First pass,7,Get Well Urgent Care of Shelby,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Urgent Care,Shelby Township,9.0,True
+2026-08-24,W6,Coty,Day 07,First pass,8,Stonebridge Orthopedics,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Shelby Township,9.0,True
+2026-08-24,W6,Coty,Day 07,First pass,9,Schoenherr Family Practice,Protect,Repeat Spine Referrer,Tier 1,Wave 1,6,8,PCP,Shelby Township,9.0,True
 2026-08-24,W6,Coty,Day 08,First pass,1,Keystone Partners - Macomb,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,Macomb,6.0,True
 2026-08-24,W6,Coty,Day 08,First pass,10,Cheryl Lerchin MD Physical Medicine & Rehabilitation,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Pain,Shelby Township,34.0,True
 2026-08-24,W6,Coty,Day 08,First pass,2,Blue Water Pain Specialists - Macomb,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Macomb,6.0,True
@@ -563,16 +586,6 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-08-24,W6,Coty,Day 08,First pass,7,Michigan Head & Spine Institute - Macomb,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Clinton Township,30.0,True
 2026-08-24,W6,Coty,Day 08,First pass,8,Movement Orthopedics,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Clinton Township,30.0,True
 2026-08-24,W6,Coty,Day 08,First pass,9,Neuro Pain Consultants - Sterling Heights,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Pain,Sterling Heights,20.0,True
-2026-08-24,W6,Coty,Day 09,First pass,1,IHA Hand Surgery - Brighton,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,BRIGHTON,440.0,True
-2026-08-24,W6,Coty,Day 09,First pass,10,North Valley Internal Medicine,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,3,PCP,Highland Charter Township,0.0,True
-2026-08-24,W6,Coty,Day 09,First pass,2,"Trinity IHA Orthopedics - Brighton,",Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Brighton,440.0,True
-2026-08-24,W6,Coty,Day 09,First pass,3,Core Institute - Brighton,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Brighton,93.0,True
-2026-08-24,W6,Coty,Day 09,First pass,4,Restorative Physical Medicine - Brighton,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Brighton,272.0,True
-2026-08-24,W6,Coty,Day 09,First pass,5,Lederman Kwartowitz - Brighton,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Brighton,155.0,True
-2026-08-24,W6,Coty,Day 09,First pass,6,Providence Family & Athletic Medicine,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Milford,0.0,True
-2026-08-24,W6,Coty,Day 09,First pass,7,Oakland Internal Medicine Associates - Henry Ford,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,2,PCP,Milford,0.0,True
-2026-08-24,W6,Coty,Day 09,First pass,8,Prime Internal Medicine (MDVIP),Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,Milford Charter Township,0.0,True
-2026-08-24,W6,Coty,Day 09,First pass,9,DMC Primary and Specialty Care - Milford,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,Milford Charter Township,0.0,True
 2026-08-24,W6,Coty,Day 12,Producer revisit,10,MEDPRO PRIMARY CARE - Waltz Rd,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,2,Pain,NEW BOSTON,149.0,False
 2026-08-24,W6,Coty,Day 18,Producer revisit,4,Rochester Medical Group,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,1,PCP,Rochester Hills,31.0,False
 2026-08-24,W6,Coty,Day 19,Producer revisit,7,Specialists in Rehabilitation Medicine,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,1,Orthopedic,Rochester,364.0,False
@@ -618,6 +631,10 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-08-24,W6,Kristen,Day 10,Producer revisit,4,Wigod & Falzon,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Attorney / Legal,Southfield,48.0,False
 2026-08-24,W6,Kristen,Day 10,Producer revisit,6,Steinberg Law Firm,Protect,Repeat Spine Referrer,Tier 1,Wave 2,2,2,Attorney / Legal,Southfield,105.0,False
 2026-08-24,W6,Kristen,Day 10,Producer revisit,9,ROSE MEDICINE,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,BINGHAM FARMS,8.0,False
+2026-08-24,W6,Kristen,Day 11,Producer revisit,1,HENRY FORD MEDICAL CENTER FARMINGTON ROAD INTERNAL MEDICINE,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,WEST BLOOMFIELD,70.0,False
+2026-08-24,W6,Kristen,Day 11,Producer revisit,2,Center For Hollistic Medicine,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Other / Verify,WEST BLOOMFIELD,70.0,False
+2026-08-24,W6,Kristen,Day 11,Producer revisit,5,"MARY LEE, MD, PC",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,WEST BLOOMFIELD,70.0,False
+2026-08-24,W6,Kristen,Day 11,Producer revisit,7,Vanstone Injury Law,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,5,Attorney / Legal,,139.0,False
 2026-08-24,W6,Sean,Day 01,Producer revisit,2,Michigan Primary Care - Sterling Heights,Convert to repeat,One Spine Patient,Tier 1,Core Sterling / Macomb Lane,1,1,PCP,Sterling Heights,42.0,False
 2026-08-24,W6,Sean,Day 01,Producer revisit,4,Associates in Family Practice,Convert to repeat,One Spine Patient,Tier 1,Named Sean Priority,1,2,PCP,Sterling Heights,41.0,False
 2026-08-24,W6,Sean,Day 01,Producer revisit,6,Schoenherr Parkway Family Practice,Convert to repeat,One Spine Patient,Tier 1,Core Sterling / Macomb Lane,1,3,PCP,Sterling Heights,78.0,False
@@ -639,7 +656,16 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-08-31,W7,Coty,Day 03,Producer revisit,6,Madison Medical Arts,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,1,PCP,Madison Heights,22.0,False
 2026-08-31,W7,Coty,Day 04,Producer revisit,10,Be Well Medical Center,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,17,PCP,Berkley,86.0,False
 2026-08-31,W7,Coty,Day 04,Producer revisit,5,Preferred Medical Group,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,2,Orthopedic,Madison Heights,22.0,False
-2026-08-31,W7,Coty,Day 07,Producer revisit,9,Schoenherr Family Practice,Protect,Repeat Spine Referrer,Tier 1,Wave 1,6,8,PCP,Shelby Township,9.0,False
+2026-08-31,W7,Coty,Day 09,First pass,1,IHA Hand Surgery - Brighton,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,BRIGHTON,440.0,True
+2026-08-31,W7,Coty,Day 09,First pass,10,North Valley Internal Medicine,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,3,PCP,Highland Charter Township,0.0,True
+2026-08-31,W7,Coty,Day 09,First pass,2,"Trinity IHA Orthopedics - Brighton,",Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Brighton,440.0,True
+2026-08-31,W7,Coty,Day 09,First pass,3,Core Institute - Brighton,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Brighton,93.0,True
+2026-08-31,W7,Coty,Day 09,First pass,4,Restorative Physical Medicine - Brighton,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Brighton,272.0,True
+2026-08-31,W7,Coty,Day 09,First pass,5,Lederman Kwartowitz - Brighton,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Brighton,155.0,True
+2026-08-31,W7,Coty,Day 09,First pass,6,Providence Family & Athletic Medicine,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Orthopedic,Milford,0.0,True
+2026-08-31,W7,Coty,Day 09,First pass,7,Oakland Internal Medicine Associates - Henry Ford,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,2,PCP,Milford,0.0,True
+2026-08-31,W7,Coty,Day 09,First pass,8,Prime Internal Medicine (MDVIP),Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,Milford Charter Township,0.0,True
+2026-08-31,W7,Coty,Day 09,First pass,9,DMC Primary and Specialty Care - Milford,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,Milford Charter Township,0.0,True
 2026-08-31,W7,Coty,Day 11,Producer revisit,5,Oak Street Health - Eastgate,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,Roseville,140.0,False
 2026-08-31,W7,Coty,Day 11,Producer revisit,6,Oakland Primary Care,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,6,PCP,Warren,28.0,False
 2026-08-31,W7,Coty,Day 20,Producer revisit,5,Cornerstone Internal Medicine,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,Macomb,308.0,False
@@ -685,10 +711,16 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-08-31,W7,Kristen,Day 06,Producer revisit,4,Ross Gilders Law,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,Attorney / Legal,Royal Oak,105.0,False
 2026-08-31,W7,Kristen,Day 06,Producer revisit,8,DEIGHTON FAMILY PRACTICE - use this one,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,SOUTHFIELD,48.0,False
 2026-08-31,W7,Kristen,Day 06,Producer revisit,9,Kajy Law,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,5,Attorney / Legal,Southfield,17.0,False
-2026-08-31,W7,Kristen,Day 11,Producer revisit,1,HENRY FORD MEDICAL CENTER FARMINGTON ROAD INTERNAL MEDICINE,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,WEST BLOOMFIELD,70.0,False
-2026-08-31,W7,Kristen,Day 11,Producer revisit,2,Center For Hollistic Medicine,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Other / Verify,WEST BLOOMFIELD,70.0,False
-2026-08-31,W7,Kristen,Day 11,Producer revisit,5,"MARY LEE, MD, PC",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,WEST BLOOMFIELD,70.0,False
-2026-08-31,W7,Kristen,Day 11,Producer revisit,7,Vanstone Injury Law,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,5,Attorney / Legal,,139.0,False
+2026-08-31,W7,Kristen,Day 16,First pass,1,Blue Water Internal Medicine PC,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,2,PCP,Port Huron,30.0,True
+2026-08-31,W7,Kristen,Day 16,First pass,10,Patrick Kut MD PC,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,4,PCP,Marysville,72.0,True
+2026-08-31,W7,Kristen,Day 16,First pass,2,Internal Medicine Associates Port Huron,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,2,PCP,Port Huron,21.0,True
+2026-08-31,W7,Kristen,Day 16,First pass,3,John Mullally MD PC,Reactivate,One Spine Patient,Tier 1,Wave 2,1,2,PCP,Port Huron,30.0,True
+2026-08-31,W7,Kristen,Day 16,First pass,4,Michigan Neurology and Spine Center,Reactivate,One Spine Patient,Tier 1,Wave 2,1,1,Pain,Port Huron,30.0,True
+2026-08-31,W7,Kristen,Day 16,First pass,5,Mitchell Medical Center,Reactivate,One Spine Patient,Tier 1,Wave 2,1,8,PCP,Port Huron,30.0,True
+2026-08-31,W7,Kristen,Day 16,First pass,6,Huron Family Practice Center,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,Port Huron,21.0,True
+2026-08-31,W7,Kristen,Day 16,First pass,7,Physician HeathCare Network - Michele Raymond DO,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,3,PCP,Port Huron,30.0,True
+2026-08-31,W7,Kristen,Day 16,First pass,8,Port Huron Medicine Associates,Reactivate,One Spine Patient,Tier 1,Wave 2,1,6,PCP,Port Huron,30.0,True
+2026-08-31,W7,Kristen,Day 16,First pass,9,Blue Water Urgent Care,Reactivate,One Spine Patient,Tier 1,Wave 2,1,1,Urgent Care,Marysville,72.0,True
 2026-08-31,W7,Sean,Day 02,Producer revisit,1,Ryan Medical Associates,Protect,Repeat Spine Referrer,Tier 1,Core Sterling / Macomb Lane,2,3,PCP,Warren,87.0,False
 2026-08-31,W7,Sean,Day 02,Producer revisit,10,Get Well Urgent Care - Sterling Heights,Convert to repeat,One Spine Patient,Tier 1,Core Sterling / Macomb Lane,1,2,Urgent Care,Sterling Heights,42.0,False
 2026-08-31,W7,Sean,Day 02,Producer revisit,5,Michigan Compassionate Care,Protect,Repeat Spine Referrer,Tier 1,Named Sean Priority,2,9,PCP,Warren,127.0,False
@@ -709,9 +741,12 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-09-07,W8,Coty,Day 05,First pass,9,Shores Internal Medicine,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,1,PCP,Saint Clair Shores,21.0,True
 2026-09-07,W8,Coty,Day 06,Producer revisit,10,Gratiot Family Medicine,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,Harper Woods,119.0,False
 2026-09-07,W8,Coty,Day 06,Producer revisit,4,Lakeview Medical Center,Protect,Repeat Spine Referrer,Tier 1,Wave 1,7,13,PCP,St. Clair Shores,7.0,False
+2026-09-07,W8,Coty,Day 07,Producer revisit,9,Schoenherr Family Practice,Protect,Repeat Spine Referrer,Tier 1,Wave 1,6,8,PCP,Shelby Township,9.0,False
 2026-09-07,W8,Coty,Day 08,Producer revisit,5,Office of George Nassif MD,Protect,Repeat Spine Referrer,Tier 1,Wave 1,4,4,PCP,Clinton Township,28.0,False
-2026-09-07,W8,Coty,Day 09,Producer revisit,10,North Valley Internal Medicine,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,3,PCP,Highland Charter Township,0.0,False
 2026-09-07,W8,Coty,Day 12,Producer revisit,10,MEDPRO PRIMARY CARE - Waltz Rd,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,2,Pain,NEW BOSTON,149.0,False
+2026-09-07,W8,Coty,Day 13·sweep,Producer sweep,3,Brighton Internal Medicine,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,1,PCP,Howell,0.0,False
+2026-09-07,W8,Coty,Day 15·sweep,Producer sweep,5,Premier Private Physicians,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,1,PCP,Troy,3.0,False
+2026-09-07,W8,Coty,Day 16·sweep,Producer sweep,7,Office of Josephine A. Iskander MD,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,1,PCP,Sterling Heights,3.0,False
 2026-09-07,W8,Coty,Day 17,Producer revisit,3,Epic Healthcare - Southfield,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,SOUTHFIELD,133.0,False
 2026-09-07,W8,Coty,Day 17,Producer revisit,4,EPIC Southfield - Telegraph Rd office,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,4,PCP,Southfield,49.0,False
 2026-09-07,W8,Jasmine,Day 01,Producer revisit,10,Comprehensive Healthcare Associates and Prevention Medicine,Protect,Repeat Spine Referrer,Tier 1,Wave 1,6,24,PCP,Livonia,7.0,False
@@ -733,6 +768,7 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-09-07,W8,Jasmine,Day 15,First pass,7,"IHA, Primary Care - Cherry Hill Village",Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,2,PCP,Canton,44.0,True
 2026-09-07,W8,Jasmine,Day 15,First pass,8,Partners in Internal Medicine,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,Canton,14.0,True
 2026-09-07,W8,Jasmine,Day 15,First pass,9,"PONDURI, KAVITHA, MEDICAL GROUP",Other cross-sell,Other Patient Referrer,Tier 3,Wave 2,0,1,PCP,Wayne,3.0,True
+2026-09-07,W8,Jasmine,Day 16·sweep,Producer sweep,2,"Trinity Health IHA Medical Group, Primary Care - Southeast Livonia",Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,3,PCP,Livonia,20.0,False
 2026-09-07,W8,Kristen,Day 01,Producer revisit,1,Mike Morse Law Firm,Protect,Repeat Spine Referrer,Tier 1,Wave 1,75,94,Attorney / Legal,Southfield,22.0,False
 2026-09-07,W8,Kristen,Day 01,Producer revisit,10,Beaumont Medical Center - Redford,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,23,PCP,Redford Charter Township,76.0,False
 2026-09-07,W8,Kristen,Day 01,Producer revisit,2,Christensen Law,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Attorney / Legal,Southfield,121.0,False
@@ -741,22 +777,33 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-09-07,W8,Kristen,Day 01,Producer revisit,6,Village Medical Farmington,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,4,PCP,Farmington,66.0,False
 2026-09-07,W8,Kristen,Day 01,Producer revisit,7,SHEIKH MEDICAL CENTER,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,FARMINGTON,66.0,False
 2026-09-07,W8,Kristen,Day 01,Producer revisit,9,Triumph chiropractic,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,2,Other / Verify,Livonia,17.0,False
-2026-09-07,W8,Kristen,Day 04,Producer revisit,4,MedPro Primary Care,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,4,Urgent Care,Madison Heights,31.0,False
-2026-09-07,W8,Kristen,Day 04,Producer revisit,5,Oakland Family Practice,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,17,PCP,Warren,31.0,False
-2026-09-07,W8,Kristen,Day 04,Producer revisit,7,Metro Medical Practice,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,3,PCP,Troy,59.0,False
 2026-09-07,W8,Kristen,Day 07,Producer revisit,1,DMC Orthopedics - Commerce Township,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,3,Orthopedic,,9.0,False
 2026-09-07,W8,Kristen,Day 07,Producer revisit,10,DMC PRIMARY AND SPECIALTY CARE WEST BLOOMFIELD,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,6,PCP,WEST BLOOMFIELD,70.0,False
 2026-09-07,W8,Kristen,Day 07,Producer revisit,3,CoreMed - Commerce,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,,51.0,False
 2026-09-07,W8,Kristen,Day 07,Producer revisit,4,IHA UNION LAKE PEDIATRICS,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Pediatrics,COMMERCE TOWNSHIP,51.0,False
 2026-09-07,W8,Kristen,Day 07,Producer revisit,5,Rodnick Chiropractic,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Chiropractor,Commerce Charter Township,51.0,False
 2026-09-07,W8,Kristen,Day 07,Producer revisit,7,"PILLAY INTERNAL MEDICINE ASSOCIATES, PLLC",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,WALLED LAKE,73.0,False
-2026-09-07,W8,Kristen,Day 09,Producer revisit,5,Victor Valentino Law,Protect,Repeat Spine Referrer,Tier 1,Wave 2,2,3,Attorney / Legal,,62.0,False
-2026-09-07,W8,Kristen,Day 09,Producer revisit,6,"TWIN LAKES MEDICAL ASSOCIATES, PC",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,BLOOMFIELD,71.0,False
-2026-09-07,W8,Kristen,Day 09,Producer revisit,8,Stonebrooke Family Physicians,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,17,PCP,Rochester Hills,36.0,False
+2026-09-07,W8,Kristen,Day 08·sweep,Producer sweep,10,Henry Ford Health Medical Center - Seven Mile Road,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,LIVONIA,16.0,False
+2026-09-07,W8,Kristen,Day 08·sweep,Producer sweep,4,Hermann Banks MD PC,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,3,Neurology,Livonia,17.0,False
+2026-09-07,W8,Kristen,Day 08·sweep,Producer sweep,7,"AGHA INTERNAL MEDICINE AND ASSOCIATES, PC",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,LIVONIA,17.0,False
+2026-09-07,W8,Kristen,Day 08·sweep,Producer sweep,8,Brentwood Pediatric Associates,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,11,Pediatrics,Livonia,16.0,False
+2026-09-07,W8,Kristen,Day 08·sweep,Producer sweep,9,Village Medical - Livonia,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,6,PCP,Livonia,16.0,False
 2026-09-07,W8,Kristen,Day 10,Producer revisit,2,Applebaum & Stone,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,7,Attorney / Legal,Southfield,122.0,False
 2026-09-07,W8,Kristen,Day 10,Producer revisit,4,Wigod & Falzon,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Attorney / Legal,Southfield,48.0,False
 2026-09-07,W8,Kristen,Day 10,Producer revisit,6,Steinberg Law Firm,Protect,Repeat Spine Referrer,Tier 1,Wave 2,2,2,Attorney / Legal,Southfield,105.0,False
 2026-09-07,W8,Kristen,Day 10,Producer revisit,9,ROSE MEDICINE,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,BINGHAM FARMS,8.0,False
+2026-09-07,W8,Kristen,Day 13·sweep,Producer sweep,1,Lupo Chiropractic Center,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Chiropractor,Roseville,73.0,False
+2026-09-07,W8,Kristen,Day 13·sweep,Producer sweep,10,Corewell Health-East,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,Warren,3.0,False
+2026-09-07,W8,Kristen,Day 13·sweep,Producer sweep,3,Henry Ford Warren Family Physicians,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,4,PCP,Warren,1.0,False
+2026-09-07,W8,Kristen,Day 13·sweep,Producer sweep,4,Northpointe Pediatrics,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,4,Pediatrics,Warren,1.0,False
+2026-09-07,W8,Kristen,Day 13·sweep,Producer sweep,5,Pulmonary & Medical Associates,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,8,PCP,Warren,3.0,False
+2026-09-07,W8,Kristen,Day 13·sweep,Producer sweep,7,"FERRIS, MARY C, MEDICAL GROUP",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,7,PCP,WARREN,3.0,False
+2026-09-07,W8,Kristen,Day 15·sweep,Producer sweep,10,Team Rehabilitation  - Washington,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PT,Washington,21.0,False
+2026-09-07,W8,Kristen,Day 15·sweep,Producer sweep,4,Swetech Medical Center,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,Clinton Township,31.0,False
+2026-09-07,W8,Kristen,Day 15·sweep,Producer sweep,8,MNP,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,11,PCP,Utica,24.0,False
+2026-09-07,W8,Kristen,Day 17·sweep,Producer sweep,1,Henry Ford Main Internal Medicine - Grosse Pointe,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,Grosse Pointe,9.0,False
+2026-09-07,W8,Kristen,Day 17·sweep,Producer sweep,6,Jefferson Family Practice (Cornerstone),Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,Grosse Pointe,9.0,False
+2026-09-07,W8,Kristen,Day 17·sweep,Producer sweep,9,"FAMILY CARE CENTER OF HAMTRAMCK, PC",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,4,PCP,HAMTRAMCK,58.0,False
 2026-09-07,W8,Sean,Day 01,Producer revisit,2,Michigan Primary Care - Sterling Heights,Convert to repeat,One Spine Patient,Tier 1,Core Sterling / Macomb Lane,1,1,PCP,Sterling Heights,42.0,False
 2026-09-07,W8,Sean,Day 01,Producer revisit,4,Associates in Family Practice,Convert to repeat,One Spine Patient,Tier 1,Named Sean Priority,1,2,PCP,Sterling Heights,41.0,False
 2026-09-07,W8,Sean,Day 01,Producer revisit,6,Schoenherr Parkway Family Practice,Convert to repeat,One Spine Patient,Tier 1,Core Sterling / Macomb Lane,1,3,PCP,Sterling Heights,78.0,False
@@ -775,7 +822,7 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-09-14,W9,Coty,Day 01,Producer revisit,7,Office of Steven Trombly MD,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,7,PCP,Sterling Heights,7.0,False
 2026-09-14,W9,Coty,Day 04,Producer revisit,10,Be Well Medical Center,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,17,PCP,Berkley,86.0,False
 2026-09-14,W9,Coty,Day 04,Producer revisit,5,Preferred Medical Group,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,2,Orthopedic,Madison Heights,22.0,False
-2026-09-14,W9,Coty,Day 07,Producer revisit,9,Schoenherr Family Practice,Protect,Repeat Spine Referrer,Tier 1,Wave 1,6,8,PCP,Shelby Township,9.0,False
+2026-09-14,W9,Coty,Day 09,Producer revisit,10,North Valley Internal Medicine,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,3,PCP,Highland Charter Township,0.0,False
 2026-09-14,W9,Coty,Day 10,First pass,1,Michigan Physicians Group - Livonia,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Pain,Livonia,27.0,True
 2026-09-14,W9,Coty,Day 10,First pass,10,Healthquest Chiropractic,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Chiropractor,Farmington Hills,8.0,True
 2026-09-14,W9,Coty,Day 10,First pass,2,Faith Internal Medicine & Urgent Care,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,10,PCP,Livonia,27.0,True
@@ -824,6 +871,9 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-09-14,W9,Kristen,Day 03,Producer revisit,5,Jian Zu MD,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,Southfield,50.0,False
 2026-09-14,W9,Kristen,Day 03,Producer revisit,6,Carson Center Specialty,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,3,PCP,SOUTHFIELD,50.0,False
 2026-09-14,W9,Kristen,Day 03,Producer revisit,9,Ross Law,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,7,Attorney / Legal,Southfield,48.0,False
+2026-09-14,W9,Kristen,Day 04,Producer revisit,4,MedPro Primary Care,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,4,Urgent Care,Madison Heights,31.0,False
+2026-09-14,W9,Kristen,Day 04,Producer revisit,5,Oakland Family Practice,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,17,PCP,Warren,31.0,False
+2026-09-14,W9,Kristen,Day 04,Producer revisit,7,Metro Medical Practice,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,3,PCP,Troy,59.0,False
 2026-09-14,W9,Kristen,Day 05,Producer revisit,1,Hesselberg Chiropractic,Protect,Repeat Spine Referrer,Tier 1,Wave 1,23,23,Chiropractor,Ypsilanti,80.0,False
 2026-09-14,W9,Kristen,Day 05,Producer revisit,6,Park Medical Centers,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,12,PCP,Livonia,16.0,False
 2026-09-14,W9,Kristen,Day 06,Producer revisit,10,SOUTHFIELD MEDICAL CLINIC AND PREMIER URGENT CARE AND WALK IN CLINIC,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Urgent Care,SOUTHFIELD,45.0,False
@@ -831,6 +881,9 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-09-14,W9,Kristen,Day 06,Producer revisit,4,Ross Gilders Law,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,Attorney / Legal,Royal Oak,105.0,False
 2026-09-14,W9,Kristen,Day 06,Producer revisit,8,DEIGHTON FAMILY PRACTICE - use this one,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,SOUTHFIELD,48.0,False
 2026-09-14,W9,Kristen,Day 06,Producer revisit,9,Kajy Law,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,5,Attorney / Legal,Southfield,17.0,False
+2026-09-14,W9,Kristen,Day 09,Producer revisit,5,Victor Valentino Law,Protect,Repeat Spine Referrer,Tier 1,Wave 2,2,3,Attorney / Legal,,62.0,False
+2026-09-14,W9,Kristen,Day 09,Producer revisit,6,"TWIN LAKES MEDICAL ASSOCIATES, PC",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,BLOOMFIELD,71.0,False
+2026-09-14,W9,Kristen,Day 09,Producer revisit,8,Stonebrooke Family Physicians,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,17,PCP,Rochester Hills,36.0,False
 2026-09-14,W9,Kristen,Day 11,Producer revisit,1,HENRY FORD MEDICAL CENTER FARMINGTON ROAD INTERNAL MEDICINE,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,WEST BLOOMFIELD,70.0,False
 2026-09-14,W9,Kristen,Day 11,Producer revisit,2,Center For Hollistic Medicine,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Other / Verify,WEST BLOOMFIELD,70.0,False
 2026-09-14,W9,Kristen,Day 11,Producer revisit,5,"MARY LEE, MD, PC",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,WEST BLOOMFIELD,70.0,False
@@ -847,8 +900,8 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-09-21,W10,Coty,Day 03,Producer revisit,6,Madison Medical Arts,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,1,PCP,Madison Heights,22.0,False
 2026-09-21,W10,Coty,Day 06,Producer revisit,10,Gratiot Family Medicine,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,Harper Woods,119.0,False
 2026-09-21,W10,Coty,Day 06,Producer revisit,4,Lakeview Medical Center,Protect,Repeat Spine Referrer,Tier 1,Wave 1,7,13,PCP,St. Clair Shores,7.0,False
+2026-09-21,W10,Coty,Day 07,Producer revisit,9,Schoenherr Family Practice,Protect,Repeat Spine Referrer,Tier 1,Wave 1,6,8,PCP,Shelby Township,9.0,False
 2026-09-21,W10,Coty,Day 08,Producer revisit,5,Office of George Nassif MD,Protect,Repeat Spine Referrer,Tier 1,Wave 1,4,4,PCP,Clinton Township,28.0,False
-2026-09-21,W10,Coty,Day 09,Producer revisit,10,North Valley Internal Medicine,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,3,PCP,Highland Charter Township,0.0,False
 2026-09-21,W10,Coty,Day 12,Producer revisit,10,MEDPRO PRIMARY CARE - Waltz Rd,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,2,Pain,NEW BOSTON,149.0,False
 2026-09-21,W10,Coty,Day 14,First pass,1,Troy Health Center,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,2,PCP,Troy,15.0,True
 2026-09-21,W10,Coty,Day 14,First pass,10,Saurabh Gupta MD,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,1,PCP,Madison Heights,426.0,True
@@ -891,22 +944,32 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-09-21,W10,Kristen,Day 01,Producer revisit,6,Village Medical Farmington,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,4,PCP,Farmington,66.0,False
 2026-09-21,W10,Kristen,Day 01,Producer revisit,7,SHEIKH MEDICAL CENTER,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,FARMINGTON,66.0,False
 2026-09-21,W10,Kristen,Day 01,Producer revisit,9,Triumph chiropractic,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,2,Other / Verify,Livonia,17.0,False
-2026-09-21,W10,Kristen,Day 04,Producer revisit,4,MedPro Primary Care,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,4,Urgent Care,Madison Heights,31.0,False
-2026-09-21,W10,Kristen,Day 04,Producer revisit,5,Oakland Family Practice,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,17,PCP,Warren,31.0,False
-2026-09-21,W10,Kristen,Day 04,Producer revisit,7,Metro Medical Practice,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,3,PCP,Troy,59.0,False
 2026-09-21,W10,Kristen,Day 07,Producer revisit,1,DMC Orthopedics - Commerce Township,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,3,Orthopedic,,9.0,False
 2026-09-21,W10,Kristen,Day 07,Producer revisit,10,DMC PRIMARY AND SPECIALTY CARE WEST BLOOMFIELD,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,6,PCP,WEST BLOOMFIELD,70.0,False
 2026-09-21,W10,Kristen,Day 07,Producer revisit,3,CoreMed - Commerce,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,,51.0,False
 2026-09-21,W10,Kristen,Day 07,Producer revisit,4,IHA UNION LAKE PEDIATRICS,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Pediatrics,COMMERCE TOWNSHIP,51.0,False
 2026-09-21,W10,Kristen,Day 07,Producer revisit,5,Rodnick Chiropractic,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Chiropractor,Commerce Charter Township,51.0,False
 2026-09-21,W10,Kristen,Day 07,Producer revisit,7,"PILLAY INTERNAL MEDICINE ASSOCIATES, PLLC",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,WALLED LAKE,73.0,False
-2026-09-21,W10,Kristen,Day 09,Producer revisit,5,Victor Valentino Law,Protect,Repeat Spine Referrer,Tier 1,Wave 2,2,3,Attorney / Legal,,62.0,False
-2026-09-21,W10,Kristen,Day 09,Producer revisit,6,"TWIN LAKES MEDICAL ASSOCIATES, PC",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,BLOOMFIELD,71.0,False
-2026-09-21,W10,Kristen,Day 09,Producer revisit,8,Stonebrooke Family Physicians,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,17,PCP,Rochester Hills,36.0,False
 2026-09-21,W10,Kristen,Day 10,Producer revisit,2,Applebaum & Stone,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,7,Attorney / Legal,Southfield,122.0,False
 2026-09-21,W10,Kristen,Day 10,Producer revisit,4,Wigod & Falzon,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Attorney / Legal,Southfield,48.0,False
 2026-09-21,W10,Kristen,Day 10,Producer revisit,6,Steinberg Law Firm,Protect,Repeat Spine Referrer,Tier 1,Wave 2,2,2,Attorney / Legal,Southfield,105.0,False
 2026-09-21,W10,Kristen,Day 10,Producer revisit,9,ROSE MEDICINE,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,BINGHAM FARMS,8.0,False
+2026-09-21,W10,Kristen,Day 14,First pass,1,Haller and Hug Internal Medicine,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,12,PCP,Farmington Hills,66.0,True
+2026-09-21,W10,Kristen,Day 14,First pass,10,Ivy Rehab - Novi,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,2,PT,Novi,45.0,True
+2026-09-21,W10,Kristen,Day 14,First pass,2,"WILLIAMS FAMILY AND SPORTS MEDICAL CENTER, PLC",Other cross-sell,Other Patient Referrer,Tier 3,Wave 2,0,1,Orthopedic,FARMINGTON,66.0,True
+2026-09-21,W10,Kristen,Day 14,First pass,3,"TONI BALLITCH TRATE, DO, PC",Reactivate,One Spine Patient,Tier 1,Wave 2,1,2,PCP,FARMINGTON HILLS,66.0,True
+2026-09-21,W10,Kristen,Day 14,First pass,4,Trinity IHA Primary Care - Schoolcraft Campus,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,3,PCP,Livonia,16.0,True
+2026-09-21,W10,Kristen,Day 14,First pass,5,Medical Clinic of Northville,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,18,PCP,Northville,42.0,False
+2026-09-21,W10,Kristen,Day 14,First pass,6,Village Medical - Northville West,Reactivate,One Spine Patient,Tier 1,Wave 2,1,1,PCP,Northville,42.0,True
+2026-09-21,W10,Kristen,Day 14,First pass,7,ASCENSION MEDICAL GROUP PROVIDENCE FAMILY AND ATHLETIC MEDICINE,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,3,PCP,NOVI,45.0,True
+2026-09-21,W10,Kristen,Day 14,First pass,8,Providence Park Pediatrics - Novi,Reactivate,One Spine Patient,Tier 1,Wave 2,1,6,Pediatrics,NOVI,45.0,True
+2026-09-21,W10,Kristen,Day 14,First pass,9,WELL BEING PEDIATRICS,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,1,Pediatrics,NOVI,45.0,True
+2026-09-21,W10,Kristen,Day 16,Producer revisit,3,John Mullally MD PC,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,Port Huron,30.0,False
+2026-09-21,W10,Kristen,Day 16,Producer revisit,4,Michigan Neurology and Spine Center,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Pain,Port Huron,30.0,False
+2026-09-21,W10,Kristen,Day 16,Producer revisit,5,Mitchell Medical Center,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,8,PCP,Port Huron,30.0,False
+2026-09-21,W10,Kristen,Day 16,Producer revisit,6,Huron Family Practice Center,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,Port Huron,21.0,False
+2026-09-21,W10,Kristen,Day 16,Producer revisit,8,Port Huron Medicine Associates,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,6,PCP,Port Huron,30.0,False
+2026-09-21,W10,Kristen,Day 16,Producer revisit,9,Blue Water Urgent Care,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Urgent Care,Marysville,72.0,False
 2026-09-21,W10,Sean,Day 01,Producer revisit,2,Michigan Primary Care - Sterling Heights,Convert to repeat,One Spine Patient,Tier 1,Core Sterling / Macomb Lane,1,1,PCP,Sterling Heights,42.0,False
 2026-09-21,W10,Sean,Day 01,Producer revisit,4,Associates in Family Practice,Convert to repeat,One Spine Patient,Tier 1,Named Sean Priority,1,2,PCP,Sterling Heights,41.0,False
 2026-09-21,W10,Sean,Day 01,Producer revisit,6,Schoenherr Parkway Family Practice,Convert to repeat,One Spine Patient,Tier 1,Core Sterling / Macomb Lane,1,3,PCP,Sterling Heights,78.0,False
@@ -930,10 +993,13 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-09-28,W11,Coty,Day 04,Producer revisit,5,Preferred Medical Group,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,2,Orthopedic,Madison Heights,22.0,False
 2026-09-28,W11,Coty,Day 05,Producer revisit,1,Henry Ford St. John Center for Wellness,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,3,PCP,Roseville,21.0,False
 2026-09-28,W11,Coty,Day 05,Producer revisit,2,Sudha Nannapaneni MD,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,1,PCP,Roseville,21.0,False
-2026-09-28,W11,Coty,Day 07,Producer revisit,9,Schoenherr Family Practice,Protect,Repeat Spine Referrer,Tier 1,Wave 1,6,8,PCP,Shelby Township,9.0,False
+2026-09-28,W11,Coty,Day 09,Producer revisit,10,North Valley Internal Medicine,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,3,PCP,Highland Charter Township,0.0,False
 2026-09-28,W11,Coty,Day 10,Producer revisit,2,Faith Internal Medicine & Urgent Care,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,10,PCP,Livonia,27.0,False
 2026-09-28,W11,Coty,Day 11,Producer revisit,5,Oak Street Health - Eastgate,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,Roseville,140.0,False
 2026-09-28,W11,Coty,Day 11,Producer revisit,6,Oakland Primary Care,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,6,PCP,Warren,28.0,False
+2026-09-28,W11,Coty,Day 13·sweep,Producer sweep,3,Brighton Internal Medicine,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,1,PCP,Howell,0.0,False
+2026-09-28,W11,Coty,Day 15·sweep,Producer sweep,5,Premier Private Physicians,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,1,PCP,Troy,3.0,False
+2026-09-28,W11,Coty,Day 16·sweep,Producer sweep,7,Office of Josephine A. Iskander MD,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,1,PCP,Sterling Heights,3.0,False
 2026-09-28,W11,Coty,Day 17,Producer revisit,3,Epic Healthcare - Southfield,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,SOUTHFIELD,133.0,False
 2026-09-28,W11,Coty,Day 17,Producer revisit,4,EPIC Southfield - Telegraph Rd office,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,4,PCP,Southfield,49.0,False
 2026-09-28,W11,Jasmine,Day 02,Producer revisit,1,OAK STREET HEALTH CHERRY HILL,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,21,PCP,INKSTER,85.0,False
@@ -949,6 +1015,7 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-09-28,W11,Jasmine,Day 09,Producer revisit,5,NORLIVO INTERNAL MEDICINE,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,10,Orthopedic,Livonia,37.0,False
 2026-09-28,W11,Jasmine,Day 10,Producer revisit,6,Premier Medicine Medical Center - Livonia,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,7,Urgent Care,Livonia,20.0,False
 2026-09-28,W11,Jasmine,Day 15,Producer revisit,6,Trinity Health IHA Medical Group Primary Care - Canton,Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,1,PCP,CANTON,1.0,False
+2026-09-28,W11,Jasmine,Day 16·sweep,Producer sweep,2,"Trinity Health IHA Medical Group, Primary Care - Southeast Livonia",Convert to repeat,One Spine Patient,Tier 1,Wave 1,1,3,PCP,Livonia,20.0,False
 2026-09-28,W11,Jasmine,Day 18,First pass,1,UofM Canton Health Center General Medicine,Ortho cross-sell,Ortho Referrer,Tier 2,Wave 2,0,1,PCP,Canton,35.0,True
 2026-09-28,W11,Jasmine,Day 18,First pass,10,BEAUMONT CHERRY HILL INTERNAL MEDICAL ASSOCIATES CANTON,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,PCP,CANTON,41.0,True
 2026-09-28,W11,Jasmine,Day 18,First pass,2,UofM Pain Management - Canton,Prospect first-touch,Visit / Prospect,Prospect,Wave 2,0,0,Pain,Canton,35.0,True
@@ -977,10 +1044,23 @@ week_start,week,pl,route_day,visit_kind,stop,account,role,band,tier,wave,spine_2
 2026-09-28,W11,Kristen,Day 06,Producer revisit,4,Ross Gilders Law,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,Attorney / Legal,Royal Oak,105.0,False
 2026-09-28,W11,Kristen,Day 06,Producer revisit,8,DEIGHTON FAMILY PRACTICE - use this one,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,SOUTHFIELD,48.0,False
 2026-09-28,W11,Kristen,Day 06,Producer revisit,9,Kajy Law,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,5,Attorney / Legal,Southfield,17.0,False
-2026-09-28,W11,Kristen,Day 11,Producer revisit,1,HENRY FORD MEDICAL CENTER FARMINGTON ROAD INTERNAL MEDICINE,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,WEST BLOOMFIELD,70.0,False
-2026-09-28,W11,Kristen,Day 11,Producer revisit,2,Center For Hollistic Medicine,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Other / Verify,WEST BLOOMFIELD,70.0,False
-2026-09-28,W11,Kristen,Day 11,Producer revisit,5,"MARY LEE, MD, PC",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,WEST BLOOMFIELD,70.0,False
-2026-09-28,W11,Kristen,Day 11,Producer revisit,7,Vanstone Injury Law,Protect,Repeat Spine Referrer,Tier 1,Wave 1,5,5,Attorney / Legal,,139.0,False
+2026-09-28,W11,Kristen,Day 08·sweep,Producer sweep,10,Henry Ford Health Medical Center - Seven Mile Road,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,LIVONIA,16.0,False
+2026-09-28,W11,Kristen,Day 08·sweep,Producer sweep,4,Hermann Banks MD PC,Protect,Repeat Spine Referrer,Tier 1,Wave 1,3,3,Neurology,Livonia,17.0,False
+2026-09-28,W11,Kristen,Day 08·sweep,Producer sweep,7,"AGHA INTERNAL MEDICINE AND ASSOCIATES, PC",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,3,PCP,LIVONIA,17.0,False
+2026-09-28,W11,Kristen,Day 08·sweep,Producer sweep,8,Brentwood Pediatric Associates,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,11,Pediatrics,Livonia,16.0,False
+2026-09-28,W11,Kristen,Day 08·sweep,Producer sweep,9,Village Medical - Livonia,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,6,PCP,Livonia,16.0,False
+2026-09-28,W11,Kristen,Day 13·sweep,Producer sweep,1,Lupo Chiropractic Center,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,Chiropractor,Roseville,73.0,False
+2026-09-28,W11,Kristen,Day 13·sweep,Producer sweep,10,Corewell Health-East,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,Warren,3.0,False
+2026-09-28,W11,Kristen,Day 13·sweep,Producer sweep,3,Henry Ford Warren Family Physicians,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,4,PCP,Warren,1.0,False
+2026-09-28,W11,Kristen,Day 13·sweep,Producer sweep,4,Northpointe Pediatrics,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,4,Pediatrics,Warren,1.0,False
+2026-09-28,W11,Kristen,Day 13·sweep,Producer sweep,5,Pulmonary & Medical Associates,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,8,PCP,Warren,3.0,False
+2026-09-28,W11,Kristen,Day 13·sweep,Producer sweep,7,"FERRIS, MARY C, MEDICAL GROUP",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,7,PCP,WARREN,3.0,False
+2026-09-28,W11,Kristen,Day 15·sweep,Producer sweep,10,Team Rehabilitation  - Washington,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PT,Washington,21.0,False
+2026-09-28,W11,Kristen,Day 15·sweep,Producer sweep,4,Swetech Medical Center,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,Clinton Township,31.0,False
+2026-09-28,W11,Kristen,Day 15·sweep,Producer sweep,8,MNP,Protect,Repeat Spine Referrer,Tier 1,Wave 1,2,11,PCP,Utica,24.0,False
+2026-09-28,W11,Kristen,Day 17·sweep,Producer sweep,1,Henry Ford Main Internal Medicine - Grosse Pointe,Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,1,PCP,Grosse Pointe,9.0,False
+2026-09-28,W11,Kristen,Day 17·sweep,Producer sweep,6,Jefferson Family Practice (Cornerstone),Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,2,PCP,Grosse Pointe,9.0,False
+2026-09-28,W11,Kristen,Day 17·sweep,Producer sweep,9,"FAMILY CARE CENTER OF HAMTRAMCK, PC",Convert to repeat,One Spine Patient,Tier 1,Wave 2,1,4,PCP,HAMTRAMCK,58.0,False
 2026-09-28,W11,Sean,Day 02,Producer revisit,1,Ryan Medical Associates,Protect,Repeat Spine Referrer,Tier 1,Core Sterling / Macomb Lane,2,3,PCP,Warren,87.0,False
 2026-09-28,W11,Sean,Day 02,Producer revisit,10,Get Well Urgent Care - Sterling Heights,Convert to repeat,One Spine Patient,Tier 1,Core Sterling / Macomb Lane,1,2,Urgent Care,Sterling Heights,42.0,False
 2026-09-28,W11,Sean,Day 02,Producer revisit,5,Michigan Compassionate Care,Protect,Repeat Spine Referrer,Tier 1,Named Sean Priority,2,9,PCP,Warren,127.0,False

@@ -2,7 +2,8 @@
 
 **Date:** 2026-07-21 · **Runs on:** the scored 808-account book + 85 built route days + Sean's 40-account overlay
 **Owners:** Kristen (lead), Jasmine, Coty, Sean (conditional) · **Ops:** Joe · **Fills tracker:** PL-A.5 (cadence live), PL-B (protect + recover), feeds SP-B.2 (scorecard)
-**The full stop-level schedule (987 scheduled visits, filter by `week` + `pl`):** **`pm/pl-weekly-visit-schedule.csv`**
+**The full stop-level schedule (1,067 scheduled visits, filter by `week` + `pl`):** **`pm/pl-weekly-visit-schedule.csv`**
+**Kristen's share pack:** `pm/kristen-share/` (field workbook + handoff note) · **MMC sync:** `pm/mmc-import/`
 
 > **What "lucrative" means here:** attributed 2026 spine patients per account (not kept-visit-confirmed),
 > weighted by lapse urgency — a proven referrer nobody has visited in 4+ weeks outranks everything,
@@ -17,19 +18,21 @@
 
 | Rule | Setting | Why |
 |---|---|---|
-| Spine-day capacity | K/J/C: **3 days W1 (short week) · 4 days W2–W4 (blitz) · 3 days W5+** · Sean: 2/2/then ~1 | Leaves ~1–2 field days/week for the ortho book (GOV-B.2: hold ortho 130–140/wk) — the full-cadence plan needs 207 visits/wk vs ~155 capacity, so this is the explicit trade |
-| Day order, first pass | Lapsed-producer spine first, then day spine total, then Wave-1 count | Protect before prospect — 30 of the 36 lapsed repeat-spine stops get their recovery visit in **W1–W2** |
+| Spine-day capacity | K: 3 days W1 · 4 W2–W4 · **3.5 W5+** · J/C: 3 W1 · 4 W2–W4 · 3 W5+ · Sean: 2/2/then ~1 | Leaves ~1–2 field days/week for the ortho book (GOV-B.2: hold ortho 130–140/wk) — the full-cadence plan needs 207 visits/wk vs ~155 capacity, so this is the explicit trade |
+| Day order, first pass | Lapsed-producer spine first, then day spine total, then Wave-1 count | Protect before prospect — **all 36 lapsed repeat-spine referrers get their recovery visit in W1–W2** (22 in W1) |
 | Revisit cycle | Day contains a repeat-spine referrer → **every 2 weeks** (producer stops only, ~2–6 stops). Proven-but-no-repeat day → every 3 weeks. Prospect-only day → once, flex re-touch only if slack | Matches Tier-1 14-day cadence where it pays; median achieved cycle in this schedule = **2.0 weeks** for all four PLs |
-| Protect overlays | Lapsed producers with ≥5 spine whose route day lands after W1 get pulled forward as single stops in W1 | Applebaum & Stone (Mar 16), Vanstone (Feb 27), DMC West Bloomfield, Stonebrooke |
+| Protect overlays | Lapsed producers ≥5 spine → single-stop pull-forwards in **W1** (Applebaum & Stone, Vanstone, DMC West Bloomfield, Stonebrooke); every remaining lapsed repeat-spine → pulled into **W2** (MedPro, Oakland Family Practice, Metro Medical, Lifetime Family Care, Garden City Family Physicians, Medical Clinic of Northville) | No proven repeat referrer waits past Jul 31 |
+| Producer sweeps | Proven stops stranded on low-value tail days get swept as mini-days every 3 weeks from W5 (Kristen: D08/D13/D15/D17 — her Wave-2 tail, 34 stops) instead of running those full 10-stop prospect days | Covers the tail's 46 spine patients without burning full days on cold geography |
 | Drop rule (OODA) | A prospect stop that produces nothing across 2 touches, or a Tier-3 account at 0 after 2 cycles → drop from rotation, backlog replaces it | Keeps the rotation earning its slots |
 
 **The mix, by design:** W1–W4 is the expansion blitz — **~183 prospect first-touches ride along** with
 the protect sweep (30–46% of stops are producers). From W5 the rotation flips to **protect-and-convert
 mode (76–87% producer stops)** because biweekly producer cycles consume the 3-day allocation.
 **Leadership dial:** keeping the 4th spine day after W4 buys ~10 more prospect first-touches/PL/week;
-at 3 days, 270 of 466 prospects get touched by Oct 2 and **196 are explicitly deferred** (they're the
-lowest-scored tail — listed at the bottom of the schedule CSV by omission; pull from backlog only when
-a rotation slot opens).
+at 3 days, 270 of 466 prospects get touched by Oct 2 and **276 accounts are explicitly deferred**
+(198 prospects · 62 ortho cross-sell · 10 other · 6 outer-geography one-spine singles — flagged
+`Backlog (Oct+)` in the MMC import file; zero repeat-spine referrers are deferred). Pull from
+backlog only when a rotation slot opens.
 
 ---
 
@@ -91,10 +94,10 @@ week-by-week detail.
 | Week | Days | Stops |
 |---|---|---|
 | W1 Jul 22 | D05·FP D02·FP D03·FP + 4 overlays | 34 |
-| W2 Jul 27 | **D01·FP (Morse)** D07·FP D10·FP D09·FP | 40 |
+| W2 Jul 27 | **D01·FP (Morse)** D07·FP D10·FP D09·FP + 6 pull-fwd repeats — her heaviest week | 46 |
 | W3 Aug 3 | D05 D02 D03·rev + D11·FP D06·FP | 33 |
 | W4 Aug 10 | D01 D07 D10 D09·rev + D04·FP | 31 |
-| W5+ | **Week A:** D05 D02 D03 D06 D11 (rev) · **Week B:** D01 D07 D10 D09 D04 (rev) — alternating | 22–24 |
+| W5+ | **Week A:** D05 D02 D03 D06 (+D11/D09/D04 rotating) · **Week B:** D01 D07 D10 D09 D04 — plus the **Wave-2 sweep block (D08/D13/D15/D17 proven stops) every 3rd week**; Port Huron D16·FP lands W7, Novi D14·FP W10 | 28–35 |
 
 **Jasmine (310 accounts, 31 days — pass runs through W11; producer cycle locks in from W3)**
 | Week | Days | Stops |
@@ -103,7 +106,7 @@ week-by-week detail.
 | W2 | D07 D11 D12 D01·FP | 40 |
 | W3 | D02 D05 D09·rev + D03 D06 D19·FP | 36 |
 | W4 | D01 D11 D12·rev + D17 D20 D21·FP | 35 |
-| W5–W11 | 5–8 producer revisits + **1 new FP day/wk** (D08→D04→D10→D15→D13→D14→D18) | 18–23 |
+| W5–W11 | 5–8 producer revisits + **1 new FP day/wk** (D08→D04→D10→D15→D13→D14→D18) + tail-proven sweeps | 18–24 |
 
 **Coty (318 accounts, 32 days — same shape as Jasmine)**
 | Week | Days | Stops |
@@ -112,7 +115,7 @@ week-by-week detail.
 | W2 | D12 D17 D06 D02·FP | 40 |
 | W3 | D01 D04·rev + D11 D18 D19·FP | 38 |
 | W4 | D06 D03 D12·rev + D20 D21 D22·FP | 36 |
-| W5–W11 | 5–8 producer revisits + ~1 new FP day/wk (D07→D08/D09→D05→D10→D14) | 17–25 |
+| W5–W11 | 5–8 producer revisits + ~1 new FP day/wk (D07→D08/D09→D05→D10→D14) + tail-proven sweeps | 18–26 |
 
 **Sean (40 routed accounts, 4 days — conditional, Coty fallback)**
 | Week | Days | Stops |
@@ -121,8 +124,10 @@ week-by-week detail.
 | W2 | D01 D04·FP | 20 |
 | W3+ | alternating producer sweeps: D02/D04 · D03/D01 | 5–10 |
 
-Deferred first-pass tail (lowest-scored prospect days, worked only if slots open): Kristen 8 ·
-Jasmine 11 · Coty 13 days (~196 prospect accounts) → October backlog or drop-list.
+Deferred first-pass tail (lowest-scored days, worked only if slots open): Kristen 6 · Jasmine 11 ·
+Coty 13 days → **276-account October backlog** (mostly prospects; their proven stops are already
+covered by the W5+ sweeps, so nothing that has produced spine is left behind except 6
+outer-geography one-spine singles).
 
 ---
 
