@@ -89,7 +89,8 @@ header{position:sticky;top:0;z-index:20;background:var(--ground);border-bottom:1
 .daydone{display:block;font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
 .daybody{border-top:1px solid var(--line);display:none}
 .day.open .daybody{display:block}
-.dayactions{display:flex;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line)}
+.dayactions{display:flex;gap:8px;padding:10px 14px 4px;flex-wrap:wrap}
+.navhint{font-size:11px;color:var(--muted);padding:0 14px 10px;border-bottom:1px solid var(--line);line-height:1.4}
 .btn{border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-weight:650;font-size:13px;background:var(--surface)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
 .btn:disabled{opacity:.45;cursor:default}
@@ -202,11 +203,23 @@ const idOf = (day, s) => day.w+"|"+day.d+"|"+s.a;
 const acc = i => DATA.accounts[i];
 const daysFor = (pl,w) => DATA.days.filter(d=>d.pl===pl && d.w===w);
 const esc = t => String(t??"").replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function addrOf(a){ return a.ad || (a.n+", "+a.c+", MI"); }
 function mapsSearch(a){ return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(a.n+", "+(a.ad||a.c)); }
-function mapsRoute(day, done){
-  const addrs = day.s.filter(s=>!done[idOf(day,s)]).map(s=>acc(s.a).ad).filter(Boolean).slice(0,10);
-  if(!addrs.length) return null;
-  return "https://www.google.com/maps/dir/"+addrs.map(encodeURIComponent).join("/");
+// Official Maps URLs API (developers.google.com/maps/documentation/urls):
+// origin omitted = current device location; dir_action=navigate = turn-by-turn.
+function mapsTrip(day, done){
+  const un = day.s.filter(s=>!done[idOf(day,s)]).map(s=>addrOf(acc(s.a))).slice(0,10);
+  if(!un.length) return null;
+  const dest = un[un.length-1];
+  const wps = un.slice(0,-1).slice(0,9);
+  let u = "https://www.google.com/maps/dir/?api=1&travelmode=driving&destination="+encodeURIComponent(dest);
+  if(wps.length) u += "&waypoints="+wps.map(encodeURIComponent).join("%7C");
+  return u;
+}
+function mapsNext(day, done){
+  const nxt = day.s.find(s=>!done[idOf(day,s)]);
+  if(!nxt) return null;
+  return "https://www.google.com/maps/dir/?api=1&travelmode=driving&dir_action=navigate&destination="+encodeURIComponent(addrOf(acc(nxt.a)));
 }
 function toast(msg){ const t=$("#toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(t._x); t._x=setTimeout(()=>t.classList.remove("show"),2200); }
 
@@ -268,9 +281,11 @@ function renderWeek(main){
       </button>
       <div class="daybody">
         <div class="dayactions">
-          <a class="btn primary" data-nav target="_blank" rel="noopener">Navigate remaining ▸</a>
+          <a class="btn primary" data-next target="_blank" rel="noopener">▶ Next stop</a>
+          <a class="btn" data-nav target="_blank" rel="noopener">Queue trip</a>
           <button class="btn" data-checkall>Mark day done</button>
         </div>
+        <div class="navhint">▶ launches turn-by-turn to your next unvisited stop. Queue trip loads all remaining stops in driving order — full 10-stop days need the Google Maps app (mobile browsers keep only the first few waypoints).</div>
         ${day.s.map(x=>{
           const a=acc(x.a); const id=idOf(day,x); const isDone=!!done[id];
           const [rl,rc]=ROLE_CHIP[x.r]||[x.r,"c-cross"];
@@ -287,7 +302,8 @@ function renderWeek(main){
                 <textarea placeholder="Field note — business only, no patient info" data-note>${esc(note)}</textarea>
                 <div class="rowactions">
                   <button class="minibtn checkin" data-check>${isDone?"Undo check-in":"Check in ✓"}</button>
-                  <a class="minibtn go" href="${mapsSearch(a)}" target="_blank" rel="noopener">Map this stop</a>
+                  <a class="minibtn go" href="https://www.google.com/maps/dir/?api=1&travelmode=driving&dir_action=navigate&destination=${encodeURIComponent(a.ad||(a.n+", "+a.c+", MI"))}" target="_blank" rel="noopener">Navigate ▸</a>
+                  <a class="minibtn" href="${mapsSearch(a)}" target="_blank" rel="noopener">Info</a>
                 </div>
               </div>
             </div>
@@ -302,8 +318,15 @@ function renderWeek(main){
   $$(".day").forEach(el=>{
     const day = days.find(d=>d.d===el.dataset.day && String(d.w)===el.dataset.w);
     $(".dayhead",el).onclick=()=>{ el.classList.toggle("open"); $(".dayhead",el).setAttribute("aria-expanded", el.classList.contains("open")); };
-    const nav = $("[data-nav]",el);
-    const refreshNav = ()=>{ const url = mapsRoute(day, store.get(state.pl).done||{}); if(url){nav.href=url; nav.removeAttribute("aria-disabled");} else {nav.removeAttribute("href"); nav.setAttribute("aria-disabled","true"); nav.textContent="All stops done ✓";} };
+    const nav = $("[data-nav]",el), nxt = $("[data-next]",el);
+    const refreshNav = ()=>{
+      const done = store.get(state.pl).done||{};
+      const tu = mapsTrip(day, done), nu = mapsNext(day, done);
+      const remaining = day.s.filter(s=>!done[idOf(day,s)]).length;
+      if(tu){ nav.href=tu; nav.textContent="Queue trip ("+remaining+")"; nav.removeAttribute("aria-disabled"); }
+      else { nav.removeAttribute("href"); nav.setAttribute("aria-disabled","true"); nav.textContent="Day complete ✓"; }
+      if(nu){ nxt.href=nu; nxt.style.display=""; } else { nxt.removeAttribute("href"); nxt.style.display="none"; }
+    };
     refreshNav();
     $("[data-checkall]",el).onclick=()=>{
       const st=store.get(state.pl); st.done=st.done||{};
