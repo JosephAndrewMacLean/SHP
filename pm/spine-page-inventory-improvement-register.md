@@ -52,7 +52,7 @@ weighting waits on **V1** (Joel Carr: verify "98% from 3–4 terms" + NP volume 
 | Herniated disc | `/conditions/herniated-disc` + root orphan `/herniated-disc-microdiscectomy/` (paid $485/conv) | Split ranking; orphan carries endoscopic copy | Migrate copy → canon + endoscopic page; 301 orphan; repoint its ads |
 | Degenerative disc disease | `/conditions/degenerative-disc-disease` + legacy LP `/degenerative-disc-disease-treatment/` (paid **$1,304/conv**, 0.96%; holds 3-T MRI copy) | Legacy LP burns paid money | Migrate 3-T MRI copy; 301; repoint ads to canon |
 | Spondylolisthesis | `/conditions/spondylolisthesis` + S3 twin | Near-zero | Consolidate; E-E-A-T; spectrum links |
-| Radiculopathy / pinched nerve | `/conditions/cervical-radiculopathy` only (clinical-term title) | Symptom-searchers can't find it | **NEW patient-language "pinched nerve" entry**; altLabel work per model §3.3 |
+| Radiculopathy / pinched nerve | `/conditions/cervical-radiculopathy` only (clinical-term title) | Symptom-searchers can't find it | **NEW patient-language "pinched nerve" entry**; altLabel work per model §A3.3 |
 | (Protect) Neck fracture / back fracture | `/conditions/neck-fracture-broken-neck` (132 kw/388 visits, #4 sitewide) + S3 twin cannibalizing | The template's proof it can rank | KEEP/protect; 301 the S3 twin into it carefully |
 
 **Mitch:** assign one physician reviewer per condition; validate red-flag wording; approve
@@ -110,8 +110,8 @@ the surgeon modules; CODE outcomes when publishable (V2 substitute).
   topic: Mitch's domain — see §9).
 - Existing decision-page proof: the knee replacement guide (root post) — the pattern for spine guides.
 - Legacy: Mendelson-era posts (one still pulls 162 visits — **redirect, don't delete**);
-  Lasater sports post (phase 2 decision); dated stock refresh per model §3.6.
-- **Missing (all NEW):** the six guides (model §3.7): Do I need spine surgery? · First spine
+  Lasater sports post (phase 2 decision); dated stock refresh per model §A3.6.
+- **Missing (all NEW):** the six guides (model §A3.7): Do I need spine surgery? · First spine
   surgery · **Failed back surgery / adjacent segment (I3b)** · Sciatica options in order ·
   Injection vs. surgery · Which spine surgeon do I need? Plus per-condition FAQ blocks.
 

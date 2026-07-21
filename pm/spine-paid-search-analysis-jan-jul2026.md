@@ -88,7 +88,7 @@ booked-call ≈ $150; NP Intent ≈ $5).
 | `/herniated-disc-microdiscectomy/` (root orphan) | $2,428 | 5.0 | $485 | 1.33% |
 
 **~$372K of paid traffic was split across the two duplicate spine hubs** — the URL consolidation
-in `spine-semantic-model.md` §2 is therefore also a **paid-efficiency play** (one hub
+in `spine-semantic-model.md` §B2 is therefore also a **paid-efficiency play** (one hub
 accumulating Quality Score + conversion history instead of two halves). Mobile speed score on
 the hubs: **6/10** (CWV work matters for paid too). Provider bios used as broad-query LPs run
 0.31–0.38% CTR at $360–539/conv — wrong page for the query; post-rebuild, "doctor near me"

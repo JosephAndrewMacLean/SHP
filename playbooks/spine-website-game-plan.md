@@ -36,7 +36,7 @@ the referral engine (Kristen — `b2b-physician-liaison-strategy.md`).
 
 ## 2. The program at a glance (initiatives → waves)
 
-Initiative numbers reference `spine-semantic-model.md` §5.
+Initiative numbers reference `spine-semantic-model.md` §C2.
 
 | Wave | Window | Ships | Initiatives |
 |---|---|---|---|
@@ -67,7 +67,7 @@ Initiative numbers reference `spine-semantic-model.md` §5.
   `content-creator` draft (Grade 6–8, template §3.4) → **Wed 7/30 cage-match clinical review**
   → compliance → Paul publishes → measurement hooks live. **Log the elapsed time of every
   gate** — this throughput number sizes everything after it.
-- `seo-specialist` consolidation plan finalized from V6 results (301 map per semantic model §2)
+- `seo-specialist` consolidation plan finalized from V6 results (301 map per semantic model §B2)
   → **shared with Cardinal before execution** (they own technical deployment; no collisions).
 - Consumer-language map v1 (triage list + GSC query language) validated by Mitch → shared to
   Kelly (scripts) and the triage-tree build (Santosh + Joe).
@@ -165,7 +165,7 @@ numbers the week baselines land, not before (no invented targets).
 | **Liine signal bug persists** | Judge on GSC + Liine call quality; paid bidding stays frozen on broken tracking (standing rule from the 90-day plan) |
 | **Gate-chain bottleneck at clinical review** | The W1 pilot times every gate; if Wed batches overflow, Mitch decides the split (delegate reviewers per condition) — surfaced at cage match, not worked around |
 | **Cardinal collision on technical work** | Consolidation plan + schema content specs handed to them before execution; they own deployment |
-| **Scope creep into sports** | Phase 2 boundary holds; sports-division concept parked in `spine-semantic-model.md` §6 |
+| **Scope creep into sports** | Phase 2 boundary holds; sports-division concept parked in `spine-semantic-model.md` §E1 |
 | **Compliance drift under speed pressure** | The gates are blocking by design; the astroturfing idea stays rejected; V2 stats stay down until substantiated |
 
 ---

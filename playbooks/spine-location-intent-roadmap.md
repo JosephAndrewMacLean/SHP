@@ -7,7 +7,7 @@ qualified spine NPs by matching user intent at the LOCATION level — the specif
 (local intent converts: "near me"/doctor terms $111–153 CPA at 12–17% vs. condition terms
 $564+), GA4 (GBP listings converting), the county reality (each clinic owns its county,
 61–73% local), and the Oakland opportunity (~4,800 obtainable ortho/spine patients/yr).
-**Companions:** semantic model §3.2 · templates §3.2 · schedule work order · game plan.
+**Companions:** semantic model §A3.2 · templates §3.2 · schedule work order · game plan.
 
 ---
 

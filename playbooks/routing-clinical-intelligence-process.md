@@ -274,7 +274,7 @@ the Maslak hour · guide #1 ("Do I need spine surgery?") outlined per the semant
 
 **Weeks 3–4:** First differentiation page (endoscopic) through the full gate chain as the
 **process pilot** — time every gate, fix the bottlenecks, then scale to SI fusion, T-Lift,
-symptom-entry layer, and the guide layer per `spine-semantic-model.md` §6 priorities.
+symptom-entry layer, and the guide layer per `spine-semantic-model.md` §C2 priorities.
 
 **Success measure (through D6):** non-branded spine impressions + clicks rising (D2), qualified
 spine calls rising (D5), consolidation losses avoided (no ranking regressions on 301'd pairs),

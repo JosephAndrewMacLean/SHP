@@ -262,7 +262,7 @@ physician author/reviewer; burying the answer.
 ### 3.7 GUIDE — e.g. `/guides/do-i-need-spine-surgery/`
 
 **Purpose/intent:** the decision-support bridge I2→I3 (and I3b). Lives under `/guides/`;
-reached mainly via condition/treatment `related` links (see `spine-semantic-model.md` §3.7).
+reached mainly via condition/treatment `related` links (see `spine-semantic-model.md` §A3.7).
 Element order:
 1. H1 as the patient's question + **honest short answer up front** ("Most people with back
    pain never need surgery. Here's how to tell which group you're in.").
@@ -332,5 +332,5 @@ Element order:
 - Template/dev changes: **Paul**. Titles/metas + plugin-guided content: **Randall** (bounded
   runway; config changes logged). Clinical/compliance gates per the process doc before any
   publish.
-- Ship order follows `spine-semantic-model.md` §5 initiatives; the endoscopic page is the
+- Ship order follows `spine-semantic-model.md` §C2 initiatives; the endoscopic page is the
   pilot that times the full gate chain.
