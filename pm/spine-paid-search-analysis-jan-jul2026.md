@@ -8,20 +8,14 @@
 "Conversions" is a **mixed bag of actions** (see §3) — treat CPA as directional, not bookings.
 **Status: internal analysis — not patient-facing.**
 
-> **⚠️ ERA SPLIT — the window straddles the Apr 22, 2026 website migration.** These exports have
-> no date column, so every number below **blends pre- and post-migration performance**: old-site
-> landing pages and URL structures before 4/22, the new site after. Consequences: (1) the
-> "two duplicate hubs" spend (§4) is likely **sequential, not concurrent** —
-> `/specialty/spine-neck-back/` (legacy taxonomy; still ranks on "mendelson kornblum" terms) was
-> presumably the pre-4/22 LP, `/specialties/spine-back-and-neck/` the post-4/22 LP; (2) blended
-> CPAs mask any post-migration shift (and June's Liine go-live changed conversion counting
-> mid-window); (3) the audit's Core Web Vitals collapse dated **~May 1** (238 Good URLs → 0) sits
-> **days after migration** — plausibly migration-caused; worth confirming with Paul/Cardinal.
-> **Fix:** re-export the same three reports **segmented by month** (or two windows: Jan 1–Apr 21
-> vs. Apr 22–Jul 19). Until then, treat §1–§4 as directional and use **post-migration windows
-> only** (ideally Jun 1–Jul 19, post-Liine) for game-plan baselines. The §2 intent pattern
-> (doctor/near-me converts; condition/injection terms don't) is consistent with the post-launch
-> Jul 13 analysis Joe already ran, so it likely survives the split — verify on the re-export.
+> **✅ ERA SPLIT RESOLVED (7/21 daily re-export) — see §8.** The original exports blended
+> pre/post-migration performance; the daily keyword export now separates them. Headlines: the
+> new site converts **materially better** (CR 6.2% → 8.7%; June 11.0%, July 11.7%), CPA is
+> flat (~$293) because clicks fell as conversion rate rose, and the intent pattern **survives
+> the split**. Caveat that remains: June's Liine go-live changed conversion counting
+> mid-window, so part of the June/July CR jump is definitional — judge trends within eras,
+> not across June. §1–§4 below stay as the blended historical record; **§8 is the operative
+> view** for baselines and decisions.
 
 ## 1. Where the spend goes (spine campaigns, reported terms)
 
@@ -190,7 +184,56 @@ usable:
 - A legacy Mendelson blog post still lands converting sessions (7) — purge-list confirmation.
 - **First AI-assistant referrals appeared** (3 sessions) — the GEO channel exists; baseline it.
 
-## 8. Actions (routed per the process doc)
+## 8. Era-split resolution + monthly insights (7/21 daily keyword export, Jan 1–Jul 19)
+
+**Total spine paid, full picture: $457,704** ($210,131 pre-migration + $247,573 post) —
+larger than either earlier export showed.
+
+### The eras
+| Era | Cost | Clicks | Conv | CPA | Conv rate |
+|---|---|---|---|---|---|
+| Pre-migration (Jan 1–Apr 21) | $210,131 | 11,521 | 710.1 | $296 | 6.2% |
+| **Post-migration (Apr 22–Jul 19)** | $247,573 | 9,728 | 848.8 | $292 | **8.7%** |
+
+**Monthly:** Jan $315 CPA/6.7% → Feb $365/4.6% → Mar $258/6.3% → Apr $315/6.0% →
+**May $407/5.4% (the migration + CWV-collapse dip)** → **Jun $258/11.0% on a near-doubled
+$107.8K budget** → Jul $238/11.7% (best CPA of the year). Reading: May was the migration
+casualty; June recovered strongly — but June is also when **Liine actions entered the
+conversion column**, so the 11% CRs are partly a measurement change. Within-era trend is
+real; the June step-change is mixed signal.
+
+### The intent pattern, confirmed post-migration (keyword-level)
+| Bucket | Cost | Conv | CPA | CR |
+|---|---|---|---|---|
+| Generic doctor ("spine doctors," "orthopedic spine surgeon") | $129,020 | 566.0 | **$228** | 11.1% |
+| Near me / local | $43,564 | 276.3 | **$158** | 14.3% |
+| Pain management | $27,338 | 112.8 | $242 | 11.4% |
+| Injection | $22,120 | 54.0 | $410 | 8.5% |
+| **Surgery keywords** ("spinal fusion," "back surgery") | **$60,656** | 88.2 | **$688** | **3.6%** |
+| Condition keywords | $3,670 | 5.0 | $734 | 1.5% |
+
+The blended-era conclusion holds and sharpens: **$60.7K post-migration went to surgical-intent
+keywords converting at 3.6%** — surgery researchers are I3 patients who need content and
+surgeon pages, not ads. The fusion family is the worst of it (spinal fusion $2,267/0 · back
+fusion $1,346/0 · neck fusion $1,163/0 · back fixation $1,146/0). Post-migration zero-conv
+waste (>$100 terms): **$17,571**.
+
+### Four new actionables (Cardinal handoff — they own paid)
+1. **Weekend dayparting:** Sat+Sun post-migration = **$40,436 at $480–505 CPA, 4.6–5.0% CR**
+   vs. Monday's $199/12.5%. Nobody answers the phone on weekends and online booking's signal
+   is broken — bid down weekends until the online-booking path + tracking are fixed, then
+   retest (the self-rescheduler data says weekend demand is real; it just can't convert today).
+2. **Winners are maxed — growth needs new coverage, not more budget:** top converters already
+   run 74–95% impression share ("spine specialist near me" at 95% IS, $115–127 CPA). The
+   headroom argument for the **Troy campaign** is now quantitative: the efficient terms have
+   no room left in existing geos.
+3. **Negative-list the fusion family + trim surgical keywords** ($60.7K at 3.6% — keep only
+   proven surgical terms like "spine surgery" SH at $305 if the qualified-call data supports it).
+4. **Southfield confirmed kill/restructure** ($1,063 CPA post-migration, 1.5% CR) vs.
+   **Port Huron quietly efficient** ($170 CPA on $4.1K — small, keep). Spine Conditions
+   campaigns: still dead post-migration ($3.3K, 4 conv) — fold into the organic condition plan.
+
+## 9. Actions (routed per the process doc)
 
 1. Hand this analysis to **Cardinal** (paid owner): Spine Conditions campaigns
    pause/restructure; Troy campaign gap; negative list from the $38K zero-conv tail;
