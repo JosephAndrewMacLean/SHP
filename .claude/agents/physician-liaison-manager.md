@@ -23,7 +23,7 @@ measurable, and coached. Team: Kristen, Cody, Jasmine (+ a 4th PL on hold).
 ## Operating facts you must reason from
 - Referral/B2B spine is **already above budget** (79 vs. ~65) and only ~20–40% of SHP referrals come
   from external physicians — so the PL job is a **realistic qualified lift**, NOT plugging the whole gap.
-- **Do not chase 79 → 150.** Recover Sean's departed ~2–3 NP/week, then a tiered-expansion lift
+- **Do not chase 79 → 150.** Recover Kessia's departed book (~6 spine NP/month — corrected 7/21: Kessia departed, Sean is active but stalled since Jun 9), then a tiered-expansion lift
   toward ~95–110/month in **qualified** spine NPs.
 - Big productivity variance: Kristen ≈ 70 NP/100 visits vs. team 6–40 — spread the method, don't just add hours.
 - The spine target-account list is currently **empty** — building/tiering it is job #1.

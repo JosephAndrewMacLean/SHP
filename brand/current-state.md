@@ -136,8 +136,11 @@ Zocdoc+NextGen booking analysis, and the site crawl) show how the business actua
 - **June 2026 baseline: 248 spine NPs = 79 B2B + 169 B2C. Target: 317/month (+69).**
 - Plan: **hold B2C flat, drive the gap through referrals** — lift PL/B2B spine from 79 →
   **~150/month** (B2B mix rises 32% → 47%). Weekly spine target **72** (up from the 46–48 range).
-- Tracked on a **Weekly Spine Scorecard through Sept 2026** (currently unfilled) and a
-  **Universal Spine Target-Account list** (currently **empty — 0 accounts loaded**).
+- Tracked on a **Weekly Spine Scorecard through Sept 2026** (still unfilled) and a
+  **Universal Spine Target-Account list** — *updated Jul 21:* now **loaded with 808 scored
+  accounts** (2× the 404-account 4-week baseline; 90-account Wave 1; 85 route days built).
+  Working copy + mined insights: `pm/spine-target-accounts-SCORED.csv`,
+  `pm/spine-pl-account-insights.md`.
 - 30-day experiments already assigned: 2× spine target accounts; 2× PL spine field time;
   build a tiered feeder account list (ortho, pain, chiro, urgent care, PCP, PT); shift ~80%
   of SEO to spine; validate Liine booked-patient tracking before changing paid bidding.
@@ -145,10 +148,14 @@ Zocdoc+NextGen booking analysis, and the site crawl) show how the business actua
 ### The physician-liaison (referral) engine
 - Field team using **Map My Customer (MMC)** CRM. Q2-2025 productivity baseline:
   **2,208 practice visits → 743 new patients (33.6 NP per 100 visits).**
-- **Huge producer variance:** Kristen ~**70 NP/100 visits** vs. others 6–40. Kristen (KJ)
-  carries **~51% of all B2B volume** (812 patients, 31% of her book is spine). Others: Jasmine
-  (JJ) 23%, Coty (CO) 12%, plus a ramping liaison (since March) and one whose volume stopped
-  after May. → **Concentration risk + a clear "coach everyone toward Kristen's playbook" opportunity.**
+- **Huge producer variance:** Kristen ~**70 NP/100 visits** vs. others 6–40 (2026 YTD NP per 100
+  visit-days: Kristen 67 · Jasmine 30 · Coty 18 · Sean 14). Kristen (KJ) carries **~51% of all B2B
+  volume** (812 patients, 31% of her book is spine) **and 63% of matched B2B spine**. Others:
+  Jasmine (JJ) 23%, Coty (CO) 12%, **Sean Sweeney (SS)** ramping since March (**no logged MMC
+  visits since Jun 9 — verify**), and **Kessia (KG) — departed**; volume wound down Mar–May, her
+  ~290 visited companies have no MMC owner. → **Concentration risk + a clear "coach everyone
+  toward Kristen's playbook" opportunity.** (Jul 21 correction: earlier notes misattributed the
+  departure to Sean.)
 
 ### B2C booking behavior (Zocdoc + NextGen, Jul 2025–Jun 2026)
 - **The website is the best booking source, and it's free.** Effective new-patient capture:
