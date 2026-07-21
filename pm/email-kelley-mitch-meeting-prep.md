@@ -14,10 +14,12 @@
 
 Kelley and Mitch —
 
-I want to get the two of you in a room with me (plus Katie, Dr. Oddo, Anna, Santosh, and Greg)
-for a two-hour working session the week of [July 27–31] — and I want you to see everything I'm
-bringing before anyone else does. No surprises, ever. If you'd rather walk through it 1:1
-first, I'd genuinely welcome that — grab any 30 minutes on my calendar this week.
+I want to get just the two of you in a room with me — nobody else required — for a 90-minute
+working session the week of [July 27–31], and I want you to see everything I'm bringing before
+anyone else does. No surprises, ever. If you'd rather walk through it 1:1 first, I'd genuinely
+welcome that — grab any 30 minutes on my calendar this week. Anything that needs clinical,
+billing, or systems input (Katie, Dr. Oddo, Anna, Santosh, Greg), we'll frame as a
+recommendation in the room and I'll carry it to them afterward — that's my job, not yours.
 
 **Here's the short version.** I pulled 32 recent calls into a de-identified review pack
 (attached, along with the draft meeting agenda). Two things jumped out, and neither one is
@@ -59,8 +61,8 @@ September.
 
 The meeting itself will run wins-first, with working agreements up front: we fix systems, not
 people; hard on the problem, easy on each other. Your prep is light — the pack has a one-page
-"sorting sheet" with a short checklist for each of you, and I'd love you each to bring one
-frontline voice from your team who lives this daily.
+"sorting sheet" with a short checklist for each of you. If you'd like to bring one frontline
+voice from your team who lives this daily, they're welcome — entirely your call, not required.
 
 Can you send me two or three times that work the week of [July 27–31]? And again — 1:1 first
 if you'd like; I'll follow your lead.
