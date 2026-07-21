@@ -11,7 +11,8 @@ provider counts, or on-site amenities must be verified before entering Rank Math
 
 ## Rules for this wave (so the measurement is clean)
 
-1. **Titles/metas ONLY. No content, H1, or URL changes in this wave** — isolate the variable.
+1. **Titles/metas ONLY. No content, H1, or URL changes, and NO redirects in this wave** —
+   isolate the variable. Every page keeps its exact current address.
 2. Titles ≤ ~60 characters (truncation); metas ~140–155. Front-load the term the page ranks for.
 3. One location signal where intent is local; none where it's national/informational.
 4. No "best/#1/top-rated," no outcome promises, nothing that reads as a guarantee (FTC).

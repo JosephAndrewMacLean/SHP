@@ -152,7 +152,9 @@ decides; if it doesn't, ask Joe rather than improvising a new URL or topic.
 
 ## Never (recap — these burned us)
 One-page GPT edits with no cluster context · new URLs for topics that have a primary ·
-suburb/doorway pages (decided: real clinics only) · redirecting the legacy Sterling Heights or
-Port Huron URLs · touching ortho architecture, provider-page structure, or the big legacy
-blogs beyond approved titles/metas · publishing clinical copy without a named reviewer ·
-promising speed scheduling can't deliver · SEMrush-driven decisions.
+**creating or shipping ANY redirect yourself — redirects are Cardinal's to execute, and only
+after the §4a structure gate clears** · suburb/doorway pages (decided: real clinics only) ·
+redirecting the legacy Sterling Heights or Port Huron URLs · touching ortho architecture,
+provider-page structure, or the big legacy blogs beyond approved titles/metas · publishing
+clinical copy without a named reviewer · promising speed scheduling can't deliver ·
+SEMrush-driven decisions.
