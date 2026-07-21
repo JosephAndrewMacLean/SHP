@@ -135,7 +135,7 @@ button:disabled{opacity:.45; cursor:not-allowed}
 .bitem .bm{font-size:13px; color:var(--muted)}
 .bitem .rm{float:right; font-size:12px; border:none; background:none; color:var(--bad); cursor:pointer; padding:2px 4px}
 .toast{position:fixed; bottom:74px; left:50%; transform:translateX(-50%); background:var(--accent); color:#fff;
-  border-radius:6px; padding:8px 16px; font-size:13.5px; font-weight:650; opacity:0; pointer-events:none; transition:opacity .2s; z-index:40}
+  border-radius:6px; padding:8px 16px; font-size:13.5px; font-weight:650; opacity:0; pointer-events:none; transition:opacity .2s; z-index:75}
 .toast.show{opacity:1}
 .rulesfoot{margin-top:44px; border-top:1px solid var(--line); padding-top:14px; font-size:12.5px; color:var(--muted)}
 .hidden{display:none !important}
@@ -144,14 +144,35 @@ details.custom summary{cursor:pointer; color:var(--accent-ink); font-weight:650;
 .customform{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px}
 @media (max-width:620px){.customform{grid-template-columns:1fr}}
 @media (prefers-reduced-motion: reduce){ *{transition:none !important} }
+/* ---------- guided tour ---------- */
+.tour-dim{position:fixed; inset:0; background:rgba(8,14,10,.62); z-index:50; display:none}
+.tour-dim.on{display:block}
+.tour-target-el{z-index:60 !important; border-radius:8px;
+  box-shadow:0 0 0 3px var(--accent), 0 0 0 8px rgba(27,94,72,.28) !important; background:var(--card)}
+.serp.tour-target-el{background:var(--serp-bg)}
+.tour-raise{z-index:60 !important}
+.tour-hint{animation:tourpulse 1.3s ease-in-out infinite}
+@keyframes tourpulse{0%,100%{box-shadow:0 0 0 3px var(--accent),0 0 0 8px rgba(27,94,72,.28)}50%{box-shadow:0 0 0 3px var(--accent),0 0 0 14px rgba(27,94,72,.12)}}
+@media (prefers-reduced-motion: reduce){.tour-hint{animation:none}}
+.tour-bubble{position:fixed; z-index:70; width:min(350px,calc(100vw - 24px)); background:var(--card);
+  border:1.5px solid var(--accent); border-radius:10px; padding:14px 16px; box-shadow:0 10px 32px rgba(0,0,0,.3); display:none;
+  max-height:calc(100vh - 24px); overflow-y:auto}
+.tour-bubble .k{font-size:11px; letter-spacing:.09em; text-transform:uppercase; color:var(--accent-ink); font-weight:700; margin-bottom:5px}
+.tour-bubble p{margin:0 0 10px; font-size:14.5px; max-width:none; line-height:1.5}
+.tour-bubble ol{margin:6px 0 10px; padding-left:18px; font-size:13.5px; line-height:1.55}
+.tour-bubble .row{display:flex; gap:8px; align-items:center}
+.tour-bubble .waitmsg{font-size:12.5px; color:var(--muted)}
+.tour-bubble .skip{margin-left:auto; background:none; border:none; color:var(--muted); font-size:12.5px; cursor:pointer; padding:4px}
+.tour-bubble.center{left:50%; top:50%; transform:translate(-50%,-50%); width:min(440px,calc(100vw - 24px))}
 </style>
 
 <div class="wrap">
   <header>
     <p class="eyebrow">Synergy Health Partners · SEO Program</p>
     <h1>Title &amp; Meta Studio</h1>
-    <p class="sub"><b>Four steps, no guessing.</b> This is the tool for the Wave-1 batches in your execution plan — every page below is tagged with its ship day, preloaded with its Google Search Console data and its approved draft. Approve the draft as-is, or edit until every check is green. The rules are built from published CTR research (evidence at the bottom), and the guardrails — banned words, verify-flags, truncation — catch problems before Google does.</p>
-    <p class="sub" style="font-size:13px">It opens on a worked example (the ACDF page — the biggest wasted ranking on the site). Output is a <b>draft pending human review</b> — clinical wording still goes through a physician reviewer. Ship in one batch, log it, annotate GSC, then don't touch it for 14 days.</p>
+    <p class="sub"><b>Four steps, no guessing.</b> This is the tool for the Wave-1 batches in your execution plan — every page below is tagged with its ship day, preloaded with its Google Search Console data and its approved draft. Approve the draft as-is, or edit until <b>nothing is red</b> — a yellow ⚠ just means verify that fact before end of day. The rules are built from published CTR research (evidence at the bottom), and the guardrails — banned words, verify-flags, truncation — catch problems before Google does.</p>
+    <p class="sub" style="font-size:13px">First visit? <b>The guide starts by itself</b> and walks you through your first real page, click by click — you can't take a wrong turn. Output is a <b>draft pending human review</b> — clinical wording still goes through a physician reviewer.</p>
+    <div style="margin:12px 0 0"><button class="primary" id="guide-btn" type="button">▶ Guide me — walk me through my first page</button></div>
   </header>
 
   <div class="stepline"><span class="stepnum">1</span><h2>Pick the page</h2><span class="hint">25 Wave-1 pages · badges = ship day from your plan (B1 Wed · B2 Thu · B3 Fri)</span></div>
@@ -186,7 +207,7 @@ details.custom summary{cursor:pointer; color:var(--accent-ink); font-weight:650;
   </div>
 
   <div id="step4" class="hidden">
-    <div class="stepline"><span class="stepnum">4</span><h2>Fine-tune &amp; ship</h2><span class="hint">edit until the checks go green</span></div>
+    <div class="stepline"><span class="stepnum">4</span><h2>Fine-tune &amp; ship</h2><span class="hint">edit until nothing is red</span></div>
     <div class="editor">
       <div class="box">
         <label for="title">Title tag</label>
@@ -223,13 +244,25 @@ details.custom summary{cursor:pointer; color:var(--accent-ink); font-weight:650;
   <div class="box" style="font-size:13.5px">
     <ul class="checks" style="margin-top:0">
       <li class="ok"><b>Titles of 40–60 characters earn +33.3% CTR</b> vs titles outside that band — Backlinko, analysis of 4M Google results. That's why the counter turns green there.</li>
-      <li class="ok"><b>Pages with a meta description earn ~6% more clicks</b> than pages without one — same Backlinko dataset. Google truncates around 155–160 chars, so the app holds you to 120–158.</li>
+      <li class="ok"><b>Pages with a meta description earn ~6% more clicks</b> than pages without one — same Backlinko dataset. Google truncates around 155–160 chars, so the app aims you at 140–155 and accepts 120–158.</li>
       <li class="ok"><b>Clickbait "power words" cut CTR ~14%</b> (Backlinko, 5M results) — and violate healthcare advertising rules anyway. The app warns on hype and hard-blocks "best/#1/guaranteed" (FTC).</li>
       <li class="ok"><b>Question-style titles show no reliable CTR lift</b> in Backlinko's newer data — the app offers them as variants for info intent but never claims they're magic.</li>
       <li class="warn"><b>AI Overviews cut clicks on informational results by 34.5%</b> (Ahrefs, 300K keywords, Apr 2025; their Dec 2025 update measured −58%). That's why Info-intent pages are tagged "partial recovery only" — their job is authority and citations, not clicks.</li>
       <li class="ok"><b>Position still beats everything.</b> The per-page benchmark math uses the same healthcare-conservative CTR-by-position curve as <span class="mono">seo/data/analyze_gsc.py</span>, so the app, the analysis, and the monthly report all agree with each other.</li>
     </ul>
     <p style="font-size:12px; color:var(--muted); margin:10px 0 0">Sources: <a href="https://backlinko.com/google-ctr-stats" target="_blank" rel="noopener">Backlinko organic CTR study</a> · <a href="https://ahrefs.com/blog/ai-overviews-reduce-clicks/" target="_blank" rel="noopener">Ahrefs, AI Overviews reduce clicks</a> · your own 16-month GSC export (<span class="mono">seo/data/2026-07-21/</span>) — the only source that knows <em>this</em> site.</p>
+  </div>
+  <div class="stepline" style="margin-top:34px"><span class="stepnum">✓</span><h2>End of day — ship it</h2><span class="hint">same order, every batch day</span></div>
+  <div class="box" style="font-size:14px">
+    <ol id="shipit-list" style="margin:0; padding-left:20px; line-height:1.7">
+      <li>Clear any ⚠ yellow items <b>first</b> — verify the fact or use the safe wording (clinical wording → the page's physician reviewer; scheduling promises → Joe; amenities → ops)</li>
+      <li><b>Copy batch for change-log</b> (button in the bottom bar)</li>
+      <li>Paste into <span class="mono">seo/change-log.md</span></li>
+      <li>Enter each title &amp; meta in <b>Rank Math</b> — change nothing else on those pages</li>
+      <li>Add a <b>GSC annotation</b> the same day (e.g. “Batch 1 spine titles — Jul 23”)</li>
+      <li>Spot-check 3 pages on your actual phone — stale content means the mobile bug: tell Paul</li>
+    </ol>
+    <p style="margin:10px 0 0; color:var(--muted); font-size:13px"><b style="color:var(--accent-ink)">Then you're done — really done.</b> Don't touch those pages again for 14 days. The waiting is how we measure what worked.</p>
   </div>
   <div class="rulesfoot">
     <b>Connected to this week's plan:</b> B1 ships Wed Jul 23 (spine) · B2 Thu (brand bridge + big gaps) · B3 Fri (the rest) — per <span class="mono">seo/randall-execution-plan.md</span>. Approved copy source: <span class="mono">seo/quick-wins-title-meta.md</span>. Batch export pastes straight into <span class="mono">seo/change-log.md</span>.
@@ -288,9 +321,9 @@ const INTENTS={
  decision:{name:"Researching a treatment",desc:"They (or their doctor) named a procedure or condition. They want clarity.",exp:"CTR should move",need:"A plain promise of what they'll learn"},
  info:{name:"Curious or worried",desc:"Symptom questions. AI Overviews answer many of these first.",exp:"Partial recovery only",need:"Match the question, add a human hook"},
  brand:{name:"Knows the old name",desc:"Searching Mendelson / Kornblum. Reassure them it's the same practice.",exp:"Protects existing clicks",need:"Continuity: same physicians, new name"}};
-const FLAGMSG={reviewer:"“Reviewed by…” requires a named physician reviewer actually on the page.",er:"Trauma topic — page must keep a “call 911 / ER now” banner.",sameweek:"“Same-week” — verify scheduling can really deliver before shipping.",amenities:"On-site services claim — verify with ops.",cert:"Certification claim — verify credentials.",filters:"“Filter” wording — find-a-doctor filters were flagged broken; fix or drop.",status:"Verify this clinic's current status/services first.",medreview:"Evidence-sensitive topic — strict medical review of phrasing.",speed:"“Fast/quick” — only if scheduling truly supports it.",nourl:"Never change this page's URL."};
+const FLAGMSG={reviewer:"“Reviewed by…” requires a named physician reviewer actually on the page.",er:"Trauma topic — page must keep a “call 911 / ER now” banner.",sameweek:"“Same-week” — ask Joe to confirm scheduling can really deliver before shipping.",amenities:"On-site services claim — verify with ops.",cert:"Certification claim — ask Joe/HR to verify credentials.",filters:"“Filter” wording — find-a-doctor filters were flagged broken; fix or drop.",status:"Ask Joe to verify this clinic's current status/services first.",medreview:"Evidence-sensitive topic — strict medical review of phrasing.",speed:"“Fast/quick” — ask Joe; keep only if scheduling truly supports it.",nourl:"Never change this page's URL."};
 const BANNED=/\b(best|#1|number one|top[- ]?rated|guaranteed?|cure[sd]?|painless|100%|no\.?\s?1)\b/i;
-const RISKY=/\b(same[- ]?week|certified|fast|quick|reviewed by|most insurance)\b/i;
+const RISKY=/\b(same[- ]?week|certified|fast|quick|reviewed\s+(?:\w+\s+){0,2}by|most insurance)\b/i;
 const HYPE=/\b(miracle|breakthrough|amazing|shocking|secret|revolutionary|unbelievable|incredible|insane)\b/i;
 /* healthcare planning benchmark CTR by position — same curve as seo/data/analyze_gsc.py,
    blended conservative from large-scale CTR studies (Backlinko 4M / industry position curves),
@@ -361,7 +394,7 @@ function genMetas(){
     out.push("Looking for "+t+" in "+c+"? Coordinated care under one roof from "+spec+". Find your nearest location and book today.");
     out.push(S.page.topic+" at our "+c+" locations — book online in minutes.");
   }else if(S.intent==="info"){
-    out.push("What "+t+" means, symptoms to watch for, and when to seek care — reviewed for accuracy by "+spec+".");
+    out.push("What "+t+" means, symptoms to watch for, and when to seek care — plain answers from "+spec+".");
     out.push(cap(t)+", explained simply: causes, warning signs, and how doctors treat it. From "+spec+".");
   }else{
     out.push("The practice you've known as "+S.page.topic+" continues as Synergy Health Partners — same physicians, same locations, one integrated team.");
@@ -461,7 +494,7 @@ function liveUpdate(){
   $("serp-meta").innerHTML='<span class="date">Jul 21, 2026 — </span>'+esc(S.meta||"Your meta description appears here.");
   $("t-chars").textContent=S.title.length+" chars (best: 40–60)";
   $("t-px").textContent=tpx+"px / "+T_PX;
-  $("m-chars").textContent=S.meta.length+" chars (aim 120–158)";
+  $("m-chars").textContent=S.meta.length+" chars (aim 140–155 · 120–158 OK)";
   $("m-px").textContent=mpx+"px";
   const tm=$("t-meter"),mm=$("m-meter");
   tm.className="meter"+(tpx>T_PX?" over":"");tm.firstElementChild.style.width=Math.min(100,tpx/T_PX*100)+"%";
@@ -511,11 +544,110 @@ $("close-drawer").addEventListener("click",()=>$("drawer").classList.remove("ope
 $("export-batch").addEventListener("click",exportBatch);
 $("export-batch2").addEventListener("click",exportBatch);
 $("clear-batch").addEventListener("click",()=>{if(confirm("Clear the whole batch?")){S.batch=[];saveBatch()}});
-/* open on a worked example: the ACDF page with its approved Wave-1 draft loaded —
-   Randall can approve it straight into the batch, or edit until the checks go green */
+/* ---------- guided tour: walks Randall through his first REAL page, click by click.
+   Everything outside the highlighted element is blocked — no wrong turns possible. ---------- */
+const SHIP=document.getElementById("shipit-list").outerHTML;
+const TOUR=[
+ {center:true,k:"Welcome — this takes 2 minutes",t:"<b>This is your Wednesday work.</b> I'll walk you through the first page start to finish. You do the clicking — I'll point at exactly what to click. Nothing else on the screen will work until we're done, so you can't take a wrong turn.",btn:"Start"},
+ {el:()=>document.querySelector(".pagerow"),k:"Step 1 of 10 — pick the page",t:"This is your first page. The <b>B1 · Wed</b> badge means it ships <b>Wednesday, Jul 23</b> — its batch day in your plan. The little numbers are its real Google data. <b>Click this page now.</b>",click:true},
+ {el:()=>document.querySelector(".intentcard.sel"),k:"Step 2 of 10 — who's searching",t:"The tool already picked the right audience for this page. <b>You change nothing here.</b> If it's ever a local page, you'd check the city — that's all.",btn:"Next"},
+ {el:()=>document.getElementById("query"),k:"Step 3 of 10 — the search phrase",t:"This is the exact phrase the page should win. Already filled in for you. The title should mention it near the front — the checks below warn you if it's missing or buried.",btn:"Next"},
+ {el:()=>document.querySelector(".opt"),k:"Step 4 of 10 — pick a starting point",t:"Starting points, scored 0–5. The top one is the <b>approved Wave-1 draft</b> from Joe's plan — start from it, don't rewrite it. Any yellow ⚠ it carries still gets verified before end of day. <b>Click “Use this.”</b>",click:true,clickSel:"button"},
+ {el:()=>document.getElementById("checks"),k:"Step 5 of 10 — the checks",t:"Every rule, checked live. <b>Green = good. Yellow = verify the thing it names before shipping. Red = must fix</b> — the tool won't let a red into the batch.",btn:"Next"},
+ {el:()=>document.querySelector(".serp"),k:"Step 6 of 10 — the Google preview",t:"This is what a patient sees when Google uses your title as written (Google sometimes swaps in its own wording — the Day-14 data read checks for that). It updates as you type. Keep the title counter in <b>40–60 characters</b> — that band earns a third more clicks.",btn:"Next"},
+ {el:()=>document.getElementById("add"),k:"Step 7 of 10 — approve it",t:"No reds on this one, so it can ship (yellows get verified at end of day). <b>Click “Add to batch ✓”</b> to save this page into today's shipment.",click:true},
+ {el:()=>document.querySelector(".batchbar"),k:"Step 8 of 10 — your batch",t:"There it is — <b>1 page in the batch</b>. You'll repeat the same clicks for the other 9 B1 pages. The batch saves itself, even if you close the tab.",btn:"Next"},
+ {el:()=>document.getElementById("export-batch"),k:"Step 9 of 10 — the export (not yet)",t:"When all 10 pages are in, this button copies the whole batch for the change log. <b>Don't click it yet</b> — finish the other pages first.",btn:"Next"},
+ {center:true,k:"Step 10 of 10 — how you finish the day",t:"That's the whole job: <b>pick page → Use this → checks green → Add to batch.</b> When today's batch is full, finish in this exact order:"+SHIP+"Then don't touch those pages for 14 days. This list stays at the bottom of this screen whenever you need it.",btn:"Start working"}
+];
+let tourEls=null,hiEl=null,hiAnc=null,pendingAdv=null,posTimer=null,curStep=-1;
+function tourBuild(){
+  if(tourEls)return;
+  const dim=document.createElement("div");dim.className="tour-dim";
+  const bub=document.createElement("div");bub.className="tour-bubble";
+  dim.addEventListener("click",()=>{const w=bub.querySelector(".waitmsg");if(w){w.style.fontWeight="700";w.style.color="var(--crit)";setTimeout(()=>{w.style.fontWeight="";w.style.color=""},600)}});
+  document.body.appendChild(dim);document.body.appendChild(bub);
+  tourEls={dim,bub};
+}
+function clearPending(){if(pendingAdv){pendingAdv.t.removeEventListener("click",pendingAdv.fn);pendingAdv=null}}
+function clearHi(){
+  if(hiEl){hiEl.classList.remove("tour-target-el","tour-hint");hiEl.style.position="";hiEl=null}
+  if(hiAnc){hiAnc.classList.remove("tour-raise");hiAnc=null}
+}
+function placeBubble(){
+  if(curStep<0||!tourEls||!hiEl)return;
+  const st=TOUR[curStep];if(!st||st.center)return;
+  const b=tourEls.bub,r=hiEl.getBoundingClientRect(),bh=b.offsetHeight||160;
+  let top=r.bottom+12;
+  if(top+bh>window.innerHeight-10)top=Math.max(10,r.top-bh-12);
+  b.style.top=top+"px";
+  b.style.left=Math.max(10,Math.min(r.left,window.innerWidth-370))+"px";
+}
+function onScrollTour(){requestAnimationFrame(placeBubble)}
+function tourStop(){
+  curStep=-1;clearPending();clearHi();
+  if(posTimer){clearTimeout(posTimer);posTimer=null}
+  window.removeEventListener("scroll",onScrollTour);window.removeEventListener("resize",onScrollTour);
+  if(tourEls){tourEls.dim.classList.remove("on");tourEls.bub.style.display="none"}
+  try{localStorage.setItem("tms-tour","done")}catch(e){}
+}
+function visibleTarget(el){
+  return !!el&&(el.offsetParent!==null||getComputedStyle(el).position==="fixed");
+}
+function tourStep(i){
+  clearPending();
+  if(posTimer){clearTimeout(posTimer);posTimer=null}
+  const st=TOUR[i];
+  if(!st){tourStop();return}
+  tourBuild();clearHi();curStep=i;
+  const b=tourEls.bub;tourEls.dim.classList.add("on");
+  b.className="tour-bubble"+(st.center?" center":"");
+  b.style.top="";b.style.left="";b.style.display="none";
+  b.innerHTML='<div class="k">'+st.k+'</div><p>'+st.t+'</p><div class="row">'+
+    (st.btn?'<button class="primary" type="button" id="tour-next">'+st.btn+"</button>"
+          :'<span class="waitmsg">Click the highlighted item to continue…</span>')+
+    '<button class="skip" type="button" id="tour-skip">Skip guide</button></div>';
+  b.querySelector("#tour-skip").addEventListener("click",tourStop);
+  if(st.btn)b.querySelector("#tour-next").addEventListener("click",()=>tourStep(i+1));
+  if(st.center){b.style.display="block";return}
+  const el=st.el&&st.el();
+  if(!visibleTarget(el)){tourStep(i+1);return}
+  hiEl=el;el.classList.add("tour-target-el","tour-hint");
+  if(getComputedStyle(el).position==="static")el.style.position="relative";
+  const anc=el.closest(".batchbar");
+  if(anc&&anc!==el){hiAnc=anc;anc.classList.add("tour-raise")}
+  if(st.click){
+    const t=(st.clickSel&&el.querySelector(st.clickSel))||el;
+    const fn=()=>{pendingAdv=null;setTimeout(()=>tourStep(i+1),250)};
+    t.addEventListener("click",fn,{once:true});
+    pendingAdv={t,fn};
+  }
+  el.scrollIntoView({behavior:"smooth",block:"center"});
+  window.addEventListener("scroll",onScrollTour,{passive:true});
+  window.addEventListener("resize",onScrollTour);
+  posTimer=setTimeout(()=>{b.style.display="block";placeBubble()},450);
+}
+function startTour(){
+  tourBuild();
+  S.page=null;
+  $("search").value="";
+  $("step2").classList.add("hidden");$("step3").classList.add("hidden");$("step4").classList.add("hidden");
+  renderList("");
+  window.scrollTo(0,0);
+  tourStep(0);
+}
+$("guide-btn").addEventListener("click",startTour);
+
+/* ---------- init ---------- */
 renderList("");saveBatch();
-selectPage(PAGES[0],true);
-S.title=PAGES[0].w.t;S.meta=PAGES[0].w.m;
-$("step4").classList.remove("hidden");renderEditor();
-window.scrollTo(0,0);
+let tourSeen=false;try{tourSeen=localStorage.getItem("tms-tour")==="done"}catch(e){}
+if(tourSeen){
+  /* returning visit: open on the worked example, ready to approve or edit */
+  selectPage(PAGES[0],true);
+  S.title=PAGES[0].w.t;S.meta=PAGES[0].w.m;
+  $("step4").classList.remove("hidden");renderEditor();
+  window.scrollTo(0,0);
+}else{
+  startTour();
+}
 </script>
