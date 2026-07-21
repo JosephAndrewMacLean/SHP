@@ -1,75 +1,88 @@
-# Email Draft — Kelley & Mitch: the data for our working session
+# Email Draft — Kelley & Mitch: the MRI × Spine × Pain overlap journey (the data)
 
 **From:** Joe · **To:** Kelley (call center / patient access), Mitch (imaging / ancillary services)
-**Context:** both already know about the meeting — this email delivers **the data** ahead of it.
+**Context:** both already know about the meeting — this email delivers **the data**, focused on
+the one journey where their two teams and the spine number meet.
 **Status: DRAFT for Joe to personalize and send.** Placeholders in [brackets].
 > Name check before sending: repo docs spell it "Kelly," Joe writes "Kelley" — confirm and make
 > it consistent everywhere (this draft uses Kelley).
 
 ---
 
-**Subject:** The data for our session — 32 calls, your lanes, and the spine opportunity
+**Subject:** One patient, three doors: the MRI–spine–pain journey in our own call data
 
 Kelley and Mitch —
 
-Ahead of our session the week of [July 27–31], here's the data we'll work from: **32 recent
-calls** (four batches), written up with all patient identifiers stripped. Both attachments are
-**confidential and just for us three** — nothing circulates further until you two have
-corrected the pack and co-signed it. You know things the transcripts don't; I'm expecting you
-to mark it up, not just read it.
+Ahead of our session the week of [July 27–31], here's the data — **32 recent calls, all
+patient identifiers stripped, confidential and just for us three** until you've both corrected
+the pack and co-signed it. Ground rule first: every gap below is a **missing tool, not a
+failing person.** No rep is named, nobody is graded, and the same calls contain the best
+practices we'll be spreading.
 
-One ground rule before any numbers: **every gap in this data is a missing tool, not a failing
-person.** No rep is named, nobody is graded, and the same calls contain the best practices
-we'll be spreading. Read the "wins" section first — it's the standard your own people set.
+**The journey we're fixing.** The typical spine patient isn't a "spine call," an "imaging
+call," or a "pain call" — they're all three, in sequence: *back or neck pain → consult → MRI →
+conservative/interventional care or surgery.* **At least 14 of the 32 calls sat at a junction
+between two or more of those legs — and the junctions are where we lose people.** The rooms
+are excellent; the hallways between them aren't built yet. Here's each junction, in the
+patients' own journeys:
 
-**By the numbers (all 32 calls):**
+**Junction 1 — The front door: which button they press decides their fate.**
+The same back-pain patient gets three different outcomes depending on how they enter. Through
+the scheduling line: booked — the two strongest calls in the set (one completed within days,
+one pending only an insurance-ID callback). Through the MRI
+line without an order: redirected to "call your doctor's office" with nothing captured, or
+given a cash price and released — when each of those callers was a spine or pain evaluation
+waiting to happen. Through the pain door: a referral requirement and a ~2-week wait, quoted to
+callers we never heard from again.
+*The fix we'll design:* one front-door skeleton for all three lines — route-don't-refuse (a
+no-order MRI caller is offered the eval visit that generates the order), and spine-adjacent
+pain tagged so the spine scorecard counts it.
 
-- **1 completed booking** — and that's a *system* baseline: these calls happened before any
-  script, facts card, or escalation path existed.
-- **Only 2 inquiries ended with us holding the callback duty** (one fully, one partially).
-  Everyone else left carrying follow-up that should be ours.
-- **"How did you hear about us?" was asked 0 times** — expected, it's never been scripted —
-  and it cost us trails to Henry Ford, Included Health, a DMC physician's peer referral, and
-  Corewell sending injection cases our way.
-- **At least 10 of 32 callers were fleeing a competitor** — slower, pricier, or silent. Demand
-  is defecting *to* us; the follow-through decides whether we keep it.
-- **4 transfers ended in voicemail or a mailbox that was never activated;** one caller waited
-  ~11 minutes and was never answered.
-- The prize: the spine plan values fixing this front door at **+6 to +9 new spine patients per
-  week, with the people we already have.**
+**Junction 2 — The MRI leg: the critical path onto a physician's schedule.** *(Mitch — yours,
+and the centerpiece.)*
+One spouse asked us the exact right question: can you book the consult *and* the MRI, in
+sequence, on one call? We couldn't — the scheduler can't see the imaging calendar, and her
+transfer rang out. Elsewhere in the data: orders lost to a wrong fax number, an order faxed to
+a site that was closed that day (with no cross-site visibility to rescue it), quoted MRI lead
+times ranging from **tomorrow 8 AM to ~3 weeks** with no shared capacity source — Troy had
+this-week openings while another site quoted weeks — and our one booked spine win left with an
+*outside* MRI on her calendar that nobody checked against our own machines.
+*The fix we'll design:* the **shared pending-imaging queue** — consult books immediately,
+imaging rides the queue as a pended booking that **your team verifies and confirms (safety
+screening, protocols, capacity — the gate stays with imaging, in writing)** — plus one
+authoritative capacity snapshot and one fax path. Tear the draft up and rebuild it with me.
 
-**Kelley — your lane in one paragraph.** Your team's wins are the model: the rep who booked a
-back-pain patient within days while the outside office was booked to July 31, and real warmth
-on nearly every call. The data asks for tools, not effort: a capture-and-callback standard
-(name + number on every inquiry, we own the follow-up), the source question on every call, a
-completion worklist so held bookings don't evaporate, and a facts card so answers stop varying
-by desk. Also in your lane: the red-flag screen still can't run until leadership names the
-escalation path — that item is on me to carry, not on your team.
+**Junction 3 — The spine ↔ pain crossover: where acute patients hit a wall.**
+A post-hospital neck patient called ready to book *that day*, drawn in by our own same-day
+marketing. The honest answer she got: a spine consult can't do injections, and pain management
+runs a referral plus about two weeks. She said she'd just wait for her Wednesday appointment
+at the other practice, and hung up. A procedure-ready RFA caller and a **facet-injection referral that
+Corewell wrote out to us** both ended in voicemail. None of that is anyone's fault in the
+room — the referral-first pathway predates all of us, and how much of it is payer rule vs.
+practice policy is exactly what we don't know yet.
+*The fix we'll draft:* the recommendation and precise questions I'll carry personally to
+Dr. Oddo and Katie — the acute-pain lane, protected soonest slots, and a live human owning
+procedure-referral intake.
 
-**Mitch — your lane in one paragraph.** Your desks produced the sharpest facts moments in the
-set: the participation-list check that beat a Trinity quote by half, and the scheduler who took
-a caller's number so *we* owed the callback. The data shows your team working around missing
-plumbing: six different lead times quoted across calls with no shared capacity source (Troy
-had this-week openings while another site quoted ~3 weeks), orders lost to wrong fax numbers
-and site-siloed queues, cash pricing quoted three different ways ($837 vs. $594/$837 vs.
-~$290/$590 — the right answers exist and don't travel), and single-person functions with no
-backup. The straw man I've drafted is a **shared pending-imaging queue where your team keeps
-the verification gate — safety screening, protocols, capacity, in writing.** Tear it up and
-rebuild it with me; you own it or it doesn't happen.
+**Junction 4 — The follow-through: whoever isn't booked carries the homework.**
+Across all 32 calls, only two inquiries ended with *us* holding the callback duty (one fully,
+one partially). "How did you hear about us?" was asked zero times — it's never been scripted —
+and it cost us trails to Henry Ford, Included Health, a DMC physician's peer referral, and
+that Corewell injection pipeline.
+*The fix we'll adopt in the room:* capture-and-callback on every inquiry, a daily completion
+worklist, and the source question everywhere.
 
-**The spine priorities we'll work, in order:** (1) catch and call back on every inquiry;
-(2) draft the acute-pain-access recommendation and the exact questions I'll carry to Dr. Oddo
-and Katie; (3) the pending-imaging queue — one call for MRI + consult; (4) the source question
-everywhere; (5) one facts/price card per desk.
+**Why this journey is the spine number:** at least 10 of the 32 callers were fleeing a
+competitor's wait, price, or silence — most of them at exactly these junctions. The spine plan
+values fixing this front door at **+6 to +9 new spine patients per week, with the people we
+already have.** Nothing to buy; hallways to build.
 
-**What I need from each of you before we meet:** read your lane's checklist in the pack's
-sorting sheet (~15 min), mark anything the transcripts got wrong, and bring your real numbers —
-Kelley: call volumes and staffing; Mitch: true lead times by site and modality, and your
-single-person coverage list. If either of you wants to walk through it 1:1 first, grab any 30
-minutes on my calendar — happy to.
+**Before we meet** (~15 minutes each): read your lane's checklist in the pack's sorting sheet
+and mark anything the transcripts got wrong. Kelley — bring call volumes and staffing.
+Mitch — bring true lead times by site and modality, and your single-person coverage list.
+Either of you want to walk it 1:1 first, grab any 30 minutes on my calendar.
 
-The patients are already calling us. This data just shows where the system drops them — and
-your teams are the ones who can fix it.
+Your teams are already good in the rooms. Let's build the hallways.
 
 Thanks,
 Joe
