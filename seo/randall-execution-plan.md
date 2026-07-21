@@ -12,6 +12,15 @@ rows before everything), harden what AI already amplifies, then rebuild spine co
 new `/conditions/` + `/treatment/` structure closest-to-ranking first — and let consolidations
 wait for their gate.
 
+> **⚠ Jul 21 PM update — read `seo/crawl-review-2026-07.md` before starting Day 1.**
+> The Jul 15 crawl shows the site has ALREADY migrated to the new URL structure, and July
+> clicks are pacing −26% vs June. Three changes: **(1) Priority 0** — with Paul, verify the
+> legacy-URL redirect list in the review doc §5 the same day (missing migration redirects
+> would explain the click drop); **(2)** Wave 1 becomes **Wave 1R** (review doc §7): template
+> bugs first — 38 "| Page" titles, 11 junk metas, 4 locations-type titles, internal-link and
+> 404 fixes — then the surviving approved rows applied to LIVE URLs only; **(3)** the 20
+> crawled 301s are all correct — remove the link-hops through them, never the redirect rules.
+
 ---
 
 ## WEEK 1 (Jul 22–28) — all quick wins ship this week
