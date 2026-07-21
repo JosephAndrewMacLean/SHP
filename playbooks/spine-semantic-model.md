@@ -9,7 +9,7 @@
 | Part | What it is | Volatility |
 |---|---|---|
 | **A — The Model** | The stable reference: SKOS mapping, the master scheme, the seven page types with their diagrams | Changes rarely; label changes need Mitch |
-| **B — Current State** | Where spine actually lives on the site today, the canonical targets, and open decisions | Dated 7/21/2026; updates as V-items resolve |
+| **B — Current State** | Where spine actually lives today, the canonical targets, open decisions, and **the opportunity map (B3) — what each concept exists to capture** | Dated 7/21/2026; updates as V-items resolve |
 | **C — The Change Plan** | Per-page-type change lists + the initiative table (the work) | Updates as work ships |
 | **D — Routing Intelligence** | How the altLabel layer drives site, call center, triage tree, PL materials | Stable rules |
 | **E — Governance & Changelog** | Change rules, Phase-2 sports note, correction log | Append-only |
@@ -422,8 +422,79 @@ Full inventory: the 7/21 site-map synthesis + `pm/spine-page-inventory-improveme
 | Guides | `/guides/{topic}/` (new namespace) | — |
 
 **Evidence caveats:** crawl = index-based (canonicals/redirects unverified); GA4 export =
-converting-sessions-only with broken channel attribution; Ads data = era-mixed across the
-Apr 22 migration. All three are directional until the §E gates clear them.
+converting-sessions-only with broken channel attribution; Ads data = **era-resolved 7/21**
+(daily re-export; post-migration figures used below). Directional until §E gates clear them.
+
+## B3. The opportunity map — what each concept exists to capture
+
+Every node in Part A earns its place by capturing one of these ten quantified opportunities.
+When priorities are argued, argue from this table. (Sources: paid analysis §8, GA4 read,
+crawl synthesis, `spine-90day-plan.md` lever math. NP value frame: website work = lever B,
+**+7–11 qualified spine NPs/week**, of the 47→72/week climb.)
+
+| # | Opportunity (evidence & size) | Intent | Captured by (model concepts) | Initiative |
+|---|---|---|---|---|
+| **O1** | **Non-branded organic spine demand** — 58% of impressions are non-branded researchers; the elective funnel contributes ~0 organic; five condition hubs strangled by duplication | I2 | Condition canons + hub rebuild + consolidation | 1, 5 |
+| **O2** | **"Doctor near me" demand, paid-proven** — $158–228 CPA at 11–14% CR in paid; organic equivalent is free; winners at 74–95% impression share (maxed) | I1 | Location pages + hub symptom router + near-you modules | 6 + location roadmap |
+| **O3** | **Surgical researchers ads can't convert** — $60.7K post-migration on surgery keywords at 3.6% CR ($688 CPA); these are I3 patients needing content, not ads | I3 | Treatment differentiation pages + comparison content + team module + matching guide | 2, 3, 4, 8 |
+| **O4** | **Interventional/injection demand** — $410–859 CPA in paid while `/treatment/caudal-esi` ranks and converts free; Livonia is the procedure hub | I1/I2 | Injection canons + Livonia EMG/injection block + conservative-front-door `related` edges | 5, 6 |
+| **O5** | **Troy / Oakland whitespace** — ~4,800 obtainable patients/yr; zero campaign; near-zero organic; existing geo winners have no IS headroom left; supply now Mon–Thu | I1/I3 | Troy location concept + Zamorano page + Rochester-altLabel layer + hyperlocal satellites | Location roadmap §3.3, 9 |
+| **O6** | **Revision/returning patients** — content absent sitewide; smaller, high-value cohort; Maslak's actual subspecialty | **I3b** | Revision guide + Maslak positioning + adjacent-segment content | 7, 8 |
+| **O7** | **Decision-stage patients** — zero decision-support in spine; the knee guide proves the format ranks | I2→I3 | The six guides (A3.7) | 7 |
+| **O8** | **Name-search capture, won but under-used** — Salar bio = #1 page (2,900/mo name volume) yet a dead end | I3 | Provider KEEP/protect + "procedures I perform" modules routing name traffic onward | 8 |
+| **O9** | **Answer-engine citations** — MRI-facts post quietly converts; first AI-assistant referrals appeared in GA4; E-E-A-T absent sitewide | I2 | Learning hub + FAQ content + E-E-A-T apparatus | 5, 10 |
+| **O10** | **Demand that arrives when nobody answers** — $40.4K weekend paid at $480–505 CPA; 166 patients self-rescheduled online | I1 | Not a page — the **CTA/booking layer** on every template (online-first) + the measurement fixes | Templates §2 + process §3 |
+
+```mermaid
+flowchart LR
+    O1[O1 non-branded demand<br/>58 pct of impressions]
+    O2[O2 doctor near me<br/>proven cheap converts]
+    O3[O3 surgical researchers<br/>ads fail at 3.6 pct]
+    O4[O4 injection demand<br/>front door]
+    O5[O5 Troy whitespace<br/>4800 per year]
+    O6[O6 revision patients<br/>content absent]
+    O7[O7 decision stage<br/>zero support today]
+    O8[O8 name searches<br/>dead-end today]
+    O9[O9 answer engines<br/>citations]
+    O10[O10 after-hours demand<br/>booking layer]
+
+    CON[CONDITION canons]
+    HUBS[HUB rebuild]
+    LOC[LOCATION pages]
+    TRT[TREATMENT pages]
+    PROV[PROVIDER pages + team]
+    GUIDE[GUIDES]
+    LEARN[LEARNING HUB]
+    CTA[CTA booking layer<br/>every template]
+
+    O1 --> CON
+    O1 --> HUBS
+    O2 --> LOC
+    O2 --> HUBS
+    O3 --> TRT
+    O3 --> PROV
+    O3 --> GUIDE
+    O4 --> TRT
+    O4 --> LOC
+    O5 --> LOC
+    O5 --> PROV
+    O6 --> GUIDE
+    O6 --> PROV
+    O7 --> GUIDE
+    O8 --> PROV
+    O9 --> LEARN
+    O9 --> CON
+    O10 --> CTA
+
+    classDef opp fill:#5f3dc4,color:#fff
+    classDef pt fill:#e8930c,color:#fff
+    class O1,O2,O3,O4,O5,O6,O7,O8,O9,O10 opp
+    class CON,HUBS,LOC,TRT,PROV,GUIDE,LEARN,CTA pt
+```
+
+**Reading the map:** every page type carries at least one funded opportunity — and every
+opportunity has a home. If a proposed page can't point at an O-number, it doesn't get built
+(the same discipline as the D3 hyperlocal gate). Per-URL execution: `pm/spine-meta-execution-list.md`.
 
 ---
 
@@ -522,3 +593,5 @@ escalation block (bladder/bowel changes, fever with back pain, trauma → urgent
   separation rule added.
 - **7/21 (v4):** document reorganized into Parts A–E (model / state / change plan / routing /
   governance); content unchanged except cross-reference renumbering.
+- **7/21 (v5):** added §B3 opportunity map (O1–O10, quantified from the era-resolved paid
+  data, GA4, and crawl) with the rule: no new concept without an O-number.
