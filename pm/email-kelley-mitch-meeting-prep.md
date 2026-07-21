@@ -21,14 +21,16 @@ welcome that — grab any 30 minutes on my calendar this week. Anything that nee
 billing, or systems input (Katie, Dr. Oddo, Anna, Santosh, Greg), we'll frame as a
 recommendation in the room and I'll carry it to them afterward — that's my job, not yours.
 
-**Here's the short version.** I pulled 32 recent calls into a de-identified review pack
-(attached, along with the draft meeting agenda). Two things jumped out, and neither one is
+**Here's the short version.** I pulled 32 recent calls into a review pack with all patient
+identifiers stripped (attached, along with the draft meeting agenda — both confidential, just
+for us three for now). Two things jumped out, and neither one is
 about anyone's team doing bad work — the opposite, actually:
 
 **First, your people are already great on the phone.** The warmest, sharpest moments in those
 32 calls came from your teams — the imaging rep who checked the real participation list and
 beat a competitor's quote by half, the scheduler who took a caller's number so *we* owed the
-callback, the rep who booked a back-pain patient days ahead of a competitor's month-long wait.
+callback, the rep who booked a back-pain patient within days while the outside office was
+booked out to July 31.
 Nobody in this pack is graded and no rep is named. The pack exists to spread what your best
 people already do.
 
@@ -46,13 +48,16 @@ September.
    holding the callback. This is the cheapest new-patient lever we own.
 2. **An acute-pain fast lane.** Pain management is the natural front door for most spine
    callers, but today it sits behind a referral requirement and a ~2-week wait — and patients
-   in real pain go to whoever answers first. I want us to design the lane, not work around it.
+   in real pain go to whoever answers first. In our session I want us to draft the
+   recommendation and the exact questions for Dr. Oddo and Katie — how much of the referral
+   rule is payer vs. policy, and what an acute-pain lane could look like — and I'll carry it
+   to them personally.
 3. **One call for MRI + consult.** Mitch — this one's the reason I especially need you. Imaging
    is often the ticket onto a surgeon's schedule, but your schedulers and Kelley's team can't
-   see each other's calendars, and orders are dying in fax routing between sites. I have some
-   options drafted (shared visibility, a joint queue, a liaison seat) — **all of them keep
-   imaging expertise, safety screening, and capacity decisions with your team.** I want your
-   read on what would actually work before the group ever discusses it.
+   see each other's calendars, and orders are getting lost in fax routing between sites. I've
+   drafted one straw-man design — a **shared pending-imaging queue where your team keeps the
+   verification gate (safety screening, protocols, capacity — in writing)** — and I want you
+   to tear it up and rebuild it with me before it goes anywhere else.
 4. **Ask "how did you hear about us?" every time.** It went unasked 32 times, and we lost
    trails to referral sources actively sending us patients — including a competitor referring
    injection cases our way.
@@ -73,10 +78,11 @@ answering it.
 Thanks,
 Joe
 
-**Attachments:** call-review pack (de-identified) · draft working-session agenda
+**Attachments:** call-review pack (patient identifiers stripped; confidential) · draft working-session agenda
 
 ---
 
-*P.S. for Joe (not part of the email): send this before the group invite goes out, and ideally
-hold the 1:1s before circulating the pack beyond Kelley and Mitch. The Salar routing question
-stays out of email entirely — that's for the clinical huddle with Katie.*
+*P.S. for Joe (not part of the email): the pack circulates to no one beyond you, Kelley, and
+Mitch until they've corrected and co-signed v1.1. The Dr. Oddo and Anna 1:1 heads-ups happen
+before any routed recommendation memo goes out. Physician-level routing questions stay out of
+email entirely — that's Katie's clinical channel.*
