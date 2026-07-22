@@ -92,11 +92,12 @@ Google sources reuse it; each just needs the account granted access on that prod
   [help.liine.com/en/articles/15627134-liine-mcp-user-guide](https://help.liine.com/en/articles/15627134-liine-mcp-user-guide)
   (surfaced 2026-07-22; the guide isn't fetchable from this environment yet — the
   domain is outside the network allowlist).
-- **To connect:** (1) add `liine.com` and `*.liine.com` to the Claude environment's
-  network allowlist (covers the help site and whatever endpoint the MCP uses);
-  (2) follow the guide to get credentials from the Liine dashboard / account manager;
-  (3) wire per the guide (remote MCP or `.mcp.json` entry — decide once the guide is
-  readable). Their [API docs](https://api-docs.liine.com/) remain the fallback.
+- **To connect:** (1) ✅ `liine.com` domains allowlisted 2026-07-22; (2) ⚠️ the guide
+  article turned out to be **behind Liine's customer login** (help center returns 401
+  anonymously) — someone with a Liine login must open it and copy the setup section
+  (MCP endpoint/command + credential instructions) into the workspace; (3) then wire
+  per the guide (remote MCP or `.mcp.json` entry). Their
+  [API docs](https://api-docs.liine.com/) remain the fallback.
 - ⚠️ **PHI:** Liine records patient calls. Only de-identified aggregates enter this
   repo (counts, rates, channels) — same standard as `pm/spine-imaging-pain-call-review-pack.md`.
   No transcripts, names, numbers.
@@ -119,14 +120,18 @@ Google sources reuse it; each just needs the account granted access on that prod
   `list_locations`, `performance_daily` (calls/website clicks/directions/impressions
   per location), `search_keywords` (what people searched to find each listing),
   `list_reviews`. Uses the shared service account.
-- **Remaining pipeline (verified state 2026-07-22 — step 1 pending):**
-  1. Enable all THREE APIs in the GCP project: Business Profile Performance,
-     **My Business Account Management**, **My Business Business Information**
-     (the latter two verified not enabled).
-  2. Submit the [GBP access request form](https://developers.google.com/my-business/content/prereqs#request-access)
+- **Remaining pipeline (re-verified 2026-07-22, evening):**
+  1. ❌ **Still pending:** enable the two companion APIs in the GCP project —
+     [My Business Account Management](https://console.developers.google.com/apis/api/mybusinessaccountmanagement.googleapis.com/overview?project=156236120118)
+     and
+     [My Business Business Information](https://console.developers.google.com/apis/api/mybusinessbusinessinformation.googleapis.com/overview?project=156236120118)
+     (confirm Business Profile Performance is enabled too). `gbp_diagnose` still
+     returns SERVICE_DISABLED for Account Management.
+  2. ❌ Submit the [GBP access request form](https://developers.google.com/my-business/content/prereqs#request-access)
      — quota stays 0 until Google approves (days).
-  3. A Business Profile owner adds the service account as **Manager**
-     (business.google.com → Users).
+  3. ✅ **Done 2026-07-22:** the service account was added to the Business Profile
+     (per Joe). Once steps 1–2 land, `gbp_diagnose` should flip straight to
+     "Access WORKS."
 - **Already partially measured meanwhile:** GBP links are UTM-tagged → ~770
   sessions/30d in GA4. ⚠️ Two casings (`GBP / Organic` / `gbp / organic`) split the
   data — standardize.
