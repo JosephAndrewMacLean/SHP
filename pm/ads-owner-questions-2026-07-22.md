@@ -1,35 +1,51 @@
-# For whoever owns Google Ads (Cardinal?) — conversion & structure questions (2026-07-22)
+# For Blue Ox Digital (Shaun Elley / Jake) — Google Ads confirmations & decisions (2026-07-22)
 
-> Moved out of Paul's update — Paul is the website developer, not the ads manager.
-> Per `brand/current-state.md`, paid media is run by Cardinal; route these there
-> unless there's an internal ads owner. All items trace to Cardinal's own Paid Media
-> audit; we can see events fire in GA4 but not the Ads-side settings.
+> Ready-to-send draft. Context: Blue Ox runs the Google Ads account; Cardinal's June
+> 2026 Paid Media audit made recommendations about it. We can see events firing in
+> GA4 but not the Ads-side settings, so these are confirmations and open decisions —
+> framed so everyone works from the same numbers. Tone: collaborative — this is
+> alignment, not an inspection.
+
+---
+
+Shaun / Jake — we've stood up live measurement against the June audit
+recommendations, and there are a few Ads-side items we can't see from GA4. Could you
+confirm where these stand?
 
 ## Conversion tracking — three confirmations
 
-1. Was **"Website – New Patient Intent" revalued $125 → $5** (their audit, slide 11)?
-   It fired **3,981 times in the last 30 days** — if it's still $125, it's drowning
-   Smart Bidding in low-quality value exactly as their audit warned.
-2. Were the **existing-patient Liine actions switched to "Secondary"** (slide 10)?
-3. **Liine online-booking ("OB") conversions were 0 / not functional** at audit time —
-   current status?
+1. **"Website – New Patient Intent" value** — the audit recommended revaluing it
+   $125 → $5 (it's an intent click, not a booked patient). It fired **3,981 times in
+   the last 30 days**, so at $125 it would dominate Smart Bidding's value signal.
+   Has the revaluation happened?
+2. **Existing-patient Liine actions** — moved to "Secondary" yet, so bidding
+   optimizes only toward new patients?
+3. **Liine online-booking ("OB") conversions** — these were 0 / not yet functional at
+   audit time. Current status?
 
-After any value change: re-baseline campaign ROAS targets per their own recalculation
-method (slides 12–14), and tell us what changed and when, so before/after reads stay
+If values changed: per the audit's method, campaign ROAS targets need re-baselining
+afterward — let us know what changed and when, so our before/after reporting stays
 clean.
 
-## Structure decisions their roadmap is gated on
+## Structure decisions the roadmap is gated on
 
-As of 7/22, GA4 shows the account still running the audited per-location structure
+As of 7/22, GA4 shows the audited per-location structure still running
 (BOD-Ortho-Livonia/SH, BOD-NBS-Livonia/SH, BOD-Hand, BOD-Podiatry-Southfield,
 BOD-Port Huron, BOD-Branded, BOD-Doctors):
 
-- **GEO/consolidation decision** (their slide 17: per-location vs shared budget vs
-  per-service-line) — not visible as applied. Has the call been made?
-- **No Troy coverage, Southfield near-zero** — unchanged from the audit.
-- **No PMax test live** yet.
+- **GEO/consolidation approach** (per-location campaigns vs shared budgets vs one
+  campaign per service line) — has a direction been chosen?
+- **Troy has no coverage and Southfield is near-zero** — unchanged from the audit;
+  Troy is the unlock for the under-penetrated Oakland County opportunity.
+- **PMax Ortho test** — not visible yet; still planned?
 
-## Spend context (GA4, last 30 days, for reference)
+## Spend context (GA4, last 30 days, for shared reference)
 
 Ortho Livonia ~$73.9k · Ortho Sterling Heights ~$49.5k · Spine (NBS) Livonia+SH
 ~$82.9k · Hand ~$13.5k · Podiatry Southfield ~$12.8k · Branded ~$3.8k · Doctors ~$4.4k
+
+One more heads-up from our side: the site's landing-page experience is mid-repair
+(LCP recovered to ~1.4s; a CLS template fix is in flight) — Quality Scores should
+benefit as that lands. We'll share the before/after.
+
+— Joe

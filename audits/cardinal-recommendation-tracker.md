@@ -59,9 +59,10 @@ from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
    **Also check the Cloudflare audit log around May 1** — if the bot-protection or
    security level changed then, it's a candidate trigger for the CWV/organic
    regression (challenge interstitials degrade real-user LCP).
-4. **Staging domain still wide open:** `synergy.egowebdev.com` returns HTTP 200
-   (verified 2026-07-22). Cardinal: password-protect immediately — duplicate-content
-   and link-equity leak. ❌ not done.
+4. **Staging domain — ✅ FIXED 2026-07-22 (same day it was flagged):**
+   `synergy.egowebdev.com` was publicly reachable (HTTP 200) at morning check;
+   password protection went live the same day — re-verified **HTTP 401**. Cardinal's
+   "password-protect immediately" item is closed.
 5. **Two Phase-1 items verified DONE:** `llms.txt` is live and validly formatted
    (with the challenge caveat above), and missing meta descriptions went from 55
    (June) to **0 flagged** (Semrush Jul 21). Rank Math work is landing.
@@ -115,7 +116,7 @@ Cardinal's own "What success looks like at Day 30," statused:
 | 5 | Security headers on 100% of pages | ❓ | Needs direct fetch (blocked) — one `curl -I` from any laptop |
 | 6 | llms.txt live at /llms.txt | 🟠 | Exists & valid (Semrush Jul 21) — but served behind a Cloudflare bot challenge to non-browser agents (verified 2026-07-22), so its audience can't read it |
 | 6b | Verify AI crawler access in robots.txt ("do not block bots") | ❌ **FAILED** | Direct fetch 2026-07-22: Cloudflare-managed block disallows GPTBot, ClaudeBot, Google-Extended, CCBot + `ai-train=no`. Fix in Cloudflare dashboard. |
-| 6c | Password-protect staging domain synergy.egowebdev.com | ❌ | Direct fetch 2026-07-22: HTTP 200, publicly reachable |
+| 6c | Password-protect staging domain synergy.egowebdev.com | ✅ **fixed 2026-07-22** | Was HTTP 200 at morning check; re-verified same day: **HTTP 401** (auth required) |
 | 7 | Homepage meta description live | ✅ | Confirmed in audit (Rank Math) + Semrush: 0 missing sitewide |
 | 8 | Carpal tunnel + TKA titles/metas rewritten | ❌ **and worse** | GSC (Jun 22–Jul 19): TKA CTR 0.011% — unchanged, rewrite not landing. Carpal tunnel: the page **lost its #1 ranking entirely** (pos ~17, impressions −92%) — rewrite is now moot until rankings recover; treat as part of the regression damage |
 | 9 | Archive template duplicate titles/metas fixed | 🟠 | Dup metas 86→7; dup titles still 5 (locations-type taxonomy) |
@@ -164,8 +165,8 @@ eyeball from any browser. Priority lane first:
 
 | Cardinal item | Status | Evidence / measure |
 |---|---|---|
-| Finalize Liine conversion tracking (incl. scheduler/online-booking) | 🟠 | Liine live (June); GA4 shows intent events; Liine "OB" online-booking action was 0-volume in audit — confirm with Paul/Liine |
-| Reduce "Website – New Patient Intent" value $125→$5; recalc ROAS targets | ❓ | Ads-side setting — needs Google Ads read access (official Ads MCP) or agency confirmation. GA4 still shows 3,981 `new_patient_intent`/30d firing. |
+| Finalize Liine conversion tracking (incl. scheduler/online-booking) | 🟠 | Liine live (June); GA4 shows intent events; Liine "OB" online-booking action was 0-volume in audit — confirm with **Blue Ox (Shaun/Jake)** + Liine |
+| Reduce "Website – New Patient Intent" value $125→$5; recalc ROAS targets | ❓ | Ads-side setting — needs Google Ads read access (official Ads MCP) or **Blue Ox** confirmation. GA4 still shows 3,981 `new_patient_intent`/30d firing. Note: the Ads account is run by **Blue Ox Digital**, not Cardinal — Cardinal's paid audit is recommendations about Blue Ox's account. |
 | Switch existing-patient conversions to Secondary | ❓ | Same — Ads-side |
 | GEO/campaign consolidation decision (per-location vs shared budget vs per-service-line) | ❌ decision not visible yet | GA4 campaign names (Jul 22) still show the audited per-location structure: BOD-Ortho-Livonia, BOD-Ortho-SH, BOD-NBS-Livonia, BOD-NBS-SH, BOD-Hand-SH/Livonia, BOD-Podiatry-Southfield, BOD-Port Huron, BOD-Branded, BOD-Doctors |
 | No Troy coverage; Southfield near-zero | ❌ unchanged | No Troy campaign in GA4 spend data (30d); Southfield = podiatry only |
