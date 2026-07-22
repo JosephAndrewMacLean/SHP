@@ -1,0 +1,659 @@
+<title>Title & Meta Studio · Synergy SEO</title>
+<style>
+:root{
+  --paper:#FAFBF9; --ink:#1C2420; --muted:#5A665F; --line:#DCE3DD; --panel:#F1F5F1;
+  --accent:#1B5E48; --accent-ink:#14523D; --accent-soft:#E3EEE7;
+  --warn:#9A6A1B; --warn-soft:#F6EDDA; --crit:#A43E31; --crit-soft:#F5E6E2;
+  --chip:#EDF2EE; --mono-ink:#33413A; --card:#FFFFFF;
+  --serp-bg:#FFFFFF; --serp-title:#1A0DAB; --serp-url:#202124; --serp-crumb:#4D5156; --serp-meta:#4D5156; --serp-line:#E8EAED;
+  --good:#1B5E48; --bad:#A43E31;
+}
+@media (prefers-color-scheme: dark){:root{
+  --paper:#121815; --ink:#E4EAE5; --muted:#93A099; --line:#2A342E; --panel:#1A211D;
+  --accent:#5CA986; --accent-ink:#7CBD9D; --accent-soft:#1D2E26;
+  --warn:#D2A24E; --warn-soft:#2E2617; --crit:#D07D6F; --crit-soft:#301C18;
+  --chip:#202A24; --mono-ink:#B9C6BE; --card:#161D19;
+  --serp-bg:#202124; --serp-title:#8AB4F8; --serp-url:#DADCE0; --serp-crumb:#BDC1C6; --serp-meta:#BDC1C6; --serp-line:#3C4043;
+  --good:#5CA986; --bad:#D07D6F;
+}}
+:root[data-theme="dark"]{
+  --paper:#121815; --ink:#E4EAE5; --muted:#93A099; --line:#2A342E; --panel:#1A211D;
+  --accent:#5CA986; --accent-ink:#7CBD9D; --accent-soft:#1D2E26;
+  --warn:#D2A24E; --warn-soft:#2E2617; --crit:#D07D6F; --crit-soft:#301C18;
+  --chip:#202A24; --mono-ink:#B9C6BE; --card:#161D19;
+  --serp-bg:#202124; --serp-title:#8AB4F8; --serp-url:#DADCE0; --serp-crumb:#BDC1C6; --serp-meta:#BDC1C6; --serp-line:#3C4043;
+  --good:#5CA986; --bad:#D07D6F;
+}
+:root[data-theme="light"]{
+  --paper:#FAFBF9; --ink:#1C2420; --muted:#5A665F; --line:#DCE3DD; --panel:#F1F5F1;
+  --accent:#1B5E48; --accent-ink:#14523D; --accent-soft:#E3EEE7;
+  --warn:#9A6A1B; --warn-soft:#F6EDDA; --crit:#A43E31; --crit-soft:#F5E6E2;
+  --chip:#EDF2EE; --mono-ink:#33413A; --card:#FFFFFF;
+  --serp-bg:#FFFFFF; --serp-title:#1A0DAB; --serp-url:#202124; --serp-crumb:#4D5156; --serp-meta:#4D5156; --serp-line:#E8EAED;
+  --good:#1B5E48; --bad:#A43E31;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Seravek","Avenir Next","Segoe UI",system-ui,sans-serif; font-size:15.5px; line-height:1.5;}
+.wrap{max-width:880px; margin:0 auto; padding:40px 20px 140px}
+.mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+.eyebrow{font-size:11.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:650; margin:0 0 8px}
+h1{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; font-size:clamp(26px,4.6vw,34px); margin:0 0 8px; font-weight:600; line-height:1.15}
+.sub{color:var(--muted); margin:0 0 6px; max-width:64ch}
+.sub b{color:var(--ink)}
+.stepline{display:flex; align-items:center; gap:12px; margin:34px 0 14px}
+.stepnum{flex:none; width:30px; height:30px; border-radius:50%; background:var(--accent); color:var(--paper);
+  display:flex; align-items:center; justify-content:center; font-weight:700; font-size:15px;
+  font-family:"Iowan Old Style",Palatino,Georgia,serif;}
+.stepline h2{font-family:"Iowan Old Style",Palatino,Georgia,serif; font-size:20px; margin:0; font-weight:600}
+.stepline .hint{font-size:12.5px; color:var(--muted); margin-left:auto; text-align:right}
+.box{background:var(--card); border:1px solid var(--line); border-radius:8px; padding:14px}
+input[type=text], textarea, select{
+  width:100%; background:var(--paper); color:var(--ink); border:1.5px solid var(--line);
+  border-radius:6px; padding:9px 11px; font:inherit; outline:none;
+}
+input[type=text]:focus, textarea:focus, select:focus{border-color:var(--accent)}
+textarea{resize:vertical; min-height:64px}
+label{font-size:12px; letter-spacing:.07em; text-transform:uppercase; color:var(--muted); font-weight:650; display:block; margin:0 0 5px}
+button{font:inherit; cursor:pointer; border-radius:6px; border:1.5px solid var(--line); background:var(--card); color:var(--ink); padding:8px 14px}
+button:hover{border-color:var(--accent)}
+button.primary{background:var(--accent); border-color:var(--accent); color:#fff; font-weight:650}
+button.primary:hover{filter:brightness(1.06)}
+button.ghost{background:transparent}
+button:disabled{opacity:.45; cursor:not-allowed}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.pagelist{max-height:340px; overflow-y:auto; display:flex; flex-direction:column; gap:6px; margin-top:10px}
+.pagerow{display:flex; flex-wrap:wrap; gap:6px 10px; align-items:center; text-align:left; width:100%;
+  border:1.5px solid var(--line); background:var(--card); border-radius:7px; padding:9px 12px;}
+.pagerow:hover{border-color:var(--accent)}
+.pagerow.sel{border-color:var(--accent); background:var(--accent-soft)}
+.pagerow .path{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-size:12.5px; color:var(--mono-ink); word-break:break-all; flex:1 1 300px}
+.tag{font-size:10.5px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; border-radius:4px; padding:2px 7px; white-space:nowrap}
+.tag.local{background:var(--accent-soft); color:var(--accent-ink); border:1px solid var(--accent)}
+.tag.decision{background:var(--chip); color:var(--ink); border:1px solid var(--line)}
+.tag.info{background:var(--warn-soft); color:var(--warn); border:1px solid var(--warn)}
+.tag.brand{background:var(--panel); color:var(--muted); border:1px solid var(--line)}
+.datachips{display:flex; gap:5px; flex-wrap:wrap}
+.dchip{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-size:11px; color:var(--muted);
+  background:var(--chip); border:1px solid var(--line); border-radius:4px; padding:1px 6px; font-variant-numeric:tabular-nums}
+.intents{display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:10px}
+.intentcard{text-align:left; border:1.5px solid var(--line); border-radius:8px; background:var(--card); padding:12px 13px}
+.intentcard:hover{border-color:var(--accent)}
+.intentcard.sel{border-color:var(--accent); background:var(--accent-soft); box-shadow:inset 0 0 0 1px var(--accent)}
+.intentcard b{display:block; margin-bottom:3px}
+.intentcard span{font-size:12.5px; color:var(--muted); display:block}
+.intentcard .exp{margin-top:6px; font-size:11px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--accent-ink)}
+.grid2{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+@media (max-width:620px){.grid2{grid-template-columns:1fr}}
+.options{display:flex; flex-direction:column; gap:10px; margin-top:10px}
+.opt{border:1.5px solid var(--line); border-radius:8px; background:var(--card); padding:12px 14px; display:flex; flex-direction:column; gap:8px}
+.opt .serpline{font-family:Arial,Helvetica,sans-serif}
+.opt .serpline .t{color:var(--serp-title); font-size:17px; line-height:1.25; display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:600px}
+.opt .serpline .m{color:var(--serp-meta); font-size:13px; line-height:1.45; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; max-width:600px}
+.optfoot{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+.pips{display:flex; gap:3px}
+.pip{width:9px; height:9px; border-radius:50%; background:var(--line)}
+.pip.on{background:var(--accent)}
+.optfoot .why{font-size:12px; color:var(--muted); flex:1}
+.badge{font-size:10.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--accent-ink); background:var(--accent-soft); border:1px solid var(--accent); padding:2px 7px; border-radius:4px}
+.editor{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:10px}
+@media (max-width:760px){.editor{grid-template-columns:1fr}}
+.meter{height:5px; border-radius:3px; background:var(--line); margin-top:6px; overflow:hidden}
+.meter i{display:block; height:100%; background:var(--accent); border-radius:3px; transition:width .15s}
+.meter.over i{background:var(--bad)}
+.counts{display:flex; justify-content:space-between; font-size:11.5px; color:var(--muted); margin-top:4px; font-variant-numeric:tabular-nums}
+.checks{list-style:none; margin:10px 0 0; padding:0; display:flex; flex-direction:column; gap:5px; font-size:13px}
+.checks li{position:relative; padding-left:22px}
+.checks li::before{content:"✓"; position:absolute; left:0; top:0; font-weight:800}
+.checks li.ok::before{color:var(--good)} .checks li.ok{color:var(--muted)}
+.checks li.warn::before{content:"⚠"; color:var(--warn)} .checks li.warn{color:var(--warn)}
+.checks li.fail::before{content:"✕"; color:var(--bad)} .checks li.fail{color:var(--bad); font-weight:600}
+.serp{background:var(--serp-bg); border:1px solid var(--serp-line); border-radius:10px; padding:16px 18px; font-family:Arial,Helvetica,sans-serif}
+.serp .crumbrow{display:flex; align-items:center; gap:9px; margin-bottom:4px}
+.serp .fav{width:26px; height:26px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; font-family:inherit}
+.serp .site{font-size:13px; color:var(--serp-url); line-height:1.2}
+.serp .crumb{font-size:11.5px; color:var(--serp-crumb); word-break:break-all}
+.serp .t{color:var(--serp-title); font-size:19px; line-height:1.25; margin:2px 0 3px; display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; cursor:pointer}
+.serp .m{color:var(--serp-meta); font-size:13.5px; line-height:1.5; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden}
+.serp .m .date{color:var(--serp-crumb)}
+.serplabel{font-size:11px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); font-weight:650; margin:14px 0 6px}
+.actions{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px}
+.flagnote{background:var(--warn-soft); border:1px solid var(--warn); border-radius:6px; padding:8px 11px; font-size:13px; margin-top:10px}
+.flagnote b{color:var(--warn)}
+.batchbar{position:fixed; left:0; right:0; bottom:0; background:var(--card); border-top:1.5px solid var(--accent);
+  padding:10px 18px; display:flex; align-items:center; gap:12px; z-index:20}
+.batchbar .n{font-weight:700; color:var(--accent-ink)}
+.batchbar .spacer{flex:1}
+.drawer{position:fixed; left:0; right:0; bottom:0; max-height:70vh; overflow-y:auto; background:var(--card);
+  border-top:1.5px solid var(--accent); padding:18px 20px 90px; z-index:30; display:none}
+.drawer.open{display:block}
+.drawer h3{margin:0 0 10px; font-family:"Iowan Old Style",Palatino,Georgia,serif}
+.bitem{border:1px solid var(--line); border-radius:7px; padding:10px 12px; margin-bottom:8px}
+.bitem .path{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-size:11.5px; color:var(--mono-ink); word-break:break-all}
+.bitem .bt{font-weight:650; margin:4px 0 2px}
+.bitem .bm{font-size:13px; color:var(--muted)}
+.bitem .rm{float:right; font-size:12px; border:none; background:none; color:var(--bad); cursor:pointer; padding:2px 4px}
+.toast{position:fixed; bottom:74px; left:50%; transform:translateX(-50%); background:var(--accent); color:#fff;
+  border-radius:6px; padding:8px 16px; font-size:13.5px; font-weight:650; opacity:0; pointer-events:none; transition:opacity .2s; z-index:75}
+.toast.show{opacity:1}
+.rulesfoot{margin-top:44px; border-top:1px solid var(--line); padding-top:14px; font-size:12.5px; color:var(--muted)}
+.hidden{display:none !important}
+details.custom{margin-top:10px}
+details.custom summary{cursor:pointer; color:var(--accent-ink); font-weight:650; font-size:14px}
+.customform{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px}
+@media (max-width:620px){.customform{grid-template-columns:1fr}}
+@media (prefers-reduced-motion: reduce){ *{transition:none !important} }
+/* ---------- guided tour ---------- */
+.tour-dim{position:fixed; inset:0; background:rgba(8,14,10,.62); z-index:50; display:none}
+.tour-dim.on{display:block}
+.tour-target-el{z-index:60 !important; border-radius:8px;
+  box-shadow:0 0 0 3px var(--accent), 0 0 0 8px rgba(27,94,72,.28) !important; background:var(--card)}
+.serp.tour-target-el{background:var(--serp-bg)}
+.tour-raise{z-index:60 !important}
+.tour-hint{animation:tourpulse 1.3s ease-in-out infinite}
+@keyframes tourpulse{0%,100%{box-shadow:0 0 0 3px var(--accent),0 0 0 8px rgba(27,94,72,.28)}50%{box-shadow:0 0 0 3px var(--accent),0 0 0 14px rgba(27,94,72,.12)}}
+@media (prefers-reduced-motion: reduce){.tour-hint{animation:none}}
+.tour-bubble{position:fixed; z-index:70; width:min(350px,calc(100vw - 24px)); background:var(--card);
+  border:1.5px solid var(--accent); border-radius:10px; padding:14px 16px; box-shadow:0 10px 32px rgba(0,0,0,.3); display:none;
+  max-height:calc(100vh - 24px); overflow-y:auto}
+.tour-bubble .k{font-size:11px; letter-spacing:.09em; text-transform:uppercase; color:var(--accent-ink); font-weight:700; margin-bottom:5px}
+.tour-bubble p{margin:0 0 10px; font-size:14.5px; max-width:none; line-height:1.5}
+.tour-bubble ol{margin:6px 0 10px; padding-left:18px; font-size:13.5px; line-height:1.55}
+.tour-bubble .row{display:flex; gap:8px; align-items:center}
+.tour-bubble .waitmsg{font-size:12.5px; color:var(--muted)}
+.tour-bubble .skip{margin-left:auto; background:none; border:none; color:var(--muted); font-size:12.5px; cursor:pointer; padding:4px}
+.tour-bubble.center{left:50%; top:50%; transform:translate(-50%,-50%); width:min(440px,calc(100vw - 24px))}
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Synergy Health Partners · SEO Program</p>
+    <h1>Title &amp; Meta Studio</h1>
+    <p class="sub"><b>Four steps, no guessing.</b> This is the tool for the Wave-1 batches in your execution plan — every page below is tagged with its ship day, preloaded with its Google Search Console data and its approved draft. Approve the draft as-is, or edit until <b>nothing is red</b> — a yellow ⚠ just means verify that fact before end of day. The rules are built from published CTR research (evidence at the bottom), and the guardrails — banned words, verify-flags, truncation — catch problems before Google does.</p>
+    <p class="sub" style="font-size:13px">First visit? <b>The guide starts by itself</b> and walks you through your first real page, click by click — you can't take a wrong turn. Output is a <b>draft pending human review</b> — clinical wording still goes through a physician reviewer.</p>
+    <div style="margin:12px 0 0; background:var(--accent-soft); border:1px solid var(--accent); border-radius:6px; padding:10px 14px; font-size:13.5px; max-width:64ch"><b style="color:var(--accent-ink)">Retargeted after the migration (Jul 21 PM):</b> every row now points at the page's LIVE URL per the Jul 15 crawl. Rows that need no work say so — “live title already strong” means skip; “no live page” rows are blocked from the batch. Full remap: <span class="mono">seo/crawl-review-2026-07.md</span>.</div>
+    <div style="margin:12px 0 0"><button class="primary" id="guide-btn" type="button">▶ Guide me — walk me through my first page</button></div>
+  </header>
+
+  <div class="stepline"><span class="stepnum">1</span><h2>Pick the page</h2><span class="hint">25 Wave-1 pages · badges = ship day from your plan (B1 Wed · B2 Thu · B3 Fri)</span></div>
+  <div class="box">
+    <input type="text" id="search" placeholder="Type to filter… (e.g. spine, laminectomy, sterling)" aria-label="Filter pages">
+    <div class="pagelist" id="pagelist"></div>
+    <details class="custom"><summary>+ Custom page (a new hub, a rebuilt page, anything)</summary>
+      <div class="customform">
+        <div><label for="c-url">URL path</label><input type="text" id="c-url" placeholder="/conditions/spinal-stenosis/"></div>
+        <div><label for="c-topic">Topic (as it should read)</label><input type="text" id="c-topic" placeholder="Spinal Stenosis"></div>
+        <div><label for="c-query">Main query it should win</label><input type="text" id="c-query" placeholder="spinal stenosis"></div>
+        <div style="display:flex; align-items:flex-end"><button class="primary" id="c-go" style="width:100%">Use this page</button></div>
+      </div>
+    </details>
+  </div>
+
+  <div id="step2" class="hidden">
+    <div class="stepline"><span class="stepnum">2</span><h2>Who's searching?</h2><span class="hint">auto-suggested — change it if the data's wrong</span></div>
+    <div class="intents" id="intents"></div>
+    <div class="grid2" style="margin-top:10px">
+      <div><label for="query">Main query (front-load this in the title)</label><input type="text" id="query"></div>
+      <div id="citywrap"><label for="city">Location signal</label><select id="city">
+        <option>Metro Detroit</option><option>Livonia</option><option>Sterling Heights</option>
+        <option>Southfield</option><option>Troy</option><option>Rochester</option><option>Port Huron</option>
+      </select></div>
+    </div>
+  </div>
+
+  <div id="step3" class="hidden">
+    <div class="stepline"><span class="stepnum">3</span><h2>Pick a starting point</h2><span class="hint">scored 0–5 · approved Wave-1 draft shown first when it exists</span></div>
+    <div class="options" id="options"></div>
+  </div>
+
+  <div id="step4" class="hidden">
+    <div class="stepline"><span class="stepnum">4</span><h2>Fine-tune &amp; ship</h2><span class="hint">edit until nothing is red</span></div>
+    <div class="editor">
+      <div class="box">
+        <label for="title">Title tag</label>
+        <input type="text" id="title" autocomplete="off">
+        <div class="meter" id="t-meter"><i></i></div>
+        <div class="counts"><span id="t-chars"></span><span id="t-px"></span></div>
+        <label for="meta" style="margin-top:14px">Meta description</label>
+        <textarea id="meta"></textarea>
+        <div class="meter" id="m-meter"><i></i></div>
+        <div class="counts"><span id="m-chars"></span><span id="m-px"></span></div>
+        <ul class="checks" id="checks"></ul>
+        <div id="flagnote"></div>
+      </div>
+      <div>
+        <div class="serplabel">How it looks on Google</div>
+        <div class="serp">
+          <div class="crumbrow"><div class="fav">S</div><div><div class="site">Synergy Health Partners</div><div class="crumb" id="serp-crumb">https://synergyhealth.org</div></div></div>
+          <span class="t" id="serp-title"></span>
+          <div class="m" id="serp-meta"></div>
+        </div>
+        <div class="serplabel">Why this matters here</div>
+        <div class="box" style="font-size:13px; color:var(--muted)" id="context"></div>
+        <div class="actions">
+          <button class="primary" id="add">Add to batch ✓</button>
+          <button id="copy-t">Copy title</button>
+          <button id="copy-m">Copy meta</button>
+          <button class="ghost" id="back">↩ other options</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stepline" style="margin-top:44px"><span class="stepnum">✓</span><h2>The evidence behind the rules</h2><span class="hint">why the scoring works the way it does</span></div>
+  <div class="box" style="font-size:13.5px">
+    <ul class="checks" style="margin-top:0">
+      <li class="ok"><b>Titles of 40–60 characters earn +33.3% CTR</b> vs titles outside that band — Backlinko, analysis of 4M Google results. That's why the counter turns green there.</li>
+      <li class="ok"><b>Pages with a meta description earn ~6% more clicks</b> than pages without one — same Backlinko dataset. Google truncates around 155–160 chars, so the app aims you at 140–155 and accepts 120–158.</li>
+      <li class="ok"><b>Clickbait "power words" cut CTR ~14%</b> (Backlinko, 5M results) — and violate healthcare advertising rules anyway. The app warns on hype and hard-blocks "best/#1/guaranteed" (FTC).</li>
+      <li class="ok"><b>Question-style titles show no reliable CTR lift</b> in Backlinko's newer data — the app offers them as variants for info intent but never claims they're magic.</li>
+      <li class="warn"><b>AI Overviews cut clicks on informational results by 34.5%</b> (Ahrefs, 300K keywords, Apr 2025; their Dec 2025 update measured −58%). That's why Info-intent pages are tagged "partial recovery only" — their job is authority and citations, not clicks.</li>
+      <li class="ok"><b>Position still beats everything.</b> The per-page benchmark math uses the same healthcare-conservative CTR-by-position curve as <span class="mono">seo/data/analyze_gsc.py</span>, so the app, the analysis, and the monthly report all agree with each other.</li>
+    </ul>
+    <p style="font-size:12px; color:var(--muted); margin:10px 0 0">Sources: <a href="https://backlinko.com/google-ctr-stats" target="_blank" rel="noopener">Backlinko organic CTR study</a> · <a href="https://ahrefs.com/blog/ai-overviews-reduce-clicks/" target="_blank" rel="noopener">Ahrefs, AI Overviews reduce clicks</a> · your own 16-month GSC export (<span class="mono">seo/data/2026-07-21/</span>) — the only source that knows <em>this</em> site.</p>
+  </div>
+  <div class="stepline" style="margin-top:34px"><span class="stepnum">✓</span><h2>End of day — ship it</h2><span class="hint">same order, every batch day</span></div>
+  <div class="box" style="font-size:14px">
+    <ol id="shipit-list" style="margin:0; padding-left:20px; line-height:1.7">
+      <li>Clear any ⚠ yellow items <b>first</b> — verify the fact or use the safe wording (clinical wording → the page's physician reviewer; scheduling promises → Joe; amenities → ops)</li>
+      <li><b>Copy batch for change-log</b> (button in the bottom bar)</li>
+      <li>Paste into <span class="mono">seo/change-log.md</span></li>
+      <li>Enter each title &amp; meta in <b>Rank Math</b> — change nothing else on those pages</li>
+      <li>Add a <b>GSC annotation</b> the same day (e.g. “Batch 1 spine titles — Jul 23”)</li>
+      <li>Spot-check 3 pages on your actual phone — stale content means the mobile bug: tell Paul</li>
+    </ol>
+    <p style="margin:10px 0 0; color:var(--muted); font-size:13px"><b style="color:var(--accent-ink)">Then you're done — really done.</b> Don't touch those pages again for 14 days. The waiting is how we measure what worked.</p>
+  </div>
+  <div class="rulesfoot">
+    <b>This tool ships titles &amp; metas only — never URL changes, never redirects.</b> Every page keeps its exact current address. Redirect/consolidation decisions are a separate, gated workstream owned by Cardinal — nothing in this tool or this wave touches them.<br><br>
+    <b>Connected to this week's plan:</b> B1 ships Wed Jul 23 (spine) · B2 Thu (brand bridge + big gaps) · B3 Fri (the rest) — per <span class="mono">seo/randall-execution-plan.md</span>. Approved copy source: <span class="mono">seo/quick-wins-title-meta.md</span>. Batch export pastes straight into <span class="mono">seo/change-log.md</span>.
+  </div>
+</div>
+
+<div class="batchbar">
+  <span class="n" id="batch-n">Batch: 0 pages</span>
+  <span class="spacer"></span>
+  <button id="view-batch">View batch</button>
+  <button class="primary" id="export-batch">Copy batch for change-log</button>
+</div>
+<div class="drawer" id="drawer">
+  <h3>This batch</h3>
+  <div id="batchlist"></div>
+  <div class="actions">
+    <button class="primary" id="export-batch2">Copy batch for change-log</button>
+    <button id="clear-batch">Clear batch</button>
+    <button class="ghost" id="close-drawer">Close</button>
+  </div>
+</div>
+<div class="toast" id="toast">Copied</div>
+
+<script>
+"use strict";
+/* ---------- data: the 25 Wave-1 pages with 16-mo GSC data ---------- */
+const PAGES=[
+ {url:"/treatment/microdiscectomy/",topic:"Microdiscectomy",query:"microdiscectomy",intent:"decision",line:"spine",g:[3864,8.3,0.0],b:1,d:"3.9K impr · pos 8.3 · 0.00% CTR — page 1, zero clicks",flags:[],w:{t:"Microdiscectomy: Herniated Disc Surgery & Recovery | Synergy",m:"How microdiscectomy relieves herniated disc pain, what recovery looks like, and when it's recommended. Minimally invasive spine care in Metro Detroit."}},
+ {url:"/conditions/neck-fracture-broken-neck/",topic:"Broken Neck",query:"broken neck",intent:"info",line:"spine",g:[69252,7.0,0.26],b:1,d:"69.3K impr · pos 7.0 · AI 11.9K",flags:["reviewer","er","livegood"],w:{t:"Broken Neck: Symptoms, Types & Treatment | Synergy Health",m:"How to recognize a possible neck fracture, when to call 911, and how spine specialists treat and monitor healing. Reviewed by our spine team."}},
+ {url:"/conditions/back-fracture-break/",topic:"Back (Vertebral) Fracture",query:"back fracture",intent:"info",line:"spine",g:[17219,8.7,0.14],b:1,d:"17.2K impr · pos 8.7 · 0.14%",flags:["er"],w:{t:"Back (Vertebral) Fracture: Symptoms & Treatment | Synergy",m:"Signs of a spinal compression fracture, when it's an emergency, and treatment options from bracing to kyphoplasty. Metro Detroit spine care."}},
+ {url:"/treatment/lumbar-cervical-fusion/",topic:"Cervical Fusion Surgery",query:"cervical fusion",intent:"decision",line:"spine",g:[80362,9.0,0.18],b:1,d:"80.4K impr · pos 9.0 · legacy-URL data",flags:["remap","combined"],w:{t:"Cervical Fusion Surgery: What to Expect | Synergy Health",m:"How neck (cervical) fusion works, who it helps, the recovery timeline, and questions to ask your surgeon. Spine care across Metro Detroit."}},
+ {url:"/treatment/lumbar-laminectomy/",topic:"Lumbar Laminectomy",query:"lumbar laminectomy",intent:"decision",line:"spine",g:[87456,28.6,0.39],b:1,d:"87.5K impr · pos 28.6 · legacy-URL data",flags:["remap","livegood"],w:{t:"Lumbar Laminectomy: Procedure & Recovery | Synergy Health",m:"What a lumbar laminectomy involves, how long surgery takes, incision size, and realistic recovery week by week — from Metro Detroit spine specialists."}},
+ {url:"/conditions/spondylolisthesis/",topic:"Spondylolisthesis",query:"spondylolisthesis",intent:"decision",line:"spine",g:[2251,6.0,0.09],b:1,d:"2.3K impr · pos 6.0 · AI 274 · legacy-URL data",flags:["remap","livegood"],w:{t:"Spondylolisthesis: Symptoms, Grades & Treatment | Synergy",m:"What spondylolisthesis is, how grades differ, symptoms to watch for, and treatment from physical therapy to surgery — Metro Detroit spine specialists."}},
+ {url:"/specialty/spine-neck-back/",topic:"Spine, Back & Neck Care",query:"spine specialist",intent:"local",line:"spine",g:[66451,24.7,0.19],b:1,d:"66.5K impr · pos 24.7 · legacy-URL data",flags:["remap","livegood","sameweek"],w:{t:"Spine, Back & Neck Care in Metro Detroit | Synergy Health",m:"Complete spine care under one roof — spine surgeons plus interventional pain physicians, PT, and imaging. Same-week appointments at Metro Detroit locations."}},
+ {url:"/treatment/thoracic-lumbar-decompression/",topic:"Spinal Decompression Surgery",query:"thoracic decompression",intent:"decision",line:"spine",g:[11550,18.2,0.33],b:1,d:"11.6K impr · pos 18.2 · legacy-URL data",flags:["remap"],w:{t:"Thoracic & Lumbar Decompression Surgery | Synergy Health",m:"When spinal decompression surgery is recommended, how it relieves nerve pressure, and what recovery involves. Metro Detroit spine surgeons."}},
+ {url:"/specialties/spine-back-and-neck/anterior-cervical-discectomy-fusion/",topic:"ACDF Surgery",query:"acdf",intent:"decision",line:"spine",g:[14628,7.2,0.36],b:1,d:"21K impr for acdf at pos 3 — NO live page; Week-2 build",flags:["gone","reviewer"],w:{t:"ACDF Surgery: Procedure, Recovery & Risks | Synergy Health",m:"What ACDF (anterior cervical discectomy and fusion) treats, how the surgery works, and week-by-week recovery — reviewed by Metro Detroit spine surgeons."}},
+ {url:"/locations/southfield/",topic:"Southfield Orthopedic & Spine Clinic",query:"orthopedic southfield",intent:"local",line:"practice",city:"Southfield",g:[8104,15.4,1.33],b:1,d:"8.1K impr · legacy spine-neck page data",flags:["remap","sameweek","amenities"],w:{t:"Southfield Orthopedic & Spine Clinic | Synergy Health",m:"Orthopedic and spine care in Southfield — surgeons, pain physicians, on-site imaging and PT. Same-week appointments; serving Oakland County."}},
+ {url:"/get-involved/contact-us/",topic:"Contact & Scheduling",query:"synergy health contact",intent:"local",line:"practice",g:[128940,6.2,0.30],b:2,d:"129K impr · legacy data · LIVE TITLE IS BROKEN (| Page bug)",flags:["remap","sameweek"],w:{t:"Contact Synergy Health Partners | Schedule an Appointment",m:"Book online or call to schedule orthopedic, spine, physical therapy, or MRI care at 8 Metro Detroit locations. Same-week appointments available."}},
+ {url:"/about-us/company-history/",topic:"Mendelson Kornblum",query:"mendelson kornblum",intent:"brand",line:"practice",g:[86443,5.3,3.06],b:2,d:"86.4K impr · pos 5.3 · 3.06%",flags:["duphist"],w:{t:"Mendelson Kornblum Is Now Synergy Health Partners",m:"The practice you've known as Mendelson Kornblum Orthopedics continues as Synergy Health Partners — same physicians, same locations, one integrated team."}},
+ {url:"/mendelson-kornblum-orthopedics-is-a-multi-specialty-practice…/",topic:"Mendelson Kornblum Orthopedics",query:"mendelson orthopedics",intent:"brand",line:"practice",g:[106459,5.9,1.61],b:2,d:"106.5K impr · pos 5.9 — not in crawl",flags:["verifyurl"],w:{t:"Mendelson Kornblum Orthopedics | Now Synergy Health Partners",m:"Mendelson Kornblum's orthopedic, spine, and pain teams now practice as Synergy Health Partners. Find your physician and book at the same locations."}},
+ {url:"/flying-with-joint-replacement/",topic:"Flying After Joint Replacement",query:"flying after knee replacement",intent:"info",line:"ortho",g:[122984,6.4,0.55],b:2,d:"123K impr · pos 6.4 — not in crawl (orphaned?)",flags:["verifyurl"],w:{t:"Flying After a Joint Replacement: What to Expect at TSA",m:"Will your knee or hip implant set off airport security? What to know before you fly — screening, implant cards, and travel tips after joint replacement."}},
+ {url:"/specialties/physical-therapy/lymphedema-management/",topic:"Lymphedema Treatment",query:"lymphedema treatment",intent:"info",line:"pt",g:[222596,8.7,0.26],b:2,d:"222.6K impr — NO live page on new site; content-gap decision",flags:["gone","cert"],w:{t:"Lymphedema Treatment & Certified Therapy | Synergy Health",m:"How certified lymphedema therapists reduce swelling with manual drainage, compression, and exercise — treatment at Metro Detroit locations."}},
+ {url:"/treatment/finger-amputation-surgery/",topic:"Finger Amputation",query:"finger amputation",intent:"decision",line:"hand",g:[60225,4.6,0.44],b:3,d:"60.2K impr · pos 4.6 · legacy-URL data · AI 1,975",flags:["remap"],w:{t:"Finger Amputation: Surgery, Recovery & Rehab | Synergy",m:"What to expect before and after finger amputation surgery — healing timeline, hand therapy, and returning to daily activities. Metro Detroit hand surgeons."}},
+ {url:"/providers/",topic:"Find a Doctor",query:"orthopedic doctor near me",intent:"local",line:"practice",g:[125211,10.0,0.34],b:3,d:"125K impr · legacy data · live title already strong",flags:["remap","livegood","filters"],w:{t:"Find an Orthopedic or Spine Doctor | Synergy Health",m:"Search Synergy's orthopedic, spine, hand, foot & ankle, and pain physicians across Metro Detroit. Filter by specialty and location; book online."}},
+ {url:"/locations/",topic:"Clinic Locations",query:"orthopedic clinic near me",intent:"local",line:"practice",g:[117985,9.2,0.91],b:3,d:"118K impr · legacy data · live title already strong",flags:["remap","livegood"],w:{t:"Orthopedic & Spine Clinic Locations — Metro Detroit | Synergy",m:"Find your nearest Synergy Health Partners clinic — Livonia, Sterling Heights, Southfield, Troy, Rochester, and more. Hours, directions, and booking."}},
+ {url:"/treatment/total-knee-arthroplasty-tka/",topic:"TKA (Total Knee Arthroplasty)",query:"tka",intent:"info",line:"ortho",g:[56356,9.3,0.02],b:3,d:"56.4K impr · pos 9.3 · 0.02%",flags:[],w:{t:"TKA (Total Knee Arthroplasty): A Patient's Guide | Synergy",m:"What TKA means, how total knee replacement works, and what recovery really looks like — explained simply by Metro Detroit orthopedic surgeons."}},
+ {url:"/locations/sterling-heights/",topic:"Synergy Health Sterling Heights",query:"orthopedic sterling heights",intent:"local",line:"practice",city:"Sterling Heights",g:[93998,10.9,2.73],b:3,d:"94K impr · legacy full-service-clinics data",flags:["remap","sameweek","amenities"],w:{t:"Synergy Health Sterling Heights — Orthopedics, Spine & PT",m:"Full-service orthopedic and spine care on Mound Rd in Sterling Heights — same-week appointments with on-site MRI and physical therapy."}},
+ {url:"/locations/port-huron/",topic:"Synergy Health Port Huron",query:"orthopedic port huron",intent:"local",line:"practice",city:"Port Huron",g:[40775,9.6,2.96],b:3,d:"40.8K impr · legacy data · live title already decent",flags:["remap","livegood","status"],w:{t:"Synergy Health Port Huron — Orthopedic Care & PT",m:"Orthopedic specialists in Port Huron — joint, spine, hand, and foot care with on-site physical therapy. Book online or call to schedule."}},
+ {url:"/conditions/dupuytrens-contracture/",topic:"Dupuytren's Contracture",query:"dupuytren's contracture",intent:"decision",line:"hand",g:[18890,14.1,0.21],b:3,d:"18.9K impr · pos 14.1 · AI 1,013",flags:[],w:{t:"Dupuytren's Contracture: Signs & Treatment | Synergy",m:"Why fingers curl inward with Dupuytren's disease, when to see a hand specialist, and treatment options from injections to surgery. Metro Detroit."}},
+ {url:"/treatment/hand-therapy/",topic:"Hand Therapy",query:"hand therapy",intent:"local",line:"hand",g:[65930,16.8,0.06],b:3,d:"65.9K impr · legacy-URL data",flags:["remap","cert"],w:{t:"Certified Hand Therapy | Synergy Health",m:"Work with certified hand therapists on injury recovery, custom splinting, and post-surgical rehab at Metro Detroit locations."}},
+ {url:"/treatment/prp-injections/",topic:"PRP Injections",query:"prp injections",intent:"decision",line:"ortho",g:[25662,6.7,0.07],b:3,d:"25.7K impr · pos 6.7 · 0.07%",flags:["medreview"],w:{t:"PRP Injections: How They Work & What They Treat | Synergy",m:"How platelet-rich plasma injections are used for joint and tendon problems, who may be a candidate, and what realistic expectations look like."}},
+ {url:"/locations-type/imaging-mri/",topic:"Open MRI & Imaging",query:"open mri near me",intent:"local",line:"imaging",g:[83707,4.8,4.28],b:3,d:"83.7K impr · legacy /mri/ data · LIVE TITLE = DUPLICATED INDEX TITLE",flags:["remap","speed"],w:{t:"Open MRI & Imaging in Metro Detroit | Synergy Health",m:"High-field open MRI with fast scheduling and quick results — multiple Metro Detroit locations. Most insurance accepted; schedule your scan today."}},
+ {url:"/locations-type/auto-accident-care/",topic:"Auto Accident Injury Care",query:"car accident doctor",intent:"local",line:"practice",b:3,d:"NEW — live title duplicates the locations index",flags:["medreview"],w:{t:"Auto Accident Injury Care — Metro Detroit | Synergy Health",m:"Care after a car accident — orthopedic and spine evaluation at Synergy locations across Metro Detroit. Auto no-fault insurance accepted; no referral needed."}},
+ {url:"/locations-type/surgical-centers/",topic:"Outpatient Surgery Centers",query:"outpatient surgery center",intent:"local",line:"practice",b:3,d:"NEW — live title duplicates the locations index",flags:["amenities"],w:{t:"Outpatient Surgery Centers — Metro Detroit | Synergy Health",m:"Our outpatient surgical centers for orthopedic and spine procedures — what to expect before, during, and after same-day surgery."}},
+ {url:"/locations-type/full-service-clinics/",topic:"Full-Service Orthopedic Clinics",query:"orthopedic clinic",intent:"local",line:"practice",b:3,d:"NEW — live title duplicates the locations index",flags:["amenities"],w:{t:"Full-Service Orthopedic Clinics — Metro Detroit | Synergy",m:"Clinics with orthopedics, spine care, imaging, and physical therapy under one roof. Find your nearest full-service Synergy location and book online."}}
+];
+const INTENTS={
+ local:{name:"Finding care nearby",desc:"“spine surgeon near me” — comparing options, ready to book.",exp:"CTR should move most",need:"City + a booking next-step"},
+ decision:{name:"Researching a treatment",desc:"They (or their doctor) named a procedure or condition. They want clarity.",exp:"CTR should move",need:"A plain promise of what they'll learn"},
+ info:{name:"Curious or worried",desc:"Symptom questions. AI Overviews answer many of these first.",exp:"Partial recovery only",need:"Match the question, add a human hook"},
+ brand:{name:"Knows the old name",desc:"Searching Mendelson / Kornblum. Reassure them it's the same practice.",exp:"Protects existing clicks",need:"Continuity: same physicians, new name"}};
+const FLAGMSG={remap:"Retargeted to the LIVE URL after the site migration — the GSC numbers shown were earned by the legacy address.",gone:"No live page exists for this today — SKIP in Wave 1R. The approved copy applies when the page is (re)built.",livegood:"The live page already has a strong title — skip unless your edit is clearly better.",combined:"The live page covers lumbar AND cervical fusion together — check the live title before overwriting; a dedicated cervical page is a build item.",verifyurl:"Not found in the Jul 15 crawl — confirm the URL still loads before editing (may be orphaned).",duphist:"/about-us/our-history/ is also live — leave it alone; Cardinal resolves the duplicate.",reviewer:"“Reviewed by…” requires a named physician reviewer actually on the page.",er:"Trauma topic — page must keep a “call 911 / ER now” banner.",sameweek:"“Same-week” — ask Joe to confirm scheduling can really deliver before shipping.",amenities:"On-site services claim — verify with ops.",cert:"Certification claim — ask Joe/HR to verify credentials.",filters:"“Filter” wording — find-a-doctor filters were flagged broken; fix or drop.",status:"Ask Joe to verify this clinic's current status/services first.",medreview:"Evidence-sensitive topic — strict medical review of phrasing.",speed:"“Fast/quick” — ask Joe; keep only if scheduling truly supports it.",nourl:"Never change this page's URL."};
+const BANNED=/\b(best|#1|number one|top[- ]?rated|guaranteed?|cure[sd]?|painless|100%|no\.?\s?1)\b/i;
+const RISKY=/\b(same[- ]?week|certified|fast|quick|reviewed\s+(?:\w+\s+){0,2}by|most insurance)\b/i;
+const HYPE=/\b(miracle|breakthrough|amazing|shocking|secret|revolutionary|unbelievable|incredible|insane)\b/i;
+/* healthcare planning benchmark CTR by position — same curve as seo/data/analyze_gsc.py,
+   blended conservative from large-scale CTR studies (Backlinko 4M / industry position curves),
+   discounted for YMYL SERPs where AI Overviews absorb clicks (Ahrefs 300K-keyword study) */
+function bench(pos){
+  const t=[[1,28],[2,15],[3,10],[4,7],[5,5.5],[6,4.5],[7,3.5],[8,3.0],[9,2.5],[10,2.2]];
+  for(const [p,c] of t){if(pos<=p+0.5)return c}
+  return pos<=15?1.5:pos<=20?1.0:0.5;
+}
+
+/* ---------- state ---------- */
+let S={page:null,intent:null,city:"Metro Detroit",query:"",title:"",meta:"",batch:[]};
+try{S.batch=JSON.parse(localStorage.getItem("tms-batch")||"[]")}catch(e){S.batch=[]}
+
+/* ---------- helpers ---------- */
+const $=id=>document.getElementById(id);
+const mc=document.createElement("canvas").getContext("2d");
+function px(t,f){mc.font=f;return Math.round(mc.measureText(t).width)}
+const T_PX=580,M_PX=980;
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function toast(msg){const t=$("toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),1400)}
+function copy(text,msg){
+  const done=()=>toast(msg||"Copied");
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,()=>fallback());}
+  else fallback();
+  function fallback(){const ta=document.createElement("textarea");ta.value=text;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");done()}catch(e){toast("Select & copy manually")}document.body.removeChild(ta)}
+}
+function brandFit(base){
+  for(const b of [" | Synergy Health Partners"," | Synergy Health"," | Synergy"]){
+    if(base.length+b.length<=60&&px(base+b,"20px Arial")<=T_PX)return base+b;
+  } return base;
+}
+function cap(s){return s.replace(/\b\w/g,c=>c.toUpperCase())}
+
+/* ---------- generators ---------- */
+function genTitles(){
+  const T=S.page.topic,c=S.city,out=[];
+  if(S.intent==="decision"){
+    ["What to Expect","Procedure & Recovery","Symptoms & Treatment","When It's Needed & How It Works","Recovery Time & Results"].forEach(a=>out.push(brandFit(T+": "+a)));
+    out.push(brandFit(T+" — A Patient's Guide"));
+  }else if(S.intent==="local"){
+    out.push(brandFit(T+" in "+c+", MI"));
+    out.push(brandFit(T+" — "+c));
+    out.push(brandFit("Find "+T+" in "+c+", MI"));
+    out.push(T+" in "+c+" | Same-Week Appointments");
+    out.push(brandFit(T+" Near You in "+c));
+  }else if(S.intent==="info"){
+    out.push(brandFit(T+": Symptoms, Causes & Treatment"));
+    out.push(brandFit(T+": What Patients Should Know"));
+    out.push(brandFit(cap(S.query)+"? What It Means & What to Do"));
+    out.push(brandFit(T+" — A Simple Guide"));
+  }else{
+    out.push(T+" Is Now Synergy Health Partners");
+    out.push(T+" | Now Synergy Health Partners");
+    out.push(brandFit(T+" — Same Team, New Name"));
+  }
+  return [...new Set(out)];
+}
+function genMetas(){
+  const t=S.page.topic.toLowerCase(),c=S.city,out=[],line=S.page.line||"care";
+  const spec={spine:"Metro Detroit spine specialists",hand:"Metro Detroit hand surgeons",ortho:"Metro Detroit orthopedic surgeons",pt:"our physical therapy team",imaging:"our imaging team",practice:"Synergy Health Partners"}[line]||"our specialists";
+  if(S.intent==="decision"){
+    out.push("What "+t+" involves, who it helps, and what recovery really looks like — explained simply by "+spec+". Book online or call to schedule.");
+    out.push("How "+t+" works, when it's recommended, and realistic recovery timelines, from "+spec+".");
+    out.push("Plain answers on "+t+": candidacy, the procedure, and recovery week by week. "+cap(spec)+".");
+  }else if(S.intent==="local"){
+    out.push(S.page.topic+" in "+c+" — see "+spec+" with on-site imaging and PT. Book online or call to schedule.");
+    out.push("Looking for "+t+" in "+c+"? Coordinated care under one roof from "+spec+". Find your nearest location and book today.");
+    out.push(S.page.topic+" at our "+c+" locations — book online in minutes.");
+  }else if(S.intent==="info"){
+    out.push("What "+t+" means, symptoms to watch for, and when to seek care — plain answers from "+spec+".");
+    out.push(cap(t)+", explained simply: causes, warning signs, and how doctors treat it. From "+spec+".");
+  }else{
+    out.push("The practice you've known as "+S.page.topic+" continues as Synergy Health Partners — same physicians, same locations, one integrated team.");
+    out.push(S.page.topic+" now practices as Synergy Health Partners. Find your physician and book at the same locations.");
+  }
+  return [...new Set(out)];
+}
+
+/* ---------- scoring ---------- */
+function runChecks(title,meta){
+  const cs=[],q=(S.query||"").toLowerCase(),tl=title.toLowerCase();
+  const tc=title.length,mch=meta.length,tpx=px(title,"20px Arial"),mpx=px(meta,"13px Arial");
+  const idx=q?tl.indexOf(q.split(" ")[0]):-1;
+  cs.push(idx>-1&&idx<=12?{s:"ok",l:"Query up front — searchers scan the first words"}:idx>-1?{s:"warn",l:"Query appears late — move “"+esc(S.query)+"” toward the start"}:{s:"fail",l:"Main query “"+esc(S.query)+"” missing from the title"});
+  cs.push(tc>=40&&tc<=60&&tpx<=T_PX?{s:"ok",l:"Title in the 40–60 char band (+33% CTR — Backlinko, 4M results)"}:tc>=35&&tc<40?{s:"warn",l:"Title slightly short ("+tc+") — the 40–60 band earns +33% CTR"}:tc<35?{s:"warn",l:"Title short ("+tc+") — room to add a reason to click"}:tpx<=T_PX&&tc<=65?{s:"warn",l:"Title long ("+tc+") — may truncate on some results"}:{s:"fail",l:"Title will be cut off ("+tc+" chars / "+tpx+"px)"});
+  cs.push(mch>=120&&mch<=158&&mpx<=M_PX?{s:"ok",l:"Meta length good ("+mch+" chars) — a real meta earns ~6% more clicks (Backlinko)"}:mch<120?{s:"warn",l:"Meta short ("+mch+") — add the promise or the next step"}:{s:"fail",l:"Meta will be cut off ("+mch+" chars)"});
+  const hy=(title+" "+meta).match(HYPE);
+  if(hy)cs.push({s:"warn",l:"Hype word “"+esc(hy[0])+"” — clickbait wording cuts CTR ~14% (Backlinko) and breaks brand voice"});
+  if(S.intent==="local"){const has=(title+" "+meta).toLowerCase().includes(S.city.toLowerCase())||(title+" "+meta).toLowerCase().includes("metro detroit");
+    cs.push(has?{s:"ok",l:"Location signal present ("+esc(S.city)+")"}:{s:"fail",l:"Local intent needs "+esc(S.city)+" or Metro Detroit somewhere"});}
+  if(S.intent==="local"||S.intent==="decision"){const cta=/\b(book|schedule|call|find|see a|request|learn)\b/i.test(meta);
+    cs.push(cta?{s:"ok",l:"Meta has a next step"}:{s:"warn",l:"No next step in the meta — “Book online…” lifts clicks"});}
+  const bt=title.match(BANNED)||meta.match(BANNED);
+  cs.push(bt?{s:"fail",l:"Banned wording: “"+esc(bt[0])+"” — FTC/brand rule, remove it"}:{s:"ok",l:"No banned claims (best / #1 / guaranteed…)"});
+  const rk=(title+" "+meta).match(RISKY);
+  if(rk)cs.push({s:"warn",l:"“"+esc(rk[0])+"” needs verification before publish"});
+  if(S.batch.some(b=>b.url!==S.page.url&&b.title.toLowerCase()===tl))cs.push({s:"fail",l:"Duplicate of another title in this batch — the site already has 120 duplicate titles"});
+  return cs;
+}
+const score=cs=>Math.max(0,5-cs.filter(c=>c.s==="fail").length*2-cs.filter(c=>c.s==="warn").length*0.5);
+
+/* ---------- render: step 1 ---------- */
+function renderList(filter){
+  const el=$("pagelist");el.innerHTML="";
+  PAGES.filter(p=>!filter||(p.url+p.topic+p.query).toLowerCase().includes(filter)).forEach(p=>{
+    const b=document.createElement("button");b.className="pagerow"+(S.page&&S.page.url===p.url?" sel":"");b.type="button";
+    const bd={1:"B1 · Wed",2:"B2 · Thu",3:"B3 · Fri"}[p.b];
+    b.innerHTML='<span class="path">'+esc(p.url)+'</span>'+(bd?'<span class="badge">'+bd+"</span>":"")+'<span class="tag '+p.intent+'">'+INTENTS[p.intent].name+'</span><span class="datachips"><span class="dchip">'+esc(p.d)+"</span></span>";
+    b.addEventListener("click",()=>selectPage(p));el.appendChild(b);
+  });
+}
+function selectPage(p,noScroll){
+  S.page=p;S.intent=p.intent;S.query=p.query;S.city=p.city||"Metro Detroit";
+  renderList($("search").value.toLowerCase());
+  $("step2").classList.remove("hidden");$("step3").classList.remove("hidden");$("step4").classList.add("hidden");
+  $("query").value=S.query;$("city").value=S.city;
+  renderIntents();renderOptions();
+  if(!noScroll)$("step2").scrollIntoView({behavior:"smooth",block:"start"});
+}
+/* ---------- render: step 2 ---------- */
+function renderIntents(){
+  const el=$("intents");el.innerHTML="";
+  Object.entries(INTENTS).forEach(([k,v])=>{
+    const b=document.createElement("button");b.type="button";b.className="intentcard"+(S.intent===k?" sel":"");
+    b.innerHTML="<b>"+v.name+"</b><span>"+v.desc+"</span><span class='exp'>"+v.exp+"</span>";
+    b.addEventListener("click",()=>{S.intent=k;renderIntents();renderOptions()});el.appendChild(b);
+  });
+  $("citywrap").style.display=S.intent==="local"?"block":"none";
+}
+/* ---------- render: step 3 ---------- */
+function renderOptions(){
+  const el=$("options");el.innerHTML="";
+  const titles=genTitles(),metas=genMetas(),opts=[];
+  if(S.page.w)opts.push({t:S.page.w.t,m:S.page.w.m,approved:true});
+  titles.forEach((t,i)=>{if(!opts.some(o=>o.t===t))opts.push({t,m:metas[i%metas.length]})});
+  opts.forEach(o=>{o.cs=runChecks(o.t,o.m);o.sc=score(o.cs)});
+  opts.sort((a,b)=>(b.approved?100:0)+b.sc-((a.approved?100:0)+a.sc));
+  opts.slice(0,6).forEach(o=>{
+    const d=document.createElement("div");d.className="opt";
+    const worst=o.cs.find(c=>c.s==="fail")||o.cs.find(c=>c.s==="warn");
+    d.innerHTML='<div class="serpline"><span class="t">'+esc(o.t)+'</span><span class="m">'+esc(o.m)+'</span></div>'+
+      '<div class="optfoot"><span class="pips">'+[1,2,3,4,5].map(i=>'<span class="pip'+(o.sc>=i-0.4?" on":"")+'"></span>').join("")+'</span>'+
+      (o.approved?'<span class="badge">Wave-1 approved draft</span>':"")+
+      '<span class="why">'+(worst?esc(worst.l):"All checks green")+'</span>'+
+      '<button class="primary" type="button">Use this</button></div>';
+    d.querySelector("button").addEventListener("click",()=>{S.title=o.t;S.meta=o.m;$("step4").classList.remove("hidden");renderEditor();$("step4").scrollIntoView({behavior:"smooth",block:"start"})});
+    el.appendChild(d);
+  });
+}
+/* ---------- render: step 4 ---------- */
+function renderEditor(){
+  $("title").value=S.title;$("meta").value=S.meta;
+  $("serp-crumb").textContent="https://synergyhealth.org"+(S.page.url.startsWith("/")?" › "+S.page.url.slice(1,-1).replace(/\//g," › "):"");
+  let ctx="<b>"+esc(S.page.topic)+"</b> — "+esc(S.page.d)+"<br>"+esc(INTENTS[S.intent].name)+": "+esc(INTENTS[S.intent].need)+". Expected effect: "+esc(INTENTS[S.intent].exp)+".";
+  if(S.page.g){
+    const [im,pos,ctr]=S.page.g,bc=bench(pos),gapMo=Math.round(im/16*(Math.max(0,bc-ctr))/100);
+    ctx+="<br><br><b>The math on this page:</b> at position "+pos+", the healthcare planning benchmark is ~"+bc+"% CTR; this page runs "+ctr+"%. Closing that gap ≈ <b>+"+gapMo+" clicks/mo</b> at full benchmark (plan on ⅓ ≈ +"+Math.round(gapMo/3)+").";
+  }
+  if(S.intent==="info")ctx+="<br><br><b>Reality check:</b> AI Overviews cut clicks on informational results by 34.5–58% (Ahrefs, 300K keywords, 2025) — expect partial recovery here and judge this page on authority, not clicks.";
+  $("context").innerHTML=ctx;
+  liveUpdate();
+}
+function liveUpdate(){
+  S.title=$("title").value;S.meta=$("meta").value;
+  const tpx=px(S.title,"20px Arial"),mpx=px(S.meta,"13px Arial");
+  $("serp-title").textContent=S.title||"Your title appears here";
+  $("serp-meta").innerHTML='<span class="date">Jul 21, 2026 — </span>'+esc(S.meta||"Your meta description appears here.");
+  $("t-chars").textContent=S.title.length+" chars (best: 40–60)";
+  $("t-px").textContent=tpx+"px / "+T_PX;
+  $("m-chars").textContent=S.meta.length+" chars (aim 140–155 · 120–158 OK)";
+  $("m-px").textContent=mpx+"px";
+  const tm=$("t-meter"),mm=$("m-meter");
+  tm.className="meter"+(tpx>T_PX?" over":"");tm.firstElementChild.style.width=Math.min(100,tpx/T_PX*100)+"%";
+  mm.className="meter"+(S.meta.length>158?" over":"");mm.firstElementChild.style.width=Math.min(100,S.meta.length/158*100)+"%";
+  const cs=runChecks(S.title,S.meta);
+  $("checks").innerHTML=cs.map(c=>'<li class="'+c.s+'">'+c.l+"</li>").join("");
+  const fl=(S.page.flags||[]).map(f=>FLAGMSG[f]).filter(Boolean);
+  $("flagnote").innerHTML=fl.length?'<div class="flagnote"><b>Before you ship:</b> '+fl.map(esc).join(" · ")+"</div>":"";
+}
+/* ---------- batch ---------- */
+function saveBatch(){try{localStorage.setItem("tms-batch",JSON.stringify(S.batch))}catch(e){}
+  $("batch-n").textContent="Batch: "+S.batch.length+" page"+(S.batch.length===1?"":"s");renderBatch();}
+function renderBatch(){
+  $("batchlist").innerHTML=S.batch.length?S.batch.map((b,i)=>'<div class="bitem"><button class="rm" data-i="'+i+'" type="button">remove</button><div class="path">'+esc(b.url)+'</div><div class="bt">'+esc(b.title)+'</div><div class="bm">'+esc(b.meta)+"</div></div>").join(""):"<p style='color:var(--muted)'>Nothing yet — add pages from step 4.</p>";
+  $("batchlist").querySelectorAll(".rm").forEach(btn=>btn.addEventListener("click",()=>{S.batch.splice(+btn.dataset.i,1);saveBatch()}));
+}
+function exportBatch(){
+  if(!S.batch.length){toast("Batch is empty");return}
+  const d=new Date().toISOString().slice(0,10);
+  const txt="## Title/meta batch — "+d+" (drafts pending human review)\n\n"+S.batch.map(b=>"- `"+b.url+"`\n  - Title: "+b.title+"\n  - Meta: "+b.meta+(b.flags&&b.flags.length?"\n  - ⚠ Verify: "+b.flags.join(", "):"")).join("\n")+"\n\nShip as ONE batch → log in seo/change-log.md → GSC annotation same day → don't re-touch for 14 days.";
+  copy(txt,"Batch copied — paste into the change log");
+}
+/* ---------- wire up ---------- */
+$("search").addEventListener("input",e=>renderList(e.target.value.toLowerCase()));
+$("query").addEventListener("input",e=>{S.query=e.target.value;renderOptions();if(!$("step4").classList.contains("hidden"))liveUpdate()});
+$("city").addEventListener("change",e=>{S.city=e.target.value;renderOptions();if(!$("step4").classList.contains("hidden"))liveUpdate()});
+$("title").addEventListener("input",liveUpdate);
+$("meta").addEventListener("input",liveUpdate);
+$("copy-t").addEventListener("click",()=>copy(S.title,"Title copied"));
+$("copy-m").addEventListener("click",()=>copy(S.meta,"Meta copied"));
+$("back").addEventListener("click",()=>{$("step3").scrollIntoView({behavior:"smooth"})});
+$("add").addEventListener("click",()=>{
+  if((S.page.flags||[]).includes("gone")){toast("No live page — skip this row (see its ⚠ note)");return}
+  const cs=runChecks(S.title,S.meta);
+  if(cs.some(c=>c.s==="fail")){toast("Fix the red checks first");return}
+  const item={url:S.page.url,title:S.title,meta:S.meta,flags:(S.page.flags||[]).concat((S.title+" "+S.meta).match(RISKY)?["verify wording"]:[])};
+  const ex=S.batch.findIndex(b=>b.url===item.url);
+  if(ex>-1)S.batch[ex]=item;else S.batch.push(item);
+  saveBatch();toast("Added to batch ✓");
+});
+$("c-go").addEventListener("click",()=>{
+  const url=$("c-url").value.trim(),topic=$("c-topic").value.trim(),q=$("c-query").value.trim();
+  if(!url||!topic||!q){toast("Fill in all three fields");return}
+  selectPage({url,topic,query:q,intent:url.includes("location")||/near me| in /.test(q)?"local":"decision",line:/spine|disc|lamin|fusion|stenosis|neck|back/.test(url)?"spine":"ortho",d:"custom page — no GSC history yet",flags:[]});
+});
+$("view-batch").addEventListener("click",()=>{renderBatch();$("drawer").classList.add("open")});
+$("close-drawer").addEventListener("click",()=>$("drawer").classList.remove("open"));
+$("export-batch").addEventListener("click",exportBatch);
+$("export-batch2").addEventListener("click",exportBatch);
+$("clear-batch").addEventListener("click",()=>{if(confirm("Clear the whole batch?")){S.batch=[];saveBatch()}});
+/* ---------- guided tour: walks Randall through his first REAL page, click by click.
+   Everything outside the highlighted element is blocked — no wrong turns possible. ---------- */
+const SHIP=document.getElementById("shipit-list").outerHTML;
+const TOUR=[
+ {center:true,k:"Welcome — this takes 2 minutes",t:"<b>This is your Wednesday work.</b> I'll walk you through the first page start to finish. You do the clicking — I'll point at exactly what to click. Nothing else on the screen will work until we're done, so you can't take a wrong turn.",btn:"Start"},
+ {el:()=>document.querySelector(".pagerow"),k:"Step 1 of 10 — pick the page",t:"This is your first page. The <b>B1 · Wed</b> badge means it ships <b>Wednesday, Jul 23</b> — its batch day in your plan. The little numbers are its real Google data. <b>Click this page now.</b>",click:true},
+ {el:()=>document.querySelector(".intentcard.sel"),k:"Step 2 of 10 — who's searching",t:"The tool already picked the right audience for this page. <b>You change nothing here.</b> If it's ever a local page, you'd check the city — that's all.",btn:"Next"},
+ {el:()=>document.getElementById("query"),k:"Step 3 of 10 — the search phrase",t:"This is the exact phrase the page should win. Already filled in for you. The title should mention it near the front — the checks below warn you if it's missing or buried.",btn:"Next"},
+ {el:()=>document.querySelector(".opt"),k:"Step 4 of 10 — pick a starting point",t:"Starting points, scored 0–5. The top one is the <b>approved Wave-1 draft</b> from Joe's plan — start from it, don't rewrite it. Any yellow ⚠ it carries still gets verified before end of day. <b>Click “Use this.”</b>",click:true,clickSel:"button"},
+ {el:()=>document.getElementById("checks"),k:"Step 5 of 10 — the checks",t:"Every rule, checked live. <b>Green = good. Yellow = verify the thing it names before shipping. Red = must fix</b> — the tool won't let a red into the batch.",btn:"Next"},
+ {el:()=>document.querySelector(".serp"),k:"Step 6 of 10 — the Google preview",t:"This is what a patient sees when Google uses your title as written (Google sometimes swaps in its own wording — the Day-14 data read checks for that). It updates as you type. Keep the title counter in <b>40–60 characters</b> — that band earns a third more clicks.",btn:"Next"},
+ {el:()=>document.getElementById("add"),k:"Step 7 of 10 — approve it",t:"No reds on this one, so it can ship (yellows get verified at end of day). <b>Click “Add to batch ✓”</b> to save this page into today's shipment.",click:true},
+ {el:()=>document.querySelector(".batchbar"),k:"Step 8 of 10 — your batch",t:"There it is — <b>1 page in the batch</b>. You'll repeat the same clicks for the other 9 B1 pages. The batch saves itself, even if you close the tab.",btn:"Next"},
+ {el:()=>document.getElementById("export-batch"),k:"Step 9 of 10 — the export (not yet)",t:"When all 10 pages are in, this button copies the whole batch for the change log. <b>Don't click it yet</b> — finish the other pages first.",btn:"Next"},
+ {center:true,k:"Step 10 of 10 — how you finish the day",t:"That's the whole job: <b>pick page → Use this → checks green → Add to batch.</b> When today's batch is full, finish in this exact order:"+SHIP+"Then don't touch those pages for 14 days. This list stays at the bottom of this screen whenever you need it.",btn:"Start working"}
+];
+let tourEls=null,hiEl=null,hiAnc=null,pendingAdv=null,posTimer=null,curStep=-1;
+function tourBuild(){
+  if(tourEls)return;
+  const dim=document.createElement("div");dim.className="tour-dim";
+  const bub=document.createElement("div");bub.className="tour-bubble";
+  dim.addEventListener("click",()=>{const w=bub.querySelector(".waitmsg");if(w){w.style.fontWeight="700";w.style.color="var(--crit)";setTimeout(()=>{w.style.fontWeight="";w.style.color=""},600)}});
+  document.body.appendChild(dim);document.body.appendChild(bub);
+  tourEls={dim,bub};
+}
+function clearPending(){if(pendingAdv){pendingAdv.t.removeEventListener("click",pendingAdv.fn);pendingAdv=null}}
+function clearHi(){
+  if(hiEl){hiEl.classList.remove("tour-target-el","tour-hint");hiEl.style.position="";hiEl=null}
+  if(hiAnc){hiAnc.classList.remove("tour-raise");hiAnc=null}
+}
+function placeBubble(){
+  if(curStep<0||!tourEls||!hiEl)return;
+  const st=TOUR[curStep];if(!st||st.center)return;
+  const b=tourEls.bub,r=hiEl.getBoundingClientRect(),bh=b.offsetHeight||160;
+  let top=r.bottom+12;
+  if(top+bh>window.innerHeight-10)top=Math.max(10,r.top-bh-12);
+  b.style.top=top+"px";
+  b.style.left=Math.max(10,Math.min(r.left,window.innerWidth-370))+"px";
+}
+function onScrollTour(){requestAnimationFrame(placeBubble)}
+function tourStop(){
+  curStep=-1;clearPending();clearHi();
+  if(posTimer){clearTimeout(posTimer);posTimer=null}
+  window.removeEventListener("scroll",onScrollTour);window.removeEventListener("resize",onScrollTour);
+  if(tourEls){tourEls.dim.classList.remove("on");tourEls.bub.style.display="none"}
+  try{localStorage.setItem("tms-tour","done")}catch(e){}
+}
+function visibleTarget(el){
+  return !!el&&(el.offsetParent!==null||getComputedStyle(el).position==="fixed");
+}
+function tourStep(i){
+  clearPending();
+  if(posTimer){clearTimeout(posTimer);posTimer=null}
+  const st=TOUR[i];
+  if(!st){tourStop();return}
+  tourBuild();clearHi();curStep=i;
+  const b=tourEls.bub;tourEls.dim.classList.add("on");
+  b.className="tour-bubble"+(st.center?" center":"");
+  b.style.top="";b.style.left="";b.style.display="none";
+  b.innerHTML='<div class="k">'+st.k+'</div><p>'+st.t+'</p><div class="row">'+
+    (st.btn?'<button class="primary" type="button" id="tour-next">'+st.btn+"</button>"
+          :'<span class="waitmsg">Click the highlighted item to continue…</span>')+
+    '<button class="skip" type="button" id="tour-skip">Skip guide</button></div>';
+  b.querySelector("#tour-skip").addEventListener("click",tourStop);
+  if(st.btn)b.querySelector("#tour-next").addEventListener("click",()=>tourStep(i+1));
+  if(st.center){b.style.display="block";return}
+  const el=st.el&&st.el();
+  if(!visibleTarget(el)){tourStep(i+1);return}
+  hiEl=el;el.classList.add("tour-target-el","tour-hint");
+  if(getComputedStyle(el).position==="static")el.style.position="relative";
+  const anc=el.closest(".batchbar");
+  if(anc&&anc!==el){hiAnc=anc;anc.classList.add("tour-raise")}
+  if(st.click){
+    const t=(st.clickSel&&el.querySelector(st.clickSel))||el;
+    const fn=()=>{pendingAdv=null;setTimeout(()=>tourStep(i+1),250)};
+    t.addEventListener("click",fn,{once:true});
+    pendingAdv={t,fn};
+  }
+  el.scrollIntoView({behavior:"smooth",block:"center"});
+  window.addEventListener("scroll",onScrollTour,{passive:true});
+  window.addEventListener("resize",onScrollTour);
+  posTimer=setTimeout(()=>{b.style.display="block";placeBubble()},450);
+}
+function startTour(){
+  tourBuild();
+  S.page=null;
+  $("search").value="";
+  $("step2").classList.add("hidden");$("step3").classList.add("hidden");$("step4").classList.add("hidden");
+  renderList("");
+  window.scrollTo(0,0);
+  tourStep(0);
+}
+$("guide-btn").addEventListener("click",startTour);
+
+/* ---------- init ---------- */
+renderList("");saveBatch();
+let tourSeen=false;try{tourSeen=localStorage.getItem("tms-tour")==="done"}catch(e){}
+if(tourSeen){
+  /* returning visit: open on the worked example, ready to approve or edit */
+  selectPage(PAGES[0],true);
+  S.title=PAGES[0].w.t;S.meta=PAGES[0].w.m;
+  $("step4").classList.remove("hidden");renderEditor();
+  window.scrollTo(0,0);
+}else{
+  startTour();
+}
+</script>
