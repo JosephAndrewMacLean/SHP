@@ -27,7 +27,7 @@ says so — **corrections welcome; flag anything that doesn't match how the team
 | **The book / universe** | The 848 target accounts (808 core + Sean's 40 routed priorities). |
 | **Evidence band** | What an account has actually sent us in 2026: **Repeat Spine Referrer** (2+ spine patients) · **One Spine Patient** · **Ortho Referrer** (ortho but no spine) · **Other Patient Referrer** (pain/hand/foot only) · **Visit / Prospect** (no attributed patients). |
 | **Tier 1 / 2 / 3 / Prospect** | Tier 1 = sent ≥1 spine patient (146 accounts) · Tier 2 = ortho referrers (156) · Tier 3 = other-service referrers (37) · Prospect = spine-adjacent, nothing attributed yet (469). |
-| **Wave 1** | The first-priority 90 accounts (all proven spine senders) — never more than 2 weeks between visits. |
+| **Wave 1** | The first-priority 90 accounts (all proven spine senders) — first in line at the 21-day Tier-1 rhythm (Jul 22: Kristen moved off 14-day — “two weeks is too soon”). |
 | **Target Score (0–100)** | Ranking number: up to 88 points from actual referral production, up to 12 from context (specialty fit, recent visits, reachability, data confidence). Prioritization only — not a revenue measure. |
 | **Operating lane / Next Action** | The account's job in the plan: Protect · Reactivation · Convert · Cross-sell · Expansion/Test. |
 | **DNC** | "Do Not Call" label in MMC — excluded from the book. |
@@ -62,8 +62,8 @@ frequencies live somewhere the export doesn't capture (per-person settings, rout
 feature), the "64 of 2,349" understates reality — tell Joe and we re-pull before repeating it.
 
 **Don't confuse it with Planned Cadence:** the plan's target rhythm — **updated Jul 22 per
-Kristen: Wave 1 ≤14d · Tier 1 = 21d · Tier 2 = 30d · Tier 3 = 45d · Prospect = 45-day first
-pass** — lives in the app and workbook and is *not* in MMC yet. The MMC sync (`pm/mmc-import/`) proposes setting them **once per spine
+Kristen (v2): ALL Tier 1 incl. Wave 1 = 21d · Tier 2 = 30d · Tier 3 = 45d · Prospect = 45-day
+first pass** — lives in the app and workbook and is *not* in MMC yet. The MMC sync (`pm/mmc-import/`) proposes setting them **once per spine
 group** in MMC so the Past-Due engine finally works for us instead of being ignored.
 
 ## Payers & compliance

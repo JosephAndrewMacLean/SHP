@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-21 · **Runs on:** the scored 808-account book + 85 built route days + Sean's 40-account overlay
 **Owners:** Kristen (lead), Jasmine, Coty, Sean (conditional) · **Ops:** Joe · **Fills tracker:** PL-A.5 (cadence live), PL-B (protect + recover), feeds SP-B.2 (scorecard)
-**The full stop-level schedule (1,126 scheduled visits, filter by `week` + `pl` — cadence updated Jul 22):** **`pm/pl-weekly-visit-schedule.csv`**
+**The full stop-level schedule (1,085 scheduled visits, filter by `week` + `pl` — cadence updated Jul 22):** **`pm/pl-weekly-visit-schedule.csv`**
 **Kristen's share pack:** `pm/kristen-share/` (field workbook + handoff note) · **MMC sync:** `pm/mmc-import/`
 
 > **What "lucrative" means here:** attributed 2026 spine patients per account (not kept-visit-confirmed),
@@ -20,7 +20,7 @@
 |---|---|---|
 | Spine-day capacity | K: 3 days W1 · 4 W2–W4 · **3.5 W5+** · J/C: 3 W1 · 4 W2–W4 · 3 W5+ · Sean: 2/2/then ~1 | Leaves ~1–2 field days/week for the ortho book (GOV-B.2: hold ortho 130–140/wk) — the full-cadence plan needs 207 visits/wk vs ~155 capacity, so this is the explicit trade |
 | Day order, first pass | Lapsed-producer spine first, then day spine total, then Wave-1 count | Protect before prospect — **all 36 lapsed repeat-spine referrers get their recovery visit in W1–W2** (22 in W1) |
-| Revisit cycle **(updated Jul 22 — Kristen's cadence)** | **Wave 1 every 2 weeks · Tier 1 every 3 weeks (21d) · Tier 2 every ~30d · Tier 3 every ~45d** — each class revisited only when due, prospect days once + flex | Achieved medians in this schedule: **Wave 1 = 2.0 wk · Tier 1 = 3.0 wk · Tier 2 = 4.0 wk** — exactly on spec |
+| Revisit cycle **(Kristen's cadence v2, Jul 22)** | **ALL Tier 1 — Wave 1 included — every 21 days** (Kristen: “two weeks is too soon — we get annoying”) **· Tier 2 every ~30d · Tier 3 every ~45d**, prospect days once + flex; Wave 1 keeps priority by going first in line each cycle | Achieved medians: **Tier 1 = 3.0 wk · Tier 2 = 4.0 wk** — on spec |
 | Protect overlays | Lapsed producers ≥5 spine → single-stop pull-forwards in **W1** (Applebaum & Stone, Vanstone, DMC West Bloomfield, Stonebrooke); every remaining lapsed repeat-spine → pulled into **W2** (MedPro, Oakland Family Practice, Metro Medical, Lifetime Family Care, Garden City Family Physicians, Medical Clinic of Northville) | No proven repeat referrer waits past Jul 31 |
 | Producer sweeps | Proven stops stranded on low-value tail days get swept as mini-days every 3 weeks from W5 (Kristen: D08/D13/D15/D17 — her Wave-2 tail, 34 stops) instead of running those full 10-stop prospect days | Covers the tail's 46 spine patients without burning full days on cold geography |
 | Reassess rule — promote/hold/park **(updated Jul 22)** | Nothing is deleted. At ~2 touches (≈90 days at prospect rhythm) the PL's field read decides: **promote** (more potential → tighter rhythm) · **hold** (45d) · **park** (backlog, revisit next quarter). Some accounts need MORE than 2 touches — the note after each touch powers the call | Field judgment over mechanical drops; rotation still earns its slots |
@@ -29,11 +29,11 @@
 the protect sweep (30–46% of stops are producers). From W5 the rotation flips to **protect-and-convert
 mode (76–87% producer stops)** because biweekly producer cycles consume the 3-day allocation.
 **Leadership dial:** keeping the 4th spine day after W4 buys ~10 more prospect first-touches/PL/week;
-at 3 days, **234 of 466 prospects** get touched by Oct 2 and **323 accounts are explicitly deferred**
-(234 prospects · 75 ortho cross-sell · 14 other — flagged `Backlog (Oct+)` in the MMC import;
-**zero spine-producing accounts are deferred**). Honoring Tier 2's 30-day cross-sell rhythm is
-what costs ~35 prospect first-touches vs the old cadence — the deliberate trade in Kristen's
-Jul 22 cadence. Pull from backlog only when a rotation slot opens.
+at 3 days, **264 of 466 prospects** get touched by Oct 2 and **272 accounts are explicitly deferred**
+(204 prospects · 59 ortho cross-sell · 9 other — flagged `Backlog (Oct+)` in the MMC import;
+**zero spine-producing accounts are deferred**). Moving Wave 1 from 14 to 21 days bought back
+~30 prospect first-touches — relationship comfort AND more coverage. Pull from backlog only
+when a rotation slot opens.
 
 ---
 

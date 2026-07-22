@@ -13,9 +13,11 @@ roof, 96% recommend rate, deep spine bench incl. interventional front door). Fil
 
 **THANK → OPEN → MESSAGE → ASK**, plus the payer line when scheduling comes up.
 
-1. **THANK** — aggregate only, never a specific patient: *"Your practice has trusted us with N spine
-   patients this year — thank you."* Name the top referrer when we know them (the CSV lists each
-   account's known referring providers with their individual yield).
+1. **THANK** — Kristen's rule (Jul 22): *"Thank you for trusting us with the care of your
+   patients."* **No counts, no "this year" — numbers out loud sound transactional.** Thank
+   individually and discreetly where appropriate (the referring provider already knows their own
+   patient — never within earshot of a waiting room). The per-account counts stay on your stop
+   card as targeting context, not as a script.
 2. **OPEN** — a service question, not a pitch: *"What could we do better — access, notes back, anything?"*
 3. **MESSAGE** — the practice-type angle (§2). One sentence.
 4. **ASK** — one specific behavior (§3), then leave the one-pager + named coordinator + direct line.
@@ -83,8 +85,10 @@ Center–Mt Clemens, Advantage Family Health Center, NuVision Health Center.
 
 - **No inducements of any kind** — no payments, gifts, lunches-for-referrals; attorney channel
   especially (AKS/Stark hygiene). Value = service, access, communication.
-- **No PHI, ever** — thank in aggregate counts only; never name or describe a patient or case, in
-  conversation or in app notes.
+- **No PHI in writing or in public, ever** — nothing patient-identifying in app notes, texts, or
+  anywhere others can hear. A **discreet, private** thank-you to the referring provider about their
+  own referred patient is fine (they already know the patient); the moment anyone else is in
+  earshot, it isn't.
 - **No superiority or outcome claims** — no "best," no success rates; stick to the verified set
   (same-week access, integrated model, 96% recommend, bench depth).
 - **No access promises we can't keep** — HMO plans need referrals; Medicaid-likely accounts need
