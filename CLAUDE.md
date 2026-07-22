@@ -11,6 +11,14 @@ healthcare organization. It contains a team of specialized marketing subagents.
   who Synergy actually is, the numbers, the gaps, what external agencies already own, and
   where this in-house team has white space. Don't duplicate work the agencies own —
   complement it.
+- **The Cardinal (June 2026) audits anchor all measurement and opportunity work.** The
+  extracted audit texts live in `audits/cardinal-2026-06/`; the live status ledger —
+  every Cardinal recommendation, its verified website status, and the instrument that
+  measures it — is **`audits/cardinal-recommendation-tracker.md`**. Frame findings as
+  "status against Cardinal's recommendation X," and update the tracker when you verify
+  something new. Note: this environment's network policy blocks fetching synergyhealth.org
+  directly — verify site state via Semrush (project "SHP Spine 2026", ID 30453033),
+  GA4, or GSC instead.
 - This is **healthcare marketing**. Non-negotiables on all work:
   - No PHI or unconsented patient stories (HIPAA).
   - No unsubstantiated health claims or superiority claims (FTC).
@@ -45,6 +53,9 @@ healthcare organization. It contains a team of specialized marketing subagents.
   GA4 data in the main session and pass the relevant numbers into subagent prompts.
 - If the GA tools are missing, the credential isn't set up in this environment —
   see `docs/google-analytics-mcp-setup.md`.
+- **Also connected:** Semrush MCP (`mcp__Semrush__*` — site audit, rankings, backlinks,
+  SERP/AIO features) and a wired Google Search Console MCP (`scripts/gsc-mcp.sh`,
+  pending a one-time access grant). Full source map: `docs/data-sources-roadmap.md`.
 
 ## Turning data into opportunities for clinical stakeholders
 

@@ -62,9 +62,10 @@ The **marketing-director** can coordinate several specialists for a single campa
 
 ```
 .claude/agents/        the eight specialist agents
+audits/                Cardinal (June 2026) audit texts + live recommendation tracker
 brand/brand-brief.md   shared brand, voice, audience, and compliance guardrails
-.mcp.json              MCP servers (Google Analytics) loaded into every session
-scripts/ga-mcp.sh      launcher for the GA4 MCP server (credential handling)
-docs/                  setup guides (Google Analytics MCP)
+.mcp.json              MCP servers (Google Analytics, Search Console) loaded into every session
+scripts/               MCP launchers (ga-mcp.sh, gsc-mcp.sh — shared credential handling)
+docs/                  setup guides + data-sources roadmap (what measures what)
 CLAUDE.md              project context loaded into every session
 ```
