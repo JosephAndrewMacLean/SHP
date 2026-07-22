@@ -14,7 +14,7 @@ That's the single biggest missed asset for the spine plan.
 ### Spine surgeons
 | Provider | Notes |
 |---|---|
-| **Jeffrey Varghese, MD** | Spine surgeon — spinal deformity correction + minimally invasive; research background at Hospital for Special Surgery (HSS) |
+| **Jeffrey Varghese, MD** | Spine surgeon — minimally invasive; research background at Hospital for Special Surgery (HSS). *(Site meta says "spinal deformity correction" — **correction, Joe 7/22: SHP offers no scoliosis/deformity service; do not use for service claims**)* |
 | **Mohamed Salar, MD** | Spine surgeon — minimally invasive procedures |
 | **Joseph Maslak, MD** | Board-certified, fellowship-trained spine surgeon — Cleveland Clinic training |
 | **Scott McCarty, MD** | Spine surgeon — integrated spine team |

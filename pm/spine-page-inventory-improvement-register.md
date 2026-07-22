@@ -82,11 +82,11 @@ the surgeon modules; CODE outcomes when publishable (V2 substitute).
 |---|---|---|
 | Salar (**#1 page sitewide**, 1,376 est. visits, 52% from "dr. salar" 2,900/mo) | Branded-capture engine | **KEEP/protect**; add "procedures I perform" module (ACDR/motion preservation); Arabic pages stay gated on coaching decision |
 | McCarty (29 GA4 conv. sessions) | Mazor X claim stranded on his bio + Southfield page | Aggregate claim to hub (V2 substantiation first); procedures module; plain-English "complex spine + robotics" label |
-| Maslak (20) | Deformity/revision subspecialty in prose only | Procedures module; **I3b revision positioning** ("failed back surgery, adjacent segment disease"); endoscopic link |
+| Maslak (20) | Revision subspecialty in prose only; **bio implies scoliosis/deformity — correct it (no one at SHP offers scoliosis, Joe 7/22)** | Procedures module; **I3b revision positioning** ("failed back surgery, adjacent segment disease"); endoscopic link |
 | Varghese (14) | **Thinnest bio**; elite Moe fellowship untranslated | Rewrite: fellowship translated, SI fusion module (post-V4), sports-spine angle (phase 2 hook) |
 | Munk (8) | Stale "starting Tuesday, Aug 12" copy; misfiled hub-child duplicate; location conflict | Fix staleness; fold hub-child into bio + Port Huron location page; V5 locations |
 | Zamorano | Page conflicting/absent (crawl found none; her own sites outrank SHP for her name); medical-director attribution conflict vs. Salar | **V5**: create/fix page; resolve attribution before the team module ships |
-| Lee | "3 of 4 / 8 of 10" unsourced stats | V2: source or remove; fusion-avoidance positioning is the front-door story — keep, sourced |
+| Lee (**Pain Management — not a spine surgeon**) | "3 of 4 / 8 of 10" unsourced stats | V2: source or remove; fusion-avoidance positioning is the interventional front-door story — keep, sourced; never listed in the surgeon set |
 | Directory `/providers/` (1,030 kw, ~7 visits converting) + `/our-providers/` + dupes (hanish/hainish-singh ×2, Oddo ×2, Gappe ×2) | Ranks, doesn't convert; QA mess | Dedupe; retire `/our-providers/`; fix find-a-doctor filter (verify live); **NEW: Meet-the-spine-team module + matching guide** (post-V5, Mitch matrix) |
 
 ## 6. LOCATION pages + local layer
@@ -150,7 +150,7 @@ the surgeon modules; CODE outcomes when publishable (V2 substitute).
 | # | Item | Clock | Notes |
 |---|---|---|---|
 | B1 | Candidacy criteria blocks ("is this right for me?") | CCM Plus ~8 wks (mid-Sept) | Don't hand-write ahead of the tool; interim = physician-reviewed general indications |
-| B2 | Surgeon matching matrix formalized + routing-ops sign-off | Weeks; **politically sensitive** (Salar redirection is a leadership call) | Gates team module + "which surgeon" guide — ship team module with neutral labels first if needed |
+| B2 | Surgeon matching matrix formalized + routing-ops sign-off (surgeons only — pain docs are the separate front-door lane; **no scoliosis pathway exists**) | Weeks; **politically sensitive** (Salar redirection is a leadership call) | Gates team module + "which surgeon" guide — ship team module with neutral labels first if needed |
 | B3 | The three physician interview hours + their content review cycles | Physician calendars | The differentiation pages themselves |
 | B4 | Salar coaching outcome → Arabic/Farsi pages | 3-month window (~Oct) | Hard gate; no spend before |
 | B5 | Zamorano page resolution | Depends on her engagement + V5 attribution outcome | Politically loaded (equipment history); do last in provider QA |

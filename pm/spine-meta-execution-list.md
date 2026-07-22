@@ -112,7 +112,7 @@ every edit logged; GSC per URL at 1/2/3/4 weeks.
 ### `/providers/joseph-maslak-md/` · `/providers/jeffrey-varghese-md/` · `/providers/scott-mccarty-md/` · `/providers/andres-munk-md/` · `/providers/mohamed-salar-md/`
 **Opportunity:** bios carry 20%+ of site traffic but assemble no choosing journey (I3).
 **Meta:** per v2 rows (Salar title untouched).
-**Content updates (all five, template §3.5):** 1) plain-English subspecialty line (Maslak: revision/scoliosis; Varghese: SI + sports [V4]; McCarty: complex + robotics [claims review]; Munk: SI specialist, fixes stale Aug-12 copy; Salar: motion preservation — add-only); 2) **"Procedures I perform" module** linking treatment pages; 3) clinic-days line (schedule work order §3); 4) fellowship translated to patient language; 5) V2 sweep of bio stats (Lee-style unsourced numbers out); 6) reviews slot (Rater8 screen).
+**Content updates (all five, template §3.5):** 1) plain-English subspecialty line (Maslak: revision — failed prior fusions/adjacent segment [NO scoliosis — no one at SHP offers it, Joe 7/22]; Varghese: SI + sports [V4]; McCarty: complex + robotics [claims review]; Munk: SI specialist, fixes stale Aug-12 copy; Salar: motion preservation — add-only; Lee is PAIN MANAGEMENT — never in the surgeon set); 2) **"Procedures I perform" module** linking treatment pages; 3) clinic-days line (schedule work order §3); 4) fellowship translated to patient language; 5) V2 sweep of bio stats (Lee-style unsourced numbers out); 6) reviews slot (Rater8 screen).
 **Gate:** Mitch review · V4 (Varghese) · Katie (days) · V2 (stats).
 
 ### `/specialties/spine-back-and-neck/anterior-cervical-discectomy-fusion` — the ACDR mislabel

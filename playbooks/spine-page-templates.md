@@ -239,8 +239,8 @@ endoscopic) → FAQ (schema) → **I3 primary CTA (consult with the named surgeo
 
 **Purpose/intent:** I3 decision surface (bios already carry 20%+ of site traffic — make them
 convert). Element order: name/credentials/photo (natural, straight-on — the creative audit's
-working style) → **plain-English subspecialty line** ("Complex spine: scoliosis, revision
-surgery, failed prior fusions") → "Procedures I perform" module (links to treatment pages —
+working style) → **plain-English subspecialty line** ("Revision spine surgery: failed prior
+fusions, adjacent segment" — never scoliosis: no one at SHP offers it, Joe 7/22) → "Procedures I perform" module (links to treatment pages —
 the `related` edges) → fellowship translated ("what a Cleveland Clinic spine fellowship
 means") → philosophy quote (conservative-first) → video slot (click-to-load; the Salar "Meet
 Dr." video is the pattern) → consented reviews → locations + days → **I3 primary CTA (book

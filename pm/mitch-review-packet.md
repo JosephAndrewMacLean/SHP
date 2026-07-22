@@ -65,13 +65,17 @@ spine bio; his elite deformity fellowship is never explained in patient terms.
 **And (the staleness):** `synergyhealth.org/providers/andres-munk-md/` — check for outdated
 Port Huron-era copy; his real schedule is now Sterling Heights + Troy weekly, Port Huron monthly.
 **What the plan changes:** every spine bio gets a plain-English subspecialty line
-("complex spine: scoliosis, revision surgery, failed prior fusions"), a "procedures I
+("revision spine surgery: failed prior fusions, adjacent segment"), a "procedures I
 perform" list linking the treatment pages, and accurate clinic days from the 7/13 redesign.
-Then a "meet the spine team" module assembles them with your matching logic.
+Then a "meet the spine team" module assembles them with your matching logic. (Per Joe:
+no scoliosis service claims anywhere — bios implying it get corrected — and Dr. Lee is
+Pain Management, labeled with the interventional front door, not the surgeon set.)
 **Your questions:**
-9. Draft subspecialty labels — correct? Maslak: revision/scoliosis · Salar: motion
-   preservation/disc replacement · Munk: SI joint · McCarty: complex + robotic · Lee:
-   fusion-avoidance/interventional · Varghese: [your call — SI + sports spine?]
+9. Draft subspecialty labels — correct? Maslak: revision (failed prior fusions, adjacent
+   segment) · Salar: motion preservation/disc replacement · Munk: SI joint · McCarty:
+   complex + robotic · Zamorano: neurosurgical spine (Troy) · Varghese: [your call — SI +
+   sports spine?] (Pain management — Oddo, Lee, Kassa, Singh — labeled separately as the
+   non-surgical front door.)
 10. V5: who is Medical Director of Spine (site conflicts: Salar vs. Zamorano)? And Zamorano
     has no SHP page at all — she's our Troy anchor Mon/Thu; we need to build it.
 

@@ -282,14 +282,19 @@ flowchart TD
 
 ### A3.5 PROVIDER — example: Dr. Maslak
 **Job:** the I3 decision surface. Real subspecialty differentiation already exists in bio
-prose (Maslak: deformity/revision · Salar: motion preservation · Munk: SI/iFuse · McCarty:
-complex + robotics · Lee: fusion-avoidance · Varghese: elite Moe deformity fellowship,
-untranslated) — but nothing assembles a *choosing* journey.
+prose (Maslak: revision — failed prior fusions, adjacent segment · Salar: motion preservation
+· Munk: SI/iFuse · McCarty: complex + robotics · Zamorano: neurosurgical spine, Troy ·
+Varghese: elite fellowship training, untranslated) — but nothing assembles a *choosing*
+journey. **Corrections (Joe 7/22): SHP offers NO scoliosis/deformity service — bios and site
+metadata that imply it (Maslak, Varghese) are overstated and get corrected, and training
+history is never presented as a service. Dr. Kevin Lee is PAIN MANAGEMENT, not a spine
+surgeon — he is labeled with the interventional front door (Oddo, Lee, Kassa, Singh), never
+in the surgeon set.**
 
 ```mermaid
 flowchart TD
     TEAM[Meet the spine team module<br/>plain-English subspecialty labels<br/>intent I3 · NEW]
-    MAS[Dr Maslak provider page<br/>prefLabel Joseph Maslak MD<br/>altLabel scoliosis surgeon,<br/>revision spine surgeon,<br/>failed back surgery specialist<br/>intent I3 I3b · UPDATE]
+    MAS[Dr Maslak provider page<br/>prefLabel Joseph Maslak MD<br/>altLabel revision spine surgeon,<br/>failed back surgery specialist<br/>intent I3 I3b · UPDATE]
     SAL[Dr Salar provider page<br/>number 1 page sitewide<br/>KEEP protect during consolidation]
     VAR[Dr Varghese provider page<br/>Moe fellowship untranslated<br/>UPDATE - thinnest bio]
     PROCS[Procedures I perform module<br/>links to treatment pages<br/>NEW]
