@@ -38,8 +38,9 @@ healthcare organization. It contains a team of specialized marketing subagents.
   content performance in real GA4 numbers — current and historical — instead of
   assuming.** Typical use: `run_report` with page/landing-page dimensions over the
   date ranges being compared.
-- SHP GA4 property ID: **not yet recorded** — after the first successful connection,
-  run `get_account_summaries` and replace this line with the property ID.
+- SHP GA4 property ID: **370514163** ("SHP - New Site - GA4", under account 24916876
+  "Synergyhealth.org - New June 2024"). Verified working 2026-07-22. GA4 data begins
+  **2023-04-20** — no earlier history exists in this property.
 - The specialist subagents have restricted tool lists and don't get MCP tools: pull
   GA4 data in the main session and pass the relevant numbers into subagent prompts.
 - If the GA tools are missing, the credential isn't set up in this environment —
