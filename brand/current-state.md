@@ -173,7 +173,10 @@ Zocdoc+NextGen booking analysis, and the site crawl) show how the business actua
 
 ### People / roles referenced
 Joe (marketing/ops — the primary contact) · Gautam (leadership direction) · Kristen (PL team
-lead + top producer) · Coty, Jasmine (liaisons) · Randall (SEO) · Paul (paid/tracking) ·
+lead + top producer) · Coty, Jasmine (liaisons) · Randall (SEO) · **Paul (website
+developer — corrected 2026-07-22; earlier notes wrongly listed him as paid/tracking.
+Ads-side ownership sits with Cardinal unless/until an internal ads owner is named;
+paid tasks in `pm/master-task-list.csv` assigned to Paul may need reassignment)** ·
 Santosh (analytics + scheduling systems). External: Power Digital / Cardinal (agencies).
 
 ## ⚠️ Budget reconciliation — the spine gap is a B2C problem, not a referral problem
