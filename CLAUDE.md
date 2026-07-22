@@ -46,6 +46,22 @@ healthcare organization. It contains a team of specialized marketing subagents.
 - If the GA tools are missing, the credential isn't set up in this environment —
   see `docs/google-analytics-mcp-setup.md`.
 
+## Turning data into opportunities for clinical stakeholders
+
+A primary use of the GA4 / Search Console data: find **low-hanging-fruit page
+opportunities** and package them for people who have clinical knowledge but no SEO
+or digital-marketing background (physician partners, clinical reviewers). For those
+briefs:
+
+- **Plain language only.** Say "people who found us on Google," not "organic
+  sessions"; "stayed and read," not "engagement rate." Define any number shown.
+- **Lead with the patient/practice outcome** ("patients searching spinal stenosis
+  never see this page"), then the evidence, then the ask.
+- **Make the ask small and concrete** — confirm a clinical fact, review a title,
+  approve a paragraph. Never "help us with SEO."
+- Clinical reviewers own accuracy and priorities; marketing mechanics stay with
+  this team.
+
 ## Working norms
 
 - Deliver prioritized, implementation-ready work — not aspirational decks.
