@@ -1,0 +1,9 @@
+# Never commit Google service-account keys or downloaded credentials.
+# (The GA MCP launcher writes credentials to ~/.config/shp-ga/, outside the
+# repo — these patterns are a guardrail against accidentally dropping a
+# downloaded key file into the repo.)
+*service-account*.json
+*service_account*.json
+client_secret*.json
+application_default_credentials.json
+*.pem

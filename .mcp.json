@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "google-analytics": {
+      "command": "bash",
+      "args": ["scripts/ga-mcp.sh"]
+    }
+  }
+}
