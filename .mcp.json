@@ -7,6 +7,14 @@
     "google-search-console": {
       "command": "bash",
       "args": ["scripts/gsc-mcp.sh"]
+    },
+    "bing-webmaster": {
+      "command": "uv",
+      "args": ["run", "scripts/bing-wmt-mcp.py"]
+    },
+    "google-business-profile": {
+      "command": "uv",
+      "args": ["run", "scripts/gbp-mcp.py"]
     }
   }
 }
