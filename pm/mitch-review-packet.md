@@ -22,7 +22,7 @@ who don't know their diagnosis · the conservative→interventional→surgical p
 replacement) finally surfaced here instead of buried elsewhere.
 **Your questions:**
 1. Does the conservative-first pathway framing match how you want the division presented?
-2. Anything on either page that is clinically wrong or overpromises *today*?
+2. Anything on the live page that is clinically wrong or overpromises *today*?
 
 ## Stop 2 — CONDITION pages (the "what's wrong with me" layer) · model §A3.3
 
