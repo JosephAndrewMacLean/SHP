@@ -42,8 +42,8 @@ roof, 96% recommend rate, deep spine bench incl. interventional front door). Fil
 | Repeat spine referrer (**Protect**) | *"Anything pending right now we can get seen this week?"* — and fix whatever the OPEN surfaced. |
 | One spine patient (**Convert**) | *"How was that experience? Make us your default for the next back/neck patient."* |
 | Ortho referrer (**Cross-sell**) | *"Send the next back/neck patient the way you already send knees and shoulders."* |
-| Other-patient referrer | *"One spine referral to test the pathway."* |
-| Prospect (first touch) | Intro + *"One referral to prove the pathway"* + leave-behind. |
+| Other-patient referrer | *"Send us a handful of the spine ones — let us show you what we're about."* |
+| Prospect (first touch) | Intro + *"Send us a handful — let us show you what we're about"* + leave-behind. |
 | Lapsed producer (**Recover**) | Lead with ownership: *"We owe you a visit — that's on us."* Then THANK → OPEN. No excuses, one service commitment. |
 
 ## 4. Payer qualification — commercial/Medicare vs. Medicaid
