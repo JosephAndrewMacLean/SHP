@@ -33,6 +33,17 @@ first fill **Friday 7/24**.
 - **Spine is ~46–48/week vs. this week's ramp step of 51** → 65 floor by **Aug 30 (Gate 1)** →
   72/week by **Sept 30 (Gate 2)**. June actual: **248 spine NPs = 169 B2C + 79 B2B**;
   B2C ran **−71 vs. budget**, B2B ran **+14 over**. The hole is consumer demand, not referrals.
+- **July vs. budget, computed 7/22 (kept-new actuals thru 7/21 — 14 of 22 clinic days):** all-lines
+  **767 vs. 849 pace (−82)**; **Spine 120 vs. 200 pace (−80)** with only **174 on the books vs. the
+  315 July budget** — closing it would need 24.4 spine NPs/clinic day vs. the 14.3 plan, so July
+  lands short and the meeting is about August/September. Ortho **+64** / Foot **+27** / Hand **+26**
+  above pace keep carrying; PA/Mid-Level **−92** needs a classification check (Santosh) before it's
+  treated as demand. Full math: `pm/np-week-tracking-2026-07-20.xlsx` ("July vs Budget" tab);
+  email-ready version: `pm/email-marketing-meeting-2026-07-22.html`.
+- **Week of 7/20 tracking (Mon–Tue kept actuals + Wed–Fri scheduled):** projected **243 vs. 303
+  weekly goal (−60)**; Mon–Tue kept-new ran **106 vs. 124 scheduled (−18** — Tue Ortho −7, Tue Pain
+  −5**)** — a phone-pathway conversion leak. **Spine week: 54** — above the 51 ramp step, −18 vs.
+  the 72 budget week; Friday has only 4 spine on the books.
 - From yesterday's Q2 review: spine finished **~70% of Q2 goals** (May was the worst miss), ortho
   is over-delivering and carries the shortfall (hold 130–140/wk), and **20 ASC staff were exited in
   June** — Sept 30 is a hard line, not a stretch goal.
