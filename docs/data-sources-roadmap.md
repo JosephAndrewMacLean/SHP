@@ -28,7 +28,7 @@ Google sources reuse it; each just needs the account granted access on that prod
 | Liine | Cardinal's "largest unlock": qualified new-patient calls/bookings by channel | 🟡 **official Liine MCP exists** — allowlist + credentials pending | small |
 | Rater8 | Review velocity program (Phase 3), per-physician/location ratings | ⬜ | vendor ask |
 | Google Business Profile | Local pack visibility (target 45–50%), listing calls/directions | 🟡 **MCP wired** (`scripts/gbp-mcp.py` + `gbp_diagnose`) — API approval pipeline pending | approval wait |
-| Bing Webmaster Tools | Bing/Copilot visibility (feeds AEO/GEO) | 🟡 key loads & MCP works (verified 2026-07-22) — **network policy blocks `ssl.bing.com`**; allowlist it, then re-verify | allowlist ask |
+| Bing Webmaster Tools | Bing/Copilot visibility (feeds AEO/GEO) | ✅ **Live** (verified 2026-07-22 after `ssl.bing.com` allowlisted) | done |
 | Bing Places | listing presence only | ⬜ no API | manual |
 | ZocDoc | booking-channel cost/capture (already analyzed in `brand/current-state.md`) | ⬜ no reporting API | manual export |
 | Local grid (Local Falcon/BrightLocal) | local pack visibility % by geo | ❌ gap | tool decision |
@@ -39,6 +39,7 @@ Google sources reuse it; each just needs the account granted access on that prod
 1. ✅ **Network allowlist** — `synergyhealth.org` added; direct fetches work (caveat:
    Cloudflare bot-challenges non-browser requests for HTML pages, so page-level
    title/schema checks still need a browser pass or a Cloudflare WAF exception).
+   `ssl.bing.com` (Bing WMT API host) added 2026-07-22.
 2. ✅ **PageSpeed Insights API key** — stored as `PAGESPEED_API_KEY`. Environment
    variables load at session start, so use it from any session started after
    2026-07-22: it unlocks scripted CWV field-data checks (the regression tripwire).
@@ -133,18 +134,24 @@ Google sources reuse it; each just needs the account granted access on that prod
 - Note: Cardinal also recommends a **grid tracker** (Local Falcon/BrightLocal) for true
   local-pack visibility % — separate small tool decision, not a GBP API feature.
 
-## 7. Bing Webmaster Tools — MCP wired, blocked by network allowlist
+## 7. Bing Webmaster Tools — ✅ Live
 
 - **MCP server is live in `.mcp.json`** (`scripts/bing-wmt-mcp.py`): `query_stats`,
   `page_stats`, `rank_and_traffic_stats`, `crawl_stats`, `url_submission_quota`.
-- **Status 2026-07-22:** `BING_WEBMASTER_API_KEY` added to the environment settings
-  by Joe. **Verified in a fresh session the same day:** the key loads and the MCP
-  server issues the API call correctly, but the environment's egress proxy rejects
-  the connection to the API host — CONNECT to `ssl.bing.com:443` returns a 403
-  policy denial (confirmed via the proxy's status endpoint).
-- **Unblock:** add `ssl.bing.com` to this environment's network allowlist (same
-  environment settings where `synergyhealth.org` was added — see §0), then re-run
-  `query_stats` in a fresh session and flip this to ✅.
+- **✅ Verified 2026-07-22:** `BING_WEBMASTER_API_KEY` set by Joe, and `ssl.bing.com`
+  added to the environment's network allowlist after the API host was initially
+  403-blocked by the egress policy. `query_stats` and `rank_and_traffic_stats` both
+  return live data; the daily series is current to ~2 days ago and carries ~16 months
+  of history.
+- **Data quirks:** `AvgClickPosition` is always `-1` (not reported), and `query_stats`
+  rows all share a single stale-looking `Date` stamp with an unstated aggregation
+  window — treat that report as "top queries, recent window" and use
+  `rank_and_traffic_stats` for anything time-based.
+- **First read (2026-07-22):** ~10.2k impressions / 381 clicks in the last 30 days
+  (same order of magnitude as GA4's bing-organic ≈ 247 sessions/30d), down ~24% vs
+  the prior 30 days. Top queries are overwhelmingly branded — Synergy, legacy
+  Mendelson Kornblum, and physician names; procedure terms barely register. That's
+  white space for the AEO/GEO workstream, since Bing's index feeds Copilot/ChatGPT.
 - Small direct traffic (bing organic ≈ 247 sessions/30d) but **Bing's index feeds
   Copilot and ChatGPT search** — it punches above its weight for AEO/GEO.
 
