@@ -64,6 +64,12 @@ that starts with expansion before locking these down is risking the base it's bu
 - Separately, **27 producers (≥2 spine) have sent no spine patient since mid-May** (~69 patients'
   worth of run-rate at risk) — overlapping but not identical to the unvisited list.
 
+> **⚠️ Field correction (Jul 22, from Kristen):** "unvisited in MMC" ≠ "no contact." Texts and calls
+> aren't logged in the CRM, and several of these accounts (Hesselberg among them) are maintained by
+> text weekly. The re-protection sweep still runs — an in-person visit beats a text — but the "120
+> patients undefended" framing overstates risk, and lapse counts should be read as a tracking gap
+> as much as a relationship gap. See `pm/glossary.md` → "Lapsed (in MMC)."
+
 **So what:** the cheapest spine patients in Q3 are the ones already flowing that nobody is defending
 — this is where Corewell/Beaumont-style competitors take share silently.
 **Do:** first 10 field days = **re-protection sweep of the 32 + the quiet 27** (thank-you, service
