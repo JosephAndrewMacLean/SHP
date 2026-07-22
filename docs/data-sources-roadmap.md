@@ -156,9 +156,8 @@ Google sources reuse it; each just needs the account granted access on that prod
   (same order of magnitude as GA4's bing-organic ≈ 247 sessions/30d), down ~24% vs
   the prior 30 days. Top queries are overwhelmingly branded — Synergy, legacy
   Mendelson Kornblum, and physician names; procedure terms barely register. That's
-  white space for the AEO/GEO workstream, since Bing's index feeds Copilot/ChatGPT.
-- Small direct traffic (bing organic ≈ 247 sessions/30d) but **Bing's index feeds
-  Copilot and ChatGPT search** — it punches above its weight for AEO/GEO.
+  white space for the AEO/GEO workstream, since **Bing's index feeds Copilot and
+  ChatGPT search** — it punches above its weight despite small direct traffic.
 
 ## 8. Bing Places & ZocDoc — no clean APIs; treat as manual
 
