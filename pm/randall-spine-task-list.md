@@ -13,6 +13,14 @@ architecture, schema deployment (Cardinal), or anything off-page.
 `pm/spine-meta-execution-list.md` (per-URL specs) · `playbooks/spine-page-templates.md` §2
 approved copy blocks · `playbooks/spine-semantic-model.md` §D2 (link contract).
 
+> **Executed 7/22 PM (non-human):** the BEFORE baseline is frozen —
+> `pm/baselines/spine-before-2026-07-22.md` (hub = 0 keywords, canons = 0, caudal #4
+> protected, ~230K/mo demand on Mitch's five words) · per-URL link checklists generated —
+> `pm/spine-internal-link-checklists.md` (T10's worklist) · the 90% citation (AANS) and the
+> OptiLIF®/Spineology attribution are already in the workbench deliverables. What's left
+> that needs a person: `pm/human-only-list.md` — Randall's GSC before-export (R1) comes
+> BEFORE any edit.
+
 **The rule of this list:** every task does three jobs at once —
 1. **Mitch's ask, faithfully** (his words, his order, his clinical framing — never "improved"),
 2. **Visibility** (title/meta/H1/H2s + FAQ/snippet formatting that earns impressions),
