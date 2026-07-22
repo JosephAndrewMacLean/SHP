@@ -39,6 +39,7 @@ says so — **corrections welcome; flag anything that doesn't match how the team
 | **People touches** | Individual provider/staff contacts logged within visits (one stop can touch several people). |
 | **Wedding cake** | The funnel visual: provider touches → practice visit-days → new patients. |
 | **NP per 100 visit-days** | Productivity ratio (2026 YTD: Kristen 67 · Jasmine 30 · Coty 18 · Sean 14). Directional — referrals lag visits. |
+| **Cold referral** | A matched referral patient whose practice had **no completed MMC visit on or before the patient's first appointment** — i.e., a referral we never field-touched first. 2026 YTD: only **6 of 1,287** matched patients. Measures sequence (visit came first), not proof of causation; unmatched rows (~17.5%) aren't in the denominator. |
 | **Lag (visit→first appointment)** | Days between the last completed visit to a practice and an attributed patient's first appointment. **Median 31 days; 83% within 60.** Timing context, not proof the visit caused the patient. |
 | **Route day (D05, K-D03, FP/rev/swp)** | A pre-built geographic day of ≤10 stops. FP = first pass (all stops) · rev = producer revisit (proven stops only) · swp = sweep of tail producers. |
 | **Protect Radar / Money List** | App screens: every proven referrer ranked by yield + days since visit; and the week's highest-value visits. |
