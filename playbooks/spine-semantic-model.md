@@ -571,7 +571,9 @@ updates = `pm/website-schedule-update-workorder.md` · sequencing =
 
 ---
 
-# PART D — ROUTING INTELLIGENCE (the altLabel layer)
+# PART D — ROUTING INTELLIGENCE
+
+## D1. The altLabel layer
 
 One shared **consumer-language ↔ clinical-term ↔ destination map** (validated by Mitch,
 seeded from the Friday triage list — "as simple as radiculopathy… there's two or three")
@@ -588,6 +590,52 @@ drives four surfaces:
 
 **Red-flag rule:** every symptom surface carries the standardized, clinically approved
 escalation block (bladder/bowel changes, fever with back pain, trauma → urgent/911 routing).
+
+## D2. The internal-link contract — what each page must link, and what must link to it
+
+The diagrams' arrows are build requirements, not illustration. Every `related`/`narrower`
+edge in Part A becomes a real link in a named module (`spine-page-templates.md` placements).
+This is the per-page-type contract.
+
+**Golden rules (all pages):**
+1. **Every arrow is two-way.** If sciatica links the endoscopic page, the endoscopic page
+   links sciatica back (its indications). A one-way `related` edge is a build bug.
+2. **Anchors are altLabels, in sentence context** — the destination's patient words, never
+   "click here"/"learn more" alone: *"an* epidural steroid injection *often calms the nerve"*
+   → `/treatment/caudal-esi/`. This is how the routing vocabulary becomes crawlable.
+3. **Links point ONLY at canons** — never at a legacy twin, parameter URL, or straggler.
+4. **No orphans:** a NEW page ships with **≥3 inbound links** already live (its hub grid slot,
+   its condition/treatment partners, its guide rail). Publishing an unlinked page is a defect.
+5. **Curated, bounded counts** — these modules replace the 300-link mega-nav disease, not
+   reproduce it. Body-link budget per page: hub ~25 · condition ~12–15 · treatment ~10–12 ·
+   provider ~8–10 · location ~10–12 · guide ~10 · article ~5–7.
+6. **Conservative-first ordering inside treatment links:** PT → injection → surgery, always —
+   the link order itself is clinical messaging.
+
+**Per-page-type contract** (OUT = links this page must carry · IN = pages that must link here):
+
+| Page | OUT (module → destinations) | IN (must be linked from) |
+|---|---|---|
+| **HUB** | Condition grid → all 6 canons · pathway band → PT, `/treatment/caudal-esi/` (exemplar injection), endoscopic page (exemplar surgery) · differentiation band → each differentiator's treatment page · team module → 5 surgeon bios + pain-management page · locations band → 5 clinic pages · guide rail → 2 guides · symptom router → conditions + orthopedic urgent care | Every spine page's breadcrumb ("Spine care") · homepage dual-entry strip · location pages' services line |
+| **CONDITION** (ex. sciatica) | Breadcrumb → hub · "what's causing it" → related condition(s) (herniated disc) · **"treatment options, in order"** → PT canon → relevant injection(s) → relevant surgery page(s), each with its honest indication sentence · "who treats this" → 1 pain bio + 1–2 surgeon bios (per Mitch's matrix) · guide rail → its decision guide · near-you chips → 5 locations · cluster rail → its learning-hub articles | Hub condition grid · sibling conditions where clinically related · every treatment page that treats it (indications) · its guide · its cluster articles (parent link) · hub symptom router |
+| **TREATMENT** (ex. endoscopic) | Breadcrumb → hub (via treatment spectrum) · **"conditions this treats"** → 2–3 condition canons · **conservative-alternatives module** → PT + the injection tried first · surgeon module → the performing surgeon's bio · comparison rail → sibling treatments (microdiscectomy · fusion · ACDR) · guide rail → "Do I need spine surgery?" | Condition pages' treatment-in-order sections · the surgeon's "procedures I perform" · hub differentiation/pathway bands · relevant guides · (MILD ← stenosis page specifically) |
+| **PROVIDER** (ex. Maslak) | **"Procedures I perform"** → his treatment pages · "conditions I treat" chips → 2–4 canons · location chips → his clinic pages · "meet the full team" → hub team module | Hub team module · every treatment page he performs · location rosters where he sits · the matching guide · relevant guide bylines ("reviewed by") |
+| **LOCATION** (ex. Troy) | Roster names → each provider bio · services line → hub (+ EMG/injection logistics page for Livonia) · cross-route → nearest alternative clinic (Southfield→Livonia rule) · near-you siblings → 2 adjacent clinics | Hub locations band · condition near-you chips (all 6 × 5) · provider location chips · hyperlocal satellites (post-D3) → their nearest clinic |
+| **GUIDE** (ex. do-i-need-spine-surgery) | The conditions it serves (2–3 canons) · the treatments it weighs (injection + surgery pages) · team module (I3 bridge CTA) · booking | **Every condition + treatment page it serves (guide rail)** · hub guide rail · learning-hub shelf · sibling guides |
+| **ARTICLE** | Parent condition (cluster link — exactly one parent) · the relevant guide · 1–2 treatments mentioned | Parent condition's cluster rail · sibling articles |
+
+**Worked example — the sciatica canon's 13 links:** hub (breadcrumb) · herniated-disc (cause)
+· PT canon, `/treatment/caudal-esi/`, endoscopic page (treatment order) · 1 pain bio + 1
+surgeon bio (who treats) · sciatica guide (rail) · 5 location chips (near-you). In return,
+sciatica must be linked from: the hub grid + symptom router, herniated-disc's related block,
+caudal-ESI's and endoscopic's indications, the sciatica guide, and its future cluster articles
+— **11+ inbound**. That mesh, repeated across the model, is what replaces the missing topical
+authority (31.8 vs. 70 benchmark) without touching ortho's architecture.
+
+**Build & QA:** the seo-specialist agent generates the per-URL link checklist from this
+contract (the meta execution list's per-page "content updates" reference it); Paul builds the
+modules; QA = walk each page's OUT list and each destination's IN list before publish — a
+missing arrow is a launch blocker, same class as a missing E-E-A-T block.
 
 ---
 
@@ -625,3 +673,6 @@ escalation block (bladder/bowel changes, fever with back pain, trauma → urgent
   not live twins. Hub confirmed = `/specialty/spine-neck-back`. V6 shrinks to a coverage/
   straggler check; the consolidation tranche is removed from the plan; the directive stands:
   no NEW redirects, ever. Mitch's review materials no longer show legacy/duplicate URLs.
+- **7/22 (v8):** added **§D2 — the internal-link contract**: per-page-type OUT/IN link
+  requirements with golden rules (two-way arrows, altLabel anchors, canons only, no orphans,
+  bounded counts, conservative-first ordering) and the sciatica worked example.

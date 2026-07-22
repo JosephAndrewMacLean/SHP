@@ -20,6 +20,8 @@
   <footer>`; landmarks make screen-reader navigation work.
 - The internal-link modules are **structural, not decorative** — they are the semantic model's
   `related` edges rendered on-page (condition ↔ treatment ↔ surgeon ↔ guide ↔ location).
+  **The per-page link requirements (OUT and IN lists, anchor rules, link budgets) live in the
+  model's §D2 internal-link contract — a missing link from that contract is a launch blocker.**
 - No inherited mega-nav dumps into page body (audit: 300+ links / 8 panels). Page-level
   navigation is the hub's job; body links are curated `related` edges only.
 
