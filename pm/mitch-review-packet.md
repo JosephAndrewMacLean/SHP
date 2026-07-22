@@ -13,11 +13,10 @@ one-liners are enough. **If any link is dead or looks wrong, say so — that its
 ## Stop 1 — THE HUB (the front door) · model §A3.1
 
 **Open:** `synergyhealth.org/specialty/spine-neck-back`
-**Also open (the problem):** `synergyhealth.org/specialties/spine-back-and-neck/`
-**What you're looking at:** two spine front doors live at once — Google splits credit between
-them, which is one reason spine ranks for almost nothing non-branded. The first one is where
-converting visitors actually land today.
-**What the plan changes:** ONE hub, rebuilt with: a "what are you feeling?" entry for patients
+**What you're looking at:** the spine front door — and today it only works for a patient who
+already knows their diagnosis. No symptom entry, no team, none of our differentiators, which
+is one reason spine ranks for almost nothing non-branded.
+**What the plan changes:** the hub rebuilt with: a "what are you feeling?" entry for patients
 who don't know their diagnosis · the conservative→interventional→surgical pathway · a
 "meet the spine team" module · and the differentiators (robotics, endoscopic, disc
 replacement) finally surfaced here instead of buried elsewhere.
@@ -28,12 +27,11 @@ replacement) finally surfaced here instead of buried elsewhere.
 ## Stop 2 — CONDITION pages (the "what's wrong with me" layer) · model §A3.3
 
 **Open (the good one):** `synergyhealth.org/conditions/spinal-stenosis/`
-**Also open (the duplication problem):** `synergyhealth.org/conditions/lumbar-stenosis/`
 **And (the zero-visibility one):** `synergyhealth.org/conditions/sciatica`
 **What you're looking at:** the stenosis page is our best current condition page — plain
-language, a real red-flag warning (bladder/bowel), when-to-see-a-doctor. But stenosis exists
-at three URLs (they cancel each other out), and the sciatica page — despite correctly saying
-"sciatica is a symptom, not a condition" — ranks for zero searches.
+language, a real red-flag warning (bladder/bowel), when-to-see-a-doctor. But the sciatica
+page — despite correctly saying "sciatica is a symptom, not a condition" — ranks for zero
+searches, and no condition page carries a physician's name.
 **What the plan changes:** one page per condition · a "what you might be feeling" opening in
 patient words · your standardized red-flag block on every one · "treatment options, in order"
 with honest indications · a named physician reviewer + date on each ("medically reviewed by").
@@ -49,9 +47,6 @@ with honest indications · a named physician reviewer + date on each ("medically
 — find the endoscopic "incision smaller than a dime, home same day" copy buried here.
 **Also open (the quiet winner):** `synergyhealth.org/treatment/caudal-esi/` — one of the few
 spine pages that actually ranks and converts.
-**And (the mislabel):** `synergyhealth.org/specialties/spine-back-and-neck/anterior-cervical-discectomy-fusion`
-— the page is titled disc *replacement* (ACDR) but lives at a *fusion* URL, so patients
-searching for fusion alternatives never find our motion-preservation story.
 **What the plan changes:** a dedicated endoscopic page built with Dr. Maslak · SI-fusion page
 per your V4 call · the T-Lift page once you give us the real name (V3) · every treatment page
 gets a candidacy block ("is this right for me?"), a conservative-alternatives section, and

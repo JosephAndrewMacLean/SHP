@@ -28,11 +28,11 @@ every edit logged; GSC per URL at 1/2/3/4 weeks.
 **Content updates:** 1) add the dual entry strip (symptoms vs. diagnosed — template §3.1 pattern, condensed); 2) surface "Why Synergy" above the fold (audit: buried); 3) one tracked phone + book-online-first CTA row; 4) kill any legacy Mendelson references.
 **Gate:** ⏳ACCESS · homepage entity/schema = Cardinal.
 
-### `/specialty/spine-neck-back` — Spine hub (V6 winner only)
+### `/specialty/spine-neck-back` — Spine hub (confirmed live 7/22; legacy twin already redirected)
 **Opportunity:** the front door for all spine intents; today branded-only (41 kw, #2 kw "mendelson kornblum"); the elective funnel's ~0 starts here.
 **Meta:** `Spine, Back & Neck Care in Metro Detroit` · `Complete spine care under one roof — from physical therapy and injections to minimally invasive surgery. Fellowship-trained specialists. Book online.`
 **Content updates (template §3.1 rebuild):** 1) dual entry block (I-have-symptoms / I-know-my-condition); 2) symptom router with patient-language chips + red-flag interrupt (A4/A6 inputs); 3) care-pathway band (conservative → interventional → surgical, honest framing); 4) **differentiation band** — Mazor X first-in-MI, endoscopic, ACDR, MILD aggregated from their stranded pages (V2-cleared claims only); 5) **meet-the-spine-team module** with plain-English subspecialty labels + location chips; 6) condition grid (6 canons); 7) guide rail ("Do I need spine surgery?"); 8) locations band incl. Troy; 9) FAQ block (content; Cardinal deploys schema); 10) E-E-A-T footer.
-**Gate:** V6 (URL) · V2 (claims) · A5/A6 (Mitch) · V5 (team module).
+**Gate:** V2 (claims) · A5/A6 (Mitch) · V5 (team module).
 
 ### ⚠ Sterling Heights location page
 **Opportunity:** top-converting paid geo ($222 CPA) + deepest spine supply incl. new Fridays — message-match the spend already flowing.
@@ -47,22 +47,22 @@ every edit logged; GSC per URL at 1/2/3/4 weeks.
 **Gate:** Katie confirm · A10 (Mitch wording).
 
 ### `/conditions/sciatica` — Condition canon
-**Opportunity:** top-volume spine term, currently ranks for ZERO; consolidation concentrates two URLs into this one.
+**Opportunity:** top-volume spine term, currently ranks for ZERO (legacy twin already redirected — the fight is content, not URLs).
 **Meta:** `Sciatica (Shooting Leg Pain): Causes & Treatment Options` · `Sciatica is a symptom, not a condition. Learn what's really causing your leg pain and the treatments that work — from PT to minimally invasive options.`
 **Content updates (template §3.3 — same pattern for all six canons below):** 1) **"What you might be feeling" symptom opening** in patient words (the built-for-diagnosed fix); 2) standardized red-flag block (A6); 3) **E-E-A-T block** — named physician reviewer + date + citations (A5 roster); 4) "Treatment options, in order" section with honest indications + links (PT → ESI → endoscopic/microdiscectomy); 5) "Who treats sciatica here" mini-team; 6) guide rail → `/guides/sciatica-treatment-options/`; 7) FAQ content block; 8) near-you chips (5 locations); 9) dual CTA (soft I2 primary + specialist bridge).
-**Gate:** A5 + A6 (Mitch) · V6 for the twin canonical (content edits OK now).
+**Gate:** A5 + A6 (Mitch) — content edits OK now.
 
 ### `/conditions/spinal-stenosis/` — Condition canon
-**Opportunity:** ×3 duplicate URLs cannibalizing; has the site's best red-flag block — the model for the rest; MILD page (33 kw) unlinked from it.
+**Opportunity:** the site's best red-flag block — the model for the rest; MILD page (33 kw) unlinked from it. (V6: check whether `lumbar-stenosis` is a live in-structure near-duplicate.)
 **Meta:** `Spinal Stenosis: Symptoms, Causes & Treatment Options` · `Leg pain when you walk that eases when you sit? Learn the signs of spinal stenosis and every treatment option, explained by spine specialists.`
 **Content updates:** the §3.3 pattern (above) **plus:** link the MILD page from the treatment section (it already ranks — capture its momentum); neurogenic-claudication explainer stays (it's good); standardize its red-flag block sitewide (A6 source).
-**Gate:** A5 · V6 (×3→1).
+**Gate:** A5 · V6 (lumbar-stenosis check only).
 
 ### `/conditions/herniated-disc/` — Condition canon
-**Opportunity:** root orphan (`/herniated-disc-microdiscectomy/`, $485/conv in paid) splits this topic; endoscopic copy migrates through here.
+**Opportunity:** endoscopic copy salvages from the legacy orphan (`/herniated-disc-microdiscectomy/`); V6 confirms the orphan's state.
 **Meta:** `Herniated Disc: Symptoms, Relief & Treatment Options` · `Most herniated discs heal without surgery. Learn your symptoms, what to try first, and when a minimally invasive procedure makes sense.`
 **Content updates:** §3.3 pattern **plus:** migrate the orphan's "90% heal without surgery" claim ONLY if V2 sources it (else drop); treatment section links endoscopic page + microdiscectomy; L5-S1 modifier cluster seeded in the learning hub.
-**Gate:** A5 · V2 (the 90% stat) · V6 (orphan canonical).
+**Gate:** A5 · V2 (the 90% stat).
 
 ### `/conditions/degenerative-disc-disease/` — Condition canon
 **Opportunity:** legacy paid LP ($1,304/conv) retires into this page; 3-T MRI copy migrates.

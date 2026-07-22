@@ -42,7 +42,7 @@ Initiative numbers reference `spine-semantic-model.md` §C2.
 |---|---|---|---|
 | **W0 — Unblock** | Jul 21–27 | Verifications fired, baselines cut, interviews booked | V1–V6, D3 request |
 | **W1 — Pilot + plumbing** | Jul 28–Aug 10 | Endoscopic page (pilot), consolidation plan, language map v1, hub wireframe | 1, 2, 6 (spec) |
-| **W2 — Consolidate + rescue** | Aug 4–24 (overlaps W1) | Canonical tranche 1, hub rebuild live, 6 conditions rescued, SI fusion + T-Lift pages, guides #1–2 | 1, 3, 4, 5, 7 |
+| **W2 — Rescue** | Aug 4–24 (overlaps W1) | Hub rebuild live, 6 conditions rescued, SI fusion + T-Lift pages, guides #1–2, V6 straggler tidy-up | 1, 3, 4, 5, 7 |
 | **GATE 1** | **Aug 30** | See §5 scoreboard | — |
 | **W3 — Deepen** | Sept 1–21 | Team module + matching guide, remaining guides, hyperlocal tranche, learning-hub refresh, CCM-candidacy content | 7, 8, 9, 10 |
 | **W4 — Prove** | Sept 22–30 | Rebrand purge done, full-funnel measurement readout | 11 |
@@ -58,7 +58,7 @@ Initiative numbers reference `spine-semantic-model.md` §C2.
 | Mon 7/21 | Mitch's three-phase timelines received (his EOD commitment) · V1 data request to **Joel Carr** (verify "98% of spine surgeries from 3–4 terms" + NP volume by condition/surgeon) · D3 request (first-party city counts) | Joe |
 | Tue 7/22 | V2 stat inventory delivered to clinical/compliance (every live efficacy stat: 90%×2, 92%, 89%, 91%, 3-of-4/8-of-10, "national top surgeon") — substantiate-or-remove ruling requested | Joe + compliance |
 | Wed 7/23 | **Cage match:** V3 (T-Lift real name, via McCarty), V4 (SI-fusion ownership: Varghese tryout vs. Munk/iFuse), V5 (medical-director attribution, Zamorano page, Munk/Yacisen locations) put to Mitch | Joe + Mitch |
-| Wed–Thu | **V6:** live canonical-tag + URL-resolution check across all duplicate pairs · plugin migrated to the practice Claude account (inside Santosh's governance) | Paul |
+| Wed–Thu | **V6 (coverage check):** legacy twins were already redirected at migration (Joe 7/22) — Paul verifies every legacy pair resolves to its canon and lists any straggler still serving its own page (e.g., lumbar-stenosis, parameter URLs) · plugin migrated to the practice Claude account (inside Santosh's governance) | Paul |
 | Fri 7/25 | **Triage meeting (Katie + Mitch + Kelly):** buzzword list v1 (the 2023/24 Oddo workflows — "radiculopathy… there's two or three") → seed of the consumer-language map | Katie/Mitch/Kelly, Joe observes |
 | All week | **Baselines cut and filed:** GSC non-branded spine (impressions/clicks/CTR, brand terms filtered incl. Mendelson/Kornblum misspellings), rankings for the 6 condition canons, Liine spine call quality, scorecard snapshot · Maslak hour booked · Randall: spine gap-analysis pass #1 (titles/metas only) · **All baselines use post-migration windows only (site migrated Apr 22; prefer Jun 1–Jul 19, post-Liine)** — paid baseline: `pm/spine-paid-search-analysis-jan-jul2026.md` (re-export month-segmented) | Joe / Randall |
 
@@ -67,8 +67,7 @@ Initiative numbers reference `spine-semantic-model.md` §C2.
   `content-creator` draft (Grade 6–8, template §3.4) → **Wed 7/30 cage-match clinical review**
   → compliance → Paul publishes → measurement hooks live. **Log the elapsed time of every
   gate** — this throughput number sizes everything after it.
-- `seo-specialist` consolidation plan finalized from V6 results (canonical map per semantic model §B2 — NO redirects)
-  → **shared with Cardinal before execution** (they own technical deployment; no collisions).
+- `seo-specialist` straggler list finalized from V6's coverage check (semantic model §B2 — any live straggler gets a canonical tag; NO new redirects) → **shared with Cardinal** (no collisions).
 - Consumer-language map v1 (triage list + GSC query language) validated by Mitch → shared to
   Kelly (scripts) and the triage-tree build (Santosh + Joe).
 - Hub rebuild wireframe on template §3.1 (dual entry, differentiation band, team module slots)
@@ -77,9 +76,9 @@ Initiative numbers reference `spine-semantic-model.md` §C2.
   stays frozen (no bid changes on broken tracking — standing rule).
 
 ### W2 · Aug 4–24 — Consolidate + rescue
-- **Canonical tranche 1** (hub twin, stenosis ×3→1, sciatica twin, microdiscectomy ×3→1 — rel=canonical only, twins stay live) executed by
-  Paul, **content migrated before canonicalizing** (McKenzie/endoscopic/3-T MRI copy) · rankings
-  watched daily for a week per pair — any regression pauses the tranche.
+- **V6 straggler tidy-up:** legacy twins already redirected at migration; Paul canonicals any
+  straggler still serving its own page (no new redirects) · salvage copy first (McKenzie/
+  endoscopic/3-T MRI) · rankings watched weekly on the canons.
 - **Hub rebuild live:** dual entry + symptom router (Mitch-approved red-flag block),
   differentiation band (V2-cleared claims only), condition grid, guide rail. Team module ships
   **only if V5 is resolved**; otherwise it ships in W3.
@@ -159,7 +158,7 @@ numbers the week baselines land, not before (no invented targets).
 
 | Risk | Mitigation |
 |---|---|
-| **V6 shows canonicals already partially correct/wrong in unexpected ways** | The canonical plan is drafted *against* V6 findings, not before them; tranche execution with per-pair ranking watch and a pause rule |
+| **V6 coverage check finds live stragglers or gaps in the migration's redirect coverage** | Straggler list drafted from V6 findings; canonical tags only (no new redirects); per-page ranking watch |
 | **Physician hours don't materialize** (Maslak/Varghese/McCarty interviews) | Booked via Mitch with Gautam's mandate behind them ("tell him Scott and Gautam are looking for ways for you to add differentiated value"); fallback: Mitch supplies the clinical content directly |
 | **Consolidation dents the branded workhorses** (Salar bio #1 sitewide, neck-fracture page) | Both flagged KEEP/protect; no URL work near them without Paul supervision |
 | **Liine signal bug persists** | Judge on GSC + Liine call quality; paid bidding stays frozen on broken tracking (standing rule from the 90-day plan) |

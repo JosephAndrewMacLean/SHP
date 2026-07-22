@@ -18,7 +18,7 @@ addition needs gates.**
 
 | Who | Work | Notes |
 |---|---|---|
-| **Paul** | **V6 live check** — canonical tags + how each duplicate URL resolves, every pair; which hub template actually serves | The P1 unlock; GA4 says `/specialty/` is live — confirm |
+| **Paul** | **V6 coverage check** — legacy twins were already redirected at migration (Joe 7/22); verify every pair resolves to its canon, list any live straggler (lumbar-stenosis, parameter URLs) | Stragglers get canonical tags; no new redirects |
 | Paul | **P0 substantiation sweep (removal half):** take down/park every unsourced stat (90%×2, 92%, 89%, 91%, 3-of-4/8-of-10, "national top surgeon") + the superlative testimonial + the Kornblum-credited testimonial | Removing risk needs no clinical input; replacements wait on Lanes C/D |
 | Paul | One tracked phone number sitewide (Liine line); label local direct lines | Kelly heads-up, no approval needed |
 | Paul | Fix `scct`/`y_source`/GMBSocialClimb parameter handling (canonical/param rules) | Kills index pollution + likely fixes half the GA4 channel mess |
@@ -30,7 +30,7 @@ addition needs gates.**
 | Randall | E-E-A-T **scaffold** on new/updated pages (block layout, empty reviewer/date slots) | Names drop in the moment Mitch answers A5 |
 | **Joe (+ agents)** | Consumer-language map **v1 draft** from GSC queries + paid search terms | Goes to Mitch for validation (A7), not creation |
 | Joe (+ content-creator agent) | Draft the six guide outlines + condition-page symptom openings + hub wireframe copy | All queue for Mitch's Wednesday batch |
-| Joe (+ seo-specialist agent) | canonical/consolidation map **draft** (NO redirects) conditioned on V6's two possible outcomes | Execute only after V6 |
+| Joe (+ seo-specialist agent) | Straggler triage list from V6's coverage results (canonical tags only; no new redirects) | Execute after V6 |
 | Joe | Message-match map (winning paid intents → correct LP + H1) → hand to Cardinal | They own the paid restructure |
 | Joe | GBP listing hygiene audit — **separate listings track, not part of the website program; Troy GBP + Oakland MRI explicitly excluded from any blending** (Joe 7/21) | Listings already convert (~375+ sessions) |
 | Joe | Rater8 export of spine-relevant reviews → pre-screen queue for the D-lane | Screen criteria in register §9; compliance does final pass |

@@ -15,7 +15,7 @@
 | **E — Governance & Changelog** | Change rules, Phase-2 sports note, correction log | Append-only |
 
 **Diagram legend (all diagrams):** green = NEW (create) · amber = UPDATE (rework) · blue =
-CHANGE (consolidate via canonical tag — NO redirects; pending V6) · gray = KEEP (protect).
+CHANGE (leftover/straggler tidy-up — legacy twins were already redirected at migration; V6 verifies coverage; any live straggler gets a canonical tag, never a new redirect) · gray = KEEP (protect / already resolved).
 **Intents:** `I1` solve my problem · `I2` learn what's causing it · `I3` choose my surgeon ·
 `I3b` returning/revision patient.
 
@@ -41,7 +41,7 @@ Think of the website as a clinic with rooms, and this document as its floor plan
   (the 7/13 schedule); guides walk a decision ("do I need surgery?"); the learning hub is
   patient education with a named physician reviewer.
 - **The color codes are triage categories for pages:** green = build new · amber = fix what
-  exists · blue = merge duplicates · gray = working, don't touch.
+  exists · blue = tidy-up of leftover pages (mostly already handled at migration) · gray = working or already resolved, don't touch.
 - **The patient-journey shorthand:** I1 = "I'm in pain, get me in" · I2 = "what's wrong with
   me?" · I3 = "who should do my surgery?" · I3b = "I had spine surgery and it's back" (your
   revision patients — adjacent segment disease, failed back surgery).
@@ -135,7 +135,7 @@ only the already-diagnosed); routes everything; carries the aggregated different
 ```mermaid
 flowchart TD
     HUB[Spine Back and Neck hub<br/>prefLabel Spine Back and Neck Care<br/>altLabel back pain doctor, spine center<br/>intent I1 I2 I3 · UPDATE]
-    OLDHUB[Losing hub twin<br/>CHANGE canonical to winner]
+    OLDHUB[Legacy hub twin<br/>already redirected at migration]
     SYMP[Symptom entry module<br/>altLabel back pain, neck pain,<br/>numbness tingling arm leg<br/>intent I1 · NEW]
     DIAG[Diagnosed entry module<br/>I know my condition<br/>intent I2 · NEW]
     CONDS[Condition cluster<br/>6 concepts A3.3<br/>intent I2 · UPDATE]
@@ -145,7 +145,7 @@ flowchart TD
     LOCS[Locations module<br/>5 staffed clinics incl Troy<br/>intent I1 · UPDATE]
     GUIDES[Guide rail<br/>Do I need spine surgery<br/>intent I2 I3 · NEW]
 
-    OLDHUB -->|canonical| HUB
+    OLDHUB -->|resolves to| HUB
     HUB -->|narrower| SYMP
     HUB -->|narrower| DIAG
     SYMP -->|related routes to| CONDS
@@ -161,9 +161,10 @@ flowchart TD
     classDef newN fill:#2f9e44,color:#fff
     classDef updN fill:#e8930c,color:#fff
     classDef chgN fill:#1971c2,color:#fff
+    classDef keepN fill:#868e96,color:#fff
     class SYMP,DIAG,TEAM,DIFF,GUIDES newN
     class HUB,CONDS,TRTS,LOCS updN
-    class OLDHUB chgN
+    class OLDHUB keepN
 ```
 
 ### A3.2 LOCATION — spine × geography
@@ -207,7 +208,7 @@ degenerative disc disease · spondylolisthesis · radiculopathy/pinched nerve.**
 flowchart TD
     HUB[Spine hub<br/>UPDATE]
     SCI[Sciatica<br/>prefLabel Sciatica<br/>altLabel sciatic nerve pain,<br/>shooting leg pain,<br/>pinched nerve lower back<br/>definition symptom not a condition<br/>intent I2 · UPDATE at conditions sciatica]
-    SCITWIN[S3 sciatica twin<br/>conditions-we-treat path<br/>CHANGE canonical to canon]
+    SCITWIN[Legacy sciatica twin<br/>already redirected at migration]
     L5S1[L5-S1 modifier cluster<br/>altLabel L5 S1 disc, lowest disc<br/>intent I2 · NEW learning article]
     HERN[Herniated disc<br/>related cause<br/>UPDATE]
     ESI[Epidural steroid injection<br/>conservative option<br/>KEEP treatment caudal-esi ranks]
@@ -217,7 +218,7 @@ flowchart TD
     TEAM[Spine team module<br/>who treats this<br/>NEW]
 
     HUB -->|narrower| SCI
-    SCITWIN -->|canonical| SCI
+    SCITWIN -->|resolves to| SCI
     SCI -->|narrower| L5S1
     SCI -->|related cause| HERN
     SCI -->|related conservative| PT
@@ -232,7 +233,8 @@ flowchart TD
     classDef keepN fill:#868e96,color:#fff
     class L5S1,ENDO,GDO,TEAM newN
     class SCI,HERN,HUB updN
-    class SCITWIN,PT chgN
+    class PT chgN
+    class SCITWIN keepN
     class ESI keepN
 ```
 
@@ -395,22 +397,24 @@ Oddo/Lee) · Which spine surgeon do I need? (I3; **gated on the Mitch matrix**).
 
 ## B1. Where spine lives today
 
-The July index shows **six parallel spine structures** (S1–S6) with no effective canonicals:
-the hub exists twice, stenosis ×3, microdiscectomy ×3; the five foundational condition pages
-rank for ≤1 keyword each (sciatica: zero). The real differentiators — **Mazor X first-in-MI
-robotics, endoscopic discectomy, ACDR motion preservation, MILD, iFuse, 3-T MRI** — are
-stranded on location pages, bios, and mislabeled URLs. Meanwhile GA4 shows converting sessions
-land on the `/specialty/` structure and the Salar bio alone carries ~21% of site traffic.
-Full inventory: the 7/21 site-map synthesis + `pm/spine-page-inventory-improvement-register.md`.
+**Corrected 7/22 (per Joe): the legacy duplicate URLs were already redirected at the Apr 22
+migration.** What the July index crawl saw — six parallel spine structures, hub ×2, stenosis
+×3 — are largely **stale index entries decaying, not live competing pages** (consistent with
+GA4: converting sessions land on `/specialty/…` 1,445:1). The live problems are therefore
+content problems, not URL problems: the five condition pages rank for ≤1 keyword each
+(sciatica: zero), and the real differentiators — **Mazor X first-in-MI robotics, endoscopic
+discectomy, ACDR motion preservation, MILD, 3-T MRI** — sit stranded on location pages, bios,
+and legacy slugs while the Salar bio alone carries ~21% of site traffic. Full inventory:
+the 7/21 site-map synthesis + `pm/spine-page-inventory-improvement-register.md`.
 
 ## B2. Canonical targets + the open hub decision
 
-> **⚠ HUB DIRECTION IS OPEN — V6 decides.** Index evidence favors
-> `/specialties/spine-back-and-neck/` (parents the procedure children); **GA4 post-migration
-> evidence favors `/specialty/spine-neck-back` (1,445 converting sessions vs. 1)** — the live
-> new site operates on `/specialty/…`. Consolidate to ONE hub either way; which URL absorbs
-> which is **Paul's V6 live-check call** (inspect existing canonical tags, how each duplicate URL currently resolves, and which
-> template actually serves). No canonical executes before V6 answers.
+> **HUB RESOLVED (7/22, per Joe + GA4): `/specialty/spine-neck-back` is the live hub** — the
+> legacy `/specialties/…` structure was redirected at migration; its index entries are
+> decaying on their own. **V6 shrinks to a coverage check:** Paul verifies every legacy pair
+> actually resolves to its canon and flags any straggler still serving its own page (e.g.,
+> `lumbar-stenosis` vs. `spinal-stenosis` within the new structure, parameter URLs). A
+> straggler gets a canonical tag — never a new redirect (rule below).
 
 > **🚫 NO-REDIRECTS DIRECTIVE (Joe, 7/21) — standing rule for all consolidation.**
 > This program never creates redirects. Consolidation mechanics, in order:
@@ -424,9 +428,9 @@ Full inventory: the 7/21 site-map synthesis + `pm/spine-page-inventory-improveme
 > signals concentrate. Paul implements; Cardinal is informed and must not 301 our URLs from
 > their technical queue.
 
-| Facet | Canonical home | Consolidates (canonical tag after V6) |
+| Facet | Canonical home | Legacy twins (already redirected at migration — V6 verifies coverage; stragglers get a canonical tag, never a new redirect) |
 |---|---|---|
-| Hub | **ONE of** `/specialty/spine-neck-back/` (GA4: live receiver) **or** `/specialties/spine-back-and-neck/` (index: parents children) — **V6 decides** | the losing twin + parameter/slash variants |
+| Hub | `/specialty/spine-neck-back/` (confirmed live — GA4 + Joe 7/22) | `/specialties/spine-back-and-neck/` + parameter/slash variants (index entries decaying) |
 | Conditions | `/conditions/{condition}` (the proven ranker) | all `/conditions-we-treat/spine-neck-back-conditions/*` twins · `/conditions/lumbar-stenosis/` → `spinal-stenosis` · root orphans (herniated-disc-microdiscectomy, degenerative-disc-disease-treatment) — **migrate good copy first** |
 | Surgical procedures | under the winning hub's children | `/treatment/` surgical twins |
 | Injections / interventional | `/treatment/{injection}` (caudal-esi ranks) | `/specialties/pain-management/` twins |
@@ -515,15 +519,14 @@ opportunity has a home. If a proposed page can't point at an O-number, it doesn'
 ## C1. Change lists by page type (same order as A3)
 
 **HUB:** rebuild on the winner URL per templates §3.1 (dual entry, symptom router,
-differentiation band with V2-cleared claims, team module pending V5, guide rail) · canonical
-the losing twin to the winner and strip it from nav/internal links (no redirect) · remove the
-misfiled Munk doctor-location child from the hub cluster (content folds per register; the URL
-stays live with a canonical).
+differentiation band with V2-cleared claims, team module pending V5, guide rail) · legacy hub
+twin already redirected at migration (V6 verifies coverage) · fold the misfiled Munk
+doctor-location child's content into his bio + the PH location page.
 **LOCATION:** main hubs first (SH, Livonia roster modules + LP variants) → Troy rebuild +
 Troy spine module → Southfield honest-supply rebuild → PH visiting-cadence module ·
 hyperlocal pages ONLY post-D3, canonical self-referential, no thin doorways · Mazor X claim
 migrates Southfield→hub · GBP = separate track (§E1).
-**CONDITION:** consolidate to the `/conditions/` canon (canonical map §B2, after V6) · keep the
+**CONDITION:** the `/conditions/` canon stands (legacy twins already redirected — V6 verifies; §B2) · keep the
 Grade 6–9 copy, add E-E-A-T blocks (A5 roster), symptom-language openings, standardized
 red-flag block (A6), treatment-spectrum + guide rails · **NEW pinched-nerve patient-language
 entry** · protect neck-fracture (KEEP) while absorbing its twin.
@@ -612,3 +615,8 @@ escalation block (bladder/bowel changes, fever with back pain, trauma → urgent
 - **7/21 (v6):** **NO-REDIRECTS directive (Joe)** — all consolidation converted from 301s to
   canonical-tag + internal-link discipline + noindex-for-junk across every program doc; twins
   stay live; legacy pages rebrand in place. Standing rule recorded in §B2.
+- **7/22 (v7):** **Corrected (Joe): the legacy duplicates were already redirected at the
+  Apr 22 migration** — the crawl's "six parallel structures" are stale index entries decaying,
+  not live twins. Hub confirmed = `/specialty/spine-neck-back`. V6 shrinks to a coverage/
+  straggler check; the consolidation tranche is removed from the plan; the directive stands:
+  no NEW redirects, ever. Mitch's review materials no longer show legacy/duplicate URLs.
