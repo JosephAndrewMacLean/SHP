@@ -117,7 +117,7 @@ observed constraint: deep 1:1 Santosh time is scarce. So:
 | V3 | "T-Lift / bone bag" real procedure name + description | Mitch → McCarty | The McCarty differentiation page |
 | V4 | SI-fusion clinical ownership (Varghese tryout vs. Munk/iFuse legacy content) | Mitch | The SI-fusion page's surgeon module |
 | V5 | Medical-director attribution conflict (Salar vs. Zamorano in live snippets); Zamorano SHP page existence; Munk/Yacisen locations | Mitch / practice ops | Meet-the-spine-team module |
-| V6 | Canonical/redirect state of all duplicate URL pairs (crawl was index-based) | Paul (live check) | The canonical consolidation plan (NO redirects) in `spine-semantic-model.md` |
+| V6 | Canonical-tag + URL-resolution state of all duplicate URL pairs (crawl was index-based) | Paul (live check) | The canonical consolidation plan (NO redirects) in `spine-semantic-model.md` |
 
 ---
 

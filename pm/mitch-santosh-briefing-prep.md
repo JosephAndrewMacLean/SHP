@@ -18,7 +18,7 @@ addition needs gates.**
 
 | Who | Work | Notes |
 |---|---|---|
-| **Paul** | **V6 live check** — canonicals/redirects across every duplicate pair; which hub template actually serves | The P1 unlock; GA4 says `/specialty/` is live — confirm |
+| **Paul** | **V6 live check** — canonical tags + how each duplicate URL resolves, every pair; which hub template actually serves | The P1 unlock; GA4 says `/specialty/` is live — confirm |
 | Paul | **P0 substantiation sweep (removal half):** take down/park every unsourced stat (90%×2, 92%, 89%, 91%, 3-of-4/8-of-10, "national top surgeon") + the superlative testimonial + the Kornblum-credited testimonial | Removing risk needs no clinical input; replacements wait on Lanes C/D |
 | Paul | One tracked phone number sitewide (Liine line); label local direct lines | Kelly heads-up, no approval needed |
 | Paul | Fix `scct`/`y_source`/GMBSocialClimb parameter handling (canonical/param rules) | Kills index pollution + likely fixes half the GA4 channel mess |

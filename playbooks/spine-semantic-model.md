@@ -409,7 +409,7 @@ Full inventory: the 7/21 site-map synthesis + `pm/spine-page-inventory-improveme
 > `/specialties/spine-back-and-neck/` (parents the procedure children); **GA4 post-migration
 > evidence favors `/specialty/spine-neck-back` (1,445 converting sessions vs. 1)** — the live
 > new site operates on `/specialty/…`. Consolidate to ONE hub either way; which URL absorbs
-> which is **Paul's V6 live-check call** (inspect existing canonicals/redirects and which
+> which is **Paul's V6 live-check call** (inspect existing canonical tags, how each duplicate URL currently resolves, and which
 > template actually serves). No canonical executes before V6 answers.
 
 > **🚫 NO-REDIRECTS DIRECTIVE (Joe, 7/21) — standing rule for all consolidation.**
@@ -433,7 +433,7 @@ Full inventory: the 7/21 site-map synthesis + `pm/spine-page-inventory-improveme
 | Providers | `/providers/{name}` | typo/duplicate profiles · `/our-providers/` |
 | Guides | `/guides/{topic}/` (new namespace) | — |
 
-**Evidence caveats:** crawl = index-based (canonicals/redirects unverified); GA4 export =
+**Evidence caveats:** crawl = index-based (canonical tags and URL resolution unverified); GA4 export =
 converting-sessions-only with broken channel attribution; Ads data = **era-resolved 7/21**
 (daily re-export; post-migration figures used below). Directional until §E gates clear them.
 
