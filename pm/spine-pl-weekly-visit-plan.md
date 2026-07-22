@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-21 · **Runs on:** the scored 808-account book + 85 built route days + Sean's 40-account overlay
 **Owners:** Kristen (lead), Jasmine, Coty, Sean (conditional) · **Ops:** Joe · **Fills tracker:** PL-A.5 (cadence live), PL-B (protect + recover), feeds SP-B.2 (scorecard)
-**The full stop-level schedule (1,067 scheduled visits, filter by `week` + `pl`):** **`pm/pl-weekly-visit-schedule.csv`**
+**The full stop-level schedule (1,126 scheduled visits, filter by `week` + `pl` — cadence updated Jul 22):** **`pm/pl-weekly-visit-schedule.csv`**
 **Kristen's share pack:** `pm/kristen-share/` (field workbook + handoff note) · **MMC sync:** `pm/mmc-import/`
 
 > **What "lucrative" means here:** attributed 2026 spine patients per account (not kept-visit-confirmed),
@@ -20,7 +20,7 @@
 |---|---|---|
 | Spine-day capacity | K: 3 days W1 · 4 W2–W4 · **3.5 W5+** · J/C: 3 W1 · 4 W2–W4 · 3 W5+ · Sean: 2/2/then ~1 | Leaves ~1–2 field days/week for the ortho book (GOV-B.2: hold ortho 130–140/wk) — the full-cadence plan needs 207 visits/wk vs ~155 capacity, so this is the explicit trade |
 | Day order, first pass | Lapsed-producer spine first, then day spine total, then Wave-1 count | Protect before prospect — **all 36 lapsed repeat-spine referrers get their recovery visit in W1–W2** (22 in W1) |
-| Revisit cycle | Day contains a repeat-spine referrer → **every 2 weeks** (producer stops only, ~2–6 stops). Proven-but-no-repeat day → every 3 weeks. Prospect-only day → once, flex re-touch only if slack | Matches Tier-1 14-day cadence where it pays; median achieved cycle in this schedule = **2.0 weeks** for all four PLs |
+| Revisit cycle **(updated Jul 22 — Kristen's cadence)** | **Wave 1 every 2 weeks · Tier 1 every 3 weeks (21d) · Tier 2 every ~30d · Tier 3 every ~45d** — each class revisited only when due, prospect days once + flex | Achieved medians in this schedule: **Wave 1 = 2.0 wk · Tier 1 = 3.0 wk · Tier 2 = 4.0 wk** — exactly on spec |
 | Protect overlays | Lapsed producers ≥5 spine → single-stop pull-forwards in **W1** (Applebaum & Stone, Vanstone, DMC West Bloomfield, Stonebrooke); every remaining lapsed repeat-spine → pulled into **W2** (MedPro, Oakland Family Practice, Metro Medical, Lifetime Family Care, Garden City Family Physicians, Medical Clinic of Northville) | No proven repeat referrer waits past Jul 31 |
 | Producer sweeps | Proven stops stranded on low-value tail days get swept as mini-days every 3 weeks from W5 (Kristen: D08/D13/D15/D17 — her Wave-2 tail, 34 stops) instead of running those full 10-stop prospect days | Covers the tail's 46 spine patients without burning full days on cold geography |
 | Drop rule (OODA) | A prospect stop that produces nothing across 2 touches, or a Tier-3 account at 0 after 2 cycles → drop from rotation, backlog replaces it | Keeps the rotation earning its slots |
@@ -29,10 +29,11 @@
 the protect sweep (30–46% of stops are producers). From W5 the rotation flips to **protect-and-convert
 mode (76–87% producer stops)** because biweekly producer cycles consume the 3-day allocation.
 **Leadership dial:** keeping the 4th spine day after W4 buys ~10 more prospect first-touches/PL/week;
-at 3 days, 270 of 466 prospects get touched by Oct 2 and **276 accounts are explicitly deferred**
-(198 prospects · 62 ortho cross-sell · 10 other · 6 outer-geography one-spine singles — flagged
-`Backlog (Oct+)` in the MMC import file; zero repeat-spine referrers are deferred). Pull from
-backlog only when a rotation slot opens.
+at 3 days, **234 of 466 prospects** get touched by Oct 2 and **323 accounts are explicitly deferred**
+(234 prospects · 75 ortho cross-sell · 14 other — flagged `Backlog (Oct+)` in the MMC import;
+**zero spine-producing accounts are deferred**). Honoring Tier 2's 30-day cross-sell rhythm is
+what costs ~35 prospect first-touches vs the old cadence — the deliberate trade in Kristen's
+Jul 22 cadence. Pull from backlog only when a rotation slot opens.
 
 ---
 
@@ -88,7 +89,11 @@ week-by-week detail.
 
 ---
 
-## 4. Per-PL calendar (route-day tokens: `D05·FP` = Day 05 first pass, `·rev` = producer revisit)
+## 4. Per-PL calendar (route-day tokens: `D05·FP` = Day 05 first pass, `·rev` = cadence revisit)
+
+> **Cadence update (Jul 22):** with Wave 1 biweekly / Tier 1 every 3 weeks / ortho monthly, the exact
+> day-to-week mapping below shifted slightly — **the schedule CSV and the app are the authoritative
+> week-by-week source**; the tables below are directional patterns.
 
 **Kristen (180-account book, 18 days — full pass done by W4, then a clean A/B fortnight template)**
 | Week | Days | Stops |

@@ -61,9 +61,9 @@ ignored** — i.e., the feature exists but isn't trusted or used today.
 frequencies live somewhere the export doesn't capture (per-person settings, routes, a newer MMC
 feature), the "64 of 2,349" understates reality — tell Joe and we re-pull before repeating it.
 
-**Don't confuse it with Planned Cadence:** the **14 / 21 / 30 / 45-day cadences** in the plan and
-app are **our target rhythm** (Tier 1 = 14d, Tier 2 = 21d, Tier 3 = 30d, Prospect = 45d) — they
-are *not* in MMC yet. The MMC sync (`pm/mmc-import/`) proposes setting them **once per spine
+**Don't confuse it with Planned Cadence:** the plan's target rhythm — **updated Jul 22 per
+Kristen: Wave 1 ≤14d · Tier 1 = 21d · Tier 2 = 30d · Tier 3 = 45d · Prospect = 45-day first
+pass** — lives in the app and workbook and is *not* in MMC yet. The MMC sync (`pm/mmc-import/`) proposes setting them **once per spine
 group** in MMC so the Past-Due engine finally works for us instead of being ignored.
 
 ## Payers & compliance
