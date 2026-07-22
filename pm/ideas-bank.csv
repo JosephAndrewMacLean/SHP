@@ -11,7 +11,7 @@ I-09,Interventional pain as the 'front door' to keep patients in-system,Spine,De
 I-10,Closed-loop report-back to referrers after each visit,Physician Liaison,Best practice - referrers keep sending when kept informed,High,Medium,$,,Kristen,PL-D.3,Not Started
 I-11,Tier spine feeder accounts like the attorney-referral model,Physician Liaison,The tiered attorney-referral model already works internally,High,Medium,$,,Kristen,PL-A.3,Not Started
 I-12,Fix Troy Maps/GBP + kill the 'Oakland MRI' misdirect,Local/Brand,Local 'near me' intent is highest-converting; Troy pin/calls currently misdirect,High,Low,$,,Paul,GOV-A.1,Not Started
-I-13,Review-velocity program (BirdEye/Podium),Reputation,96% recommend / 82 sentiment; reviews drive local rankings + trust,Medium,Low,$,,Randall,,Not Started
+I-13,"Review-velocity program: per-location targets + HIPAA-safe response SOP (rater8 collection/balancing already live)",Reputation,"Baseline 2026-07-22: ~15 dated reviews/wk, 57% Google response rate, 28% non-Google, Troy=0 — audits/rater8-reputation-baseline-2026-07.md",Medium,Low,$,,Randall,,Not Started
 I-14,Physician-authored spine condition hubs (5),Content/SEO,Provider section already ranks (182K impressions); E-E-A-T wins YMYL,High,High,$$,,Randall,B2C-A.3,Not Started
 I-15,Kill worst-CPA paid Zocdoc 'Sponsored' spine spend,Paid,"Zocdoc Sponsored ~52% capture, ~$136/captured - the worst efficiency",Medium,Low,$,,Paul,B2C-B.2,Not Started
 I-16,Apply the ortho promo playbook to spine (Tue-Thu pushes),Demand,Ortho turned 75%->125% of plan in ~60 days using promos + ops,Medium,Low,$,,Joe,,Not Started
