@@ -17,8 +17,8 @@
    fronts /llms.txt. Done = AI-block off for retrieval bots + WAF skip rules for
    /llms.txt and /robots.txt. (+5 min: audit log Apr 25–May 3 for the regression
    trigger.)
-3. **Password-protect `synergy.egowebdev.com`.** Publicly reachable (HTTP 200,
-   7/22); audit says "immediately." Done = it prompts for credentials.
+3. ~~**Password-protect `synergy.egowebdev.com`.**~~ ✅ **DONE — shipped same day
+   (7/22), re-verified HTTP 401.** Nothing further needed.
 
 Full detail and the non-urgent punch list below.
 

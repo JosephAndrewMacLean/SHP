@@ -78,9 +78,9 @@ Google sources reuse it; each just needs the account granted access on that prod
 - **Not visible via GA4:** conversion-action values (the $125→$5 "New Patient Intent"
   fix), quality scores, ad strength, search terms. For those: Google now ships an
   [official read-only Google Ads MCP](https://ads-developers.googleblog.com/2025/10/open-source-google-ads-api-mcp-server.html)
-  — needs a developer token (MCC) + read access to the account (agency-run, per
-  `brand/current-state.md`) — or ask Cardinal to confirm the settings changes in their
-  reporting.
+  — needs a developer token (MCC) + read access to the account (run by **Blue Ox
+  Digital** — Shaun Elley / Jake; corrected 2026-07-22) — or ask Blue Ox to confirm
+  settings changes in their reporting.
 
 ## 4. Liine — Cardinal's "largest unlock," and it has a real API
 
