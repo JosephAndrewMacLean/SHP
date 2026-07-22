@@ -54,8 +54,10 @@ healthcare organization. It contains a team of specialized marketing subagents.
 - If the GA tools are missing, the credential isn't set up in this environment —
   see `docs/google-analytics-mcp-setup.md`.
 - **Also connected:** Semrush MCP (`mcp__Semrush__*` — site audit, rankings, backlinks,
-  SERP/AIO features) and a wired Google Search Console MCP (`scripts/gsc-mcp.sh`,
-  pending a one-time access grant). Full source map: `docs/data-sources-roadmap.md`.
+  SERP/AIO features) and Google Search Console MCP (`mcp__google-search-console__*` —
+  live since 2026-07-22; `search_analytics` is the workhorse). A `PAGESPEED_API_KEY`
+  env var (CWV field data) is available in sessions started after 2026-07-22.
+  Full source map: `docs/data-sources-roadmap.md`.
 
 ## Turning data into opportunities for clinical stakeholders
 

@@ -23,8 +23,8 @@ Google sources reuse it; each just needs the account granted access on that prod
 | GA4 | Organic consultation requests, conversion events, channel mix, engagement | ✅ **Live** | done |
 | Semrush MCP | Site health, schema errors, rich-result/AIO exposure, backlinks, rankings | ✅ **Live** (project "SHP Spine 2026", ID 30453033) | done |
 | Google Ads (via GA4 link) | Campaign spend/clicks vs sessions (paid roadmap context) | ✅ **Live** campaign-level | done |
-| Search Console | Organic CTR (1.15%→1.8–2.2%), branded share (80%→65–70%), **CWV Good URLs (0→100+)**, rich results, non-branded growth | 🟡 **Wired — one 2-min grant pending** | trivial |
-| PageSpeed API | CWV field data — the **May 1 regression tripwire** | 🟡 needs free API key | trivial |
+| Search Console | Organic CTR (1.15%→1.8–2.2%), branded share (80%→65–70%), rich results, non-branded growth | ✅ **Live** (granted 2026-07-22) | done |
+| PageSpeed API | CWV field data — the **May 1 regression tripwire** | 🟡 key added 2026-07-22 — available to sessions started after that | verify next session |
 | Liine | Cardinal's "largest unlock": qualified new-patient calls/bookings by channel | ⬜ **real API exists** | vendor ask |
 | Rater8 | Review velocity program (Phase 3), per-physician/location ratings | ⬜ | vendor ask |
 | Google Business Profile | Local pack visibility (target 45–50%), listing calls/directions | 🟠 partial (UTM'd clicks in GA4) | moderate (API approval) |
@@ -34,32 +34,27 @@ Google sources reuse it; each just needs the account granted access on that prod
 | Local grid (Local Falcon/BrightLocal) | local pack visibility % by geo | ❌ gap | tool decision |
 | AIO citations (Profound) | AIO citation rate (target 10–15% of 75 queries) | ❌ gap — interim: Semrush AIO report + manual prompts | tool decision |
 
-## 0. Two 5-minute environment unlocks (do these first)
+## 0. Environment unlocks — ✅ both done 2026-07-22
 
-1. **Network allowlist:** add `synergyhealth.org` and `synergy.egowebdev.com` to this
-   Claude Code environment's network policy. Today the gateway 403s all direct fetches,
-   so page-level checks (titles, schema, security headers, staging lockdown) can't run
-   from sessions. This single change unlocks them.
-2. **PageSpeed Insights API key** (free, [console.cloud.google.com](https://console.cloud.google.com)
-   → enable "PageSpeed Insights API" → create API key; same project as the service
-   account is fine). Add env var `PAGESPEED_API_KEY`. Unlocks scripted CWV field-data
-   checks — the direct test of Cardinal's most urgent finding.
+1. ✅ **Network allowlist** — `synergyhealth.org` added; direct fetches work (caveat:
+   Cloudflare bot-challenges non-browser requests for HTML pages, so page-level
+   title/schema checks still need a browser pass or a Cloudflare WAF exception).
+2. ✅ **PageSpeed Insights API key** — stored as `PAGESPEED_API_KEY`. Environment
+   variables load at session start, so use it from any session started after
+   2026-07-22: it unlocks scripted CWV field-data checks (the regression tripwire).
 
-## 1. Google Search Console — the single highest-value connection (2 minutes)
+## 1. Google Search Console — ✅ LIVE (granted 2026-07-22)
 
-- **Why (Cardinal):** GSC is the system of record for half their KPI table — organic
-  CTR, branded/non-branded split, CWV Good URL count, Search Appearance rich results,
-  striking-distance queries. It's also the fastest confirmation of whether the **May 1
-  CWV regression** (GA4 shows organic down ~50% since March) is fixed or still live.
-- **Verified today:** API enabled, our service account authenticates — **zero properties
-  shared with it yet.**
-- **The one step** (any Search Console owner): [search.google.com/search-console](https://search.google.com/search-console)
-  → Settings → Users and permissions → Add user →
-  `ga4-claude-readonly@synergy-health-partners.iam.gserviceaccount.com` → **Restricted** → Add.
-- Already wired in `.mcp.json` → `scripts/gsc-mcp.sh` (pinned community `mcp-server-gsc@0.3.0`;
-  Google ships no official GSC MCP). Start a new session after the grant.
-- GSC keeps ~16 months of history; it also replaces the manual CSV exports in `seo/`
-  (open PR #3 branch) with fresh pulls.
+- The service account was granted Restricted access on 2026-07-22; tools appear as
+  `mcp__google-search-console__*` (`search_analytics`, `list_sitemaps`,
+  `index_inspect`, `detect_quick_wins`, …) via `.mcp.json` → `scripts/gsc-mcp.sh`
+  (pinned community `mcp-server-gsc@0.3.0`).
+- **Instrument validated:** pulling Cardinal's exact audit window (2026-03-16→06-13)
+  returns 13,506 clicks / 1,167,350 impressions / 1.16% CTR vs. their reported
+  13,668 / 1,186,066 / 1.15% — same data, so tracker statuses are like-for-like.
+- This is the system of record for Cardinal's CTR, branded-share, rich-results, and
+  striking-distance KPIs. GSC keeps ~16 months of history and replaces the manual CSV
+  exports in `seo/` (open PR #3 branch).
 
 ## 2. Semrush — already connected, use it every check-in
 

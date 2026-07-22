@@ -9,8 +9,11 @@ workspace hangs off this document.
 (project "SHP Spine 2026", Site Audit snapshot Jul 21), direct site checks (network
 allowlist added 2026-07-22 — note: Cloudflare serves a bot challenge to non-browser
 requests, so page-level title/meta checks still need a real-browser pass or Cardinal
-confirmation), and the audit texts in `cardinal-2026-06/`. GSC API access is wired but
-awaiting the property grant.
+confirmation), **GSC API (granted 2026-07-22 — live)**, and the audit texts in
+`cardinal-2026-06/`. Instrument validation: our GSC pull of Cardinal's exact audit
+window (2026-03-16→06-13) returns 13,506 clicks / 1,167,350 impressions / 1.16% CTR —
+matching their reported 13,668 / 1,186,066 / 1.15%, so statuses here are measured on
+the same data Cardinal used.
 
 **Legend:** ✅ done/confirmed · 🟠 partial/in motion · ❌ not done · ❓ not verifiable
 from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
@@ -21,10 +24,15 @@ from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
 
 1. **🚨 Cardinal's #1 urgent item appears UNRESOLVED — and it's still costing us.**
    GA4 organic sessions: **Mar 6,163 → Apr 5,264 → May 3,027 → Jun 3,209 → Jul ~2,750
-   (run-rate)**. The −42% May cliff lands exactly on Cardinal's documented **May 1 CWV
-   regression** (238 Good URLs → 0 by May 13; LCP 3.5s; mobile score 28/100). No
-   recovery visible through Jul 21. *Caveat: correlation + seasonality possible — the
-   GSC CWV report (pending grant) or a PageSpeed API key confirms in minutes.*
+   (run-rate)** — the −42% May cliff lands exactly on Cardinal's documented **May 1 CWV
+   regression** (238 Good URLs → 0 by May 13; LCP 3.5s; mobile score 28/100). GSC
+   (granted 2026-07-22) adds search-side evidence: post-audit (Jun 14–Jul 19) vs.
+   audit window, **impressions/day −27%** (12,970→9,531) and **avg position worse by
+   2.4** (10.9→13.3) while CTR ticked up 1.16%→1.38% — a visibility/rankings decline,
+   not a click-through problem. Most concrete casualty: **the carpal tunnel page fell
+   from position 1.37 to position ~17** (impressions −92%/28d) — Cardinal's fastest
+   quick-win no longer has the ranking the win depended on. Definitive CWV read:
+   PageSpeed key added 2026-07-22, usable from the next session.
 2. **🚨 robots.txt is BLOCKING the AI crawlers the strategy targets** (verified
    2026-07-22 by direct fetch). A "Cloudflare Managed content" block explicitly
    disallows **GPTBot, ClaudeBot, Google-Extended, CCBot**, Amazonbot,
@@ -68,8 +76,13 @@ from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
 |---|---|---|---|
 | Semrush Site Health | — (not in audit) | **75/100** (+2 vs Jul 16) | Semrush Site Audit, project 30453033 |
 | Organic sessions/month | ~5,000+ (Mar–Apr level) | **~2,750 run-rate, falling** | GA4 `sessionDefaultChannelGroup` |
-| Organic CTR (GSC) | 1.15% (target 1.8–2.2% by day 90) | ❓ pending GSC grant | GSC API |
-| CWV Good URLs (mobile) | **0** since May 13 | ❓ pending GSC grant / PSI key | GSC CWV report · PSI API |
+| Organic CTR (GSC) | 1.15% (target 1.8–2.2% by day 90) | **1.38%** (Jun 14–Jul 19) — but on −27% impressions/day | GSC API ✅ |
+| Avg position (GSC) | 10.9 (audit window) | **13.3** — rankings sliding | GSC API ✅ |
+| Carpal tunnel page | pos 1.37 · 15,605 impr/90d · 0.03% CTR | **pos ~17 · 401 impr/28d (−92%)** | GSC API ✅ |
+| TKA cluster | 0.06% CTR · 15 competing pages | **0.011% CTR** (18,060 impr/28d) — no consolidation visible | GSC API ✅ |
+| Branded clicks (regex synergy\|mendelson\|kornblum) | ~80% of clicks (Cardinal's broader classification) | 964 clicks · 4.69% CTR · pos 7.1 (Jun 14–Jul 19; lower-bound share ~20% of all clicks — methodology differs, use this as the like-for-like baseline going forward) | GSC API ✅ |
+| Rich-result types in Search Appearance | 1 (Translated Results only) | **still only TRANSLATED_RESULT** (Jun 14–Jul 19) | GSC API ✅ |
+| CWV Good URLs (mobile) | **0** since May 13 | ❓ PSI key added 2026-07-22 — run from next session | PSI API 🟡 |
 | Structured-data markup errors | 22–61/page on 42 bios | **446 items** | Semrush Site Audit (issue 45) |
 | FAQ rich-result keywords | 0 rich results in GSC | **0** | Semrush `serp_faq_keywords` |
 | Featured-snippet keywords | — | 33 | Semrush domain_rank |
@@ -98,7 +111,7 @@ Cardinal's own "What success looks like at Day 30," statused:
 | 6b | Verify AI crawler access in robots.txt ("do not block bots") | ❌ **FAILED** | Direct fetch 2026-07-22: Cloudflare-managed block disallows GPTBot, ClaudeBot, Google-Extended, CCBot + `ai-train=no`. Fix in Cloudflare dashboard. |
 | 6c | Password-protect staging domain synergy.egowebdev.com | ❌ | Direct fetch 2026-07-22: HTTP 200, publicly reachable |
 | 7 | Homepage meta description live | ✅ | Confirmed in audit (Rank Math) + Semrush: 0 missing sitewide |
-| 8 | Carpal tunnel + TKA titles/metas rewritten | ❓ | Page-level look blocked; GSC CTR trend proves it once granted (baseline: 0.03% / 0.02% CTR) |
+| 8 | Carpal tunnel + TKA titles/metas rewritten | ❌ **and worse** | GSC (Jun 22–Jul 19): TKA CTR 0.011% — unchanged, rewrite not landing. Carpal tunnel: the page **lost its #1 ranking entirely** (pos ~17, impressions −92%) — rewrite is now moot until rankings recover; treat as part of the regression damage |
 | 9 | Archive template duplicate titles/metas fixed | 🟠 | Dup metas 86→7; dup titles still 5 (locations-type taxonomy) |
 | 10 | MedicalOrganization + Physician schema live, error-free | ❌ | 446 markup errors persist; sameAs/competitor fix unverified; GSC Enhancements needs grant |
 | 11 | 75-query AIO tracking baseline established | ❓ | Ask Cardinal for the query set + baseline. Interim: Semrush AIO-keyword report + manual prompt tests. |
@@ -159,7 +172,7 @@ eyeball from any browser. Priority lane first:
 | Cardinal recommended | Our equivalent | Status |
 |---|---|---|
 | GA4 (core) | GA4 MCP | ✅ live in every session |
-| GSC (core) | GSC MCP wired | 🟡 one 2-min grant pending (see `docs/data-sources-roadmap.md` §1) |
+| GSC (core) | GSC MCP | ✅ **live** — granted 2026-07-22, instrument validated against Cardinal's own numbers |
 | Semrush or Ahrefs (rank/authority/backlinks) | **Semrush MCP — already connected**, project "SHP Spine 2026" (ID 30453033) with Site Audit running | ✅ |
 | CallRail or similar (call attribution) | **Liine** (live June 2026, documented API) | 🟠 API key = vendor ask |
 | BirdEye/Podium/ReviewTrackers (review velocity) | **Rater8** | 🟠 vendor ask (API or scheduled export) |
