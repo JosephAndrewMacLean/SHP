@@ -28,7 +28,7 @@ Google sources reuse it; each just needs the account granted access on that prod
 | Liine | Cardinal's "largest unlock": qualified new-patient calls/bookings by channel | 🟡 **official Liine MCP exists** — allowlist + credentials pending | small |
 | Rater8 | Review velocity program (Phase 3), per-physician/location ratings | ⬜ | vendor ask |
 | Google Business Profile | Local pack visibility (target 45–50%), listing calls/directions | 🟡 **MCP wired** (`scripts/gbp-mcp.py` + `gbp_diagnose`) — API approval pipeline pending | approval wait |
-| Bing Webmaster Tools | Bing/Copilot visibility (feeds AEO/GEO) | 🟡 **MCP wired + key stored 2026-07-22** — verify in a new session (`query_stats`), then mark ✅ | verify next session |
+| Bing Webmaster Tools | Bing/Copilot visibility (feeds AEO/GEO) | ✅ **Live — verified 2026-07-22** (486 days history; 466k impr / 9k clicks / 1.93% CTR) | done |
 | Bing Places | listing presence only | ⬜ no API | manual |
 | ZocDoc | booking-channel cost/capture (already analyzed in `brand/current-state.md`) | ⬜ no reporting API | manual export |
 | Local grid (Local Falcon/BrightLocal) | local pack visibility % by geo | ❌ gap | tool decision |
@@ -142,11 +142,16 @@ Google sources reuse it; each just needs the account granted access on that prod
 
 - **MCP server is live in `.mcp.json`** (`scripts/bing-wmt-mcp.py`): `query_stats`,
   `page_stats`, `rank_and_traffic_stats`, `crawl_stats`, `url_submission_quota`.
-- **Status 2026-07-22:** `BING_WEBMASTER_API_KEY` added to the environment settings
-  by Joe. ⚠️ **Blocker found same day: the API host `ssl.bing.com` is not in the
-  environment's network allowlist** (proxy 403 on connect) — add `bing.com` and
-  `*.bing.com` to the allowlist (applies live). Then verify with `query_stats` (or
-  `uv run scripts/bing-wmt-mcp.py --selftest`) and flip this to ✅.
+- **✅ LIVE — verified 2026-07-22** (key in env settings + `bing.com`/`*.bing.com`
+  allowlisted the same day). First pull: **486 days of history, 466,676 impressions,
+  9,008 clicks (1.93% CTR — notably better than Google's 1.15–1.38%)**; 5,268
+  queries, 2,867 page rows.
+- **First read:** the Google failure pattern replicates on Bing — condition queries
+  get impressions but near-zero clicks (`flatfoot` 265 impr/0 clicks @ pos 4, `tka`
+  212/0, `spondylolisthesis` 174/0 — one of the five missing spine hubs, visible on
+  Bing too; `de quervain's tenosynovitis` page: 519 impr/3 clicks) while branded
+  converts (`mendelson kornblum orthopedics` pos 3, 7% CTR). Fixing titles/content
+  once fixes both engines. Curiosity to investigate: heavy `md save` query volume.
 - Small direct traffic (bing organic ≈ 247 sessions/30d) but **Bing's index feeds
   Copilot and ChatGPT search** — it punches above its weight for AEO/GEO.
 
