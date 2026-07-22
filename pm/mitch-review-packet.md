@@ -119,6 +119,30 @@ decision content that bridges "I'm researching" to "I'm booking."
 
 ---
 
+## Appendix — the full shelves (optional deep pass, mirrored on the interactive page)
+
+Each stop's interactive version now carries the complete page roster for its subdirectory,
+each page with a one-line check and an **OK / Flag** toggle (flags + notes land in your
+exported answers):
+
+- **Hub city pages (2):** `/specialty/spine-neck-back/sterling-heights` · `/livonia` — rosters & promises accurate?
+- **/conditions/ (12):** the six priority pages (stenosis · sciatica · herniated-disc · DDD ·
+  spondylolisthesis · cervical-radiculopathy) + the rest of the spine shelf (**scoliosis — we
+  offer no scoliosis surgery: what should this page honestly promise?** · si-joint-pain ·
+  arthritic-back-pain · neck-fracture · back-fracture · ankylosing-spondylitis — treat or
+  co-manage?).
+- **/treatment/ (16):** injections & interventional (caudal-esi · lumbar ESI · medial branch ·
+  SI injection · RFA · SCS · trigger point · occipital block · EMG · pain-management) +
+  surgical (microdiscectomy · laminectomy · fusion · kyphoplasty · decompression · MILD).
+- **/providers/ (9 + 1 missing):** surgeons Salar · **Maslak (bio implies scoliosis/deformity —
+  we offer neither)** · **Varghese (site meta says deformity correction — correct it)** ·
+  McCarty · Munk; pain management (labeled separately as the front door) Oddo · **Lee (pain
+  management, not a surgeon; unsourced stats)** · Kassa · Singh; **Zamorano — no page exists.**
+- **/locations/ (5):** Livonia · Sterling Heights · Southfield (select-Wednesdays honesty) ·
+  Port Huron (visiting cadence) · Troy (⚠ confirm URL — the flagship-to-be).
+- **Education (2):** the MRI-facts post (your imaging domain) · the knee decision guide (the
+  format we're copying — any clinical issue with how it advises?).
+
 ## What happens with your answers
 Questions 3–5, 6–8, 9–10, 12, 14 map directly to the ask list you have (A1–A10, V3–V5).
 Your margin notes become the clinical layer of pages we draft — you'll see them back as
