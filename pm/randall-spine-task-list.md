@@ -1,5 +1,11 @@
 # Randall's Task List — Executing Mitch's 7/22 Input (with the growth layer on top)
 
+> **▶ Interactive workbench (send Randall this link):**
+> https://claude.ai/code/artifact/331b2076-94a3-43d8-8f02-2d89f5df060c
+> Same tasks as this file, plus: editable deliverable copy per task (his edits persist in his
+> browser and export), per-step checkboxes, status tracking, and one-click paste-ready
+> exports — the full work document and the Friday report to Joe.
+
 **For:** Randall · **Manager:** Joe · **Clinical authority:** Mitch (nothing clinical
 publishes without his sign-off) · **Dev partner:** Paul (modules/templates) — you never touch
 architecture, schema deployment (Cardinal), or anything off-page.
