@@ -31,8 +31,14 @@ from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
    2.4** (10.9→13.3) while CTR ticked up 1.16%→1.38% — a visibility/rankings decline,
    not a click-through problem. Most concrete casualty: **the carpal tunnel page fell
    from position 1.37 to position ~17** (impressions −92%/28d) — Cardinal's fastest
-   quick-win no longer has the ranking the win depended on. Definitive CWV read:
-   PageSpeed key added 2026-07-22, usable from the next session.
+   quick-win no longer has the ranking the win depended on.
+   **Definitive CWV read (PSI field data, run 2026-07-22): the LCP regression is
+   FIXED — p75 now 1.36–1.57s (was 3.5s), lab 52–79/100 (was 28) — but CLS p75 is
+   0.11–0.12 on every page tested, just over the 0.10 threshold, so the site still
+   fails "Good" status.** The remaining blocker is Cardinal's named CLS cause (203
+   images missing width/height — one template fix). Rankings haven't recovered yet;
+   Google re-ranking lags CWV repair, and the AI-bot/Cloudflare posture (items 2–3)
+   is a second suppressor to clear while waiting.
 2. **🚨 robots.txt is BLOCKING the AI crawlers the strategy targets** (verified
    2026-07-22 by direct fetch). A "Cloudflare Managed content" block explicitly
    disallows **GPTBot, ClaudeBot, Google-Extended, CCBot**, Amazonbot,
@@ -82,7 +88,7 @@ from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
 | TKA cluster | 0.06% CTR · 15 competing pages | **0.011% CTR** (18,060 impr/28d) — no consolidation visible | GSC API ✅ |
 | Branded clicks (regex synergy\|mendelson\|kornblum) | ~80% of clicks (Cardinal's broader classification) | 964 clicks · 4.69% CTR · pos 7.1 (Jun 14–Jul 19; lower-bound share ~20% of all clicks — methodology differs, use this as the like-for-like baseline going forward) | GSC API ✅ |
 | Rich-result types in Search Appearance | 1 (Translated Results only) | **still only TRANSLATED_RESULT** (Jun 14–Jul 19) | GSC API ✅ |
-| CWV Good URLs (mobile) | **0** since May 13 | ❓ PSI key added 2026-07-22 — run from next session | PSI API 🟡 |
+| CWV field data (CrUX p75, mobile) | LCP **3.5s** FAIL · CLS 0.11 · lab 28/100 | **LCP 1.36–1.57s FAST** ✅ · **CLS 0.11–0.12 — still > 0.10** ❌ · INP 102–120ms FAST · overall AVERAGE · lab 52–79/100 (5 pages, run 2026-07-22 via `scripts/cwv-check.py`) | PSI API ✅ |
 | Structured-data markup errors | 22–61/page on 42 bios | **446 items** | Semrush Site Audit (issue 45) |
 | FAQ rich-result keywords | 0 rich results in GSC | **0** | Semrush `serp_faq_keywords` |
 | Featured-snippet keywords | — | 33 | Semrush domain_rank |
@@ -102,7 +108,7 @@ Cardinal's own "What success looks like at Day 30," statused:
 
 | # | Phase-1 success criterion | Status | Evidence / unlock |
 |---|---|---|---|
-| 1 | CWV regression identified & fixed; Good URLs recovering | ❌ *likely not* | Organic cliff May→Jul unrecovered (GA4). Confirm: GSC grant or PSI API key. **Chase this with Cardinal/dev first.** |
+| 1 | CWV regression identified & fixed; Good URLs recovering | 🟠 **LCP fixed, CLS still failing** | PSI field data 2026-07-22: LCP p75 recovered to 1.36–1.57s (was 3.5s); lab 52–79/100 (was 28). **CLS p75 = 0.11–0.12 on all 5 pages — just over the 0.10 pass line — so pages still aren't "Good."** Remaining fix is Cardinal's named CLS cause: 203 images missing width/height (template change) + testimonial-slider DOM. Rankings haven't recovered yet (GSC position 13.3) — re-ranking lags; finish CLS to complete the recovery case. |
 | 2 | Zero 404s + zero 301s in XML sitemap | 🟠 | Semrush: 2 wrong sitemap pages + 8 pages 4xx remain (was 10+17+10) |
 | 3 | Zero CSP errors; Clarity + Cloudflare data restored | ❓ | Needs page-level check (env blocks site) or ask Paul: is Clarity data flowing? |
 | 4 | logo.svg <20KB; Hotjar deferred; LCP improved | ❓ | PSI API key answers all three in one call |
