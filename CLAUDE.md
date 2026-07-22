@@ -11,6 +11,20 @@ healthcare organization. It contains a team of specialized marketing subagents.
   who Synergy actually is, the numbers, the gaps, what external agencies already own, and
   where this in-house team has white space. Don't duplicate work the agencies own —
   complement it.
+- **Then check `decisions.md` and `sources.md` (repo root).** `decisions.md` is the dated
+  log of settled leadership decisions — do not re-litigate anything on it. `sources.md`
+  maps every Synergy knowledge source: the `seo/` program, all conversation branches and
+  their contents (much prior work lives on unmerged branches — check before rebuilding
+  something that exists), shareable artifact URLs, Notion pages, Otter meeting recordings,
+  and external systems (GSC, GA4, Liine, rater8, Bing WMT).
+- **SEO/content work runs through `seo/`** — the analysis, cluster map, execution plan,
+  and workflow there are binding (batched changes, change log + GSC annotation, 14-day
+  freeze, no single-page GPT edits, no redirects by this team, GSC data not SEMrush).
+- **Privacy rule (standing, from Joe):** this workspace covers Synergy Health Partners
+  business only. Never add personal conversations or non-Synergy matters to this repo,
+  its documents, or its indexes — when in doubt, leave it out.
+- **End-of-session habit:** new decision → `decisions.md`; new asset/source/data →
+  `sources.md`; then commit and merge the branch so the master copy stays whole.
 - This is **healthcare marketing**. Non-negotiables on all work:
   - No PHI or unconsented patient stories (HIPAA).
   - No unsubstantiated health claims or superiority claims (FTC).
