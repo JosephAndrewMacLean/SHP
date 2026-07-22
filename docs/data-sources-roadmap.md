@@ -25,10 +25,10 @@ Google sources reuse it; each just needs the account granted access on that prod
 | Google Ads (via GA4 link) | Campaign spend/clicks vs sessions (paid roadmap context) | ✅ **Live** campaign-level | done |
 | Search Console | Organic CTR (1.15%→1.8–2.2%), branded share (80%→65–70%), rich results, non-branded growth | ✅ **Live** (granted 2026-07-22) | done |
 | PageSpeed API | CWV field data — the **May 1 regression tripwire** | 🟡 key added 2026-07-22 — available to sessions started after that | verify next session |
-| Liine | Cardinal's "largest unlock": qualified new-patient calls/bookings by channel | ⬜ **real API exists** | vendor ask |
+| Liine | Cardinal's "largest unlock": qualified new-patient calls/bookings by channel | 🟡 **official Liine MCP exists** — allowlist + credentials pending | small |
 | Rater8 | Review velocity program (Phase 3), per-physician/location ratings | 🟠 **first manual export 2026-07-22** → `data/rater8/2026-07-22/` | vendor ask for scheduled feed |
-| Google Business Profile | Local pack visibility (target 45–50%), listing calls/directions | 🟠 partial (UTM'd clicks in GA4; **full listing map w/ Place IDs now in `brand/gbp-profile-directory.md`**) | moderate (API approval) |
-| Bing Webmaster Tools | Bing/Copilot visibility (feeds AEO/GEO) | ⬜ | small (API key) |
+| Google Business Profile | Local pack visibility (target 45–50%), listing calls/directions | 🟡 **MCP wired** (`scripts/gbp-mcp.py` + `gbp_diagnose`) — API approval pipeline pending; **listing map w/ Place IDs in `brand/gbp-profile-directory.md`** | approval wait |
+| Bing Webmaster Tools | Bing/Copilot visibility (feeds AEO/GEO) | ✅ **Live — verified 2026-07-22** (486 days history; 466k impr / 9k clicks / 1.93% CTR) | done |
 | Bing Places | listing presence only | ⬜ no API | manual |
 | ZocDoc | booking-channel cost/capture (already analyzed in `brand/current-state.md`) | ⬜ no reporting API | manual export |
 | Local grid (Local Falcon/BrightLocal) | local pack visibility % by geo | ❌ gap | tool decision |
@@ -78,19 +78,26 @@ Google sources reuse it; each just needs the account granted access on that prod
 - **Not visible via GA4:** conversion-action values (the $125→$5 "New Patient Intent"
   fix), quality scores, ad strength, search terms. For those: Google now ships an
   [official read-only Google Ads MCP](https://ads-developers.googleblog.com/2025/10/open-source-google-ads-api-mcp-server.html)
-  — needs a developer token (MCC) + read access to the account (agency-run, per
-  `brand/current-state.md`) — or ask Cardinal to confirm the settings changes in their
-  reporting.
+  — needs a developer token (MCC) + read access to the account (run by **Blue Ox
+  Digital** — Shaun Elley / Jake; corrected 2026-07-22) — or ask Blue Ox to confirm
+  settings changes in their reporting.
 
-## 4. Liine — Cardinal's "largest unlock," and it has a real API
+## 4. Liine — Cardinal's "largest unlock," and it ships an OFFICIAL MCP
 
 - Cardinal's conversion strategy runs entirely through Liine (lead calls, booked calls,
   online-scheduling actions with assigned values). GA4 shows the intent-level events
   (`new_patient_intent` 3,981/30d, `click_to_call` 1,328) but **booked-patient truth
   lives in Liine**.
-- [api-docs.liine.com](https://api-docs.liine.com/) documents interaction/call-record
-  endpoints (channel, lead status). **Ask the Liine account manager for an API key** →
-  store as `LIINE_API_KEY` env var → we wire a launcher like the others.
+- **Liine publishes an official MCP** — user guide:
+  [help.liine.com/en/articles/15627134-liine-mcp-user-guide](https://help.liine.com/en/articles/15627134-liine-mcp-user-guide)
+  (surfaced 2026-07-22; the guide isn't fetchable from this environment yet — the
+  domain is outside the network allowlist).
+- **To connect:** (1) ✅ `liine.com` domains allowlisted 2026-07-22; (2) ⚠️ the guide
+  article turned out to be **behind Liine's customer login** (help center returns 401
+  anonymously) — someone with a Liine login must open it and copy the setup section
+  (MCP endpoint/command + credential instructions) into the workspace; (3) then wire
+  per the guide (remote MCP or `.mcp.json` entry). Their
+  [API docs](https://api-docs.liine.com/) remain the fallback.
 - ⚠️ **PHI:** Liine records patient calls. Only de-identified aggregates enter this
   repo (counts, rates, channels) — same standard as `pm/spine-imaging-pain-call-review-pack.md`.
   No transcripts, names, numbers.
@@ -114,29 +121,54 @@ Google sources reuse it; each just needs the account granted access on that prod
 - ⚠️ Raw review text can contain patient-written health details — aggregates only
   (enforced on the 2026-07-22 drop: reviewer names/text not committed).
 
-## 6. Google Business Profile
+## 6. Google Business Profile — MCP wired, approval pipeline pending
 
-- **Already partially measured:** GBP links are UTM-tagged → ~770 sessions/30d in GA4.
-  ⚠️ Two casings (`GBP / Organic` and `gbp / organic`) split the data — standardize.
-- **Listing inventory is now in the repo:** the rater8 GBP Scorecard (2026-07-22) maps
-  all 50 managed listings with Place IDs and review links →
-  `brand/gbp-profile-directory.md` (incl. gaps: Troy unlinked, Rochester absent). Use
-  those Place IDs for schema `sameAs`/`hasMap` and any GBP API work.
-- **What the API adds:** on-listing behavior (search appearances, calls, direction
-  requests) + programmatic reviews — the inputs to Cardinal's local-pack visibility
-  target (45–50% by month 3).
-- **To connect:** [Business Profile API access request](https://developers.google.com/my-business/content/prereqs)
-  for our GCP project (approval takes days), then a listings manager adds the service
-  account as Manager. Interim: monthly Performance export from the GBP dashboard.
+- **MCP server is live in `.mcp.json`** (`scripts/gbp-mcp.py`): `gbp_diagnose` (reports
+  the access-pipeline state — run it whenever something errors), `list_accounts`,
+  `list_locations`, `performance_daily` (calls/website clicks/directions/impressions
+  per location), `search_keywords` (what people searched to find each listing),
+  `list_reviews`. Uses the shared service account.
+- **Remaining pipeline (re-verified 2026-07-22, evening):**
+  1. ❌ **Still pending:** enable the two companion APIs in the GCP project —
+     [My Business Account Management](https://console.developers.google.com/apis/api/mybusinessaccountmanagement.googleapis.com/overview?project=156236120118)
+     and
+     [My Business Business Information](https://console.developers.google.com/apis/api/mybusinessbusinessinformation.googleapis.com/overview?project=156236120118)
+     (confirm Business Profile Performance is enabled too). `gbp_diagnose` still
+     returns SERVICE_DISABLED for Account Management.
+  2. ❌ Submit the [GBP access request form](https://developers.google.com/my-business/content/prereqs#request-access)
+     — quota stays 0 until Google approves (days).
+  3. ✅ **Done 2026-07-22:** the service account was added to the Business Profile
+     (per Joe). Once steps 1–2 land, `gbp_diagnose` should flip straight to
+     "Access WORKS."
+- **Already partially measured meanwhile:** GBP links are UTM-tagged → ~770
+  sessions/30d in GA4. ⚠️ Two casings (`GBP / Organic` / `gbp / organic`) split the
+  data — standardize.
+- **Listing inventory is already in the repo (no API needed):** the rater8 GBP
+  Scorecard (2026-07-22) maps the 50 rater8-managed listings with Place IDs and review
+  links → `brand/gbp-profile-directory.md` (gaps flagged: Troy unlinked in rater8,
+  Rochester absent). The account-side estate view (~90 listings incl. unverified +
+  duplicates, from the API-application selector) is `pm/gbp-estate-notes-2026-07-22.md`
+  — once `list_locations` works, diff the two. Use the Place IDs for schema
+  `sameAs`/`hasMap`.
 - Note: Cardinal also recommends a **grid tracker** (Local Falcon/BrightLocal) for true
-  local-pack visibility % — that's a separate small tool decision, not a GBP API feature.
+  local-pack visibility % — separate small tool decision, not a GBP API feature.
 
-## 7. Bing Webmaster Tools
+## 7. Bing Webmaster Tools — MCP wired, key pending
 
-- Small traffic (bing organic ≈ 247 sessions/30d) but **Bing's index feeds Copilot and
-  ChatGPT browsing** — it punches above its weight for the AEO/GEO workstream.
-- Key-based API: [Bing Webmaster](https://www.bing.com/webmasters) → Settings → API
-  access → generate key → store as `BING_WEBMASTER_API_KEY` → wire a small launcher.
+- **MCP server is live in `.mcp.json`** (`scripts/bing-wmt-mcp.py`): `query_stats`,
+  `page_stats`, `rank_and_traffic_stats`, `crawl_stats`, `url_submission_quota`.
+- **✅ LIVE — verified 2026-07-22** (key in env settings + `bing.com`/`*.bing.com`
+  allowlisted the same day). First pull: **486 days of history, 466,676 impressions,
+  9,008 clicks (1.93% CTR — notably better than Google's 1.15–1.38%)**; 5,268
+  queries, 2,867 page rows.
+- **First read:** the Google failure pattern replicates on Bing — condition queries
+  get impressions but near-zero clicks (`flatfoot` 265 impr/0 clicks @ pos 4, `tka`
+  212/0, `spondylolisthesis` 174/0 — one of the five missing spine hubs, visible on
+  Bing too; `de quervain's tenosynovitis` page: 519 impr/3 clicks) while branded
+  converts (`mendelson kornblum orthopedics` pos 3, 7% CTR). Fixing titles/content
+  once fixes both engines. Curiosity to investigate: heavy `md save` query volume.
+- Small direct traffic (bing organic ≈ 247 sessions/30d) but **Bing's index feeds
+  Copilot and ChatGPT search** — it punches above its weight for AEO/GEO.
 
 ## 8. Bing Places & ZocDoc — no clean APIs; treat as manual
 

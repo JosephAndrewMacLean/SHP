@@ -39,11 +39,17 @@ trending **younger (median age 60→56, 18–34 share 15%→21%) and more commer
 
 ## What's already in motion (external agencies)
 
-Two agencies are engaged, so the in-house team should **complement, not duplicate**:
+External partners are engaged, so the in-house team should **complement, not duplicate**
+*(ownership corrected 2026-07-22)*:
 
-- **Power Digital / Cardinal** — running a **90-day Organic + AIO plan** (schema deployment,
-  technical fixes, spine condition hubs, local/AIO, measurement) and **Paid Media** (Google Ads
-  restructure, Liine conversion tracking, GEO/location targeting, PMax test).
+- **Power Digital / Cardinal** — authored the June 2026 **audits** (Organic/AIO, Creative/UX,
+  Paid Media) and runs the **90-day Organic + AIO plan** (schema deployment, technical
+  fixes, spine condition hubs, local/AIO, measurement).
+- **Blue Ox Digital** — the **Google Ads agency** (run by **Shaun Elley and Jake**). They
+  operate the paid account day-to-day; Cardinal's Paid Media audit (Google Ads
+  restructure, Liine conversion values, GEO/location targeting, PMax test) is a set of
+  recommendations **about the account Blue Ox runs** — execution questions route to
+  Shaun/Jake, not Cardinal.
 - **Liine** (call tracking + lead qualification) went live **June 2026** — the new source of
   truth for new-patient conversions. Online scheduling tracking not yet functional.
 
@@ -179,7 +185,8 @@ Joe (marketing/ops — the primary contact) · Gautam (leadership direction) · 
 lead + top producer) · Coty, Jasmine (liaisons) · Randall (SEO) · **Paul (website
 developer — corrected 2026-07-22; earlier notes wrongly listed him as paid/tracking.
 Ads-side ownership sits with Cardinal unless/until an internal ads owner is named;
-paid tasks in `pm/master-task-list.csv` assigned to Paul may need reassignment)** ·
+paid tasks in `pm/master-task-list.csv` assigned to Paul likely belong to Blue Ox
+Digital — Shaun Elley / Jake — or Joe as their internal counterpart)** ·
 Santosh (analytics + scheduling systems). External: Power Digital / Cardinal (agencies).
 
 ## ⚠️ Budget reconciliation — the spine gap is a B2C problem, not a referral problem

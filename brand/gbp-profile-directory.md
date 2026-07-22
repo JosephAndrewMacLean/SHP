@@ -25,6 +25,11 @@
 to ~100%; the five location profiles sum to ~100% of location-level requests). "—" = no
 requests currently routed to that profile.
 
+**Companion view:** this directory covers the **50 rater8-managed** listings. The full
+account-side estate (~90 listings, incl. 8 unverified, NAP typo, and duplicate physician
+listings) is inventoried in `pm/gbp-estate-notes-2026-07-22.md` — diff the two once GBP
+API `list_locations` access lands.
+
 ---
 
 ## ⚠️ Coverage gaps (found 2026-07-22 — act on these)
@@ -34,6 +39,10 @@ requests currently routed to that profile.
    growth market (Oakland County unlock) and fixing its Maps/GBP presence is already P1
    task **GOV-A.1** (owner Paul, due 2026-07-26) — this is hard evidence for that task.
    Only one provider, **Ben Mayo, M.D.**, has a Troy provider listing (7.3% of his requests).
+   *Note (2026-07-22): the account-side estate inventory (`pm/gbp-estate-notes-2026-07-22.md`)
+   shows a "Troy Clinic 5107 Rochester Rd" practice listing DOES exist under the GBP
+   account — so the rater8 side of the fix is connecting/verifying that listing, not
+   creating one.*
 2. **Rochester (and any other of the 8 locations beyond the five below) is absent from
    rater8 entirely** — no location or provider profiles. Confirm which locations have GBPs
    and enroll them.
