@@ -1,5 +1,10 @@
 # Prep: What We Need From Mitch & Santosh vs. What We Run Ourselves
 
+> **✅ UPDATE 7/22: §2 is largely ANSWERED** — Mitch responded via the review packet
+> (`pm/mitch-review-answers-2026-07-22.md`): items 1, 2, 3 (partial — Yacisen open), 5
+> (counts), 6, 8 done; 4 = clinically cleared (Katie data confirm pending); open: 7 (full
+> map), 9 (intros), 10 (unchanged). **§3 (Santosh) and §1 (our runway) are still live.**
+
 **For:** Joe · **Use:** send §2 to Mitch before Wednesday's cage match; send §3 to Santosh
 (or bring to EMT); §1 is our own runway — start it today.
 **Sources:** the prioritized register (`spine-page-inventory-improvement-register.md` §9),

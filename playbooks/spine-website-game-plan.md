@@ -42,7 +42,7 @@ Initiative numbers reference `spine-semantic-model.md` §C2.
 |---|---|---|---|
 | **W0 — Unblock** | Jul 21–27 | Verifications fired, baselines cut, interviews booked | V1–V6, D3 request |
 | **W1 — Pilot + plumbing** | Jul 28–Aug 10 | Endoscopic page (pilot), consolidation plan, language map v1, hub wireframe | 1, 2, 6 (spec) |
-| **W2 — Rescue** | Aug 4–24 (overlaps W1) | Hub rebuild live, 6 conditions rescued, SI fusion + T-Lift pages, guides #1–2, V6 straggler tidy-up | 1, 3, 4, 5, 7 |
+| **W2 — Rescue** | Aug 4–24 (overlaps W1) | Hub rebuild live, 6 conditions rescued, SI fusion + OptiLIF pages, guides #1–2, V6 straggler tidy-up | 1, 3, 4, 5, 7 |
 | **GATE 1** | **Aug 30** | See §5 scoreboard | — |
 | **W3 — Deepen** | Sept 1–21 | Team module + matching guide, remaining guides, hyperlocal tranche, learning-hub refresh, CCM-candidacy content | 7, 8, 9, 10 |
 | **W4 — Prove** | Sept 22–30 | Rebrand purge done, full-funnel measurement readout | 11 |
@@ -57,10 +57,11 @@ Initiative numbers reference `spine-semantic-model.md` §C2.
 |---|---|---|
 | Mon 7/21 | Mitch's three-phase timelines received (his EOD commitment) · V1 data request to **Joel Carr** (verify "98% of spine surgeries from 3–4 terms" + NP volume by condition/surgeon) · D3 request (first-party city counts) | Joe |
 | Tue 7/22 | V2 stat inventory delivered to clinical/compliance (every live efficacy stat: 90%×2, 92%, 89%, 91%, 3-of-4/8-of-10, "national top surgeon") — substantiate-or-remove ruling requested | Joe + compliance |
-| Wed 7/23 | **Cage match:** V3 (T-Lift real name, via McCarty), V4 (SI-fusion ownership: Varghese tryout vs. Munk/iFuse), V5 (medical-director attribution, Zamorano page, Munk/Yacisen locations) put to Mitch | Joe + Mitch |
+| Tue 7/22 PM | ✅ **Mitch's review answers received a day early** (`pm/mitch-review-answers-2026-07-22.md`): V3 = OptiLIF · V4 = Varghese · V5 = McCarty MD-of-spine · A5 counts · A6 approved · A10 final wording · inclusive label doctrine · conservative ladder (activity mods → meds → PT → injections). **Drafting unblocked:** OptiLIF, SI fusion, 6 condition scaffolds w/ named reviewers, red-flag standard, imaging module, guide #1 (McCarty) | Mitch → Joe |
+| Wed 7/23 | **Cage match (agenda updated — the V-items came back answered):** confirm the reviewer mapping (his counts: McCarty ×2, Maslak ×2, JV, MS — our proposed assignment) · confirm Stop-4 "TLIF" nuance = the OptiLIF page · SI wording substantiation path (the national superlative can't run as-is; show variants A/B) · red-flag block + imaging module shown in situ · guide-#1 lede with the two compliance edits (90% citation; guarantee phrase) · Yacisen locations (V5 leftover) | Joe + Mitch |
 | Wed–Thu | **V6 (coverage check):** legacy twins were already redirected at migration (Joe 7/22) — Paul verifies every legacy pair resolves to its canon and lists any straggler still serving its own page (e.g., lumbar-stenosis, parameter URLs) · plugin migrated to the practice Claude account (inside Santosh's governance) | Paul |
 | Fri 7/25 | **Triage meeting (Katie + Mitch + Kelly):** buzzword list v1 (the 2023/24 Oddo workflows — "radiculopathy… there's two or three") → seed of the consumer-language map | Katie/Mitch/Kelly, Joe observes |
-| All week | **Baselines cut and filed:** GSC non-branded spine (impressions/clicks/CTR, brand terms filtered incl. Mendelson/Kornblum misspellings), rankings for the 6 condition canons, Liine spine call quality, scorecard snapshot · Maslak hour booked · Randall: spine gap-analysis pass #1 (titles/metas only) · **All baselines use post-migration windows only (site migrated Apr 22; prefer Jun 1–Jul 19, post-Liine)** — paid baseline: `pm/spine-paid-search-analysis-jan-jul2026.md` (re-export month-segmented) | Joe / Randall |
+| All week | **Baselines cut and filed:** GSC non-branded spine (impressions/clicks/CTR, brand terms filtered incl. Mendelson/Kornblum misspellings), rankings for the 6 condition canons, Liine spine call quality, scorecard snapshot · Maslak hour booked · Randall: spine gap-analysis pass #1 (titles/metas only) + **his Mitch-input execution sprint (`pm/randall-spine-task-list.md`, T1–T6 this week)** · **All baselines use post-migration windows only (site migrated Apr 22; prefer Jun 1–Jul 19, post-Liine)** — paid baseline: `pm/spine-paid-search-analysis-jan-jul2026.md` (re-export month-segmented) | Joe / Randall |
 
 ### W1 · Jul 28–Aug 10 — Pilot + plumbing
 - **The endoscopic page is the pilot that times the gate chain:** Maslak hour → outline →
@@ -85,9 +86,9 @@ Initiative numbers reference `spine-semantic-model.md` §C2.
 - **Condition rescue at 2–3 pages/week:** E-E-A-T blocks (named reviewer + date + citations),
   "what you might be feeling" symptom openings, treatment-spectrum + guide rails on the six
   canons. Reviewer assignments come from Mitch (which physician reviews which condition).
-- **SI fusion page** (post-V4, Varghese interview) and **T-Lift page** (post-V3, McCarty via
-  Mitch) through the gate chain. ACDR mislabel fixed (title/content now motion-preservation;
-  URL decision per V6 findings).
+- **SI fusion page** (V4 ✅ — Varghese; superlative wording only after substantiation) and
+  **OptiLIF page** (V3 ✅ — McCarty via Mitch; trademark check) through the gate chain. ACDR
+  mislabel fixed (title/content now motion-preservation; URL decision per V6 findings).
 - **Guides #1–2 live** ("Do I need spine surgery?", "Sciatica treatment: your options in
   order"). Pinched-nerve patient-language entry published.
 - Aug 18 board meeting: one-slide readout (baseline → current D2/D5 movement, pilot gate-chain

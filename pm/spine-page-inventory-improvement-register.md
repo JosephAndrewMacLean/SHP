@@ -65,7 +65,7 @@ symptom-language maps. **Santosh/Joel:** V1 + D1 volumes; GSC non-branded per co
 |---|---|---|---|
 | **Endoscopic (Maslak)** | copy buried on `/treatment/microdiscectomy/` (0 rank) | The differentiator invisible | **NEW page** (pilot of the whole program); migrate "dime-size incision" copy; Maslak interview |
 | **SI fusion (Varghese — V4)** | `/specialties/.../sacroiliac-joint-fusion` + `/treatment/sacroiliac-joint-fusion` ×2; iFuse copy stranded on Munk pages | Duplicate + misplaced | Consolidate ×2→1; resolve V4 (Varghese tryout vs. Munk iFuse legacy); surgeon module |
-| **T-Lift / "bone bag" (McCarty — V3)** | none | Doesn't exist | **NEW page** after V3 names the real procedure |
+| **OptiLIF — the "T-Lift/bone bag" real name (McCarty — V3 ✅ 7/22)** | none | Doesn't exist | **NEW page** — draft now from Mitch's description; trademark check before publish |
 | **ACDR (motion preservation)** | S1 child slugged `anterior-cervical-discectomy-fusion` but titled ACDR; also on Salar bio | Mislabeled — fusion-alternative searchers can't find it | Fix URL/title mismatch; comparison content (fusion vs. ACDR) |
 | Microdiscectomy / laminectomy / fusion / decompression | ×2–3 URLs each across `/treatment/` + S1 children | Split ranking | One canon each per V6 direction; candidacy + alternatives modules |
 | **Injections (front door)** | `/treatment/caudal-esi` (**ranks: 13 kw/80 visits — best pain performer**; paid $115/conv) · lumbar ESI ×2 · RFA (25 kw) · medial branch · SI injection · SCS ×2 · trigger point · occipital · pain-management twins | Working quietly | KEEP winners; consolidate twins; add "need relief now" routing from conditions/hub (the injection-intent paid bucket at $859 CPA should land here organically) |
@@ -80,9 +80,9 @@ the surgeon modules; CODE outcomes when publishable (V2 substitute).
 
 | Page | Today | Actions |
 |---|---|---|
-| Salar (**#1 page sitewide**, 1,376 est. visits, 52% from "dr. salar" 2,900/mo) | Branded-capture engine | **KEEP/protect**; add "procedures I perform" module (ACDR/motion preservation); Arabic pages stay gated on coaching decision |
+| Salar (**#1 page sitewide**, 1,376 est. visits, 52% from "dr. salar" 2,900/mo) | Branded-capture engine | **KEEP/protect**; add "procedures I perform" module (incl. ACDR); bio nuance = "minimally invasive" per Mitch 7/22; Arabic pages stay gated on coaching decision |
 | McCarty (29 GA4 conv. sessions) | Mazor X claim stranded on his bio + Southfield page | Aggregate claim to hub (V2 substantiation first); procedures module; plain-English "complex spine + robotics" label |
-| Maslak (20) | Revision subspecialty in prose only; **bio implies scoliosis/deformity — correct it (no one at SHP offers scoliosis, Joe 7/22)** | Procedures module; **I3b revision positioning** ("failed back surgery, adjacent segment disease"); endoscopic link |
+| Maslak (20) | **Bio implies scoliosis/deformity — correct it (no one at SHP offers scoliosis, Joe 7/22)** | Procedures module; inclusive full-spectrum line + **robotic nuance (Mitch 7/22)**; endoscopic link; revision/I3b served via content links, not the bio label |
 | Varghese (14) | **Thinnest bio**; elite Moe fellowship untranslated | Rewrite: fellowship translated, SI fusion module (post-V4), sports-spine angle (phase 2 hook) |
 | Munk (8) | Stale "starting Tuesday, Aug 12" copy; misfiled hub-child duplicate; location conflict | Fix staleness; fold hub-child into bio + Port Huron location page; V5 locations |
 | Zamorano | Page conflicting/absent (crawl found none; her own sites outrank SHP for her name); medical-director attribution conflict vs. Salar | **V5**: create/fix page; resolve attribution before the team module ships |
@@ -132,18 +132,22 @@ the surgeon modules; CODE outcomes when publishable (V2 substitute).
 
 ### Lane A — Mitch can likely answer fast (this week; from his head or one conversation)
 
-| # | Ask | Why fast | Unblocks |
+**STATUS 7/22: Mitch answered via the review packet** — verbatim answers + dispositions in
+`pm/mitch-review-answers-2026-07-22.md`. Still open: **A4** (Friday triage list), **A9**
+(physician-hour intros), A3's Yacisen fragment, A7's full-map review.
+
+| # | Ask | Status 7/22 | Unblocks |
 |---|---|---|---|
-| A1 | **V3:** real name/description of the "T-Lift / bone bag" procedure | One question to McCarty | T-Lift page build |
-| A2 | **V4:** SI-fusion ownership (Varghese tryout vs. Munk/iFuse legacy) | He knows the practice patterns | SI-fusion page + surgeon module |
-| A3 | **V5 (partial):** medical-director attribution; Munk/Yacisen true locations | Org knowledge | Team module accuracy |
-| A4 | **Triage buzzword list** — pull the 2023/24 Oddo/Kelly workflows ("two or three words") | Friday meeting already set; artifact exists | Symptom router + call-center sync |
-| A5 | **Reviewer roster:** name one physician reviewer per condition/treatment/guide | A decision, not a build | The entire E-E-A-T lane (P2) |
-| A6 | **Red-flag block sign-off** (standardize the stenosis page's bladder/bowel pattern) | Pattern already exists on-site | Every condition page + symptom router |
-| A7 | Validate the consumer-language ↔ condition map (batch review) | Wed cage-match batch | altLabel/routing layer |
-| A8 | Which spine physicians sit at each clinic + days | Scheduling knowledge | Location spine modules, Troy first |
-| A9 | Intro emails brokering the three physician hours (Maslak/Varghese/McCarty) | Two-line emails with Gautam's mandate | Lane B interviews |
-| A10 | Imaging-routing wording ("bring your MRI / we can order imaging if you need it") | His ancillary domain | The MRI-first bucket module on every LP |
+| A1 | **V3:** real name/description of the "T-Lift / bone bag" procedure | ✅ **OptiLIF** — ultra-minimally invasive, tiny tube, muscle-sparing, expandable spacer (trademark check pending) | OptiLIF page build — drafting now |
+| A2 | **V4:** SI-fusion ownership (Varghese tryout vs. Munk/iFuse legacy) | ✅ **Varghese go-forward**; Munk = "trained alongside on-staff pioneers" story; ⚠ his national-superlative wording is in substantiation review | SI-fusion page + surgeon module |
+| A3 | **V5 (partial):** medical-director attribution; Munk/Yacisen true locations | ✅ **McCarty is Medical Director of Spine** (state it light); Zamorano = basic page (neuro + balance); **Yacisen locations still open** | Team module accuracy |
+| A4 | **Triage buzzword list** — pull the 2023/24 Oddo/Kelly workflows ("two or three words") | Open — Friday meeting | Symptom router + call-center sync |
+| A5 | **Reviewer roster:** name one physician reviewer per condition/treatment/guide | ✅ counts: **McCarty ×2 · Maslak ×2 · Varghese · Salar** (+ McCarty on guide #1); our proposed mapping confirms Wed | The entire E-E-A-T lane (P2) |
+| A6 | **Red-flag block sign-off** (standardize the stenosis page's bladder/bowel pattern) | ✅ **approved — stenosis wording is the sitewide standard** | Every condition page + symptom router |
+| A7 | Validate the consumer-language ↔ condition map (batch review) | Partial ✅ — his five hub words pinned (pinched nerve · radiculopathy · DDD · bulging disc · disc herniation); full map still to review | altLabel/routing layer |
+| A8 | Which spine physicians sit at each clinic + days | Clinical clearance ✅ ("agree" — days-only publishing is fine; OR days stay off); data half waits on Katie's 7/13 confirm | Location spine modules, Troy first |
+| A9 | Intro emails brokering the three physician hours (Maslak/Varghese/McCarty) | Open — still wanted for page depth | Lane B interviews |
+| A10 | Imaging-routing wording ("bring your MRI / we can order imaging if you need it") | ✅ **final two-branch wording delivered** (templates §2 approved blocks); also: remove the MRI article's nitrogen/hot-magnets line | The MRI-first bucket module on every LP |
 
 ### Lane B — Takes time (build- or politics-dependent; weeks, not days)
 
@@ -153,7 +157,7 @@ the surgeon modules; CODE outcomes when publishable (V2 substitute).
 | B2 | Surgeon matching matrix formalized + routing-ops sign-off (surgeons only — pain docs are the separate front-door lane; **no scoliosis pathway exists**) | Weeks; **politically sensitive** (Salar redirection is a leadership call) | Gates team module + "which surgeon" guide — ship team module with neutral labels first if needed |
 | B3 | The three physician interview hours + their content review cycles | Physician calendars | The differentiation pages themselves |
 | B4 | Salar coaching outcome → Arabic/Farsi pages | 3-month window (~Oct) | Hard gate; no spend before |
-| B5 | Zamorano page resolution | Depends on her engagement + V5 attribution outcome | Politically loaded (equipment history); do last in provider QA |
+| B5 | Zamorano page resolution | ✅ **Resolved 7/22 — no longer time-gated:** basic generic page, lean into neuro + balance training | Moves to normal build queue (Troy sequencing still applies) |
 | B6 | Insurance-clarity / Turning Point-derived content | Phase 3 is "never done" | Publish plan-acceptance basics now (D7); deep coverage content follows the tool |
 | B7 | Ongoing per-page clinical review throughput | Standing Wed batches | The pilot times it; escalate if the batch overflows |
 

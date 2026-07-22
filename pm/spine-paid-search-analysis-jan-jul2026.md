@@ -124,8 +124,10 @@ Grounded in this data + the June audit + the templates doc. Owners in brackets.
    that for that city, with that clinic's spine team and true access promise — not a generic
    hub, not a bio. Bios receive **name** queries only. [Cardinal restructure + content-creator copy]
 5. **Answer the three buckets on the page** (Joe's own paid-traffic analysis):
-   - **"I need an MRI first"** → module: "No imaging yet? If you need an MRI, we can order it —
-     and we read outside MRIs. Bring yours." (wording via Mitch)
+   - **"I need an MRI first"** → the imaging module (**final wording delivered by Mitch 7/22**
+     — two branches, templates §2 approved blocks: have-an-MRI → "we'll review it with you and
+     decide next steps together"; no-MRI → "see us first and make sure you need one… if you do,
+     we can order it, perform it, and review it with you")
    - **"I want an injection now"** → visible route to the interventional pain team ("image-guided
      injections, often within the week") — the conservative front door captures them instead of
      losing them.

@@ -184,7 +184,7 @@ problem *and* the caller is seeking surgical consult, or a clinician escalates t
 |---|---|
 | **Scott McCarty, MD** | Spine surgeon — integrated spine team |
 | **Joseph Maslak, MD** | Board-certified, fellowship-trained (Cleveland Clinic) |
-| **Jeffrey Varghese, MD** | Spine surgeon — deformity + minimally invasive (HSS background) |
+| **Jeffrey Varghese, MD** | Spine surgeon — full-spectrum; SI-fusion nuance (Mitch 7/22; HSS background — no deformity/scoliosis service, Joe 7/22) |
 
 ### Surgical routing guidance — **higher-converting surgeons** (PENDING CLINICAL SIGN-OFF)
 The spine plan directs surgical candidates to the **higher-converting** surgeons —

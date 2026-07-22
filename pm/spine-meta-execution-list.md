@@ -31,8 +31,8 @@ every edit logged; GSC per URL at 1/2/3/4 weeks.
 ### `/specialty/spine-neck-back` — Spine hub (confirmed live 7/22; legacy twin already redirected)
 **Opportunity:** the front door for all spine intents; today branded-only (41 kw, #2 kw "mendelson kornblum"); the elective funnel's ~0 starts here.
 **Meta:** `Spine, Back & Neck Care in Metro Detroit` · `Complete spine care under one roof — from physical therapy and injections to minimally invasive surgery. Fellowship-trained specialists. Book online.`
-**Content updates (template §3.1 rebuild):** 1) dual entry block (I-have-symptoms / I-know-my-condition); 2) symptom router with patient-language chips + red-flag interrupt (A4/A6 inputs); 3) care-pathway band (conservative → interventional → surgical, honest framing); 4) **differentiation band** — Mazor X first-in-MI, endoscopic, ACDR, MILD aggregated from their stranded pages (V2-cleared claims only); 5) **meet-the-spine-team module** with plain-English subspecialty labels + location chips; 6) condition grid (6 canons); 7) guide rail ("Do I need spine surgery?"); 8) locations band incl. Troy; 9) FAQ block (content; Cardinal deploys schema); 10) E-E-A-T footer.
-**Gate:** V2 (claims) · A5/A6 (Mitch) · V5 (team module).
+**Content updates (template §3.1 rebuild):** 1) dual entry block (I-have-symptoms / I-know-my-condition); 2) symptom router with patient-language chips + red-flag interrupt (A6 ✅ — stenosis wording; A4 pending); 3) care-pathway band on the Mitch ladder (activity mods → meds → PT → injections → surgical, honest framing); 4) **differentiation band** — Mazor X first-in-MI, endoscopic, ACDR, MILD aggregated from their stranded pages (V2-cleared claims only); 5) **meet-the-spine-team module** — inclusive full-spectrum labels + ~10% nuance each (Varghese SI · McCarty OptiLIF · Salar MIS · Maslak robotic · Lee non-surgical) + one light McCarty Medical-Director line (V5 ✅) + location chips; 6) condition grid (6 canons) — **carry Mitch's five patient words verbatim (7/22): pinched nerve · radiculopathy · degenerative disc disease · bulging disc · disc herniation** (bulging disc/herniation → herniated-disc canon; pinched nerve/radiculopathy → radiculopathy canon); 7) guide rail ("Do I need spine surgery?"); 8) locations band incl. Troy; 9) FAQ block (content; Cardinal deploys schema); 10) E-E-A-T footer.
+**Gate:** V2 (claims) — A5/A6/V5 answered 7/22 (reviewer mapping confirm Wed).
 
 ### ⚠ Sterling Heights location page
 **Opportunity:** top-converting paid geo ($222 CPA) + deepest spine supply incl. new Fridays — message-match the spend already flowing.
@@ -43,49 +43,49 @@ every edit logged; GSC per URL at 1/2/3/4 weeks.
 ### ⚠ Livonia location page
 **Opportunity:** highest volume + the EMG/injection hub; paid runs $300 CPA on mismatch; injection intent costs $859 in paid but could land here free.
 **Meta:** `Spine Doctors & Back Pain Care in Livonia, MI` · `Spine specialists, EMG testing, and image-guided injections in Livonia. Conservative care first, surgery only when it's right. Book online.` ⏳ACCESS
-**Content updates:** 1) roster-by-day module (Salar Mon, McCarty Mon/Tue, Maslak Wed + Fri AM, Varghese Tue; pain: Oddo/Singh/Lee days); 2) **"EMG & injection appointments in Livonia" block** (days-only; the interventional front-door content); 3) imaging module (A10 wording: "No MRI yet? We can order imaging — and we read outside MRIs"); 4) LP variant for paid; 5) reviews slot; 6) book-online-first.
-**Gate:** Katie confirm · A10 (Mitch wording).
+**Content updates:** 1) roster-by-day module (Salar Mon, McCarty Mon/Tue, Maslak Wed + Fri AM, Varghese Tue; pain: Oddo/Singh/Lee days); 2) **"EMG & injection appointments in Livonia" block** (days-only; the interventional front-door content); 3) imaging module (**A10 ✅ 7/22 — final two-branch wording in templates §2 approved blocks**); 4) LP variant for paid; 5) reviews slot; 6) book-online-first.
+**Gate:** Katie confirm (A10 answered).
 
 ### `/conditions/sciatica` — Condition canon
 **Opportunity:** top-volume spine term, currently ranks for ZERO (legacy twin already redirected — the fight is content, not URLs).
 **Meta:** `Sciatica (Shooting Leg Pain): Causes & Treatment Options` · `Sciatica is a symptom, not a condition. Learn what's really causing your leg pain and the treatments that work — from PT to minimally invasive options.`
-**Content updates (template §3.3 — same pattern for all six canons below):** 1) **"What you might be feeling" symptom opening** in patient words (the built-for-diagnosed fix); 2) standardized red-flag block (A6); 3) **E-E-A-T block** — named physician reviewer + date + citations (A5 roster); 4) "Treatment options, in order" section with honest indications + links (PT → ESI → endoscopic/microdiscectomy); 5) "Who treats sciatica here" mini-team; 6) guide rail → `/guides/sciatica-treatment-options/`; 7) FAQ content block; 8) near-you chips (5 locations); 9) dual CTA (soft I2 primary + specialist bridge).
-**Gate:** A5 + A6 (Mitch) — content edits OK now.
+**Content updates (template §3.3 — same pattern for all six canons below):** 1) **"What you might be feeling" symptom opening** in patient words (the built-for-diagnosed fix); 2) standardized red-flag block (A6 ✅ — stenosis wording); 3) **E-E-A-T block** — named physician reviewer + date + citations (**proposed reviewer: Maslak** — confirm Wed); 4) "Treatment options, in order" on the Mitch ladder — activity mods + meds context, then PT → ESI → endoscopic/microdiscectomy links (order confirmed by Mitch, Stop 2 Q5 "yes"); 5) "Who treats sciatica here" mini-team; 6) guide rail → `/guides/sciatica-treatment-options/`; 7) FAQ content block; 8) near-you chips (5 locations); 9) dual CTA (soft I2 primary + specialist bridge).
+**Gate:** A5 ✅ + A6 ✅ (7/22) — drafting fully unblocked; publish after Mitch signs the draft.
 
 ### `/conditions/spinal-stenosis/` — Condition canon
 **Opportunity:** the site's best red-flag block — the model for the rest; MILD page (33 kw) unlinked from it. (V6: check whether `lumbar-stenosis` is a live in-structure near-duplicate.)
 **Meta:** `Spinal Stenosis: Symptoms, Causes & Treatment Options` · `Leg pain when you walk that eases when you sit? Learn the signs of spinal stenosis and every treatment option, explained by spine specialists.`
-**Content updates:** the §3.3 pattern (above) **plus:** link the MILD page from the treatment section (it already ranks — capture its momentum); neurogenic-claudication explainer stays (it's good); standardize its red-flag block sitewide (A6 source).
-**Gate:** A5 · V6 (lumbar-stenosis check only).
+**Content updates:** the §3.3 pattern (above) **plus:** link the MILD page from the treatment section (it already ranks — capture its momentum); neurogenic-claudication explainer stays (it's good); **its red-flag block IS the sitewide standard (A6 ✅ Mitch 7/22)** — extract verbatim as the master block.
+**Gate:** A5 ✅ (**proposed reviewer: McCarty**) · V6 (lumbar-stenosis check only).
 
 ### `/conditions/herniated-disc/` — Condition canon
 **Opportunity:** endoscopic copy salvages from the legacy orphan (`/herniated-disc-microdiscectomy/`); V6 confirms the orphan's state.
 **Meta:** `Herniated Disc: Symptoms, Relief & Treatment Options` · `Most herniated discs heal without surgery. Learn your symptoms, what to try first, and when a minimally invasive procedure makes sense.`
-**Content updates:** §3.3 pattern **plus:** migrate the orphan's "90% heal without surgery" claim ONLY if V2 sources it (else drop); treatment section links endoscopic page + microdiscectomy; L5-S1 modifier cluster seeded in the learning hub.
-**Gate:** A5 · V2 (the 90% stat).
+**Content updates:** §3.3 pattern **plus:** migrate the orphan's "90% heal without surgery" claim ONLY if V2 sources it (else drop — one peer-reviewed citation would clear this AND Mitch's guide-#1 lede figure); treatment section links endoscopic page + microdiscectomy; L5-S1 modifier cluster seeded in the learning hub; surface "bulging disc" + "disc herniation" as visible synonyms (Mitch's hub words).
+**Gate:** A5 ✅ (**proposed reviewer: Maslak**) · V2 (the 90% stat).
 
 ### `/conditions/degenerative-disc-disease/` — Condition canon
 **Opportunity:** legacy paid LP ($1,304/conv) retires into this page; 3-T MRI copy migrates.
 **Meta:** `Degenerative Disc Disease: Symptoms & Treatment` · `DDD doesn't mean your spine is falling apart. What the diagnosis really means, how it's treated, and when to see a spine specialist.`
-**Content updates:** §3.3 pattern **plus:** the reassurance-first framing in the opening (DDD ≠ inevitable surgery); migrate 3-T MRI + McKenzie copy from the legacy LP before its canonical; imaging module (A10).
-**Gate:** A5 · V6.
+**Content updates:** §3.3 pattern **plus:** the reassurance-first framing in the opening (DDD ≠ inevitable surgery); migrate 3-T MRI + McKenzie copy from the legacy LP before its canonical; imaging module (A10 ✅ final wording, templates §2).
+**Gate:** A5 ✅ (**proposed reviewer: Varghese**) · V6.
 
 ### `/conditions/spondylolisthesis/` — Condition canon
 **Meta:** `Spondylolisthesis: Symptoms, Grades & Treatment` · `A slipped vertebra sounds scary — most cases are managed without surgery. Symptoms, grades, and your treatment options in plain English.`
 **Content updates:** §3.3 pattern; grades explained at Grade 6–8 reading level; athlete/spondylolysis note seeds the future sports crossover.
-**Gate:** A5 · V6 (twin).
+**Gate:** A5 ✅ (**proposed reviewer: McCarty**) · V6 (twin).
 
 ### NEW ⚠ `/conditions/pinched-nerve/`
 **Opportunity:** the symptom-language entry that doesn't exist — only clinical "cervical-radiculopathy" does; "pinched nerve" is how patients search.
 **Meta:** `Pinched Nerve in Neck or Back: Symptoms & Treatment` · `Numbness, tingling, or shooting pain down an arm or leg? What a pinched nerve is, how long it lasts, and when to get help.`
-**Content updates:** full §3.3 build; maps patient language → cervical vs. lumbar radiculopathy; links both existing clinical pages rather than duplicating them; red-flag block; guide rail.
-**Gate:** Mitch (new clinical page — full review).
+**Content updates:** full §3.3 build; maps patient language → cervical vs. lumbar radiculopathy; links both existing clinical pages rather than duplicating them; red-flag block (A6 ✅ standard); guide rail. Mitch confirmed the vocabulary priority: "pinched nerve" and "radiculopathy" are both in his hub five (7/22).
+**Gate:** Mitch (new clinical page — full review) · A5 ✅ (**proposed reviewer: Salar**).
 
 ### `/treatment/emg` + `/treatment/caudal-esi/`
 **Opportunity:** the quiet converters — caudal ESI already ranks ($115/conv in paid); EMG days are now real supply.
 **Meta:** EMG: `EMG & Nerve Testing in Livonia & Sterling Heights` · desc per v2. Caudal: title unchanged, desc refresh.
-**Content updates:** EMG — "where & when" block (days-only), what-to-expect, referral note, book CTA. Caudal — candidacy block, conservative-context ("what we try first"), who-performs module (pain team links), FAQ content. Both: E-E-A-T block.
-**Gate:** Katie (days) · A5.
+**Content updates:** EMG — "where & when" block (days-only), what-to-expect, referral note, book CTA. Caudal — **candidacy verbiage confirmed correct (Mitch 7/22)**; reorder the conservative-context to the Mitch ladder: **activity modifications → medications → PT → injections** (he reversed our draft order); who-performs module (pain team links); FAQ content. Both: E-E-A-T block.
+**Gate:** Katie (days) · A5 ✅ (pain-team reviewer TBD Wed).
 
 ### `/orthopedic-urgent-care/`
 **Opportunity:** the best I1 asset on the site, invisible (duplicate title, parameter-only indexing).
@@ -106,19 +106,19 @@ every edit logged; GSC per URL at 1/2/3/4 weeks.
 ### NEW ⚠ `/providers/lucia-zamorano-md/`
 **Opportunity:** the Troy anchor has no page; her own external sites outrank SHP for her name.
 **Meta:** `Dr. Lucia Zamorano, MD — Neurosurgeon & Spine Care, Troy` · desc per v2.
-**Content updates (template §3.5):** credentials + plain-English subspecialty ("neurosurgical spine — complex conditions, tumors, second opinions"); procedures module; Troy Mon(+Thu pending) clinic-days line; philosophy quote; consented reviews slot; second-opinion CTA ("bring your MRI").
-**Gate:** **V5 first** (attribution conflict + her engagement).
+**Content updates (template §3.5, scoped DOWN per Mitch 7/22):** **basic, generic page — no heavy buildout**; credentials; **lean into neurosurgery + balance training** (replaces the earlier tumors/second-opinions angle); Troy Mon(+Thu pending) clinic-days line; second-opinion CTA ("bring your MRI").
+**Gate:** V5 ✅ 7/22 (McCarty is Medical Director — conflict resolved; her page is unblocked) · Katie (days).
 
 ### `/providers/joseph-maslak-md/` · `/providers/jeffrey-varghese-md/` · `/providers/scott-mccarty-md/` · `/providers/andres-munk-md/` · `/providers/mohamed-salar-md/`
 **Opportunity:** bios carry 20%+ of site traffic but assemble no choosing journey (I3).
 **Meta:** per v2 rows (Salar title untouched).
-**Content updates (all five, template §3.5):** 1) plain-English subspecialty line (Maslak: revision — failed prior fusions/adjacent segment [NO scoliosis — no one at SHP offers it, Joe 7/22]; Varghese: SI + sports [V4]; McCarty: complex + robotics [claims review]; Munk: SI specialist, fixes stale Aug-12 copy; Salar: motion preservation — add-only; Lee is PAIN MANAGEMENT — never in the surgeon set); 2) **"Procedures I perform" module** linking treatment pages; 3) clinic-days line (schedule work order §3); 4) fellowship translated to patient language; 5) V2 sweep of bio stats (Lee-style unsourced numbers out); 6) reviews slot (Rater8 screen).
-**Gate:** Mitch review · V4 (Varghese) · Katie (days) · V2 (stats).
+**Content updates (all five, template §3.5 — INCLUSIVE doctrine per Mitch 7/22):** 1) full-spectrum line + one ~10% nuance sentence each ("all our spine docs do all the stuff — don't pigeonhole"): **Maslak = robotic · Salar = minimally invasive (add-only; title untouched) · Varghese = SI fusion (V4 ✅) · McCarty = OptiLIF + the Medical Director of Spine line (stated once, light — V5 ✅) · Munk = full-spectrum, no SI label (his iFuse history lives on the SI page as the pioneer story); fixes stale Aug-12 copy**; NO scoliosis anywhere (no one at SHP offers it, Joe 7/22); Lee is PAIN MANAGEMENT — never in the surgeon set, nuance "non-surgical options"; 2) **"Procedures I perform" module** linking treatment pages; 3) clinic-days line (schedule work order §3); 4) fellowship translated to patient language; 5) V2 sweep of bio stats (Lee-style unsourced numbers out); 6) reviews slot (Rater8 screen).
+**Gate:** Mitch draft review · Katie (days) · V2 (stats). Label doctrine answered 7/22.
 
 ### `/specialties/spine-back-and-neck/anterior-cervical-discectomy-fusion` — the ACDR mislabel
 **Opportunity:** the motion-preservation differentiator is invisible to fusion-alternative searchers (URL says fusion, title says ACDR).
 **Meta:** `Cervical Disc Replacement (ACDR): A Fusion Alternative` · desc per v2.
-**Content updates:** 1) rewrite as the ACDR page (template §3.4): candidacy, how-it-works, **fusion-vs-ACDR comparison table** (unique in market); 2) conservative-alternatives module; 3) surgeon module (Salar — motion preservation); 4) recovery expectations; 5) FAQ content; URL fate (rename in place vs. new page + canonical — no redirect) = V6/Paul call.
+**Content updates:** 1) rewrite as the ACDR page (template §3.4): candidacy, how-it-works, **fusion-vs-ACDR comparison table** (unique in market); 2) conservative-alternatives module; 3) surgeon module (Salar performs ACDR; his bio nuance reads "minimally invasive" per Mitch 7/22); 4) recovery expectations; 5) FAQ content; URL fate (rename in place vs. new page + canonical — no redirect) = V6/Paul call.
 **Gate:** V6 · Mitch.
 
 ### NEW ⚠ endoscopic page (under V6-winner hub)
@@ -127,16 +127,17 @@ every edit logged; GSC per URL at 1/2/3/4 weeks.
 **Content updates (the PILOT page — template §3.4 in full):** candidacy block; dime-size-incision/same-day story (existing copy migrated); conservative-alternatives module; recovery timeline; differentiated-surgeon module (Maslak trained, implant story); open-vs-MI-vs-endoscopic comparison; gated outcomes slot (empty until CODE); FAQ; consult CTA naming Maslak + decision-guide bridge.
 **Gate:** Maslak hour · Mitch · this page times the whole gate chain.
 
-### SI fusion canon (consolidate ×2) + NEW T-Lift page
-**SI meta:** `SI Joint Fusion: Lasting Relief for Sacroiliac Pain` · desc per v2. **T-Lift:** placeholder until V3.
-**Content updates:** SI — §3.4 pattern; candidacy (injections/PT failed first); surgeon module per **V4 outcome** (Varghese tryout vs. Munk/iFuse history — may be both, Mitch decides framing); SI-joint-pain condition link. T-Lift — full §3.4 build once V3 names and describes it (McCarty via Mitch).
-**Gate:** V4 · V6 · V3.
+### SI fusion canon (consolidate ×2) + NEW ⚠ OptiLIF page (V3 ✅ — was "T-Lift")
+**SI meta:** `SI Joint Fusion: Lasting Relief for Sacroiliac Pain` · desc per v2.
+**OptiLIF meta (⚠ propose `/treatment/optilif/`):** `OptiLIF: Ultra-Minimally Invasive Low Back Surgery` · `A tiny tube, no cutting of major back muscles, and an expandable spacer that supports healing. How OptiLIF works, who it helps, and what recovery looks like.`
+**Content updates:** SI — §3.4 pattern; candidacy on the Mitch ladder (activity mods/meds/PT/injections tried first); **surgeon module: Varghese go-forward (V4 ✅ 7/22); Munk credited via the "trained alongside on-staff pioneers" lineage story — ⚠ Mitch's suggested national superlative ("more SI fusions than any practice in the country") CANNOT run as-is: substantiation variants A/B in `pm/mitch-review-answers-2026-07-22.md`**; SI-joint-pain condition link. OptiLIF — full §3.4 build from Mitch's description (tiny tube · spares major back muscles · expandable spacer · ultra-minimally invasive); altLabel "bone bag procedure"; McCarty differentiated-surgeon module; **trademark/manufacturer attribution check before publish**.
+**Gate:** SI: wording substantiation (D1 count or Munk-role doc) · V6. OptiLIF: McCarty hour · Mitch draft review · trademark check. Drafting unblocked on both.
 
 ### NEW ⚠ `/guides/…` — the six decision guides
 **Opportunity:** audit-confirmed zero decision-support; the I2→I3 bridge; knee page proves the format ranks.
 **Meta:** six title/desc pairs per v2 (do-i-need-spine-surgery · sciatica-treatment-options · injection-vs-surgery · failed-back-surgery-options · your-first-spine-surgery · which-spine-surgeon).
-**Content updates (each, template §3.7 in full):** honest short answer up front; who-this-is-for + red-flag interrupt; stepped pathway (conservative → interventional → surgical) with Mitch-approved indications; symptom→pathway table; candidacy checklist (interim general version until CCM Plus); what-to-expect timeline (post-Sept-1 flow from Anna for the surgery guide); insurance-clarity module (D7 — varies by provider + Harmony path); FAQ content; dual CTA (soft I2 + team bridge; records-transfer CTA on the revision guide).
-**Gate:** Mitch per guide · B2 matrix for which-spine-surgeon · Anna for first-surgery.
+**Content updates (each, template §3.7 in full):** honest short answer up front — **guide #1 uses Mitch's lede (7/22): reviewer = McCarty, tone "very passive and comforting"; 90% figure only with displayed citation; "exactly as planned" guarantee replaced (templates §2 approved blocks)**; who-this-is-for + red-flag interrupt (A6 ✅); stepped pathway on the Mitch ladder (activity mods → meds → PT → injections → surgical) with approved indications — bracing & support listed second among non-surgical options (his knee-guide correction); symptom→pathway table; candidacy checklist (interim general version until CCM Plus); what-to-expect timeline (post-Sept-1 flow from Anna for the surgery guide); insurance-clarity module (D7 — varies by provider + Harmony path); FAQ content; dual CTA (soft I2 + team bridge; records-transfer CTA on the revision guide).
+**Gate:** Mitch per guide (guide #1 reviewer named ✅) · B2 matrix for which-spine-surgeon · Anna for first-surgery.
 
 ### Hyperlocal pattern (post-D3) — e.g. ⚠ `/rochester-hills-spine-care/`
 **Meta pattern:** `Spine Care Near {City} — {Clinic} Clinic` · desc pattern per v2.
@@ -170,8 +171,13 @@ every edit logged; GSC per URL at 1/2/3/4 weeks.
 
 ### `/mri-facts-that-you-may-have-not-known`
 **Opportunity:** quietly one of the best converters (55 GA4 conv. sessions) — refresh, don't rebuild.
-**Meta:** per v2. **Content:** add the A10 imaging module ("we read outside MRIs — bring yours"; "we can order imaging if you need it"); E-E-A-T byline; links to EMG page + spine hub; keep everything that's working.
-**Gate:** A10 (Mitch wording).
+**Meta:** per v2. **Content:** 1) **REMOVE the "magnets get very hot and cooled with nitrogen" line (Mitch 7/22 — "will scare patients")**; 2) add the A10 imaging module (✅ final two-branch wording, templates §2); 3) E-E-A-T byline; 4) links to EMG page + spine hub; keep everything else that's working.
+**Gate:** A10 ✅ answered — edit is executable now.
+
+### `/how-do-i-know-if-i-need-knee-replacement-surgery/` — knee decision guide (ortho-side fix)
+**Opportunity:** the format model for the six spine guides; Mitch reviewed it 7/22.
+**Meta:** unchanged. **Content (one edit only):** move **bracing & support to bullet 2** (from 4) in the non-surgical options list (Mitch 7/22). No other changes — this page is the working proof of the format.
+**Gate:** — (clinical instruction received; ortho-side heads-up, not part of the spine program).
 
 ### Learning-hub refresh batch + legacy purge
 Question-formatted titles, answer-first openings, physician bylines (A5 roster) per piece;

@@ -138,7 +138,7 @@ flowchart TD
     OLDHUB[Legacy hub twin<br/>already redirected at migration]
     SYMP[Symptom entry module<br/>altLabel back pain, neck pain,<br/>numbness tingling arm leg<br/>intent I1 · NEW]
     DIAG[Diagnosed entry module<br/>I know my condition<br/>intent I2 · NEW]
-    CONDS[Condition cluster<br/>6 concepts A3.3<br/>intent I2 · UPDATE]
+    CONDS[Condition cluster<br/>6 concepts A3.3 shown in Mitch words -<br/>pinched nerve, radiculopathy, DDD,<br/>bulging disc, disc herniation<br/>intent I2 · UPDATE]
     TRTS[Treatment spectrum<br/>conservative to surgical<br/>intent I2 I3 · UPDATE]
     TEAM[Meet the spine team module<br/>plain-English labels + location chips<br/>intent I3 · NEW]
     DIFF[Differentiation band<br/>Mazor X robotics, endoscopic,<br/>ACDR, MILD aggregated<br/>intent I3 · NEW]
@@ -203,6 +203,13 @@ flowchart TD
 **Job:** the I2 workhorse — explain the condition in patient language, then route to the right
 next step. Six condition concepts: **spinal stenosis · herniated disc · sciatica ·
 degenerative disc disease · spondylolisthesis · radiculopathy/pinched nerve.**
+**Hub-surface vocabulary (Mitch, 7/22):** the first conditions surface patients see carries
+his five words **verbatim** — pinched nerve · radiculopathy · degenerative disc disease ·
+bulging disc · disc herniation (bulging disc/disc herniation → the herniated-disc canon;
+pinched nerve/radiculopathy → the radiculopathy canon). Patients do use "radiculopathy" and
+"DDD" — clinical terms are patient vocabulary here, not jargon to hide.
+**Reviewer roster (A5, Mitch 7/22):** counts assigned — **McCarty ×2 · Maslak ×2 · Varghese ·
+Salar**; proposed mapping in `pm/mitch-review-answers-2026-07-22.md` (confirm Wed).
 
 ```mermaid
 flowchart TD
@@ -240,8 +247,11 @@ flowchart TD
 
 ### A3.4 TREATMENT — example: Endoscopic Spine Surgery
 **Job:** the I2→I3 bridge — honest candidacy, alternatives, recovery; then differentiate the
-surgeon. Differentiation tryouts (7/21): **Maslak = endoscopic · Varghese = SI fusion (V4) ·
-McCarty = T-Lift (V3).** Kyphoplasty explicitly NOT featured (undifferentiated).
+surgeon. Differentiation set (7/21, resolved 7/22): **Maslak = endoscopic · Varghese = SI
+fusion (V4 ✅ go-forward; Munk = the trained-alongside-pioneers story, wording in
+substantiation review) · McCarty = OptiLIF (V3 ✅ — the real name of "T-Lift/bone bag": an
+ultra-minimally invasive low back procedure — tiny tube, spares major back muscles,
+expandable spacer).** Kyphoplasty explicitly NOT featured (undifferentiated).
 
 ```mermaid
 flowchart TD
@@ -249,20 +259,20 @@ flowchart TD
     MISS[Minimally invasive spine surgery<br/>broader concept page exists<br/>UPDATE]
     ENDO[Endoscopic spine surgery<br/>prefLabel Endoscopic Spine Surgery<br/>altLabel dime-size incision surgery,<br/>same day spine surgery<br/>intent I3 · NEW under winner hub]
     MICRO[Microdiscectomy page<br/>holds endoscopic copy today<br/>CHANGE migrate copy, keep page]
-    SIF[SI joint fusion<br/>surgeon per V4<br/>UPDATE consolidate 2 URLs]
-    TLIFT[T-Lift bone bag procedure<br/>pending V3 real name<br/>intent I3 · NEW]
+    SIF[SI joint fusion<br/>V4 answered - Varghese go-forward,<br/>Munk pioneer story per Mitch<br/>UPDATE consolidate 2 URLs]
+    OPTILIF[OptiLIF ultra-MIS low back procedure<br/>V3 answered - tiny tube, muscle sparing,<br/>expandable spacer<br/>altLabel bone bag procedure<br/>intent I3 · NEW]
     ACDR[Cervical disc replacement ACDR<br/>mislabeled as ACDF today<br/>motion preservation story<br/>CHANGE fix URL title mismatch]
     MILD[MILD procedure page<br/>33 kw - actually ranks<br/>KEEP link from stenosis]
     MAS[Dr Maslak provider page<br/>performs this - trained, implant<br/>intent I3 · UPDATE]
     HERN[Herniated disc condition<br/>related indication<br/>UPDATE]
-    CONS[Conservative alternatives module<br/>PT, injections first<br/>required for balance]
+    CONS[Conservative alternatives module<br/>activity mods, meds, PT, injections<br/>in that order - Mitch 7/22]
     GDO[Guide Do I need spine surgery<br/>NEW]
 
     TRTS -->|narrower| MISS
     MISS -->|narrower| ENDO
     MISS -->|narrower| MILD
     TRTS -->|narrower| SIF
-    TRTS -->|narrower| TLIFT
+    TRTS -->|narrower| OPTILIF
     TRTS -->|narrower| ACDR
     MICRO -->|migrate copy| ENDO
     ENDO -->|related treats| HERN
@@ -274,18 +284,25 @@ flowchart TD
     classDef updN fill:#e8930c,color:#fff
     classDef chgN fill:#1971c2,color:#fff
     classDef keepN fill:#868e96,color:#fff
-    class ENDO,TLIFT,GDO newN
+    class ENDO,OPTILIF,GDO newN
     class MISS,SIF,MAS,HERN,TRTS updN
     class MICRO,ACDR chgN
     class MILD,CONS keepN
 ```
 
 ### A3.5 PROVIDER — example: Dr. Maslak
-**Job:** the I3 decision surface. Real subspecialty differentiation already exists in bio
-prose (Maslak: revision — failed prior fusions, adjacent segment · Salar: motion preservation
-· Munk: SI/iFuse · McCarty: complex + robotics · Zamorano: neurosurgical spine, Troy ·
-Varghese: elite fellowship training, untranslated) — but nothing assembles a *choosing*
-journey. **Corrections (Joe 7/22): SHP offers NO scoliosis/deformity service — bios and site
+**Job:** the I3 decision surface — assemble a *choosing* journey the bios don't offer today.
+**Labeling doctrine (Mitch, 7/22): INCLUSIVE, not pigeonholed** — "all our spine docs do all
+the stuff"; every surgeon presents **full-spectrum spine care plus one ~10% nuance line:
+Varghese = SI fusion · McCarty = OptiLIF · Salar = minimally invasive · Maslak = robotic ·
+Lee = non-surgical options** (the pain-management front door). This supersedes the earlier
+subspecialty-first labels (Maslak "revision," Salar "motion preservation," Munk "SI").
+**McCarty is Medical Director of Spine (V5 ✅)** — stated on his bio + one team-module line,
+deliberately light so it never funnels all traffic to him. **Munk:** full-spectrum bio; his
+SI/iFuse history is told on the SI-fusion page as the pioneer/lineage story, not as his bio
+label. **Zamorano:** basic generic page, leaning into neurosurgery + balance training.
+Revision/I3b stays a **content lane** (guide + revision content), not a bio label.
+**Corrections (Joe 7/22): SHP offers NO scoliosis/deformity service — bios and site
 metadata that imply it (Maslak, Varghese) are overstated and get corrected, and training
 history is never presented as a service. Dr. Kevin Lee is PAIN MANAGEMENT, not a spine
 surgeon — he is labeled with the interventional front door (Oddo, Lee, Kassa, Singh), never
@@ -294,7 +311,7 @@ in the surgeon set.**
 ```mermaid
 flowchart TD
     TEAM[Meet the spine team module<br/>plain-English subspecialty labels<br/>intent I3 · NEW]
-    MAS[Dr Maslak provider page<br/>prefLabel Joseph Maslak MD<br/>altLabel revision spine surgeon,<br/>failed back surgery specialist<br/>intent I3 I3b · UPDATE]
+    MAS[Dr Maslak provider page<br/>prefLabel Joseph Maslak MD<br/>full-spectrum plus robotic nuance<br/>per Mitch 7/22<br/>intent I3 I3b · UPDATE]
     SAL[Dr Salar provider page<br/>number 1 page sitewide<br/>KEEP protect during consolidation]
     VAR[Dr Varghese provider page<br/>Moe fellowship untranslated<br/>UPDATE - thinnest bio]
     PROCS[Procedures I perform module<br/>links to treatment pages<br/>NEW]
@@ -308,7 +325,7 @@ flowchart TD
     TEAM -->|narrower| VAR
     MAS -->|related| PROCS
     PROCS -->|related| ENDO
-    MAS -->|related subspecialty| REV
+    MAS -->|related content| REV
     TEAM -->|related decision| MATCH
     MAS -->|related| BOOK
 
@@ -532,17 +549,24 @@ Troy spine module → Southfield honest-supply rebuild → PH visiting-cadence m
 hyperlocal pages ONLY post-D3, canonical self-referential, no thin doorways · Mazor X claim
 migrates Southfield→hub · GBP = separate track (§E1).
 **CONDITION:** the `/conditions/` canon stands (legacy twins already redirected — V6 verifies; §B2) · keep the
-Grade 6–9 copy, add E-E-A-T blocks (A5 roster), symptom-language openings, standardized
-red-flag block (A6), treatment-spectrum + guide rails · **NEW pinched-nerve patient-language
-entry** · protect neck-fracture (KEEP) while absorbing its twin.
+Grade 6–9 copy, add E-E-A-T blocks (**A5 ✅ 7/22 — McCarty ×2, Maslak ×2, Varghese, Salar;
+mapping confirm Wed**), symptom-language openings, standardized red-flag block (**A6 ✅ 7/22 —
+stenosis wording is the standard**), treatment-spectrum + guide rails (ladder order: activity
+mods → meds → PT → injections, Mitch 7/22) · **NEW pinched-nerve patient-language entry** ·
+protect neck-fracture (KEEP) while absorbing its twin.
 **TREATMENT:** three differentiation pages via physician interviews (endoscopic NEW ·
-SI fusion post-V4 · T-Lift post-V3) · fix the ACDR mislabel + fusion-vs-ACDR comparison ·
-candidacy blocks (CCM Plus, ~mid-Sept) · conservative-alternatives module everywhere · gated
+SI fusion — **V4 ✅ Varghese; superlative wording in substantiation review** · OptiLIF —
+**V3 ✅ named 7/22**; trademark check before publish) · fix the ACDR mislabel +
+fusion-vs-ACDR comparison · candidacy blocks (CCM Plus, ~mid-Sept) ·
+conservative-alternatives module everywhere (activity mods → meds → PT → injections) · gated
 outcomes slots (CODE only) · consolidate twins per §B2.
-**PROVIDER:** team module + matching guide (post-V5 + Mitch matrix + Katie routing-ops OK) ·
-"procedures I perform" modules · fellowship translation (Varghese first) · clinic-days lines
-(schedule work order) · dedupe profiles, retire `/our-providers/` · V2 sweep of bio stats ·
-Salar = KEEP/protect.
+**PROVIDER:** team module + matching guide (**V5 ✅ — McCarty Medical Director, stated
+light**; Mitch matrix + Katie routing-ops OK still gate matching) · **inclusive labels per
+Mitch 7/22: full-spectrum + one ~10% nuance line** (Varghese SI · McCarty OptiLIF · Salar
+minimally invasive · Maslak robotic · Lee non-surgical) · "procedures I perform" modules ·
+fellowship translation (Varghese first) · clinic-days lines (schedule work order) · dedupe
+profiles, retire `/our-providers/` · V2 sweep of bio stats · Salar = KEEP/protect ·
+Zamorano = basic generic page (neuro + balance training).
 **LEARNING HUB:** refresh/retire dated stock (legacy Mendelson posts → rebrand-in-place, never delete or redirect) ·
 physician-author pipeline (named byline) · articles cluster under parent conditions ·
 question-formatted for answer engines.
@@ -555,12 +579,12 @@ which-surgeon guide waits on the B2 matrix.
 |---|---|---|---|---|---|
 | **1. Hub rebuild + consolidation** | Hub; twin; Munk child | UPDATE + CHANGE | Paul V6; Mitch review; Cardinal coordination | seo-specialist canonical map; content-creator hub copy | V6 → Mitch → compliance |
 | **2. Endoscopic (Maslak)** | Endoscopic page; microdiscectomy copy; Maslak bio; herniated-disc links | NEW + CHANGE + UPDATE | Maslak hour; Mitch | content-creator; aeo FAQ | Mitch → compliance |
-| **3. SI fusion (Varghese)** | SI consolidation ×2→1; Varghese bio | UPDATE + CHANGE | **V4**; Varghese interview | content-creator; seo-specialist | V4 → Mitch |
-| **4. T-Lift (McCarty)** | T-Lift page | NEW | **V3**; McCarty via Mitch | content-creator | V3 → Mitch → compliance |
-| **5. Condition rescue (6)** | 6 canons; twins; pinched-nerve entry | UPDATE + CHANGE + NEW | V1 priority data; Mitch reviewers (A5) | content-creator; seo-specialist | V6 → V1 → Mitch |
+| **3. SI fusion (Varghese)** | SI consolidation ×2→1; Varghese bio | UPDATE + CHANGE | **V4 ✅ 7/22** (Varghese; Munk pioneer story); Varghese interview; superlative wording → substantiation | content-creator; seo-specialist | Mitch wording → compliance |
+| **4. OptiLIF (McCarty)** | OptiLIF page (was "T-Lift") | NEW | **V3 ✅ 7/22** (Mitch description); McCarty hour; trademark check | content-creator | Mitch → compliance |
+| **5. Condition rescue (6)** | 6 canons; twins; pinched-nerve entry | UPDATE + CHANGE + NEW | V1 priority data; **A5 ✅ 7/22** (counts; mapping confirm Wed) | content-creator; seo-specialist | V6 → V1 → Mitch |
 | **6. Symptom-entry layer** | Hub router; condition openings; red-flag blocks | NEW | Friday triage list; Steve's tree branches | content-creator + call-center-manager | Mitch (clinical safety) |
 | **7. Decision/guide layer** | 6 guides | NEW | Mitch; physicians per guide; Anna | content-creator; aeo-specialist | Mitch → compliance |
-| **8. Team + surgeon matching** | Team module; matching guide; bio modules; dedupe | NEW + UPDATE + CHANGE | **V5**; Mitch matrix | content-creator; seo-specialist | V5 → Mitch → Katie |
+| **8. Team + surgeon matching** | Team module; matching guide; bio modules; dedupe | NEW + UPDATE + CHANGE | **V5 ✅ 7/22** (McCarty MD-of-spine, light); inclusive labels per Mitch; matching matrix still pending | content-creator; seo-specialist | Mitch matrix → Katie |
 | **9. Hyperlocal expansion** | City pages | NEW (gated) | **D3**; Paul canonical rule | seo-specialist + content-creator | D3 threshold |
 | **10. Learning-hub refresh** | Dated stock; author pipeline; FAQ content | UPDATE + NEW | Physician authors (Mayo offered, ortho) | content-creator; aio/geo formatting | Clinical review per piece |
 | **11. Rebrand/staleness purge** | Legacy posts; Kornblum testimonial; stale Munk copy | CHANGE | Paul execution | seo-specialist in-place rebrand edit list | Joe |
@@ -590,6 +614,13 @@ drives four surfaces:
 
 **Red-flag rule:** every symptom surface carries the standardized, clinically approved
 escalation block (bladder/bowel changes, fever with back pain, trauma → urgent/911 routing).
+**Approved 7/22 (A6):** the stenosis page's bladder/bowel wording is the sitewide standard.
+
+**Validated vocabulary (Mitch, 7/22):** patients DO use **radiculopathy** and **degenerative
+disc disease** — treat clinical terms as patient-facing vocabulary where Mitch says so, not
+jargon to hide. The hub's first conditions surface carries his five words verbatim:
+pinched nerve · radiculopathy · degenerative disc disease · bulging disc · disc herniation.
+(First tranche of A7 validation; full map review still pending.)
 
 ## D2. The internal-link contract — what each page must link, and what must link to it
 
@@ -609,8 +640,10 @@ This is the per-page-type contract.
 5. **Curated, bounded counts** — these modules replace the 300-link mega-nav disease, not
    reproduce it. Body-link budget per page: hub ~25 · condition ~12–15 · treatment ~10–12 ·
    provider ~8–10 · location ~10–12 · guide ~10 · article ~5–7.
-6. **Conservative-first ordering inside treatment links:** PT → injection → surgery, always —
-   the link order itself is clinical messaging.
+6. **Conservative-first ordering inside treatment content:** the copy ladder is **activity
+   modifications → medications → PT → injections → surgery** (order per Mitch, 7/22 — he
+   reversed our injection-adjacent drafts); the linked steps (PT page → injection page →
+   surgery page) appear in that same order. The link order itself is clinical messaging.
 
 **Per-page-type contract** (OUT = links this page must carry · IN = pages that must link here):
 
@@ -676,3 +709,13 @@ missing arrow is a launch blocker, same class as a missing E-E-A-T block.
 - **7/22 (v8):** added **§D2 — the internal-link contract**: per-page-type OUT/IN link
   requirements with golden rules (two-way arrows, altLabel anchors, canons only, no orphans,
   bounded counts, conservative-first ordering) and the sciatica worked example.
+- **7/22 (v9):** **Mitch's review answers received** (decision log:
+  `pm/mitch-review-answers-2026-07-22.md`). Resolved into the model: **V3 = OptiLIF** (T-Lift
+  renamed everywhere) · **V4 = Varghese go-forward** (Munk = pioneer story; national
+  superlative wording parked in substantiation review) · **V5 = McCarty Medical Director**
+  (stated light; Zamorano = basic page, neuro + balance) · **A5 counts** (McCarty ×2, Maslak
+  ×2, Varghese, Salar — mapping confirm Wed) · **A6 approved** (stenosis red-flag wording =
+  standard) · **A10 imaging wording final** · **provider labeling now inclusive**
+  (full-spectrum + ~10% nuance: Varghese SI · McCarty OptiLIF · Salar MIS · Maslak robotic ·
+  Lee non-surgical) · **conservative ladder = activity mods → meds → PT → injections** ·
+  hub conditions surface pinned to Mitch's five patient words.

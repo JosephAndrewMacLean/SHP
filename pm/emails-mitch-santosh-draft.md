@@ -2,6 +2,12 @@
 
 **From:** Joe · **Status: DRAFT — Joe personalizes and sends** · Source: `mitch-santosh-briefing-prep.md`
 
+> **⚠ UPDATE 7/22: DO NOT SEND EMAIL 1 AS-IS — Mitch already answered** via the review packet
+> (`pm/mitch-review-answers-2026-07-22.md`): items 1, 2, 3 (partial), 5 (counts), 6, 8 are
+> done. If emailing Mitch now, send a thank-you + the Wednesday confirm list instead (reviewer
+> mapping, TLIF=OptiLIF, SI wording substantiation, guide-#1 lede edits, Yacisen locations,
+> item 4 schedule confirm, item 9 intros). **Email 2 (Santosh) is still current — send it.**
+
 ---
 
 ## Email 1 — Mitch

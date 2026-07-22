@@ -81,6 +81,29 @@ page; never bury the booking path on an I1 page.
 5. Red-flag escalation block is not a CTA — it interrupts the ladder wherever symptoms warrant
    (clinically signed-off wording; 911/urgent-care routing).
 
+### Approved reusable copy blocks (Mitch, 7/22 — see `pm/mitch-review-answers-2026-07-22.md`)
+
+- **Red-flag block (A6 ✅):** the stenosis page's bladder/bowel wording IS the sitewide
+  standard — extract it verbatim as the master block; deploy on every condition/symptom
+  surface.
+- **Conservative ladder (order is clinical messaging):** **activity modifications →
+  medications → physical therapy → injections → surgical evaluation.** Every
+  "treatment options in order" section, conservative-alternatives module, and pathway band
+  follows this sequence.
+- **Imaging module (A10 ✅ — final wording, his words):** two branches, always both:
+  *"Already have an MRI? Great — we will review it with you and decide next steps together."*
+  · *"Don't have an MRI? See us first and make sure you need one. Not everyone requires
+  advanced imaging, and some patients can proceed with conservative measures to relieve
+  symptoms before obtaining an MRI. If you do need an MRI, we can order it, perform it, and
+  review it with you — we are here every step of the way."*
+  Placements: Livonia, DDD page, MRI-facts article, paid-LP fixes.
+- **Guide #1 lede ("Do I need spine surgery?" — reviewer: Dr. McCarty; tone: passive,
+  comforting per Mitch):** basis is Mitch's line, with two compliance edits flagged back to
+  him — the "90% don't need surgery" figure runs ONLY with a displayed peer-reviewed
+  citation, and "recovery goes exactly as planned" (guarantee language) becomes *"…decades of
+  training in advanced, minimally invasive procedures — and a recovery plan built around you,
+  with our team beside you at every step."*
+
 ---
 
 ## 3. Per-page-type templates
@@ -187,8 +210,9 @@ Element order:
    built-for-the-already-diagnosed), mapping sensations → this condition vs. its neighbors.
 3. Red-flag interrupt (standardized block, clinically approved).
 4. Causes (links to cause conditions — herniated disc, stenosis) · Diagnosis (what we'll do:
-   exam, imaging, 3-T MRI where relevant) · **Treatment, in order:** conservative →
-   interventional → surgical with honest "when each is right" (links = `related` edges).
+   exam, imaging, 3-T MRI where relevant; imaging module per §2 approved blocks) ·
+   **Treatment, in order:** the Mitch ladder — activity modifications → medications → PT →
+   injections → surgical — with honest "when each is right" (links = `related` edges).
 5. "Who treats this" mini-team module (I3 seed).
 6. Guide rail: the condition's decision guide (I2→I3 bridge CTA).
 7. FAQ block (schema) → **soft I2 primary CTA + specialist bridge CTA** → E-E-A-T footer.
@@ -228,7 +252,8 @@ Element order:
 it?"*
 Element order: H1 + one-line plain answer → **"Is this right for me?" candidacy block**
 (clinically reviewed; CCM Plus criteria when live) → how it works (the dime-size-incision
-story) → **conservative-alternatives module** (required for balance: what we try first) →
+story) → **conservative-alternatives module** (required for balance: what we try first —
+activity mods, meds, PT, then injections, in that order per Mitch 7/22) →
 recovery expectations (honest timeline) → **differentiated-surgeon module** ("Dr. Maslak
 trained in this technique" — the Bullard/Hip-Insight pattern; links to bio) → gated outcomes
 slot (CODE only; empty until cleared) → comparison rail (fusion vs. ACDR; open vs. MI vs.
@@ -241,8 +266,12 @@ endoscopic) → FAQ (schema) → **I3 primary CTA (consult with the named surgeo
 
 **Purpose/intent:** I3 decision surface (bios already carry 20%+ of site traffic — make them
 convert). Element order: name/credentials/photo (natural, straight-on — the creative audit's
-working style) → **plain-English subspecialty line** ("Revision spine surgery: failed prior
-fusions, adjacent segment" — never scoliosis: no one at SHP offers it, Joe 7/22) → "Procedures I perform" module (links to treatment pages —
+working style) → **full-spectrum line + one nuance sentence** (Mitch 7/22: inclusive — "all
+our spine docs do all the stuff"; a ~10% nuance is fair. Pattern: "Dr. Maslak treats the full
+range of spine conditions, with particular depth in robotic-assisted surgery." Nuances:
+Varghese SI · McCarty OptiLIF + the Medical Director of Spine line, stated once and light ·
+Salar minimally invasive · Maslak robotic · Lee/pain team = non-surgical front door — never
+scoliosis: no one at SHP offers it, Joe 7/22) → "Procedures I perform" module (links to treatment pages —
 the `related` edges) → fellowship translated ("what a Cleveland Clinic spine fellowship
 means") → philosophy quote (conservative-first) → video slot (click-to-load; the Salar "Meet
 Dr." video is the pattern) → consented reviews → locations + days → **I3 primary CTA (book
@@ -266,11 +295,14 @@ physician author/reviewer; burying the answer.
 **Purpose/intent:** the decision-support bridge I2→I3 (and I3b). Lives under `/guides/`;
 reached mainly via condition/treatment `related` links (see `spine-semantic-model.md` §A3.7).
 Element order:
-1. H1 as the patient's question + **honest short answer up front** ("Most people with back
-   pain never need surgery. Here's how to tell which group you're in.").
+1. H1 as the patient's question + **honest short answer up front**. For guide #1: the
+   Mitch lede (§2 approved blocks — 90% figure only with displayed citation; guarantee
+   phrase replaced), tone very passive and comforting, **reviewer: Dr. McCarty** (Mitch 7/22).
 2. "Who this guide is for" (and who should skip to urgent care — red-flag interrupt).
-3. **Decision framework:** the stepped pathway conservative → interventional → surgical with
-   plain-language indications for each step (Mitch-approved).
+3. **Decision framework:** the stepped pathway on the Mitch ladder — activity modifications →
+   medications → PT → injections → surgical — with plain-language indications for each step
+   (Mitch-approved). Non-surgical options list bracing & support second (his knee-guide
+   correction, 7/22).
 4. Symptom → pathway mapping table (altLabels at work).
 5. **Candidacy checklist** (clinically reviewed; mirrors CCM Plus criteria when live).
 6. What-to-expect timeline: first visit → imaging → decision → (if surgery) scheduling &

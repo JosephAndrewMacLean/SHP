@@ -19,7 +19,8 @@
 From the 7/21 meeting, Gautam's directive to Joe was explicit: **"Your clinical partner is
 Mitch. Not Scott. Not any of our spines. Go to him."** Mitch is on the executive team for this
 purpose and will supply the comments on web pages and the specific procedures discussed —
-**endoscopic (Maslak), SI fusion (Varghese), and the T-Lift/"bone bag" (McCarty)** — with an
+**endoscopic (Maslak), SI fusion (Varghese), and OptiLIF — the "T-Lift/bone bag" real name,
+V3 ✅ 7/22 (McCarty)** — with an
 integrated-spine approach, because "we don't have a spine division today… a collection of
 individual spine physicians."
 
@@ -54,9 +55,11 @@ phases (timelines due from Mitch; reviewed at his **Wednesday-afternoon cage-mat
 
 **Mitch supplies (inputs to marketing):**
 - Procedure comments + differentiation specifics for the three tryout pages (endoscopic / SI
-  fusion / T-Lift — **confirm the real procedure name for "T-Lift/bone bag" with him before
-  anything ships**; also reconcile SI-fusion ownership: the meeting assigned the tryout to
-  Varghese, while the live site strands iFuse content on Dr. Munk's pages).
+  fusion / OptiLIF). **Both open questions answered 7/22** (`pm/mitch-review-answers-2026-07-22.md`):
+  "T-Lift/bone bag" = **OptiLIF** (ultra-minimally invasive, tiny tube, muscle-sparing,
+  expandable spacer); SI fusion = **Varghese go-forward**, with Munk's iFuse history told as
+  the "trained alongside on-staff pioneers" story on the SI page (exact wording in
+  substantiation review — the national superlative can't run unverified).
 - **Triage buzzwords** — the 2023/2024 workflows Dr. Oddo built with Kelly ("as simple as
   radiculopathy… there's two or three"), refined at the **Friday Katie + Mitch + Kelly meeting**.
   These become the patient-language symptom layer on the site (same words, all channels).
@@ -114,9 +117,9 @@ observed constraint: deep 1:1 Santosh time is scarce. So:
 |---|---|---|---|
 | V1 | "98% of spine surgeries come from 3–4 search terms (sciatica, DDD, herniated disc, radiculopathy)" — said in the 7/21 meeting, unverified | Joel Carr (D1) | Condition-page *priority weighting* (build the six anyway; don't claim the mix) |
 | V2 | Every live efficacy stat found on the site: 90% heal-without-surgery (×2 pages), 92% ankle, 89% Mayo bio, 91% Fox bio, 3-of-4 / 8-of-10 Lee bio, "national top surgeon" | Clinical + compliance | **Substantiate with a named source or remove before any migration to new pages** |
-| V3 | "T-Lift / bone bag" real procedure name + description | Mitch → McCarty | The McCarty differentiation page |
-| V4 | SI-fusion clinical ownership (Varghese tryout vs. Munk/iFuse legacy content) | Mitch | The SI-fusion page's surgeon module |
-| V5 | Medical-director attribution conflict (Salar vs. Zamorano in live snippets); Zamorano SHP page existence; Munk/Yacisen locations | Mitch / practice ops | Meet-the-spine-team module |
+| V3 | ✅ **ANSWERED 7/22:** "T-Lift/bone bag" = **OptiLIF** — ultra-minimally invasive low back procedure (tiny tube, spares major back muscles, expandable spacer). Trademark/manufacturer attribution check before publish | Mitch (done); McCarty hour deepens | McCarty page unblocked — drafting now |
+| V4 | ✅ **ANSWERED 7/22:** **Varghese go-forward**; Munk = the "trained alongside on-staff pioneers" story on the SI page. ⚠ Mitch's suggested "more SI fusions than any practice in the country" is an unsubstantiated superiority claim — variants A/B in the decision log; superlative does not run as-is | Mitch (done); wording → substantiation | SI page's surgeon module unblocked; final wording gated |
+| V5 | ✅ **ANSWERED 7/22 (partial):** **McCarty is Medical Director of Spine** — stated on his bio + one team-module line, deliberately light ("not so heavy that he trumps traffic to all other docs"); Zamorano = basic generic page (neuro + balance training). **Still open: Yacisen locations** | Mitch (done); Yacisen → practice ops | Team module unblocked; labels now inclusive per Mitch |
 | V6 | Canonical-tag + URL-resolution state of all duplicate URL pairs (crawl was index-based) | Paul (live check) | The canonical consolidation plan (NO redirects) in `spine-semantic-model.md` |
 
 ---
@@ -135,7 +138,7 @@ evidence bar for each claim type before it's published or used to prioritize wor
 | Condition-page priority | D1 NP volume **and** D2 GSC demand both confirm | Joel Carr + Randall | Build at normal priority, not "98%-claim" priority |
 | Hyperlocal city page | City clears the D3 first-party count threshold (top cities after the 8 clinic homes — "cities four and five on that list") | Joel Carr | Don't build; a page with no patient base is index pollution |
 | New cluster / topic | High-impression low-CTR signal in GSC, **or** explicit foundational-content decision (build → index → measure → improve; Paul's doctrine: real Google data, not SEMrush estimates) | Joe | Label as foundational; set the reindex wait window before judging |
-| Small-cohort content (I3b revision, second-opinion) | Justified by **specificity and fit**, not volume: documented cohort existence (D1 revision/returning counts when available) + clinical confirmation that we treat it (Maslak's revision/deformity subspecialty) | Mitch + Joel Carr | Ship as guide/learning content first; promote to pillar module when data confirms |
+| Small-cohort content (I3b revision, second-opinion) | Justified by **specificity and fit**, not volume: documented cohort existence (D1 revision/returning counts when available) + clinical confirmation that we treat it (revision is a confirmed service; per Mitch 7/22 it stays a content lane, not a bio label — and never scoliosis/deformity framing) | Mitch + Joel Carr | Ship as guide/learning content first; promote to pillar module when data confirms |
 | Surgeon-matching statement ("failed fusion → Dr. X") | Mitch-approved matching matrix; consistent with the call-center rubric; **no scoliosis pathway (no one at SHP offers it — Joe 7/22); pain-management docs (incl. Dr. Lee) are the interventional lane, never the surgeon set** | Mitch (+ Katie for routing ops) | Do not imply routing the practice hasn't approved |
 | Access/speed promise ("same-week") | Confirmed schedulable by Katie/Kelly (Access Suite + Axle reality) | Katie/Kelly | Say "often within the week" only if true; never over-promise (top sentiment risk) |
 | Any published change's success | 4-week OODA review on D6 scorecard + D2 GSC (1/2/3/4-week checkpoints) | Joe + Joel Carr | Iterate or revert; no "it feels better" |
@@ -147,7 +150,7 @@ evidence bar for each claim type before it's published or used to prioritize wor
 | Person | Input they provide | Output they owe / receive |
 |---|---|---|
 | **Joe** | Orchestration; consumer-language maps; GSC/paid analysis; agent direction | The publish calendar; drafts routed to gates; scorecard readout at Mon/Fri funnel meetings |
-| **Mitch** | §2a: procedure comments, triage terms, matching matrix, clinical review; three-phase timelines | Signed-off clinical content; V3/V4/V5 resolutions; Wednesday batch review |
+| **Mitch** | §2a: procedure comments, triage terms, matching matrix, clinical review; three-phase timelines | Signed-off clinical content; **V3/V4/V5 + A5/A6/A10 delivered 7/22 via the review packet** (`pm/mitch-review-answers-2026-07-22.md`); Wednesday batch review |
 | **Santosh** | Design decisions; PHI-secured AI patterns; triage-tree rollout (with Joe); ecosystem diagram | The website/content stack represented in the EMT ecosystem view; Claude account governance |
 | **Joel Carr** | D1/D3/D4/D6 data pulls; V1 verification | Standing monthly spine content-data pack |
 | **Katie** | ASC/scheduling reality (access promises); triage co-design; spine-first protocol context | Content aligned to what ops can deliver; flags when marketing over-promises |
@@ -157,9 +160,9 @@ evidence bar for each claim type before it's published or used to prioritize wor
 | **Randall** | Gap-analysis runs; title/meta fixes **spine-first**; plugin content drafts | **Bounded runway:** works inside Synergy Content on titles/metas + plugin-guided content; no architecture changes, no off-page campaigns; config changes logged and reviewed (Paul or Joe) — per Paul's own governance concern |
 | **Anna** | Surgical-scheduling rebuild (Sept 1) | What "book surgery" actually looks like post-rebuild → informs treatment-page expectations |
 | **Steve (physician)** | The Claude triage decision tree (built; not rolled out) | Rollout co-owned Santosh + Joe; his tree's branches inform the site's symptom-entry logic |
-| **Dr. Maslak** | The 1-hour endoscopic interview + articles ("differentiate you in the sea of sameness") | The endoscopic page + his authored/reviewed content; his revision/deformity subspecialty feeds I3b |
-| **Dr. Varghese** | SI-fusion interview; sports-spine crossover interest | SI-fusion page (pending V4); thinnest bio today — needs the fellowship story told in plain English |
-| **Dr. McCarty** | T-Lift/bone-bag specifics (via Mitch); medical-director perspective | T-Lift page (pending V3); Mazor X first-in-Michigan claim aggregation (pending substantiation review) |
+| **Dr. Maslak** | The 1-hour endoscopic interview + articles ("differentiate you in the sea of sameness") | The endoscopic page + his authored/reviewed content; bio nuance = **robotic** (Mitch 7/22, inclusive doctrine — never scoliosis/deformity); revision/I3b remains a content lane he can review |
+| **Dr. Varghese** | SI-fusion interview; sports-spine crossover interest | SI-fusion page (**V4 ✅ — go-forward surgeon**); thinnest bio today — needs the fellowship story told in plain English; bio nuance = SI |
+| **Dr. McCarty** | OptiLIF specifics (via Mitch — V3 ✅ named 7/22); medical-director perspective (**V5 ✅ — Medical Director of Spine, stated light**) | OptiLIF page — drafting now; guide #1 named reviewer; Mazor X first-in-Michigan claim aggregation (pending substantiation review) |
 | **Dr. Salar** | (Coaching outcome pending — 3-month window) | Arabic/Farsi pages **gated** on his performing status; his bio is the #1 page sitewide — protect it during consolidation |
 | **Gautam** | Sponsorship; differentiation bar ("first in the nation/state or bust") | Monthly readout that the website is producing qualified spine patients, not just traffic |
 
@@ -277,7 +280,7 @@ spine gap-analysis pass (titles/metas only).
 the Maslak hour · guide #1 ("Do I need spine surgery?") outlined per the semantic model.
 
 **Weeks 3–4:** First differentiation page (endoscopic) through the full gate chain as the
-**process pilot** — time every gate, fix the bottlenecks, then scale to SI fusion, T-Lift,
+**process pilot** — time every gate, fix the bottlenecks, then scale to SI fusion, OptiLIF,
 symptom-entry layer, and the guide layer per `spine-semantic-model.md` §C2 priorities.
 
 **Success measure (through D6):** non-branded spine impressions + clicks rising (D2), qualified
