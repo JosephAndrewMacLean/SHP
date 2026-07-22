@@ -6,10 +6,11 @@ today, and which instrument measures it going forward.* All opportunity work in 
 workspace hangs off this document.
 
 **Last verified: 2026-07-22** · Sources: GA4 API (property 370514163), Semrush
-(project "SHP Spine 2026", Site Audit snapshot Jul 21), and the audit texts in
-`cardinal-2026-06/`. Direct fetching of synergyhealth.org is **blocked by this
-environment's network policy** — items needing a page-level look are marked ❓ with the
-unlock listed. GSC API access is wired but awaiting the property grant.
+(project "SHP Spine 2026", Site Audit snapshot Jul 21), direct site checks (network
+allowlist added 2026-07-22 — note: Cloudflare serves a bot challenge to non-browser
+requests, so page-level title/meta checks still need a real-browser pass or Cardinal
+confirmation), and the audit texts in `cardinal-2026-06/`. GSC API access is wired but
+awaiting the property grant.
 
 **Legend:** ✅ done/confirmed · 🟠 partial/in motion · ❌ not done · ❓ not verifiable
 from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
@@ -24,16 +25,39 @@ from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
    regression** (238 Good URLs → 0 by May 13; LCP 3.5s; mobile score 28/100). No
    recovery visible through Jul 21. *Caveat: correlation + seasonality possible — the
    GSC CWV report (pending grant) or a PageSpeed API key confirms in minutes.*
-2. **Two Phase-1 items verified DONE:** `llms.txt` is live and validly formatted, and
-   missing meta descriptions went from 55 (June) to **0 flagged** (Semrush Jul 21).
-   Rank Math work is landing.
-3. **Schema remains the big open item:** **446 structured-data markup errors** still
+2. **🚨 robots.txt is BLOCKING the AI crawlers the strategy targets** (verified
+   2026-07-22 by direct fetch). A "Cloudflare Managed content" block explicitly
+   disallows **GPTBot, ClaudeBot, Google-Extended, CCBot**, Amazonbot,
+   Applebot-Extended, Bytespider, and meta-externalagent, plus a
+   `Content-Signal: ai-train=no` for all agents. Cardinal's audit says verbatim: *"Do
+   not block bots that serve live user queries."* Consequences: Claude cannot index the
+   site at all; OpenAI/Common Crawl training is refused; Google-Extended block cuts
+   Gemini grounding. (Classic Google Search indexing is NOT affected — Googlebot isn't
+   blocked — and ChatGPT's live-query fetchers, ChatGPT-User/OAI-SearchBot, and
+   PerplexityBot are not in the disallow list.) **Fix in the Cloudflare dashboard:**
+   the zone's managed robots.txt / "block AI bots" setting. Decide deliberately:
+   training-use is a legitimate policy choice, but blocking retrieval bots defeats the
+   whole AIO/GEO program.
+3. **Cloudflare's bot challenge also fronts `llms.txt`** — the file exists (a Phase-1
+   ✅), but non-browser requests get a "Just a moment…" challenge page instead of its
+   content, so the AI crawlers it was written for may never read it. Review the
+   challenge posture (and consider a WAF skip rule for `/llms.txt` and `/robots.txt`).
+   **Also check the Cloudflare audit log around May 1** — if the bot-protection or
+   security level changed then, it's a candidate trigger for the CWV/organic
+   regression (challenge interstitials degrade real-user LCP).
+4. **Staging domain still wide open:** `synergy.egowebdev.com` returns HTTP 200
+   (verified 2026-07-22). Cardinal: password-protect immediately — duplicate-content
+   and link-equity leak. ❌ not done.
+5. **Two Phase-1 items verified DONE:** `llms.txt` is live and validly formatted
+   (with the challenge caveat above), and missing meta descriptions went from 55
+   (June) to **0 flagged** (Semrush Jul 21). Rank Math work is landing.
+6. **Schema remains the big open item:** **446 structured-data markup errors** still
    flagged (Cardinal: Hospital @type cascade, 22–61 errors/page on 42 physician bios;
    sameAs → competitor `@mendelsonortho`). **0 FAQ rich-result keywords** in Semrush —
    unchanged from Cardinal's "zero rich results" baseline.
-4. **New flags Cardinal didn't have:** 754 broken internal links, 1 malformed
+7. **New flags Cardinal didn't have:** 754 broken internal links, 1 malformed
    robots.txt line, 57 orphaned sitemap pages (Semrush Jul 21).
-5. **Paid still carries the site:** google/cpc 4,865 sessions vs google/organic 1,666
+8. **Paid still carries the site:** google/cpc 4,865 sessions vs google/organic 1,666
    (last 30d). The spine hub gets 2,803 sessions/90d at 78% engagement — but only
    **52 of them arrive from organic search** (~4/week). Cardinal's "massive
    visibility, near-zero conversion" diagnosis is unchanged.
@@ -70,7 +94,9 @@ Cardinal's own "What success looks like at Day 30," statused:
 | 3 | Zero CSP errors; Clarity + Cloudflare data restored | ❓ | Needs page-level check (env blocks site) or ask Paul: is Clarity data flowing? |
 | 4 | logo.svg <20KB; Hotjar deferred; LCP improved | ❓ | PSI API key answers all three in one call |
 | 5 | Security headers on 100% of pages | ❓ | Needs direct fetch (blocked) — one `curl -I` from any laptop |
-| 6 | llms.txt live at /llms.txt | ✅ | Semrush Jul 21: found, valid format. Review content quality manually. |
+| 6 | llms.txt live at /llms.txt | 🟠 | Exists & valid (Semrush Jul 21) — but served behind a Cloudflare bot challenge to non-browser agents (verified 2026-07-22), so its audience can't read it |
+| 6b | Verify AI crawler access in robots.txt ("do not block bots") | ❌ **FAILED** | Direct fetch 2026-07-22: Cloudflare-managed block disallows GPTBot, ClaudeBot, Google-Extended, CCBot + `ai-train=no`. Fix in Cloudflare dashboard. |
+| 6c | Password-protect staging domain synergy.egowebdev.com | ❌ | Direct fetch 2026-07-22: HTTP 200, publicly reachable |
 | 7 | Homepage meta description live | ✅ | Confirmed in audit (Rank Math) + Semrush: 0 missing sitewide |
 | 8 | Carpal tunnel + TKA titles/metas rewritten | ❓ | Page-level look blocked; GSC CTR trend proves it once granted (baseline: 0.03% / 0.02% CTR) |
 | 9 | Archive template duplicate titles/metas fixed | 🟠 | Dup metas 86→7; dup titles still 5 (locations-type taxonomy) |
@@ -141,11 +167,23 @@ eyeball from any browser. Priority lane first:
 | Profound (AIO citation tracking) | none | ❌ gap — interim: Semrush AIO-keyword report + monthly manual prompt testing of the 75-query set (get set from Cardinal) |
 | Screaming Frog monthly re-crawl | Semrush Site Audit (weekly snapshots already running) | ✅ equivalent for tracking |
 
-**Two 5-minute unlocks for full verification from this workspace:**
-1. **Add `synergyhealth.org` (and `synergy.egowebdev.com`) to the Claude Code
-   environment's network allowlist** → enables direct page/header/schema checks.
-2. **Create a free PageSpeed Insights API key** and add env var `PAGESPEED_API_KEY` →
-   enables scripted CWV field-data checks (the regression tripwire).
+**Verification unlocks — status:**
+1. ✅ **Network allowlist added (2026-07-22)** — direct fetches now work at the
+   curl level (this is how the robots.txt block and live staging domain were found).
+   Remaining caveat: Cloudflare challenges non-browser requests for HTML pages, so
+   title/meta/schema page checks need either a Cloudflare WAF exception, a manual
+   browser pass, or Cardinal's confirmation.
+2. 🟡 **PageSpeed Insights API key** — still needed (keyless quota is exhausted;
+   verified 429 on 2026-07-22). Enable "PageSpeed Insights API" in the
+   `synergy-health-partners` GCP project → Credentials → create an API key
+   (restrict it to PSI) → add env var `PAGESPEED_API_KEY` in the Claude environment.
+3. 🟡 **Google Business Profile APIs** — Performance API enablement started
+   2026-07-22. Verified same day: the companion **My Business Account Management**
+   and **My Business Business Information** APIs are NOT yet enabled in the project
+   (probed: 403 SERVICE_DISABLED). All three must be enabled, then the
+   [GBP API access request form](https://developers.google.com/my-business/content/prereqs#request-access)
+   approves the project (quota stays 0 until approved), then a listings owner adds
+   the service account as a Manager of the Business Profile account.
 
 ## 8. How to re-verify (monthly, or after any fix ships)
 
