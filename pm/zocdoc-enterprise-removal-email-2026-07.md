@@ -20,17 +20,33 @@ kept visits at roughly half our marketplace average, and since fees are charged 
 booking regardless of whether the patient shows, we'd like to remove them from marketplace
 discovery.
 
-**Request — effective [date], please remove the following visit reasons from Zocdoc
-Marketplace search and discovery for all Synergy Health Partners providers and locations,
-including Sponsored/boosted placements and partner syndication (e.g., Google, Healthgrades):**
+**Request — effective [date], please make the following changes to marketplace search and
+discovery, including Sponsored/boosted placements and partner syndication (e.g., Google,
+Healthgrades):**
 
-1. Pain Management Consultation
-2. Back Pain
-3. Surgery Consultation
-4. Ultrasound
-5. Pain Medication Prescription
-6. Chronic Pain
-7. Acupuncture
+**A. Remove these 7 visit reasons account-wide — every Synergy Health Partners provider and
+location where they appear:**
+
+1. Pain Management Consultation *(currently on: Dr. Kevin Lee, Dr. Anthony Oddo, Dr. Hanish
+   Singh, Dr. Brian Kassa, Dr. Joseph Yacisen, Dr. Lucia Zamorano)*
+2. Back Pain *(Dr. Mohamed Salar, Dr. Andres Munk, Dr. Scott McCarty, Dr. Jeffrey Varghese,
+   Dr. Joseph Maslak, Dr. Kevin Lee, Dr. Anthony Oddo, Dr. Hanish Singh, Dr. Brian Kassa)*
+3. Surgery Consultation *(Dr. Benjamin Mayo, Dr. Joseph Maslak, Dr. Jeffrey Varghese)*
+4. Ultrasound *(Dr. Benjamin Mayo, Dr. Joseph Yacisen)*
+5. Pain Medication Prescription *(Dr. Anthony Oddo, Dr. Brian Kassa)*
+6. Chronic Pain *(Dr. Anthony Oddo, Dr. Hanish Singh, Dr. Joseph Yacisen, Dr. Brian Kassa)*
+7. Acupuncture *(Dr. Anthony Oddo, Dr. Brian Kassa)*
+
+The provider lists reflect where bookings occurred in the last 12 months — please treat the
+removal as account-wide so it also covers any profile where a reason is listed but hasn't
+booked.
+
+**B. Remove one visit reason from two specific provider profiles only:**
+
+8. **Orthopedic Consultation (Spine & Back)** — remove from **Dr. Mohamed Salar, MD** and
+   **Dr. Andres Munk, MD** only. **Keep it live for all other providers** (the reason performs
+   well elsewhere). Both doctors keep Spinal Cord Surgery Consultation and their other spine
+   reasons, which convert far better for them.
 
 (Reason names as they appear in our booking export; happy to map them to your internal IDs.)
 
@@ -80,8 +96,11 @@ jmaclean@synergyhealth.org · [phone]
 | Pain Medication Prescription | $1,212 | 42% (5/12) | $242 |
 | Chronic Pain | $707 | 50% (4/8) | $177 |
 | Acupuncture | $909 | 44% (4/9) | $227 |
-| **Set total** | **$15,958** | **38% (81/216)** | **$197** |
+| Ortho Consultation (Spine & Back) — Dr. Salar profile | $1,616 | 41% (7/17) | $231 |
+| Ortho Consultation (Spine & Back) — Dr. Munk profile | $808 | 40% (4/10) | $202 |
+| **Set total** | **$18,382** | **38% (92/243)** | **$200** |
 | *Our marketplace average* | | *~58%* | *~$110* |
+| *This reason on all other providers' profiles* | | *~67% (35/52)* | |
 
 *Rates measured on bookings matched to our PM system; "kept" includes visits kept after
 patient- or staff-initiated reschedules within 45 days. Aggregate, de-identified figures only.*
@@ -91,6 +110,9 @@ patient- or staff-initiated reschedules within 45 days. Aggregate, de-identified
 ### Pre-send checklist (internal — delete before sending)
 
 - [ ] Paul sign-off on the list and the send
+- [ ] Leadership explicitly OKs the pain-line consequence: the 7 removals take 80–90% of
+      marketplace volume off Drs. Lee, Oddo, Singh, and Kassa (see memo §C) — this is a
+      service-line decision, not just a cleanup
 - [ ] Clinical ops confirms acupuncture is not offered (else drop #7)
 - [ ] Fill account manager name, practice/account ID, effective date, reply-by date, title/phone
 - [ ] Confirm recipient address with our Zocdoc account rep

@@ -14,12 +14,15 @@ identical in both uploaded versions.
 
 ## TL;DR
 
-Remove **7 visit reasons** from Zocdoc **Marketplace/Discovery** (search, Sponsored, partner
-syndication). Together they are **7.3% of 2026 marketplace spend but only 3.8% of kept patients** —
-they convert at **33% booking-to-kept vs 59% for everything else** and cost **~$212 per kept patient,
-double the $110 marketplace average**. Annualized savings **≈ $13K at the 2026 pace** (~$16K at the
-trailing-12-month pace), and marketplace cost-per-kept improves to ~$106. Spine coverage is not
-reduced: the structured spine consult reasons stay live and convert far better.
+Remove **7 visit reasons account-wide** plus **2 provider-specific listings** (Dr. Salar and
+Dr. Munk on "Orthopedic Consultation (Spine & Back)") from Zocdoc **Marketplace/Discovery**
+(search, Sponsored, partner syndication). Together the set is **8.8% of 2026 marketplace spend but
+only 4.3% of kept patients** — it converts at ~33% booking-to-kept vs ~60% for everything else and
+costs **~$225 per kept patient, double the $110 marketplace average**. Annualized savings
+**≈ $15.8K at the 2026 pace** (~$18.4K at the trailing-12-month pace), and marketplace
+cost-per-kept improves to ~$105. Spine coverage is not reduced: the structured spine consult
+reasons stay live and convert far better (see the per-provider section for the Salar/Munk safety
+check).
 
 ## The removal list (verified numbers)
 
@@ -35,9 +38,11 @@ and staff rebooks (generous). Capture measured on NextGen-matched bookings; cost
 | 5 | Pain Medication Prescription | Other | $101 | (1/1) | — | $1,212 | 41.7% (5/12) | $242 |
 | 6 | Chronic Pain | Other | $101 | 0% (0/1) | — | $707 | 50.0% (4/8) | $177 |
 | 7 | Acupuncture | Other | $202 | 50% (1/2) | — | $909 | 44.4% (4/9) | $227 |
-| | **Total removal set** | | **$6,565** | **33.3% (31/93)** | **$212** | **$15,958** | **37.5% (81/216)** | **$197** |
+| 8 | Ortho Consultation (Spine & Back) — **Dr. Salar only** | Spine/Back/Neck | $808 | 37.5% (3/8) | $269 | $1,616 | 41.2% (7/17) | $231 |
+| 9 | Ortho Consultation (Spine & Back) — **Dr. Munk only** | Spine/Back/Neck | $505 | 16.7% (1/6) | $505 | $808 | 40.0% (4/10) | $202 |
+| | **Total removal set (7 account-wide + 2 provider-specific)** | | **$7,878** | **32.7% (35/107)** | **$225** | **$18,382** | **37.9% (92/243)** | **$200** |
 | | *Marketplace average (2026)* | | *$89,876* | *57.6% (820/1,424)* | *$110* | | | |
-| | *Marketplace after removal* | | *$83,311* | *59.3% (789/1,331)* | *$106* | | | |
+| | *Marketplace after removal* | | *$81,998* | *59.6% (785/1,317)* | *$105* | | | |
 
 ### Why each one
 
@@ -62,6 +67,59 @@ email before sending.
 
 Items 5–7 are low-volume (below the 20-matched threshold for a purely statistical call) — they're
 included on **service-fit grounds, corroborated by** weak 12-month conversion.
+
+## Per-provider view (how Zocdoc will actually action this)
+
+Zocdoc configures visit reasons **per provider profile**, so the request is provider-explicit.
+All figures FY Jul 2025–Jun 2026, Marketplace/Discovery only.
+
+### A. The 7 account-wide removals — who carries them today
+
+| Visit reason | Providers currently listed (FY kept/matched) |
+|---|---|
+| Pain Management Consultation | Dr. Kevin Lee (14/43, 33%) · Dr. Anthony Oddo (13/24, 54%) · Dr. Hanish Singh (9/22, 41%) · Dr. Brian Kassa (7/17, 41%) · Dr. Joseph Yacisen (3/10, 30%) · Dr. Lucia Zamorano (0/1) |
+| Back Pain | Dr. Mohamed Salar (7/15, 47%) · Dr. Andres Munk (3/10, 30%) · Dr. Scott McCarty (3/9, 33%) · Dr. Jeffrey Varghese (3/7, 43%) · Dr. Joseph Maslak (3/6, 50%) · Dr. Kevin Lee (1/3) · trace: Oddo, Singh, Kassa |
+| Surgery Consultation | Dr. Benjamin Mayo (1/4, 25%) · Dr. Joseph Maslak (0/1) · Dr. Jeffrey Varghese (0/1) |
+| Ultrasound | Dr. Benjamin Mayo (0/9) · Dr. Joseph Yacisen (0/3) |
+| Pain Medication Prescription | Dr. Anthony Oddo (4/9, 44%) · Dr. Brian Kassa (1/3) |
+| Chronic Pain | Dr. Anthony Oddo (4/5) · Dr. Hanish Singh (0/1) · Dr. Joseph Yacisen (0/1) · Dr. Brian Kassa (0/1) |
+| Acupuncture | Dr. Anthony Oddo (2/6, 33%) · Dr. Brian Kassa (2/3) |
+
+### B. Provider-specific removals (reason stays live for all other providers)
+
+| Provider | Visit reason to remove | FY | 2026 H1 | Why safe |
+|---|---|---|---|---|
+| Dr. Mohamed Salar, MD | Orthopedic Consultation (Spine & Back) | 41% (7/17), $231/kept, $1,616 | 38% (3/8), $808 | Keeps Spinal Cord Surgery Consultation (62%, his best reason), Sciatica, Lower Back Pain, Spine Specialist Consultation, Neck Pain |
+| Dr. Andres Munk, MD | Orthopedic Consultation (Spine & Back) | 40% (4/10), $202/kept, $808 | 17% (1/6), $505 — worsening | Keeps Spinal Cord Surgery Consultation (75%, his best reason), Ortho (Neck), Sciatica, Back Problems, Neck Pain |
+
+Supporting stat for the email: on this reason, **all other providers convert ~67%** (35/52 FY) —
+Salar and Munk (41%/40%) are the drag. Removing just their two listings lifts the surviving
+reason to healthy and preserves both surgeons' spine discovery through better-converting reasons.
+
+### C. Consequences leadership should sign off on knowingly
+
+- **This effectively exits the pain-management doctors from paid marketplace discovery.** The
+  blanket 7 remove 80–90% of FY marketplace volume for Dr. Lee (56 of 64 appts), Dr. Oddo (63/76),
+  Dr. Singh (37/45), and Dr. Kassa (36/44); only trace long-tail reasons remain on their profiles.
+  Consistent with strategy (pain is a declining, non-priority line, and these four run 40–48%
+  capture overall) — but it is a service-line decision, not just a cleanup. Confirm with Paul +
+  leadership explicitly.
+- **Annual Physical is entirely Dr. Tony Abood** ($20,520 FY, 195/516 kept, 38%) — he is 100% of
+  the reason's volume, so the "fix show-rate first" decision is a one-provider ops conversation,
+  and a one-line change later if leadership opts to pull it.
+- **No provider is fully de-listed** by this request: every affected doctor retains bookable
+  marketplace reasons (verified per-profile against the FY booking data).
+
+### D. Per-provider watch list (weak but below volume threshold — revisit with Q3 export)
+
+- Dr. Joseph Yacisen: generic "Orthopedic Consultation" 1/9 (11%) FY; "Ortho (Foot & Ankle)" 5/12
+  (42%) FY but 50% in 2026 — trending up, hold.
+- Dr. Kristina Green, DPM: "Foot Pain" 3/10 (30%) FY, only $392 — cheap, watch.
+- Non-acquisition trace reasons to bundle into a future cleanup: "MRI Report – *", "Pain Medicine
+  Follow Up", "Cortisone Shots", "Orthopedic Follow Up", "Worker's Compensation Evaluation" —
+  follow-ups/reports shouldn't be paid new-patient discovery reasons regardless of conversion.
+- Dr. Zamorano's profile still links to the legacy `mendelsonortho` Zocdoc page (rebrand remnant,
+  per `brand/provider-roster-by-service-line.md`) — separate fix, don't mix into this request.
 
 ## What we are NOT removing (and what to do instead)
 
