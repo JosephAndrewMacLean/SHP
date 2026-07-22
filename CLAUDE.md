@@ -30,6 +30,21 @@ healthcare organization. It contains a team of specialized marketing subagents.
 - `aio-specialist` — Google AI Overviews / in-search AI answers.
 - `content-creator` — the content engine feeding all of the above.
 
+## Analytics data (GA4 via MCP)
+
+- The official Google Analytics MCP server is configured in `.mcp.json` (tools appear
+  as `mcp__google-analytics__*`: `get_account_summaries`, `run_report`,
+  `run_realtime_report`, …). **Use it to ground any claim about page, channel, or
+  content performance in real GA4 numbers — current and historical — instead of
+  assuming.** Typical use: `run_report` with page/landing-page dimensions over the
+  date ranges being compared.
+- SHP GA4 property ID: **not yet recorded** — after the first successful connection,
+  run `get_account_summaries` and replace this line with the property ID.
+- The specialist subagents have restricted tool lists and don't get MCP tools: pull
+  GA4 data in the main session and pass the relevant numbers into subagent prompts.
+- If the GA tools are missing, the credential isn't set up in this environment —
+  see `docs/google-analytics-mcp-setup.md`.
+
 ## Working norms
 
 - Deliver prioritized, implementation-ready work — not aspirational decks.

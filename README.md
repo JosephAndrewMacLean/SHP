@@ -41,6 +41,13 @@ In Claude Code, delegate to an agent by name, e.g.:
 
 The **marketing-director** can coordinate several specialists for a single campaign.
 
+## Data sources
+
+- **Google Analytics (GA4)** — wired in via Google's official Analytics MCP server
+  (`.mcp.json` + `scripts/ga-mcp.sh`), so the team can query real page and channel
+  performance, current and historical, straight from GA4 instead of assuming.
+  One-time credential setup: [docs/google-analytics-mcp-setup.md](docs/google-analytics-mcp-setup.md).
+
 ## Before you rely on the output
 
 1. **Fill in `brand/brand-brief.md`.** The agents share it as their source of truth;
@@ -56,5 +63,8 @@ The **marketing-director** can coordinate several specialists for a single campa
 ```
 .claude/agents/        the eight specialist agents
 brand/brand-brief.md   shared brand, voice, audience, and compliance guardrails
+.mcp.json              MCP servers (Google Analytics) loaded into every session
+scripts/ga-mcp.sh      launcher for the GA4 MCP server (credential handling)
+docs/                  setup guides (Google Analytics MCP)
 CLAUDE.md              project context loaded into every session
 ```
