@@ -9,7 +9,7 @@ Template references = `playbooks/spine-page-templates.md`.
 
 ## Cardinal alignment + standing rules
 
-Cardinal owns: schema **deployment**, technical/CWV, 301 execution, llms.txt/sameAs. We own:
+Cardinal owns: schema **deployment**, technical/CWV, llms.txt/sameAs — and they must honor the NO-REDIRECTS directive (Joe 7/21): consolidation is canonical-tag only, Paul implements. We own:
 titles/metas, on-page copy, modules, FAQ/schema **content**. No URL edited by both teams in
 the same window. Audit directions this list executes: duplicate titles (120) · missing metas
 (~85, incl. homepage) · missing H1s (14) · high-impr/low-CTR fixes · Grade 6–8 · five
@@ -50,7 +50,7 @@ every edit logged; GSC per URL at 1/2/3/4 weeks.
 **Opportunity:** top-volume spine term, currently ranks for ZERO; consolidation concentrates two URLs into this one.
 **Meta:** `Sciatica (Shooting Leg Pain): Causes & Treatment Options` · `Sciatica is a symptom, not a condition. Learn what's really causing your leg pain and the treatments that work — from PT to minimally invasive options.`
 **Content updates (template §3.3 — same pattern for all six canons below):** 1) **"What you might be feeling" symptom opening** in patient words (the built-for-diagnosed fix); 2) standardized red-flag block (A6); 3) **E-E-A-T block** — named physician reviewer + date + citations (A5 roster); 4) "Treatment options, in order" section with honest indications + links (PT → ESI → endoscopic/microdiscectomy); 5) "Who treats sciatica here" mini-team; 6) guide rail → `/guides/sciatica-treatment-options/`; 7) FAQ content block; 8) near-you chips (5 locations); 9) dual CTA (soft I2 primary + specialist bridge).
-**Gate:** A5 + A6 (Mitch) · V6 for the twin 301 (content edits OK now).
+**Gate:** A5 + A6 (Mitch) · V6 for the twin canonical (content edits OK now).
 
 ### `/conditions/spinal-stenosis/` — Condition canon
 **Opportunity:** ×3 duplicate URLs cannibalizing; has the site's best red-flag block — the model for the rest; MILD page (33 kw) unlinked from it.
@@ -62,12 +62,12 @@ every edit logged; GSC per URL at 1/2/3/4 weeks.
 **Opportunity:** root orphan (`/herniated-disc-microdiscectomy/`, $485/conv in paid) splits this topic; endoscopic copy migrates through here.
 **Meta:** `Herniated Disc: Symptoms, Relief & Treatment Options` · `Most herniated discs heal without surgery. Learn your symptoms, what to try first, and when a minimally invasive procedure makes sense.`
 **Content updates:** §3.3 pattern **plus:** migrate the orphan's "90% heal without surgery" claim ONLY if V2 sources it (else drop); treatment section links endoscopic page + microdiscectomy; L5-S1 modifier cluster seeded in the learning hub.
-**Gate:** A5 · V2 (the 90% stat) · V6 (orphan 301).
+**Gate:** A5 · V2 (the 90% stat) · V6 (orphan canonical).
 
 ### `/conditions/degenerative-disc-disease/` — Condition canon
 **Opportunity:** legacy paid LP ($1,304/conv) retires into this page; 3-T MRI copy migrates.
 **Meta:** `Degenerative Disc Disease: Symptoms & Treatment` · `DDD doesn't mean your spine is falling apart. What the diagnosis really means, how it's treated, and when to see a spine specialist.`
-**Content updates:** §3.3 pattern **plus:** the reassurance-first framing in the opening (DDD ≠ inevitable surgery); migrate 3-T MRI + McKenzie copy from the legacy LP before its 301; imaging module (A10).
+**Content updates:** §3.3 pattern **plus:** the reassurance-first framing in the opening (DDD ≠ inevitable surgery); migrate 3-T MRI + McKenzie copy from the legacy LP before its canonical; imaging module (A10).
 **Gate:** A5 · V6.
 
 ### `/conditions/spondylolisthesis/` — Condition canon
@@ -118,7 +118,7 @@ every edit logged; GSC per URL at 1/2/3/4 weeks.
 ### `/specialties/spine-back-and-neck/anterior-cervical-discectomy-fusion` — the ACDR mislabel
 **Opportunity:** the motion-preservation differentiator is invisible to fusion-alternative searchers (URL says fusion, title says ACDR).
 **Meta:** `Cervical Disc Replacement (ACDR): A Fusion Alternative` · desc per v2.
-**Content updates:** 1) rewrite as the ACDR page (template §3.4): candidacy, how-it-works, **fusion-vs-ACDR comparison table** (unique in market); 2) conservative-alternatives module; 3) surgeon module (Salar — motion preservation); 4) recovery expectations; 5) FAQ content; URL fate (rename vs. new+301) = V6/Cardinal call.
+**Content updates:** 1) rewrite as the ACDR page (template §3.4): candidacy, how-it-works, **fusion-vs-ACDR comparison table** (unique in market); 2) conservative-alternatives module; 3) surgeon module (Salar — motion preservation); 4) recovery expectations; 5) FAQ content; URL fate (rename in place vs. new page + canonical — no redirect) = V6/Paul call.
 **Gate:** V6 · Mitch.
 
 ### NEW ⚠ endoscopic page (under V6-winner hub)
@@ -152,7 +152,7 @@ every edit logged; GSC per URL at 1/2/3/4 weeks.
 **Gate:** ⏳ACCESS · Katie.
 
 ### ⚠ Port Huron location page
-**Meta:** per v2. **Content:** **visiting-specialists cadence module** ("Dr. Munk — monthly · Dr. Kassa — 1st & 3rd Thursdays · call for the next visit"); ortho anchors (Yakasin Mon/Wed, Yacisen); replace stale Munk-centric copy; legacy `/full-service-clinics/port-huron/` folds in (Cardinal 301).
+**Meta:** per v2. **Content:** **visiting-specialists cadence module** ("Dr. Munk — monthly · Dr. Kassa — 1st & 3rd Thursdays · call for the next visit"); ortho anchors (Yakasin Mon/Wed, Yacisen); replace stale Munk-centric copy; legacy `/full-service-clinics/port-huron/` stays live with canonical to the PH location page (no redirect).
 **Gate:** Katie.
 
 ### `/providers/joseph-yacisen-do/`
@@ -160,7 +160,7 @@ every edit logged; GSC per URL at 1/2/3/4 weeks.
 **Gate:** bio fix confirm.
 
 ### `/specialties/spine-back-and-neck/port-huron-spine-neck-pain-dr-andres-munk`
-**Content:** no retitle — migrate its usable copy (iFuse, PH context) into Munk's bio + the PH location page, then Cardinal 301s it. Fixes the stale "starting Tuesday, Aug 12" copy by retirement.
+**Content:** no retitle — migrate its usable copy (iFuse, PH context) into Munk's bio + the PH location page, then leave it live with canonical to the Munk bio — no redirect. Fixes the stale "starting Tuesday, Aug 12" copy by retirement.
 **Gate:** V6.
 
 ### `/conditions-we-treat/foot-ankle-conditions/broken-ankle/`
@@ -175,13 +175,13 @@ every edit logged; GSC per URL at 1/2/3/4 weeks.
 
 ### Learning-hub refresh batch + legacy purge
 Question-formatted titles, answer-first openings, physician bylines (A5 roster) per piece;
-legacy Mendelson posts (incl. the 162-visit chronic-pain post): copy salvage → Cardinal 301s
+legacy Mendelson posts (incl. the 162-visit chronic-pain post): copy salvage → rebrand in place or canonical (no redirects)
 per the purge list. **Gate:** A5 · V6.
 
 ---
 
 ## Execution notes
-1. **Handshake:** this file + the 301 map → Cardinal; schema deployment + redirects are theirs;
+1. **Handshake:** this file + the canonical map → Cardinal; schema deployment is theirs — NO redirects anywhere (Joe directive);
    titles/metas/copy/modules are ours; no same-URL-same-window collisions.
 2. **Today-startable:** Tier-1 metas and content drafts without V/A gates; drafting is never
    blocked — only publishing is (drafts queue for Mitch's Wednesday batch).

@@ -141,7 +141,7 @@ Grounded in this data + the June audit + the templates doc. Owners in brackets.
    unsourced stats — the 90%/92% figures stay off until substantiated (V2).
 8. **Retire the worst LPs:** `/degenerative-disc-disease-treatment/` ($1,304/conv, 0.96% conv
    rate — attracts clicks, doesn't convert) and `/herniated-disc-microdiscectomy/` ($485) →
-   repoint campaigns to the canonical condition pages post-consolidation, then 301. [Paul, after V6]
+   repoint campaigns to the canonical condition pages post-consolidation; keep the pages live with rel=canonical to the canon — NO redirects. [Paul, after V6]
 9. **Set the handoff expectation:** LP tells the visitor what happens next ("we verify your
    insurance on the first call") so the call center's qualification script
    (`pm/spine-intake-qualification-script.md`) starts warm, not cold. [Kelly]
@@ -237,7 +237,7 @@ waste (>$100 terms): **$17,571**.
 
 1. Hand this analysis to **Cardinal** (paid owner): Spine Conditions campaigns
    pause/restructure; Troy campaign gap; negative list from the $38K zero-conv tail;
-   LP consolidation timing aligned with the 301 plan (V6 first).
+   LP consolidation timing aligned with the canonical plan (V6 first; no redirects).
 2. **Paul + Joe:** fix conversion values/actions before any bidding change (NP Intent → $5;
    Liine booked-call ≈ $150; repair Liine NP Online Booking signal).
 3. **Game plan W0 baseline:** this file is the paid baseline; GSC organic baseline cut in

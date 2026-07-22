@@ -117,7 +117,7 @@ observed constraint: deep 1:1 Santosh time is scarce. So:
 | V3 | "T-Lift / bone bag" real procedure name + description | Mitch → McCarty | The McCarty differentiation page |
 | V4 | SI-fusion clinical ownership (Varghese tryout vs. Munk/iFuse legacy content) | Mitch | The SI-fusion page's surgeon module |
 | V5 | Medical-director attribution conflict (Salar vs. Zamorano in live snippets); Zamorano SHP page existence; Munk/Yacisen locations | Mitch / practice ops | Meet-the-spine-team module |
-| V6 | Canonical/redirect state of all duplicate URL pairs (crawl was index-based) | Paul (live check) | The 301 consolidation plan in `spine-semantic-model.md` |
+| V6 | Canonical/redirect state of all duplicate URL pairs (crawl was index-based) | Paul (live check) | The canonical consolidation plan (NO redirects) in `spine-semantic-model.md` |
 
 ---
 
@@ -153,7 +153,7 @@ evidence bar for each claim type before it's published or used to prioritize wor
 | **Katie** | ASC/scheduling reality (access promises); triage co-design; spine-first protocol context | Content aligned to what ops can deliver; flags when marketing over-promises |
 | **Kelly** | Call-center scripts; the 2023/24 Oddo workflows; triage tags (D5) | The same consumer-language map the website uses (omni-channel rule, §7) |
 | **Kristen** | PL/B2B field intel: what referrers ask, which procedures they don't know we do | Referrer-facing versions of differentiation pages (one-pagers from the same source content) |
-| **Paul** | Synergy Content backend; GSC integration; canonical/301 execution; V6 live check | Consolidation plan executed; plugin moved to the practice Claude account; Liine signal bug fix (with Joe) |
+| **Paul** | Synergy Content backend; GSC integration; canonical-tag execution — NO redirects; V6 live check | Consolidation plan executed; plugin moved to the practice Claude account; Liine signal bug fix (with Joe) |
 | **Randall** | Gap-analysis runs; title/meta fixes **spine-first**; plugin content drafts | **Bounded runway:** works inside Synergy Content on titles/metas + plugin-guided content; no architecture changes, no off-page campaigns; config changes logged and reviewed (Paul or Joe) — per Paul's own governance concern |
 | **Anna** | Surgical-scheduling rebuild (Sept 1) | What "book surgery" actually looks like post-rebuild → informs treatment-page expectations |
 | **Steve (physician)** | The Claude triage decision tree (built; not rolled out) | Rollout co-owned Santosh + Joe; his tree's branches inform the site's symptom-entry logic |
@@ -178,7 +178,7 @@ GPT, and he pitched the Reddit/WebMD seeding idea (rejected below). Hence the bo
 
 | Pipeline step | Agent | Produces | Human gate after |
 |---|---|---|---|
-| Topic/cluster research from GSC exports | `seo-specialist` | Cluster priorities, cannibalization map, the 301 consolidation plan | Paul executes (V6 first); Joe approves |
+| Topic/cluster research from GSC exports | `seo-specialist` | Cluster priorities, cannibalization map, the canonical consolidation plan | Paul executes (V6 first); Joe approves |
 | Condition/treatment/guide page drafts (Grade 6–8, from Mitch-approved clinical outline) | `content-creator` | Draft copy per `spine-page-templates.md` | **Mitch clinical review → compliance → publish** |
 | Symptom-entry + FAQ answer blocks; PAA targeting | `aeo-specialist` | Question-formatted sections + FAQ schema content | Clinical review (same gate) |
 | AI Overviews / citability formatting | `aio-specialist` + `geo-specialist` | Citable summaries, entity consistency, llms.txt recommendation | Joe |
@@ -256,8 +256,12 @@ Change the map in one place; every channel updates. The map itself lives in
    technical fixes, and the 90-day condition-hub program (the five condition pages now exist —
    the July index shows their problem is duplication/authority, not absence). Our lane:
    differentiation content, routing intelligence, the decision/guide layer, consolidation
-   *specification* (Paul executes), and E-E-A-T apparatus. Share the 301 plan with Cardinal
-   before execution.
+   *specification* (Paul executes), and E-E-A-T apparatus. Share the canonical plan with
+   Cardinal before execution — and tell them explicitly: **NO redirects (Joe directive,
+   7/21)**; consolidation is canonical-tag only, and their technical queue must not 301 our URLs.
+10. **No redirects, ever (standing directive — Joe, 7/21).** Consolidation = rel=canonical +
+   internal-link discipline + noindex for parameter junk; twins stay live; legacy pages get
+   rebranded in place, never deleted to a 404. Full mechanics: `spine-semantic-model.md` §B2.
 
 ---
 
@@ -277,5 +281,5 @@ the Maslak hour · guide #1 ("Do I need spine surgery?") outlined per the semant
 symptom-entry layer, and the guide layer per `spine-semantic-model.md` §C2 priorities.
 
 **Success measure (through D6):** non-branded spine impressions + clicks rising (D2), qualified
-spine calls rising (D5), consolidation losses avoided (no ranking regressions on 301'd pairs),
+spine calls rising (D5), consolidation losses avoided (no ranking regressions on canonicalized pairs),
 and the elective-spine funnel finally contributing organic NPs — reviewed on the 4-week OODA.

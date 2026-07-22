@@ -30,14 +30,14 @@ addition needs gates.**
 | Randall | E-E-A-T **scaffold** on new/updated pages (block layout, empty reviewer/date slots) | Names drop in the moment Mitch answers A5 |
 | **Joe (+ agents)** | Consumer-language map **v1 draft** from GSC queries + paid search terms | Goes to Mitch for validation (A7), not creation |
 | Joe (+ content-creator agent) | Draft the six guide outlines + condition-page symptom openings + hub wireframe copy | All queue for Mitch's Wednesday batch |
-| Joe (+ seo-specialist agent) | 301/consolidation map **draft** conditioned on V6's two possible outcomes | Execute only after V6 |
+| Joe (+ seo-specialist agent) | canonical/consolidation map **draft** (NO redirects) conditioned on V6's two possible outcomes | Execute only after V6 |
 | Joe | Message-match map (winning paid intents → correct LP + H1) → hand to Cardinal | They own the paid restructure |
 | Joe | GBP listing hygiene audit — **separate listings track, not part of the website program; Troy GBP + Oakland MRI explicitly excluded from any blending** (Joe 7/21) | Listings already convert (~375+ sessions) |
 | Joe | Rater8 export of spine-relevant reviews → pre-screen queue for the D-lane | Screen criteria in register §9; compliance does final pass |
 | Joe | Re-export Ads reports month-segmented + GA4 unfiltered (all sessions) | Clean baselines; spec in the paid analysis §7 |
 
 ### What we do NOT do without gates
-No new clinical claims, no outcome numbers, no testimonials live, no 301 execution before V6,
+No new clinical claims, no outcome numbers, no testimonials live, no canonical execution before V6 — and NO redirects ever (Joe directive),
 no paid-bid changes before conversion values are fixed, no Arabic pages before the Salar
 decision, no off-page seeding (rejected — pr-specialist owns the compliant alternative).
 

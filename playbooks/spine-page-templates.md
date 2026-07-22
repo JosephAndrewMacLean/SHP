@@ -328,7 +328,7 @@ Element order:
 
 - WordPress + Rank Math + the Synergy Content plugin (now GSC-connected; moving to the
   practice's Claude account). **Cardinal owns technical/schema deployment — hand them the
-  schema content specs and the 301 map; don't double-implement.**
+  schema content specs and the canonical map (NO redirects — Joe directive); don't double-implement.**
 - Template/dev changes: **Paul**. Titles/metas + plugin-guided content: **Randall** (bounded
   runway; config changes logged). Clinical/compliance gates per the process doc before any
   publish.

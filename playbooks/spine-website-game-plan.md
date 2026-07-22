@@ -42,7 +42,7 @@ Initiative numbers reference `spine-semantic-model.md` §C2.
 |---|---|---|---|
 | **W0 — Unblock** | Jul 21–27 | Verifications fired, baselines cut, interviews booked | V1–V6, D3 request |
 | **W1 — Pilot + plumbing** | Jul 28–Aug 10 | Endoscopic page (pilot), consolidation plan, language map v1, hub wireframe | 1, 2, 6 (spec) |
-| **W2 — Consolidate + rescue** | Aug 4–24 (overlaps W1) | 301 tranche 1, hub rebuild live, 6 conditions rescued, SI fusion + T-Lift pages, guides #1–2 | 1, 3, 4, 5, 7 |
+| **W2 — Consolidate + rescue** | Aug 4–24 (overlaps W1) | Canonical tranche 1, hub rebuild live, 6 conditions rescued, SI fusion + T-Lift pages, guides #1–2 | 1, 3, 4, 5, 7 |
 | **GATE 1** | **Aug 30** | See §5 scoreboard | — |
 | **W3 — Deepen** | Sept 1–21 | Team module + matching guide, remaining guides, hyperlocal tranche, learning-hub refresh, CCM-candidacy content | 7, 8, 9, 10 |
 | **W4 — Prove** | Sept 22–30 | Rebrand purge done, full-funnel measurement readout | 11 |
@@ -67,7 +67,7 @@ Initiative numbers reference `spine-semantic-model.md` §C2.
   `content-creator` draft (Grade 6–8, template §3.4) → **Wed 7/30 cage-match clinical review**
   → compliance → Paul publishes → measurement hooks live. **Log the elapsed time of every
   gate** — this throughput number sizes everything after it.
-- `seo-specialist` consolidation plan finalized from V6 results (301 map per semantic model §B2)
+- `seo-specialist` consolidation plan finalized from V6 results (canonical map per semantic model §B2 — NO redirects)
   → **shared with Cardinal before execution** (they own technical deployment; no collisions).
 - Consumer-language map v1 (triage list + GSC query language) validated by Mitch → shared to
   Kelly (scripts) and the triage-tree build (Santosh + Joe).
@@ -77,8 +77,8 @@ Initiative numbers reference `spine-semantic-model.md` §C2.
   stays frozen (no bid changes on broken tracking — standing rule).
 
 ### W2 · Aug 4–24 — Consolidate + rescue
-- **301 tranche 1** (hub twin, stenosis ×3→1, sciatica twin, microdiscectomy ×3→1) executed by
-  Paul, **content migrated before redirecting** (McKenzie/endoscopic/3-T MRI copy) · rankings
+- **Canonical tranche 1** (hub twin, stenosis ×3→1, sciatica twin, microdiscectomy ×3→1 — rel=canonical only, twins stay live) executed by
+  Paul, **content migrated before canonicalizing** (McKenzie/endoscopic/3-T MRI copy) · rankings
   watched daily for a week per pair — any regression pauses the tranche.
 - **Hub rebuild live:** dual entry + symptom router (Mitch-approved red-flag block),
   differentiation band (V2-cleared claims only), condition grid, guide rail. Team module ships
@@ -116,8 +116,8 @@ Initiative numbers reference `spine-semantic-model.md` §C2.
   pages (~$10K) as a W4+ item; if not, the gate held and nothing was wasted.
 
 ### W4 · Sept 22–30 — Prove
-- Rebrand/staleness purge completed (legacy Mendelson posts redirected — the chronic-pain post
-  still pulling 162 visits gets a redirect, not a delete; Kornblum testimonial re-attributed or
+- Rebrand/staleness purge completed (legacy Mendelson posts rebranded in place — the chronic-pain post
+  still pulling 162 visits gets updated in place, never deleted or redirected; Kornblum testimonial re-attributed or
   replaced; stale Munk copy fixed).
 - Full-funnel readout built for Gate 2: baseline → Sept 30 on every §5 metric, plus the
   gate-chain throughput log (how fast clinical intelligence now reaches the website).
@@ -159,7 +159,7 @@ numbers the week baselines land, not before (no invented targets).
 
 | Risk | Mitigation |
 |---|---|
-| **V6 shows canonicals already partially correct/wrong in unexpected ways** | The 301 plan is drafted *against* V6 findings, not before them; tranche execution with per-pair ranking watch and a pause rule |
+| **V6 shows canonicals already partially correct/wrong in unexpected ways** | The canonical plan is drafted *against* V6 findings, not before them; tranche execution with per-pair ranking watch and a pause rule |
 | **Physician hours don't materialize** (Maslak/Varghese/McCarty interviews) | Booked via Mitch with Gautam's mandate behind them ("tell him Scott and Gautam are looking for ways for you to add differentiated value"); fallback: Mitch supplies the clinical content directly |
 | **Consolidation dents the branded workhorses** (Salar bio #1 sitewide, neck-fracture page) | Both flagged KEEP/protect; no URL work near them without Paul supervision |
 | **Liine signal bug persists** | Judge on GSC + Liine call quality; paid bidding stays frozen on broken tracking (standing rule from the 90-day plan) |

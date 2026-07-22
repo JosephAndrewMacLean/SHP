@@ -36,7 +36,7 @@ From the templates doc; a page "performs" when all eight hold:
 | Page (evidence) | Today | Gaps | Actions | Mitch input | Santosh/Joel input |
 |---|---|---|---|---|---|
 | `/specialty/spine-neck-back` — **the live hub** (GA4: 322 converting sessions; 41 kw, mostly branded incl. "mendelson kornblum") | Receives paid + organic; branded-only visibility | No symptom entry; no differentiation band; no team module; no guide rail; branded-dependent | **Rebuild as the pillar** per template §3.1 once V6 confirms it as the winner | Triage buzzwords for the symptom router; sign-off on red-flag block; differentiation claims review | D1 condition volumes (grid order); GA4 fixes so hub conversion is measurable |
-| `/specialties/spine-back-and-neck/` + 10 children (index: parents the surgical procedure pages; GA4: **1 session**) | Indexed, likely pre-migration leftover | Entire branch ranks for zero top-100 kw | **V6 decides direction**; migrate child procedure content into canon, then 301 | — | — |
+| `/specialties/spine-back-and-neck/` + 10 children (index: parents the surgical procedure pages; GA4: **1 session**) | Indexed, likely pre-migration leftover | Entire branch ranks for zero top-100 kw | **V6 decides direction**; migrate child procedure content into canon, then canonical the twins (no redirect) | — | — |
 | `/specialty/spine-neck-back/sterling-heights` (GA4 11 sessions; paid $3,017) · `/livonia` (GA4 4) | Live city×spine LPs | Not on the location template; access promises unverified | Rebuild per template §3.2 as the paid-LP variants (message-match "spine specialist {city}") | Confirm which spine physicians sit at each site, days | Liine per-location call tagging |
 
 ## 3. CONDITION pages (the six canons + twins)
@@ -49,11 +49,11 @@ weighting waits on **V1** (Joel Carr: verify "98% from 3–4 terms" + NP volume 
 |---|---|---|---|
 | Spinal stenosis | `/conditions/spinal-stenosis` + `/conditions/lumbar-stenosis` + S3 twin — **×3** | ≤1 kw each; best red-flag block on site (bladder/bowel) | Consolidate ×3→1; link MILD page (it ranks, 33 kw, unlinked); standardize its red-flag block sitewide |
 | Sciatica | `/conditions/sciatica` + S3 twin | **0 kw** despite good "symptom not condition" copy | Consolidate; symptom opening; guide rail ("options in order") |
-| Herniated disc | `/conditions/herniated-disc` + root orphan `/herniated-disc-microdiscectomy/` (paid $485/conv) | Split ranking; orphan carries endoscopic copy | Migrate copy → canon + endoscopic page; 301 orphan; repoint its ads |
-| Degenerative disc disease | `/conditions/degenerative-disc-disease` + legacy LP `/degenerative-disc-disease-treatment/` (paid **$1,304/conv**, 0.96%; holds 3-T MRI copy) | Legacy LP burns paid money | Migrate 3-T MRI copy; 301; repoint ads to canon |
+| Herniated disc | `/conditions/herniated-disc` + root orphan `/herniated-disc-microdiscectomy/` (paid $485/conv) | Split ranking; orphan carries endoscopic copy | Migrate copy → canon + endoscopic page; canonical the orphan to the canon (no redirect); repoint its ads |
+| Degenerative disc disease | `/conditions/degenerative-disc-disease` + legacy LP `/degenerative-disc-disease-treatment/` (paid **$1,304/conv**, 0.96%; holds 3-T MRI copy) | Legacy LP burns paid money | Migrate 3-T MRI copy; canonical to canon (no redirect); repoint ads |
 | Spondylolisthesis | `/conditions/spondylolisthesis` + S3 twin | Near-zero | Consolidate; E-E-A-T; spectrum links |
 | Radiculopathy / pinched nerve | `/conditions/cervical-radiculopathy` only (clinical-term title) | Symptom-searchers can't find it | **NEW patient-language "pinched nerve" entry**; altLabel work per model §A3.3 |
-| (Protect) Neck fracture / back fracture | `/conditions/neck-fracture-broken-neck` (132 kw/388 visits, #4 sitewide) + S3 twin cannibalizing | The template's proof it can rank | KEEP/protect; 301 the S3 twin into it carefully |
+| (Protect) Neck fracture / back fracture | `/conditions/neck-fracture-broken-neck` (132 kw/388 visits, #4 sitewide) + S3 twin cannibalizing | The template's proof it can rank | KEEP/protect; canonical the S3 twin to it carefully (no redirect) |
 
 **Mitch:** assign one physician reviewer per condition; validate red-flag wording; approve
 symptom-language maps. **Santosh/Joel:** V1 + D1 volumes; GSC non-branded per condition
@@ -109,7 +109,7 @@ the surgeon modules; CODE outcomes when publishable (V2 substitute).
   education content converts when it meets a real question (and it's an **ancillary/imaging**
   topic: Mitch's domain — see §9).
 - Existing decision-page proof: the knee replacement guide (root post) — the pattern for spine guides.
-- Legacy: Mendelson-era posts (one still pulls 162 visits — **redirect, don't delete**);
+- Legacy: Mendelson-era posts (one still pulls 162 visits — **rebrand in place — never delete or redirect**);
   Lasater sports post (phase 2 decision); dated stock refresh per model §A3.6.
 - **Missing (all NEW):** the six guides (model §A3.7): Do I need spine surgery? · First spine
   surgery · **Failed back surgery / adjacent segment (I3b)** · Sciatica options in order ·
@@ -189,7 +189,7 @@ superiority framing ("best spine surgeon in the Midwest" cannot run as-is).
 | Priority | Work | Cardinal finding it clears | Lanes it draws on |
 |---|---|---|---|
 | **P0 — risk now** | V2 substantiation sweep: unsourced stats + superlative testimonial down/replaced | Substantiation/FTC risk (confirmed live on 7+ URLs) | C1, D3, D5 |
-| **P1 — the unlock** | URL consolidation + canonicals (V6 → 301 map) | 4-to-6 parallel structures; condition hubs built but strangled (their own 90-day work depends on it) | A2 (SI URLs), Paul |
+| **P1 — the unlock** | URL consolidation + canonicals (V6 → canonical map — NO redirects) | 4-to-6 parallel structures; condition hubs built but strangled (their own 90-day work depends on it) | A2 (SI URLs), Paul |
 | **P2** | E-E-A-T apparatus on every clinical page | YMYL failure — zero "medically reviewed" markers (also feeds their AIO workstream) | A5, A6, B7 |
 | **P3** | Symptom-entry layer (hub router + condition openings + pinched-nerve entry) | "Built for the already-diagnosed" — zero symptom URLs sitewide | A4, A6, A7 |
 | **P4** | Decision/guide layer (6 guides) | Zero decision-support pages (knee page = proof) | A5, B1 interim, C4 |
