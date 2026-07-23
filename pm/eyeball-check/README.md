@@ -1,0 +1,21 @@
+# Per-PL Spine Eyeball Files — the quick vetting pass
+
+**Created 2026-07-23 (from the Joe/Kristen call).** One file per PL, spine accounts only,
+tabbed **Tier 1 / Tier 2 / Tier 3 / Prospects**, sorted highest spine yield first.
+
+**How it works (the whole process):**
+1. Each PL opens THEIR file only. Yellow column = **EYEBALL: Spine-worthy?** — dropdown
+   **Yes / No / Not sure**. One-line note only where it helps ("has own spine," "closed,"
+   "Medicaid-heavy," "worth a look").
+2. **MMC Company ID is column A on every row** — everything joins back to Map My Customers
+   with zero name-matching.
+3. Red-shaded **Auto Pre-Flag** cells = accounts our filters already suspect (pediatric,
+   in-house spine, competitor, addiction, Medicaid-likely). Confirm or override — the PL's
+   read wins.
+4. Files come back to Joe → the **"No" rows auto-generate an MMC import that tags them into
+   Kristen's new "Non-Spine" group** (per the call — group, not a field, so nothing else is
+   disturbed), and the plan/routes/app regenerate without them. "Not sure" rows go to the
+   Jul 31 review with Joel.
+
+This is the lightweight PL-facing step of the validation sprint (`pm/joel-validation/`):
+PLs touch these simple files; Joel's master workbook is where consolidation happens.
