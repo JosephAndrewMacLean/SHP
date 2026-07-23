@@ -33,7 +33,7 @@ timeframe once you've had a chance to review.
 
 Thank you,
 
-**[YOUR NAME]**
+Joe MacLean
 [Title]
 Synergy Health Partners
 jmaclean@synergyhealth.org

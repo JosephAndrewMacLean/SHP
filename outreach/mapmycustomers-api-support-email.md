@@ -8,7 +8,7 @@
 
 Hello MapMyCustomers Team,
 
-My name is [YOUR NAME], and I manage [marketing / digital operations] at **Synergy
+My name is Joe MacLean, and I manage [marketing / digital operations] at **Synergy
 Health Partners**, a healthcare organization currently using MapMyCustomers to support
 our field-based physician-liaison (PL) and referral-development work.
 
@@ -95,7 +95,7 @@ Thank you for your help — I look forward to hearing from you.
 
 Best regards,
 
-**[YOUR NAME]**
+Joe MacLean
 [Title]
 Synergy Health Partners
 jmaclean@synergyhealth.org

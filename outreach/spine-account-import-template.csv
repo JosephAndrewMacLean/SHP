@@ -1,0 +1,4 @@
+Account Name,Address,City,State,Zip,Phone,Website,Primary Contact,Spine Fit,Spine Not-a-Fit Reason,Spine Feeder Type,Spine Volume Potential (NP/mo),Relationship Strength,Nearest Spine Site,Miles to Nearest Spine Site,Payer Fit
+EXAMPLE — Metro Detroit Pain & Spine Care,1234 Main St,Troy,MI,48084,248-555-0100,example.com,Dr. Jane Smith,A – Priority,,Pain Management,6–10,Active referrer,Troy,4,Strong (commercial/Medicare/Auto/WC)
+EXAMPLE — Oakland Family Medicine,5678 Elm Rd,Rochester,MI,48307,248-555-0155,example.com,Office Manager,B – Develop,,PCP / Family Med,1–2,Aware,Rochester,7,Mixed
+EXAMPLE — Beaumont Orthopedic Group,9010 Oak Blvd,Southfield,MI,48075,248-555-0199,example.com,,Not a Fit,Competitor-owned / employed,Ortho (non-spine),0,None (cold),Southfield,3,Strong (commercial/Medicare/Auto/WC)
