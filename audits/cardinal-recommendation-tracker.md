@@ -36,6 +36,16 @@ from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
 >   flags 2 wrong entries.
 > - ❌ robots.txt AI-crawler block unchanged (re-verified: ClaudeBot/GPTBot/
 >   Google-Extended still disallowed; WAF 403s AI user agents incl. on /llms.txt).
+> - 🚨 **REGRESSION (late evening 2026-07-22): robots.txt itself is now behind the
+>   Cloudflare challenge.** All day it was openly fetchable; as of the late-evening
+>   check, a plain fetch of `/robots.txt` returns the "Just a moment…" JS challenge
+>   (managed challenge). Consequence: unverified crawlers and tools can no longer
+>   read crawl directives at all (verified Googlebot/Bingbot are typically exempt,
+>   but this can't be confirmed from here). If a Cloudflare change was just made to
+>   address the AI-bot items, the toggle tightened rather than loosened —
+>   **`/robots.txt` and `/llms.txt` need WAF skip rules / challenge exemption**, and
+>   the security level should be checked (an "Under Attack"-style setting sweeping
+>   all paths would look exactly like this).
 > - No new Semrush crawl since Jul 21 (issue counts stand).
 
 ---
