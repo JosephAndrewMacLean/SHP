@@ -7,3 +7,7 @@
 client_secret*.json
 application_default_credentials.json
 *.pem
+
+# Python bytecode
+__pycache__/
+*.pyc

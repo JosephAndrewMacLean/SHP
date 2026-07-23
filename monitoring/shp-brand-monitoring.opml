@@ -103,5 +103,8 @@
       <outline type="rss" text="Reddit · Michigan Orthopaedic Specialists" title="Reddit · Michigan Orthopaedic Specialists" xmlUrl="https://www.reddit.com/search.rss?q=%22Michigan+Orthopaedic+Specialists%22&amp;sort=new&amp;limit=50" htmlUrl="https://www.reddit.com/search.rss?q=%22Michigan+Orthopaedic+Specialists%22&amp;sort=new&amp;limit=50"/>
       <outline type="rss" text="Reddit · Detroit Bone and Joint" title="Reddit · Detroit Bone and Joint" xmlUrl="https://www.reddit.com/search.rss?q=%22Detroit+Bone+and+Joint%22+OR+%22Detroit+Bone+%26+Joint%22&amp;sort=new&amp;limit=50" htmlUrl="https://www.reddit.com/search.rss?q=%22Detroit+Bone+and+Joint%22+OR+%22Detroit+Bone+%26+Joint%22&amp;sort=new&amp;limit=50"/>
     </outline>
+    <outline text="Owned/legacy channels — Video (YouTube)" title="Owned/legacy channels — Video (YouTube)">
+      <outline type="rss" text="YouTube · Legacy · Mendelson Orthopedics (@mendelsonortho)" title="YouTube · Legacy · Mendelson Orthopedics (@mendelsonortho)" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC5SlFVjHx7W1CiDpM0aP1hA" htmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC5SlFVjHx7W1CiDpM0aP1hA"/>
+    </outline>
   </body>
 </opml>

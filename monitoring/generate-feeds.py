@@ -17,8 +17,11 @@ Run:  python3 generate-feeds.py
 No third-party dependencies (stdlib only).
 """
 
+import os
 from urllib.parse import quote_plus
 from xml.sax.saxutils import escape as xml_escape
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
 
 # ----------------------------------------------------------------------------
 # Brand + roster source terms (kept in sync with brand/ and provider roster)
@@ -247,6 +250,42 @@ add(C, "Reddit · Michigan Orthopaedic Specialists",
     rsearch('"Michigan Orthopaedic Specialists"'))
 add(C, "Reddit · Detroit Bone and Joint",
     rsearch('"Detroit Bone and Joint" OR "Detroit Bone & Joint"'))
+
+
+# === OWNED / LEGACY VIDEO CHANNELS (YouTube) ===============================
+# YouTube publishes a per-channel RSS feed (no auth):
+#   https://www.youtube.com/feeds/videos.xml?channel_id=<UC...>
+# The @handle is NOT the channel_id — you need the UC... id. How to find it:
+#   1. Open the channel (e.g. https://www.youtube.com/@mendelsonortho)
+#   2. View page source (Ctrl+U) and search for  "channelId"  or  "externalId"
+#      -> copy the UC... value that follows.
+# Then add (label, "UC...") tuples below and re-run this script.
+YOUTUBE_CHANNELS = [
+    ("Legacy · Mendelson Orthopedics (@mendelsonortho)", "UC5SlFVjHx7W1CiDpM0aP1hA"),
+    # ("Synergy Health Partners", "UC__________________"),  # add if/when a Synergy-branded channel exists
+]
+if YOUTUBE_CHANNELS:
+    Cy = "Owned/legacy channels — Video (YouTube)"
+    for _label, _cid in YOUTUBE_CHANNELS:
+        add(Cy, f"YouTube · {_label}",
+            f"https://www.youtube.com/feeds/videos.xml?channel_id={_cid}")
+
+
+# === EXTRA FEEDS (Google Alerts RSS + any manual adds) =====================
+# Anything in extra-feeds.tsv is folded into the OPML on regeneration. This is
+# where Google Alerts RSS URLs go (see monitoring/google-alerts-setup.md).
+# Format, one feed per line (TAB-separated); '#' comments and blanks ignored:
+#   Folder <TAB> Title <TAB> URL
+_extra = os.path.join(_HERE, "extra-feeds.tsv")
+if os.path.exists(_extra):
+    with open(_extra, encoding="utf-8") as _fh:
+        for _line in _fh:
+            _line = _line.rstrip("\n")
+            if not _line.strip() or _line.lstrip().startswith("#"):
+                continue
+            _parts = _line.split("\t")
+            if len(_parts) >= 3:
+                add(_parts[0].strip(), _parts[1].strip(), _parts[2].strip())
 
 
 # ---- Writers ----------------------------------------------------------------

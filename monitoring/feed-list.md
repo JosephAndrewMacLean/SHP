@@ -185,3 +185,8 @@
   <https://www.reddit.com/search.rss?q=%22Michigan+Orthopaedic+Specialists%22&sort=new&limit=50>
 - **Reddit · Detroit Bone and Joint**
   <https://www.reddit.com/search.rss?q=%22Detroit+Bone+and+Joint%22+OR+%22Detroit+Bone+%26+Joint%22&sort=new&limit=50>
+
+## Owned/legacy channels — Video (YouTube)
+
+- **YouTube · Legacy · Mendelson Orthopedics (@mendelsonortho)**
+  <https://www.youtube.com/feeds/videos.xml?channel_id=UC5SlFVjHx7W1CiDpM0aP1hA>

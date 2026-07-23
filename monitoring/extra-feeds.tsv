@@ -1,0 +1,10 @@
+# extra-feeds.tsv — paste additional RSS feeds here; they fold into the OPML on
+# regeneration (run: python3 generate-feeds.py). This is where GOOGLE ALERTS RSS
+# URLs go — see google-alerts-setup.md for how to create them.
+#
+# Format: one feed per line, TAB-separated (not spaces):
+#   Folder <TAB> Title <TAB> URL
+# Lines starting with '#' and blank lines are ignored.
+#
+# Example (delete the leading '#' and replace with your real Google Alerts URL):
+# Tier 1 · Brand mentions — Google Alerts	Google Alert · "Synergy Health Partners"	https://www.google.com/alerts/feeds/00000000000000000000/0000000000000000000

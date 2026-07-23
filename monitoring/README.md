@@ -163,14 +163,48 @@ recurring patient questions; SEO/AEO → question phrasings to target; marketing
   will still be the noisiest. Prune if it's not earning its keep.
 - **Reddit rate-limits** aggressive polling. Let your reader poll on its default
   schedule (usually hourly); don't set it to sub-minute refresh.
-- **Add-ons that need a login (not in the OPML):**
-  - **Google Alerts** — create alerts for the same brand/surgeon terms and choose
-    "Deliver to: RSS feed" to get an alert-grade feed you can drop into the same reader.
-  - **YouTube** — the legacy `@mendelsonortho` channel can be watched via
-    `https://www.youtube.com/feeds/videos.xml?channel_id=<ID>` once you grab its
-    channel ID.
-  - **Reviews (Google/Healthgrades/Yelp)** don't offer RSS; those are covered via the
-    Google Business Profile MCP (`list_reviews`) and Semrush, not this file.
+- **Reviews (Google/Healthgrades/Yelp)** don't offer RSS; those are covered via the
+  Google Business Profile connection (`list_reviews`) and Semrush, not this file.
+
+---
+
+## Automated daily digest (GitHub Actions — no reader required)
+
+If you'd rather have mentions **pushed to you** than skim a reader, the repo ships a
+workflow that emails / Slacks a daily roundup. It runs on GitHub's runners (open
+internet), so it works despite this workspace's network policy.
+
+- **Workflow:** `.github/workflows/brand-monitor-digest.yml` — runs **daily at 13:00 UTC
+  (~9am ET)**, plus a manual *Run workflow* button. It executes `monitoring/digest.py`,
+  which fetches all 72 feeds, keeps items from the last 24h, and renders a foldered digest.
+- **Delivery is opt-in via repo secrets** (*Settings → Secrets and variables → Actions*):
+  - **Slack:** add `SLACK_WEBHOOK_URL` (a Slack Incoming Webhook).
+  - **Email:** add `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `EMAIL_FROM`,
+    `EMAIL_TO` (any SMTP provider — Gmail app password, SendGrid, SES, etc.).
+  - **No secrets?** The digest still renders to the Actions **run summary** — open the
+    run to read it. Good for a no-setup trial.
+- By default it stays quiet when there's nothing new (set `SEND_WHEN_EMPTY=true` to
+  always ping). Failed feeds (usually transient Reddit rate-limiting) are listed at the
+  bottom and simply retry next run.
+- **Try it now:** Actions tab → *Brand & Provider Monitoring Digest* → *Run workflow*.
+
+The digest reads the same OPML, so it stays in sync automatically — regenerate the OPML
+and the digest picks up the changes on its next run.
+
+---
+
+## Add-on layers (optional)
+
+- **Google Alerts (RSS):** a second, independent listening layer that catches editorial
+  web pages the news feeds miss. One-time ~10-min setup in **`google-alerts-setup.md`** —
+  create the alerts, paste their RSS URLs into **`extra-feeds.tsv`**, rerun the generator,
+  and they fold into both the reader and the digest.
+- **YouTube:** the legacy **Mendelson Orthopedics** channel (`@mendelsonortho`,
+  `channel_id UC5SlFVjHx7W1CiDpM0aP1hA`) is already wired in as a video feed. Add a
+  Synergy-branded channel by dropping its `UC…` id into `YOUTUBE_CHANNELS` in
+  `generate-feeds.py` and rerunning.
+- **Reviews:** Google/Healthgrades/Yelp have no RSS — use the Google Business Profile
+  connection (`list_reviews`) + Semrush for those.
 
 ---
 
@@ -178,7 +212,12 @@ recurring patient questions; SEO/AEO → question phrasings to target; marketing
 
 | File | Purpose |
 |---|---|
-| `shp-brand-monitoring.opml` | **Import this** into your RSS reader — all 46 feeds, foldered |
+| `shp-brand-monitoring.opml` | **Import this** into your RSS reader — all 72 feeds, foldered |
 | `feed-list.md` | Human-readable index of every feed with clickable URLs |
 | `generate-feeds.py` | Source of truth — edit + rerun to change/extend the feed set |
+| `extra-feeds.tsv` | Paste Google Alerts (or any) RSS URLs here; merged into the OPML on regen |
+| `digest.py` | The daily-digest engine (run by the GitHub Action; stdlib only) |
+| `google-alerts-setup.md` | How to create Google Alerts as RSS and fold them in |
 | `README.md` | This guide |
+
+The digest workflow itself lives at `.github/workflows/brand-monitor-digest.yml`.

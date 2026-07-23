@@ -1,0 +1,56 @@
+name: Brand & Provider Monitoring Digest
+
+# Daily RSS digest of brand + provider + metro-Detroit-spine mentions.
+# Runs on GitHub-hosted runners (open internet), so it works even though the
+# Claude workspace's network policy can't reach news.google.com / reddit.com.
+#
+# Delivery is opt-in via repo secrets (Settings → Secrets and variables → Actions):
+#   SLACK_WEBHOOK_URL                         -> post digest to a Slack channel
+#   SMTP_HOST, SMTP_PORT, SMTP_USER,
+#   SMTP_PASS, EMAIL_FROM, EMAIL_TO           -> email the digest
+# With no secrets set, the digest still renders to the Actions run summary.
+
+on:
+  schedule:
+    - cron: "0 13 * * *"   # 13:00 UTC daily ≈ 9:00am ET (8:00am during EST)
+  workflow_dispatch:       # manual "Run workflow" button
+    inputs:
+      lookback_hours:
+        description: "Hours to look back"
+        required: false
+        default: "24"
+      send_when_empty:
+        description: "Send Slack/email even if nothing new (true/false)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: brand-monitor-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build and send digest
+        env:
+          LOOKBACK_HOURS: ${{ github.event.inputs.lookback_hours || '24' }}
+          SEND_WHEN_EMPTY: ${{ github.event.inputs.send_when_empty || 'false' }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python3 monitoring/digest.py
