@@ -97,11 +97,15 @@ Google sources reuse it; each just needs the account granted access on that prod
   [help.liine.com/en/articles/15627134-liine-mcp-user-guide](https://help.liine.com/en/articles/15627134-liine-mcp-user-guide)
   (surfaced 2026-07-22; the guide isn't fetchable from this environment yet — the
   domain is outside the network allowlist).
-- **To connect:** (1) ✅ `liine.com` domains allowlisted 2026-07-22; (2) ⚠️ the guide
-  article turned out to be **behind Liine's customer login** (help center returns 401
-  anonymously) — someone with a Liine login must open it and copy the setup section
-  (MCP endpoint/command + credential instructions) into the workspace; (3) then wire
-  per the guide (remote MCP or `.mcp.json` entry). Their
+- **✅ Major update 2026-07-22:** independent of the MCP, **Liine's GA4 integration is
+  now live** (configured all-events/no-filters — deliberately, so no ingestion blind
+  spots). `Liine_*` events (AIC, FTIC, NP/EP lead calls, booked calls, **online
+  bookings**) flow into GA4 and are queryable via the GA4 MCP. Follow-ups: mark
+  `Liine_NP_BC_or_BF` + `Liine_NP_OB` as GA4 Key Events (GA4 Admin → Events).
+- **Liine MCP (deeper access — call-level records):** (1) ✅ `liine.com` domains
+  allowlisted; (2) ⚠️ the guide article is **behind Liine's customer login** — someone
+  with a Liine login must copy the setup section (MCP endpoint/command + credential
+  instructions) into the workspace; (3) then wire per the guide. Their
   [API docs](https://api-docs.liine.com/) remain the fallback.
 - ⚠️ **PHI:** Liine records patient calls. Only de-identified aggregates enter this
   repo (counts, rates, channels) — same standard as `pm/spine-imaging-pain-call-review-pack.md`.

@@ -18,6 +18,26 @@ the same data Cardinal used.
 **Legend:** ✅ done/confirmed · 🟠 partial/in motion · ❌ not done · ❓ not verifiable
 from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
 
+> **Re-check 2026-07-22 (evening) — deltas since the morning pass:**
+> - ✅ **Liine → GA4 event forwarding went LIVE** (configured by Joe today, all events,
+>   no filters). `Liine_*` events now flow into GA4: AIC 67 · FTIC 38 · NP_LC 19 ·
+>   **NP_OB 8 (online booking — the action that was 0/non-functional at audit)** ·
+>   NP_BC_or_BF 5, in the first ~day. Cardinal's #1 immediate paid item ("finalize
+>   Liine scheduler tracking") is substantially delivered; booked-patient truth is
+>   now queryable next to sessions/campaigns in GA4. **Next:** mark `Liine_NP_BC_or_BF`
+>   and `Liine_NP_OB` as GA4 Key Events; confirm Ads-side values with Blue Ox.
+> - ✅ **GBP APIs enabled** (diagnose moved SERVICE_DISABLED → RESOURCE_EXHAUSTED).
+>   Pipeline now waits only on Google's access-form approval.
+> - ✅ Staging still locked (HTTP 401 re-verified).
+> - 🟠 **Spine hub field CLS now reads 0.10 [FAST]** — at the pass line (was 0.11 this
+>   afternoon); homepage still 0.12. Field data trails ~28 days, so keep watching.
+> - 🟠 Sitemap evidence improved: GSC reports **0 errors / 0 warnings**, 343 URLs
+>   submitted (audit: 412 with 128 non-indexable) — cleanup has landed; Semrush still
+>   flags 2 wrong entries.
+> - ❌ robots.txt AI-crawler block unchanged (re-verified: ClaudeBot/GPTBot/
+>   Google-Extended still disallowed; WAF 403s AI user agents incl. on /llms.txt).
+> - No new Semrush crawl since Jul 21 (issue counts stand).
+
 ---
 
 ## 1. Headline status (what the data says today)
@@ -110,7 +130,7 @@ Cardinal's own "What success looks like at Day 30," statused:
 | # | Phase-1 success criterion | Status | Evidence / unlock |
 |---|---|---|---|
 | 1 | CWV regression identified & fixed; Good URLs recovering | 🟠 **LCP fixed, CLS still failing** | PSI field data 2026-07-22: LCP p75 recovered to 1.36–1.57s (was 3.5s); lab 52–79/100 (was 28). **CLS p75 = 0.11–0.12 on all 5 pages — just over the 0.10 pass line — so pages still aren't "Good."** Remaining fix is Cardinal's named CLS cause: 203 images missing width/height (template change) + testimonial-slider DOM. Rankings haven't recovered yet (GSC position 13.3) — re-ranking lags; finish CLS to complete the recovery case. |
-| 2 | Zero 404s + zero 301s in XML sitemap | 🟠 | Semrush: 2 wrong sitemap pages + 8 pages 4xx remain (was 10+17+10) |
+| 2 | Zero 404s + zero 301s in XML sitemap | 🟠 **trending done** | GSC (Jul 22): sitemap_index 0 errors / 0 warnings, 343 submitted (audit: 412 incl. 128 non-indexable) — cleanup landed. Semrush still flags 2 wrong entries + 8 pages 4xx. |
 | 3 | Zero CSP errors; Clarity + Cloudflare data restored | ❓ | Needs page-level check (env blocks site) or ask Paul: is Clarity data flowing? |
 | 4 | logo.svg <20KB; Hotjar deferred; LCP improved | ❓ | PSI API key answers all three in one call |
 | 5 | Security headers on 100% of pages | ❓ | Needs direct fetch (blocked) — one `curl -I` from any laptop |
@@ -168,7 +188,7 @@ eyeball from any browser. Priority lane first:
 
 | Cardinal item | Status | Evidence / measure |
 |---|---|---|
-| Finalize Liine conversion tracking (incl. scheduler/online-booking) | 🟠 | Liine live (June); GA4 shows intent events; Liine "OB" online-booking action was 0-volume in audit — confirm with **Blue Ox (Shaun/Jake)** + Liine |
+| Finalize Liine conversion tracking (incl. scheduler/online-booking) | ✅ **major step 2026-07-22** | Liine→GA4 forwarding live (all events, unfiltered): `Liine_NP_OB` online booking **firing (8/day-one)** — was 0/non-functional at audit. Remaining: mark NP_BC_or_BF + NP_OB as GA4 Key Events; Blue Ox confirms Ads-side values. |
 | Reduce "Website – New Patient Intent" value $125→$5; recalc ROAS targets | ❓ | Ads-side setting — needs Google Ads read access (official Ads MCP) or **Blue Ox** confirmation. GA4 still shows 3,981 `new_patient_intent`/30d firing. Note: the Ads account is run by **Blue Ox Digital**, not Cardinal — Cardinal's paid audit is recommendations about Blue Ox's account. |
 | Switch existing-patient conversions to Secondary | ❓ | Same — Ads-side |
 | GEO/campaign consolidation decision (per-location vs shared budget vs per-service-line) | ❌ decision not visible yet | GA4 campaign names (Jul 22) still show the audited per-location structure: BOD-Ortho-Livonia, BOD-Ortho-SH, BOD-NBS-Livonia, BOD-NBS-SH, BOD-Hand-SH/Livonia, BOD-Podiatry-Southfield, BOD-Port Huron, BOD-Branded, BOD-Doctors |
