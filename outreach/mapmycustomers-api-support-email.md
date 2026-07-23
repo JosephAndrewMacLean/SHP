@@ -41,8 +41,13 @@ or point us to:
 - Which objects and fields are exposed — e.g., accounts/companies, contacts, activities,
   territories, routes, check-ins, and **custom fields**.
 - **Custom fields specifically:** can we create and read/write our own fields (e.g., a
-  "Spine fit" status or a "not a fit for spine" flag) via the API and via bulk import,
-  and can we filter/segment/report on those fields?
+  "Spine fit" status or a "not a fit for spine" flag, plus small follow-up fields like a
+  "Next Action" text field and a "Next Action Date" date field) via the API and via bulk
+  import, and can we filter/segment/report on those fields — including a report of
+  accounts whose "Next Action Date" is due this week?
+- **Activity types & notes:** can we configure the activity/check-in types (Visit / Call /
+  Email / Drop-off) and report on visit counts by type, separately from the free-text
+  notes on each activity?
 - **Bulk import:** the supported ways to import and *update* records in volume —
   spreadsheet/CSV upload, the API, or both — including how records are matched on import
   to avoid creating duplicates.

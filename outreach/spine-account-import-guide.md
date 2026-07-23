@@ -55,11 +55,33 @@ with the right columns. Just replace the three EXAMPLE rows with real practices.
    mapping each column to the matching field).
 3. After import, spot-check 5–10 accounts in MMC to confirm the spine tags came through.
 
+## After import: what to write in your visit notes
+
+The import gets practices *into* MMC. From there, **every visit or call gets a note** so we
+have a running history. Log it as an **Activity / Check-in** in MMC (not on the account
+itself), and set the **Activity Type** (Visit / Call / Email / Drop-off) so our visit
+counts stay accurate.
+
+Keep each note to about four lines:
+
+1. **Who I met** — name + role (e.g., "Dr. Patel, and Maria the office manager").
+2. **What we covered / what they said** — the substance ("they send spine to a competitor
+   out of habit; open to trying us").
+3. **Blocker or objection** — the reason they're not sending, if any ("worried about
+   wait times for a first appointment").
+4. **Next step** — what you committed to do next.
+
+**Put the follow-up itself in its own fields, not just the note**, so it shows up on a due
+list instead of getting lost:
+- `Next Action` — short text, e.g. "drop off referral pads"
+- `Next Action Date` — the date it's due
+
 ## Two rules that keep the data clean
 
 - **Never put the spine tag in the Notes field** — it can't be reported on. Always use the
-  columns above.
-- **No patient information anywhere** — practice-level details only (HIPAA).
+  columns/fields above.
+- **No patient information anywhere** — practice-level details only (HIPAA). Never a
+  patient name, condition, or story in a note.
 
 ---
 

@@ -93,9 +93,26 @@ the headline tag.
 | `Miles to Nearest Spine Site` | Number | Whole miles (drive distance) |
 | `Payer Fit` | Single-select | Strong (commercial/Medicare/Auto/WC) · Mixed · Weak (heavy HMO/Medicaid — verify) |
 
-> **Attribution guardrail.** Do **not** repurpose MMC's free-text/notes for the spine tag — that
-> field gets messy and can't be reported on. Use these structured fields only. This also keeps the
-> spine flag independent of the referring-physician data that billing overwrites in NextGen.
+### 2.4 Follow-up fields (keep next steps trackable, not buried in notes)
+
+So a PL can pull a "who owes a follow-up this week" list instead of hunting through visit
+notes, add two lightweight fields on the Account:
+
+| Field name | Type | Values / format |
+|---|---|---|
+| `Next Action` | Short text | e.g., "drop off referral pads," "confirm spine-provider Medicaid list" |
+| `Next Action Date` | Date | When the next step is due |
+
+Also use MMC's built-in **Activity Type** on each check-in (Visit / Call / Email / Drop-off)
+so visit *counts* stay clean and separate from the free-text of what happened.
+
+> **Notes vs. fields — the rule.** Visit history goes in the **Activity / Check-in note**
+> (who I met, what they said, the objection, the next step). Anything we want to filter or
+> report on — the spine tag, payer fit, the next action — goes in a **structured field**.
+> Do **not** repurpose MMC's free-text/notes for the spine tag: it gets messy and can't be
+> reported on. Keeping the spine flag structured also keeps it independent of the
+> referring-physician data that billing overwrites in NextGen. **No PHI in any note or
+> field — practice-level only.**
 
 ---
 
