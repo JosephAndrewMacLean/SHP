@@ -214,10 +214,12 @@ def _header(mentions, total_feeds):
     return p1, p2, p3, mix
 
 
-def render_md(mentions, total_feeds, failures):
+def render_md(mentions, total_feeds, failures, title="SHP Mention Board",
+              window_desc=None):
+    window_desc = window_desc or f"in the last {LOOKBACK_HOURS}h"
     p1, p2, p3, mix = _header(mentions, total_feeds)
-    out = [f"# SHP Mention Board — {NOW:%Y-%m-%d %H:%M UTC}", "",
-           f"**{len(mentions)} new mention(s)** in the last {LOOKBACK_HOURS}h across "
+    out = [f"# {title} — {NOW:%Y-%m-%d %H:%M UTC}", "",
+           f"**{len(mentions)} mention(s)** {window_desc} across "
            f"{total_feeds} feeds  ·  🔴 P1 **{len(p1)}**  ·  🟠 P2 **{len(p2)}**  ·  "
            f"⚪ P3 {len(p3)}", ""]
     out += [f"_Ranked by inferred patient-value (spine/ortho weighted highest; "
@@ -283,11 +285,13 @@ def render_slack(mentions, total_feeds):
     return "\n".join(parts)
 
 
-def render_html(mentions, total_feeds, failures):
+def render_html(mentions, total_feeds, failures, title="SHP Mention Board",
+                window_desc=None):
     import html as _h
+    window_desc = window_desc or f"in the last {LOOKBACK_HOURS}h"
     p1, p2, p3, mix = _header(mentions, total_feeds)
-    p = [f"<h2>SHP Mention Board — {NOW:%Y-%m-%d %H:%M UTC}</h2>",
-         f"<p><strong>{len(mentions)}</strong> new in {LOOKBACK_HOURS}h across "
+    p = [f"<h2>{_h.escape(title)} — {NOW:%Y-%m-%d %H:%M UTC}</h2>",
+         f"<p><strong>{len(mentions)}</strong> {_h.escape(window_desc)} across "
          f"{total_feeds} feeds · 🔴 P1 <strong>{len(p1)}</strong> · 🟠 P2 "
          f"<strong>{len(p2)}</strong> · ⚪ P3 {len(p3)}</p>",
          "<p style='color:#555'><em>Ranked by inferred patient-value (spine/ortho "

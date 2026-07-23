@@ -1,0 +1,51 @@
+name: Mention Backfill (one-time snapshot)
+
+# Pulls everything currently indexed across all feeds, scores + ranks it, and
+# publishes a starting snapshot. Runs on GitHub's runners (open internet), so it
+# works even though the Claude workspace can't reach the feed hosts.
+#
+# It runs WITHOUT needing a merge: the `push` trigger below fires when this file
+# or backfill.py lands on the feature branch. You can also re-run it anytime from
+# the Actions tab (once the file is on the default branch) via "Run workflow".
+#
+# Where to see results after a run:
+#   - Actions tab -> this run -> Summary  (the ranked board, rendered inline)
+#   - Actions tab -> this run -> Artifacts -> "mention-backfill" (CSV/MD/HTML)
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - claude/rss-brand-mentions-spine-surgeons-tbuplx
+    paths:
+      - monitoring/backfill.py
+      - monitoring/scoring.py
+      - monitoring/digest.py
+      - .github/workflows/backfill.yml
+
+permissions:
+  contents: read
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run backfill
+        env:
+          BACKFILL_MAX_PER_FEED: "25"
+        run: python3 monitoring/backfill.py
+
+      - name: Upload snapshot (CSV / MD / HTML)
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mention-backfill
+          path: monitoring/history/backfill-*
+          if-no-files-found: warn

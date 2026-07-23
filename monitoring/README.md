@@ -212,6 +212,32 @@ and the digest picks up the changes on its next run.
 
 ---
 
+## Where to access it & historical mentions
+
+**Where you see mentions:**
+1. **An RSS reader** (import the OPML) — a browsable, searchable inbox. This is also
+   where forward-going history lives: Inoreader retains + searches past items (free tier
+   keeps a limited window; paid keeps everything).
+2. **The daily board** — Slack / email (if secrets are set) or the **Actions run summary**.
+   Note: GitHub only runs the *scheduled* digest once the workflow is on the repo's
+   **default branch**, so the daily job goes live after this branch is merged.
+
+**Historical mentions — one-time backfill.** RSS is forward-looking (feeds only expose
+recent items, ~100 max), and the daily digest is a rolling 24h report that stores nothing.
+To get a starting snapshot of what's **indexed right now**, run the backfill:
+
+- **On GitHub (no merge needed):** `.github/workflows/backfill.yml` runs on **push to this
+  branch**, so it fires when `backfill.py` lands. See results in **Actions → the run →
+  Summary** (ranked board) and **Artifacts → `mention-backfill`** (CSV / MD / HTML).
+  Re-run anytime with *Run workflow* (once it's on the default branch).
+- **Locally (any open-internet machine):** `python3 monitoring/backfill.py` → writes
+  `monitoring/history/backfill-<date>.csv` (+ `.md` / `.html`). The CSV is the durable
+  archive — open in Excel/Sheets, sort by `score`, filter by `line`/`band`.
+- **It can't run inside the Claude workspace** — that network policy blocks the feed hosts.
+- **Limit:** backfill recovers what's *currently indexed*, not deep past mentions. Ongoing
+  history accrues from the daily digest going forward (ask me to add a persistent repo
+  archive if you want every run appended over time).
+
 ## Add-on layers (optional)
 
 - **Google Alerts (RSS):** a second, independent listening layer that catches editorial
