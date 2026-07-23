@@ -1,45 +1,85 @@
-# SHP Brand & Metro Detroit Spine-Surgeon Monitoring (RSS)
+# SHP Brand, Provider & Metro Detroit Spine-Surgeon Monitoring (RSS)
 
 A robust, no-cost, no-login listening net for **Synergy Health Partners** — every
-brand mention (current + legacy names), every spine-surgeon name mention, and the
-Reddit conversations where metro Detroit patients ask *"who's a good spine surgeon
-near me?"*
+brand mention (current + legacy names), **a mention watch on every provider on the
+roster by name**, and the Reddit conversations where metro Detroit patients ask
+*"who's a good spine surgeon near me?"*
 
 Everything here is built on **free, stable, auth-free RSS endpoints** (Google News,
 Bing News, Reddit). No API keys, no paid social-listening tool, no scraping. Import
-one file and you're listening.
+one file and you're listening. **71 feeds across 14 folders.**
 
 ---
 
 ## TL;DR — get listening in 2 minutes
 
 1. Open your RSS reader (Feedly, Inoreader, Readwise Reader, NetNewsWire, NewsBlur,
-   Miniflux, Feedbin — any of them).
+   Miniflux, Feedbin — any of them). No reader yet? See **Setup walkthrough** below.
 2. Import **`shp-brand-monitoring.opml`** (every reader has *Import OPML* — usually
    under Settings → Import, or "Add content → Import OPML").
-3. You now have **46 feeds in 8 folders**. Skim the Tier 1 folders daily, Tier 2
-   a few times a week, Tier 3 weekly.
+3. You now have **71 feeds in 14 folders**. Skim the Tier 1 / Provider folders daily,
+   Tier 2 a few times a week, Tier 3 weekly.
 
 That's it. Full clickable list of every feed is in **`feed-list.md`**.
 
 ---
 
-## What's being monitored (the 8 folders)
+## What's being monitored (the 14 folders)
 
-| Tier | Folder | What it catches |
+| Group | Folder | What it catches |
 |---|---|---|
-| **1** | Brand mentions — News/Web | "Synergy Health Partners", synergyhealth.org, and legacy **Mendelson Orthopaedic / Kornblum / mendelsonortho** across news + indexed web (Google + Bing) |
-| **1** | Brand mentions — Reddit | Any Reddit thread naming the brand (current or legacy) or linking the site |
-| **1** | Spine surgeons by name — News/Web | Varghese, Salar, Maslak, McCarty, Zamorano + the interventional-pain bench (Oddo, Kassa, Singh, Lee) |
-| **2** | Spine surgeons by name — Reddit | Same surgeons, last-name + "spine" on Reddit |
-| **2** | Metro Detroit spine discovery — Reddit | "spine surgeon Michigan", "back surgery Michigan", spinal fusion / sciatica / stenosis + Michigan — **the demand-signal folder** |
-| **2** | Local subreddits — Reddit | r/Detroit, r/Michigan, r/askDetroit scoped to surgeon/spine recs, plus new posts in r/troymi, r/RochesterMI, r/Livonia |
-| **2** | Condition subreddits — Reddit | r/backpain, r/Sciatica, r/spinalfusion, r/spine, r/Scoliosis, r/ChronicPain — filtered to **Michigan/Detroit only** so you don't drown in global posts |
-| **3** | Competitor intel | Michigan Orthopaedic Specialists, Detroit Bone & Joint (news + Reddit) |
+| **Brand** | Brand mentions — News/Web | "Synergy Health Partners", synergyhealth.org, and legacy **Mendelson Orthopaedic / Kornblum / mendelsonortho** across news + indexed web (Google + Bing) |
+| **Brand** | Brand mentions — Reddit | Any Reddit thread naming the brand (current or legacy) or linking the site |
+| **Providers** | Spine — News/Web | Individual feed per surgeon: Varghese, Salar, Maslak, McCarty, Zamorano |
+| **Providers** | Pain (interventional spine) — News/Web | Oddo, Kassa, Singh, Lee (heavily qualified — common name) |
+| **Providers** | Orthopedics / joint / sports — News/Web | The four Mendelsons, Bhullar, Mayo (excl. "Mayo Clinic"), Yacisen |
+| **Providers** | Hand & wrist — News/Web | Kyle Bohm |
+| **Providers** | Foot & ankle (podiatry) — News/Web | Klein, Sorensen, R. Leff, Green, F. Leff |
+| **Providers** | Primary care & sports chiro — News/Web | Abood + chiros (Fox, Elwart, Truscott) |
+| **Providers** | Reddit (mentions by service line) | One grouped Reddit feed per line — every provider name OR'd |
+| **Providers** | Allied health — News/Web | PT / PTA / OT / PA-C, grouped (completeness; low-signal, prune freely) |
+| **Discovery** | Metro Detroit spine discovery — Reddit | "spine surgeon Michigan", "back surgery Michigan", fusion / sciatica / stenosis + Michigan — **the demand-signal folder** |
+| **Local** | Local subreddits — Reddit | r/Detroit, r/Michigan, r/askDetroit scoped to surgeon/spine recs, plus new posts in r/troymi, r/RochesterMI, r/Livonia |
+| **Condition** | Condition subreddits (MI/Detroit only) — Reddit | r/backpain, r/Sciatica, r/spinalfusion, r/spine, r/Scoliosis, r/ChronicPain — filtered to **Michigan/Detroit only** |
+| **Competitor** | Competitor intel | Michigan Orthopaedic Specialists, Detroit Bone & Joint (news + Reddit) |
+
+**Provider coverage = the whole roster.** Every physician (MD/DO/DPM) gets an
+individual news feed — they're the ones with press/review/profile footprints worth
+watching one-by-one. Each service line gets one grouped Reddit feed (name mentions
+like *"saw Dr. Maslak, great spine surgeon"*). Allied health (PT/OT/PA-C) is included
+in grouped news feeds for completeness, but is individually low-signal — prune those
+if they don't earn their keep.
 
 Why three sources instead of one: Google News and Bing News index different corners
-of the web, and Reddit isn't in either news index — so brand/surgeon coverage is
+of the web, and Reddit isn't in either news index — so brand/provider coverage is
 deliberately redundant. If one source misses a mention, another usually catches it.
+
+---
+
+## Setup walkthrough (Inoreader — recommended; Feedly similar)
+
+You need an RSS reader account once; then it polls all 71 feeds forever. **Inoreader**
+is the best fit here (free tier works; supports OPML folders, keyword *rules*, and
+email/Slack/Telegram alerts on new matches). Feedly works the same way for import.
+
+1. **Create an account** at inoreader.com (or feedly.com). Free tier is fine to start.
+2. **Import the OPML:** Inoreader → *Preferences → Import/Export → Choose file →*
+   upload `shp-brand-monitoring.opml → Import*. (Feedly: *Organize/Settings → Import
+   OPML*.) All 14 folders appear in the sidebar.
+3. **Set refresh + first fill:** feeds populate on the reader's schedule (Inoreader
+   free ≈ hourly). A brand-new search feed that shows nothing just means *no mention
+   yet* — that's the point.
+4. **(Optional) push alerts instead of skimming:** Inoreader → select the *Brand
+   mentions* and *Provider* folders → *Rules* → "when new article matches, send
+   email / mobile push / Slack." Now a fresh brand or provider mention pings you
+   without opening the reader.
+5. **(Optional) share the load:** in Inoreader, folders can be shared to teammates so
+   PR watches the brand/competitor folders and content watches the discovery folder.
+
+Prefer to run it as an automated digest into email/Slack instead of a reader? That's
+a small scheduled job (a GitHub Action on a cron) — ask and I'll wire it up; it needs
+to run somewhere with open internet, since this workspace's network policy can't reach
+these hosts (see *Known limits*).
 
 ---
 
@@ -92,14 +132,18 @@ These feeds are for **listening**, not public patient interaction. Per
 
 ## Suggested triage cadence
 
-- **Daily (5 min):** both Tier 1 brand folders + Tier 1 surgeon news. These are your
-  "did anyone say our name" alerts.
-- **2–3×/week:** Tier 2 "Metro Detroit spine discovery" and "Local subreddits" — this
-  is where **prospective spine patients** are literally asking for a surgeon
-  recommendation. Feeds directly into the spine-growth priority (see
-  `playbooks/spine-90day-plan.md`). Capture recurring questions as **content-creator**
-  FAQ/hub fodder and note competitor names that get recommended.
-- **Weekly:** Tier 3 competitor intel + condition subreddits.
+- **Daily (5 min):** both brand folders + the six provider **News/Web** folders and the
+  provider **Reddit** folder. These are your "did anyone say our name — or a provider's
+  name" alerts. (Best done as push-alert rules per the setup walkthrough, so you only
+  look when something lands.)
+- **2–3×/week:** "Metro Detroit spine discovery" and "Local subreddits" — this is where
+  **prospective spine patients** are literally asking for a surgeon recommendation. Feeds
+  directly into the spine-growth priority (see `playbooks/spine-90day-plan.md`). Capture
+  recurring questions as **content-creator** FAQ/hub fodder; note competitor names that
+  get recommended; a thread naming *our* surgeon well is PR/testimonial-lead material
+  (with consent).
+- **Weekly:** competitor intel + condition subreddits + the low-signal allied-health
+  folder.
 
 Tag anything actionable to the right owner: PR → reputation/press; content-creator →
 recurring patient questions; SEO/AEO → question phrasings to target; marketing-director

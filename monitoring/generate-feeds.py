@@ -92,31 +92,113 @@ add(C, "Reddit · Mendelson orthopedic / mendelsonortho",
 add(C, "Reddit · synergyhealth.org (link/domain mentions)",
     rsearch('synergyhealth.org'))
 
-# === TIER 1 — SPINE SURGEONS by name (news) =================================
-C = "Tier 1 · Spine surgeons by name — News/Web"
-add(C, "Google News · Jeffrey Varghese (spine)",
-    gnews('"Jeffrey Varghese" (spine OR surgeon OR Synergy OR Michigan)'))
-add(C, "Google News · Mohamed Salar (spine)",
-    gnews('"Mohamed Salar" (spine OR surgeon OR Synergy OR Michigan)'))
-add(C, "Google News · Joseph Maslak (spine)",
-    gnews('"Joseph Maslak" (spine OR surgeon OR Synergy OR Michigan)'))
-add(C, "Google News · Scott McCarty (spine)",
-    gnews('"Scott McCarty" (spine OR surgeon OR Synergy OR Michigan)'))
-add(C, "Google News · Lucia Zamorano (neurosurgeon/spine)",
-    gnews('"Lucia Zamorano" (neurosurgeon OR spine OR Synergy OR Michigan)'))
-add(C, "Google News · Interventional pain (Oddo / Kassa / Singh)",
-    gnews('("Anthony Oddo" OR "Brian Kassa" OR "Hanish Singh") '
-          '(pain OR spine OR Synergy OR Michigan)'))
-add(C, "Google News · Kevin Lee (pain, heavily qualified — noisy name)",
-    gnews('"Kevin Lee" (Synergy OR "pain management" OR "functional neurosurgery") Michigan'))
+# === PROVIDERS — mentions of ANY provider, by name =========================
+# Data-driven from brand/provider-roster-by-service-line.md.
+#   - Every PHYSICIAN (MD/DO/DPM) gets an individual news feed — they're the
+#     ones with public/press/review footprints worth an individual watch.
+#   - Each SERVICE LINE gets one grouped Reddit feed (name mentions on Reddit).
+#   - ALLIED HEALTH (PT/OT/PA) is covered by grouped news feeds for
+#     completeness (individually low-signal — prune freely).
+# Each physician query is geo/brand/specialty-qualified to kill false positives;
+# common names (Kevin Lee, Ben Mayo→Mayo Clinic, etc.) get extra qualifiers/excludes.
 
-# === TIER 2 — SPINE SURGEONS by name (Reddit) ==============================
-C = "Tier 2 · Spine surgeons by name — Reddit"
-add(C, "Reddit · Varghese spine",  rsearch('Varghese spine'))
-add(C, "Reddit · Maslak spine",    rsearch('Maslak spine'))
-add(C, "Reddit · Salar spine",     rsearch('Salar spine'))
-add(C, "Reddit · McCarty spine surgeon", rsearch('McCarty spine surgeon'))
-add(C, "Reddit · Zamorano neurosurgeon", rsearch('Zamorano neurosurgeon OR Zamorano spine'))
+# (line_label, specialty_context_term, [(full_name, extra_qualifier, exclude_phrase)])
+PROVIDER_LINES = [
+    ("Spine", "spine", [
+        ("Jeffrey Varghese", "surgeon", ""),
+        ("Mohamed Salar", "surgeon", ""),
+        ("Joseph Maslak", "surgeon", ""),
+        ("Scott McCarty", "surgeon", ""),
+        ("Lucia Zamorano", "neurosurgeon", ""),
+    ]),
+    ("Pain (interventional spine)", '"pain management"', [
+        ("Anthony Oddo", "", ""),
+        ("Brian Kassa", "", ""),
+        ("Hanish Singh", "", ""),
+        ("Kevin Lee", '"functional neurosurgery"', ""),   # very common name
+    ]),
+    ("Orthopedics / joint / sports", "orthopedic", [
+        ("Jeffrey Mendelson", "", ""),
+        ("David Mendelson", "", ""),
+        ("Stephen Mendelson", "", ""),
+        ("Alice Mendelson", "", ""),
+        ("Preetinder Bhullar", "arthroplasty", ""),
+        ("Ben Mayo", '"sports medicine"', '"Mayo Clinic"'),  # collides w/ Mayo Clinic
+        ("Joseph Yacisen", '"sports medicine"', ""),
+    ]),
+    ("Hand & wrist", "hand", [
+        ("Kyle Bohm", "surgeon", ""),
+    ]),
+    ("Foot & ankle (podiatry)", "podiatr", [
+        ("Jeffrey Klein", "", ""),
+        ("Kevin Sorensen", "", ""),
+        ("Randy Leff", "", ""),
+        ("Kristina Green", "", ""),
+        ("Fred Leff", "", ""),
+    ]),
+    ("Primary care & sports chiro", "", [
+        ("Tony Abood", '"family medicine"', ""),
+        ("Ashley Fox", "chiropractic", ""),   # common name
+        ("Francis Elwart", "chiropractic", ""),
+        ("Kyle Truscott", "chiropractic", ""),
+    ]),
+]
+
+
+def provider_news_query(name, ctx, extra, exclude):
+    quals = ["Synergy", "Mendelson", "Michigan", "Detroit"]
+    if ctx:
+        quals.append(ctx)
+    if extra:
+        quals.append(extra)
+    q = f'"{name}" ({" OR ".join(quals)})'
+    if exclude:
+        q += f" -{exclude}"
+    return q
+
+
+_prov_reddit = []
+for _line, _ctx, _members in PROVIDER_LINES:
+    Cn = f"Providers · {_line} — News/Web"
+    for _name, _extra, _excl in _members:
+        add(Cn, f"Google News · {_name}",
+            gnews(provider_news_query(_name, _ctx, _extra, _excl)))
+    _prov_reddit.append((_line, " OR ".join(f'"{n}"' for n, _e, _x in _members)))
+
+# Grouped Reddit feeds — one per service line (kept together in one folder)
+Crp = "Providers — Reddit (mentions by service line)"
+for _line, _q in _prov_reddit:
+    add(Crp, f"Reddit · {_line} providers", rsearch(_q))
+
+# Allied health (PT / OT / PA-C) — grouped news feeds, completeness/low-signal
+ALLIED = [
+    ("Physical therapy (PT / DPT)", [
+        "Cullen Lane", "Edyta Jagustin", "Beth Wilkins", "Simon Gappe",
+        "Chris Kakos", "Maria Marcaida-Gorospe", "Sue Cash", "Fatema Taher",
+        "Crystal Langholff", "Noah Kueber", "Amy Mazurek", "Kennie Brenner",
+        "Mark Monton",
+    ]),
+    ("PT assistants (PTA)", [
+        "Carol Arakelian", "Elaina Homer", "Ian Zaporski", "Sue Piotrowski",
+        "Tiffany Hepworth", "Tony Badia", "Kathleen Blashfield", "Laura Winowiecki",
+    ]),
+    ("Hand / occupational therapy (OT / CHT)", [
+        "Amy Hauxwell", "Loretta Assalone", "Max Castoreno", "Aaron Wienczak",
+    ]),
+    ("Physician assistants (PA-C) — group 1", [
+        "Caitlin Rogers", "Elizabeth Zachow", "Andrew Cox", "Brittany Miller",
+        "Samantha Houle", "Hayley Foster", "Evan VandenBosch", "Cassidy Ebach",
+    ]),
+    ("Physician assistants (PA-C) — group 2", [
+        "Adelisa Zahirovic", "Pearl Dua", "Kelley Gray-Allen", "Larisa Joeright",
+        "Spencer Poshadlo", "Elaine McCallister", "Mitch Misiak",
+    ]),
+]
+Ca = "Providers · Allied health — News/Web (low-signal, prune freely)"
+for _label, _names in ALLIED:
+    _or = " OR ".join(f'"{n}"' for n in _names)
+    add(Ca, f"Google News · {_label}",
+        gnews(f"({_or}) (Synergy OR Mendelson OR Michigan)"))
 
 # === TIER 2 — METRO DETROIT SPINE DISCOVERY (Reddit sitewide) ==============
 # Where prospective patients ask "who's a good spine surgeon near Detroit?"

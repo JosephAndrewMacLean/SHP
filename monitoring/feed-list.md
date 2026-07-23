@@ -28,35 +28,103 @@
 - **Reddit · synergyhealth.org (link/domain mentions)**
   <https://www.reddit.com/search.rss?q=synergyhealth.org&sort=new&limit=50>
 
-## Tier 1 · Spine surgeons by name — News/Web
+## Providers · Spine — News/Web
 
-- **Google News · Jeffrey Varghese (spine)**
-  <https://news.google.com/rss/search?q=%22Jeffrey+Varghese%22+%28spine+OR+surgeon+OR+Synergy+OR+Michigan%29&hl=en-US&gl=US&ceid=US:en>
-- **Google News · Mohamed Salar (spine)**
-  <https://news.google.com/rss/search?q=%22Mohamed+Salar%22+%28spine+OR+surgeon+OR+Synergy+OR+Michigan%29&hl=en-US&gl=US&ceid=US:en>
-- **Google News · Joseph Maslak (spine)**
-  <https://news.google.com/rss/search?q=%22Joseph+Maslak%22+%28spine+OR+surgeon+OR+Synergy+OR+Michigan%29&hl=en-US&gl=US&ceid=US:en>
-- **Google News · Scott McCarty (spine)**
-  <https://news.google.com/rss/search?q=%22Scott+McCarty%22+%28spine+OR+surgeon+OR+Synergy+OR+Michigan%29&hl=en-US&gl=US&ceid=US:en>
-- **Google News · Lucia Zamorano (neurosurgeon/spine)**
-  <https://news.google.com/rss/search?q=%22Lucia+Zamorano%22+%28neurosurgeon+OR+spine+OR+Synergy+OR+Michigan%29&hl=en-US&gl=US&ceid=US:en>
-- **Google News · Interventional pain (Oddo / Kassa / Singh)**
-  <https://news.google.com/rss/search?q=%28%22Anthony+Oddo%22+OR+%22Brian+Kassa%22+OR+%22Hanish+Singh%22%29+%28pain+OR+spine+OR+Synergy+OR+Michigan%29&hl=en-US&gl=US&ceid=US:en>
-- **Google News · Kevin Lee (pain, heavily qualified — noisy name)**
-  <https://news.google.com/rss/search?q=%22Kevin+Lee%22+%28Synergy+OR+%22pain+management%22+OR+%22functional+neurosurgery%22%29+Michigan&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Jeffrey Varghese**
+  <https://news.google.com/rss/search?q=%22Jeffrey+Varghese%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+spine+OR+surgeon%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Mohamed Salar**
+  <https://news.google.com/rss/search?q=%22Mohamed+Salar%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+spine+OR+surgeon%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Joseph Maslak**
+  <https://news.google.com/rss/search?q=%22Joseph+Maslak%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+spine+OR+surgeon%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Scott McCarty**
+  <https://news.google.com/rss/search?q=%22Scott+McCarty%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+spine+OR+surgeon%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Lucia Zamorano**
+  <https://news.google.com/rss/search?q=%22Lucia+Zamorano%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+spine+OR+neurosurgeon%29&hl=en-US&gl=US&ceid=US:en>
 
-## Tier 2 · Spine surgeons by name — Reddit
+## Providers · Pain (interventional spine) — News/Web
 
-- **Reddit · Varghese spine**
-  <https://www.reddit.com/search.rss?q=Varghese+spine&sort=new&limit=50>
-- **Reddit · Maslak spine**
-  <https://www.reddit.com/search.rss?q=Maslak+spine&sort=new&limit=50>
-- **Reddit · Salar spine**
-  <https://www.reddit.com/search.rss?q=Salar+spine&sort=new&limit=50>
-- **Reddit · McCarty spine surgeon**
-  <https://www.reddit.com/search.rss?q=McCarty+spine+surgeon&sort=new&limit=50>
-- **Reddit · Zamorano neurosurgeon**
-  <https://www.reddit.com/search.rss?q=Zamorano+neurosurgeon+OR+Zamorano+spine&sort=new&limit=50>
+- **Google News · Anthony Oddo**
+  <https://news.google.com/rss/search?q=%22Anthony+Oddo%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+%22pain+management%22%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Brian Kassa**
+  <https://news.google.com/rss/search?q=%22Brian+Kassa%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+%22pain+management%22%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Hanish Singh**
+  <https://news.google.com/rss/search?q=%22Hanish+Singh%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+%22pain+management%22%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Kevin Lee**
+  <https://news.google.com/rss/search?q=%22Kevin+Lee%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+%22pain+management%22+OR+%22functional+neurosurgery%22%29&hl=en-US&gl=US&ceid=US:en>
+
+## Providers · Orthopedics / joint / sports — News/Web
+
+- **Google News · Jeffrey Mendelson**
+  <https://news.google.com/rss/search?q=%22Jeffrey+Mendelson%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+orthopedic%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · David Mendelson**
+  <https://news.google.com/rss/search?q=%22David+Mendelson%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+orthopedic%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Stephen Mendelson**
+  <https://news.google.com/rss/search?q=%22Stephen+Mendelson%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+orthopedic%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Alice Mendelson**
+  <https://news.google.com/rss/search?q=%22Alice+Mendelson%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+orthopedic%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Preetinder Bhullar**
+  <https://news.google.com/rss/search?q=%22Preetinder+Bhullar%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+orthopedic+OR+arthroplasty%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Ben Mayo**
+  <https://news.google.com/rss/search?q=%22Ben+Mayo%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+orthopedic+OR+%22sports+medicine%22%29+-%22Mayo+Clinic%22&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Joseph Yacisen**
+  <https://news.google.com/rss/search?q=%22Joseph+Yacisen%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+orthopedic+OR+%22sports+medicine%22%29&hl=en-US&gl=US&ceid=US:en>
+
+## Providers · Hand & wrist — News/Web
+
+- **Google News · Kyle Bohm**
+  <https://news.google.com/rss/search?q=%22Kyle+Bohm%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+hand+OR+surgeon%29&hl=en-US&gl=US&ceid=US:en>
+
+## Providers · Foot & ankle (podiatry) — News/Web
+
+- **Google News · Jeffrey Klein**
+  <https://news.google.com/rss/search?q=%22Jeffrey+Klein%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+podiatr%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Kevin Sorensen**
+  <https://news.google.com/rss/search?q=%22Kevin+Sorensen%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+podiatr%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Randy Leff**
+  <https://news.google.com/rss/search?q=%22Randy+Leff%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+podiatr%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Kristina Green**
+  <https://news.google.com/rss/search?q=%22Kristina+Green%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+podiatr%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Fred Leff**
+  <https://news.google.com/rss/search?q=%22Fred+Leff%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+podiatr%29&hl=en-US&gl=US&ceid=US:en>
+
+## Providers · Primary care & sports chiro — News/Web
+
+- **Google News · Tony Abood**
+  <https://news.google.com/rss/search?q=%22Tony+Abood%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+%22family+medicine%22%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Ashley Fox**
+  <https://news.google.com/rss/search?q=%22Ashley+Fox%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+chiropractic%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Francis Elwart**
+  <https://news.google.com/rss/search?q=%22Francis+Elwart%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+chiropractic%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Kyle Truscott**
+  <https://news.google.com/rss/search?q=%22Kyle+Truscott%22+%28Synergy+OR+Mendelson+OR+Michigan+OR+Detroit+OR+chiropractic%29&hl=en-US&gl=US&ceid=US:en>
+
+## Providers — Reddit (mentions by service line)
+
+- **Reddit · Spine providers**
+  <https://www.reddit.com/search.rss?q=%22Jeffrey+Varghese%22+OR+%22Mohamed+Salar%22+OR+%22Joseph+Maslak%22+OR+%22Scott+McCarty%22+OR+%22Lucia+Zamorano%22&sort=new&limit=50>
+- **Reddit · Pain (interventional spine) providers**
+  <https://www.reddit.com/search.rss?q=%22Anthony+Oddo%22+OR+%22Brian+Kassa%22+OR+%22Hanish+Singh%22+OR+%22Kevin+Lee%22&sort=new&limit=50>
+- **Reddit · Orthopedics / joint / sports providers**
+  <https://www.reddit.com/search.rss?q=%22Jeffrey+Mendelson%22+OR+%22David+Mendelson%22+OR+%22Stephen+Mendelson%22+OR+%22Alice+Mendelson%22+OR+%22Preetinder+Bhullar%22+OR+%22Ben+Mayo%22+OR+%22Joseph+Yacisen%22&sort=new&limit=50>
+- **Reddit · Hand & wrist providers**
+  <https://www.reddit.com/search.rss?q=%22Kyle+Bohm%22&sort=new&limit=50>
+- **Reddit · Foot & ankle (podiatry) providers**
+  <https://www.reddit.com/search.rss?q=%22Jeffrey+Klein%22+OR+%22Kevin+Sorensen%22+OR+%22Randy+Leff%22+OR+%22Kristina+Green%22+OR+%22Fred+Leff%22&sort=new&limit=50>
+- **Reddit · Primary care & sports chiro providers**
+  <https://www.reddit.com/search.rss?q=%22Tony+Abood%22+OR+%22Ashley+Fox%22+OR+%22Francis+Elwart%22+OR+%22Kyle+Truscott%22&sort=new&limit=50>
+
+## Providers · Allied health — News/Web (low-signal, prune freely)
+
+- **Google News · Physical therapy (PT / DPT)**
+  <https://news.google.com/rss/search?q=%28%22Cullen+Lane%22+OR+%22Edyta+Jagustin%22+OR+%22Beth+Wilkins%22+OR+%22Simon+Gappe%22+OR+%22Chris+Kakos%22+OR+%22Maria+Marcaida-Gorospe%22+OR+%22Sue+Cash%22+OR+%22Fatema+Taher%22+OR+%22Crystal+Langholff%22+OR+%22Noah+Kueber%22+OR+%22Amy+Mazurek%22+OR+%22Kennie+Brenner%22+OR+%22Mark+Monton%22%29+%28Synergy+OR+Mendelson+OR+Michigan%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · PT assistants (PTA)**
+  <https://news.google.com/rss/search?q=%28%22Carol+Arakelian%22+OR+%22Elaina+Homer%22+OR+%22Ian+Zaporski%22+OR+%22Sue+Piotrowski%22+OR+%22Tiffany+Hepworth%22+OR+%22Tony+Badia%22+OR+%22Kathleen+Blashfield%22+OR+%22Laura+Winowiecki%22%29+%28Synergy+OR+Mendelson+OR+Michigan%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Hand / occupational therapy (OT / CHT)**
+  <https://news.google.com/rss/search?q=%28%22Amy+Hauxwell%22+OR+%22Loretta+Assalone%22+OR+%22Max+Castoreno%22+OR+%22Aaron+Wienczak%22%29+%28Synergy+OR+Mendelson+OR+Michigan%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Physician assistants (PA-C) — group 1**
+  <https://news.google.com/rss/search?q=%28%22Caitlin+Rogers%22+OR+%22Elizabeth+Zachow%22+OR+%22Andrew+Cox%22+OR+%22Brittany+Miller%22+OR+%22Samantha+Houle%22+OR+%22Hayley+Foster%22+OR+%22Evan+VandenBosch%22+OR+%22Cassidy+Ebach%22%29+%28Synergy+OR+Mendelson+OR+Michigan%29&hl=en-US&gl=US&ceid=US:en>
+- **Google News · Physician assistants (PA-C) — group 2**
+  <https://news.google.com/rss/search?q=%28%22Adelisa+Zahirovic%22+OR+%22Pearl+Dua%22+OR+%22Kelley+Gray-Allen%22+OR+%22Larisa+Joeright%22+OR+%22Spencer+Poshadlo%22+OR+%22Elaine+McCallister%22+OR+%22Mitch+Misiak%22%29+%28Synergy+OR+Mendelson+OR+Michigan%29&hl=en-US&gl=US&ceid=US:en>
 
 ## Tier 2 · Metro Detroit spine discovery — Reddit
 
