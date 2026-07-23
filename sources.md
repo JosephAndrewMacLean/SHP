@@ -122,7 +122,27 @@ personnel sessions. Do not add them.*
 | Zocdoc | Booking channel (being de-emphasized per data) | Removal memo in `zocdoc` branch |
 | Notion / Otter | Docs + meeting record | Indexed above (§4–5) |
 
-## 7. How to keep this map alive
+## 7. Environments & other repos (where sessions run, and sibling codebases)
+
+**Claude environments** (compute containers — branches do NOT live here, the repo is the
+single meeting point): `SHP Marketing` (created Jul 22, 2026) and `Default`. Sessions from
+either environment push to the same GitHub repo, so §2's branch list is complete across both.
+**The only invisible work is a session that never committed/pushed** — if a conversation's
+output isn't in §2, reopen that session and have it commit and push.
+
+**Other repos on Joe's GitHub that appear Synergy-related** (names only — content not
+indexed until Joe confirms they're Synergy):
+- `synergy-elementor-templates` (May 2025) — Elementor page templates, presumably the prior
+  synergyhealth.org build
+- `hello-theme-child` (May 2025) — WordPress/Elementor child theme, likely the site theme —
+  confirm
+- `health-pay-launchpad` (Sep 2025, private) — possibly the direct-pay/bill-pay project
+  (Harmony Health Direct Pay / the payment.mendelsonortho.com rebrand item) — confirm
+
+Older repos (2019–2021 utility/email projects) look pre-Synergy and are left out per the
+privacy rule.
+
+## 8. How to keep this map alive
 
 End every working session by asking: did this session create a decision (→ `decisions.md`),
 an asset (→ §3), a data pull (→ dated folder), or a new source (→ §6)? Update the line here.
