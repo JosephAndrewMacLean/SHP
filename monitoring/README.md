@@ -168,15 +168,34 @@ recurring patient questions; SEO/AEO → question phrasings to target; marketing
 
 ---
 
+## The ranked Mention Board (scoring)
+
+The digest is **one consolidated board**, not 15 source folders. Every mention is
+scored **0–100** by *inferred value to landing new patients* and sorted into priority
+bands, so the team works the money signals first:
+
+- 🔴 **P1 — act today** (≥ 70) · 🟠 **P2 — this week** (40–69) · ⚪ **P3 — ambient** (< 40)
+- **Weighting (per the confirmed spine/ortho mandate):** spine & ortho patient-demand
+  score highest; **foot / hand / pain** carry a lower baseline but get a **partnership
+  boost**, because that's how those lines actually grow. Negative brand sentiment is
+  escalated to PR regardless of line.
+- Each row shows **Score · Line · Signal · Mention · Route** — the Route tells you who
+  works it (SEO/Content, Physician Liaison, PR, Marketing Director).
+
+Full rubric, weights, worked examples, and how to tune it: **`scoring-model.md`**
+(engine: `scoring.py`; `python3 scoring.py` prints a ranked self-test). Scores are a
+heuristic triage aid, not ground truth — a human decides.
+
 ## Automated daily digest (GitHub Actions — no reader required)
 
-If you'd rather have mentions **pushed to you** than skim a reader, the repo ships a
-workflow that emails / Slacks a daily roundup. It runs on GitHub's runners (open
-internet), so it works despite this workspace's network policy.
+If you'd rather have the board **pushed to you** than skim a reader, the repo ships a
+workflow that emails / Slacks it daily. It runs on GitHub's runners (open internet), so
+it works despite this workspace's network policy.
 
 - **Workflow:** `.github/workflows/brand-monitor-digest.yml` — runs **daily at 13:00 UTC
   (~9am ET)**, plus a manual *Run workflow* button. It executes `monitoring/digest.py`,
-  which fetches all 72 feeds, keeps items from the last 24h, and renders a foldered digest.
+  which fetches all 72 feeds, keeps items from the last 24h, **scores and ranks** them,
+  and renders the board.
 - **Delivery is opt-in via repo secrets** (*Settings → Secrets and variables → Actions*):
   - **Slack:** add `SLACK_WEBHOOK_URL` (a Slack Incoming Webhook).
   - **Email:** add `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `EMAIL_FROM`,
@@ -216,7 +235,9 @@ and the digest picks up the changes on its next run.
 | `feed-list.md` | Human-readable index of every feed with clickable URLs |
 | `generate-feeds.py` | Source of truth — edit + rerun to change/extend the feed set |
 | `extra-feeds.tsv` | Paste Google Alerts (or any) RSS URLs here; merged into the OPML on regen |
-| `digest.py` | The daily-digest engine (run by the GitHub Action; stdlib only) |
+| `digest.py` | The daily-board engine (fetch → score → rank → deliver; stdlib only) |
+| `scoring.py` | The Inferred Patient-Value scoring model (`python3 scoring.py` = self-test) |
+| `scoring-model.md` | The scoring rubric, weights, examples, and how to tune it |
 | `google-alerts-setup.md` | How to create Google Alerts as RSS and fold them in |
 | `README.md` | This guide |
 

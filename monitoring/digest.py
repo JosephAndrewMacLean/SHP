@@ -31,6 +31,9 @@ from email.utils import parsedate_to_datetime
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime, timezone, timedelta
+from collections import Counter
+
+import scoring  # local module (monitoring/ is on sys.path when run as a script)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OPML = os.path.join(HERE, "shp-brand-monitoring.opml")
@@ -154,11 +157,12 @@ def parse_feed(data):
 
 
 def collect():
+    """Fetch every feed, keep items in-window, dedup, and score each mention.
+    Returns (ranked_mentions, total_feeds, failures)."""
     groups = parse_opml(OPML)
-    sections, failures = [], []
-    total_new = total_feeds = 0
+    mentions, failures, seen = [], [], set()
+    total_feeds = 0
     for folder, feeds in groups:
-        hits = []
         for ftitle, url in feeds:
             total_feeds += 1
             try:
@@ -166,88 +170,157 @@ def collect():
             except Exception as e:  # noqa: BLE001
                 failures.append((ftitle, str(e)[:140]))
                 continue
-            fresh = [it for it in items if it["when"] and it["when"] >= CUTOFF]
-            fresh.sort(key=lambda x: x["when"], reverse=True)
-            if fresh:
-                hits.append((ftitle, fresh[:MAX_PER_FEED]))
-                total_new += len(fresh)
+            for it in items:
+                if not (it["when"] and it["when"] >= CUTOFF):
+                    continue
+                key = (it["link"] or it["title"]).strip().lower()
+                if key in seen:
+                    continue
+                seen.add(key)
+                m = {"folder": folder, "feed": ftitle, "title": it["title"],
+                     "link": it["link"], "when": it["when"]}
+                m.update(scoring.score(folder, ftitle, it["title"]))
+                mentions.append(m)
             time.sleep(0.7)  # be polite (Reddit rate-limits bursts)
-        if hits:
-            sections.append((folder, hits))
-    return sections, total_new, total_feeds, failures
+    mentions.sort(key=lambda m: (m["score"], m["when"] or NOW), reverse=True)
+    return mentions, total_feeds, failures
 
 
-# ---- renderers -------------------------------------------------------------
-def _stamp(it):
-    return it["when"].strftime("%b %d %H:%M UTC") if it["when"] else ""
+# ---- renderers (single consolidated, ranked board) -------------------------
+LL = scoring._LINE_LABEL
+SL = scoring._SIGNAL_LABEL
 
 
-def render_md(sections, total_new, total_feeds, failures):
-    lines = [f"# SHP brand & provider monitoring — {NOW:%Y-%m-%d %H:%M UTC}",
-             "",
-             f"**{total_new} new item(s)** in the last {LOOKBACK_HOURS}h "
-             f"across {total_feeds} feeds."]
-    if not total_new:
-        lines += ["", "_Nothing new in the window._"]
-    for folder, hits in sections:
-        lines += ["", f"## {folder}"]
-        for ftitle, items in hits:
-            lines.append(f"- **{ftitle}**")
-            for it in items:
-                stamp = f" — _{_stamp(it)}_" if it["when"] else ""
-                link = it["link"] or ""
-                lines.append(f"  - [{it['title']}]({link}){stamp}")
+def _bands(mentions):
+    return ([m for m in mentions if m["band"] == "P1"],
+            [m for m in mentions if m["band"] == "P2"],
+            [m for m in mentions if m["band"] == "P3"])
+
+
+def _src(feed):
+    for a, b in (("Google News · ", "GN "), ("Bing News · ", "BN "),
+                 ("Reddit · ", "RDT "), ("YouTube · ", "YT "),
+                 ("Google Alert · ", "GA ")):
+        feed = feed.replace(a, b)
+    return feed
+
+
+def _header(mentions, total_feeds):
+    p1, p2, p3 = _bands(mentions)
+    mix = ""
+    if mentions:
+        cl = Counter(m["line"] for m in mentions)
+        mix = " · ".join(f"{LL.get(k, k)} {v}" for k, v in cl.most_common())
+    return p1, p2, p3, mix
+
+
+def render_md(mentions, total_feeds, failures):
+    p1, p2, p3, mix = _header(mentions, total_feeds)
+    out = [f"# SHP Mention Board — {NOW:%Y-%m-%d %H:%M UTC}", "",
+           f"**{len(mentions)} new mention(s)** in the last {LOOKBACK_HOURS}h across "
+           f"{total_feeds} feeds  ·  🔴 P1 **{len(p1)}**  ·  🟠 P2 **{len(p2)}**  ·  "
+           f"⚪ P3 {len(p3)}", ""]
+    out += [f"_Ranked by inferred patient-value (spine/ortho weighted highest; "
+            f"foot/hand/pain via partnerships). Scores are heuristic — a triage aid._", ""]
+    if mix:
+        out += [f"_Line mix: {mix}_", ""]
+    if not mentions:
+        out += ["_Nothing new in the window._", ""]
+
+    def table(title, rows, cap=None):
+        if not rows:
+            return []
+        seg = [f"## {title}", "",
+               "| Score | Line | Signal | Mention | Route |",
+               "|--:|:--|:--|:--|:--|"]
+        for m in (rows[:cap] if cap else rows):
+            t = m["title"].replace("|", "∣")
+            neg = " ⚠" if m["mods"]["negative"] else ""
+            ment = f"[{t}]({m['link'] or ''})<br><sub>{_src(m['feed'])}</sub>"
+            seg.append(f"| {m['score']} | {LL.get(m['line'], m['line'])} | "
+                       f"{SL.get(m['signal'], m['signal'])}{neg} | {ment} | {m['route']} |")
+        if cap and len(rows) > cap:
+            seg.append(f"| | | | _+{len(rows) - cap} more P3 items (full board in the "
+                       f"Actions run)_ | |")
+        seg.append("")
+        return seg
+
+    out += table("🔴 P1 — act today", p1)
+    out += table("🟠 P2 — this week", p2)
+    out += table("⚪ P3 — ambient / FYI", p3, cap=20)
     if failures:
-        lines += ["", "## ⚠️ Feeds that failed this run",
-                  "_(transient — usually rate-limiting; they retry next run)_"]
-        for ftitle, err in failures[:25]:
-            lines.append(f"- {ftitle} — `{err}`")
-    return "\n".join(lines)
+        out += ["## ⚠️ Feeds that failed this run",
+                "_(transient — usually rate-limiting; they retry next run)_", ""]
+        out += [f"- {ft} — `{err}`" for ft, err in failures[:25]]
+    return "\n".join(out)
 
 
-def render_slack(sections, total_new, total_feeds, failures):
-    # Slack mrkdwn: <url|text>, *bold*
-    hdr = (f":mag: *SHP brand & provider monitoring* — {NOW:%Y-%m-%d %H:%M UTC}\n"
-           f"*{total_new}* new item(s) in the last {LOOKBACK_HOURS}h "
-           f"across {total_feeds} feeds.")
-    if not total_new:
+def render_slack(mentions, total_feeds):
+    p1, p2, p3, mix = _header(mentions, total_feeds)
+    hdr = (f":clipboard: *SHP Mention Board* — {NOW:%Y-%m-%d %H:%M UTC}\n"
+           f"*{len(mentions)}* new · 🔴 P1 *{len(p1)}* · 🟠 P2 *{len(p2)}* · "
+           f"⚪ P3 {len(p3)}  _(last {LOOKBACK_HOURS}h)_")
+    if not mentions:
         return hdr + "\n_Nothing new in the window._"
-    parts, budget = [hdr], 38000  # keep well under Slack's ~40k limit
-    used = len(hdr)
-    for folder, hits in sections:
-        block = [f"\n*{folder}*"]
-        for ftitle, items in hits:
-            block.append(f"• _{ftitle}_")
-            for it in items:
-                t = it["title"].replace("<", "").replace(">", "")
-                stamp = f"  ({_stamp(it)})" if it["when"] else ""
-                block.append(f"   ◦ <{it['link']}|{t}>{stamp}")
-        chunk = "\n".join(block)
-        if used + len(chunk) > budget:
-            parts.append("\n_…truncated — see the full digest in the GitHub Actions run._")
+    parts, used = [hdr], len(hdr)
+    for title, rows in (("🔴 *P1 — act today*", p1), ("🟠 *P2 — this week*", p2)):
+        if not rows:
+            continue
+        seg = ["\n" + title]
+        for m in rows:
+            t = m["title"].replace("<", "").replace(">", "")
+            seg.append(f"• `{m['score']:>3}` {LL.get(m['line'], m['line'])}/"
+                       f"{SL.get(m['signal'], m['signal'])} — <{m['link']}|{t}>"
+                       f"  _→ {m['route']}_")
+        chunk = "\n".join(seg)
+        if used + len(chunk) > 38000:
+            parts.append("\n_…truncated — full board in the GitHub Actions run._")
             break
         parts.append(chunk)
         used += len(chunk)
+    if p3:
+        parts.append(f"\n_+{len(p3)} P3 ambient item(s) in the full board._")
     return "\n".join(parts)
 
 
-def render_html(sections, total_new, total_feeds, failures):
+def render_html(mentions, total_feeds, failures):
     import html as _h
-    p = [f"<h2>SHP brand &amp; provider monitoring — {NOW:%Y-%m-%d %H:%M UTC}</h2>",
-         f"<p><strong>{total_new}</strong> new item(s) in the last {LOOKBACK_HOURS}h "
-         f"across {total_feeds} feeds.</p>"]
-    if not total_new:
+    p1, p2, p3, mix = _header(mentions, total_feeds)
+    p = [f"<h2>SHP Mention Board — {NOW:%Y-%m-%d %H:%M UTC}</h2>",
+         f"<p><strong>{len(mentions)}</strong> new in {LOOKBACK_HOURS}h across "
+         f"{total_feeds} feeds · 🔴 P1 <strong>{len(p1)}</strong> · 🟠 P2 "
+         f"<strong>{len(p2)}</strong> · ⚪ P3 {len(p3)}</p>",
+         "<p style='color:#555'><em>Ranked by inferred patient-value (spine/ortho "
+         "highest; foot/hand/pain via partnerships). Heuristic triage aid.</em></p>"]
+    if mix:
+        p.append(f"<p><em>Line mix: {_h.escape(mix)}</em></p>")
+    if not mentions:
         p.append("<p><em>Nothing new in the window.</em></p>")
-    for folder, hits in sections:
-        p.append(f"<h3>{_h.escape(folder)}</h3><ul>")
-        for ftitle, items in hits:
-            p.append(f"<li><strong>{_h.escape(ftitle)}</strong><ul>")
-            for it in items:
-                stamp = f" — <em>{_stamp(it)}</em>" if it["when"] else ""
-                p.append(f'<li><a href="{_h.escape(it["link"])}">'
-                         f'{_h.escape(it["title"])}</a>{stamp}</li>')
-            p.append("</ul></li>")
-        p.append("</ul>")
+
+    def table(title, rows, cap=None):
+        if not rows:
+            return
+        p.append(f"<h3>{title}</h3>")
+        p.append("<table cellpadding='6' style='border-collapse:collapse' border='1'>"
+                 "<tr><th>Score</th><th>Line</th><th>Signal</th><th>Mention</th>"
+                 "<th>Route</th></tr>")
+        for m in (rows[:cap] if cap else rows):
+            neg = " ⚠" if m["mods"]["negative"] else ""
+            p.append(
+                f"<tr><td align='right'><strong>{m['score']}</strong></td>"
+                f"<td>{LL.get(m['line'], m['line'])}</td>"
+                f"<td>{SL.get(m['signal'], m['signal'])}{neg}</td>"
+                f"<td><a href=\"{_h.escape(m['link'] or '')}\">"
+                f"{_h.escape(m['title'])}</a><br><small>{_h.escape(_src(m['feed']))}"
+                f"</small></td><td>{_h.escape(m['route'])}</td></tr>")
+        if cap and len(rows) > cap:
+            p.append(f"<tr><td colspan='5'><em>+{len(rows) - cap} more P3 items</em>"
+                     f"</td></tr>")
+        p.append("</table>")
+
+    table("🔴 P1 — act today", p1)
+    table("🟠 P2 — this week", p2)
+    table("⚪ P3 — ambient / FYI", p3, cap=20)
     return "\n".join(p)
 
 
@@ -305,25 +378,25 @@ def send_email(html_body, total_new):
 
 
 def main():
-    sections, total_new, total_feeds, failures = collect()
-    md = render_md(sections, total_new, total_feeds, failures)
+    mentions, total_feeds, failures = collect()
+    md = render_md(mentions, total_feeds, failures)
     write_summary(md)
 
-    if total_new == 0 and not SEND_WHEN_EMPTY:
+    if not mentions and not SEND_WHEN_EMPTY:
         print("Nothing new; skipping Slack/email (set SEND_WHEN_EMPTY=true to override).")
         return
 
     slack = os.environ.get("SLACK_WEBHOOK_URL")
     if slack:
         try:
-            post_slack(slack, render_slack(sections, total_new, total_feeds, failures))
+            post_slack(slack, render_slack(mentions, total_feeds))
             print("Slack: sent.")
         except Exception as e:  # noqa: BLE001
             print(f"Slack: FAILED — {e}", file=sys.stderr)
 
     if os.environ.get("SMTP_HOST") and os.environ.get("EMAIL_TO"):
         try:
-            send_email(render_html(sections, total_new, total_feeds, failures), total_new)
+            send_email(render_html(mentions, total_feeds, failures), len(mentions))
             print("Email: sent.")
         except Exception as e:  # noqa: BLE001
             print(f"Email: FAILED — {e}", file=sys.stderr)
