@@ -88,11 +88,11 @@ Google sources reuse it; each just needs the account granted access on that prod
   online-scheduling actions with assigned values). GA4 shows the intent-level events
   (`new_patient_intent` 3,981/30d, `click_to_call` 1,328) but **booked-patient truth
   lives in Liine**.
-- **Second path — Liine's native GA4 integration** (event forwarding into property
-  370514163): filter configuration is specced in **`docs/liine-ga4-event-filters.md`**
-  (recommendation: send all events — no location/landing-URL filters; contains-match
-  builds provided if ever needed). Baseline 2026-07-22: **zero Liine events in GA4** —
-  the integration wasn't live yet.
+- Lower priority: Liine also ships a native GA4 event-forwarding integration
+  (analysis-only — Ads already receives Liine conversions directly). If it's ever
+  enabled, filter notes are in `docs/liine-ga4-event-filters.md` (short version: send
+  all events; contains-match builds included in case filtering is forced). GA4 had
+  zero Liine events as of 2026-07-22.
 - **Liine publishes an official MCP** — user guide:
   [help.liine.com/en/articles/15627134-liine-mcp-user-guide](https://help.liine.com/en/articles/15627134-liine-mcp-user-guide)
   (surfaced 2026-07-22; the guide isn't fetchable from this environment yet — the

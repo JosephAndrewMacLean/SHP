@@ -1,16 +1,18 @@
-# Liine → GA4 Event Forwarding — Filter Build (Locations & Landing URLs)
+# Liine → GA4 Event Forwarding — Filter Configuration (Locations & Landing URLs)
 
-Config spec for Liine's native GA4 integration wizard (**Connect to GA4 → Filter
-Events → Confirm Filters → Acknowledge**). This is the integration that finally puts
-**booked-patient truth into GA4** — today Liine conversions exist only in Google Ads
-(see `audits/cardinal-recommendation-tracker.md` §4, the 🟠 call-tracking gate).
+> **Priority: low — optional, analysis-only.** Liine conversions already flow directly
+> into Google Ads (Blue Ox's import), which is where bidding and the booked-patient
+> loop are tracked (`audits/cardinal-recommendation-tracker.md` §4). This forwarding
+> only adds a GA4-side copy for page/channel analysis; nothing downstream blocks on it.
+
+Working notes for Liine's native GA4 integration wizard (**Connect to GA4 → Filter
+Events → Confirm Filters → Acknowledge**), for whenever it's switched on.
 
 **Baseline verified 2026-07-22 (GA4 eventName scan, 30d):** GA4 property 370514163
 receives **zero Liine events today** — only site-side events exist (`new_patient_intent`
 3,981 · `book_appointment_click` 2,980 · `click_to_call` 1,328 ·
-`appointment_handoff_to_zocdoc` 1,252). Whatever this wizard forwards is net-new data,
-and **nothing backfills** — events before go-live are gone for GA4. Configure once,
-correctly, and prefer over-collection to silent loss.
+`appointment_handoff_to_zocdoc` 1,252). Whatever the wizard forwards is net-new data
+and nothing backfills — so if it is enabled, prefer over-collection to silent loss.
 
 ---
 
@@ -29,7 +31,7 @@ correctly, and prefer over-collection to silent loss.
 > **Leave BOTH filters disabled — send all events.** ("By default, all events will be
 > forwarded from Liine if no filters are selected.")
 
-This is a deliberate recommendation, not a shrug. The evidence (GA4, 90d to 2026-07-21):
+Reasoning (GA4, 90d to 2026-07-21):
 
 1. **The GA4 property is the whole practice.** Every location's traffic, every service
    line, one property. There is no location or page family whose booked-call truth we
@@ -48,8 +50,7 @@ This is a deliberate recommendation, not a shrug. The evidence (GA4, 90d to 2026
    only contains token that matches them (`/`) matches everything. An "only the pages
    we care about" allowlist silently drops the single biggest call source.
 4. **Include lists rot.** A new clinic (Troy push, Oakland expansion), a renamed Liine
-   location, or a new LP structure would be silently excluded from the day it launches —
-   exactly the kind of quiet measurement hole the Cardinal audits exist to close.
+   location, or a new LP structure would be silently excluded from the day it launches.
 
 **The only good reason to enable a filter:** the Liine account contains lines that are
 *not* SHP patient-facing marketing reality — test/training lines, internal-transfer
@@ -152,15 +153,14 @@ Acknowledge = events start flowing from that moment. Same-day and day-7 checks:
    analysis only — tell Blue Ox they exist and must **not** also be imported to Ads
    as conversions, or Smart Bidding counts every call twice.
 
-## What this unlocks (update the tracker when live)
+## If it goes live — what it adds
 
-- Landing page × **booked call** (not just intent click) — the organic booked-patient
-  loop Cardinal's measurement framework requires, per page family and location.
-- Channel truth: paid vs organic vs GBP share of *booked* new patients, using the same
-  `?scct=` / `?y_source=` fingerprints documented above.
-- Tracker §4 🟠 "GA4 conversion + call tracking live" gate → flips toward ✅ once
-  events verify; `docs/data-sources-roadmap.md` Liine row gets a second, GA4-native path
-  alongside the pending MCP.
+- A GA4-side view of landing page × **booked call** (not just intent click), per page
+  family and location. The authoritative booked-patient loop stays Liine ↔ Google Ads.
+- Channel context: paid vs organic vs GBP share of *booked* new patients, using the
+  same `?scct=` / `?y_source=` fingerprints documented above.
+- Note the go-live date in `audits/cardinal-recommendation-tracker.md` §4 so
+  before/after reads stay clean.
 
 **Owners:** Joe (Liine + GA4 admin, runs the wizard) · Santosh (validation, DebugView/PHI
 check) · Blue Ox notified re: no Ads re-import · no website/dev change needed (Paul N/A).

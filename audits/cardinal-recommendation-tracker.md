@@ -136,10 +136,10 @@ Cardinal's own "What success looks like at Day 30," statused:
   Semrush issue 214 / GSC pages
 - 🟠 **GA4 conversion + call tracking live** → key events exist now (`new_patient_intent`,
   `click_to_call`); Liine booked-call conversions live in Google Ads (not GA4) — the
-  booked-patient loop still needs Liine API/Ads visibility. **In motion 2026-07-22:**
-  Liine's native GA4 event-forwarding integration is being configured — filter spec +
-  validation checklist in `docs/liine-ga4-event-filters.md` (verified same day: GA4
-  still receives zero Liine events, so this closes the gap when it goes live)
+  booked-patient loop still needs Liine API/Ads visibility. (Side note: Liine's
+  native GA4 forwarding could mirror call events into GA4 for analysis — optional,
+  low priority; notes in `docs/liine-ga4-event-filters.md`. GA4 showed zero Liine
+  events as of 2026-07-22.)
 - ⬜ **FAQPage + MedicalProcedure schema; rich results appearing** → Semrush
   `serp_faq_keywords` (0 today) is the tripwire
 - ⬜ **Review velocity program** → Rater8 (see data-sources roadmap) — Cardinal's
