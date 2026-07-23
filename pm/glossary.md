@@ -75,7 +75,7 @@ group** in MMC so the Past-Due engine finally works for us instead of being igno
 | **FQHC** | Federally Qualified Health Center — community clinics, typically Medicaid-heavy panels (our "Medicaid-likely — VERIFY" flag). |
 | **Payer Class (heuristic)** | Our pattern-based guess at an account's payer mix (7 classes). **Assumption, not verification** — Kelly's intake pass confirms Tier 1 first. |
 | **AKS / Stark** | Federal anti-kickback and physician self-referral laws. Practical rule: relationships are earned on service and clinical merit — **no payments, gifts, or inducements for referrals, ever.** |
-| **PHI** | Protected Health Information. Never in notes, messages, or conversation — thank practices in aggregate counts only. |
+| **PHI** | Protected Health Information. Never in notes, texts, or anywhere others can hear. Kristen's rule (Jul 22): a **discreet, private** thank-you to the referring provider about their own referred patient is fine — they already know the patient; the moment anyone else is in earshot, it isn't. No counts out loud either — numbers sound transactional. |
 
 ## Plan & measurement
 | Term | Meaning |
