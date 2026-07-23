@@ -1,9 +1,13 @@
 # Email Draft — Kelley & Mitch: the MRI × Spine × Pain overlap journey (the data)
 
+> **SUPERSEDED — the session was held 2026-07-22.** This pre-read email did its job; the
+> outcomes and Joe's recap live in `pm/spine-imaging-pain-session-outcomes.md`. Kept for the
+> record.
+
 **From:** Joe · **To:** Kelley (call center / patient access), Mitch (imaging / ancillary services)
 **Context:** both already know about the meeting — this email delivers **the data**, focused on
 the one journey where their two teams and the spine number meet.
-**Status: DRAFT for Joe to personalize and send.** Placeholders in [brackets].
+**Status: SUPERSEDED (meeting held; see outcomes file).** Placeholders in [brackets].
 > Name check before sending: repo docs spell it "Kelly," Joe writes "Kelley" — confirm and make
 > it consistent everywhere (this draft uses Kelley).
 

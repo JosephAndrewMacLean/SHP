@@ -6,9 +6,12 @@
 centralized scheduling) and Mitch (imaging / ancillary services) — no one else is required.**
 **Proposed:** 90 minutes, week of **Jul 27–31, 2026** — before rep training/go-live (CC-A.5)
 so the team trains once. Onsite, any office that works for the three.
-**Version:** v2.0 · 2026-07-21 · **Status: DRAFT — a working plan for the three of us to mark
-up, not settled policy. Anything clinical, billing, systems, or organizational leaves this
-room as a recommendation Joe personally carries to the right decider.**
+**Version:** v2.0 · 2026-07-21 · **Status: SESSION HELD 2026-07-22 — see
+`pm/spine-imaging-pain-session-outcomes.md` for what was decided.** Three decisions landed:
+Spine-first routing, no-order MRI → Spine-consult-first (cash-pay MRI as fallback), and MRI
+scheduling stays with the MRI team (the §7 shared-queue design was **not adopted at this
+time**). This doc is retained as the working plan that fed the session; the outcomes file is
+now the source of truth.
 **Feeds:** `playbooks/spine-90day-plan.md` §4A/§4E · `playbooks/call-center-strategy.md`
 Pillars 1–5 · `pm/spine-intake-qualification-script.md` (v1.0) ·
 `pm/spine-imaging-pain-call-review-pack.md` (the evidence) · PM tasks CC-A, CC-B, ATTR-C.1
@@ -144,6 +147,12 @@ session. What this session adds is the imaging and pain branches plus the cross-
   during business hours.
 
 ## 7. The imaging fast lane — the centerpiece (Mitch owns and co-authors this)
+
+> **Outcome (2026-07-22):** the shared pending-imaging queue below was **not adopted at this
+> time.** The session decided MRI scheduling stays with the MRI team (Decision 3), strengthening
+> the seam through voicemail-process fixes rather than a shared queue. This section is kept as
+> the option that was considered; the pending-order/capacity ideas remain available to Mitch
+> if he chooses to pursue them at his pace.
 
 **The problem in one sentence:** imaging is often the ticket onto a doctor's schedule, but
 imaging scheduling lives with a different team, on different systems, behind per-site fax
