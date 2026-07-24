@@ -1,9 +1,9 @@
 # For Evan (Cardinal) — questions ahead of tomorrow's call (2026-07-23)
 
-> Ready-to-send draft. Context: Monday's ops check-in + today's 1:53 PM call both
-> flagged this as a send-today item — the Evan/Cardinal conversation is **tomorrow
-> (7/24)**, and the point is to give Cardinal the questions in advance so tomorrow is
-> answers, not discovery. Framing per the meeting: ortho new patients up, spine new
+> Ready-to-send draft. Context: Monday's ops check-in + the 7/23 1:53 PM call both
+> flagged this as a send-ahead item — the Evan/Cardinal conversation is **TODAY
+> (7/24)**, so this needs to go out first thing to give Cardinal the questions before
+> we talk (answers, not discovery). Framing per the meeting: ortho new patients up, spine new
 > patients down after the Liine go-live — cause unclear. Below pairs the room's
 > questions with what our live measurement already shows, so Cardinal can respond
 > precisely. Tone: collaborative — Cardinal is our partner on the readout.
@@ -28,8 +28,8 @@ Detail and the data behind each below.
 
 ---
 
-Evan — ahead of tomorrow, wanted to send the questions in advance with the numbers
-we're seeing on our side, so we can spend the call on answers.
+Evan — ahead of today's call, wanted to send the questions in advance with the numbers
+we're seeing on our side, so we can spend our time on answers.
 
 First, the good news on your audit: the **speed regression is fixed.** PageSpeed field
 data (run 7/22) shows LCP recovered from a failing **3.5s to ~1.4s** across the
