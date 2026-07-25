@@ -16,8 +16,13 @@ volume validation. **§8 records what discovery changed** — it corrected sever
 earlier draft of this document that were built from a hand-generated candidate list.
 
 **Companion file — the actual build sheet:** [`pm/spine-keyword-build-2026-07.csv`](../pm/spine-keyword-build-2026-07.csv)
-— 580 rows (548 keywords + 32 ad-group negative lists), every keyword with its match type, ad group, campaign, volume, and whether it is
-new / existing / reactivated. Google Ads Editor–importable. §9 explains the match-type logic.
+— 513 rows (491 keywords + 22 ad-group negative lists), **grouped by match type within each
+ad group**, with volume and whether each keyword is new / existing / reactivated. Google Ads
+Editor–importable. §9 explains the match-type logic; **§10 is the full list in readable form.**
+
+**Scope change 2026-07-25:** the Pain Management & Injections ad group and all injection /
+epidural / nerve-block / ablation terms have been **removed from the build** at Joe's
+direction. §2.8 covers what that means for the existing Injection ad groups.
 
 This answers three questions, in the order Cardinal's guidance says to answer them:
 
@@ -41,8 +46,8 @@ This answers three questions, in the order Cardinal's guidance says to answer th
 >
 > So expansion is not "add more keywords everywhere." It is: **grow the themes that convert,
 > and split the themes that don't, so the money has somewhere efficient to flow.** Keyword
-> discovery found **90 new keywords**, of which **66 are doctor / specialist / "near me" terms
-> worth ~71,000 US searches a month** — the exact pattern our own data proves converts 2.7x
+> discovery found **66 new keywords**, of which **49 are doctor / specialist / "near me" terms
+> worth ~50,500 US searches a month** — the exact pattern our own data proves converts 2.7x
 > better than everything else we run. Every condition keyword in the build lands on a page
 > that already exists on our site.
 >
@@ -89,10 +94,10 @@ That is the size of the prize, and it does not require one extra dollar of budge
 | 5 | Livonia / Surgery | $70,129 | 64.9 | $1,081 | Split into sub-themes (§2.3). |
 | 6 | Sterling Heights / Surgery | $126,155 | 113.7 | $1,109 | Largest single line item, 2.8x Sterling Specialist's CPA. |
 | 7 | Spine Conditions - Livonia / Herniated Disc | $2,443 | 4.0 | $611 | Promising CPA, no volume. Merge into geo campaigns (§2.4). |
-| 8 | Livonia / Injection | $17,897 | 15.2 | $1,180 | Rebuild as Pain Management (§2.3). |
+| 8 | Livonia / Injection | $17,897 | 15.2 | $1,180 | Not expanded — contain and harvest (§2.8). |
 | 9 | Livonia / Fusion | $11,499 | 6.7 | $1,724 | Restrict to exact match. |
 | 10 | Southfield / Surgery | $5,243 | 3.0 | $1,754 | Geo has almost no impressions. |
-| 11 | Sterling Heights / Injection | $18,863 | 9.5 | $1,986 | Worst large-spend group. |
+| 11 | Sterling Heights / Injection | $18,863 | 9.5 | $1,986 | Worst large-spend group. Contain (§2.8). |
 | 12 | Sterling Heights / Fusion | $9,958 | 4.4 | $2,263 | Worst CPA in spine. |
 
 ### 1.3 Where to put the effort — ranked, with the reason
@@ -106,9 +111,11 @@ That is the size of the prize, and it does not require one extra dollar of budge
    the cost because the copy is generic boilerplate shared across all four Livonia ad groups
    (§3.1). Porting Sterling's copy structure is a one-hour job against the largest
    inefficiency in spine.
-3. **Un-pause Pain Management** — 168 keywords across four geos are sitting in paused ad
-   groups, including **every sciatica keyword we own**. Zero impressions, zero spend, all
-   year. This is free keyword universe requiring no research (§2.1).
+3. **Harvest the paused Pain Management ad groups** — 168 keywords across four geos sit idle
+   there, including **every sciatica keyword we own** and the only stenosis and pinched-nerve
+   terms in the account. Move those into the new condition ad groups. The ad group itself is
+   *not* being rebuilt (§2.8); we are taking the spine keywords out of it and leaving the
+   injection terms behind.
 
 **Tier 2 — next two weeks.**
 
@@ -120,10 +127,11 @@ That is the size of the prize, and it does not require one extra dollar of budge
 
 **Tier 3 — contain, don't grow.**
 
-6. **Fusion and Injection** — $58,822 at $1,608 combined. Move to exact match only, cap bids,
-   and let the freed impressions flow to Specialist and the new condition groups. Do not
-   delete: fusion terms are how a surgical patient with real intent finds us; they are just
-   badly matched right now.
+6. **Fusion and Injection** — $58,822 at $1,608 combined, and neither is being expanded. Move
+   both to exact match only and cap bids so the freed impressions flow to Specialist, Back Pain
+   and the new condition groups. Do not delete Fusion: those terms are how a surgical patient
+   with real intent finds us, they are just badly matched today. Injection is a live question —
+   see §2.8.
 
 **Do not touch:** total spine budget. Impression share lost to budget is 0% — cutting spend
 cuts volume we cannot afford to lose, and adding spend has nowhere to go until the keyword
@@ -219,11 +227,8 @@ The Second Opinion group is the sleeper. Sterling Heights' Specialist ad already
 Surgery Second Opinions" as a headline and that ad group runs a 6.71% CTR. The intent is
 proven; it has never had its own ad group.
 
-**Injection ($37,355 @ $1,514) → Pain Management, rebuilt.** Reuse the paused Pain Management
-ad group shell — the keywords are already loaded. Add: epidural steroid injection near me 170,
-facet joint injection 3,600, medial branch block 8,100, nerve block for back pain 590,
-radiofrequency ablation, pain management doctor near me 2,400, back pain management near me
-320. Landing page: `/specialty/spine-neck-back/{geo}/` until a pain-management page exists.
+**Injection — not rebuilt.** An earlier draft proposed rebuilding this as a Pain Management &
+Injections ad group with 27 keywords. That is **removed from the build** (§2.8).
 
 ### 2.4 Fold the orphaned Spine Conditions campaigns into the geo campaigns
 
@@ -241,7 +246,7 @@ Herniated Disc group posted a **$611 CPA**, the best of any non-Specialist group
 groups, keep the condition landing pages, then pause the standalone campaigns. Resolve the
 "limited by policy" flag before relaunch — that's an ad disapproval that needs reading.
 
-### 2.5 Target build — from 4 ad groups per geo to 10
+### 2.5 Target build — from 4 ad groups per geo to 9
 
 | # | Ad group | Status today | Priority |
 |---:|---|---|---|
@@ -254,9 +259,8 @@ groups, keep the condition landing pages, then pause the standalone campaigns. R
 | 7 | Pinched Nerve / Radiculopathy | Does not exist | Build |
 | 8 | Spine Surgery | Exists — bloated | Split (§2.3) |
 | 9 | Minimally Invasive / Disc Surgery | Merged into #8 | Split out |
-| 10 | Pain Management & Injections | Paused / mismatched | Rebuild |
 
-Run the full 10 in **Sterling Heights and Livonia** (where 92% of spine spend and nearly all
+Run the full 9 in **Sterling Heights and Livonia** (where 92% of spine spend and nearly all
 impressions live). Port Huron gets 4 — Specialist, Sciatica, Herniated Disc, Surgery — because
 its Specialist group is the cheapest in the account at $339 and deserves more surface area.
 Southfield stays minimal until its impression base justifies more.
@@ -283,11 +287,40 @@ posting back to Google Ads, so the algorithm cannot see our best outcome. **Sequ
 | Pinched Nerve / Radiculopathy | pinched nerve doctor near me | — |
 | Spine Surgery | spine surgeon near me | — |
 | Minimally Invasive / Disc Surgery | minimally invasive spine surgery near me | — |
-| Pain Management & Injections | pain management doctor near me | epidural steroid injection near me |
 
-All ten are specific, high-intent, and "near me"-anchored — the pattern that already converts
+All nine are specific, high-intent, and "near me"-anchored — the pattern that already converts
 2.7x better than everything else in the account. None is a bare category term like "spine" or
 "back pain," which is exactly the failure mode Evan flagged.
+
+### 2.8 What happens to the Injection ad groups now
+
+Removing Pain Management from the build leaves an open question, and it should be answered
+rather than left implied.
+
+The Sterling Heights and Livonia Injection ad groups are live today and spending
+**$37,355 for 24.7 real new patients — $1,514 each.** That is 2.6x the Specialist CPA. They
+were the weakest large-spend groups in spine before this change and nothing about removing the
+expansion plan improves them.
+
+There are three options and they are not equal:
+
+| Option | Effect | Recommendation |
+|---|---|---|
+| **Contain** — exact match only, cap bids, no new keywords | Spend falls, impressions free up for Specialist / Back Pain / condition groups | **Do this.** Lowest risk, keeps the surgical-intent tail. |
+| **Pause entirely** | Frees the full $37K immediately | Only if the weekly data still shows $1,500+ CPA after containment. Don't lead with it. |
+| **Expand** | — | Off the table per this build. |
+
+**Contain, and let the money move.** Combined with Fusion, containment frees roughly **$58,800
+of annualized spend** sitting at a $1,608 CPA. If even half of it reaches the Specialist and
+Back Pain groups at their current rates, that is **~50 additional new patients** from money we
+are already spending. That is the real upside of taking Pain Management out — not just the
+avoided compliance exposure.
+
+**One thing that gets lost, and you should decide it consciously:** injections are how a
+non-surgical spine patient converts. Removing that ad group means we bid on people looking for
+a *doctor* and people looking for *surgery*, but not people looking for the treatment in
+between. If the clinical side considers interventional pain a growth service line, this
+decision should be revisited with them rather than settled here.
 
 ### 2.7 Estimated universe growth
 
@@ -295,17 +328,18 @@ Actuals from the build sheet, not estimates:
 
 | | Today | After build |
 |---|---:|---:|
-| Keyword rows across spine campaigns | 711 | 1,259 (548 added) |
-| Unique keyword texts | 379 | 547 (168 in the build, 90 of them new) |
-| Unique "near me" keywords | 56 | 119 (63 added) |
-| Ad groups (Sterling + Livonia) | 8 | 20 |
+| Keyword rows across spine campaigns | 711 | 1,202 (491 added) |
+| Unique keyword texts | 379 | 522 (143 in the build, 66 of them new) |
+| Unique "near me" keywords | 56 | 113 (57 in the build) |
+| Ad groups (Sterling + Livonia) | 8 | 18 |
 | Ad groups (Port Huron) | 4 | 4, fully rebuilt |
-| Broad match keywords | 0 | 32 (16 unique × 2 geos), phase 2 |
-| Added US search volume — all new keywords | — | ~146,000/mo |
-| Added US search volume — transactional subset | — | **~71,000/mo** |
+| Broad match keywords | 0 | 28 (11 unique per geo), phase 2 |
+| Added US search volume — transactional subset | — | **~50,500/mo** |
 
-The transactional subset is the number to quote. The rest is condition-term volume that skews
-informational (§8.2) and should not be counted as demand we can convert.
+The transactional subset — doctor / specialist / surgeon / "near me" terms — is the number to
+quote. Condition-term volume skews informational (§8.2) and should not be counted as demand we
+can convert. This is down from ~71,000/mo in the pre-removal draft; roughly 20,000/mo of that
+was the pain management cluster.
 
 Sterling Heights spine drew 14,000 impressions against ortho's 26,000 in Evan's screen share.
 This build should close most of that gap on keyword count alone, before broad match.
@@ -368,7 +402,7 @@ why that ad group outperforms.
    superiority. Credentials (board-certified, fellowship-trained) are fine if true and
    verifiable against `brand/provider-roster-by-service-line.md`.
 
-### 3.3 Ad copy — 10 ad groups
+### 3.3 Ad copy — 9 ad groups
 
 Format: 15 headlines (30 char max) + 4 descriptions (90 char max), per Google RSA specs.
 `{Geo}` = Sterling Heights / Livonia / Port Huron. Character counts are within limits at
@@ -565,21 +599,6 @@ Options · {CUSTOMIZER.Doctor Name} Has Openings · Most Insurance Accepted ⚠ 
 
 ---
 
-#### 10. Pain Management & Injections
-**Landing page:** `/specialty/spine-neck-back/{geo}/` — *see §4 for the page request*
-
-**Headlines:** Spine Injections in {Geo} · Epidural Steroid Injections · Pain Management
-Specialists · Non-Surgical Pain Relief · Facet Joint Injections · Nerve Block Specialists ·
-Back Pain Without Surgery · Image-Guided Injections ⚠ · Book a Pain Consult in {Geo} ·
-Radiofrequency Ablation · Metro Detroit Pain Management · SI Joint Injections ·
-{CUSTOMIZER.Doctor Name} Has Openings · Most Insurance Accepted ⚠ · Synergy Health Partners
-
-**Descriptions**
-1. Back or neck pain without surgery. Epidural, facet and SI joint injections in {Geo}.
-2. Interventional pain specialists working alongside our spine surgeons and therapists.
-3. Targeted injections can relieve pain and help pinpoint its source. Book a consult.
-4. Explore non-surgical options before considering spine surgery. Appointments in {Geo}.
-
 ---
 
 ## 4. Landing pages — the ask for Randall
@@ -593,7 +612,6 @@ optimization, not creation. Priority order, by ad-group spend potential:
 | 2 | `/conditions/herniated-disc/` | Live, in paid use, $611 CPA | Already the best-converting condition page — replicate its structure everywhere else |
 | 3 | `/conditions/spinal-stenosis/` | Live, 526 impr | Add CTA + non-surgical-options section |
 | 4 | `/conditions/cervical-radiculopathy/` | Live, 759 impr | Add CTA; retitle around "pinched nerve" language patients actually use |
-| 5 | — | Does not exist | New: pain management / spine injections page |
 
 **Two things to confirm before launch:** (a) every page above carries the same
 conversion/scheduler tracking as `/specialty/spine-neck-back/{geo}/`, or the new ad groups
@@ -607,7 +625,8 @@ the Spine Conditions campaigns is resolved.
 **This week (no dependencies, do it now)**
 - [ ] Fix three live typos: "Evrey" → Every, "Specialits" → Specialists, "Conditons" → Conditions
 - [ ] Route "Walk-ins welcome" and "Same-Day Appointments" to compliance
-- [ ] Un-pause Pain Management ad groups (4 geos, 168 keywords) — free universe
+- [ ] Harvest sciatica / stenosis / pinched-nerve keywords out of the paused Pain Management
+      ad groups into the new condition ad groups (do **not** rebuild Pain Management — §2.8)
 - [ ] Port Sterling Heights Specialist copy structure to Livonia Specialist — largest single inefficiency in spine
 - [ ] Unpin the `{CUSTOMIZER}` assets on the two "Poor" ad-strength ads
 - [ ] Build Sciatica ad group in Sterling Heights + Livonia, phrase + exact, pointed at `/conditions/sciatica/`
@@ -618,7 +637,7 @@ the Spine Conditions campaigns is resolved.
 - [ ] Split Surgery into four sub-groups (§2.3)
 - [ ] Migrate Spine Conditions campaigns into geo campaigns; pause the standalone campaigns
 - [ ] Split Back Pain and Neck Pain out of Specialist
-- [ ] Restrict Fusion + Injection to exact match, cap bids
+- [ ] Restrict Fusion + Injection to exact match, cap bids (§2.8) — frees ~$58,800 at a $1,608 CPA
 - [ ] Build Port Huron's four ad groups — cheapest CPA in the account, most starved
 
 **Gated on the Liine/ZocDoc integration fix**
@@ -726,7 +745,13 @@ roughly **6,500–7,000/mo**, and the larger share of the real prize sits in §8
 ### 8.3 The bigger paid prize isn't conditions — it's "back doctor" and "pain management"
 
 Two clusters with genuine commercial intent, real CPCs (advertisers pay $3–5, which means they
-convert), and almost no coverage from us:
+convert), and almost no coverage from us.
+
+> **Superseded in part.** The pain management half of this finding is **not being built**
+> (§2.8). The rows below are kept as the record of what discovery found, so the decision can be
+> revisited with the clinical side if interventional pain becomes a priority service line. The
+> "back doctor" half stands and is fully in the build.
+
 
 | Keyword | Volume | CPC | Our status |
 |---|---:|---:|---|
@@ -766,9 +791,12 @@ coming back* (590/mo). On "spine surgeon" it returns *spine surgeon salary* (2,4
 *top 10 spine surgeons in nyc*. These are exactly what broad match would buy us.
 
 Every ad group in the CSV ships with an ad-group-level negative list built from its own
-discovery output. **The Pain Management negatives are a compliance control, not just an
-efficiency one** — they exclude opioid, oxycodone, percocet, narcotic, suboxone, methadone and
-related drug-seeking terms. That list should be reviewed by compliance alongside the ad copy.
+discovery output — 22 lists in total, printed in full in §10.
+
+The opioid / drug-seeking negative list that was written for the Pain Management ad group is
+**no longer needed**, because that ad group is not being built (§2.8). Removing it removes the
+compliance exposure at the source rather than managing it with negatives — which is the
+stronger answer of the two.
 
 ### 8.6 What I could not get
 
@@ -788,7 +816,7 @@ related drug-seeking terms. That list should be reviewed by compliance alongside
 ## 9. Match type by keyword — the logic, and the file
 
 The full list is in [`pm/spine-keyword-build-2026-07.csv`](../pm/spine-keyword-build-2026-07.csv).
-548 keyword rows plus one negative list per ad group. 223 keywords per full geo build, run across Sterling Heights and Livonia (all 10 ad
+491 keyword rows plus one negative list per ad group. 195 keywords per full geo build, run across Sterling Heights and Livonia (all 9 ad
 groups) and Port Huron (4 core ad groups), plus one negative list per ad group.
 
 ### 9.1 The rule I applied
@@ -807,7 +835,7 @@ so where a term converts, we run exact to capture the head cleanly and phrase to
 tail, and we let the CPA data tell us which to fund. It costs nothing to run both and it
 generates the comparison the weekly review needs.
 
-**All 16 broad match keywords ship paused.** They are built, loaded and ready, so enabling them
+**All 11 broad match keywords per geo ship paused.** They are built, loaded and ready, so enabling them
 is a checkbox rather than a project — but they stay off until the Liine/ZocDoc integration
 posts online-booking completions back to Google Ads. Broad match steers by conversion signal;
 ours is ambiguous today. Turning them on now would spend real money teaching the algorithm the
@@ -820,25 +848,24 @@ wrong lesson.
 | Spine Specialist | 11 | 15 | 2 | 28 | 12 | 2 |
 | Back Pain Specialist | 15 | 15 | 2 | 32 | 15 | 1 |
 | Neck Pain Specialist | 8 | 11 | 1 | 20 | 9 | 3 |
-| Sciatica | 6 | 11 | 1 | 18 | 11 | 5 |
+| Sciatica | 6 | 10 | 1 | 17 | 11 | 5 |
 | Herniated / Bulging Disc | 10 | 15 | 1 | 26 | 8 | 1 |
 | Spinal Stenosis | 5 | 9 | 1 | 15 | 12 | 1 |
 | Pinched Nerve / Radiculopathy | 4 | 10 | 1 | 15 | 13 | 1 |
 | Spine Surgery | 8 | 15 | 1 | 24 | 10 | 0 |
 | Minimally Invasive / Disc Surgery | 8 | 9 | 1 | 18 | 10 | 2 |
-| Pain Management & Injections | 10 | 15 | 2 | 27 | 12 | 3 |
-| **Per geo** | **85** | **125** | **13** | **223** | **112** | **19** |
+| **Per geo** | **75** | **109** | **11** | **195** | **100** | **16** |
 
-Sterling Heights and Livonia take the full 223 each. Port Huron takes the four core ad groups
+Sterling Heights and Livonia take the full 195 each. Port Huron takes the four core ad groups
 — Spine Specialist, Back Pain Specialist, Sciatica, Spine Surgery — because its Specialist
 group runs the cheapest CPA in the account ($339) on 1,165 impressions and deserves more
 surface area before we build depth there. Southfield stays minimal until its impression base
 justifies more.
 
-Against 379 unique keywords today, this is roughly a **2.5x expansion of the spine keyword
-universe**, weighted toward the patterns our own data already proves convert.
+Against 379 unique keywords today, this adds **491 keyword rows and 66 genuinely new terms**,
+weighted toward the patterns our own data already proves convert.
 
-### 9.3 Six keywords to watch daily in week one
+### 9.3 Five keywords to watch daily in week one
 
 Not because they're wrong — because they're the ones most likely to spend fast in an
 unexpected direction:
@@ -848,9 +875,448 @@ unexpected direction:
 | "sciatica pain relief" (40,500) | Sciatica | Informational intent at scale. If CPA runs hot in 48h, pause and keep only the near-me set. |
 | "sciatica treatment" (27,100) | Sciatica | Same. |
 | "spinal stenosis treatment" (8,100) | Spinal Stenosis | Same. |
-| [pain management clinic near me] (2,900) | Pain Management | Drug-seeking traffic. Read the search-term report daily for the first week regardless of CPA. |
 | "spinal decompression" | Minimally Invasive | Dominated by chiropractic decompression-table intent, not surgical. |
 | "doctors for back injuries" (12,100) | Back Pain Specialist | Highest volume in the build, $5.22 CPC. Also attracts workers-comp and legal intent — may be good, may not. Watch it. |
 
 That watchlist *is* the daily conversion analysis Evan described, scoped to something you can
 actually do in ten minutes a morning.
+
+---
+
+## 10. The keyword list, organized by match type
+
+Nine ad groups. Every keyword below, grouped under the match type it should be
+built with. Identical build for **Sterling Heights** and **Livonia**; **Port Huron**
+takes the four marked `[PH]`. Volumes are Semrush US national, monthly.
+
+`ACTION` — **NEW** = does not exist today · **EXISTING** = already live, keep
+· **REACTIVATE** = exists but paused · **MOVE** = exists in a different ad group.
+
+
+### Spine Specialist `[PH]`
+
+_28 keywords — 11 exact, 15 phrase, 2 broad_
+
+**EXACT MATCH** (11)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `[spine specialist near me]` | 5400 | EXISTING | 8.9 conv, ROAS 0.81 |
+| `[spine specialist]` | 4400 | EXISTING | 16.7 conv |
+| `[spine doctor near me]` | — | NEW | phrase ver = $51 CPA, best in spine |
+| `[spine doctors]` | — | REACTIVATE | phrase ver paused w/ $21,223 spend, 76 conv |
+| `[orthopedic spine specialist near me]` | 590 | NEW |  |
+| `[ortho spine specialist]` | — | EXISTING | 5.0 conv |
+| `[spine pain specialist near me]` | 170 | NEW |  |
+| `[best spine specialist near me]` | 210 | NEW |  |
+| `[back and spine specialist near me]` | 320 | NEW |  |
+| `[spine doctors in my area]` | — | EXISTING |  |
+| `[best spine doctors in michigan]` | — | EXISTING | 4.0 conv |
+
+**PHRASE MATCH** (15)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `"spine specialist near me"` | 5400 | EXISTING | 41.4 conv @ $91 CPA |
+| `"spine doctor near me"` | — | EXISTING | 28.9 conv @ $51 CPA - best CPA in spine |
+| `"spine doctors"` | — | REACTIVATE | PAUSED - was #2 kw by spend, $279 CPA |
+| `"spine specialist"` | 4400 | EXISTING |  |
+| `"spine pain specialist"` | — | EXISTING | 30.6 conv @ $244 |
+| `"spine pain specialist near me"` | 170 | EXISTING | 13.0 conv @ $78 |
+| `"orthopedic spine specialist"` | 1600 | NEW |  |
+| `"spine and orthopedic specialists"` | 1600 | NEW |  |
+| `"back and spine specialist"` | 320 | NEW |  |
+| `"cervical spine specialist"` | 210 | NEW |  |
+| `"spine center near me"` | 170 | NEW |  |
+| `"spine clinic near me"` | 210 | NEW |  |
+| `"non surgical spine specialist"` | 170 | NEW |  |
+| `"ortho spine specialist"` | — | EXISTING | 18.0 conv @ $71 |
+| `"best spine doctor near me"` | — | EXISTING |  |
+
+**BROAD MATCH** (2) — upload **paused**, enable only after the Liine/ZocDoc fix
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `spine specialist near me` | 5400 | GATED | after ZocDoc fix |
+| `orthopedic spine surgeon near me` | 390 | GATED | after ZocDoc fix |
+
+**Ad-group negatives**
+
+```
+-salary -jobs -"icd 10" -"what is a" -school -residency -nyc -nj -"new jersey" -"long island" -dallas -texas -florida
+```
+
+
+### Back Pain Specialist `[PH]`
+
+_32 keywords — 15 exact, 15 phrase, 2 broad_
+
+**EXACT MATCH** (15)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `[back doctors near me]` | 2900 | EXISTING | 4.0 conv, ROAS 2.00 - best ROAS in spine |
+| `[back doctor near me]` | 4400 | EXISTING | 11.0 conv, ROAS 1.23 |
+| `[back specialist near me]` | — | EXISTING | 13.0 conv, ROAS 1.00 |
+| `[back dr near me]` | — | EXISTING | 8.5 conv, ROAS 1.01 |
+| `[back pain doctor near me]` | 2400 | NEW | phrase ver = 16.5 conv @ $105 |
+| `[back doctor]` | 5400 | EXISTING | 7.5 conv |
+| `[back pain doctor]` | 5400 | EXISTING | 1.5 conv |
+| `[back pain specialist]` | — | EXISTING | 9.2 conv @ $286 |
+| `[back pain specialist near me]` | — | EXISTING | 1.0 conv |
+| `[back pain doctors near me]` | 390 | NEW |  |
+| `[lower back pain doctor]` | 1900 | NEW |  |
+| `[orthopedic back doctor near me]` | 260 | NEW |  |
+| `[best back doctor near me]` | 320 | NEW |  |
+| `[back and spine doctor near me]` | 210 | NEW |  |
+| `[doctor for back pain near me]` | 260 | NEW |  |
+
+**PHRASE MATCH** (15)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `"back doctors near me"` | 2900 | EXISTING | 17.0 conv @ $140 |
+| `"back pain doctor near me"` | 2400 | EXISTING | 16.5 conv @ $105 |
+| `"back specialist near me"` | — | EXISTING | 15.5 conv @ $127 |
+| `"back doctor near me"` | 4400 | EXISTING |  |
+| `"back specialist"` | — | EXISTING | 16.0 conv @ $261 |
+| `"back pain specialist near me"` | — | EXISTING | 2.0 conv |
+| `"doctor in back pain"` | 8100 | NEW | CPC $4.52, commercial intent |
+| `"doctors for back injuries"` | 12100 | NEW | CPC $5.22 - highest vol commercial term found |
+| `"lower back pain doctor"` | 1900 | NEW |  |
+| `"back problem doctor"` | 1600 | NEW |  |
+| `"lower back specialist doctors"` | 320 | NEW |  |
+| `"back and spine doctors"` | 260 | NEW |  |
+| `"back pain doctors near me"` | 390 | NEW |  |
+| `"chronic back pain doctor near me"` | 30 | NEW |  |
+| `"back pain treatment near me"` | — | REACTIVATE | 0 impr - sitting in paused Pain Mgmt |
+
+**BROAD MATCH** (2) — upload **paused**, enable only after the Liine/ZocDoc fix
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `back pain specialist near me` | — | GATED | after ZocDoc fix |
+| `back doctor near me` | 4400 | GATED | after ZocDoc fix |
+
+**Ad-group negatives**
+
+```
+-"back to the future" -mattress -chiropractor -chiropractic -salary -"icd 10" -exercises -stretches -"what is a back doctor" -"doctor odyssey" -"doctor who" -"doctor stone" -pillow -brace -massage
+```
+
+
+### Neck Pain Specialist
+
+_20 keywords — 8 exact, 11 phrase, 1 broad_
+
+**EXACT MATCH** (8)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `[neck pain doctor near me]` | 390 | NEW |  |
+| `[neck specialist]` | — | EXISTING | 3.0 conv |
+| `[neck and back specialist near me]` | — | EXISTING |  |
+| `[orthopedic neck specialist near me]` | — | EXISTING |  |
+| `[neck pain specialist]` | — | NEW |  |
+| `[neck doctor near me]` | — | NEW |  |
+| `[best neck pain doctor near me]` | 210 | NEW |  |
+| `[neck and spine specialist near me]` | 170 | NEW |  |
+
+**PHRASE MATCH** (11)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `"neck pain specialist"` | — | EXISTING | 35.2 conv @ $169 - strongest neck term |
+| `"neck pain specialist near me"` | — | EXISTING | 2.5 conv |
+| `"neck specialist near me"` | — | EXISTING | 3.0 conv |
+| `"neck doctor near me"` | — | EXISTING | 5.5 conv @ $87 |
+| `"neck pain doctor"` | 1300 | NEW |  |
+| `"neck pain doctor near me"` | 390 | NEW |  |
+| `"cervical spine specialist"` | 210 | NEW |  |
+| `"neck and back pain doctor near me"` | 210 | NEW |  |
+| `"neck pain treatment near me"` | — | REACTIVATE | 0 impr - in paused Pain Mgmt |
+| `"neck pain treatment"` | — | REACTIVATE | in paused Pain Mgmt |
+| `"neck physical therapy near me"` | — | REACTIVATE | in paused Pain Mgmt |
+
+**BROAD MATCH** (1) — upload **paused**, enable only after the Liine/ZocDoc fix
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `neck pain specialist near me` | — | GATED | after ZocDoc fix |
+
+**Ad-group negatives**
+
+```
+-"icd 10" -"red flags" -"when to see" -stretches -exercises -pillow -massage -chiropractor -"lump on back of neck" -salary
+```
+
+
+### Sciatica `[PH]`
+
+_17 keywords — 6 exact, 10 phrase, 1 broad_
+
+**EXACT MATCH** (6)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `[sciatica treatment near me]` | 1900 | NEW | highest transactional sciatica term |
+| `[sciatica doctor near me]` | 720 | NEW |  |
+| `[sciatica specialist near me]` | 260 | NEW |  |
+| `[sciatica pain doctor]` | 260 | NEW |  |
+| `[sciatica specialist]` | 170 | NEW |  |
+| `[doctor for sciatica]` | 170 | NEW |  |
+
+**PHRASE MATCH** (10)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `"sciatica treatment near me"` | 1900 | NEW |  |
+| `"sciatica doctor near me"` | 720 | NEW |  |
+| `"sciatica specialist near me"` | 260 | NEW |  |
+| `"sciatica specialist"` | 170 | NEW |  |
+| `"sciatica pain doctor"` | 260 | NEW |  |
+| `"sciatica treatment"` | 27100 | REACTIVATE | PAUSED. High vol but mostly informational - watch CPA daily |
+| `"sciatica pain relief"` | 40500 | REACTIVATE | PAUSED. Informational-heavy - start paused, test 2nd |
+| `"sciatic nerve pain relief"` | 22200 | REACTIVATE | PAUSED. Same caution |
+| `"physical therapy for sciatica near me"` | — | REACTIVATE | in paused Pain Mgmt |
+| `"sciatica treatment southfield"` | — | REACTIVATE | Southfield campaign only |
+
+**BROAD MATCH** (1) — upload **paused**, enable only after the Liine/ZocDoc fix
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `sciatica specialist near me` | 260 | GATED | after ZocDoc fix |
+
+**Ad-group negatives**
+
+```
+-stretches -exercises -"icd 10" -pregnancy -pregnant -"how to" -"what is" -"how long" -mattress -chiropractic -chiropractor -cream -brace -"at home" -"ice pack" -symptoms -"feel like" -medication -pillow -"does it go away" -meaning
+```
+
+
+### Herniated / Bulging Disc
+
+_26 keywords — 10 exact, 15 phrase, 1 broad_
+
+**EXACT MATCH** (10)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `[herniated disc treatment near me]` | 1600 | NEW | CPC $2.65, transactional |
+| `[herniated disc doctor near me]` | 140 | NEW |  |
+| `[herniated disc specialist near me]` | 70 | NEW |  |
+| `[herniated disc specialist]` | 260 | NEW |  |
+| `[discectomy]` | — | EXISTING | migrate from Spine Conditions campaign |
+| `[surgery for herniated disc]` | — | EXISTING | migrate |
+| `[disc herniation surgery]` | — | EXISTING | migrate |
+| `[disc surgery]` | — | EXISTING | migrate |
+| `[discectomy surgery]` | — | EXISTING | migrate |
+| `[acdf surgery]` | — | EXISTING | migrate - flagged low quality, needs relevant ad |
+
+**PHRASE MATCH** (15)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `"herniated disc treatment near me"` | 1600 | NEW |  |
+| `"herniated disc surgery"` | 8100 | EXISTING | migrate from Spine Conditions |
+| `"herniated disc treatments"` | — | EXISTING | migrate |
+| `"herniated disc doctor near me"` | 140 | EXISTING | 2 impr only |
+| `"herniated disc specialist"` | 260 | NEW |  |
+| `"bulging disc treatment"` | 6600 | NEW | zero coverage today |
+| `"bulging disc doctor near me"` | 10 | NEW |  |
+| `"slipped disc specialist"` | — | REACTIVATE | paused |
+| `"slipped disc surgeon"` | — | EXISTING | migrate |
+| `"ruptured disk treatment"` | — | EXISTING | migrate |
+| `"ruptured disc surgery"` | — | EXISTING | migrate |
+| `"treatment for herniated disc"` | — | EXISTING | migrate |
+| `"degenerative disc disease treatment"` | 1300 | EXISTING | migrate |
+| `"degenerative disc surgery"` | — | EXISTING | migrate |
+| `"degenerative disc repair"` | — | EXISTING | migrate |
+
+**BROAD MATCH** (1) — upload **paused**, enable only after the Liine/ZocDoc fix
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `herniated disc specialist near me` | 70 | GATED | after ZocDoc fix |
+
+**Ad-group negatives**
+
+```
+-"icd 10" -exercises -stretches -"how to" -"what is" -symptoms -"vs bulging" -"versus bulging" -sza -"pain killer" -painkiller -medication -"heal quickly" -"recovery time" -"feel like" -"l5 s1" -"self-care" -"signs"
+```
+
+
+### Spinal Stenosis
+
+_15 keywords — 5 exact, 9 phrase, 1 broad_
+
+**EXACT MATCH** (5)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `[spinal stenosis specialist near me]` | 260 | NEW |  |
+| `[spinal stenosis treatment near me]` | 210 | NEW |  |
+| `[spinal stenosis specialist]` | 110 | NEW |  |
+| `[spinal stenosis doctor near me]` | 30 | NEW |  |
+| `[spinal stenosis surgery]` | 5400 | EXISTING | flagged low quality - fix w/ relevant ad + LP |
+
+**PHRASE MATCH** (9)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `"spinal stenosis specialist near me"` | 260 | NEW |  |
+| `"spinal stenosis treatment near me"` | 210 | NEW |  |
+| `"spinal stenosis treatment"` | 8100 | NEW | informational-heavy - monitor |
+| `"spinal stenosis surgery"` | 5400 | NEW |  |
+| `"surgery for spinal stenosis"` | 1000 | NEW |  |
+| `"lumbar spinal stenosis treatment"` | 880 | NEW |  |
+| `"lumbar stenosis treatment"` | 90 | NEW |  |
+| `"spinal stenosis specialist"` | 110 | NEW |  |
+| `"spinal stenosis therapies"` | — | REACTIVATE | in paused Pain Mgmt, flagged low quality |
+
+**BROAD MATCH** (1) — upload **paused**, enable only after the Liine/ZocDoc fix
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `spinal stenosis specialist near me` | 260 | GATED | after ZocDoc fix |
+
+**Ad-group negatives**
+
+```
+-"icd 10" -exercises -symptoms -"what is" -disability -"kill you" -"final stages" -hereditary -"to avoid" -"cured" -"painkiller" -"newest treatment" -"which is worse"
+```
+
+
+### Pinched Nerve / Radiculopathy
+
+_15 keywords — 4 exact, 10 phrase, 1 broad_
+
+**EXACT MATCH** (4)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `[pinched nerve treatment near me]` | 590 | NEW |  |
+| `[pinched nerve doctor near me]` | 110 | NEW | CPC $4.24 |
+| `[pinched nerve specialist near me]` | 50 | NEW |  |
+| `[radiculopathy doctor near me]` | 20 | NEW | CPC $3.27 |
+
+**PHRASE MATCH** (10)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `"pinched nerve treatment near me"` | 590 | NEW |  |
+| `"pinched nerve doctor near me"` | 110 | NEW |  |
+| `"pinched nerve specialist near me"` | 50 | NEW |  |
+| `"pinched nerve treatment"` | 4400 | NEW |  |
+| `"treatment for pinched nerve in neck"` | 3600 | NEW |  |
+| `"neck nerve pinch treatment"` | 4400 | NEW |  |
+| `"cervical radiculopathy treatment"` | 4400 | NEW | CPC $1.21 |
+| `"pinched nerve therapy neck"` | 5400 | NEW |  |
+| `"treatment for pinched nerve in lower back"` | — | REACTIVATE | in paused Pain Mgmt |
+| `"radiculopathy treatment"` | — | NEW |  |
+
+**BROAD MATCH** (1) — upload **paused**, enable only after the Liine/ZocDoc fix
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `pinched nerve doctor near me` | 110 | GATED | after ZocDoc fix |
+
+**Ad-group negatives**
+
+```
+-shoulder -hip -"how to" -"what is" -"how long" -symptoms -"feel like" -"icd 10" -stretches -exercises -"relieve" -"fix a"
+```
+
+
+### Spine Surgery `[PH]`
+
+_24 keywords — 8 exact, 15 phrase, 1 broad_
+
+**EXACT MATCH** (8)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `[spine surgeon near me]` | 5400 | NEW | LARGEST MISS - 5,400/mo, not targeted |
+| `[spine surgeons near me]` | 1900 | NEW |  |
+| `[orthopedic spine surgeon near me]` | 390 | NEW |  |
+| `[orthopedic spine surgeon]` | 1000 | EXISTING |  |
+| `[michigan orthopedic spine surgeons]` | — | EXISTING | 15.0 conv @ $122 |
+| `[spine surgeon]` | 4400 | NEW |  |
+| `[back surgeon near me]` | — | EXISTING | 1.0 conv |
+| `[best spine doctors in michigan]` | — | EXISTING |  |
+
+**PHRASE MATCH** (15)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `"orthopedic spine surgeon"` | 1000 | EXISTING | #1 spine kw: 126.6 conv @ $213 |
+| `"spinal surgery"` | — | EXISTING | 29.4 conv @ $417 |
+| `"spine surgery"` | — | EXISTING | 29.0 conv @ $357 |
+| `"back surgeons in michigan"` | — | EXISTING | 25.6 conv @ $300 |
+| `"spinal surgeons near me"` | — | EXISTING | 8.3 conv @ $90 - strong |
+| `"spine surgeon near me"` | 5400 | EXISTING | 2.3 conv - underfunded |
+| `"spine surgeons near me"` | 1900 | NEW |  |
+| `"orthopedic spine surgeon near me"` | 390 | EXISTING |  |
+| `"spine orthopedic surgeon"` | 1000 | NEW |  |
+| `"spine surgery surgeon"` | 2900 | NEW |  |
+| `"lower back surgery"` | — | EXISTING |  |
+| `"neck surgery"` | — | EXISTING | 6.5 conv @ $740 - watch |
+| `"cervical fusion surgery"` | 1900 | NEW |  |
+| `"lumbar fusion surgery"` | 1900 | NEW |  |
+| `"minimally invasive spine surgeon"` | 260 | NEW |  |
+
+**BROAD MATCH** (1) — upload **paused**, enable only after the Liine/ZocDoc fix
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `spine surgeon near me` | 5400 | GATED | after ZocDoc fix |
+
+**Ad-group negatives**
+
+```
+-salary -"how much" -"top 10" -jobs -residency -"make" -nyc -nj -"new jersey" -"long island" -dallas -texas -florida -"united states" -"icd 10" -"best in the"
+```
+
+
+### Minimally Invasive / Disc Surgery
+
+_18 keywords — 8 exact, 9 phrase, 1 broad_
+
+**EXACT MATCH** (8)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `[minimally invasive spine surgery near me]` | 390 | NEW |  |
+| `[endoscopic spine surgery near me]` | 210 | NEW |  |
+| `[microdiscectomy near me]` | 110 | NEW | CPC $3.06 |
+| `[microdiscectomy]` | — | EXISTING | move from Surgery |
+| `[laminectomy]` | — | REACTIVATE | paused |
+| `[laminectomy surgery]` | — | EXISTING | move from Surgery |
+| `[decompression surgeries]` | — | EXISTING | move from Surgery |
+| `[artificial disc replacement near me]` | 140 | NEW |  |
+
+**PHRASE MATCH** (9)
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `"minimally invasive spine surgery near me"` | 390 | NEW |  |
+| `"minimally invasive spinal surgery"` | — | EXISTING | move from Surgery |
+| `"endoscopic spine surgery near me"` | 210 | NEW |  |
+| `"microdiscectomy"` | — | NEW |  |
+| `"lumbar laminectomy"` | — | EXISTING | move from Surgery, 1.0 conv |
+| `"cervical disc replacement"` | 2900 | NEW |  |
+| `"lumbar disc replacement"` | 1000 | NEW |  |
+| `"artificial disc replacement near me"` | 140 | NEW |  |
+| `"spinal decompression"` | — | REACTIVATE | CAUTION: chiro decompression-table intent, watch search terms |
+
+**BROAD MATCH** (1) — upload **paused**, enable only after the Liine/ZocDoc fix
+
+| Keyword (as entered) | Vol/mo | Action | Note |
+|---|---:|---|---|
+| `minimally invasive spine surgery near me` | 390 | GATED | after ZocDoc fix |
+
+**Ad-group negatives**
+
+```
+-chiropractic -chiropractor -table -machine -"at home" -inversion -salary -cost -"how much" -nyc -nj -dallas -"recovery time"
+```

@@ -1,573 +1,514 @@
-Campaign,Ad Group,Keyword,Match Type,Status,US Vol/mo,Action,Notes
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,spine specialist near me,Exact,Enabled,5400,EXISTING,"8.9 conv, ROAS 0.81"
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,spine specialist,Exact,Enabled,4400,EXISTING,16.7 conv
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,spine doctor near me,Exact,Enabled,,NEW,"phrase ver = $51 CPA, best in spine"
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,spine doctors,Exact,Enabled,,REACTIVATE,"phrase ver paused w/ $21,223 spend, 76 conv"
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,orthopedic spine specialist near me,Exact,Enabled,590,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,ortho spine specialist,Exact,Enabled,,EXISTING,5.0 conv
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,spine pain specialist near me,Exact,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,best spine specialist near me,Exact,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,back and spine specialist near me,Exact,Enabled,320,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,spine doctors in my area,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,best spine doctors in michigan,Exact,Enabled,,EXISTING,4.0 conv
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,spine specialist near me,Phrase,Enabled,5400,EXISTING,41.4 conv @ $91 CPA
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,spine doctor near me,Phrase,Enabled,,EXISTING,28.9 conv @ $51 CPA - best CPA in spine
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,spine doctors,Phrase,Enabled,,REACTIVATE,"PAUSED - was #2 kw by spend, $279 CPA"
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,spine specialist,Phrase,Enabled,4400,EXISTING,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,spine pain specialist,Phrase,Enabled,,EXISTING,30.6 conv @ $244
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,spine pain specialist near me,Phrase,Enabled,170,EXISTING,13.0 conv @ $78
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,orthopedic spine specialist,Phrase,Enabled,1600,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,spine and orthopedic specialists,Phrase,Enabled,1600,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,back and spine specialist,Phrase,Enabled,320,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,cervical spine specialist,Phrase,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,spine center near me,Phrase,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,spine clinic near me,Phrase,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,non surgical spine specialist,Phrase,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,ortho spine specialist,Phrase,Enabled,,EXISTING,18.0 conv @ $71
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,best spine doctor near me,Phrase,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,spine specialist near me,Broad,Paused,5400,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,orthopedic spine surgeon near me,Broad,Paused,390,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,"-salary -jobs -""icd 10"" -""what is a"" -school -residency -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back doctors near me,Exact,Enabled,2900,EXISTING,"4.0 conv, ROAS 2.00 - best ROAS in spine"
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back doctor near me,Exact,Enabled,4400,EXISTING,"11.0 conv, ROAS 1.23"
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back specialist near me,Exact,Enabled,,EXISTING,"13.0 conv, ROAS 1.00"
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back dr near me,Exact,Enabled,,EXISTING,"8.5 conv, ROAS 1.01"
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back pain doctor near me,Exact,Enabled,2400,NEW,phrase ver = 16.5 conv @ $105
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back doctor,Exact,Enabled,5400,EXISTING,7.5 conv
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back pain doctor,Exact,Enabled,5400,EXISTING,1.5 conv
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back pain specialist,Exact,Enabled,,EXISTING,9.2 conv @ $286
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back pain specialist near me,Exact,Enabled,,EXISTING,1.0 conv
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back pain doctors near me,Exact,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,lower back pain doctor,Exact,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,orthopedic back doctor near me,Exact,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,best back doctor near me,Exact,Enabled,320,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back and spine doctor near me,Exact,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,doctor for back pain near me,Exact,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back doctors near me,Phrase,Enabled,2900,EXISTING,17.0 conv @ $140
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back pain doctor near me,Phrase,Enabled,2400,EXISTING,16.5 conv @ $105
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back specialist near me,Phrase,Enabled,,EXISTING,15.5 conv @ $127
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back doctor near me,Phrase,Enabled,4400,EXISTING,
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back specialist,Phrase,Enabled,,EXISTING,16.0 conv @ $261
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back pain specialist near me,Phrase,Enabled,,EXISTING,2.0 conv
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,doctor in back pain,Phrase,Enabled,8100,NEW,"CPC $4.52, commercial intent"
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,doctors for back injuries,Phrase,Enabled,12100,NEW,CPC $5.22 - highest vol commercial term found
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,lower back pain doctor,Phrase,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back problem doctor,Phrase,Enabled,1600,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,lower back specialist doctors,Phrase,Enabled,320,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back and spine doctors,Phrase,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back pain doctors near me,Phrase,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,chronic back pain doctor near me,Phrase,Enabled,30,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back pain treatment near me,Phrase,Enabled,,REACTIVATE,0 impr - sitting in paused Pain Mgmt
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back pain specialist near me,Broad,Paused,,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,back doctor near me,Broad,Paused,4400,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,"-""back to the future"" -mattress -chiropractor -chiropractic -salary -""icd 10"" -exercises -stretches -""what is a back doctor"" -""doctor odyssey"" -""doctor who"" -""doctor stone"" -pillow -brace -massage",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck pain doctor near me,Exact,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck specialist,Exact,Enabled,,EXISTING,3.0 conv
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck and back specialist near me,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,orthopedic neck specialist near me,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck pain specialist,Exact,Enabled,,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck doctor near me,Exact,Enabled,,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,best neck pain doctor near me,Exact,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck and spine specialist near me,Exact,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck pain specialist,Phrase,Enabled,,EXISTING,35.2 conv @ $169 - strongest neck term
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck pain specialist near me,Phrase,Enabled,,EXISTING,2.5 conv
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck specialist near me,Phrase,Enabled,,EXISTING,3.0 conv
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck doctor near me,Phrase,Enabled,,EXISTING,5.5 conv @ $87
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck pain doctor,Phrase,Enabled,1300,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck pain doctor near me,Phrase,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,cervical spine specialist,Phrase,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck and back pain doctor near me,Phrase,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck pain treatment near me,Phrase,Enabled,,REACTIVATE,0 impr - in paused Pain Mgmt
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck pain treatment,Phrase,Enabled,,REACTIVATE,in paused Pain Mgmt
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck physical therapy near me,Phrase,Enabled,,REACTIVATE,in paused Pain Mgmt
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,neck pain specialist near me,Broad,Paused,,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,"-""icd 10"" -""red flags"" -""when to see"" -stretches -exercises -pillow -massage -chiropractor -""lump on back of neck"" -salary",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,sciatica treatment near me,Exact,Enabled,1900,NEW,highest transactional sciatica term
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,sciatica doctor near me,Exact,Enabled,720,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,sciatica specialist near me,Exact,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,sciatica pain doctor,Exact,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,sciatica specialist,Exact,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,doctor for sciatica,Exact,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,sciatica treatment near me,Phrase,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,sciatica doctor near me,Phrase,Enabled,720,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,sciatica specialist near me,Phrase,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,sciatica specialist,Phrase,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,sciatica pain doctor,Phrase,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,sciatica treatment,Phrase,Enabled,27100,REACTIVATE,PAUSED. High vol but mostly informational - watch CPA daily
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,sciatica pain relief,Phrase,Enabled,40500,REACTIVATE,"PAUSED. Informational-heavy - start paused, test 2nd"
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,sciatic nerve pain relief,Phrase,Enabled,22200,REACTIVATE,PAUSED. Same caution
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,physical therapy for sciatica near me,Phrase,Enabled,,REACTIVATE,in paused Pain Mgmt
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,epidural injection sciatica,Phrase,Enabled,,MOVE,from Injection ad group
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,sciatica treatment southfield,Phrase,Enabled,,REACTIVATE,Southfield campaign only
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,sciatica specialist near me,Broad,Paused,260,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,"-stretches -exercises -""icd 10"" -pregnancy -pregnant -""how to"" -""what is"" -""how long"" -mattress -chiropractic -chiropractor -cream -brace -""at home"" -""ice pack"" -symptoms -""feel like"" -medication -pillow -""does it go away"" -meaning",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,herniated disc treatment near me,Exact,Enabled,1600,NEW,"CPC $2.65, transactional"
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,herniated disc doctor near me,Exact,Enabled,140,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,herniated disc specialist near me,Exact,Enabled,70,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,herniated disc specialist,Exact,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,discectomy,Exact,Enabled,,EXISTING,migrate from Spine Conditions campaign
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,surgery for herniated disc,Exact,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,disc herniation surgery,Exact,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,disc surgery,Exact,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,discectomy surgery,Exact,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,acdf surgery,Exact,Enabled,,EXISTING,"migrate - flagged low quality, needs relevant ad"
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,herniated disc treatment near me,Phrase,Enabled,1600,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,herniated disc surgery,Phrase,Enabled,8100,EXISTING,migrate from Spine Conditions
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,herniated disc treatments,Phrase,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,herniated disc doctor near me,Phrase,Enabled,140,EXISTING,2 impr only
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,herniated disc specialist,Phrase,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,bulging disc treatment,Phrase,Enabled,6600,NEW,zero coverage today
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,bulging disc doctor near me,Phrase,Enabled,10,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,slipped disc specialist,Phrase,Enabled,,REACTIVATE,paused
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,slipped disc surgeon,Phrase,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,ruptured disk treatment,Phrase,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,ruptured disc surgery,Phrase,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,treatment for herniated disc,Phrase,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,degenerative disc disease treatment,Phrase,Enabled,1300,EXISTING,migrate
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,degenerative disc surgery,Phrase,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,degenerative disc repair,Phrase,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,herniated disc specialist near me,Broad,Paused,70,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,"-""icd 10"" -exercises -stretches -""how to"" -""what is"" -symptoms -""vs bulging"" -""versus bulging"" -sza -""pain killer"" -painkiller -medication -""heal quickly"" -""recovery time"" -""feel like"" -""l5 s1"" -""self-care"" -""signs""",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,spinal stenosis specialist near me,Exact,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,spinal stenosis treatment near me,Exact,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,spinal stenosis specialist,Exact,Enabled,110,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,spinal stenosis doctor near me,Exact,Enabled,30,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,spinal stenosis surgery,Exact,Enabled,5400,EXISTING,flagged low quality - fix w/ relevant ad + LP
-"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,spinal stenosis specialist near me,Phrase,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,spinal stenosis treatment near me,Phrase,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,spinal stenosis treatment,Phrase,Enabled,8100,NEW,informational-heavy - monitor
-"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,spinal stenosis surgery,Phrase,Enabled,5400,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,surgery for spinal stenosis,Phrase,Enabled,1000,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,lumbar spinal stenosis treatment,Phrase,Enabled,880,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,lumbar stenosis treatment,Phrase,Enabled,90,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,spinal stenosis specialist,Phrase,Enabled,110,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,spinal stenosis therapies,Phrase,Enabled,,REACTIVATE,"in paused Pain Mgmt, flagged low quality"
-"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,spinal stenosis specialist near me,Broad,Paused,260,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,"-""icd 10"" -exercises -symptoms -""what is"" -disability -""kill you"" -""final stages"" -hereditary -""to avoid"" -""cured"" -""painkiller"" -""newest treatment"" -""which is worse""",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,pinched nerve treatment near me,Exact,Enabled,590,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,pinched nerve doctor near me,Exact,Enabled,110,NEW,CPC $4.24
-"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,pinched nerve specialist near me,Exact,Enabled,50,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,radiculopathy doctor near me,Exact,Enabled,20,NEW,CPC $3.27
-"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,pinched nerve treatment near me,Phrase,Enabled,590,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,pinched nerve doctor near me,Phrase,Enabled,110,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,pinched nerve specialist near me,Phrase,Enabled,50,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,pinched nerve treatment,Phrase,Enabled,4400,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,treatment for pinched nerve in neck,Phrase,Enabled,3600,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,neck nerve pinch treatment,Phrase,Enabled,4400,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,cervical radiculopathy treatment,Phrase,Enabled,4400,NEW,CPC $1.21
-"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,pinched nerve therapy neck,Phrase,Enabled,5400,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,treatment for pinched nerve in lower back,Phrase,Enabled,,REACTIVATE,in paused Pain Mgmt
-"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,radiculopathy treatment,Phrase,Enabled,,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,pinched nerve doctor near me,Broad,Paused,110,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,"-shoulder -hip -""how to"" -""what is"" -""how long"" -symptoms -""feel like"" -""icd 10"" -stretches -exercises -""relieve"" -""fix a""",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,spine surgeon near me,Exact,Enabled,5400,NEW,"LARGEST MISS - 5,400/mo, not targeted"
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,spine surgeons near me,Exact,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,orthopedic spine surgeon near me,Exact,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,orthopedic spine surgeon,Exact,Enabled,1000,EXISTING,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,michigan orthopedic spine surgeons,Exact,Enabled,,EXISTING,15.0 conv @ $122
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,spine surgeon,Exact,Enabled,4400,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,back surgeon near me,Exact,Enabled,,EXISTING,1.0 conv
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,best spine doctors in michigan,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,orthopedic spine surgeon,Phrase,Enabled,1000,EXISTING,#1 spine kw: 126.6 conv @ $213
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,spinal surgery,Phrase,Enabled,,EXISTING,29.4 conv @ $417
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,spine surgery,Phrase,Enabled,,EXISTING,29.0 conv @ $357
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,back surgeons in michigan,Phrase,Enabled,,EXISTING,25.6 conv @ $300
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,spinal surgeons near me,Phrase,Enabled,,EXISTING,8.3 conv @ $90 - strong
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,spine surgeon near me,Phrase,Enabled,5400,EXISTING,2.3 conv - underfunded
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,spine surgeons near me,Phrase,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,orthopedic spine surgeon near me,Phrase,Enabled,390,EXISTING,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,spine orthopedic surgeon,Phrase,Enabled,1000,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,spine surgery surgeon,Phrase,Enabled,2900,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,lower back surgery,Phrase,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,neck surgery,Phrase,Enabled,,EXISTING,6.5 conv @ $740 - watch
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,cervical fusion surgery,Phrase,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,lumbar fusion surgery,Phrase,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,minimally invasive spine surgeon,Phrase,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,spine surgeon near me,Broad,Paused,5400,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,"-salary -""how much"" -""top 10"" -jobs -residency -""make"" -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida -""united states"" -""icd 10"" -""best in the""",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,minimally invasive spine surgery near me,Exact,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,endoscopic spine surgery near me,Exact,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,microdiscectomy near me,Exact,Enabled,110,NEW,CPC $3.06
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,microdiscectomy,Exact,Enabled,,EXISTING,move from Surgery
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,laminectomy,Exact,Enabled,,REACTIVATE,paused
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,laminectomy surgery,Exact,Enabled,,EXISTING,move from Surgery
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,decompression surgeries,Exact,Enabled,,EXISTING,move from Surgery
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,artificial disc replacement near me,Exact,Enabled,140,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,minimally invasive spine surgery near me,Phrase,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,minimally invasive spinal surgery,Phrase,Enabled,,EXISTING,move from Surgery
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,endoscopic spine surgery near me,Phrase,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,microdiscectomy,Phrase,Enabled,,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,lumbar laminectomy,Phrase,Enabled,,EXISTING,"move from Surgery, 1.0 conv"
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,cervical disc replacement,Phrase,Enabled,2900,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,lumbar disc replacement,Phrase,Enabled,1000,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,artificial disc replacement near me,Phrase,Enabled,140,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,spinal decompression,Phrase,Enabled,,REACTIVATE,"CAUTION: chiro decompression-table intent, watch search terms"
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,minimally invasive spine surgery near me,Broad,Paused,390,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,"-chiropractic -chiropractor -table -machine -""at home"" -inversion -salary -cost -""how much"" -nyc -nj -dallas -""recovery time""",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,pain management doctors near me,Exact,Enabled,5400,NEW,CPC $3.15
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,pain management doctor near me,Exact,Enabled,2400,NEW,CPC $3.21
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,pain management clinic near me,Exact,Enabled,2900,NEW,CAUTION: screen search terms for drug-seeking
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,epidural steroid injection near me,Exact,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,si joint injection near me,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,spinal pain injections,Exact,Enabled,,EXISTING,1.0 conv
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,back pain injection,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,neck pain injection,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,epidural for pain,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,si joint injection doctor,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,spine pain injection,Phrase,Enabled,,EXISTING,9.7 conv @ $384
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,spine injection,Phrase,Enabled,,REACTIVATE,paused - 10.8 conv @ $321
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,spine disk injection,Phrase,Enabled,,EXISTING,8.1 conv @ $240
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,back pain management near me,Phrase,Enabled,320,REACTIVATE,0 impr - in paused Pain Mgmt
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,epidural steroid injection near me,Phrase,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,lumbar epidural steroid injection,Phrase,Enabled,2400,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,cervical epidural steroid injection,Phrase,Enabled,2900,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,facet joint injection,Phrase,Enabled,3600,NEW,zero coverage today
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,medial branch block,Phrase,Enabled,8100,NEW,"CPC $1.77, zero coverage today"
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,nerve block for back pain,Phrase,Enabled,590,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,interventional pain management,Phrase,Enabled,5400,NEW,CPC $5.11
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,radiofrequency ablation back,Phrase,Enabled,50,NEW,
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,sacroiliac injection,Phrase,Enabled,,REACTIVATE,paused
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,lumbar epidural,Phrase,Enabled,,EXISTING,3.0 conv
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,cervical injection,Phrase,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,pain management doctor near me,Broad,Paused,2400,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,epidural steroid injection near me,Broad,Paused,170,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Sterling Heights",Pain Management & Injections,"-opioid -opioids -oxycodone -percocet -norco -vicodin -narcotic -""pain pills"" -""pain medication"" -prescription -suboxone -methadone -gallbladder -fibromyalgia -eds -acupuncture -""tens unit"" -cbd -kratom -""medical marijuana"" -""icd 10"" -salary -""what is pain management""",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,spine specialist near me,Exact,Enabled,5400,EXISTING,"8.9 conv, ROAS 0.81"
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,spine specialist,Exact,Enabled,4400,EXISTING,16.7 conv
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,spine doctor near me,Exact,Enabled,,NEW,"phrase ver = $51 CPA, best in spine"
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,spine doctors,Exact,Enabled,,REACTIVATE,"phrase ver paused w/ $21,223 spend, 76 conv"
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,orthopedic spine specialist near me,Exact,Enabled,590,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,ortho spine specialist,Exact,Enabled,,EXISTING,5.0 conv
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,spine pain specialist near me,Exact,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,best spine specialist near me,Exact,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,back and spine specialist near me,Exact,Enabled,320,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,spine doctors in my area,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,best spine doctors in michigan,Exact,Enabled,,EXISTING,4.0 conv
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,spine specialist near me,Phrase,Enabled,5400,EXISTING,41.4 conv @ $91 CPA
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,spine doctor near me,Phrase,Enabled,,EXISTING,28.9 conv @ $51 CPA - best CPA in spine
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,spine doctors,Phrase,Enabled,,REACTIVATE,"PAUSED - was #2 kw by spend, $279 CPA"
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,spine specialist,Phrase,Enabled,4400,EXISTING,
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,spine pain specialist,Phrase,Enabled,,EXISTING,30.6 conv @ $244
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,spine pain specialist near me,Phrase,Enabled,170,EXISTING,13.0 conv @ $78
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,orthopedic spine specialist,Phrase,Enabled,1600,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,spine and orthopedic specialists,Phrase,Enabled,1600,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,back and spine specialist,Phrase,Enabled,320,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,cervical spine specialist,Phrase,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,spine center near me,Phrase,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,spine clinic near me,Phrase,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,non surgical spine specialist,Phrase,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,ortho spine specialist,Phrase,Enabled,,EXISTING,18.0 conv @ $71
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,best spine doctor near me,Phrase,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,spine specialist near me,Broad,Paused,5400,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,orthopedic spine surgeon near me,Broad,Paused,390,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Livonia",Spine Specialist,"-salary -jobs -""icd 10"" -""what is a"" -school -residency -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back doctors near me,Exact,Enabled,2900,EXISTING,"4.0 conv, ROAS 2.00 - best ROAS in spine"
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back doctor near me,Exact,Enabled,4400,EXISTING,"11.0 conv, ROAS 1.23"
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back specialist near me,Exact,Enabled,,EXISTING,"13.0 conv, ROAS 1.00"
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back dr near me,Exact,Enabled,,EXISTING,"8.5 conv, ROAS 1.01"
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back pain doctor near me,Exact,Enabled,2400,NEW,phrase ver = 16.5 conv @ $105
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back doctor,Exact,Enabled,5400,EXISTING,7.5 conv
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back pain doctor,Exact,Enabled,5400,EXISTING,1.5 conv
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back pain specialist,Exact,Enabled,,EXISTING,9.2 conv @ $286
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back pain specialist near me,Exact,Enabled,,EXISTING,1.0 conv
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back pain doctors near me,Exact,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,lower back pain doctor,Exact,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,orthopedic back doctor near me,Exact,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,best back doctor near me,Exact,Enabled,320,NEW,
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back and spine doctor near me,Exact,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,doctor for back pain near me,Exact,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back doctors near me,Phrase,Enabled,2900,EXISTING,17.0 conv @ $140
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back pain doctor near me,Phrase,Enabled,2400,EXISTING,16.5 conv @ $105
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back specialist near me,Phrase,Enabled,,EXISTING,15.5 conv @ $127
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back doctor near me,Phrase,Enabled,4400,EXISTING,
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back specialist,Phrase,Enabled,,EXISTING,16.0 conv @ $261
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back pain specialist near me,Phrase,Enabled,,EXISTING,2.0 conv
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,doctor in back pain,Phrase,Enabled,8100,NEW,"CPC $4.52, commercial intent"
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,doctors for back injuries,Phrase,Enabled,12100,NEW,CPC $5.22 - highest vol commercial term found
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,lower back pain doctor,Phrase,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back problem doctor,Phrase,Enabled,1600,NEW,
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,lower back specialist doctors,Phrase,Enabled,320,NEW,
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back and spine doctors,Phrase,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back pain doctors near me,Phrase,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,chronic back pain doctor near me,Phrase,Enabled,30,NEW,
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back pain treatment near me,Phrase,Enabled,,REACTIVATE,0 impr - sitting in paused Pain Mgmt
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back pain specialist near me,Broad,Paused,,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,back doctor near me,Broad,Paused,4400,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,"-""back to the future"" -mattress -chiropractor -chiropractic -salary -""icd 10"" -exercises -stretches -""what is a back doctor"" -""doctor odyssey"" -""doctor who"" -""doctor stone"" -pillow -brace -massage",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck pain doctor near me,Exact,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck specialist,Exact,Enabled,,EXISTING,3.0 conv
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck and back specialist near me,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,orthopedic neck specialist near me,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck pain specialist,Exact,Enabled,,NEW,
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck doctor near me,Exact,Enabled,,NEW,
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,best neck pain doctor near me,Exact,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck and spine specialist near me,Exact,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck pain specialist,Phrase,Enabled,,EXISTING,35.2 conv @ $169 - strongest neck term
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck pain specialist near me,Phrase,Enabled,,EXISTING,2.5 conv
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck specialist near me,Phrase,Enabled,,EXISTING,3.0 conv
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck doctor near me,Phrase,Enabled,,EXISTING,5.5 conv @ $87
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck pain doctor,Phrase,Enabled,1300,NEW,
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck pain doctor near me,Phrase,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,cervical spine specialist,Phrase,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck and back pain doctor near me,Phrase,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck pain treatment near me,Phrase,Enabled,,REACTIVATE,0 impr - in paused Pain Mgmt
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck pain treatment,Phrase,Enabled,,REACTIVATE,in paused Pain Mgmt
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck physical therapy near me,Phrase,Enabled,,REACTIVATE,in paused Pain Mgmt
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,neck pain specialist near me,Broad,Paused,,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,"-""icd 10"" -""red flags"" -""when to see"" -stretches -exercises -pillow -massage -chiropractor -""lump on back of neck"" -salary",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Livonia",Sciatica,sciatica treatment near me,Exact,Enabled,1900,NEW,highest transactional sciatica term
-"BOD - Neck, Back, Spine - Livonia",Sciatica,sciatica doctor near me,Exact,Enabled,720,NEW,
-"BOD - Neck, Back, Spine - Livonia",Sciatica,sciatica specialist near me,Exact,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Livonia",Sciatica,sciatica pain doctor,Exact,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Livonia",Sciatica,sciatica specialist,Exact,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Livonia",Sciatica,doctor for sciatica,Exact,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Livonia",Sciatica,sciatica treatment near me,Phrase,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Livonia",Sciatica,sciatica doctor near me,Phrase,Enabled,720,NEW,
-"BOD - Neck, Back, Spine - Livonia",Sciatica,sciatica specialist near me,Phrase,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Livonia",Sciatica,sciatica specialist,Phrase,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Livonia",Sciatica,sciatica pain doctor,Phrase,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Livonia",Sciatica,sciatica treatment,Phrase,Enabled,27100,REACTIVATE,PAUSED. High vol but mostly informational - watch CPA daily
-"BOD - Neck, Back, Spine - Livonia",Sciatica,sciatica pain relief,Phrase,Enabled,40500,REACTIVATE,"PAUSED. Informational-heavy - start paused, test 2nd"
-"BOD - Neck, Back, Spine - Livonia",Sciatica,sciatic nerve pain relief,Phrase,Enabled,22200,REACTIVATE,PAUSED. Same caution
-"BOD - Neck, Back, Spine - Livonia",Sciatica,physical therapy for sciatica near me,Phrase,Enabled,,REACTIVATE,in paused Pain Mgmt
-"BOD - Neck, Back, Spine - Livonia",Sciatica,epidural injection sciatica,Phrase,Enabled,,MOVE,from Injection ad group
-"BOD - Neck, Back, Spine - Livonia",Sciatica,sciatica treatment southfield,Phrase,Enabled,,REACTIVATE,Southfield campaign only
-"BOD - Neck, Back, Spine - Livonia",Sciatica,sciatica specialist near me,Broad,Paused,260,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Livonia",Sciatica,"-stretches -exercises -""icd 10"" -pregnancy -pregnant -""how to"" -""what is"" -""how long"" -mattress -chiropractic -chiropractor -cream -brace -""at home"" -""ice pack"" -symptoms -""feel like"" -medication -pillow -""does it go away"" -meaning",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,herniated disc treatment near me,Exact,Enabled,1600,NEW,"CPC $2.65, transactional"
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,herniated disc doctor near me,Exact,Enabled,140,NEW,
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,herniated disc specialist near me,Exact,Enabled,70,NEW,
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,herniated disc specialist,Exact,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,discectomy,Exact,Enabled,,EXISTING,migrate from Spine Conditions campaign
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,surgery for herniated disc,Exact,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,disc herniation surgery,Exact,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,disc surgery,Exact,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,discectomy surgery,Exact,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,acdf surgery,Exact,Enabled,,EXISTING,"migrate - flagged low quality, needs relevant ad"
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,herniated disc treatment near me,Phrase,Enabled,1600,NEW,
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,herniated disc surgery,Phrase,Enabled,8100,EXISTING,migrate from Spine Conditions
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,herniated disc treatments,Phrase,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,herniated disc doctor near me,Phrase,Enabled,140,EXISTING,2 impr only
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,herniated disc specialist,Phrase,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,bulging disc treatment,Phrase,Enabled,6600,NEW,zero coverage today
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,bulging disc doctor near me,Phrase,Enabled,10,NEW,
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,slipped disc specialist,Phrase,Enabled,,REACTIVATE,paused
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,slipped disc surgeon,Phrase,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,ruptured disk treatment,Phrase,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,ruptured disc surgery,Phrase,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,treatment for herniated disc,Phrase,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,degenerative disc disease treatment,Phrase,Enabled,1300,EXISTING,migrate
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,degenerative disc surgery,Phrase,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,degenerative disc repair,Phrase,Enabled,,EXISTING,migrate
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,herniated disc specialist near me,Broad,Paused,70,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,"-""icd 10"" -exercises -stretches -""how to"" -""what is"" -symptoms -""vs bulging"" -""versus bulging"" -sza -""pain killer"" -painkiller -medication -""heal quickly"" -""recovery time"" -""feel like"" -""l5 s1"" -""self-care"" -""signs""",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,spinal stenosis specialist near me,Exact,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,spinal stenosis treatment near me,Exact,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,spinal stenosis specialist,Exact,Enabled,110,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,spinal stenosis doctor near me,Exact,Enabled,30,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,spinal stenosis surgery,Exact,Enabled,5400,EXISTING,flagged low quality - fix w/ relevant ad + LP
-"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,spinal stenosis specialist near me,Phrase,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,spinal stenosis treatment near me,Phrase,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,spinal stenosis treatment,Phrase,Enabled,8100,NEW,informational-heavy - monitor
-"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,spinal stenosis surgery,Phrase,Enabled,5400,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,surgery for spinal stenosis,Phrase,Enabled,1000,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,lumbar spinal stenosis treatment,Phrase,Enabled,880,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,lumbar stenosis treatment,Phrase,Enabled,90,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,spinal stenosis specialist,Phrase,Enabled,110,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,spinal stenosis therapies,Phrase,Enabled,,REACTIVATE,"in paused Pain Mgmt, flagged low quality"
-"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,spinal stenosis specialist near me,Broad,Paused,260,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,"-""icd 10"" -exercises -symptoms -""what is"" -disability -""kill you"" -""final stages"" -hereditary -""to avoid"" -""cured"" -""painkiller"" -""newest treatment"" -""which is worse""",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,pinched nerve treatment near me,Exact,Enabled,590,NEW,
-"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,pinched nerve doctor near me,Exact,Enabled,110,NEW,CPC $4.24
-"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,pinched nerve specialist near me,Exact,Enabled,50,NEW,
-"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,radiculopathy doctor near me,Exact,Enabled,20,NEW,CPC $3.27
-"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,pinched nerve treatment near me,Phrase,Enabled,590,NEW,
-"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,pinched nerve doctor near me,Phrase,Enabled,110,NEW,
-"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,pinched nerve specialist near me,Phrase,Enabled,50,NEW,
-"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,pinched nerve treatment,Phrase,Enabled,4400,NEW,
-"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,treatment for pinched nerve in neck,Phrase,Enabled,3600,NEW,
-"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,neck nerve pinch treatment,Phrase,Enabled,4400,NEW,
-"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,cervical radiculopathy treatment,Phrase,Enabled,4400,NEW,CPC $1.21
-"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,pinched nerve therapy neck,Phrase,Enabled,5400,NEW,
-"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,treatment for pinched nerve in lower back,Phrase,Enabled,,REACTIVATE,in paused Pain Mgmt
-"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,radiculopathy treatment,Phrase,Enabled,,NEW,
-"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,pinched nerve doctor near me,Broad,Paused,110,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,"-shoulder -hip -""how to"" -""what is"" -""how long"" -symptoms -""feel like"" -""icd 10"" -stretches -exercises -""relieve"" -""fix a""",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,spine surgeon near me,Exact,Enabled,5400,NEW,"LARGEST MISS - 5,400/mo, not targeted"
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,spine surgeons near me,Exact,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,orthopedic spine surgeon near me,Exact,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,orthopedic spine surgeon,Exact,Enabled,1000,EXISTING,
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,michigan orthopedic spine surgeons,Exact,Enabled,,EXISTING,15.0 conv @ $122
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,spine surgeon,Exact,Enabled,4400,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,back surgeon near me,Exact,Enabled,,EXISTING,1.0 conv
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,best spine doctors in michigan,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,orthopedic spine surgeon,Phrase,Enabled,1000,EXISTING,#1 spine kw: 126.6 conv @ $213
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,spinal surgery,Phrase,Enabled,,EXISTING,29.4 conv @ $417
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,spine surgery,Phrase,Enabled,,EXISTING,29.0 conv @ $357
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,back surgeons in michigan,Phrase,Enabled,,EXISTING,25.6 conv @ $300
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,spinal surgeons near me,Phrase,Enabled,,EXISTING,8.3 conv @ $90 - strong
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,spine surgeon near me,Phrase,Enabled,5400,EXISTING,2.3 conv - underfunded
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,spine surgeons near me,Phrase,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,orthopedic spine surgeon near me,Phrase,Enabled,390,EXISTING,
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,spine orthopedic surgeon,Phrase,Enabled,1000,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,spine surgery surgeon,Phrase,Enabled,2900,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,lower back surgery,Phrase,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,neck surgery,Phrase,Enabled,,EXISTING,6.5 conv @ $740 - watch
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,cervical fusion surgery,Phrase,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,lumbar fusion surgery,Phrase,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,minimally invasive spine surgeon,Phrase,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,spine surgeon near me,Broad,Paused,5400,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Livonia",Spine Surgery,"-salary -""how much"" -""top 10"" -jobs -residency -""make"" -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida -""united states"" -""icd 10"" -""best in the""",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,minimally invasive spine surgery near me,Exact,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,endoscopic spine surgery near me,Exact,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,microdiscectomy near me,Exact,Enabled,110,NEW,CPC $3.06
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,microdiscectomy,Exact,Enabled,,EXISTING,move from Surgery
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,laminectomy,Exact,Enabled,,REACTIVATE,paused
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,laminectomy surgery,Exact,Enabled,,EXISTING,move from Surgery
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,decompression surgeries,Exact,Enabled,,EXISTING,move from Surgery
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,artificial disc replacement near me,Exact,Enabled,140,NEW,
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,minimally invasive spine surgery near me,Phrase,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,minimally invasive spinal surgery,Phrase,Enabled,,EXISTING,move from Surgery
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,endoscopic spine surgery near me,Phrase,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,microdiscectomy,Phrase,Enabled,,NEW,
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,lumbar laminectomy,Phrase,Enabled,,EXISTING,"move from Surgery, 1.0 conv"
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,cervical disc replacement,Phrase,Enabled,2900,NEW,
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,lumbar disc replacement,Phrase,Enabled,1000,NEW,
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,artificial disc replacement near me,Phrase,Enabled,140,NEW,
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,spinal decompression,Phrase,Enabled,,REACTIVATE,"CAUTION: chiro decompression-table intent, watch search terms"
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,minimally invasive spine surgery near me,Broad,Paused,390,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,"-chiropractic -chiropractor -table -machine -""at home"" -inversion -salary -cost -""how much"" -nyc -nj -dallas -""recovery time""",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,pain management doctors near me,Exact,Enabled,5400,NEW,CPC $3.15
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,pain management doctor near me,Exact,Enabled,2400,NEW,CPC $3.21
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,pain management clinic near me,Exact,Enabled,2900,NEW,CAUTION: screen search terms for drug-seeking
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,epidural steroid injection near me,Exact,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,si joint injection near me,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,spinal pain injections,Exact,Enabled,,EXISTING,1.0 conv
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,back pain injection,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,neck pain injection,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,epidural for pain,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,si joint injection doctor,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,spine pain injection,Phrase,Enabled,,EXISTING,9.7 conv @ $384
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,spine injection,Phrase,Enabled,,REACTIVATE,paused - 10.8 conv @ $321
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,spine disk injection,Phrase,Enabled,,EXISTING,8.1 conv @ $240
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,back pain management near me,Phrase,Enabled,320,REACTIVATE,0 impr - in paused Pain Mgmt
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,epidural steroid injection near me,Phrase,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,lumbar epidural steroid injection,Phrase,Enabled,2400,NEW,
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,cervical epidural steroid injection,Phrase,Enabled,2900,NEW,
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,facet joint injection,Phrase,Enabled,3600,NEW,zero coverage today
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,medial branch block,Phrase,Enabled,8100,NEW,"CPC $1.77, zero coverage today"
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,nerve block for back pain,Phrase,Enabled,590,NEW,
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,interventional pain management,Phrase,Enabled,5400,NEW,CPC $5.11
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,radiofrequency ablation back,Phrase,Enabled,50,NEW,
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,sacroiliac injection,Phrase,Enabled,,REACTIVATE,paused
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,lumbar epidural,Phrase,Enabled,,EXISTING,3.0 conv
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,cervical injection,Phrase,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,pain management doctor near me,Broad,Paused,2400,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,epidural steroid injection near me,Broad,Paused,170,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Livonia",Pain Management & Injections,"-opioid -opioids -oxycodone -percocet -norco -vicodin -narcotic -""pain pills"" -""pain medication"" -prescription -suboxone -methadone -gallbladder -fibromyalgia -eds -acupuncture -""tens unit"" -cbd -kratom -""medical marijuana"" -""icd 10"" -salary -""what is pain management""",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,spine specialist near me,Exact,Enabled,5400,EXISTING,"8.9 conv, ROAS 0.81"
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,spine specialist,Exact,Enabled,4400,EXISTING,16.7 conv
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,spine doctor near me,Exact,Enabled,,NEW,"phrase ver = $51 CPA, best in spine"
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,spine doctors,Exact,Enabled,,REACTIVATE,"phrase ver paused w/ $21,223 spend, 76 conv"
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,orthopedic spine specialist near me,Exact,Enabled,590,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,ortho spine specialist,Exact,Enabled,,EXISTING,5.0 conv
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,spine pain specialist near me,Exact,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,best spine specialist near me,Exact,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,back and spine specialist near me,Exact,Enabled,320,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,spine doctors in my area,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,best spine doctors in michigan,Exact,Enabled,,EXISTING,4.0 conv
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,spine specialist near me,Phrase,Enabled,5400,EXISTING,41.4 conv @ $91 CPA
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,spine doctor near me,Phrase,Enabled,,EXISTING,28.9 conv @ $51 CPA - best CPA in spine
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,spine doctors,Phrase,Enabled,,REACTIVATE,"PAUSED - was #2 kw by spend, $279 CPA"
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,spine specialist,Phrase,Enabled,4400,EXISTING,
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,spine pain specialist,Phrase,Enabled,,EXISTING,30.6 conv @ $244
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,spine pain specialist near me,Phrase,Enabled,170,EXISTING,13.0 conv @ $78
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,orthopedic spine specialist,Phrase,Enabled,1600,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,spine and orthopedic specialists,Phrase,Enabled,1600,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,back and spine specialist,Phrase,Enabled,320,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,cervical spine specialist,Phrase,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,spine center near me,Phrase,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,spine clinic near me,Phrase,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,non surgical spine specialist,Phrase,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,ortho spine specialist,Phrase,Enabled,,EXISTING,18.0 conv @ $71
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,best spine doctor near me,Phrase,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,spine specialist near me,Broad,Paused,5400,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,orthopedic spine surgeon near me,Broad,Paused,390,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,"-salary -jobs -""icd 10"" -""what is a"" -school -residency -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back doctors near me,Exact,Enabled,2900,EXISTING,"4.0 conv, ROAS 2.00 - best ROAS in spine"
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back doctor near me,Exact,Enabled,4400,EXISTING,"11.0 conv, ROAS 1.23"
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back specialist near me,Exact,Enabled,,EXISTING,"13.0 conv, ROAS 1.00"
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back dr near me,Exact,Enabled,,EXISTING,"8.5 conv, ROAS 1.01"
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back pain doctor near me,Exact,Enabled,2400,NEW,phrase ver = 16.5 conv @ $105
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back doctor,Exact,Enabled,5400,EXISTING,7.5 conv
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back pain doctor,Exact,Enabled,5400,EXISTING,1.5 conv
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back pain specialist,Exact,Enabled,,EXISTING,9.2 conv @ $286
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back pain specialist near me,Exact,Enabled,,EXISTING,1.0 conv
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back pain doctors near me,Exact,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,lower back pain doctor,Exact,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,orthopedic back doctor near me,Exact,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,best back doctor near me,Exact,Enabled,320,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back and spine doctor near me,Exact,Enabled,210,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,doctor for back pain near me,Exact,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back doctors near me,Phrase,Enabled,2900,EXISTING,17.0 conv @ $140
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back pain doctor near me,Phrase,Enabled,2400,EXISTING,16.5 conv @ $105
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back specialist near me,Phrase,Enabled,,EXISTING,15.5 conv @ $127
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back doctor near me,Phrase,Enabled,4400,EXISTING,
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back specialist,Phrase,Enabled,,EXISTING,16.0 conv @ $261
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back pain specialist near me,Phrase,Enabled,,EXISTING,2.0 conv
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,doctor in back pain,Phrase,Enabled,8100,NEW,"CPC $4.52, commercial intent"
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,doctors for back injuries,Phrase,Enabled,12100,NEW,CPC $5.22 - highest vol commercial term found
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,lower back pain doctor,Phrase,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back problem doctor,Phrase,Enabled,1600,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,lower back specialist doctors,Phrase,Enabled,320,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back and spine doctors,Phrase,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back pain doctors near me,Phrase,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,chronic back pain doctor near me,Phrase,Enabled,30,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back pain treatment near me,Phrase,Enabled,,REACTIVATE,0 impr - sitting in paused Pain Mgmt
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back pain specialist near me,Broad,Paused,,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,back doctor near me,Broad,Paused,4400,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,"-""back to the future"" -mattress -chiropractor -chiropractic -salary -""icd 10"" -exercises -stretches -""what is a back doctor"" -""doctor odyssey"" -""doctor who"" -""doctor stone"" -pillow -brace -massage",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,sciatica treatment near me,Exact,Enabled,1900,NEW,highest transactional sciatica term
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,sciatica doctor near me,Exact,Enabled,720,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,sciatica specialist near me,Exact,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,sciatica pain doctor,Exact,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,sciatica specialist,Exact,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,doctor for sciatica,Exact,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,sciatica treatment near me,Phrase,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,sciatica doctor near me,Phrase,Enabled,720,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,sciatica specialist near me,Phrase,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,sciatica specialist,Phrase,Enabled,170,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,sciatica pain doctor,Phrase,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,sciatica treatment,Phrase,Enabled,27100,REACTIVATE,PAUSED. High vol but mostly informational - watch CPA daily
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,sciatica pain relief,Phrase,Enabled,40500,REACTIVATE,"PAUSED. Informational-heavy - start paused, test 2nd"
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,sciatic nerve pain relief,Phrase,Enabled,22200,REACTIVATE,PAUSED. Same caution
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,physical therapy for sciatica near me,Phrase,Enabled,,REACTIVATE,in paused Pain Mgmt
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,epidural injection sciatica,Phrase,Enabled,,MOVE,from Injection ad group
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,sciatica treatment southfield,Phrase,Enabled,,REACTIVATE,Southfield campaign only
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,sciatica specialist near me,Broad,Paused,260,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Port Huron",Sciatica,"-stretches -exercises -""icd 10"" -pregnancy -pregnant -""how to"" -""what is"" -""how long"" -mattress -chiropractic -chiropractor -cream -brace -""at home"" -""ice pack"" -symptoms -""feel like"" -medication -pillow -""does it go away"" -meaning",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,spine surgeon near me,Exact,Enabled,5400,NEW,"LARGEST MISS - 5,400/mo, not targeted"
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,spine surgeons near me,Exact,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,orthopedic spine surgeon near me,Exact,Enabled,390,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,orthopedic spine surgeon,Exact,Enabled,1000,EXISTING,
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,michigan orthopedic spine surgeons,Exact,Enabled,,EXISTING,15.0 conv @ $122
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,spine surgeon,Exact,Enabled,4400,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,back surgeon near me,Exact,Enabled,,EXISTING,1.0 conv
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,best spine doctors in michigan,Exact,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,orthopedic spine surgeon,Phrase,Enabled,1000,EXISTING,#1 spine kw: 126.6 conv @ $213
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,spinal surgery,Phrase,Enabled,,EXISTING,29.4 conv @ $417
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,spine surgery,Phrase,Enabled,,EXISTING,29.0 conv @ $357
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,back surgeons in michigan,Phrase,Enabled,,EXISTING,25.6 conv @ $300
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,spinal surgeons near me,Phrase,Enabled,,EXISTING,8.3 conv @ $90 - strong
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,spine surgeon near me,Phrase,Enabled,5400,EXISTING,2.3 conv - underfunded
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,spine surgeons near me,Phrase,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,orthopedic spine surgeon near me,Phrase,Enabled,390,EXISTING,
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,spine orthopedic surgeon,Phrase,Enabled,1000,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,spine surgery surgeon,Phrase,Enabled,2900,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,lower back surgery,Phrase,Enabled,,EXISTING,
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,neck surgery,Phrase,Enabled,,EXISTING,6.5 conv @ $740 - watch
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,cervical fusion surgery,Phrase,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,lumbar fusion surgery,Phrase,Enabled,1900,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,minimally invasive spine surgeon,Phrase,Enabled,260,NEW,
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,spine surgeon near me,Broad,Paused,5400,GATED,after ZocDoc fix
-"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,"-salary -""how much"" -""top 10"" -jobs -residency -""make"" -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida -""united states"" -""icd 10"" -""best in the""",Negative (ad group),Enabled,,NEW,apply as ad-group negative list
+Campaign,Ad Group,Match Type,Keyword,Keyword (as entered),Status,US Vol/mo,Action,Notes
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Exact,spine specialist near me,[spine specialist near me],Enabled,5400,EXISTING,"8.9 conv, ROAS 0.81"
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Exact,spine specialist,[spine specialist],Enabled,4400,EXISTING,16.7 conv
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Exact,spine doctor near me,[spine doctor near me],Enabled,,NEW,"phrase ver = $51 CPA, best in spine"
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Exact,spine doctors,[spine doctors],Enabled,,REACTIVATE,"phrase ver paused w/ $21,223 spend, 76 conv"
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Exact,orthopedic spine specialist near me,[orthopedic spine specialist near me],Enabled,590,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Exact,ortho spine specialist,[ortho spine specialist],Enabled,,EXISTING,5.0 conv
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Exact,spine pain specialist near me,[spine pain specialist near me],Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Exact,best spine specialist near me,[best spine specialist near me],Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Exact,back and spine specialist near me,[back and spine specialist near me],Enabled,320,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Exact,spine doctors in my area,[spine doctors in my area],Enabled,,EXISTING,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Exact,best spine doctors in michigan,[best spine doctors in michigan],Enabled,,EXISTING,4.0 conv
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Phrase,spine specialist near me,"""spine specialist near me""",Enabled,5400,EXISTING,41.4 conv @ $91 CPA
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Phrase,spine doctor near me,"""spine doctor near me""",Enabled,,EXISTING,28.9 conv @ $51 CPA - best CPA in spine
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Phrase,spine doctors,"""spine doctors""",Enabled,,REACTIVATE,"PAUSED - was #2 kw by spend, $279 CPA"
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Phrase,spine specialist,"""spine specialist""",Enabled,4400,EXISTING,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Phrase,spine pain specialist,"""spine pain specialist""",Enabled,,EXISTING,30.6 conv @ $244
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Phrase,spine pain specialist near me,"""spine pain specialist near me""",Enabled,170,EXISTING,13.0 conv @ $78
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Phrase,orthopedic spine specialist,"""orthopedic spine specialist""",Enabled,1600,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Phrase,spine and orthopedic specialists,"""spine and orthopedic specialists""",Enabled,1600,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Phrase,back and spine specialist,"""back and spine specialist""",Enabled,320,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Phrase,cervical spine specialist,"""cervical spine specialist""",Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Phrase,spine center near me,"""spine center near me""",Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Phrase,spine clinic near me,"""spine clinic near me""",Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Phrase,non surgical spine specialist,"""non surgical spine specialist""",Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Phrase,ortho spine specialist,"""ortho spine specialist""",Enabled,,EXISTING,18.0 conv @ $71
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Phrase,best spine doctor near me,"""best spine doctor near me""",Enabled,,EXISTING,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Broad,spine specialist near me,spine specialist near me,Paused,5400,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Broad,orthopedic spine surgeon near me,orthopedic spine surgeon near me,Paused,390,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Specialist,Negative (ad group list),"-salary -jobs -""icd 10"" -""what is a"" -school -residency -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida","-salary -jobs -""icd 10"" -""what is a"" -school -residency -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Exact,back doctors near me,[back doctors near me],Enabled,2900,EXISTING,"4.0 conv, ROAS 2.00 - best ROAS in spine"
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Exact,back doctor near me,[back doctor near me],Enabled,4400,EXISTING,"11.0 conv, ROAS 1.23"
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Exact,back specialist near me,[back specialist near me],Enabled,,EXISTING,"13.0 conv, ROAS 1.00"
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Exact,back dr near me,[back dr near me],Enabled,,EXISTING,"8.5 conv, ROAS 1.01"
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Exact,back pain doctor near me,[back pain doctor near me],Enabled,2400,NEW,phrase ver = 16.5 conv @ $105
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Exact,back doctor,[back doctor],Enabled,5400,EXISTING,7.5 conv
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Exact,back pain doctor,[back pain doctor],Enabled,5400,EXISTING,1.5 conv
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Exact,back pain specialist,[back pain specialist],Enabled,,EXISTING,9.2 conv @ $286
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Exact,back pain specialist near me,[back pain specialist near me],Enabled,,EXISTING,1.0 conv
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Exact,back pain doctors near me,[back pain doctors near me],Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Exact,lower back pain doctor,[lower back pain doctor],Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Exact,orthopedic back doctor near me,[orthopedic back doctor near me],Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Exact,best back doctor near me,[best back doctor near me],Enabled,320,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Exact,back and spine doctor near me,[back and spine doctor near me],Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Exact,doctor for back pain near me,[doctor for back pain near me],Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Phrase,back doctors near me,"""back doctors near me""",Enabled,2900,EXISTING,17.0 conv @ $140
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Phrase,back pain doctor near me,"""back pain doctor near me""",Enabled,2400,EXISTING,16.5 conv @ $105
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Phrase,back specialist near me,"""back specialist near me""",Enabled,,EXISTING,15.5 conv @ $127
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Phrase,back doctor near me,"""back doctor near me""",Enabled,4400,EXISTING,
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Phrase,back specialist,"""back specialist""",Enabled,,EXISTING,16.0 conv @ $261
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Phrase,back pain specialist near me,"""back pain specialist near me""",Enabled,,EXISTING,2.0 conv
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Phrase,doctor in back pain,"""doctor in back pain""",Enabled,8100,NEW,"CPC $4.52, commercial intent"
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Phrase,doctors for back injuries,"""doctors for back injuries""",Enabled,12100,NEW,CPC $5.22 - highest vol commercial term found
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Phrase,lower back pain doctor,"""lower back pain doctor""",Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Phrase,back problem doctor,"""back problem doctor""",Enabled,1600,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Phrase,lower back specialist doctors,"""lower back specialist doctors""",Enabled,320,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Phrase,back and spine doctors,"""back and spine doctors""",Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Phrase,back pain doctors near me,"""back pain doctors near me""",Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Phrase,chronic back pain doctor near me,"""chronic back pain doctor near me""",Enabled,30,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Phrase,back pain treatment near me,"""back pain treatment near me""",Enabled,,REACTIVATE,0 impr - sitting in paused Pain Mgmt
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Broad,back pain specialist near me,back pain specialist near me,Paused,,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Broad,back doctor near me,back doctor near me,Paused,4400,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Sterling Heights",Back Pain Specialist,Negative (ad group list),"-""back to the future"" -mattress -chiropractor -chiropractic -salary -""icd 10"" -exercises -stretches -""what is a back doctor"" -""doctor odyssey"" -""doctor who"" -""doctor stone"" -pillow -brace -massage","-""back to the future"" -mattress -chiropractor -chiropractic -salary -""icd 10"" -exercises -stretches -""what is a back doctor"" -""doctor odyssey"" -""doctor who"" -""doctor stone"" -pillow -brace -massage",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Exact,neck pain doctor near me,[neck pain doctor near me],Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Exact,neck specialist,[neck specialist],Enabled,,EXISTING,3.0 conv
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Exact,neck and back specialist near me,[neck and back specialist near me],Enabled,,EXISTING,
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Exact,orthopedic neck specialist near me,[orthopedic neck specialist near me],Enabled,,EXISTING,
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Exact,neck pain specialist,[neck pain specialist],Enabled,,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Exact,neck doctor near me,[neck doctor near me],Enabled,,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Exact,best neck pain doctor near me,[best neck pain doctor near me],Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Exact,neck and spine specialist near me,[neck and spine specialist near me],Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Phrase,neck pain specialist,"""neck pain specialist""",Enabled,,EXISTING,35.2 conv @ $169 - strongest neck term
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Phrase,neck pain specialist near me,"""neck pain specialist near me""",Enabled,,EXISTING,2.5 conv
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Phrase,neck specialist near me,"""neck specialist near me""",Enabled,,EXISTING,3.0 conv
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Phrase,neck doctor near me,"""neck doctor near me""",Enabled,,EXISTING,5.5 conv @ $87
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Phrase,neck pain doctor,"""neck pain doctor""",Enabled,1300,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Phrase,neck pain doctor near me,"""neck pain doctor near me""",Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Phrase,cervical spine specialist,"""cervical spine specialist""",Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Phrase,neck and back pain doctor near me,"""neck and back pain doctor near me""",Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Phrase,neck pain treatment near me,"""neck pain treatment near me""",Enabled,,REACTIVATE,0 impr - in paused Pain Mgmt
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Phrase,neck pain treatment,"""neck pain treatment""",Enabled,,REACTIVATE,in paused Pain Mgmt
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Phrase,neck physical therapy near me,"""neck physical therapy near me""",Enabled,,REACTIVATE,in paused Pain Mgmt
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Broad,neck pain specialist near me,neck pain specialist near me,Paused,,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Sterling Heights",Neck Pain Specialist,Negative (ad group list),"-""icd 10"" -""red flags"" -""when to see"" -stretches -exercises -pillow -massage -chiropractor -""lump on back of neck"" -salary","-""icd 10"" -""red flags"" -""when to see"" -stretches -exercises -pillow -massage -chiropractor -""lump on back of neck"" -salary",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Exact,sciatica treatment near me,[sciatica treatment near me],Enabled,1900,NEW,highest transactional sciatica term
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Exact,sciatica doctor near me,[sciatica doctor near me],Enabled,720,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Exact,sciatica specialist near me,[sciatica specialist near me],Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Exact,sciatica pain doctor,[sciatica pain doctor],Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Exact,sciatica specialist,[sciatica specialist],Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Exact,doctor for sciatica,[doctor for sciatica],Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Phrase,sciatica treatment near me,"""sciatica treatment near me""",Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Phrase,sciatica doctor near me,"""sciatica doctor near me""",Enabled,720,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Phrase,sciatica specialist near me,"""sciatica specialist near me""",Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Phrase,sciatica specialist,"""sciatica specialist""",Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Phrase,sciatica pain doctor,"""sciatica pain doctor""",Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Phrase,sciatica treatment,"""sciatica treatment""",Enabled,27100,REACTIVATE,PAUSED. High vol but mostly informational - watch CPA daily
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Phrase,sciatica pain relief,"""sciatica pain relief""",Enabled,40500,REACTIVATE,"PAUSED. Informational-heavy - start paused, test 2nd"
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Phrase,sciatic nerve pain relief,"""sciatic nerve pain relief""",Enabled,22200,REACTIVATE,PAUSED. Same caution
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Phrase,physical therapy for sciatica near me,"""physical therapy for sciatica near me""",Enabled,,REACTIVATE,in paused Pain Mgmt
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Phrase,sciatica treatment southfield,"""sciatica treatment southfield""",Enabled,,REACTIVATE,Southfield campaign only
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Broad,sciatica specialist near me,sciatica specialist near me,Paused,260,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Sterling Heights",Sciatica,Negative (ad group list),"-stretches -exercises -""icd 10"" -pregnancy -pregnant -""how to"" -""what is"" -""how long"" -mattress -chiropractic -chiropractor -cream -brace -""at home"" -""ice pack"" -symptoms -""feel like"" -medication -pillow -""does it go away"" -meaning","-stretches -exercises -""icd 10"" -pregnancy -pregnant -""how to"" -""what is"" -""how long"" -mattress -chiropractic -chiropractor -cream -brace -""at home"" -""ice pack"" -symptoms -""feel like"" -medication -pillow -""does it go away"" -meaning",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Exact,herniated disc treatment near me,[herniated disc treatment near me],Enabled,1600,NEW,"CPC $2.65, transactional"
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Exact,herniated disc doctor near me,[herniated disc doctor near me],Enabled,140,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Exact,herniated disc specialist near me,[herniated disc specialist near me],Enabled,70,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Exact,herniated disc specialist,[herniated disc specialist],Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Exact,discectomy,[discectomy],Enabled,,EXISTING,migrate from Spine Conditions campaign
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Exact,surgery for herniated disc,[surgery for herniated disc],Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Exact,disc herniation surgery,[disc herniation surgery],Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Exact,disc surgery,[disc surgery],Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Exact,discectomy surgery,[discectomy surgery],Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Exact,acdf surgery,[acdf surgery],Enabled,,EXISTING,"migrate - flagged low quality, needs relevant ad"
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Phrase,herniated disc treatment near me,"""herniated disc treatment near me""",Enabled,1600,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Phrase,herniated disc surgery,"""herniated disc surgery""",Enabled,8100,EXISTING,migrate from Spine Conditions
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Phrase,herniated disc treatments,"""herniated disc treatments""",Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Phrase,herniated disc doctor near me,"""herniated disc doctor near me""",Enabled,140,EXISTING,2 impr only
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Phrase,herniated disc specialist,"""herniated disc specialist""",Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Phrase,bulging disc treatment,"""bulging disc treatment""",Enabled,6600,NEW,zero coverage today
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Phrase,bulging disc doctor near me,"""bulging disc doctor near me""",Enabled,10,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Phrase,slipped disc specialist,"""slipped disc specialist""",Enabled,,REACTIVATE,paused
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Phrase,slipped disc surgeon,"""slipped disc surgeon""",Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Phrase,ruptured disk treatment,"""ruptured disk treatment""",Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Phrase,ruptured disc surgery,"""ruptured disc surgery""",Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Phrase,treatment for herniated disc,"""treatment for herniated disc""",Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Phrase,degenerative disc disease treatment,"""degenerative disc disease treatment""",Enabled,1300,EXISTING,migrate
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Phrase,degenerative disc surgery,"""degenerative disc surgery""",Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Phrase,degenerative disc repair,"""degenerative disc repair""",Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Broad,herniated disc specialist near me,herniated disc specialist near me,Paused,70,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Sterling Heights",Herniated / Bulging Disc,Negative (ad group list),"-""icd 10"" -exercises -stretches -""how to"" -""what is"" -symptoms -""vs bulging"" -""versus bulging"" -sza -""pain killer"" -painkiller -medication -""heal quickly"" -""recovery time"" -""feel like"" -""l5 s1"" -""self-care"" -""signs""","-""icd 10"" -exercises -stretches -""how to"" -""what is"" -symptoms -""vs bulging"" -""versus bulging"" -sza -""pain killer"" -painkiller -medication -""heal quickly"" -""recovery time"" -""feel like"" -""l5 s1"" -""self-care"" -""signs""",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,Exact,spinal stenosis specialist near me,[spinal stenosis specialist near me],Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,Exact,spinal stenosis treatment near me,[spinal stenosis treatment near me],Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,Exact,spinal stenosis specialist,[spinal stenosis specialist],Enabled,110,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,Exact,spinal stenosis doctor near me,[spinal stenosis doctor near me],Enabled,30,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,Exact,spinal stenosis surgery,[spinal stenosis surgery],Enabled,5400,EXISTING,flagged low quality - fix w/ relevant ad + LP
+"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,Phrase,spinal stenosis specialist near me,"""spinal stenosis specialist near me""",Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,Phrase,spinal stenosis treatment near me,"""spinal stenosis treatment near me""",Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,Phrase,spinal stenosis treatment,"""spinal stenosis treatment""",Enabled,8100,NEW,informational-heavy - monitor
+"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,Phrase,spinal stenosis surgery,"""spinal stenosis surgery""",Enabled,5400,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,Phrase,surgery for spinal stenosis,"""surgery for spinal stenosis""",Enabled,1000,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,Phrase,lumbar spinal stenosis treatment,"""lumbar spinal stenosis treatment""",Enabled,880,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,Phrase,lumbar stenosis treatment,"""lumbar stenosis treatment""",Enabled,90,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,Phrase,spinal stenosis specialist,"""spinal stenosis specialist""",Enabled,110,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,Phrase,spinal stenosis therapies,"""spinal stenosis therapies""",Enabled,,REACTIVATE,"in paused Pain Mgmt, flagged low quality"
+"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,Broad,spinal stenosis specialist near me,spinal stenosis specialist near me,Paused,260,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Sterling Heights",Spinal Stenosis,Negative (ad group list),"-""icd 10"" -exercises -symptoms -""what is"" -disability -""kill you"" -""final stages"" -hereditary -""to avoid"" -""cured"" -""painkiller"" -""newest treatment"" -""which is worse""","-""icd 10"" -exercises -symptoms -""what is"" -disability -""kill you"" -""final stages"" -hereditary -""to avoid"" -""cured"" -""painkiller"" -""newest treatment"" -""which is worse""",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,Exact,pinched nerve treatment near me,[pinched nerve treatment near me],Enabled,590,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,Exact,pinched nerve doctor near me,[pinched nerve doctor near me],Enabled,110,NEW,CPC $4.24
+"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,Exact,pinched nerve specialist near me,[pinched nerve specialist near me],Enabled,50,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,Exact,radiculopathy doctor near me,[radiculopathy doctor near me],Enabled,20,NEW,CPC $3.27
+"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,Phrase,pinched nerve treatment near me,"""pinched nerve treatment near me""",Enabled,590,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,Phrase,pinched nerve doctor near me,"""pinched nerve doctor near me""",Enabled,110,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,Phrase,pinched nerve specialist near me,"""pinched nerve specialist near me""",Enabled,50,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,Phrase,pinched nerve treatment,"""pinched nerve treatment""",Enabled,4400,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,Phrase,treatment for pinched nerve in neck,"""treatment for pinched nerve in neck""",Enabled,3600,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,Phrase,neck nerve pinch treatment,"""neck nerve pinch treatment""",Enabled,4400,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,Phrase,cervical radiculopathy treatment,"""cervical radiculopathy treatment""",Enabled,4400,NEW,CPC $1.21
+"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,Phrase,pinched nerve therapy neck,"""pinched nerve therapy neck""",Enabled,5400,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,Phrase,treatment for pinched nerve in lower back,"""treatment for pinched nerve in lower back""",Enabled,,REACTIVATE,in paused Pain Mgmt
+"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,Phrase,radiculopathy treatment,"""radiculopathy treatment""",Enabled,,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,Broad,pinched nerve doctor near me,pinched nerve doctor near me,Paused,110,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Sterling Heights",Pinched Nerve / Radiculopathy,Negative (ad group list),"-shoulder -hip -""how to"" -""what is"" -""how long"" -symptoms -""feel like"" -""icd 10"" -stretches -exercises -""relieve"" -""fix a""","-shoulder -hip -""how to"" -""what is"" -""how long"" -symptoms -""feel like"" -""icd 10"" -stretches -exercises -""relieve"" -""fix a""",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Exact,spine surgeon near me,[spine surgeon near me],Enabled,5400,NEW,"LARGEST MISS - 5,400/mo, not targeted"
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Exact,spine surgeons near me,[spine surgeons near me],Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Exact,orthopedic spine surgeon near me,[orthopedic spine surgeon near me],Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Exact,orthopedic spine surgeon,[orthopedic spine surgeon],Enabled,1000,EXISTING,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Exact,michigan orthopedic spine surgeons,[michigan orthopedic spine surgeons],Enabled,,EXISTING,15.0 conv @ $122
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Exact,spine surgeon,[spine surgeon],Enabled,4400,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Exact,back surgeon near me,[back surgeon near me],Enabled,,EXISTING,1.0 conv
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Exact,best spine doctors in michigan,[best spine doctors in michigan],Enabled,,EXISTING,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Phrase,orthopedic spine surgeon,"""orthopedic spine surgeon""",Enabled,1000,EXISTING,#1 spine kw: 126.6 conv @ $213
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Phrase,spinal surgery,"""spinal surgery""",Enabled,,EXISTING,29.4 conv @ $417
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Phrase,spine surgery,"""spine surgery""",Enabled,,EXISTING,29.0 conv @ $357
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Phrase,back surgeons in michigan,"""back surgeons in michigan""",Enabled,,EXISTING,25.6 conv @ $300
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Phrase,spinal surgeons near me,"""spinal surgeons near me""",Enabled,,EXISTING,8.3 conv @ $90 - strong
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Phrase,spine surgeon near me,"""spine surgeon near me""",Enabled,5400,EXISTING,2.3 conv - underfunded
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Phrase,spine surgeons near me,"""spine surgeons near me""",Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Phrase,orthopedic spine surgeon near me,"""orthopedic spine surgeon near me""",Enabled,390,EXISTING,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Phrase,spine orthopedic surgeon,"""spine orthopedic surgeon""",Enabled,1000,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Phrase,spine surgery surgeon,"""spine surgery surgeon""",Enabled,2900,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Phrase,lower back surgery,"""lower back surgery""",Enabled,,EXISTING,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Phrase,neck surgery,"""neck surgery""",Enabled,,EXISTING,6.5 conv @ $740 - watch
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Phrase,cervical fusion surgery,"""cervical fusion surgery""",Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Phrase,lumbar fusion surgery,"""lumbar fusion surgery""",Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Phrase,minimally invasive spine surgeon,"""minimally invasive spine surgeon""",Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Broad,spine surgeon near me,spine surgeon near me,Paused,5400,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Sterling Heights",Spine Surgery,Negative (ad group list),"-salary -""how much"" -""top 10"" -jobs -residency -""make"" -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida -""united states"" -""icd 10"" -""best in the""","-salary -""how much"" -""top 10"" -jobs -residency -""make"" -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida -""united states"" -""icd 10"" -""best in the""",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Exact,minimally invasive spine surgery near me,[minimally invasive spine surgery near me],Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Exact,endoscopic spine surgery near me,[endoscopic spine surgery near me],Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Exact,microdiscectomy near me,[microdiscectomy near me],Enabled,110,NEW,CPC $3.06
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Exact,microdiscectomy,[microdiscectomy],Enabled,,EXISTING,move from Surgery
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Exact,laminectomy,[laminectomy],Enabled,,REACTIVATE,paused
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Exact,laminectomy surgery,[laminectomy surgery],Enabled,,EXISTING,move from Surgery
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Exact,decompression surgeries,[decompression surgeries],Enabled,,EXISTING,move from Surgery
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Exact,artificial disc replacement near me,[artificial disc replacement near me],Enabled,140,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Phrase,minimally invasive spine surgery near me,"""minimally invasive spine surgery near me""",Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Phrase,minimally invasive spinal surgery,"""minimally invasive spinal surgery""",Enabled,,EXISTING,move from Surgery
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Phrase,endoscopic spine surgery near me,"""endoscopic spine surgery near me""",Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Phrase,microdiscectomy,"""microdiscectomy""",Enabled,,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Phrase,lumbar laminectomy,"""lumbar laminectomy""",Enabled,,EXISTING,"move from Surgery, 1.0 conv"
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Phrase,cervical disc replacement,"""cervical disc replacement""",Enabled,2900,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Phrase,lumbar disc replacement,"""lumbar disc replacement""",Enabled,1000,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Phrase,artificial disc replacement near me,"""artificial disc replacement near me""",Enabled,140,NEW,
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Phrase,spinal decompression,"""spinal decompression""",Enabled,,REACTIVATE,"CAUTION: chiro decompression-table intent, watch search terms"
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Broad,minimally invasive spine surgery near me,minimally invasive spine surgery near me,Paused,390,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Sterling Heights",Minimally Invasive / Disc Surgery,Negative (ad group list),"-chiropractic -chiropractor -table -machine -""at home"" -inversion -salary -cost -""how much"" -nyc -nj -dallas -""recovery time""","-chiropractic -chiropractor -table -machine -""at home"" -inversion -salary -cost -""how much"" -nyc -nj -dallas -""recovery time""",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Exact,spine specialist near me,[spine specialist near me],Enabled,5400,EXISTING,"8.9 conv, ROAS 0.81"
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Exact,spine specialist,[spine specialist],Enabled,4400,EXISTING,16.7 conv
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Exact,spine doctor near me,[spine doctor near me],Enabled,,NEW,"phrase ver = $51 CPA, best in spine"
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Exact,spine doctors,[spine doctors],Enabled,,REACTIVATE,"phrase ver paused w/ $21,223 spend, 76 conv"
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Exact,orthopedic spine specialist near me,[orthopedic spine specialist near me],Enabled,590,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Exact,ortho spine specialist,[ortho spine specialist],Enabled,,EXISTING,5.0 conv
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Exact,spine pain specialist near me,[spine pain specialist near me],Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Exact,best spine specialist near me,[best spine specialist near me],Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Exact,back and spine specialist near me,[back and spine specialist near me],Enabled,320,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Exact,spine doctors in my area,[spine doctors in my area],Enabled,,EXISTING,
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Exact,best spine doctors in michigan,[best spine doctors in michigan],Enabled,,EXISTING,4.0 conv
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Phrase,spine specialist near me,"""spine specialist near me""",Enabled,5400,EXISTING,41.4 conv @ $91 CPA
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Phrase,spine doctor near me,"""spine doctor near me""",Enabled,,EXISTING,28.9 conv @ $51 CPA - best CPA in spine
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Phrase,spine doctors,"""spine doctors""",Enabled,,REACTIVATE,"PAUSED - was #2 kw by spend, $279 CPA"
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Phrase,spine specialist,"""spine specialist""",Enabled,4400,EXISTING,
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Phrase,spine pain specialist,"""spine pain specialist""",Enabled,,EXISTING,30.6 conv @ $244
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Phrase,spine pain specialist near me,"""spine pain specialist near me""",Enabled,170,EXISTING,13.0 conv @ $78
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Phrase,orthopedic spine specialist,"""orthopedic spine specialist""",Enabled,1600,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Phrase,spine and orthopedic specialists,"""spine and orthopedic specialists""",Enabled,1600,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Phrase,back and spine specialist,"""back and spine specialist""",Enabled,320,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Phrase,cervical spine specialist,"""cervical spine specialist""",Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Phrase,spine center near me,"""spine center near me""",Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Phrase,spine clinic near me,"""spine clinic near me""",Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Phrase,non surgical spine specialist,"""non surgical spine specialist""",Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Phrase,ortho spine specialist,"""ortho spine specialist""",Enabled,,EXISTING,18.0 conv @ $71
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Phrase,best spine doctor near me,"""best spine doctor near me""",Enabled,,EXISTING,
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Broad,spine specialist near me,spine specialist near me,Paused,5400,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Broad,orthopedic spine surgeon near me,orthopedic spine surgeon near me,Paused,390,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Livonia",Spine Specialist,Negative (ad group list),"-salary -jobs -""icd 10"" -""what is a"" -school -residency -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida","-salary -jobs -""icd 10"" -""what is a"" -school -residency -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Exact,back doctors near me,[back doctors near me],Enabled,2900,EXISTING,"4.0 conv, ROAS 2.00 - best ROAS in spine"
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Exact,back doctor near me,[back doctor near me],Enabled,4400,EXISTING,"11.0 conv, ROAS 1.23"
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Exact,back specialist near me,[back specialist near me],Enabled,,EXISTING,"13.0 conv, ROAS 1.00"
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Exact,back dr near me,[back dr near me],Enabled,,EXISTING,"8.5 conv, ROAS 1.01"
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Exact,back pain doctor near me,[back pain doctor near me],Enabled,2400,NEW,phrase ver = 16.5 conv @ $105
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Exact,back doctor,[back doctor],Enabled,5400,EXISTING,7.5 conv
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Exact,back pain doctor,[back pain doctor],Enabled,5400,EXISTING,1.5 conv
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Exact,back pain specialist,[back pain specialist],Enabled,,EXISTING,9.2 conv @ $286
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Exact,back pain specialist near me,[back pain specialist near me],Enabled,,EXISTING,1.0 conv
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Exact,back pain doctors near me,[back pain doctors near me],Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Exact,lower back pain doctor,[lower back pain doctor],Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Exact,orthopedic back doctor near me,[orthopedic back doctor near me],Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Exact,best back doctor near me,[best back doctor near me],Enabled,320,NEW,
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Exact,back and spine doctor near me,[back and spine doctor near me],Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Exact,doctor for back pain near me,[doctor for back pain near me],Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Phrase,back doctors near me,"""back doctors near me""",Enabled,2900,EXISTING,17.0 conv @ $140
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Phrase,back pain doctor near me,"""back pain doctor near me""",Enabled,2400,EXISTING,16.5 conv @ $105
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Phrase,back specialist near me,"""back specialist near me""",Enabled,,EXISTING,15.5 conv @ $127
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Phrase,back doctor near me,"""back doctor near me""",Enabled,4400,EXISTING,
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Phrase,back specialist,"""back specialist""",Enabled,,EXISTING,16.0 conv @ $261
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Phrase,back pain specialist near me,"""back pain specialist near me""",Enabled,,EXISTING,2.0 conv
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Phrase,doctor in back pain,"""doctor in back pain""",Enabled,8100,NEW,"CPC $4.52, commercial intent"
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Phrase,doctors for back injuries,"""doctors for back injuries""",Enabled,12100,NEW,CPC $5.22 - highest vol commercial term found
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Phrase,lower back pain doctor,"""lower back pain doctor""",Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Phrase,back problem doctor,"""back problem doctor""",Enabled,1600,NEW,
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Phrase,lower back specialist doctors,"""lower back specialist doctors""",Enabled,320,NEW,
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Phrase,back and spine doctors,"""back and spine doctors""",Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Phrase,back pain doctors near me,"""back pain doctors near me""",Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Phrase,chronic back pain doctor near me,"""chronic back pain doctor near me""",Enabled,30,NEW,
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Phrase,back pain treatment near me,"""back pain treatment near me""",Enabled,,REACTIVATE,0 impr - sitting in paused Pain Mgmt
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Broad,back pain specialist near me,back pain specialist near me,Paused,,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Broad,back doctor near me,back doctor near me,Paused,4400,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Livonia",Back Pain Specialist,Negative (ad group list),"-""back to the future"" -mattress -chiropractor -chiropractic -salary -""icd 10"" -exercises -stretches -""what is a back doctor"" -""doctor odyssey"" -""doctor who"" -""doctor stone"" -pillow -brace -massage","-""back to the future"" -mattress -chiropractor -chiropractic -salary -""icd 10"" -exercises -stretches -""what is a back doctor"" -""doctor odyssey"" -""doctor who"" -""doctor stone"" -pillow -brace -massage",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Exact,neck pain doctor near me,[neck pain doctor near me],Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Exact,neck specialist,[neck specialist],Enabled,,EXISTING,3.0 conv
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Exact,neck and back specialist near me,[neck and back specialist near me],Enabled,,EXISTING,
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Exact,orthopedic neck specialist near me,[orthopedic neck specialist near me],Enabled,,EXISTING,
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Exact,neck pain specialist,[neck pain specialist],Enabled,,NEW,
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Exact,neck doctor near me,[neck doctor near me],Enabled,,NEW,
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Exact,best neck pain doctor near me,[best neck pain doctor near me],Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Exact,neck and spine specialist near me,[neck and spine specialist near me],Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Phrase,neck pain specialist,"""neck pain specialist""",Enabled,,EXISTING,35.2 conv @ $169 - strongest neck term
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Phrase,neck pain specialist near me,"""neck pain specialist near me""",Enabled,,EXISTING,2.5 conv
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Phrase,neck specialist near me,"""neck specialist near me""",Enabled,,EXISTING,3.0 conv
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Phrase,neck doctor near me,"""neck doctor near me""",Enabled,,EXISTING,5.5 conv @ $87
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Phrase,neck pain doctor,"""neck pain doctor""",Enabled,1300,NEW,
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Phrase,neck pain doctor near me,"""neck pain doctor near me""",Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Phrase,cervical spine specialist,"""cervical spine specialist""",Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Phrase,neck and back pain doctor near me,"""neck and back pain doctor near me""",Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Phrase,neck pain treatment near me,"""neck pain treatment near me""",Enabled,,REACTIVATE,0 impr - in paused Pain Mgmt
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Phrase,neck pain treatment,"""neck pain treatment""",Enabled,,REACTIVATE,in paused Pain Mgmt
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Phrase,neck physical therapy near me,"""neck physical therapy near me""",Enabled,,REACTIVATE,in paused Pain Mgmt
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Broad,neck pain specialist near me,neck pain specialist near me,Paused,,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Livonia",Neck Pain Specialist,Negative (ad group list),"-""icd 10"" -""red flags"" -""when to see"" -stretches -exercises -pillow -massage -chiropractor -""lump on back of neck"" -salary","-""icd 10"" -""red flags"" -""when to see"" -stretches -exercises -pillow -massage -chiropractor -""lump on back of neck"" -salary",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Exact,sciatica treatment near me,[sciatica treatment near me],Enabled,1900,NEW,highest transactional sciatica term
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Exact,sciatica doctor near me,[sciatica doctor near me],Enabled,720,NEW,
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Exact,sciatica specialist near me,[sciatica specialist near me],Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Exact,sciatica pain doctor,[sciatica pain doctor],Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Exact,sciatica specialist,[sciatica specialist],Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Exact,doctor for sciatica,[doctor for sciatica],Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Phrase,sciatica treatment near me,"""sciatica treatment near me""",Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Phrase,sciatica doctor near me,"""sciatica doctor near me""",Enabled,720,NEW,
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Phrase,sciatica specialist near me,"""sciatica specialist near me""",Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Phrase,sciatica specialist,"""sciatica specialist""",Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Phrase,sciatica pain doctor,"""sciatica pain doctor""",Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Phrase,sciatica treatment,"""sciatica treatment""",Enabled,27100,REACTIVATE,PAUSED. High vol but mostly informational - watch CPA daily
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Phrase,sciatica pain relief,"""sciatica pain relief""",Enabled,40500,REACTIVATE,"PAUSED. Informational-heavy - start paused, test 2nd"
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Phrase,sciatic nerve pain relief,"""sciatic nerve pain relief""",Enabled,22200,REACTIVATE,PAUSED. Same caution
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Phrase,physical therapy for sciatica near me,"""physical therapy for sciatica near me""",Enabled,,REACTIVATE,in paused Pain Mgmt
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Phrase,sciatica treatment southfield,"""sciatica treatment southfield""",Enabled,,REACTIVATE,Southfield campaign only
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Broad,sciatica specialist near me,sciatica specialist near me,Paused,260,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Livonia",Sciatica,Negative (ad group list),"-stretches -exercises -""icd 10"" -pregnancy -pregnant -""how to"" -""what is"" -""how long"" -mattress -chiropractic -chiropractor -cream -brace -""at home"" -""ice pack"" -symptoms -""feel like"" -medication -pillow -""does it go away"" -meaning","-stretches -exercises -""icd 10"" -pregnancy -pregnant -""how to"" -""what is"" -""how long"" -mattress -chiropractic -chiropractor -cream -brace -""at home"" -""ice pack"" -symptoms -""feel like"" -medication -pillow -""does it go away"" -meaning",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Exact,herniated disc treatment near me,[herniated disc treatment near me],Enabled,1600,NEW,"CPC $2.65, transactional"
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Exact,herniated disc doctor near me,[herniated disc doctor near me],Enabled,140,NEW,
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Exact,herniated disc specialist near me,[herniated disc specialist near me],Enabled,70,NEW,
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Exact,herniated disc specialist,[herniated disc specialist],Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Exact,discectomy,[discectomy],Enabled,,EXISTING,migrate from Spine Conditions campaign
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Exact,surgery for herniated disc,[surgery for herniated disc],Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Exact,disc herniation surgery,[disc herniation surgery],Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Exact,disc surgery,[disc surgery],Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Exact,discectomy surgery,[discectomy surgery],Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Exact,acdf surgery,[acdf surgery],Enabled,,EXISTING,"migrate - flagged low quality, needs relevant ad"
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Phrase,herniated disc treatment near me,"""herniated disc treatment near me""",Enabled,1600,NEW,
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Phrase,herniated disc surgery,"""herniated disc surgery""",Enabled,8100,EXISTING,migrate from Spine Conditions
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Phrase,herniated disc treatments,"""herniated disc treatments""",Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Phrase,herniated disc doctor near me,"""herniated disc doctor near me""",Enabled,140,EXISTING,2 impr only
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Phrase,herniated disc specialist,"""herniated disc specialist""",Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Phrase,bulging disc treatment,"""bulging disc treatment""",Enabled,6600,NEW,zero coverage today
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Phrase,bulging disc doctor near me,"""bulging disc doctor near me""",Enabled,10,NEW,
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Phrase,slipped disc specialist,"""slipped disc specialist""",Enabled,,REACTIVATE,paused
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Phrase,slipped disc surgeon,"""slipped disc surgeon""",Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Phrase,ruptured disk treatment,"""ruptured disk treatment""",Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Phrase,ruptured disc surgery,"""ruptured disc surgery""",Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Phrase,treatment for herniated disc,"""treatment for herniated disc""",Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Phrase,degenerative disc disease treatment,"""degenerative disc disease treatment""",Enabled,1300,EXISTING,migrate
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Phrase,degenerative disc surgery,"""degenerative disc surgery""",Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Phrase,degenerative disc repair,"""degenerative disc repair""",Enabled,,EXISTING,migrate
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Broad,herniated disc specialist near me,herniated disc specialist near me,Paused,70,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Livonia",Herniated / Bulging Disc,Negative (ad group list),"-""icd 10"" -exercises -stretches -""how to"" -""what is"" -symptoms -""vs bulging"" -""versus bulging"" -sza -""pain killer"" -painkiller -medication -""heal quickly"" -""recovery time"" -""feel like"" -""l5 s1"" -""self-care"" -""signs""","-""icd 10"" -exercises -stretches -""how to"" -""what is"" -symptoms -""vs bulging"" -""versus bulging"" -sza -""pain killer"" -painkiller -medication -""heal quickly"" -""recovery time"" -""feel like"" -""l5 s1"" -""self-care"" -""signs""",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,Exact,spinal stenosis specialist near me,[spinal stenosis specialist near me],Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,Exact,spinal stenosis treatment near me,[spinal stenosis treatment near me],Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,Exact,spinal stenosis specialist,[spinal stenosis specialist],Enabled,110,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,Exact,spinal stenosis doctor near me,[spinal stenosis doctor near me],Enabled,30,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,Exact,spinal stenosis surgery,[spinal stenosis surgery],Enabled,5400,EXISTING,flagged low quality - fix w/ relevant ad + LP
+"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,Phrase,spinal stenosis specialist near me,"""spinal stenosis specialist near me""",Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,Phrase,spinal stenosis treatment near me,"""spinal stenosis treatment near me""",Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,Phrase,spinal stenosis treatment,"""spinal stenosis treatment""",Enabled,8100,NEW,informational-heavy - monitor
+"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,Phrase,spinal stenosis surgery,"""spinal stenosis surgery""",Enabled,5400,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,Phrase,surgery for spinal stenosis,"""surgery for spinal stenosis""",Enabled,1000,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,Phrase,lumbar spinal stenosis treatment,"""lumbar spinal stenosis treatment""",Enabled,880,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,Phrase,lumbar stenosis treatment,"""lumbar stenosis treatment""",Enabled,90,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,Phrase,spinal stenosis specialist,"""spinal stenosis specialist""",Enabled,110,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,Phrase,spinal stenosis therapies,"""spinal stenosis therapies""",Enabled,,REACTIVATE,"in paused Pain Mgmt, flagged low quality"
+"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,Broad,spinal stenosis specialist near me,spinal stenosis specialist near me,Paused,260,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Livonia",Spinal Stenosis,Negative (ad group list),"-""icd 10"" -exercises -symptoms -""what is"" -disability -""kill you"" -""final stages"" -hereditary -""to avoid"" -""cured"" -""painkiller"" -""newest treatment"" -""which is worse""","-""icd 10"" -exercises -symptoms -""what is"" -disability -""kill you"" -""final stages"" -hereditary -""to avoid"" -""cured"" -""painkiller"" -""newest treatment"" -""which is worse""",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,Exact,pinched nerve treatment near me,[pinched nerve treatment near me],Enabled,590,NEW,
+"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,Exact,pinched nerve doctor near me,[pinched nerve doctor near me],Enabled,110,NEW,CPC $4.24
+"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,Exact,pinched nerve specialist near me,[pinched nerve specialist near me],Enabled,50,NEW,
+"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,Exact,radiculopathy doctor near me,[radiculopathy doctor near me],Enabled,20,NEW,CPC $3.27
+"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,Phrase,pinched nerve treatment near me,"""pinched nerve treatment near me""",Enabled,590,NEW,
+"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,Phrase,pinched nerve doctor near me,"""pinched nerve doctor near me""",Enabled,110,NEW,
+"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,Phrase,pinched nerve specialist near me,"""pinched nerve specialist near me""",Enabled,50,NEW,
+"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,Phrase,pinched nerve treatment,"""pinched nerve treatment""",Enabled,4400,NEW,
+"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,Phrase,treatment for pinched nerve in neck,"""treatment for pinched nerve in neck""",Enabled,3600,NEW,
+"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,Phrase,neck nerve pinch treatment,"""neck nerve pinch treatment""",Enabled,4400,NEW,
+"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,Phrase,cervical radiculopathy treatment,"""cervical radiculopathy treatment""",Enabled,4400,NEW,CPC $1.21
+"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,Phrase,pinched nerve therapy neck,"""pinched nerve therapy neck""",Enabled,5400,NEW,
+"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,Phrase,treatment for pinched nerve in lower back,"""treatment for pinched nerve in lower back""",Enabled,,REACTIVATE,in paused Pain Mgmt
+"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,Phrase,radiculopathy treatment,"""radiculopathy treatment""",Enabled,,NEW,
+"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,Broad,pinched nerve doctor near me,pinched nerve doctor near me,Paused,110,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Livonia",Pinched Nerve / Radiculopathy,Negative (ad group list),"-shoulder -hip -""how to"" -""what is"" -""how long"" -symptoms -""feel like"" -""icd 10"" -stretches -exercises -""relieve"" -""fix a""","-shoulder -hip -""how to"" -""what is"" -""how long"" -symptoms -""feel like"" -""icd 10"" -stretches -exercises -""relieve"" -""fix a""",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Exact,spine surgeon near me,[spine surgeon near me],Enabled,5400,NEW,"LARGEST MISS - 5,400/mo, not targeted"
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Exact,spine surgeons near me,[spine surgeons near me],Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Exact,orthopedic spine surgeon near me,[orthopedic spine surgeon near me],Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Exact,orthopedic spine surgeon,[orthopedic spine surgeon],Enabled,1000,EXISTING,
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Exact,michigan orthopedic spine surgeons,[michigan orthopedic spine surgeons],Enabled,,EXISTING,15.0 conv @ $122
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Exact,spine surgeon,[spine surgeon],Enabled,4400,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Exact,back surgeon near me,[back surgeon near me],Enabled,,EXISTING,1.0 conv
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Exact,best spine doctors in michigan,[best spine doctors in michigan],Enabled,,EXISTING,
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Phrase,orthopedic spine surgeon,"""orthopedic spine surgeon""",Enabled,1000,EXISTING,#1 spine kw: 126.6 conv @ $213
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Phrase,spinal surgery,"""spinal surgery""",Enabled,,EXISTING,29.4 conv @ $417
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Phrase,spine surgery,"""spine surgery""",Enabled,,EXISTING,29.0 conv @ $357
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Phrase,back surgeons in michigan,"""back surgeons in michigan""",Enabled,,EXISTING,25.6 conv @ $300
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Phrase,spinal surgeons near me,"""spinal surgeons near me""",Enabled,,EXISTING,8.3 conv @ $90 - strong
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Phrase,spine surgeon near me,"""spine surgeon near me""",Enabled,5400,EXISTING,2.3 conv - underfunded
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Phrase,spine surgeons near me,"""spine surgeons near me""",Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Phrase,orthopedic spine surgeon near me,"""orthopedic spine surgeon near me""",Enabled,390,EXISTING,
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Phrase,spine orthopedic surgeon,"""spine orthopedic surgeon""",Enabled,1000,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Phrase,spine surgery surgeon,"""spine surgery surgeon""",Enabled,2900,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Phrase,lower back surgery,"""lower back surgery""",Enabled,,EXISTING,
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Phrase,neck surgery,"""neck surgery""",Enabled,,EXISTING,6.5 conv @ $740 - watch
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Phrase,cervical fusion surgery,"""cervical fusion surgery""",Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Phrase,lumbar fusion surgery,"""lumbar fusion surgery""",Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Phrase,minimally invasive spine surgeon,"""minimally invasive spine surgeon""",Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Broad,spine surgeon near me,spine surgeon near me,Paused,5400,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Livonia",Spine Surgery,Negative (ad group list),"-salary -""how much"" -""top 10"" -jobs -residency -""make"" -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida -""united states"" -""icd 10"" -""best in the""","-salary -""how much"" -""top 10"" -jobs -residency -""make"" -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida -""united states"" -""icd 10"" -""best in the""",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Exact,minimally invasive spine surgery near me,[minimally invasive spine surgery near me],Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Exact,endoscopic spine surgery near me,[endoscopic spine surgery near me],Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Exact,microdiscectomy near me,[microdiscectomy near me],Enabled,110,NEW,CPC $3.06
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Exact,microdiscectomy,[microdiscectomy],Enabled,,EXISTING,move from Surgery
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Exact,laminectomy,[laminectomy],Enabled,,REACTIVATE,paused
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Exact,laminectomy surgery,[laminectomy surgery],Enabled,,EXISTING,move from Surgery
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Exact,decompression surgeries,[decompression surgeries],Enabled,,EXISTING,move from Surgery
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Exact,artificial disc replacement near me,[artificial disc replacement near me],Enabled,140,NEW,
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Phrase,minimally invasive spine surgery near me,"""minimally invasive spine surgery near me""",Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Phrase,minimally invasive spinal surgery,"""minimally invasive spinal surgery""",Enabled,,EXISTING,move from Surgery
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Phrase,endoscopic spine surgery near me,"""endoscopic spine surgery near me""",Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Phrase,microdiscectomy,"""microdiscectomy""",Enabled,,NEW,
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Phrase,lumbar laminectomy,"""lumbar laminectomy""",Enabled,,EXISTING,"move from Surgery, 1.0 conv"
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Phrase,cervical disc replacement,"""cervical disc replacement""",Enabled,2900,NEW,
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Phrase,lumbar disc replacement,"""lumbar disc replacement""",Enabled,1000,NEW,
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Phrase,artificial disc replacement near me,"""artificial disc replacement near me""",Enabled,140,NEW,
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Phrase,spinal decompression,"""spinal decompression""",Enabled,,REACTIVATE,"CAUTION: chiro decompression-table intent, watch search terms"
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Broad,minimally invasive spine surgery near me,minimally invasive spine surgery near me,Paused,390,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Livonia",Minimally Invasive / Disc Surgery,Negative (ad group list),"-chiropractic -chiropractor -table -machine -""at home"" -inversion -salary -cost -""how much"" -nyc -nj -dallas -""recovery time""","-chiropractic -chiropractor -table -machine -""at home"" -inversion -salary -cost -""how much"" -nyc -nj -dallas -""recovery time""",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Exact,spine specialist near me,[spine specialist near me],Enabled,5400,EXISTING,"8.9 conv, ROAS 0.81"
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Exact,spine specialist,[spine specialist],Enabled,4400,EXISTING,16.7 conv
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Exact,spine doctor near me,[spine doctor near me],Enabled,,NEW,"phrase ver = $51 CPA, best in spine"
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Exact,spine doctors,[spine doctors],Enabled,,REACTIVATE,"phrase ver paused w/ $21,223 spend, 76 conv"
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Exact,orthopedic spine specialist near me,[orthopedic spine specialist near me],Enabled,590,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Exact,ortho spine specialist,[ortho spine specialist],Enabled,,EXISTING,5.0 conv
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Exact,spine pain specialist near me,[spine pain specialist near me],Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Exact,best spine specialist near me,[best spine specialist near me],Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Exact,back and spine specialist near me,[back and spine specialist near me],Enabled,320,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Exact,spine doctors in my area,[spine doctors in my area],Enabled,,EXISTING,
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Exact,best spine doctors in michigan,[best spine doctors in michigan],Enabled,,EXISTING,4.0 conv
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Phrase,spine specialist near me,"""spine specialist near me""",Enabled,5400,EXISTING,41.4 conv @ $91 CPA
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Phrase,spine doctor near me,"""spine doctor near me""",Enabled,,EXISTING,28.9 conv @ $51 CPA - best CPA in spine
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Phrase,spine doctors,"""spine doctors""",Enabled,,REACTIVATE,"PAUSED - was #2 kw by spend, $279 CPA"
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Phrase,spine specialist,"""spine specialist""",Enabled,4400,EXISTING,
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Phrase,spine pain specialist,"""spine pain specialist""",Enabled,,EXISTING,30.6 conv @ $244
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Phrase,spine pain specialist near me,"""spine pain specialist near me""",Enabled,170,EXISTING,13.0 conv @ $78
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Phrase,orthopedic spine specialist,"""orthopedic spine specialist""",Enabled,1600,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Phrase,spine and orthopedic specialists,"""spine and orthopedic specialists""",Enabled,1600,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Phrase,back and spine specialist,"""back and spine specialist""",Enabled,320,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Phrase,cervical spine specialist,"""cervical spine specialist""",Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Phrase,spine center near me,"""spine center near me""",Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Phrase,spine clinic near me,"""spine clinic near me""",Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Phrase,non surgical spine specialist,"""non surgical spine specialist""",Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Phrase,ortho spine specialist,"""ortho spine specialist""",Enabled,,EXISTING,18.0 conv @ $71
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Phrase,best spine doctor near me,"""best spine doctor near me""",Enabled,,EXISTING,
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Broad,spine specialist near me,spine specialist near me,Paused,5400,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Broad,orthopedic spine surgeon near me,orthopedic spine surgeon near me,Paused,390,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Port Huron",Spine Specialist,Negative (ad group list),"-salary -jobs -""icd 10"" -""what is a"" -school -residency -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida","-salary -jobs -""icd 10"" -""what is a"" -school -residency -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Exact,back doctors near me,[back doctors near me],Enabled,2900,EXISTING,"4.0 conv, ROAS 2.00 - best ROAS in spine"
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Exact,back doctor near me,[back doctor near me],Enabled,4400,EXISTING,"11.0 conv, ROAS 1.23"
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Exact,back specialist near me,[back specialist near me],Enabled,,EXISTING,"13.0 conv, ROAS 1.00"
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Exact,back dr near me,[back dr near me],Enabled,,EXISTING,"8.5 conv, ROAS 1.01"
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Exact,back pain doctor near me,[back pain doctor near me],Enabled,2400,NEW,phrase ver = 16.5 conv @ $105
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Exact,back doctor,[back doctor],Enabled,5400,EXISTING,7.5 conv
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Exact,back pain doctor,[back pain doctor],Enabled,5400,EXISTING,1.5 conv
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Exact,back pain specialist,[back pain specialist],Enabled,,EXISTING,9.2 conv @ $286
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Exact,back pain specialist near me,[back pain specialist near me],Enabled,,EXISTING,1.0 conv
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Exact,back pain doctors near me,[back pain doctors near me],Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Exact,lower back pain doctor,[lower back pain doctor],Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Exact,orthopedic back doctor near me,[orthopedic back doctor near me],Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Exact,best back doctor near me,[best back doctor near me],Enabled,320,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Exact,back and spine doctor near me,[back and spine doctor near me],Enabled,210,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Exact,doctor for back pain near me,[doctor for back pain near me],Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Phrase,back doctors near me,"""back doctors near me""",Enabled,2900,EXISTING,17.0 conv @ $140
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Phrase,back pain doctor near me,"""back pain doctor near me""",Enabled,2400,EXISTING,16.5 conv @ $105
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Phrase,back specialist near me,"""back specialist near me""",Enabled,,EXISTING,15.5 conv @ $127
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Phrase,back doctor near me,"""back doctor near me""",Enabled,4400,EXISTING,
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Phrase,back specialist,"""back specialist""",Enabled,,EXISTING,16.0 conv @ $261
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Phrase,back pain specialist near me,"""back pain specialist near me""",Enabled,,EXISTING,2.0 conv
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Phrase,doctor in back pain,"""doctor in back pain""",Enabled,8100,NEW,"CPC $4.52, commercial intent"
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Phrase,doctors for back injuries,"""doctors for back injuries""",Enabled,12100,NEW,CPC $5.22 - highest vol commercial term found
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Phrase,lower back pain doctor,"""lower back pain doctor""",Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Phrase,back problem doctor,"""back problem doctor""",Enabled,1600,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Phrase,lower back specialist doctors,"""lower back specialist doctors""",Enabled,320,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Phrase,back and spine doctors,"""back and spine doctors""",Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Phrase,back pain doctors near me,"""back pain doctors near me""",Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Phrase,chronic back pain doctor near me,"""chronic back pain doctor near me""",Enabled,30,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Phrase,back pain treatment near me,"""back pain treatment near me""",Enabled,,REACTIVATE,0 impr - sitting in paused Pain Mgmt
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Broad,back pain specialist near me,back pain specialist near me,Paused,,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Broad,back doctor near me,back doctor near me,Paused,4400,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Port Huron",Back Pain Specialist,Negative (ad group list),"-""back to the future"" -mattress -chiropractor -chiropractic -salary -""icd 10"" -exercises -stretches -""what is a back doctor"" -""doctor odyssey"" -""doctor who"" -""doctor stone"" -pillow -brace -massage","-""back to the future"" -mattress -chiropractor -chiropractic -salary -""icd 10"" -exercises -stretches -""what is a back doctor"" -""doctor odyssey"" -""doctor who"" -""doctor stone"" -pillow -brace -massage",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Exact,sciatica treatment near me,[sciatica treatment near me],Enabled,1900,NEW,highest transactional sciatica term
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Exact,sciatica doctor near me,[sciatica doctor near me],Enabled,720,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Exact,sciatica specialist near me,[sciatica specialist near me],Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Exact,sciatica pain doctor,[sciatica pain doctor],Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Exact,sciatica specialist,[sciatica specialist],Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Exact,doctor for sciatica,[doctor for sciatica],Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Phrase,sciatica treatment near me,"""sciatica treatment near me""",Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Phrase,sciatica doctor near me,"""sciatica doctor near me""",Enabled,720,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Phrase,sciatica specialist near me,"""sciatica specialist near me""",Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Phrase,sciatica specialist,"""sciatica specialist""",Enabled,170,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Phrase,sciatica pain doctor,"""sciatica pain doctor""",Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Phrase,sciatica treatment,"""sciatica treatment""",Enabled,27100,REACTIVATE,PAUSED. High vol but mostly informational - watch CPA daily
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Phrase,sciatica pain relief,"""sciatica pain relief""",Enabled,40500,REACTIVATE,"PAUSED. Informational-heavy - start paused, test 2nd"
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Phrase,sciatic nerve pain relief,"""sciatic nerve pain relief""",Enabled,22200,REACTIVATE,PAUSED. Same caution
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Phrase,physical therapy for sciatica near me,"""physical therapy for sciatica near me""",Enabled,,REACTIVATE,in paused Pain Mgmt
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Phrase,sciatica treatment southfield,"""sciatica treatment southfield""",Enabled,,REACTIVATE,Southfield campaign only
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Broad,sciatica specialist near me,sciatica specialist near me,Paused,260,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Port Huron",Sciatica,Negative (ad group list),"-stretches -exercises -""icd 10"" -pregnancy -pregnant -""how to"" -""what is"" -""how long"" -mattress -chiropractic -chiropractor -cream -brace -""at home"" -""ice pack"" -symptoms -""feel like"" -medication -pillow -""does it go away"" -meaning","-stretches -exercises -""icd 10"" -pregnancy -pregnant -""how to"" -""what is"" -""how long"" -mattress -chiropractic -chiropractor -cream -brace -""at home"" -""ice pack"" -symptoms -""feel like"" -medication -pillow -""does it go away"" -meaning",Enabled,,NEW,apply as ad-group negative keyword list
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Exact,spine surgeon near me,[spine surgeon near me],Enabled,5400,NEW,"LARGEST MISS - 5,400/mo, not targeted"
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Exact,spine surgeons near me,[spine surgeons near me],Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Exact,orthopedic spine surgeon near me,[orthopedic spine surgeon near me],Enabled,390,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Exact,orthopedic spine surgeon,[orthopedic spine surgeon],Enabled,1000,EXISTING,
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Exact,michigan orthopedic spine surgeons,[michigan orthopedic spine surgeons],Enabled,,EXISTING,15.0 conv @ $122
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Exact,spine surgeon,[spine surgeon],Enabled,4400,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Exact,back surgeon near me,[back surgeon near me],Enabled,,EXISTING,1.0 conv
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Exact,best spine doctors in michigan,[best spine doctors in michigan],Enabled,,EXISTING,
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Phrase,orthopedic spine surgeon,"""orthopedic spine surgeon""",Enabled,1000,EXISTING,#1 spine kw: 126.6 conv @ $213
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Phrase,spinal surgery,"""spinal surgery""",Enabled,,EXISTING,29.4 conv @ $417
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Phrase,spine surgery,"""spine surgery""",Enabled,,EXISTING,29.0 conv @ $357
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Phrase,back surgeons in michigan,"""back surgeons in michigan""",Enabled,,EXISTING,25.6 conv @ $300
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Phrase,spinal surgeons near me,"""spinal surgeons near me""",Enabled,,EXISTING,8.3 conv @ $90 - strong
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Phrase,spine surgeon near me,"""spine surgeon near me""",Enabled,5400,EXISTING,2.3 conv - underfunded
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Phrase,spine surgeons near me,"""spine surgeons near me""",Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Phrase,orthopedic spine surgeon near me,"""orthopedic spine surgeon near me""",Enabled,390,EXISTING,
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Phrase,spine orthopedic surgeon,"""spine orthopedic surgeon""",Enabled,1000,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Phrase,spine surgery surgeon,"""spine surgery surgeon""",Enabled,2900,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Phrase,lower back surgery,"""lower back surgery""",Enabled,,EXISTING,
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Phrase,neck surgery,"""neck surgery""",Enabled,,EXISTING,6.5 conv @ $740 - watch
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Phrase,cervical fusion surgery,"""cervical fusion surgery""",Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Phrase,lumbar fusion surgery,"""lumbar fusion surgery""",Enabled,1900,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Phrase,minimally invasive spine surgeon,"""minimally invasive spine surgeon""",Enabled,260,NEW,
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Broad,spine surgeon near me,spine surgeon near me,Paused,5400,GATED,after ZocDoc fix
+"BOD - Neck, Back, Spine - Port Huron",Spine Surgery,Negative (ad group list),"-salary -""how much"" -""top 10"" -jobs -residency -""make"" -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida -""united states"" -""icd 10"" -""best in the""","-salary -""how much"" -""top 10"" -jobs -residency -""make"" -nyc -nj -""new jersey"" -""long island"" -dallas -texas -florida -""united states"" -""icd 10"" -""best in the""",Enabled,,NEW,apply as ad-group negative keyword list
