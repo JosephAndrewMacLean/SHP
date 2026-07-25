@@ -9,6 +9,16 @@ the keyword report covers Jun 1 – Jul 24, 2026. Search volumes are Semrush US 
 (2026-07), used for *relative* prioritization, not absolute forecasting. Condition-page
 existence verified via Google Search Console (last 90 days).
 
+**Keyword discovery:** Semrush `phrase_fullsearch` (broad-match/alternate-query discovery) run
+against seeds *sciatica, spine specialist, back doctor, neck pain doctor, herniated disc,
+spinal stenosis, pinched nerve, spine surgeon, pain management*, plus `phrase_these` for batch
+volume validation. **§8 records what discovery changed** — it corrected several numbers in an
+earlier draft of this document that were built from a hand-generated candidate list.
+
+**Companion file — the actual build sheet:** [`pm/spine-keyword-build-2026-07.csv`](../pm/spine-keyword-build-2026-07.csv)
+— 573 rows, every keyword with its match type, ad group, campaign, volume, and whether it is
+new / existing / reactivated. Google Ads Editor–importable. §9 explains the match-type logic.
+
 This answers three questions, in the order Cardinal's guidance says to answer them:
 
 1. Which spine ad groups deserve the money — and why, from the data.
@@ -651,3 +661,187 @@ Nothing in §3 runs before:
   "Michigan spine leaders" should be reviewed for substantiation on the same pass.
 - **No outcome promises.** All copy above describes process and access, not results.
 - **Accessibility:** condition landing pages must meet WCAG AA before receiving paid traffic.
+
+---
+
+## 8. What Semrush discovery changed
+
+The first pass of this document validated a keyword list I generated myself. That is not
+discovery — it confirms ideas rather than finding them. Running Semrush's actual
+broad-match/alternate-query discovery against nine seeds produced four corrections. Recording
+them here because the corrections matter more than the original estimates.
+
+### 8.1 I badly understated the "near me" cluster
+
+My hand-built list missed the highest-volume phrasings of our best-converting pattern:
+
+| Keyword | My estimate | **Actual (Semrush)** | Currently targeted? |
+|---|---:|---:|---|
+| spine specialist near me | untested | **5,400** | Yes — 41.4 conv @ $91 |
+| spine surgeon near me | untested | **5,400** | Barely — 2.3 conv, $609 spend |
+| back doctor near me | untested | **4,400** | Yes — exact, ROAS 1.23 |
+| back doctors near me | untested | **2,900** | Yes — exact, **ROAS 2.00** |
+| pain management doctors near me | untested | **5,400** | **No** |
+| back pain doctor near me | untested | **2,400** | Phrase only — 16.5 conv @ $105 |
+| pain management doctor near me | 2,400 | 2,400 | **No** |
+| spine surgeons near me | untested | **1,900** | **No** |
+| lower back pain doctor near me | 140 | 140 | No |
+
+The pattern: I guessed at long-tail phrasings and got the small ones right while missing the
+head terms entirely. **`spine surgeon near me` at 5,400/mo drew $609 of spend and 2.3
+conversions in eight weeks** — that is the single largest untapped term in spine.
+
+### 8.2 Condition keywords are mostly informational — I over-promised on them
+
+This is the correction that most changes the plan. Semrush intent coding on the condition
+clusters:
+
+| Cluster | Total discovered volume | Transactional / commercial share |
+|---|---:|---|
+| Sciatica | ~800,000/mo | **~3,300/mo** (doctor / specialist / treatment near me) |
+| Spinal stenosis | ~290,000/mo | **~600/mo** |
+| Herniated disc | ~350,000/mo | **~2,000/mo** |
+| Pinched nerve | ~180,000/mo | **~750/mo** |
+
+"sciatica" itself is 368,000/mo — and it is people looking for stretches, ice packs, how long
+it lasts, and whether it's related to pregnancy. That is an **SEO and content opportunity**,
+not a paid one, and it belongs to Randall's landing-page work and the organic team rather than
+to this build.
+
+**What this means for §2.2:** build the condition ad groups, but build them *narrow* — the
+doctor/specialist/treatment-near-me subset only, with aggressive negative lists. My earlier
+"~3,150/mo of added demand" figure conflated informational and commercial volume and was
+optimistic. The honest number for **paid-viable** added demand across all condition groups is
+roughly **6,500–7,000/mo**, and the larger share of the real prize sits in §8.3.
+
+### 8.3 The bigger paid prize isn't conditions — it's "back doctor" and "pain management"
+
+Two clusters with genuine commercial intent, real CPCs (advertisers pay $3–5, which means they
+convert), and almost no coverage from us:
+
+| Keyword | Volume | CPC | Our status |
+|---|---:|---:|---|
+| doctors for back injuries | 12,100 | $5.22 | Not targeted |
+| doctor in back pain | 8,100 | $4.52 | Not targeted |
+| back pain doctor | 5,400 | $4.04 | Exact only, 1.5 conv |
+| back doctor | 5,400 | $4.76 | Exact only, 7.5 conv |
+| pain management doctors near me | 5,400 | $3.15 | **Ad group paused** |
+| interventional pain management | 5,400 | $5.11 | Not targeted |
+| medial branch block | 8,100 | $1.77 | Not targeted |
+| facet joint injection | 3,600 | — | Not targeted |
+| pain management clinic near me | 2,900 | $2.69 | **Ad group paused** |
+| lower back pain doctor | 1,900 | $4.60 | Not targeted |
+
+Note the pattern in the CPCs: **the highest-CPC spine-adjacent terms in the market are the
+"back doctor" ones, and we own almost none of them.** Meanwhile our Back Pain keywords that
+*are* live post the best ROAS in the account (`back doctors near me` exact, ROAS 2.00). This
+is the strongest single argument for splitting Back Pain out of Specialist as its own ad group.
+
+### 8.4 A high-performing keyword is sitting paused
+
+`"spine doctors"` (phrase, Livonia / Specialist) is **paused**. In the Jun 1 – Jul 24 window it
+spent **$21,223** and produced **76.1 conversions at a $279 CPA** — the #2 spine keyword by
+spend. Whoever paused it shrank the keyword universe by roughly 15% of Livonia's spine
+impressions at a CPA better than the campaign average.
+
+**Find out why it was paused before reactivating it.** If there was a search-term or quality
+reason, that reason still applies and needs a negative list instead. If it was an accident, it
+is the fastest volume recovery available to you. Either way, this is the kind of thing the
+weekly review is supposed to catch.
+
+### 8.5 Discovery also produced the negative lists
+
+The most valuable by-product. `phrase_fullsearch` on "back doctor" returns *back to the future
+doctor* (1,000/mo), *doctor recommended mattress for back pain* (2,900/mo), *is doctor odyssey
+coming back* (590/mo). On "spine surgeon" it returns *spine surgeon salary* (2,400/mo) and
+*top 10 spine surgeons in nyc*. These are exactly what broad match would buy us.
+
+Every ad group in the CSV ships with an ad-group-level negative list built from its own
+discovery output. **The Pain Management negatives are a compliance control, not just an
+efficiency one** — they exclude opioid, oxycodone, percocet, narcotic, suboxone, methadone and
+related drug-seeking terms. That list should be reviewed by compliance alongside the ad copy.
+
+### 8.6 What I could not get
+
+- **Competitor paid data.** `phrase_adwords` returned no results for our head terms in the US
+  database, so I have no view of who else is bidding on spine in Metro Detroit or what they're
+  paying. Get this from the Google Ads **Auction Insights** report instead — it's account-level
+  and more accurate for our geo than Semrush would be.
+- **Michigan-specific volume.** All figures are US national. Metro Detroit is roughly 1–2% of
+  US search volume but the ratio varies by term. These numbers rank opportunities correctly;
+  they do not forecast our impressions.
+- Discovery surfaced **`spine specialists of michigan` (480/mo)** — a competitor's brand name.
+  Conquesting is legal but it is a strategic and legal call, not a build decision. Flagging it;
+  not including it in the CSV.
+
+---
+
+## 9. Match type by keyword — the logic, and the file
+
+The full list is in [`pm/spine-keyword-build-2026-07.csv`](../pm/spine-keyword-build-2026-07.csv).
+573 rows: 223 keywords per full geo build, run across Sterling Heights and Livonia (all 10 ad
+groups) and Port Huron (4 core ad groups), plus one negative list per ad group.
+
+### 9.1 The rule I applied
+
+| Match type | When | Count per ad group |
+|---|---|---:|
+| **Exact** | Terms with proven conversion history in our own data, plus the highest-intent "near me" head terms. Maximum control, lowest wasted spend, best Quality Score. | 4–15 |
+| **Phrase** | The expansion body. Variants, treatment names, and condition phrasings where we want reach but still need the core term present. | 9–15 |
+| **Broad** | 1–2 only, per Evan. Specific and high-intent — never a bare category term. **Uploaded paused**, enabled only after the ZocDoc fix. | 1–2 |
+
+Two deliberate choices worth defending if challenged:
+
+**Every high-performer gets both an exact and a phrase entry.** `back doctors near me` exact
+posts a 2.00 ROAS; the phrase version posts 0.43. That spread is the argument for exact match —
+so where a term converts, we run exact to capture the head cleanly and phrase to catch the
+tail, and we let the CPA data tell us which to fund. It costs nothing to run both and it
+generates the comparison the weekly review needs.
+
+**All 16 broad match keywords ship paused.** They are built, loaded and ready, so enabling them
+is a checkbox rather than a project — but they stay off until the Liine/ZocDoc integration
+posts online-booking completions back to Google Ads. Broad match steers by conversion signal;
+ours is ambiguous today. Turning them on now would spend real money teaching the algorithm the
+wrong lesson.
+
+### 9.2 Build size
+
+| Ad group | Exact | Phrase | Broad | Total | New | Reactivated |
+|---|---:|---:|---:|---:|---:|---:|
+| Spine Specialist | 11 | 15 | 2 | 28 | 12 | 2 |
+| Back Pain Specialist | 15 | 15 | 2 | 32 | 15 | 1 |
+| Neck Pain Specialist | 8 | 11 | 1 | 20 | 9 | 3 |
+| Sciatica | 6 | 11 | 1 | 18 | 11 | 5 |
+| Herniated / Bulging Disc | 10 | 15 | 1 | 26 | 8 | 1 |
+| Spinal Stenosis | 5 | 9 | 1 | 15 | 12 | 1 |
+| Pinched Nerve / Radiculopathy | 4 | 10 | 1 | 15 | 13 | 1 |
+| Spine Surgery | 8 | 15 | 1 | 24 | 10 | 0 |
+| Minimally Invasive / Disc Surgery | 8 | 9 | 1 | 18 | 10 | 2 |
+| Pain Management & Injections | 10 | 15 | 2 | 27 | 12 | 3 |
+| **Per geo** | **85** | **125** | **13** | **223** | **112** | **19** |
+
+Sterling Heights and Livonia take the full 223 each. Port Huron takes the four core ad groups
+— Spine Specialist, Back Pain Specialist, Sciatica, Spine Surgery — because its Specialist
+group runs the cheapest CPA in the account ($339) on 1,165 impressions and deserves more
+surface area before we build depth there. Southfield stays minimal until its impression base
+justifies more.
+
+Against 379 unique keywords today, this is roughly a **2.5x expansion of the spine keyword
+universe**, weighted toward the patterns our own data already proves convert.
+
+### 9.3 Six keywords to watch daily in week one
+
+Not because they're wrong — because they're the ones most likely to spend fast in an
+unexpected direction:
+
+| Keyword | Ad group | Risk |
+|---|---|---|
+| "sciatica pain relief" (40,500) | Sciatica | Informational intent at scale. If CPA runs hot in 48h, pause and keep only the near-me set. |
+| "sciatica treatment" (27,100) | Sciatica | Same. |
+| "spinal stenosis treatment" (8,100) | Spinal Stenosis | Same. |
+| [pain management clinic near me] (2,900) | Pain Management | Drug-seeking traffic. Read the search-term report daily for the first week regardless of CPA. |
+| "spinal decompression" | Minimally Invasive | Dominated by chiropractic decompression-table intent, not surgical. |
+| "doctors for back injuries" (12,100) | Back Pain Specialist | Highest volume in the build, $5.22 CPC. Also attracts workers-comp and legal intent — may be good, may not. Watch it. |
+
+That watchlist *is* the daily conversion analysis Evan described, scoped to something you can
+actually do in ten minutes a morning.
