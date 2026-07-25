@@ -188,11 +188,17 @@ relevant ad copy; the rest should be paused.
 
 ### 2.2 The condition expansion — with volumes and existing landing pages
 
-**Critical and load-bearing:** every condition below **already has a live page on
-synergyhealth.org**, confirmed in Search Console. Randall does not need to build these before
-you can launch — he needs to *improve* them. That removes the dependency you raised with Evan.
+**Every condition below already has a live page on synergyhealth.org**, confirmed in Search
+Console. That is genuinely useful — but **not as a paid landing page.**
 
-| Condition ad group | Anchor keywords (US vol/mo) | Existing landing page | GSC impr (90d) / avg pos |
+> **Corrected 2026-07-25.** An earlier draft read this as "Randall isn't blocking you, just
+> point the ads at these pages." GA4 says otherwise: these pages convert at **0.025 key events
+> per session** against the geo specialty pages' **1.21** (§4.1). They rank, they inform, and
+> they do not book patients. Use the table below to confirm we have *content* on each
+> condition — which matters for organic and for Phase 2 page builds — and send the paid traffic
+> to the geo page. §4 is the landing page decision.
+
+| Condition ad group | Anchor keywords (US vol/mo) | Existing content page (organic asset, **not** the paid LP) | GSC impr (90d) / avg pos |
 |---|---|---|---|
 | **Sciatica** | sciatica pain relief 40,500 · sciatica treatment 27,100 · sciatica treatment near me 1,900 · sciatica doctor near me 720 · sciatica specialist near me 260 | `/conditions/sciatica/` | 91 · pos 15.6 |
 | **Spinal Stenosis** | spinal stenosis treatment 8,100 · spinal stenosis specialist near me 260 · spinal stenosis treatment near me 210 · lumbar stenosis treatment 90 | `/conditions/spinal-stenosis/` · `/conditions/lumbar-stenosis/` | 526 · pos 18.5 |
@@ -414,7 +420,7 @@ Format: 15 headlines (30 char max) + 4 descriptions (90 char max), per Google RS
 ---
 
 #### 1. Spine Specialist — *the workhorse; model on Sterling's proven structure*
-**Landing page:** `/specialty/spine-neck-back/{geo}/`
+**Landing page:** `/specialty/spine-neck-back/{geo}/` — the hub page, no Phase 2 change.
 
 **Headlines**
 1. Spine Specialists in {Geo}
@@ -442,7 +448,7 @@ Format: 15 headlines (30 char max) + 4 descriptions (90 char max), per Google RS
 ---
 
 #### 2. Back Pain Specialist
-**Landing page:** `/specialty/spine-neck-back/{geo}/`
+**Landing page:** `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `…/{geo}/back-pain/`
 
 **Headlines:** Back Pain Specialists {Geo} · Lower Back Pain Treatment · See a Back Doctor
 Near You · Back Pain Relief in {Geo} · Chronic Back Pain Care · Non-Surgical Back Pain Care ·
@@ -459,7 +465,7 @@ Back Pain? Get Answers · Treatment Beyond Painkillers · Metro Detroit Back Spe
 ---
 
 #### 3. Neck Pain Specialist
-**Landing page:** `/specialty/spine-neck-back/{geo}/`
+**Landing page:** `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `…/{geo}/neck-pain/`
 
 **Headlines:** Neck Pain Specialists {Geo} · Neck & Cervical Spine Care · See a Neck Doctor
 Near You · Neck Pain Relief in {Geo} · Chronic Neck Pain Treatment · Pinched Nerve in Neck? ·
@@ -476,7 +482,7 @@ Book a Neck Pain Consult · Cervical Spine Specialists · Metro Detroit Neck Car
 ---
 
 #### 4. Sciatica — *the biggest new opportunity*
-**Landing page:** `/conditions/sciatica/`
+**Landing page:** `/specialty/spine-neck-back/{geo}/` at launch — **not** `/conditions/sciatica/`, which converts at 1/49th the rate (§4.1). Phase 2 target: `…/{geo}/sciatica/`.
 
 **Headlines**
 1. Sciatica Treatment in {Geo}
@@ -504,7 +510,7 @@ Book a Neck Pain Consult · Cervical Spine Specialists · Metro Detroit Neck Car
 ---
 
 #### 5. Herniated / Bulging Disc
-**Landing page:** `/conditions/herniated-disc/`
+**Landing page:** `/specialty/spine-neck-back/{geo}/` at launch — **not** `/conditions/herniated-disc/`, which converts at 1/49th the rate (§4.1). Phase 2 target: `…/{geo}/herniated-disc/`.
 
 **Headlines**
 1. Herniated Disc Treatment {Geo}
@@ -532,7 +538,7 @@ Book a Neck Pain Consult · Cervical Spine Specialists · Metro Detroit Neck Car
 ---
 
 #### 6. Spinal Stenosis
-**Landing page:** `/conditions/spinal-stenosis/`
+**Landing page:** `/specialty/spine-neck-back/{geo}/` at launch — **not** `/conditions/spinal-stenosis/`, which converts at 1/49th the rate (§4.1). Phase 2 target: `…/{geo}/spinal-stenosis/`.
 
 **Headlines:** Spinal Stenosis Care {Geo} · Spinal Stenosis Specialists · Lumbar Stenosis
 Treatment · Leg Pain When You Walk? · See a Stenosis Specialist · Non-Surgical Stenosis Care ·
@@ -549,7 +555,7 @@ Cervical Stenosis Treatment · Metro Detroit Spine Care · Board-Certified Spine
 ---
 
 #### 7. Pinched Nerve / Radiculopathy
-**Landing page:** `/conditions/cervical-radiculopathy/`
+**Landing page:** `/specialty/spine-neck-back/{geo}/` at launch — **not** `/conditions/cervical-radiculopathy/`, which converts at 1/49th the rate (§4.1). Phase 2 target: `…/{geo}/pinched-nerve/`.
 
 **Headlines:** Pinched Nerve Treatment {Geo} · Pinched Nerve Specialists · Numbness or
 Tingling? · Nerve Pain in Arm or Leg? · Cervical Radiculopathy Care · See a Nerve Pain
@@ -566,7 +572,7 @@ Nerve Pain Relief Near You · {CUSTOMIZER.Doctor Name} Has Openings · Synergy H
 ---
 
 #### 8. Spine Surgery (general)
-**Landing page:** `/specialty/spine-neck-back/{geo}/`
+**Landing page:** `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `…/{geo}/spine-surgery/`
 
 **Headlines:** Spine Surgeons in {Geo} · Board-Certified Spine Surgeons · Back Surgery
 Specialists · Fellowship-Trained Surgeons ⚠ · Spine Surgery Second Opinions · Minimally
@@ -583,7 +589,7 @@ It's Right · {CUSTOMIZER.Doctor Name} Has Openings · Most Insurance Accepted �
 ---
 
 #### 9. Minimally Invasive / Disc Surgery
-**Landing page:** `/conditions/herniated-disc/`
+**Landing page:** `/specialty/spine-neck-back/{geo}/` at launch — **not** `/conditions/herniated-disc/`, which converts at 1/49th the rate (§4.1). Phase 2 target: `…/{geo}/minimally-invasive-spine-surgery/`.
 
 **Headlines:** Minimally Invasive Spine {Geo} · Microdiscectomy Specialists · Endoscopic Spine
 Surgery · Small Incision Spine Surgery · Discectomy Specialists Near You · Laminectomy
@@ -601,26 +607,134 @@ Options · {CUSTOMIZER.Doctor Name} Has Openings · Most Insurance Accepted ⚠ 
 
 ---
 
-## 4. Landing pages — the ask for Randall
+## 4. Landing pages — one page per ad group, decided on GA4 conversion data
 
-Every condition ad group above points to a page that **already exists**. The work is
-optimization, not creation. Priority order, by ad-group spend potential:
+**This section reverses what an earlier draft of this document said.** That draft told you to
+point each condition ad group at its matching `/conditions/` page, on the logic that a
+condition-specific page lifts ad relevance and landing page experience. The GA4 data says that
+would have been an expensive mistake.
 
-| Priority | Page | Current state | Ask |
-|---:|---|---|---|
-| 1 | `/conditions/sciatica/` | Live, 91 impr, pos 15.6 | Add scheduler CTA above the fold, "when to see a specialist," geo variants for Sterling + Livonia |
-| 2 | `/conditions/herniated-disc/` | Live, in paid use, $611 CPA | Already the best-converting condition page — replicate its structure everywhere else |
-| 3 | `/conditions/spinal-stenosis/` | Live, 526 impr | Add CTA + non-surgical-options section |
-| 4 | `/conditions/cervical-radiculopathy/` | Live, 759 impr | Add CTA; retitle around "pinched nerve" language patients actually use |
+### 4.1 The evidence
 
-**Two things to confirm before launch:** (a) every page above carries the same
-conversion/scheduler tracking as `/specialty/spine-neck-back/{geo}/`, or the new ad groups
-will look like they're failing when they aren't; (b) the "some ads limited by policy" flag on
-the Spine Conditions campaigns is resolved.
+Paid Search sessions and key events by landing page, Jun 1 – Jul 24, 2026 (GA4 property
+370514163):
+
+| Landing page | Paid sessions | Key events | **Key events / session** |
+|---|---:|---:|---:|
+| `/specialty/spine-neck-back/sterling-heights` | 109 | 134 | **1.229** |
+| `/specialty/spine-neck-back/livonia` | 85 | 101 | **1.188** |
+| `/specialty/spine-neck-back` (generic, no geo) | 1,677 | 612 | 0.365 |
+
+And the condition and treatment pages, all channels, over a full 90 days (Apr 25 – Jul 24):
+
+| Page | Sessions | Key events | **Key events / session** |
+|---|---:|---:|---:|
+| `/conditions/herniated-disc` | 81 | **2** | **0.025** |
+| `/treatment/laminectomy` | 31 | **0** | **0.000** |
+| `/providers/specialty/spine` | 28 | 12 | 0.429 |
+
+No other spine condition page — sciatica, spinal stenosis, cervical radiculopathy, scoliosis,
+spondylolisthesis — cleared even 20 sessions in 90 days.
+
+**Read the three numbers together.** The geo specialty pages convert at **1.21 key events per
+session**. The generic specialty page converts at **0.365** — the geo version is **3.3x
+better**. The condition pages convert at **0.025** — the geo pages are **49x better**.
+
+The condition pages exist, and they rank (§2.2). They just don't convert. They are
+informational content built for organic search, with no working scheduler path. Sending paid
+traffic to them would trade a small ad-relevance gain for a catastrophic conversion loss.
+
+### 4.2 The decision
+
+**Phase 1 — launch every ad group against the geo specialty page.** All nine ad groups in
+Sterling Heights point at `/specialty/spine-neck-back/sterling-heights/`; all nine in Livonia
+at `/specialty/spine-neck-back/livonia/`. This is in the build sheet as
+`Final URL (Phase 1)`. Do not point paid spine traffic at any `/conditions/` URL.
+
+**Phase 2 — build condition pages on the template that converts.** The right fix is not to
+improve `/conditions/sciatica/`. It is to clone the geo specialty page — the one running at
+1.21 — and make condition variants of it, with the same scheduler, the same tracking, the same
+CTA placement. Proposed structure, in the sheet as `Final URL (Phase 2)`:
+
+| Ad group | Phase 1 URL | Phase 2 URL (proposed — web team owns final structure) |
+|---|---|---|
+| Spine Specialist | `/specialty/spine-neck-back/{geo}/` | no change — this is the hub |
+| Back Pain Specialist | `/specialty/spine-neck-back/{geo}/` | `…/{geo}/back-pain/` |
+| Neck Pain Specialist | `/specialty/spine-neck-back/{geo}/` | `…/{geo}/neck-pain/` |
+| Sciatica | `/specialty/spine-neck-back/{geo}/` | `…/{geo}/sciatica/` |
+| Herniated / Bulging Disc | `/specialty/spine-neck-back/{geo}/` | `…/{geo}/herniated-disc/` |
+| Spinal Stenosis | `/specialty/spine-neck-back/{geo}/` | `…/{geo}/spinal-stenosis/` |
+| Pinched Nerve / Radiculopathy | `/specialty/spine-neck-back/{geo}/` | `…/{geo}/pinched-nerve/` |
+| Spine Surgery | `/specialty/spine-neck-back/{geo}/` | `…/{geo}/spine-surgery/` |
+| Minimally Invasive / Disc Surgery | `/specialty/spine-neck-back/{geo}/` | `…/{geo}/minimally-invasive-spine-surgery/` |
+
+This reframes Randall's job. It is not "improve the condition pages" — it is **"clone the
+converting template and make condition variants of it."** The `/conditions/` pages stay where
+they are and keep doing their organic job.
+
+### 4.3 The Port Huron page does not exist — build it first
+
+`/specialty/spine-neck-back/port-huron/` **does not exist.** Port Huron ads currently point at
+the generic `/specialty/spine-neck-back/`, which converts at 0.365 against the geo pages' 1.21.
+
+Port Huron / Specialist runs the **cheapest CPA in the entire account — $339** — while pointed
+at the worst-converting page available to it. There is a legacy page at
+`/specialties/spine-back-and-neck/port-huron-spine-neck-pain-dr-andres-munk/` (347 organic
+impressions, position 10), but it is on the old URL structure and is not the converting
+template.
+
+**This is the highest-value single page on the list.** One page, on a template that already
+exists, for the geo with the best economics in the account.
+
+### 4.4 Two things to verify before launch — both worth real money
+
+**1. Where is paid spine traffic actually landing?** 1,677 of 1,871 tracked paid spine
+sessions — **90%** — landed on the *generic* `/specialty/spine-neck-back` page, even though the
+Sterling Heights and Livonia ads point at the geo URLs. Port Huron and Southfield together drew
+only ~230 clicks in that window, so they cannot account for it.
+
+Either the geo URLs redirect to the generic page for most visitors, or something in the
+tracking template is rewriting the destination. If it is a redirect, we are paying geo-page
+prices for generic-page conversion rates across almost the whole spine account, and fixing it
+is worth more than the entire keyword expansion. **Check this before you build anything.**
+
+**2. There is a malformed URL in the account.** GA4 recorded sessions landing on
+`/specialty/spine-neck-back/{ignore` — an unresolved tracking-template parameter leaking into
+the live URL. Small volume, but it means at least one ad or tracking template is broken.
+
+### 4.5 Also worth flagging — three parallel URL structures for the same content
+
+Search Console shows spine content living at three different paths simultaneously:
+
+| Structure | Example | Status |
+|---|---|---|
+| `/conditions/{condition}/` | `/conditions/sciatica/` | Current |
+| `/conditions-we-treat/spine-neck-back-conditions/{condition}/` | `…/sciatica/` | Legacy duplicate, still indexed |
+| `/specialties/spine-back-and-neck/{treatment}/` | `…/cervical-fusion/` | Legacy, some ranking well (position 2.8) |
+
+Plus standalone duplicates: `/degenerative-disc-disease-treatment/` alongside
+`/conditions/degenerative-disc-disease/`; `/herniated-disc-microdiscectomy/` alongside
+`/treatment/microdiscectomy/`; `/self-pay-options/spine-neck-back/` alongside
+`/insurance-billing/self-pay-spine-neck-back/`. One URL still carries `-old` in the path
+(`/specialties/spine-back-and-neck-old/lumbar-fusion/`) and is indexed.
+
+This is an organic problem, not a paid one — it splits ranking signals across duplicate URLs —
+so it belongs to the SEO workstream rather than this build. Flagging it because it is the
+likely reason our condition pages rank at position 15–24 with strong content. Two of these
+legacy pages are genuinely valuable and should not be deleted blindly:
+`/treatment/microdiscectomy/` (3,869 impressions, position 8.3) and
+`/specialties/spine-back-and-neck/cervical-fusion/` (position 2.8).
 
 ---
 
 ## 5. Sequence — what happens when
+
+**Before anything else — one check worth more than the whole build**
+- [ ] **Find out why 90% of paid spine sessions land on the generic `/specialty/spine-neck-back`
+      page** instead of the geo URLs the ads point at (§4.4). If it's a redirect, fixing it lifts
+      conversion 3.3x across nearly the whole spine account with no new keywords, no new copy and
+      no new spend.
+- [ ] Fix the malformed `/specialty/spine-neck-back/{ignore` URL leaking from a tracking template
 
 **This week (no dependencies, do it now)**
 - [ ] Fix three live typos: "Evrey" → Every, "Specialits" → Specialists, "Conditons" → Conditions
@@ -629,7 +743,8 @@ the Spine Conditions campaigns is resolved.
       ad groups into the new condition ad groups (do **not** rebuild Pain Management — §2.8)
 - [ ] Port Sterling Heights Specialist copy structure to Livonia Specialist — largest single inefficiency in spine
 - [ ] Unpin the `{CUSTOMIZER}` assets on the two "Poor" ad-strength ads
-- [ ] Build Sciatica ad group in Sterling Heights + Livonia, phrase + exact, pointed at `/conditions/sciatica/`
+- [ ] Build Sciatica ad group in Sterling Heights + Livonia, phrase + exact, pointed at
+      `/specialty/spine-neck-back/{geo}/` (**not** the sciatica condition page — §4.1)
 - [ ] Reduce ortho New Patient Intent value $125 → $75 (separate from this build; confirm with Google rep)
 
 **Next two weeks**
@@ -639,6 +754,14 @@ the Spine Conditions campaigns is resolved.
 - [ ] Split Back Pain and Neck Pain out of Specialist
 - [ ] Restrict Fusion + Injection to exact match, cap bids (§2.8) — frees ~$58,800 at a $1,608 CPA
 - [ ] Build Port Huron's four ad groups — cheapest CPA in the account, most starved
+- [ ] **Build `/specialty/spine-neck-back/port-huron/`** (§4.3) — highest-value single page on
+      the list: best CPA geo in the account, currently pointed at the worst-converting page
+
+**Phase 2 — page builds (Randall), after the ad groups are live and gathering data**
+- [ ] Clone the geo specialty template into condition variants (§4.2) — not improvements to
+      `/conditions/*`, which stay as organic assets
+- [ ] Repoint each ad group's final URL to its Phase 2 page as it ships, one at a time, and
+      compare CPA before/after
 
 **Gated on the Liine/ZocDoc integration fix**
 - [ ] Add 1–2 broad match keywords per ad group (§2.6)
@@ -666,10 +789,14 @@ Stating these explicitly so nothing here reads as more certain than it is.
 3. **I cannot see current impression-share-lost-to-rank per ad group** from these exports —
    that comes from the Google Ads UI. Pull it before and after the build; it is the direct
    measure of whether expansion worked.
-4. **Real new patients here means Google Ads conversion actions, not the data lake.** Until the
+4. **The landing page finding rests on small samples.** 109 and 85 paid sessions on the geo
+   pages is thin, and the 1.21 vs 0.365 gap could narrow with more data. It will not narrow to
+   nothing — and the condition-page number (2 key events on 81 sessions over 90 days) is not
+   ambiguous at any sample size. Re-check the geo comparison after the build has run four weeks.
+5. **Real new patients here means Google Ads conversion actions, not the data lake.** Until the
    data lake is reliable, I can't close the loop from booked to kept. Everything above measures
    booking efficiency, which is the part paid media controls.
-5. **The `{CUSTOMIZER.Doctor Name}` / `{CUSTOMIZER.Count}` feed** needs to be verified as
+6. **The `{CUSTOMIZER.Doctor Name}` / `{CUSTOMIZER.Count}` feed** needs to be verified as
    accurate per geo before the new ad groups inherit it — a stale appointment count is an
    unsubstantiated claim.
 
@@ -883,19 +1010,26 @@ actually do in ten minutes a morning.
 
 ---
 
+---
+
 ## 10. The keyword list, organized by match type
 
-Nine ad groups. Every keyword below, grouped under the match type it should be
-built with. Identical build for **Sterling Heights** and **Livonia**; **Port Huron**
-takes the four marked `[PH]`. Volumes are Semrush US national, monthly.
+Nine ad groups. Every keyword grouped under the match type it should be built with.
+Identical build for **Sterling Heights** and **Livonia**; **Port Huron** takes the four
+marked `[PH]`. Volumes are Semrush US national, monthly.
 
 `ACTION` — **NEW** = does not exist today · **EXISTING** = already live, keep
 · **REACTIVATE** = exists but paused · **MOVE** = exists in a different ad group.
+
+**Landing page for every ad group below, at launch:**
+`https://synergyhealth.org/specialty/spine-neck-back/{geo}/` — see §4 for why, and for the
+Phase 2 page plan.
 
 
 ### Spine Specialist `[PH]`
 
 _28 keywords — 11 exact, 15 phrase, 2 broad_
+_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: no change — this is the hub page_
 
 **EXACT MATCH** (11)
 
@@ -950,6 +1084,7 @@ _28 keywords — 11 exact, 15 phrase, 2 broad_
 ### Back Pain Specialist `[PH]`
 
 _32 keywords — 15 exact, 15 phrase, 2 broad_
+_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty/spine-neck-back/{geo}/back-pain/` (to be built)_
 
 **EXACT MATCH** (15)
 
@@ -1008,6 +1143,7 @@ _32 keywords — 15 exact, 15 phrase, 2 broad_
 ### Neck Pain Specialist
 
 _20 keywords — 8 exact, 11 phrase, 1 broad_
+_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty/spine-neck-back/{geo}/neck-pain/` (to be built)_
 
 **EXACT MATCH** (8)
 
@@ -1054,6 +1190,7 @@ _20 keywords — 8 exact, 11 phrase, 1 broad_
 ### Sciatica `[PH]`
 
 _17 keywords — 6 exact, 10 phrase, 1 broad_
+_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty/spine-neck-back/{geo}/sciatica/` (to be built)_
 
 **EXACT MATCH** (6)
 
@@ -1097,6 +1234,7 @@ _17 keywords — 6 exact, 10 phrase, 1 broad_
 ### Herniated / Bulging Disc
 
 _26 keywords — 10 exact, 15 phrase, 1 broad_
+_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty/spine-neck-back/{geo}/herniated-disc/` (to be built)_
 
 **EXACT MATCH** (10)
 
@@ -1149,6 +1287,7 @@ _26 keywords — 10 exact, 15 phrase, 1 broad_
 ### Spinal Stenosis
 
 _15 keywords — 5 exact, 9 phrase, 1 broad_
+_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty/spine-neck-back/{geo}/spinal-stenosis/` (to be built)_
 
 **EXACT MATCH** (5)
 
@@ -1190,6 +1329,7 @@ _15 keywords — 5 exact, 9 phrase, 1 broad_
 ### Pinched Nerve / Radiculopathy
 
 _15 keywords — 4 exact, 10 phrase, 1 broad_
+_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty/spine-neck-back/{geo}/pinched-nerve/` (to be built)_
 
 **EXACT MATCH** (4)
 
@@ -1231,6 +1371,7 @@ _15 keywords — 4 exact, 10 phrase, 1 broad_
 ### Spine Surgery `[PH]`
 
 _24 keywords — 8 exact, 15 phrase, 1 broad_
+_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty/spine-neck-back/{geo}/spine-surgery/` (to be built)_
 
 **EXACT MATCH** (8)
 
@@ -1281,6 +1422,7 @@ _24 keywords — 8 exact, 15 phrase, 1 broad_
 ### Minimally Invasive / Disc Surgery
 
 _18 keywords — 8 exact, 9 phrase, 1 broad_
+_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty/spine-neck-back/{geo}/minimally-invasive-spine-surgery/` (to be built)_
 
 **EXACT MATCH** (8)
 
