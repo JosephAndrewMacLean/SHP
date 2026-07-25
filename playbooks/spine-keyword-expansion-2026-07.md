@@ -16,7 +16,7 @@ volume validation. **§8 records what discovery changed** — it corrected sever
 earlier draft of this document that were built from a hand-generated candidate list.
 
 **Companion file — the actual build sheet:** [`pm/spine-keyword-build-2026-07.csv`](../pm/spine-keyword-build-2026-07.csv)
-— 573 rows, every keyword with its match type, ad group, campaign, volume, and whether it is
+— 580 rows (548 keywords + 32 ad-group negative lists), every keyword with its match type, ad group, campaign, volume, and whether it is
 new / existing / reactivated. Google Ads Editor–importable. §9 explains the match-type logic.
 
 This answers three questions, in the order Cardinal's guidance says to answer them:
@@ -40,9 +40,11 @@ This answers three questions, in the order Cardinal's guidance says to answer th
 > deliver one for **$1,107**. Specialist takes 42% of spend and returns 61% of new patients.
 >
 > So expansion is not "add more keywords everywhere." It is: **grow the themes that convert,
-> and split the themes that don't, so the money has somewhere efficient to flow.** I have
-> found 3,150 keywords of new eligible demand, concentrated in the themes that already work,
-> and every one of them lands on a condition page that already exists on our site.
+> and split the themes that don't, so the money has somewhere efficient to flow.** Keyword
+> discovery found **90 new keywords**, of which **66 are doctor / specialist / "near me" terms
+> worth ~71,000 US searches a month** — the exact pattern our own data proves converts 2.7x
+> better than everything else we run. Every condition keyword in the build lands on a page
+> that already exists on our site.
 >
 > The ask: approve the build below. Spend stays flat. The denominator grows.
 
@@ -289,14 +291,21 @@ All ten are specific, high-intent, and "near me"-anchored — the pattern that a
 
 ### 2.7 Estimated universe growth
 
+Actuals from the build sheet, not estimates:
+
 | | Today | After build |
 |---|---:|---:|
-| Unique spine keywords | 379 | ~1,050 |
-| Live (non-paused, eligible) | 316 | ~950 |
-| "near me" keywords | 56 | ~126 |
+| Keyword rows across spine campaigns | 711 | 1,259 (548 added) |
+| Unique keyword texts | 379 | 547 (168 in the build, 90 of them new) |
+| Unique "near me" keywords | 56 | 119 (63 added) |
 | Ad groups (Sterling + Livonia) | 8 | 20 |
-| Broad match keywords | 0 | 16 (phase 2) |
-| Added US search volume targeted | — | ~3,150/mo before broad match |
+| Ad groups (Port Huron) | 4 | 4, fully rebuilt |
+| Broad match keywords | 0 | 32 (16 unique × 2 geos), phase 2 |
+| Added US search volume — all new keywords | — | ~146,000/mo |
+| Added US search volume — transactional subset | — | **~71,000/mo** |
+
+The transactional subset is the number to quote. The rest is condition-term volume that skews
+informational (§8.2) and should not be counted as demand we can convert.
 
 Sterling Heights spine drew 14,000 impressions against ortho's 26,000 in Evan's screen share.
 This build should close most of that gap on keyword count alone, before broad match.
@@ -779,7 +788,7 @@ related drug-seeking terms. That list should be reviewed by compliance alongside
 ## 9. Match type by keyword — the logic, and the file
 
 The full list is in [`pm/spine-keyword-build-2026-07.csv`](../pm/spine-keyword-build-2026-07.csv).
-573 rows: 223 keywords per full geo build, run across Sterling Heights and Livonia (all 10 ad
+548 keyword rows plus one negative list per ad group. 223 keywords per full geo build, run across Sterling Heights and Livonia (all 10 ad
 groups) and Port Huron (4 core ad groups), plus one negative list per ad group.
 
 ### 9.1 The rule I applied
