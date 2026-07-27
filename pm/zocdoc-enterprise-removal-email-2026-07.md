@@ -12,13 +12,12 @@ Backing analysis: `pm/zocdoc-visit-reason-removal-2026-07.md`
 
 Hi [Name],
 
-We've just completed a 12-month reconciliation (July 2025–June 2026) of our Zocdoc bookings
-against our NextGen practice-management records — roughly 5,850 appointments matched
-one-to-one, measuring which booked patients actually kept a visit within 45 days (crediting
-reschedules and staff rebooks). A small set of visit reasons consistently converts bookings to
-kept visits at roughly half our marketplace average, and since fees are charged per new-patient
-booking regardless of whether the patient shows, we'd like to remove them from marketplace
-discovery.
+We've just reconciled our 2026 Zocdoc bookings (January–June) against our NextGen
+practice-management records — 1,424 marketplace appointments matched one-to-one, measuring which
+booked patients actually kept a visit within 45 days (crediting reschedules and staff rebooks).
+A small set of visit reasons converts bookings to kept visits at roughly half our marketplace
+average, and since fees are charged per new-patient booking regardless of whether the patient
+shows, we'd like to remove them from marketplace discovery.
 
 **Request — effective [date], please make the following changes to marketplace search and
 discovery, including Sponsored/boosted placements and partner syndication (e.g., Google,
@@ -27,19 +26,19 @@ Healthgrades):**
 **A. Remove these 7 visit reasons account-wide — every Synergy Health Partners provider and
 location where they appear:**
 
-1. Pain Management Consultation *(currently on: Dr. Kevin Lee, Dr. Anthony Oddo, Dr. Hanish
+1. Pain Management Consultation *(booked in 2026 on: Dr. Kevin Lee, Dr. Anthony Oddo, Dr. Hanish
    Singh, Dr. Brian Kassa, Dr. Joseph Yacisen, Dr. Lucia Zamorano)*
-2. Back Pain *(Dr. Mohamed Salar, Dr. Andres Munk, Dr. Scott McCarty, Dr. Jeffrey Varghese,
-   Dr. Joseph Maslak, Dr. Kevin Lee, Dr. Anthony Oddo, Dr. Hanish Singh, Dr. Brian Kassa)*
+2. Back Pain *(Dr. Mohamed Salar, Dr. Scott McCarty, Dr. Andres Munk, Dr. Jeffrey Varghese,
+   Dr. Joseph Maslak, Dr. Kevin Lee, Dr. Anthony Oddo)*
 3. Surgery Consultation *(Dr. Benjamin Mayo, Dr. Joseph Maslak, Dr. Jeffrey Varghese)*
-4. Ultrasound *(Dr. Benjamin Mayo, Dr. Joseph Yacisen)*
-5. Pain Medication Prescription *(Dr. Anthony Oddo, Dr. Brian Kassa)*
-6. Chronic Pain *(Dr. Anthony Oddo, Dr. Hanish Singh, Dr. Joseph Yacisen, Dr. Brian Kassa)*
-7. Acupuncture *(Dr. Anthony Oddo, Dr. Brian Kassa)*
+4. Ultrasound *(Dr. Benjamin Mayo)*
+5. Acupuncture *(Dr. Anthony Oddo)*
+6. Pain Medication Prescription *(Dr. Anthony Oddo)*
+7. Chronic Pain *(Dr. Anthony Oddo)*
 
-The provider lists reflect where bookings occurred in the last 12 months — please treat the
-removal as account-wide so it also covers any profile where a reason is listed but hasn't
-booked.
+The provider names reflect where bookings actually occurred in 2026 — please treat the removal as
+**account-wide**, so it also clears any profile where one of these reasons is still configured but
+hasn't booked recently (we believe that includes Dr. Yacisen, Dr. Kassa and several others).
 
 **B. Remove one visit reason from two specific provider profiles only:**
 
@@ -57,16 +56,19 @@ actually are.
 
 - **Imaging / report reviews:** MRI Report – Knee, MRI Report – Back / Spine, MRI Report –
   Shoulder, MRI Report – Other, CT Scan Report – Head, X-ray
-- **Injections / in-office procedures:** Cortisone Shots, Epidural Injection, Back Injection,
-  Knee Injection, Joint Injection, Facet Joint Injections, Pain Medicine Injection
+- **Injections / in-office procedures:** Pain Medicine Injection, Cortisone Shots, Back Injection,
+  Joint Injection, Epidural Injection, Knee Injection, Facet Joint Injections
 - **Follow-ups / second opinions:** Orthopedic Follow Up, Orthopedic Follow Up (Hand),
   Orthopedic Follow Up (Foot and Ankle), Orthopedic Trauma Follow Up, Foot Follow Up,
   Spine Specialist Follow Up, Hip and Knee Surgery Follow Up, Pain Medicine Follow Up,
   Orthopedic Second Opinion
-- **Weight-loss / wellness:** Obesity / Weight Loss Consultation, Weight Loss Consultation,
+- **Weight-loss / wellness:** Weight Loss Consultation, Obesity / Weight Loss Consultation,
   Wellness Care, Medicare Annual Wellness Visit, Yearly Wellness Visit (For Medicare Patients)
-- **Admin / accident:** Worker's Compensation Evaluation, Motor Vehicle Accident,
-  Car Accident Injury
+- **Admin / accident:** Motor Vehicle Accident, Car Accident Injury, Worker's Compensation
+  Evaluation
+
+Twenty of these booked in 2026 ($1,089, 43% kept); the remainder are configured but dormant —
+please clear them in the same pass.
 
 (Reason names as they appear in our booking export; happy to map them to your internal IDs.)
 
@@ -107,36 +109,39 @@ jmaclean@synergyhealth.org · [phone]
 
 ## Appendix for the email (optional attach/paste) — the data behind the request
 
-| Visit reason | 12-mo Zocdoc spend | 12-mo booking→kept rate | Cost per kept patient |
+| Visit reason | 2026 Zocdoc spend | Booking→kept rate | Cost per kept patient |
 |---|---|---|---|
-| Pain Management Consultation | $7,575 | 39% (46/117) | $165 |
-| Back Pain | $4,141 | 40% (21/52) | $197 |
-| Surgery Consultation | $404 | 17% (1/6) | $404 |
-| Ultrasound | $1,010 | 0% (0/12) | — |
-| Pain Medication Prescription | $1,212 | 42% (5/12) | $242 |
-| Chronic Pain | $707 | 50% (4/8) | $177 |
-| Acupuncture | $909 | 44% (4/9) | $227 |
-| Ortho Consultation (Spine & Back) — Dr. Salar profile | $1,616 | 41% (7/17) | $231 |
-| Ortho Consultation (Spine & Back) — Dr. Munk profile | $808 | 40% (4/10) | $202 |
-| **Set total** | **$18,382** | **38% (92/243)** | **$200** |
-| *Our marketplace average* | | *~58%* | *~$110* |
-| *This reason on all other providers' profiles* | | *~67% (35/52)* | |
+| Pain Management Consultation | $3,131 | 38% (20/52) | $157 |
+| Back Pain | $2,222 | 35% (9/26) | $247 |
+| Surgery Consultation | $404 | 0% (0/5) | — |
+| Ultrasound | $404 | 0% (0/6) | — |
+| Acupuncture | $202 | (1/2) | — |
+| Pain Medication Prescription | $101 | (1/1) | — |
+| Chronic Pain | $101 | (0/1) | — |
+| Ortho Consultation (Spine & Back) — Dr. Salar profile | $808 | 38% (3/8) | $269 |
+| Ortho Consultation (Spine & Back) — Dr. Munk profile | $505 | 17% (1/6) | $505 |
+| **Set total** | **$7,878** | **33% (35/107)** | **$225** |
+| *Our marketplace average* | *$89,876* | *58% (820/1,424)* | *$110* |
+| *Ortho (Spine & Back) on all other providers' profiles* | | *63% (19/30)* | |
 
-*Rates measured on bookings matched to our PM system; "kept" includes visits kept after
-patient- or staff-initiated reschedules within 45 days. Aggregate, de-identified figures only.*
+*January–June 2026. Rates measured on bookings matched to our PM system; "kept" includes visits
+kept after patient- or staff-initiated reschedules within 45 days. The three smallest reasons
+above book rarely now and are included for service-fit reasons rather than on their conversion
+numbers. Aggregate, de-identified figures only.*
 
 ---
 
 ### Pre-send checklist (internal — delete before sending)
 
 - [ ] Paul sign-off on the list and the send
-- [ ] Leadership explicitly OKs the pain-line consequence: the 7 removals take 80–90% of
-      marketplace volume off Drs. Lee, Oddo, Singh, and Kassa (see memo §C) — this is a
+- [ ] Leadership explicitly OKs the pain-line consequence: on 2026 volume the 7 removals take
+      **100% of Dr. Kassa's, 93% of Dr. Lee's, 92% of Dr. Singh's and 77% of Dr. Oddo's**
+      marketplace bookings, leaving Kassa, Singh and Oddo at $0 paid spend (memo §C) — this is a
       service-line decision, not just a cleanup
-- [ ] Paul decides whether to include **Part C** (30 non-acquisition reasons, $3,031/yr) —
+- [ ] Paul decides whether to include **Part C** (non-acquisition reasons, ~$2,200/yr annualized) —
       recommended; nothing is lost by removing them
-- [ ] Decide whether to add the **Dr. Yacisen profile prune** (63 listed reasons, 60% booked once,
-      $170/kept) — confirm scope with him first; memo §"ADDITION 3"
+- [ ] Decide whether to add the **Dr. Yacisen profile prune** (39 reasons in six months, generic
+      Orthopedic Consultation kept 0 of 8, $162/kept) — confirm scope with him first
 - [ ] Clinical ops confirms acupuncture is not offered (else drop #7)
 - [ ] Fill account manager name, practice/account ID, effective date, reply-by date, title/phone
 - [ ] Confirm recipient address with our Zocdoc account rep
