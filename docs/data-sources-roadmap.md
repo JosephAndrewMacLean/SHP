@@ -28,7 +28,7 @@ Google sources reuse it; each just needs the account granted access on that prod
 | Liine | Cardinal's "largest unlock": qualified new-patient calls/bookings by channel | 🟡 **official Liine MCP exists** — allowlist + credentials pending | small |
 | Rater8 | Review velocity program (Phase 3), per-physician/location ratings | ⬜ | vendor ask |
 | Google Business Profile | Local pack visibility (target 45–50%), listing calls/directions | 🟡 **MCP wired** (`scripts/gbp-mcp.py` + `gbp_diagnose`) — API approval pipeline pending | approval wait |
-| Bing Webmaster Tools | Bing/Copilot visibility (feeds AEO/GEO) | ✅ **Live — verified 2026-07-22** (486 days history; 466k impr / 9k clicks / 1.93% CTR) | done |
+| Bing Webmaster Tools | Bing/Copilot visibility (feeds AEO/GEO) | ✅ **Live** (verified 2026-07-22 after `ssl.bing.com` allowlisted) | done |
 | Bing Places | listing presence only | ⬜ no API | manual |
 | ZocDoc | booking-channel cost/capture (already analyzed in `brand/current-state.md`) | ⬜ no reporting API | manual export |
 | Local grid (Local Falcon/BrightLocal) | local pack visibility % by geo | ❌ gap | tool decision |
@@ -39,6 +39,7 @@ Google sources reuse it; each just needs the account granted access on that prod
 1. ✅ **Network allowlist** — `synergyhealth.org` added; direct fetches work (caveat:
    Cloudflare bot-challenges non-browser requests for HTML pages, so page-level
    title/schema checks still need a browser pass or a Cloudflare WAF exception).
+   `ssl.bing.com` (Bing WMT API host) added 2026-07-22.
 2. ✅ **PageSpeed Insights API key** — stored as `PAGESPEED_API_KEY`. Environment
    variables load at session start, so use it from any session started after
    2026-07-22: it unlocks scripted CWV field-data checks (the regression tripwire).
@@ -148,22 +149,25 @@ Google sources reuse it; each just needs the account granted access on that prod
 - Note: Cardinal also recommends a **grid tracker** (Local Falcon/BrightLocal) for true
   local-pack visibility % — separate small tool decision, not a GBP API feature.
 
-## 7. Bing Webmaster Tools — MCP wired, key pending
+## 7. Bing Webmaster Tools — ✅ Live
 
 - **MCP server is live in `.mcp.json`** (`scripts/bing-wmt-mcp.py`): `query_stats`,
   `page_stats`, `rank_and_traffic_stats`, `crawl_stats`, `url_submission_quota`.
-- **✅ LIVE — verified 2026-07-22** (key in env settings + `bing.com`/`*.bing.com`
-  allowlisted the same day). First pull: **486 days of history, 466,676 impressions,
-  9,008 clicks (1.93% CTR — notably better than Google's 1.15–1.38%)**; 5,268
-  queries, 2,867 page rows.
-- **First read:** the Google failure pattern replicates on Bing — condition queries
-  get impressions but near-zero clicks (`flatfoot` 265 impr/0 clicks @ pos 4, `tka`
-  212/0, `spondylolisthesis` 174/0 — one of the five missing spine hubs, visible on
-  Bing too; `de quervain's tenosynovitis` page: 519 impr/3 clicks) while branded
-  converts (`mendelson kornblum orthopedics` pos 3, 7% CTR). Fixing titles/content
-  once fixes both engines. Curiosity to investigate: heavy `md save` query volume.
-- Small direct traffic (bing organic ≈ 247 sessions/30d) but **Bing's index feeds
-  Copilot and ChatGPT search** — it punches above its weight for AEO/GEO.
+- **✅ Verified 2026-07-22:** `BING_WEBMASTER_API_KEY` set by Joe, and `ssl.bing.com`
+  added to the environment's network allowlist after the API host was initially
+  403-blocked by the egress policy. `query_stats` and `rank_and_traffic_stats` both
+  return live data; the daily series is current to ~2 days ago and carries ~16 months
+  of history.
+- **Data quirks:** `AvgClickPosition` is always `-1` (not reported), and `query_stats`
+  rows all share a single stale-looking `Date` stamp with an unstated aggregation
+  window — treat that report as "top queries, recent window" and use
+  `rank_and_traffic_stats` for anything time-based.
+- **First read (2026-07-22):** ~10.2k impressions / 381 clicks in the last 30 days
+  (same order of magnitude as GA4's bing-organic ≈ 247 sessions/30d), down ~24% vs
+  the prior 30 days. Top queries are overwhelmingly branded — Synergy, legacy
+  Mendelson Kornblum, and physician names; procedure terms barely register. That's
+  white space for the AEO/GEO workstream, since **Bing's index feeds Copilot and
+  ChatGPT search** — it punches above its weight despite small direct traffic.
 
 ## 8. Bing Places & ZocDoc — no clean APIs; treat as manual
 
