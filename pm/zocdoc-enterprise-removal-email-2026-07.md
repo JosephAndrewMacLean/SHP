@@ -48,6 +48,26 @@ booked.
    well elsewhere). Both doctors keep Spinal Cord Surgery Consultation and their other spine
    reasons, which convert far better for them.
 
+**C. Remove these non-acquisition visit reasons account-wide** *(recommended addition — see
+memo §"ADDITION 1"; delete this section if Paul opts to keep the request narrow):*
+
+These are follow-up visits, imaging report reviews, in-office procedures and paperwork — they
+aren't new-patient acquisition, so a per-new-patient booking fee doesn't apply to what they
+actually are.
+
+- **Imaging / report reviews:** MRI Report – Knee, MRI Report – Back / Spine, MRI Report –
+  Shoulder, MRI Report – Other, CT Scan Report – Head, X-ray
+- **Injections / in-office procedures:** Cortisone Shots, Epidural Injection, Back Injection,
+  Knee Injection, Joint Injection, Facet Joint Injections, Pain Medicine Injection
+- **Follow-ups / second opinions:** Orthopedic Follow Up, Orthopedic Follow Up (Hand),
+  Orthopedic Follow Up (Foot and Ankle), Orthopedic Trauma Follow Up, Foot Follow Up,
+  Spine Specialist Follow Up, Hip and Knee Surgery Follow Up, Pain Medicine Follow Up,
+  Orthopedic Second Opinion
+- **Weight-loss / wellness:** Obesity / Weight Loss Consultation, Weight Loss Consultation,
+  Wellness Care, Medicare Annual Wellness Visit, Yearly Wellness Visit (For Medicare Patients)
+- **Admin / accident:** Worker's Compensation Evaluation, Motor Vehicle Accident,
+  Car Accident Injury
+
 (Reason names as they appear in our booking export; happy to map them to your internal IDs.)
 
 Two scoping notes:
@@ -113,6 +133,10 @@ patient- or staff-initiated reschedules within 45 days. Aggregate, de-identified
 - [ ] Leadership explicitly OKs the pain-line consequence: the 7 removals take 80–90% of
       marketplace volume off Drs. Lee, Oddo, Singh, and Kassa (see memo §C) — this is a
       service-line decision, not just a cleanup
+- [ ] Paul decides whether to include **Part C** (30 non-acquisition reasons, $3,031/yr) —
+      recommended; nothing is lost by removing them
+- [ ] Decide whether to add the **Dr. Yacisen profile prune** (63 listed reasons, 60% booked once,
+      $170/kept) — confirm scope with him first; memo §"ADDITION 3"
 - [ ] Clinical ops confirms acupuncture is not offered (else drop #7)
 - [ ] Fill account manager name, practice/account ID, effective date, reply-by date, title/phone
 - [ ] Confirm recipient address with our Zocdoc account rep

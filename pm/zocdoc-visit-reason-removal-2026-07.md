@@ -68,6 +68,102 @@ email before sending.
 Items 5–7 are low-volume (below the 20-matched threshold for a purely statistical call) — they're
 included on **service-fit grounds, corroborated by** weak 12-month conversion.
 
+## Full breakdown by cost and keep rate — and what else qualifies
+
+*(Added 2026-07-22 after a complete pass over all 191 marketplace visit reasons. Visual decision
+aid: `https://claude.ai/code/artifact/942b53ec-dc23-46af-b205-66f57dce6b93`)*
+
+**Marketplace baseline, FY Jul 2025–Jun 2026:** $182,292 · 3,623 bookings · 56.9% effective
+capture (1,626 of 2,859 matched) · **$112 cost per kept patient** · **$75,680 estimated spend on
+bookings that never became a visit** · **1,233 blocked slots**.
+
+### Which calls are statistically firm vs. judgement
+
+Screening every reason with a 90% Wilson upper bound against the 56.9% benchmark — i.e. "is this
+below average even in the best case the sample allows" — only **five** reasons are certain
+underperformers:
+
+| Reason | FY spend | Kept/matched | Capture | Upper bound | On the list? |
+|---|---|---|---|---|---|
+| **Annual Physical** | $20,520 | 195/516 | 37.8% | 41% | **No — see below** |
+| Pain Management Consultation | $7,575 | 46/117 | 39.3% | 47% | Yes |
+| Back Pain | $4,141 | 21/52 | 40.4% | 52% | Yes |
+| Ultrasound | $1,010 | 0/12 | 0% | 18% | Yes |
+| Surgery Consultation | $404 | 1/6 | 16.7% | 50% | Yes |
+
+Everything else in the removal set (Pain Medication Prescription, Chronic Pain, Acupuncture, and
+the two provider-specific spine listings) rests on **service fit plus corroborating weak
+conversion** — state it that way if Zocdoc pushes back on statistical grounds.
+
+### ADDITION 1 — 30 reasons that were never new-patient acquisition ($3,031/yr)
+
+The cleanest ask in the whole exercise: we are paying a new-patient finder's fee for imaging
+reads, injections, follow-ups and paperwork. Combined capture 36%. **Nothing is lost by removing
+them** — these are existing patients or non-acquisition events.
+
+| Group | # reasons | FY spend | Kept/matched | Capture |
+|---|---|---|---|---|
+| Imaging & report reads — MRI Report (Knee/Back/Shoulder/Other), CT Scan Report, X-ray | 6 | $1,212 | 6/14 | 43% |
+| Injections & in-office procedures — Cortisone Shots, Epidural/Back/Knee/Joint/Facet Injection, Pain Medicine Injection | 7 | $606 | 3/11 | 27% |
+| Follow-ups & second opinions — Orthopedic/Foot/Spine/Trauma Follow Up, Hip & Knee Surgery Follow Up, Pain Medicine Follow Up | 9 | $505 | 4/6 | 67% |
+| Weight-loss & wellness (all Dr. Abood) — Obesity/Weight Loss, Wellness Care, Medicare Annual Wellness | 5 | $405 | 4/13 | 31% |
+| Admin, legal & accident — Worker's Comp Evaluation, Motor Vehicle Accident, Car Accident Injury | 3 | $303 | 0/3 | 0% |
+| **Total** | **30** | **$3,031** | **17/47** | **36%** |
+
+Follow-ups keep at a healthy 67% and are *still* wrong to buy — those are existing patients we'd
+have seen anyway. **Recommend adding all 30 to the Zocdoc request.**
+
+### ADDITION 2 — Annual Physical: put it on the clock, don't pull it yet
+
+The biggest single line item in the account and the firmest statistical underperformer, but the
+economics argue against removal:
+
+- $20,520 = **11.3% of all marketplace spend**, 100% on Dr. Tony Abood
+- 37.8% capture (42.7% in 2026) — worst of any material reason
+- **321 patients booked and never kept** — a quarter of all blocked slots in the channel
+- **but $105 per kept patient, *below* the $112 average** — the cheapest patients Zocdoc sells us
+- at benchmark capture the same spend would yield **+99 more patients** at $70 each
+
+**Recommendation: set a floor of 50% capture by the Q4 export; remove if it hasn't moved.** The
+fix is show-rate operations (faster confirmation, reminder cadence, waitlist backfill), not
+delisting. The strategic question underneath is leadership's: growth priority is spine and ortho,
+and this is primary care — if PCP acquisition is off-mission, this becomes a one-line addition to
+the same request.
+
+### ADDITION 3 — Dr. Yacisen needs a profile prune, not a reason removal
+
+| Provider | Reasons listed | Booked once only | FY spend | Capture | $/kept |
+|---|---|---|---|---|---|
+| **Dr. Joseph Yacisen, DO** | **63** | **38 (60%)** | $15,150 | 48% | **$170** |
+| Dr. Benjamin Mayo, MD | 43 | 21 (49%) | $14,342 | 67% | $110 |
+| Dr. Randy Leff, DPM | 27 | 6 (22%) | $30,906 | 69% | $118 |
+
+Worst cost per kept patient of any high-spend provider, and his generic **"Orthopedic
+Consultation" keeps 1 of 9** — patients booking a general ortho slot with a hand/foot specialist
+land in the wrong place. Dr. Leff is the counter-example: highest spend, tightest list, best
+performance. **Ask: prune Yacisen's profile to hand/wrist, foot/ankle and the sub-specialty
+consults that keep at 60–100%.** Confirm scope with him before sending.
+
+### Not for removal — pricing renegotiation instead
+
+Converting acceptably but costing too much per patient: Ortho Consultation (Neck) $152/kept and
+worsening to $303 in 2026 · Cyst(s) $177 · Trigger Finger $152 · Arthritis $252 · Pediatric
+Orthopedics $168 · Spine Specialist Consultation $168 · Spinal Stenosis $168 · Toenail Removal
+$166 · Tingling/Numbness $404. Plus the high-volume consults already flagged: Ortho Leg & Knee
+$127, Shoulder $133, Hand & Wrist $130, Spine & Back $132, Foot Consultation $114.
+
+### Revised totals if leadership approves the addition
+
+| | FY spend | Share of spend | Share of kept patients |
+|---|---|---|---|
+| Already in the email (7 + 2 provider) | $18,382 | 10.1% | 5.7% |
+| Recommended addition (30 non-acquisition) | $3,031 | 1.7% | 1.0% |
+| **Combined removal** | **$21,413** | **11.7%** | **6.0%** |
+| On the clock (Annual Physical) | $20,520 | 11.3% | 12.0% |
+
+Combined removal lifts marketplace capture **56.9% → 59.2%**, drops cost per kept **$112 → $109**,
+and frees roughly **150 appointment slots/year**.
+
 ## Per-provider view (how Zocdoc will actually action this)
 
 Zocdoc configures visit reasons **per provider profile**, so the request is provider-explicit.
