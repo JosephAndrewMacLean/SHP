@@ -17,7 +17,8 @@ rebrand to Synergy is still in progress — some legacy `mendelsonortho` propert
 - **What we do:** Spine/Neck/Back, Orthopedics (knee, hip, shoulder, joint, sports medicine),
   Hand & Wrist, Foot & Ankle (podiatry), Pain Management, Physical Therapy, Imaging/MRI.
   ~42 physicians + allied health across **8 locations** (Livonia, Sterling Heights, Southfield,
-  Troy, Rochester, and others).
+  Troy, Port Huron, and others). **No Rochester location — the Troy clinic is on Rochester Road**
+  (confirmed by Joe 7/21/2026); "Rochester" searches are served by Troy.
   - **Priority (confirmed): new-patient growth in SPINE and ORTHO.** Spine is a top growth
     line. See `playbooks/spine-patient-acquisition.md`.
 - **Who we serve:** patients & caregivers (trending younger and more commercial-pay),
