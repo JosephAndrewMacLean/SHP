@@ -69,21 +69,20 @@ from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
    images missing width/height — one template fix). Rankings haven't recovered yet;
    Google re-ranking lags CWV repair, and the AI-bot/Cloudflare posture (items 2–3)
    is a second suppressor to clear while waiting.
-2. **✅ robots.txt AI-bot block REMOVED (fixed late 2026-07-22, confirmed via owner
-   browser view).** The Cloudflare-managed block that disallowed GPTBot, ClaudeBot,
-   Google-Extended, CCBot etc. is gone. The file is now a clean WordPress-standard
-   robots.txt with **`Content-Signal: search=yes, ai-input=yes, ai-train=yes,
-   use=full`** — fully AI-permissive (note: this now *allows training use* too;
-   more permissive than Cardinal required — fine for AIO goals, flag to leadership
-   only if they wanted training refused). Cardinal's "do not block bots that serve
-   live user queries" is satisfied at the directives layer.
-   **⚠️ One delivery caveat still open:** non-browser fetches of `/robots.txt` and
-   `/llms.txt` still receive the Cloudflare JS challenge (verified externally same
-   night). Real crawlers on Cloudflare's Verified Bots list (Googlebot, Bingbot,
-   GPTBot, ClaudeBot, PerplexityBot) are *typically* exempted by IP verification —
-   but this can't be confirmed from outside. **Close it out:** (a) add WAF Skip
-   rules for `/robots.txt` + `/llms.txt`, and (b) confirm in Cloudflare → Security
-   → Events that verified AI bots show "allowed," not "challenged."
+2. **✅✅ AI-crawler access FULLY FIXED — externally verified 2026-07-27.** End-to-end
+   tests all pass: `/robots.txt` and `/llms.txt` return real content to plain fetches
+   **and to AI user agents (ClaudeBot UA → 200, GPTBot UA → 200)**; content pages no
+   longer challenge plain requests (homepage → 200); the directives are a clean
+   WordPress-standard robots.txt with **`Content-Signal: search=yes, ai-input=yes,
+   ai-train=yes, use=full`** and no AI-bot Disallow block. Cardinal's "do not block
+   bots that serve live user queries" is satisfied at every layer. Claude, ChatGPT,
+   Gemini, and Perplexity can now crawl, read llms.txt, and cite the site. (Note for
+   leadership: the signal also *allows training use* — more permissive than Cardinal
+   required; deliberate is fine, just confirm it's intended.) Sequence for the
+   record: block found + flagged 2026-07-22 → directives fixed (owner-verified) →
+   challenge exemptions landed → full external verification 2026-07-27. *(Dating
+   note: entries above stamped "2026-07-22 evening/late evening" occurred across
+   the Jul 22–26 span of this working session.)*
 3. **Cloudflare's bot challenge also fronts `llms.txt`** — the file exists (a Phase-1
    ✅), but non-browser requests get a "Just a moment…" challenge page instead of its
    content, so the AI crawlers it was written for may never read it. Review the
@@ -147,7 +146,7 @@ Cardinal's own "What success looks like at Day 30," statused:
 | 4 | logo.svg <20KB; Hotjar deferred; LCP improved | ❓ | PSI API key answers all three in one call |
 | 5 | Security headers on 100% of pages | ❓ | Needs direct fetch (blocked) — one `curl -I` from any laptop |
 | 6 | llms.txt live at /llms.txt | 🟠 | Exists & valid (Semrush Jul 21) — but served behind a Cloudflare bot challenge to non-browser agents (verified 2026-07-22), so its audience can't read it |
-| 6b | Verify AI crawler access in robots.txt ("do not block bots") | ✅ **directives fixed late 2026-07-22** | AI-bot Disallow block removed; `Content-Signal: ai-input=yes, ai-train=yes, use=full` (owner browser view). Remaining: WAF Skip rules for /robots.txt + /llms.txt and a Cloudflare Security→Events check that verified AI bots aren't challenged. |
+| 6b | Verify AI crawler access in robots.txt ("do not block bots") | ✅ **FULLY VERIFIED 2026-07-27** | External tests: robots.txt + llms.txt serve content to AI user agents (ClaudeBot/GPTBot UA → 200); no AI Disallow entries; `Content-Signal: ai-input=yes, ai-train=yes, use=full`; content pages no longer challenged. Item closed. |
 | 6c | Password-protect staging domain synergy.egowebdev.com | ✅ **fixed 2026-07-22** | Was HTTP 200 at morning check; re-verified same day: **HTTP 401** (auth required) |
 | 7 | Homepage meta description live | ✅ | Confirmed in audit (Rank Math) + Semrush: 0 missing sitewide |
 | 8 | Carpal tunnel + TKA titles/metas rewritten | ❌ **and worse** | GSC (Jun 22–Jul 19): TKA CTR 0.011% — unchanged, rewrite not landing. Carpal tunnel: the page **lost its #1 ranking entirely** (pos ~17, impressions −92%) — rewrite is now moot until rankings recover; treat as part of the regression damage |
