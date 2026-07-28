@@ -3,6 +3,11 @@
 **Owner:** Kelly (call center) · **Advisor:** Patient Access Mgr · **Sponsor:** Joe / Gautam
 **Feeds:** Spine 90-day plan §4A (Qualification & Routing) · Call Center Strategy Pillars 2, 3, 5
 **Version:** v1.0 · 2026-07-17 · **Status: DRAFT — clinical triage + routing PENDING Katie / clinical sign-off**
+> **v1.1 additions pending (from the 2026-07-22 session — see `pm/spine-imaging-pain-session-outcomes.md`):**
+> add **Spine-first routing** for neck/back symptoms (numbness, tingling, arm/leg radiating
+> pain, back pain, back-injection requests) and the **no-order MRI conversation** (offer a
+> Spine consult first; if declined, offer cash-pay MRI and transfer to the MRI team with an
+> honest voicemail heads-up). Draft language in the outcomes file §3; Kelley owns final wording.
 
 > **Read before using.** This is a *triage-and-route* script, not clinical advice. Reps do not
 > diagnose, do not interpret symptoms, and do not tell a caller whether they need surgery. Reps
