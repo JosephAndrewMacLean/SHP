@@ -15,7 +15,14 @@ spinal stenosis, pinched nerve, spine surgeon, pain management*, plus `phrase_th
 volume validation. **§8 records what discovery changed** — it corrected several numbers in an
 earlier draft of this document that were built from a hand-generated candidate list.
 
-**Companion file — the actual build sheet:** [`pm/spine-keyword-build-2026-07.csv`](../pm/spine-keyword-build-2026-07.csv)
+**Companion files**
+- [`playbooks/spine-keyword-implementation-runbook.md`](spine-keyword-implementation-runbook.md)
+  — the process: staging, owners, pre-flight gates, forecast, rollback, RACI.
+- [`pm/blue-ox-spine-expansion-brief-2026-07-25.md`](../pm/blue-ox-spine-expansion-brief-2026-07-25.md)
+  — ready-to-send brief for Shaun/Jake at Blue Ox, who operate the Ads account.
+- `.claude/skills/paid-forecast/` — the forecasting method, reusable for any paid change.
+
+**The actual build sheet:** [`pm/spine-keyword-build-2026-07.csv`](../pm/spine-keyword-build-2026-07.csv)
 — 513 rows (491 keywords + 22 ad-group negative lists), **grouped by match type within each
 ad group**, with volume and whether each keyword is new / existing / reactivated. Google Ads
 Editor–importable. §9 explains the match-type logic; **§10 is the full list in readable form.**
@@ -38,6 +45,11 @@ This answers three questions, in the order Cardinal's guidance says to answer th
 > money cannot buy more patients — the eligible-impression denominator is the constraint.
 > Eligible impressions = keywords targeted × geography. Geography is fixed. Therefore the only
 > lever that grows spine volume is **keywords**.
+>
+> Here is the same fact stated in dollars, which is the version to lead with: spine is budgeted
+> at **$10,600/day** and spending **$2,333/day — 22% utilisation.** There is **$248,000 a month
+> of authorized budget the current keyword universe cannot absorb.** We are not asking for
+> money. We are asking to be able to spend the money we already have.
 >
 > When I looked at where the current keywords actually send the money, I found spine spend is
 > split roughly in half between two themes that perform *twice as differently* as each other:
