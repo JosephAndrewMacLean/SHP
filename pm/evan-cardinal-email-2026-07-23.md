@@ -29,7 +29,9 @@ Detail and the data behind each below.
 ---
 
 Evan — ahead of today's call, wanted to send the questions in advance with the numbers
-we're seeing on our side, so we can spend our time on answers.
+we're seeing on our side, so we can spend our time on answers. (Figures below are from
+our last full measurement pull on 7/22 — directionally current, and I can refresh any of
+them live if you want the exact latest.)
 
 First, the good news on your audit: the **speed regression is fixed.** PageSpeed field
 data (run 7/22) shows LCP recovered from a failing **3.5s to ~1.4s** across the
