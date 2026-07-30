@@ -2,6 +2,10 @@
 
 New pain-medicine physician. **Starts Sept 1.** Photo shoot Aug 10. Work top to bottom.
 
+**The assets are written.** Drafts of the bio, pages, articles, emails, schema, referral sheets and
+scripts are in **`assets/heyl-launch/`** — start at its `README.md`, which covers how to publish,
+who has to review what, and the handful of things you have to create yourself.
+
 *Why each item matters, with the data behind it: `heyl-launch-reference.md`. Task rows for the
 PM sheet: `pm/heyl-launch-tasks.csv`.*
 
