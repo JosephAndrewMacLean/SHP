@@ -3,8 +3,11 @@
 **Status:** Draft for Joe MacLean to send. Must come from leadership (per the 7/22 decision) —
 Randall has consistently told City Lifestyle he has no authority to approve or decline.
 **Send:** Friday, July 31, 2026 (reply-all on the existing thread, subject "Re: RE; City Lifestyle")
-**To:** Ali Kramer <ali.kramer@citylifestyle.com>
-**Cc:** David Mattaliano <david.mattaliano@citylifestyle.com>, Todd Haight <todd.haight@citylifestyle.com>
+**To:** David Mattaliano <david.mattaliano@citylifestyle.com>
+**Cc:** Ali Kramer <ali.kramer@citylifestyle.com>, Todd Haight <todd.haight@citylifestyle.com>
+
+David led the renewal ask and set the deadline, so the decision goes to him; Ali and Todd
+stay copied since the program spans all three publications.
 
 ## Background (internal — not for the email)
 
@@ -27,16 +30,16 @@ Randall has consistently told City Lifestyle he has no authority to approve or d
 
 **Subject:** Re: RE; City Lifestyle
 
-Hi Ali,
+Hi David,
 
-Thanks for following up, and sorry we missed you on the call. Thanks to you, David, and Todd
-for the time over the past few weeks — rather than let this run up against your deadline, I
-want to give you a straight answer.
+Thanks for your summary from the call with Randall, and thanks to Ali for following up
+yesterday — sorry we missed you both. You asked for a final answer, so rather than let this
+run up against your deadline, here it is.
 
 We're not going to renew at the September anniversary. Our marketing budget for the coming
 year is committed, and continuing the magazine program isn't something we can carry into it.
 
-I want to be direct about the rate so nobody spends time on it: I appreciate you holding the
+I want to be direct about the rate so nobody spends time on it: I appreciate Ali holding the
 $800 rather than moving us to 2026 pricing, and I understand that window closes once we're
 out of the system. The answer would be the same at $800 as at $955 — it isn't the rate, it's
 that print isn't in our plan for the coming year. Please don't hold the legacy pricing open
@@ -49,9 +52,9 @@ A few practical notes:
   us and by when, and we'll get it to you on your normal schedule.
 - Please don't hold ad space for Synergy or build us into issue planning beyond that date.
 
-This is a budget decision, not a reflection on any of you. You've been good to work with, and
-if our budget picture changes — or if an editorial opportunity comes up that doesn't carry a
-placement cost — I'm glad to hear about it.
+David, this is a budget decision, not a reflection on you or your team. You've been good to
+work with over the past few years, and if our budget picture changes — or if an editorial
+opportunity comes up that doesn't carry a placement cost — I'm glad to hear about it.
 
 Thanks again, and best of luck with the fall issues.
 
