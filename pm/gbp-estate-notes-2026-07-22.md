@@ -41,8 +41,10 @@ before acting.
 3. **Duplicate physician listings splitting reviews/authority:** "Kevin R. Lee, MD"
    (Five Mile + Mound) vs "Dr. Kevin Lee, MD" (Northwestern Hwy); "Preetinder
    Bhullar, MD" vs "Dr. Preetinder Bhullar, MD"; "Randy Leff DPM" vs "Fred Leff,
-   DPM" at the same Northwestern Hwy address (verify whether these are two people);
-   Brian Kassa duplicated with "Dr." prefix variant.
+   DPM" at the same Northwestern Hwy address (verify whether these are two people
+   — *answered 2026-07-22: they are two different podiatrists per
+   `brand/provider-roster-by-service-line.md`; Randy is enrolled in rater8, Fred is
+   not*); Brian Kassa duplicated with "Dr." prefix variant.
 4. **Brand-name inconsistency across listings** (entity-coherence issue flagged in
    the audit): "…| Mendelson Orthopedics & Spine", "…& Spine Specialists",
    "…Mendelson Kornblum Pain Management", "(formerly Michfoot Surgeons, PC)".
@@ -53,7 +55,9 @@ before acting.
 ## Next steps
 
 - Once GBP API access is approved: pull all listings via `list_locations`, diff
-  against this inventory, and build the NAP-consistency audit Cardinal called for
+  against this inventory **and against the 50 rater8-managed listings in
+  `brand/gbp-profile-directory.md`** (which listings get review flow vs. sit idle),
+  and build the NAP-consistency audit Cardinal called for
   (Pillar 10: GBP-to-on-page NAP match per location).
 - Verification sprints + dedupe/merge requests through the GBP dashboard (listing
   owner action).

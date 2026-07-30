@@ -172,7 +172,10 @@ Zocdoc+NextGen booking analysis, and the site crawl) show how the business actua
 
 ### Systems landscape
 - **NextGen** (EMR / new-patient source of truth) · **OrthoPlex** · **Map My Customer**
-  (liaison CRM) · **Liine** (call tracking, live June 2026) · **Zocdoc** (booking) · Google Ads.
+  (liaison CRM) · **Liine** (call tracking, live June 2026) · **Zocdoc** (booking) ·
+  **Rater8** (review requests/balancing across 50 GBP listings + Healthgrades/Vitals/WebMD —
+  listing map: `brand/gbp-profile-directory.md`; baseline:
+  `audits/rater8-reputation-baseline-2026-07.md`) · Google Ads.
 - Scheduling is **fragmented across NextGen / OrthoPlex / hybrid** — a "one source of truth"
   evaluation is underway. Attribution is an **operational best-estimate** until the
   NextGen-to-MMC crosswalk and Liine tracking are validated (don't present inferred B2C as confirmed).

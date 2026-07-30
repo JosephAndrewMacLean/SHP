@@ -107,6 +107,15 @@ from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
    (last 30d). The spine hub gets 2,803 sessions/90d at 78% engagement — but only
    **52 of them arrive from organic search** (~4/week). Cardinal's "massive
    visibility, near-zero conversion" diagnosis is unchanged.
+9. **Review-velocity baseline is now measured (was "unknown") — and it exposes a Troy
+   hole.** First rater8 exports landed 2026-07-22: **~15 dated reviews/week** org-wide,
+   28% landing on non-Google platforms (diversification Cardinal assumed was missing),
+   57% Google response rate. But **SHP Clinic: Troy has no GBP linked in rater8, gets
+   0.8% of location review routing, and zero reviews** — structural reputation silence
+   in the #1 growth market (evidence for P1 task GOV-A.1) — and two spine surgeons
+   (Varghese, Maslak) got zero reviews while Zamorano isn't enrolled at all. Full
+   baseline: `rater8-reputation-baseline-2026-07.md`; listing map:
+   `brand/gbp-profile-directory.md`.
 
 ## 2. Verified snapshot — numbers to re-pull each check-in
 
@@ -126,6 +135,7 @@ from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
 | Featured-snippet keywords | — | 33 | Semrush domain_rank |
 | Keywords where AI Overviews appear | near-zero citations | **2,276** (exposure, not citation) | Semrush `serp_ai_overview_keywords` |
 | Local-pack keywords | GBP working (1,781 clicks/90d) | 1,681 | Semrush + GA4 GBP UTMs (~770 sessions/30d) |
+| Review velocity per location | **"Baseline: unknown"** (Cardinal KPI table) | **~15 dated reviews/wk** org-wide (54 in 25d, Jun 27–Jul 21): Livonia 38 · SH 23 · Southfield 8 · Port Huron 1 · **Troy 0** (of 85 total; filtered export — floor, not census). Google 82% / non-Google 18%; Google response rate 57% | Rater8 manual export → `data/rater8/<date>/` (scheduled feed = vendor ask) |
 | Referring domains | 130 (GSC, thin) | **408** (Semrush counts wider) · AS 29 | Semrush backlinks_overview |
 | Duplicate titles / dup metas / missing H1 | 5 / 86 / 14 | **5 / 7 / 21** | Semrush issues 6, 15, 103 |
 | Missing meta descriptions | 55 (incl. 7 location pages) | **0 flagged** ✅ | Semrush issue 106 |
@@ -174,8 +184,12 @@ Cardinal's own "What success looks like at Day 30," statused:
   events as of 2026-07-22.)
 - ⬜ **FAQPage + MedicalProcedure schema; rich results appearing** → Semrush
   `serp_faq_keywords` (0 today) is the tripwire
-- ⬜ **Review velocity program** → Rater8 (see data-sources roadmap) — Cardinal's
-  "BirdEye/Podium" slot is filled by Rater8 in our stack
+- 🟠 **Review velocity program** → Rater8 fills Cardinal's "BirdEye/Podium" slot, and
+  first exports (2026-07-22) show the mechanics already run: requests balanced across
+  50 GBP listings + non-Google platforms, ~15 dated reviews/wk, 57% Google response
+  rate. Remaining: per-location targets, HIPAA-safe response SOP, coverage gaps (Troy
+  unlinked, Rochester + Zamorano + F. Leff unenrolled). Baseline + actions:
+  `rater8-reputation-baseline-2026-07.md` · listing map: `brand/gbp-profile-directory.md`
 - ⬜ **First hospital-system / association link** → Semrush backlinks_refdomains
   (baseline: 0 links from Henry Ford / Corewell / McLaren / AAOS / MI Orthopedic Society)
 
@@ -218,7 +232,7 @@ eyeball from any browser. Priority lane first:
 | GSC (core) | GSC MCP | ✅ **live** — granted 2026-07-22, instrument validated against Cardinal's own numbers |
 | Semrush or Ahrefs (rank/authority/backlinks) | **Semrush MCP — already connected**, project "SHP Spine 2026" (ID 30453033) with Site Audit running | ✅ |
 | CallRail or similar (call attribution) | **Liine** (live June 2026, documented API) | 🟠 API key = vendor ask |
-| BirdEye/Podium/ReviewTrackers (review velocity) | **Rater8** | 🟠 vendor ask (API or scheduled export) |
+| BirdEye/Podium/ReviewTrackers (review velocity) | **Rater8** | 🟠 **first manual exports landed 2026-07-22** (`data/rater8/2026-07-22/` — GBP scorecard + patient-feedback aggregates); scheduled unfiltered feed/API still a vendor ask |
 | Local Falcon / BrightLocal (local grid) | none | ❌ gap — decide at Phase-2 check-in |
 | Profound (AIO citation tracking) | none | ❌ gap — interim: Semrush AIO-keyword report + monthly manual prompt testing of the 75-query set (get set from Cardinal) |
 | Screaming Frog monthly re-crawl | Semrush Site Audit (weekly snapshots already running) | ✅ equivalent for tracking |
@@ -236,10 +250,12 @@ eyeball from any browser. Priority lane first:
 3. 🟡 **Google Business Profile APIs** — Performance API enablement started
    2026-07-22. Verified same day: the companion **My Business Account Management**
    and **My Business Business Information** APIs are NOT yet enabled in the project
-   (probed: 403 SERVICE_DISABLED). All three must be enabled, then the
+   (probed: 403 SERVICE_DISABLED). The service account **was added as a Manager of
+   the Business Profile account (per Joe, 2026-07-22)** — remaining: enable the two
+   companion APIs, then the
    [GBP API access request form](https://developers.google.com/my-business/content/prereqs#request-access)
-   approves the project (quota stays 0 until approved), then a listings owner adds
-   the service account as a Manager of the Business Profile account.
+   approves the project (quota stays 0 until approved). MCP + pipeline detail:
+   `docs/data-sources-roadmap.md` §6 (`gbp_diagnose` reports live state).
 
 ## 8. How to re-verify (monthly, or after any fix ships)
 
