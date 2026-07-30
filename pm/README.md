@@ -8,6 +8,10 @@ Bank scored by impact/effort/cost.**
 - **`SHP-PM-Ecosystem.gs`** — Apps Script that builds the entire multi-tab ecosystem. This is the install.
 - **`master-task-list.csv`** — the full task hierarchy (16 parent tasks → 63 granular subtasks) as data.
 - **`ideas-bank.csv`** — 28 evidence-based ideas with impact/effort/cost.
+- **`heyl-launch-tasks.csv`** — the Dr. Jonathan Heyl (Pain Medicine) launch: 10 tasks → 63
+  subtasks, ~293 est. hours, same schema as `master-task-list.csv` so the rows paste straight
+  into **Master Tasks**. Rationale, data, and compliance guardrails live in
+  `playbooks/heyl-launch-randall-todo.md`.
 
 ## Install (5 minutes)
 1. Create (or open) a Google Sheet — or use the one already created in your Drive:
