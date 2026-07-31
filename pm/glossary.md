@@ -80,7 +80,7 @@ group** in MMC so the Past-Due engine finally works for us instead of being igno
 ## Plan & measurement
 | Term | Meaning |
 |---|---|
-| **W1…W11** | Plan weeks, Mondays Jul 20 → Sep 28 (W1 = Jul 22–25 short week). **W1–W2 = cycle 1, executed on the old routes; W3–W11 (Aug 3 →) = cycle 2 on the validated book** — the app's week chips use the same W3…W11 numbering. |
+| **W1…W9 (cycle 2)** | Plan weeks restart at the validated relaunch: **W1 = Aug 3 → W9 = Sep 28**, in the app, schedule, and workbooks. The executed Jul 22–31 weeks are logged as **C1-W1 / C1-W2** in the schedule CSV. (The original Jul-20-based W1…W11 numbering appears only in pre-Jul-31 documents.) |
 | **Protect sweep / blitz** | W1–W2 recovery visits to every lapsed proven referrer (all 36 by Jul 31). |
 | **95–115 vs 150** | Committed range vs stretch for monthly B2B spine by October; stretch requires capacity ≥200 team visit-days/wk, Sean active, 30+ one-spine conversions. |
 | **Measurement contract** | Weeks 1–2 judged on activity (lapses→0, visit-days), patients read from mid-Aug, verdict in September. August will look soft — the June–July activity dip is already baked in via the 31-day lag. |

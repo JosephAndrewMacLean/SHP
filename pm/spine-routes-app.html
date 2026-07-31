@@ -238,7 +238,7 @@ function toast(msg){ const t=$("#toast"); t.textContent=msg; t.classList.add("sh
 $("#asof").textContent = DATA.meta.cutoffs;
 function renderRails(){
   $("#plrail").innerHTML = DATA.pls.map(p=>`<button class="plchip" data-pl="${p}" aria-pressed="${p===state.pl}">${p}</button>`).join("");
-  $("#wkrail").innerHTML = DATA.weeks.map((lab,i)=>`<button class="wk" data-w="${i}" aria-pressed="${i===state.week}"><b>W${i+3}</b><span class="num">${lab}</span></button>`).join("");
+  $("#wkrail").innerHTML = DATA.weeks.map((lab,i)=>`<button class="wk" data-w="${i}" aria-pressed="${i===state.week}"><b>W${i+1}</b><span class="num">${lab}</span></button>`).join("");
   $$("#plrail .plchip").forEach(b=>b.onclick=()=>{ state.pl=b.dataset.pl; localStorage.setItem("shpRoutes.pl",state.pl); render(); });
   $$("#wkrail .wk").forEach(b=>b.onclick=()=>{ state.week=+b.dataset.w; render(); });
   const cur = $('#wkrail .wk[aria-pressed="true"]'); if(cur) cur.scrollIntoView({inline:"center",block:"nearest"});
@@ -380,7 +380,7 @@ function renderRadar(main){
     return `<div class="lrow">
       <div class="lrank num">${i+1}</div>
       <div class="lmain"><div class="lname">${esc(r.a.n)}</div>
-      <div class="lmeta">${esc(r.a.t)} · ${esc(r.a.c)} · next: <b>W${r.w+3} ${esc(r.day)}</b></div></div>
+      <div class="lmeta">${esc(r.a.t)} · ${esc(r.a.c)} · next: <b>W${r.w+1} ${esc(r.day)}</b></div></div>
       <div class="lright"><div class="lspine num">${r.a.sp}</div>
       <div class="ldsv num ${bad?"dsv-bad":"dsv-ok"}">${r.a.dv==null?"—":r.a.dv+"d since visit"}</div></div>
     </div>`;
@@ -397,7 +397,7 @@ function renderMoney(main){
     if(!best.has(k)) best.set(k,{a,pl:d.pl,day:d.d,r:x.r});
   }));
   const rows=[...best.values()].sort((p,q)=>q.a.sp-p.a.sp).slice(0,12);
-  let html = `<div class="sectionhead">W${w+3} (${esc(DATA.weeks[w])}) — the highest-value visits on the whole team's plan</div><div class="listcard">`;
+  let html = `<div class="sectionhead">W${w+1} (${esc(DATA.weeks[w])}) — the highest-value visits on the whole team's plan</div><div class="listcard">`;
   html += rows.map((r,i)=>`<div class="lrow">
       <div class="lrank num">${i+1}</div>
       <div class="lmain"><div class="lname">${esc(r.a.n)}</div>
@@ -417,7 +417,7 @@ $("#exportBtn").onclick = async ()=>{
     if(!done[id] && !notes[id]) return;
     const a=acc(x.a);
     const q=v=>'"'+String(v??"").replace(/"/g,'""')+'"';
-    lines.push([`W${d.w+3}`,pl,q(d.d),q(a.n),a.sp,q(x.r),done[id]||"",q(notes[id]||"")].join(","));
+    lines.push([`W${d.w+1}`,pl,q(d.d),q(a.n),a.sp,q(x.r),done[id]||"",q(notes[id]||"")].join(","));
   }));
   if(lines.length===1){ toast("Nothing logged yet"); return; }
   const body=lines.join("\n");
