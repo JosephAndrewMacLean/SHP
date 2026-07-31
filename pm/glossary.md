@@ -24,9 +24,9 @@ says so — **corrections welcome; flag anything that doesn't match how the team
 | Term | Meaning |
 |---|---|
 | **MMC** | Map My Customers — the field CRM the PLs log visits in. |
-| **The book / universe** | The 848 target accounts (808 core + Sean's 40 routed priorities). |
+| **The book / universe** | **766 validated target accounts** since Jul 31 — the PLs eyeball-reviewed all 848 (808 core + Sean's 40) and 82 moved to the Non-Spine group. |
 | **Evidence band** | What an account has actually sent us in 2026: **Repeat Spine Referrer** (2+ spine patients) · **One Spine Patient** · **Ortho Referrer** (ortho but no spine) · **Other Patient Referrer** (pain/hand/foot only) · **Visit / Prospect** (no attributed patients). |
-| **Tier 1 / 2 / 3 / Prospect** | Tier 1 = sent ≥1 spine patient (146 accounts) · Tier 2 = ortho referrers (156) · Tier 3 = other-service referrers (37) · Prospect = spine-adjacent, nothing attributed yet (469). |
+| **Tier 1 / 2 / 3 / Prospect** | Tier 1 = sent ≥1 spine patient · Tier 2 = ortho referrers · Tier 3 = other-service referrers · Prospect = spine-adjacent, nothing attributed yet. Validated book (Jul 31, Sean's 40 counted in their bands): **T1 162 · T2 174 · T3 34 · Prospect 396**; pre-validation core split was 146/156/37/469. |
 | **Wave 1** | The first-priority 90 accounts (all proven spine senders) — first in line at the 21-day Tier-1 rhythm (Jul 22: Kristen moved off 14-day — “two weeks is too soon”). |
 | **Target Score (0–100)** | Ranking number: up to 88 points from actual referral production, up to 12 from context (specialty fit, recent visits, reachability, data confidence). Prioritization only — not a revenue measure. |
 | **Operating lane / Next Action** | The account's job in the plan: Protect · Reactivation · Convert · Cross-sell · Expansion/Test. |
@@ -41,7 +41,7 @@ says so — **corrections welcome; flag anything that doesn't match how the team
 | **NP per 100 visit-days** | Productivity ratio (2026 YTD: Kristen 67 · Jasmine 30 · Coty 18 · Sean 14). Directional — referrals lag visits. |
 | **Cold referral** | A matched referral patient whose practice had **no completed MMC visit on or before the patient's first appointment** — i.e., a referral we never field-touched first. 2026 YTD: only **6 of 1,287** matched patients. Measures sequence (visit came first), not proof of causation; unmatched rows (~17.5%) aren't in the denominator. |
 | **Lag (visit→first appointment)** | Days between the last completed visit to a practice and an attributed patient's first appointment. **Median 31 days; 83% within 60.** Timing context, not proof the visit caused the patient. |
-| **Route day (D05, K-D03, FP/rev/swp)** | A pre-built geographic day of ≤10 stops. FP = first pass (all stops) · rev = producer revisit (proven stops only) · swp = sweep of tail producers. |
+| **Route day (K-R01, FP/rev/swp)** | A pre-built geographic day of ≤10 stops. FP = first pass (all stops) · rev = producer revisit (proven stops only) · swp = sweep of tail producers. **`R` days (K-R01…) are the Jul 31 rebuild** on the validated book — 81 days, 73 keeping the original drive order, 8 re-packed by ZIP; the old `D` days (D05, K-D03) live on only in the executed W1–W2 rows. |
 | **Lapsed (in MMC)** | No completed **logged** visit in 4+ weeks. **Field correction (Jul 22, Kristen):** texts and phone calls are NOT captured in MMC — several "lapsed" top accounts (e.g., Hesselberg) are actively maintained by text weekly. Read lapse flags as *"check this — either the relationship needs a visit OR our tracking missed the touch,"* never as an accusation. Open team question: how to capture high-value text/call touches without drowning PLs in data entry (one option: quick-log touches for Tier 1 only). |
 | **Protect Radar / Money List** | App screens: every proven referrer ranked by yield + days since visit; and the week's highest-value visits. |
 
@@ -80,9 +80,9 @@ group** in MMC so the Past-Due engine finally works for us instead of being igno
 ## Plan & measurement
 | Term | Meaning |
 |---|---|
-| **W1…W11** | Plan weeks, Mondays Jul 20 → Sep 28 (W1 = Jul 22–25 short week). |
+| **W1…W11** | Plan weeks, Mondays Jul 20 → Sep 28 (W1 = Jul 22–25 short week). **W1–W2 = cycle 1, executed on the old routes; W3–W11 (Aug 3 →) = cycle 2 on the validated book** — the app's week chips use the same W3…W11 numbering. |
 | **Protect sweep / blitz** | W1–W2 recovery visits to every lapsed proven referrer (all 36 by Jul 31). |
 | **95–115 vs 150** | Committed range vs stretch for monthly B2B spine by October; stretch requires capacity ≥200 team visit-days/wk, Sean active, 30+ one-spine conversions. |
 | **Measurement contract** | Weeks 1–2 judged on activity (lapses→0, visit-days), patients read from mid-Aug, verdict in September. August will look soft — the June–July activity dip is already baked in via the 31-day lag. |
 | **Scorecard** | The weekly spine tracker (11 weeks to Sep 28) — B2B spine NPs, active accounts, visit-days/PL, protect lapses, NP/100, match-rate. |
-| **Validation sprint** | Joel's Jul 23–31 project: PLs disposition all 848 accounts (Keep/Remove/Reassign) in the review workbook; universe locked + routes regenerated Jul 31. |
+| **Validation sprint** | Joel's Jul 23–31 project: PLs disposition all 848 accounts (Keep/Remove/Reassign). **Eyeball phase done Jul 31: 848/848 answered — 766 kept, 82 → Non-Spine, 1 reassigned (Levan Internists, Coty→Jasmine, pending Kristen)**; routes regenerated same day; Coty's 82 "Not sure" rows go to Joel's consolidation. |

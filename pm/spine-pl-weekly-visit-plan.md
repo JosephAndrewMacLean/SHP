@@ -5,6 +5,25 @@
 **The full stop-level schedule (1,085 scheduled visits, filter by `week` + `pl` — cadence updated Jul 22):** **`pm/pl-weekly-visit-schedule.csv`**
 **Kristen's share pack:** `pm/kristen-share/` (field workbook + handoff note) · **MMC sync:** `pm/mmc-import/`
 
+> ## ⟳ v3 — Jul 31: universe validated, routes regenerated (read this first)
+> All four PL eyeball files came back (**848/848 rows answered**): **766 accounts validated in,
+> 82 removed to the MMC Non-Spine group** (74 of them prospects; full log in
+> `pm/eyeball-check/eyeball-results-2026-07-31.csv`). Route days were rebuilt on the validated
+> book — **81 days (Kristen 18 · Jasmine 31 · Coty 28 · Sean 4), IDs now `K-R01…`**, 73 of them
+> keeping the original coordinate-clustered stop order, 8 re-packed by ZIP
+> (`pm/pl-route-days.csv` + per-PL workbooks in `pm/route-days-v2/`).
+> **W1–W2 (Jul 22–31) stand as executed** — those planned touches are credited, so nobody gets an
+> early revisit ("two weeks is too soon"). **Cycle 2 runs W3–W11 (Aug 3 → Sep 28): 844 planned
+> stops** — 306 first-pass, 517 cadence revisits (T1 21d · T2 30d · T3/prospect 45d), 21 producer
+> sweeps; every Tier-1 producer is planned at least once; the 2 lapsed repeats never touched in
+> W1–W2 (Office of George Nassif MD, Oakland Primary Care) lead W3. Backlog is now **25 prospect-tail
+> days / 234 stops** (K 48 · J 105 · C 81), pending the Monday-huddle 90-day reads and Joel's
+> consolidation of Coty's 82 "Not sure" rows. **Sections below describing W3+ by old `Day NN` IDs
+> are superseded** by `pm/pl-weekly-visit-schedule.csv` (W1–W2 executed rows + cycle-2 rows), the
+> app (`pm/spine-routes-app.html`), and the `pm/route-days-v2/` workbooks. One ownership flag:
+> **Levan Internists moved Coty → Jasmine** (his note: already being called on by Jasmine) pending
+> Kristen's confirmation.
+
 > **What "lucrative" means here:** attributed 2026 spine patients per account (not kept-visit-confirmed),
 > weighted by lapse urgency — a proven referrer nobody has visited in 4+ weeks outranks everything,
 > because that volume is already flowing and is cheapest to lose. Prospects are pre-mixed into every
