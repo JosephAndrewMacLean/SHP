@@ -58,7 +58,7 @@ regenerates routes, schedule, app, and MMC import. No side-channel edits to the 
 | Tier 2 (ortho senders) | **every 30 days** | All-in cross-sell — these already trust us |
 | Tier 3 | **every 45 days** | |
 | Prospects | **45-day first pass**, then per the 90-day read | Promote / Hold / Park |
-| Capacity guard | **3–4 spine days per PL-week** | Ortho book keeps 1–2 field days — non-negotiable |
+| Capacity | **5 spine route-day slots per PL-week** (Sean: 2 — his 40-account book saturates at that rhythm). Same-week producer revisits are packed into full loop days (`R03+R07` = one drive) rather than scattered mini-stops; unused slots are flex | **Changed Jul 31 (Joe) — supersedes the prior "3–4 days + 1–2 protected ortho days" guard. ⚠️ Under this setting Kristen's Tier-1-heavy book fills all 5 slots every week (no ortho field days); flagged for Kristen + Gautam at approval** |
 
 A visit = a **logged MMC check-in**. Texts and calls are real relationship work but are invisible
 to the CRM; a lapse flag therefore means *"check this,"* never *"you failed."* High-value text/call
@@ -129,3 +129,4 @@ texture → compliance before action. This SOP changes by version, not by drift:
 | Version | Date | Change | Approved |
 |---|---|---|---|
 | 1.0 DRAFT | 2026-07-23 | Initial issue for approval | pending — Gautam |
+| 1.0 DRAFT r2 | 2026-07-31 | §4 capacity: 5 spine route-day slots/PL-week (was 3–4 + ortho guard); producer revisits packed into full loop days. Ortho field-day impact flagged for sign-off | pending — Gautam |

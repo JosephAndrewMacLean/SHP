@@ -14,12 +14,19 @@
 > (`pm/pl-route-days.csv` + per-PL workbooks in `pm/route-days-v2/`).
 > **Cycle 1 (Jul 22–31) stands as executed** — those planned touches are credited, so nobody gets an
 > early revisit ("two weeks is too soon"). **Cycle 2 restarts the week count: W1–W9, Aug 3 → Sep 28,
-> 844 planned stops** — 306 first-pass, 517 cadence revisits (T1 21d · T2 30d · T3/prospect 45d),
-> 21 producer sweeps; every Tier-1 producer is planned at least once; the 2 lapsed repeats never
-> touched in cycle 1 (Office of George Nassif MD, Oakland Primary Care) lead W1 (Aug 3). Backlog is
-> now **25 prospect-tail days / 234 stops** (K 48 · J 105 · C 81), pending the Monday-huddle 90-day
-> reads and Joel's consolidation of Coty's 82 "Not sure" rows. **The sections below describe the
-> old calendar (`Day NN` IDs, weeks numbered from Jul 20) and are superseded** by
+> at 5 route-day slots per PL-week (Joe, Jul 31 — supersedes the 3–4-day guard; Sean runs 2, his
+> 40-account book can't support more without breaking the 21-day rhythm). 1,197 planned stops in
+> 141 full-day entries:** 57 first-pass days (8–10 stops), 83 producer-loop days — same-week
+> revisits due on rhythm (T1 21d · T2 30d · T3/prospect 45d) packed into single drives of ≤10
+> stops, labeled like `R03+R07` — and 1 sweep. Every Tier-1 producer is planned at least once; the
+> 2 lapsed repeats never touched in cycle 1 (Office of George Nassif MD, Oakland Primary Care)
+> lead W1 (Aug 3). Backlog collapsed from 234 stops to **one day (Kristen R18 — its 3 producers
+> are swept in W2; 6 prospects wait)**. ⚠️ **Two flags for the Monday huddle:** (1) the 5-slot
+> model consumes the field days the old plan reserved for ortho — Kristen's T1-heavy book fills
+> all 5 slots every week of the cycle (zero flex), Jasmine/Coty free up only in W8–W9 — Kristen +
+> Gautam need to bless that trade or we rebalance her book; (2) Coty's 82 "Not sure" rows are
+> still in these routes pending Joel's consolidation. **The sections below describe the old
+> calendar (`Day NN` IDs, weeks numbered from Jul 20) and are superseded** by
 > `pm/pl-weekly-visit-schedule.csv` (`C1-W1/C1-W2` executed rows + cycle-2 `W1…W9` rows), the app
 > (`pm/spine-routes-app.html`), and the `pm/route-days-v2/` workbooks. One ownership flag:
 > **Levan Internists moved Coty → Jasmine** (his note: already being called on by Jasmine) pending
