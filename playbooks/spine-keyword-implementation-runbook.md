@@ -1,5 +1,28 @@
 # Spine Keyword Expansion — Implementation Runbook
 
+> ## ⚠ Revised 2026-08-03 — Blue Ox call ([notes](../pm/blue-ox-call-notes-2026-08-03.md))
+>
+> The staging below still holds (pilot Sciatica first, one attributable change per week),
+> with these amendments:
+>
+> - **Stage 2 pilot moves**: Sciatica builds in `BOD - Spine Conditions - Sterling Heights`
+>   (not the geo NBS campaign), with added budget. Same keywords, same pass/fail gates.
+> - **Wave 2/4 condition groups** likewise build in the Spine Conditions campaigns.
+> - **Wave 5 (Port Huron) is cancelled** — Port Huron spine stops entirely (Dr. Munk
+>   leaving); Southfield spine bids end. Do not build the Port Huron page.
+> - **Stage 4's broad-match gate is deleted** — no broad match in this account, ever gated
+>   or otherwise, until Joe and Blue Ox jointly reopen it.
+> - **Pre-flight #2 (redirect) is partially answered**: Blue Ox fixed Livonia's generic-page
+>   final URLs ~2 weeks ago. Verify in GA4 post-Jul-20 and check Sterling Heights.
+> - **Pre-flight #4 (budgets) is answered**: August budgets hold flat; Port Huron question
+>   is moot given the wind-down.
+> - **New daily watch-item** (add to §7 daily checks): ZocDoc scheduler bookings vs.
+>   phone-call conversion mix, post NP-intent $125→$75. The $150/$5 call values were
+>   Liine guesses, not derived — if scheduler volume sags while calls swell, rebalance.
+> - **Owners confirmed on the call**: Blue Ox fixes the typos, runs condition keyword
+>   research (sciatica first), builds treatment-type keywords with keyword-level URLs;
+>   Jake delivers the zip-code analysis + corridor-campaign proposal.
+
 **Owner (decisions):** Joe MacLean · **Owner (execution in Google Ads):** Blue Ox Digital
 (Shaun Elley / Jake) · **Owner (pages):** Randall · **Built:** 2026-07-25
 

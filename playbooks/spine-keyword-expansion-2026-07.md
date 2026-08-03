@@ -1,5 +1,35 @@
 # Spine Keyword Expansion & Ad Group Build — July 2026
 
+> ## ⚠ Revised 2026-08-03 after the Blue Ox call ([notes](../pm/blue-ox-call-notes-2026-08-03.md))
+>
+> Four decisions from the 8/3 call with Shaun and Jake supersede parts of this document.
+> The keyword sheet (`pm/spine-keyword-build-2026-07.csv`) and §10 are regenerated to match;
+> superseded sections are left in place as the analytical record.
+>
+> 1. **No broad match, period.** The gated-broad plan (§2.6, §9) is dropped, not deferred —
+>    prior broad/AI-Max tests on this account pulled chiropractor/massage/PT queries.
+>    The build is now **183 keywords per geo: 75 exact, 108 phrase, 0 broad.**
+> 2. **§2.4 is reversed.** Condition ad groups (Sciatica, Herniated/Bulging Disc, Spinal
+>    Stenosis, Pinched Nerve) build in the existing `BOD - Spine Conditions - {geo}`
+>    campaigns — the geo campaigns do **not** absorb them. Blue Ox's reasoning: the geo
+>    campaigns run on target ROAS, and loading them with lower-converting upper-funnel terms
+>    chokes the proven low-funnel keywords. Budget moves **to** the condition campaigns
+>    instead of the campaigns folding in.
+> 3. **Port Huron spine stops; Southfield spine bids end.** Dr. Munk is leaving with no
+>    spine replacement. The "Port Huron core four + build its landing page" recommendation
+>    (§4.3 and elsewhere) is void — the $339 CPA was real but the capacity behind it is
+>    leaving. Port Huron **ortho** continues. Freed budget funds the condition campaigns.
+> 4. **The 90%-generic landing page finding (§4.4) is partially explained**: Blue Ox found
+>    and fixed Livonia spine ads pointing at the generic page ~2 weeks before the 8/3 call.
+>    The GA4 window used in §4.1 largely predates the fix. Re-verify on a post-Jul-20
+>    window before treating it as closed.
+>
+> Also agreed 8/3: Blue Ox adds treatment-type keywords (ACDF, TLIF, disc replacement) with
+> keyword-level final URLs; Jake's zip-code conversion analysis may add an "in-between
+> corridor" campaign; budgets hold flat for August; and the NP-intent value drop to $75
+> creates a daily watch-item — ZocDoc bookings vs. phone-call mix, since the $150/$5 call
+> values were never derived from data.
+
 **Owner:** Joe MacLean · **Built:** 2026-07-25 · **Status:** implementation-ready, pending
 clinical/legal sign-off on flagged copy claims
 
@@ -1024,24 +1054,28 @@ actually do in ten minutes a morning.
 
 ---
 
-## 10. The keyword list, organized by match type
+## 10. The keyword list, organized by match type (rev. 2026-08-03)
 
-Nine ad groups. Every keyword grouped under the match type it should be built with.
-Identical build for **Sterling Heights** and **Livonia**; **Port Huron** takes the four
-marked `[PH]`. Volumes are Semrush US national, monthly.
+Nine ad groups, **exact and phrase only — no broad match anywhere**, per the 8/3 call with
+Blue Ox (prior broad-match tests pulled chiropractor / massage / PT queries; the gated-broad
+plan is dropped, not deferred). Identical build for **Sterling Heights** and **Livonia**;
+Port Huron and Southfield spine are winding down and get nothing.
+
+**Campaign placement (8/3 decision):** low-funnel ad groups — Spine Specialist, Back Pain
+Specialist, Neck Pain Specialist, Spine Surgery, Minimally Invasive / Disc Surgery — build in
+`BOD - Neck, Back, Spine - {geo}`. Condition ad groups — Sciatica, Herniated / Bulging Disc,
+Spinal Stenosis, Pinched Nerve / Radiculopathy — build in `BOD - Spine Conditions - {geo}`,
+so their lower conversion rates cannot drag the geo campaigns’ target-ROAS learning.
 
 `ACTION` — **NEW** = does not exist today · **EXISTING** = already live, keep
 · **REACTIVATE** = exists but paused · **MOVE** = exists in a different ad group.
 
-**Landing page for every ad group below, at launch:**
-`https://synergyhealth.org/specialty/spine-neck-back/{geo}/` — see §4 for why, and for the
-Phase 2 page plan.
+**Landing page at launch for every ad group:** `…/specialty/spine-neck-back/{geo}/` — see §4.
 
 
-### Spine Specialist `[PH]`
+### Spine Specialist
 
-_28 keywords — 11 exact, 15 phrase, 2 broad_
-_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: no change — this is the hub page_
+_26 keywords — 11 exact, 15 phrase · campaign: **Neck, Back, Spine (geo)** · Phase 2 LP target: no change — hub page_
 
 **EXACT MATCH** (11)
 
@@ -1079,13 +1113,6 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: no change �
 | `"ortho spine specialist"` | — | EXISTING | 18.0 conv @ $71 |
 | `"best spine doctor near me"` | — | EXISTING |  |
 
-**BROAD MATCH** (2) — upload **paused**, enable only after the Liine/ZocDoc fix
-
-| Keyword (as entered) | Vol/mo | Action | Note |
-|---|---:|---|---|
-| `spine specialist near me` | 5400 | GATED | after ZocDoc fix |
-| `orthopedic spine surgeon near me` | 390 | GATED | after ZocDoc fix |
-
 **Ad-group negatives**
 
 ```
@@ -1093,10 +1120,9 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: no change �
 ```
 
 
-### Back Pain Specialist `[PH]`
+### Back Pain Specialist
 
-_32 keywords — 15 exact, 15 phrase, 2 broad_
-_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty/spine-neck-back/{geo}/back-pain/` (to be built)_
+_30 keywords — 15 exact, 15 phrase · campaign: **Neck, Back, Spine (geo)** · Phase 2 LP target: `…/{geo}/back-pain/` (to be built)_
 
 **EXACT MATCH** (15)
 
@@ -1138,13 +1164,6 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty
 | `"chronic back pain doctor near me"` | 30 | NEW |  |
 | `"back pain treatment near me"` | — | REACTIVATE | 0 impr - sitting in paused Pain Mgmt |
 
-**BROAD MATCH** (2) — upload **paused**, enable only after the Liine/ZocDoc fix
-
-| Keyword (as entered) | Vol/mo | Action | Note |
-|---|---:|---|---|
-| `back pain specialist near me` | — | GATED | after ZocDoc fix |
-| `back doctor near me` | 4400 | GATED | after ZocDoc fix |
-
 **Ad-group negatives**
 
 ```
@@ -1154,8 +1173,7 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty
 
 ### Neck Pain Specialist
 
-_20 keywords — 8 exact, 11 phrase, 1 broad_
-_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty/spine-neck-back/{geo}/neck-pain/` (to be built)_
+_19 keywords — 8 exact, 11 phrase · campaign: **Neck, Back, Spine (geo)** · Phase 2 LP target: `…/{geo}/neck-pain/` (to be built)_
 
 **EXACT MATCH** (8)
 
@@ -1186,12 +1204,6 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty
 | `"neck pain treatment"` | — | REACTIVATE | in paused Pain Mgmt |
 | `"neck physical therapy near me"` | — | REACTIVATE | in paused Pain Mgmt |
 
-**BROAD MATCH** (1) — upload **paused**, enable only after the Liine/ZocDoc fix
-
-| Keyword (as entered) | Vol/mo | Action | Note |
-|---|---:|---|---|
-| `neck pain specialist near me` | — | GATED | after ZocDoc fix |
-
 **Ad-group negatives**
 
 ```
@@ -1199,10 +1211,9 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty
 ```
 
 
-### Sciatica `[PH]`
+### Sciatica
 
-_17 keywords — 6 exact, 10 phrase, 1 broad_
-_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty/spine-neck-back/{geo}/sciatica/` (to be built)_
+_15 keywords — 6 exact, 9 phrase · campaign: **Spine Conditions** · Phase 2 LP target: `…/{geo}/sciatica/` (to be built)_
 
 **EXACT MATCH** (6)
 
@@ -1215,7 +1226,7 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty
 | `[sciatica specialist]` | 170 | NEW |  |
 | `[doctor for sciatica]` | 170 | NEW |  |
 
-**PHRASE MATCH** (10)
+**PHRASE MATCH** (9)
 
 | Keyword (as entered) | Vol/mo | Action | Note |
 |---|---:|---|---|
@@ -1228,13 +1239,6 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty
 | `"sciatica pain relief"` | 40500 | REACTIVATE | PAUSED. Informational-heavy - start paused, test 2nd |
 | `"sciatic nerve pain relief"` | 22200 | REACTIVATE | PAUSED. Same caution |
 | `"physical therapy for sciatica near me"` | — | REACTIVATE | in paused Pain Mgmt |
-| `"sciatica treatment southfield"` | — | REACTIVATE | Southfield campaign only |
-
-**BROAD MATCH** (1) — upload **paused**, enable only after the Liine/ZocDoc fix
-
-| Keyword (as entered) | Vol/mo | Action | Note |
-|---|---:|---|---|
-| `sciatica specialist near me` | 260 | GATED | after ZocDoc fix |
 
 **Ad-group negatives**
 
@@ -1245,8 +1249,7 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty
 
 ### Herniated / Bulging Disc
 
-_26 keywords — 10 exact, 15 phrase, 1 broad_
-_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty/spine-neck-back/{geo}/herniated-disc/` (to be built)_
+_25 keywords — 10 exact, 15 phrase · campaign: **Spine Conditions** · Phase 2 LP target: `…/{geo}/herniated-disc/` (to be built)_
 
 **EXACT MATCH** (10)
 
@@ -1283,12 +1286,6 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty
 | `"degenerative disc surgery"` | — | EXISTING | migrate |
 | `"degenerative disc repair"` | — | EXISTING | migrate |
 
-**BROAD MATCH** (1) — upload **paused**, enable only after the Liine/ZocDoc fix
-
-| Keyword (as entered) | Vol/mo | Action | Note |
-|---|---:|---|---|
-| `herniated disc specialist near me` | 70 | GATED | after ZocDoc fix |
-
 **Ad-group negatives**
 
 ```
@@ -1298,8 +1295,7 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty
 
 ### Spinal Stenosis
 
-_15 keywords — 5 exact, 9 phrase, 1 broad_
-_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty/spine-neck-back/{geo}/spinal-stenosis/` (to be built)_
+_14 keywords — 5 exact, 9 phrase · campaign: **Spine Conditions** · Phase 2 LP target: `…/{geo}/spinal-stenosis/` (to be built)_
 
 **EXACT MATCH** (5)
 
@@ -1325,12 +1321,6 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty
 | `"spinal stenosis specialist"` | 110 | NEW |  |
 | `"spinal stenosis therapies"` | — | REACTIVATE | in paused Pain Mgmt, flagged low quality |
 
-**BROAD MATCH** (1) — upload **paused**, enable only after the Liine/ZocDoc fix
-
-| Keyword (as entered) | Vol/mo | Action | Note |
-|---|---:|---|---|
-| `spinal stenosis specialist near me` | 260 | GATED | after ZocDoc fix |
-
 **Ad-group negatives**
 
 ```
@@ -1340,8 +1330,7 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty
 
 ### Pinched Nerve / Radiculopathy
 
-_15 keywords — 4 exact, 10 phrase, 1 broad_
-_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty/spine-neck-back/{geo}/pinched-nerve/` (to be built)_
+_14 keywords — 4 exact, 10 phrase · campaign: **Spine Conditions** · Phase 2 LP target: `…/{geo}/pinched-nerve/` (to be built)_
 
 **EXACT MATCH** (4)
 
@@ -1367,12 +1356,6 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty
 | `"treatment for pinched nerve in lower back"` | — | REACTIVATE | in paused Pain Mgmt |
 | `"radiculopathy treatment"` | — | NEW |  |
 
-**BROAD MATCH** (1) — upload **paused**, enable only after the Liine/ZocDoc fix
-
-| Keyword (as entered) | Vol/mo | Action | Note |
-|---|---:|---|---|
-| `pinched nerve doctor near me` | 110 | GATED | after ZocDoc fix |
-
 **Ad-group negatives**
 
 ```
@@ -1380,10 +1363,9 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty
 ```
 
 
-### Spine Surgery `[PH]`
+### Spine Surgery
 
-_24 keywords — 8 exact, 15 phrase, 1 broad_
-_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty/spine-neck-back/{geo}/spine-surgery/` (to be built)_
+_23 keywords — 8 exact, 15 phrase · campaign: **Neck, Back, Spine (geo)** · Phase 2 LP target: `…/{geo}/spine-surgery/` (to be built)_
 
 **EXACT MATCH** (8)
 
@@ -1418,12 +1400,6 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty
 | `"lumbar fusion surgery"` | 1900 | NEW |  |
 | `"minimally invasive spine surgeon"` | 260 | NEW |  |
 
-**BROAD MATCH** (1) — upload **paused**, enable only after the Liine/ZocDoc fix
-
-| Keyword (as entered) | Vol/mo | Action | Note |
-|---|---:|---|---|
-| `spine surgeon near me` | 5400 | GATED | after ZocDoc fix |
-
 **Ad-group negatives**
 
 ```
@@ -1433,8 +1409,7 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty
 
 ### Minimally Invasive / Disc Surgery
 
-_18 keywords — 8 exact, 9 phrase, 1 broad_
-_Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty/spine-neck-back/{geo}/minimally-invasive-spine-surgery/` (to be built)_
+_17 keywords — 8 exact, 9 phrase · campaign: **Neck, Back, Spine (geo)** · Phase 2 LP target: `…/{geo}/minimally-invasive-spine-surgery/` (to be built)_
 
 **EXACT MATCH** (8)
 
@@ -1462,12 +1437,6 @@ _Phase 1 URL: `/specialty/spine-neck-back/{geo}/` · Phase 2 target: `/specialty
 | `"lumbar disc replacement"` | 1000 | NEW |  |
 | `"artificial disc replacement near me"` | 140 | NEW |  |
 | `"spinal decompression"` | — | REACTIVATE | CAUTION: chiro decompression-table intent, watch search terms |
-
-**BROAD MATCH** (1) — upload **paused**, enable only after the Liine/ZocDoc fix
-
-| Keyword (as entered) | Vol/mo | Action | Note |
-|---|---:|---|---|
-| `minimally invasive spine surgery near me` | 390 | GATED | after ZocDoc fix |
 
 **Ad-group negatives**
 
