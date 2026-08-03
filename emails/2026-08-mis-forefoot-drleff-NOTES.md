@@ -57,10 +57,49 @@ Compliance). ESP merge tags are Mailchimp (`*|UNSUB|*`, `*|UPDATE_PROFILE|*`, `*
   Per the Zocdoc+NextGen analysis, booking-link/website paths capture ~74% at $0 vs ~57%
   via paid marketplace — if a white-label link exists for Dr. Leff, swap it into the hero
   and primary CTAs.
-- **Subject line options** (pick/AB-test): "Pain-free feet by fall? Now's the time to
-  think about it" · "Bunion surgery has changed. A note from Dr. Leff" · "Not your
-  grandmother's bunion surgery". Preheader is baked in: "Bunions, hammertoes, or forefoot
-  pain? Minimally invasive surgery means smaller incisions and less downtime…"
+- **Subject line & preview text:** recommendations below (own section).
+
+## Subject line & preview text
+
+**Recommended send (or A in an A/B):**
+
+- **Subject:** `Not your grandmother's bunion surgery` (37 chars)
+- **Preview:** `Smaller incisions, less downtime — and why summer is the smart window to plan a consultation. A note from Dr. Randy Leff.` (121 chars, payload in first 40)
+- **From name:** `Dr. Randy Leff | Synergy Health Partners` — front-load the doctor; the
+  personal-letter format earns the personal sender. Same sending domain/auth as usual, so
+  no deliverability change. Reply-to: a monitored inbox.
+
+The subject is the email's own pull quote — distinctive, on-voice, zero outcome claims,
+and short enough to display in full on virtually every mobile client.
+
+**B test / alternates (subject → paired preview):**
+
+| # | Subject (chars) | Paired preview | Angle / note |
+|---|---|---|---|
+| B | Pain-free feet by fall? Now's the time to plan (46) | Dr. Leff on minimally invasive bunion & hammertoe surgery — tiny incisions, less downtime, no pressure. | Timing/outcome. Mirrors the print piece's own H1; keep the "?" so it stays aspirational, not a promise. |
+| C | Back in regular shoes before the holidays? (42) | Most MIS patients are — Dr. Leff on why July and August are the smart window for forefoot surgery. | Subject asks, preview answers with the body's hedged "most patients" language. Keep the "?". |
+| D | "I just can't take the time off" — sound familiar? (50) | Modern forefoot surgery has changed the math on downtime. Dr. Leff explains what's different now. | Objection/empathy; strongest fit for the letter format. |
+| E | A summer note from Dr. Leff: bunion surgery has changed (55) | What minimally invasive forefoot surgery treats, what recovery looks like, and how to find out if you're a candidate. | Safest/plainest; use if compliance wants maximum caution. |
+
+Personalization variant (only if FNAME coverage in the audience is clean, with a default
+value set): `*|FNAME|*, dreading another season of foot pain?` — reuses the checklist's
+own line.
+
+**Mechanics:**
+
+- Sentence case, no emoji (YMYL trust + older segment), no "free"/all-caps/"!!" — all
+  options above are CAN-SPAM-truthful to the content.
+- Char budgets: subject ≤ ~46 shows in full on iPhone portrait and the Gmail app; preview
+  front-loaded in the first ~40 chars, useful to ~90.
+- Mailchimp: put the preview string in the **Preview Text** field; the same string is also
+  baked into the HTML preheader as a fallback, so keep them aligned if edited.
+- A/B: 25/25/50, pick the winner on **clicks, not opens** (Apple Mail Privacy Protection
+  inflates opens), wait ≥4 hours before the winner sends.
+- Optional: resend to non-openers after 3–4 days under subject D (exclude clickers).
+  MPP-inflated "openers" are excluded automatically — that errs conservative, which is
+  fine for a patient list.
+- B and C echo aspirational phrases from the doctor-approved 2025 print piece; final
+  wording still rides along with the clinical review of the email itself.
 
 ## Client-compatibility engineering (what makes it "bulletproof")
 
