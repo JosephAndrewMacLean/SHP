@@ -60,7 +60,7 @@ regenerates routes, schedule, app, and MMC import. No side-channel edits to the 
 | Tier 2 (ortho senders) | **every 30 days** | All-in cross-sell — these already trust us |
 | Tier 3 | **every 45 days** | |
 | Prospects | **45-day first pass**, then per the 90-day read | Promote / Hold / Park |
-| Capacity | **5 spine route-day slots per PL-week** (Kristen, Jasmine, Coty). Same-week producer revisits are packed into full loop days (`R03+R07` = one drive) rather than scattered mini-stops; unused slots are flex | **Changed Jul 31 (Joe) — supersedes the prior "3–4 days + 1–2 protected ortho days" guard. ⚠️ Under this setting Kristen's Tier-1-heavy book fills all 5 slots every week (no ortho field days); flagged for Kristen + Gautam at approval** |
+| Capacity | **5 scheduled days per PL-week** (Kristen, Jasmine, Coty). Each is one real route day — **~10 stops, one area, mixed tiers**: producers due that week, with prospects from the same area riding along to fill it. Day IDs are `K-W1D1` (week 1, day 1); home route days `R01…` stay the geography reference. Light slots at cycle-end are flex | **Changed Jul 31 (Joe) — supersedes the prior "3–4 days + 1–2 protected ortho days" guard. ⚠️ Under this setting Kristen's Tier-1-heavy book fills all 5 slots every week (no ortho field days); flagged for Kristen + Gautam at approval** |
 
 A visit = a **logged MMC check-in**. Texts and calls are real relationship work but are invisible
 to the CRM; a lapse flag therefore means *"check this,"* never *"you failed."* High-value text/call
@@ -133,3 +133,4 @@ texture → compliance before action. This SOP changes by version, not by drift:
 | 1.0 DRAFT | 2026-07-23 | Initial issue for approval | pending — Gautam |
 | 1.0 DRAFT r2 | 2026-07-31 | §4 capacity: 5 spine route-day slots/PL-week (was 3–4 + ortho guard); producer revisits packed into full loop days. Ortho field-day impact flagged for sign-off | pending — Gautam |
 | 1.0 DRAFT r3 | 2026-07-31 | §1.1/§5 scope: validated 766-account book; Sean's 40 accounts merged into Kristen (K-R19…K-R22). Kristen at 215 accounts — 9 of her 22 days lose their prospect first pass; coverage decision flagged | pending — Gautam |
+| 1.0 DRAFT r4 | 2026-07-31 | §4 scheduling: one scheduled day = one route day (~10 stops, one area, mixed tiers, prospects riding along). Replaces stitched loop labels and producer-only days after Kristen's field read. Tier-1 median interval holds at 21 days | pending — Gautam |

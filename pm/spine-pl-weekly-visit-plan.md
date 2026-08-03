@@ -5,7 +5,38 @@
 **The full stop-level schedule (1,085 scheduled visits, filter by `week` + `pl` — cadence updated Jul 22):** **`pm/pl-weekly-visit-schedule.csv`**
 **Kristen's share pack:** `pm/kristen-share/` (field workbook + handoff note) · **MMC sync:** `pm/mmc-import/`
 
-> ## ⟳ v4 — Jul 31 (later): Sean's book merged into Kristen
+> ## ⟳ v5 — Jul 31: one row = one day (Kristen's rules restored)
+> Kristen read `K-R11+R12` on the Weekly Plan, looked up R11 (9 stops) and R12 (10 stops) in the
+> Route Days tab, and reasonably concluded she was being sent on a **19-stop day**. She was right
+> to stop: those stitched labels were unreadable, and worse, the merge had quietly turned 9 of her
+> days into **producer-only loops with the prospects stripped out** — not the rule the team agreed
+> to ("10 stops a day with the mix of Tier 1 / 2 / 3 / prospects").
+>
+> **The fix — the calendar is now built the way the field actually works.** Every scheduled day is
+> **one real route day: ~10 stops, one area, mixed tiers**, built from whoever is due that week
+> (T1 21d · T2 30d · T3 45d) with **prospects from the same area riding along to fill it** — the
+> original "prospects ride along inside every route day" rule, now applied to revisits too.
+> Day IDs are self-describing: **`K-W1D1` = Kristen, week 1, day 1**. No stitched labels, nothing
+> to add up, and the Stops column *is* the day. Each stop still shows its **home route day
+> (R01…R22)** so the territory reference, the MMC `Route Day` field, and everything Kristen has
+> already learned still hold — the home days are the geography, the W-D days are the calendar.
+>
+> **Result across the team:** 117 scheduled days · 1,116 stops · **98 days at exactly 10 stops**
+> (17 lighter days fall at the end of Coty's and Jasmine's cycle, once their books are fully
+> covered — those slots are flex). **Achieved Tier-1 interval: median exactly 21 days** for all
+> three PLs. **Zero producers unplanned and zero accounts untouched this cycle** — the 234-stop
+> backlog is gone, because ride-alongs use seats that producer-only loops wasted. Days are built
+> from one home day plus, at most, a neighbouring one that shares a city or ZIP — no more Port
+> Huron stitched to Clinton Township.
+>
+> ⚠️ **What the merge still costs, unchanged and unhidden:** Kristen carries 215 accounts against
+> ~450 stop-slots but needs ~530 to hold every rhythm. The engine now protects breadth first —
+> nobody gets a third visit while a producer has none — so her **Tier-1 mean interval stretches to
+> 24.7 days (median 21, worst case 42)** on the tail of her book. That is the price of 215
+> accounts at 5 days a week, and it's the Kristen/Gautam call from the last round: hand the
+> east-side days (R19–R22) to Coty, or accept the stretch.
+>
+> ## ⟳ v4 — Jul 31 (earlier): Sean's book merged into Kristen
 > Per Joe: **Sean's 40 accounts and 4 route days are now Kristen's** — they append as
 > **K-R19…K-R22** (Warren · Sterling Heights · Clinton Twp · St. Clair Shores) so none of her
 > existing day numbers shift. Kristen now carries **215 accounts across 22 days** — the largest
