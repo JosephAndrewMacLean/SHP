@@ -283,12 +283,38 @@ DPM" + dated review stamp + visible author box linking to the bio; blog/educatio
 his byline where he actually reviewed them (never fabricate review he didn't do — that's an
 FTC/E-E-A-T landmine).
 
-**B5. The Michfoot legacy dividend:** "synergy health partners (formerly michfoot surgeons,
-pc)" still earns clicks and the Southfield page pulls 14,312 impr/90d off the legacy-tagged
-listing. Standardize the GBP name per the brand-migration plan *while preserving* the "formerly
-Michfoot Surgeons" reference in on-page copy and the Southfield page ("Home of the former
-Michfoot Surgeons team") so 30+ years of local podiatric-surgery equity transfers to Synergy
-and the Leff entity rather than evaporating.
+**B5. The Michfoot legacy dividend — UPGRADED 2026-08-03: SHP owns michfoot.com, and it's
+still live and ranking.** Owner-confirmed (Joe) same day; Semrush-verified: the legacy
+practice site holds **Authority Score 12 with 330 backlinks from 136 referring domains**
+(⅓ of synergyhealth.org's entire 408-domain profile, parked on the old brand) and **live
+top rankings today**, including **its own Randy Leff bio at #2 for "randy leff dpm"**
+(actively splitting his entity with our #2 bio on the main site), Fred Leff's bio, homepage
+#8 for "michigan foot" (1,600/mo) / #4 "michigan foot doctors," and **#1–3 positions on
+foot-care posts** (pedicure-with-toenail-fungus cluster ~1,200/mo combined; toenail-dent
+cluster ~2,000/mo). *(Direct rendering blocked by session egress policy — Randall does the
+10-min browser recon; see his to-do #9.)*
+
+The migration play (sequence matters — don't torch ranking pages):
+1. **Inventory** the site page-by-page (Randall, browser) — it's small.
+2. **Recreate the winners first:** port the two ranking blog posts (pedicure/fungus,
+   toenail dents) onto synergyhealth.org with matching intent + Dr. Leff/team byline
+   *before* any redirect, so each 301 lands on a true equivalent (no soft-404s).
+3. **Page-level 301 map:** Leff bio → `/providers/randy-leff-dpm/` · Fred's bio →
+   `/providers/fred-leff-dpm/` · posts → their recreated equivalents · homepage + everything
+   else → the MIS hub or `/specialty/foot-ankle-specialists/` (per final mapping).
+4. **GSC:** add michfoot.com as a property, then file a Change of Address after the 301s —
+   this is the formal signal that merges the two entities and transfers the 136 domains'
+   equity into the foot section, right as the MIS cluster launches.
+5. **Keep the domain registered indefinitely** as the print/vanity URL: michfoot.com on
+   Dr. Leff's cards and referral pads, 301-ing to his flagship section — the "microsite"
+   feel he asked for with zero SEO downside.
+6. GBP: standardize the "(formerly Michfoot Surgeons, PC)" listing name per the brand
+   migration *while preserving* the heritage reference in on-page copy ("home of the former
+   Michfoot Surgeons team" — verify wording with the Leffs) so decades of local
+   podiatric-surgery equity transfers rather than evaporating.
+
+**Timing:** execute in Phase 2 (weeks 5–8) — redirect targets (hub + money page + recreated
+posts) must exist first. Owner: Randall (map) + Paul (DNS/301s/GSC) + content (post ports).
 
 ---
 

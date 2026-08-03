@@ -194,7 +194,7 @@ eyeball from any browser. Priority lane first:
 | Dedicated stripped-nav paid LPs (MEDIUM) | ❌ (paid still lands on site pages — GA4 landing paths confirm) | Cardinal paid + dev |
 | Spine differentiation messaging (younger surgeons, minimally invasive, tech) (MEDIUM) | ❌ (audit: "not messaged anywhere") | In-house content — feeds paid LPs + hubs |
 | Brand consistency: social/video templates, 9:16, end-card rebrand, account consolidation (MEDIUM/SMALL) | ❓ manual | In-house social/video |
-| Legacy Mendelson remnants: payment.mendelsonortho.com, YouTube @mendelsonortho, LinkedIn (SMALL but E-E-A-T-critical) | ❌ assumed (YouTube sameAs error persists in schema errors) | One-time fixes; recheck schema after |
+| Legacy Mendelson remnants: payment.mendelsonortho.com, YouTube @mendelsonortho, LinkedIn (SMALL but E-E-A-T-critical) | ❌ assumed (YouTube sameAs error persists in schema errors) — **2026-08-03: add `michfoot.com` to the remnant list.** Owner-confirmed SHP-owned; Semrush-verified still LIVE & ranking (AS 12, 136 referring domains; its own Randy Leff bio at #2 for "randy leff dpm" — splits the provider entity; #1–3 on foot-care posts). Not a kill-it fix: page-level 301 migration + GSC change-of-address planned in `playbooks/mis-foot-surgery-leff-plan.md` §B5 (Phase 2 — after redirect targets exist) | One-time fixes; recheck schema after |
 
 ## 6. Paid media audit roadmap — status
 

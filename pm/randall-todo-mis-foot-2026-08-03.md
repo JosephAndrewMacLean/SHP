@@ -147,6 +147,44 @@ cleanup Cardinal already recommends — we're feeding their machine, not forking
 
 ---
 
+## Added later on 2026-08-03 — two more (the second is the big one)
+
+### 9. michfoot.com recon (10 min, browser)
+
+Joe confirmed **SHP owns michfoot.com** — and Semrush shows it's still **live and
+ranking** (its own Randy Leff bio is #2 for "randy leff dpm," splitting his name
+equity with our site; 136 referring domains; #1–3 rankings on its foot-care blog
+posts). Our tools can't reach it, you can:
+
+- Screenshot the homepage; list every page (it's small — nav + sitemap).
+- Note: does it link to synergyhealth.org anywhere? Any "we've moved" banner?
+  Does the Leff bio there mention Synergy?
+- Post the page list to Joe — it becomes the 301 map (plan §B5). **Don't redirect
+  anything yet** — the ranking blog posts get recreated on the main site first.
+
+**Done =** screenshot + page list to Joe.
+
+### 10. Load the three MIS pages into WordPress as drafts (45 min)
+
+Paste-ready copy now lives in the repo — `content/mis-foot-surgery/`:
+
+1. `01-hub-minimally-invasive-foot-surgery.md`
+2. `02-minimally-invasive-bunion-surgery.md` (the money page)
+3. `03-minimally-invasive-hammertoe-surgery.md`
+
+Each file has the title tag, meta description, H1, full body, FAQ block, and
+editor notes. Create each as an **UNPUBLISHED DRAFT** at the proposed URL (pending
+Cardinal's structure confirmation — plan §A1). **Do not publish**: every
+`[DR. LEFF: …]` / `[VERIFY]` marker must be resolved after his Wednesday session,
+citations added, and his written sign-off received. Publishing without that
+violates the compliance gate.
+
+**Done =** three drafts exist in WP with SEO fields set; Joe notified for the
+Dr. Leff review pass.
+
+---
+
 **Explicitly NOT on your list** (so this stays a one-week win): schema (Paul +
-Cardinal own the pipeline), writing the new MIS hub/pages (content team, gated on
-Dr. Leff's credential session), GBP edits (listings owner), Cloudflare/WAF (Paul).
+Cardinal own the pipeline), finalizing/publishing the MIS pages (gated on
+Dr. Leff's credential session + sign-off), GBP edits (listings owner),
+Cloudflare/WAF and michfoot.com DNS/301s (Paul).

@@ -80,6 +80,12 @@ synergyhealth.org inherits the authority your bio already has, which is how we g
 found in weeks instead. Same result you asked for — your work, highlighted, with
 booking built in — minus the part that keeps you invisible for another year.
 
+One more thing you'll like: we own **michfoot.com**, and your old practice site is
+still out there earning Google's trust. Once your new section is live, we'll point
+michfoot.com straight at it — so decades of Michfoot links, and every patient who
+still remembers the old name, land on you. Your cards and referral pads can simply
+say **michfoot.com**.
+
 And keep doing checkouts exactly as you do now — the team handles honest review
 requests; no scripts, nothing for you to push.
 
