@@ -67,5 +67,10 @@ Owner: Santosh; pairs with the MMC↔NextGen crosswalk already tracked (ATTR-B.1
 - **Levan Internists is in the company-update file under Jasmine** (Coty's eyeball: "not my
   account — being called on by Jasmine") — confirm with Kristen before the import if ownership is
   still open.
+- **Sean's 40 accounts are assigned to Kristen** (merged Jul 31, route days `K-R19`…`K-R22`). Their
+  group tag changes from `Spine Sean Priority` to **`Spine Reassigned – ex-Sean book`** and the
+  `Spine Wave` field reads `Reassigned (ex-Sean)`, so the history stays filterable under the right
+  owner. If MMC account ownership itself should change (owner field, not just our plan fields),
+  that's a separate in-app step for Kristen — this import doesn't touch record ownership.
 - DO NOT CALL / CLOSED accounts were already excluded from the book upstream; "closed" discovered
   in the eyeball pass (Kids First Pediatrics) rides the Non-Spine import instead.

@@ -5,7 +5,25 @@
 **The full stop-level schedule (1,085 scheduled visits, filter by `week` + `pl` — cadence updated Jul 22):** **`pm/pl-weekly-visit-schedule.csv`**
 **Kristen's share pack:** `pm/kristen-share/` (field workbook + handoff note) · **MMC sync:** `pm/mmc-import/`
 
-> ## ⟳ v3 — Jul 31: universe validated, routes regenerated (read this first)
+> ## ⟳ v4 — Jul 31 (later): Sean's book merged into Kristen
+> Per Joe: **Sean's 40 accounts and 4 route days are now Kristen's** — they append as
+> **K-R19…K-R22** (Warren · Sterling Heights · Clinton Twp · St. Clair Shores) so none of her
+> existing day numbers shift. Kristen now carries **215 accounts across 22 days** — the largest
+> book on the team — and Sean no longer appears as a PL in the app, workbooks, or MMC import
+> (his Group tag becomes `Spine Reassigned – ex-Sean book` so the history stays filterable).
+> **Cycle-1 touch credit was deliberately NOT carried over:** Kristen has never called on these
+> accounts, so each first visit is flagged **“new-PL intro”** (32 stops) rather than counted as a
+> 21-day revisit against a visit she didn't make. That surfaced **4 lapsed repeat-spine producers
+> in the ex-Sean book** — Ryan Medical Associates, Michigan Compassionate Care, Get Well Urgent
+> Care Madison Heights, Brigid Healthcare — which now get recovery visits in **W1–W2**.
+> ⚠️ **The cost, stated plainly:** Kristen's 5 slots/week were already full. All 96 of her
+> producers still hold the 21-day rhythm (nothing proven was dropped), but **9 of her 22 days no
+> longer get a full first pass — 54 prospect stops are deferred to Oct+** (was 1 day / 6 prospects
+> before the merge). If those prospects matter this cycle, the options are handing the east-side
+> days (K-R19…R22 are all Macomb-side geography) to Coty, who has flex in W8–W9, or a 6th day.
+> Kristen + Gautam decide; nothing here is locked.
+>
+> ## ⟳ v3 — Jul 31: universe validated, routes regenerated
 > All four PL eyeball files came back (**848/848 rows answered**): **766 accounts validated in,
 > 82 removed to the MMC Non-Spine group** (74 of them prospects; full log in
 > `pm/eyeball-check/eyeball-results-2026-07-31.csv`). Route days were rebuilt on the validated

@@ -2,7 +2,8 @@
 
 **Document:** PL-SOP-001 · **Version:** 1.0 DRAFT — pending approval (Gautam) · **Effective:** upon approval (target Jul 28, 2026)
 **Process owner:** Kristen (field) · **Systems & data:** Joe · **Review cycle:** quarterly (first review Oct 2026)
-**Applies to:** all Physician Liaisons (Kristen, Jasmine, Coty, Sean) and supporting roles named in §6.
+**Applies to:** all Physician Liaisons (Kristen, Jasmine, Coty) and supporting roles named in §6.
+*Jul 31: Sean's 40-account book merged into Kristen (route days K-R19…K-R22); he is out of the spine rotation until Gautam's coverage call.*
 
 > **Objective.** Grow attributed B2B spine referrals from the June baseline of 79/month to a
 > **committed 95–115/month by October 2026** (150 = stretch), by protecting proven referrers,
@@ -14,10 +15,11 @@
 
 ## 1. The account universe (what we work, and how it changes)
 
-1.1 The working universe is the **848-account spine book** (Kristen 180 · Jasmine 310 · Coty 318 ·
-Sean 40), organized by evidence: **Tier 1** sent ≥1 spine patient (146) · **Tier 2** ortho-only
-senders (156) · **Tier 3** other-service senders (37) · **Prospects** (469). **Wave 1** = the 90
-highest-priority proven senders, always first in line each cycle.
+1.1 The working universe is the **766-account validated spine book** (Kristen 215 incl. the ex-Sean
+book · Jasmine 299 · Coty 252), organized by evidence: **Tier 1** sent ≥1 spine patient (162) ·
+**Tier 2** ortho-only senders (174) · **Tier 3** other-service senders (34) · **Prospects** (396).
+**Wave 1** = the 90 highest-priority proven senders, always first in line each cycle. (Pre-validation
+the book was 848 across four PLs; the Jul 31 eyeball pass removed 82 to the Non-Spine group.)
 
 1.2 **Accounts are never deleted.** An account leaves the working rotation only by being tagged
 into the MMC **"Non-Spine" group** (Kristen's group; nothing else in MMC is altered) or parked to
@@ -58,7 +60,7 @@ regenerates routes, schedule, app, and MMC import. No side-channel edits to the 
 | Tier 2 (ortho senders) | **every 30 days** | All-in cross-sell — these already trust us |
 | Tier 3 | **every 45 days** | |
 | Prospects | **45-day first pass**, then per the 90-day read | Promote / Hold / Park |
-| Capacity | **5 spine route-day slots per PL-week** (Sean: 2 — his 40-account book saturates at that rhythm). Same-week producer revisits are packed into full loop days (`R03+R07` = one drive) rather than scattered mini-stops; unused slots are flex | **Changed Jul 31 (Joe) — supersedes the prior "3–4 days + 1–2 protected ortho days" guard. ⚠️ Under this setting Kristen's Tier-1-heavy book fills all 5 slots every week (no ortho field days); flagged for Kristen + Gautam at approval** |
+| Capacity | **5 spine route-day slots per PL-week** (Kristen, Jasmine, Coty). Same-week producer revisits are packed into full loop days (`R03+R07` = one drive) rather than scattered mini-stops; unused slots are flex | **Changed Jul 31 (Joe) — supersedes the prior "3–4 days + 1–2 protected ortho days" guard. ⚠️ Under this setting Kristen's Tier-1-heavy book fills all 5 slots every week (no ortho field days); flagged for Kristen + Gautam at approval** |
 
 A visit = a **logged MMC check-in**. Texts and calls are real relationship work but are invisible
 to the CRM; a lapse flag therefore means *"check this,"* never *"you failed."* High-value text/call
@@ -80,7 +82,7 @@ touches on Tier-1 accounts *may* be quick-logged; this is optional pending the t
 
 | Role | Owns |
 |---|---|
-| **Gautam** | Approves this SOP, the target framing (95–115 commit / 150 stretch), and capacity decisions (Sean coverage, 4th-PL trigger, protected field days) |
+| **Gautam** | Approves this SOP, the target framing (95–115 commit / 150 stretch), and capacity decisions (ex-Sean book coverage, 4th-PL trigger, protected field days) |
 | **Kristen** | Field standard & coaching; Monday huddle; message voice; account reassignments; Non-Spine group |
 | **PLs (all)** | Execute stages 2–6; eyeball validation; same-day logging; promote/hold/park reads |
 | **Joe** | Schedule, app, scorecard, data refreshes, MMC imports; this document |
@@ -130,3 +132,4 @@ texture → compliance before action. This SOP changes by version, not by drift:
 |---|---|---|---|
 | 1.0 DRAFT | 2026-07-23 | Initial issue for approval | pending — Gautam |
 | 1.0 DRAFT r2 | 2026-07-31 | §4 capacity: 5 spine route-day slots/PL-week (was 3–4 + ortho guard); producer revisits packed into full loop days. Ortho field-day impact flagged for sign-off | pending — Gautam |
+| 1.0 DRAFT r3 | 2026-07-31 | §1.1/§5 scope: validated 766-account book; Sean's 40 accounts merged into Kristen (K-R19…K-R22). Kristen at 215 accounts — 9 of her 22 days lose their prospect first pass; coverage decision flagged | pending — Gautam |

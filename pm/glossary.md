@@ -7,7 +7,8 @@ says so — **corrections welcome; flag anything that doesn't match how the team
 ## People & roles
 | Term | Meaning |
 |---|---|
-| **PL** | Physician Liaison — the field reps who visit referring practices (Kristen, Jasmine, Coty, Sean). |
+| **PL** | Physician Liaison — the field reps who visit referring practices. Spine rotation since Jul 31: **Kristen, Jasmine, Coty** (Sean's 40-account book was merged into Kristen — see *ex-Sean book*). |
+| **Ex-Sean book** | The 40 accounts + 4 route days that moved from Sean to Kristen on Jul 31, appended as **K-R19…K-R22** (Warren / Sterling Heights / Clinton Twp / St. Clair Shores). MMC group `Spine Reassigned – ex-Sean book`. First visits carry a **new-PL intro** flag — Kristen has never called on them, so no cycle-1 visit credit was carried over. |
 | **KJ / JJ / CO / SS / KG** | Initials used in the source report: Kristen Jones, Jasmine Jones, Coty, Sean Sweeney, Kessia (departed). |
 
 ## Patients & channels

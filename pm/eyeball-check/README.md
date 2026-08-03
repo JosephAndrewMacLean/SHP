@@ -33,6 +33,9 @@ PLs touch these simple files; Joel's master workbook is where consolidation happ
 | Coty | 170 | 82 | 66 |
 | Sean | 40 | 0 | 0 |
 
+*(Sean's 40 reviewed accounts were merged into Kristen's book later on Jul 31 — route days
+K-R19…K-R22. His verdicts stand; only the owner changed.)*
+
 What happened with them:
 - **766 accounts validated in** (679 Yes + 87 Not sure) → routes/schedule/app regenerated
   (`pm/route-days-v2/`, `pm/pl-route-days.csv`, `pm/spine-routes-app.html`).
