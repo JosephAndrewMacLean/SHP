@@ -77,6 +77,18 @@ from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
 >   minimally invasive bunion surgery 2.4k/**12** · plantar fasciitis treatment
 >   60.5k/67 · heel pain 49.5k/63 · ingrown toenail removal 22.2k/40 ·
 >   podiatrist troy mi 210/**12**.
+> - **URL-inspection follow-up (same day, GSC):** consolidation confirmed NOT
+>   started — and worse than "not redirected": `/bunion-pain/` is **"Submitted and
+>   indexed"** (crawled Aug 2), **still listed in `sitemap_index.xml`**, and
+>   internally linked from blog archive pages — the sitemap actively nominates the
+>   duplicate. Week-of Jul 28–Aug 3 shows cannibalization volatility: Google now
+>   prefers `/conditions/bunions/` (pos ~8.2) while `/treatment/bunionectomy/`
+>   slid to ~24.8 (was ~10 over 90d). One nuance the other way: the no-trailing-slash
+>   Achilles variant is a proper **"Page with redirect"** to the slash version
+>   (standard WordPress canonicalization) — that duplicate self-resolves; its
+>   separate GSC stats were historical attribution, not a live second page.
+>   No consolidation task exists yet in `pm/master-task-list.csv`; Cardinal's
+>   adjacent items (TKA consolidation, Southfield 9-URL) remain ⬜ (§4).
 
 ---
 
