@@ -5,7 +5,8 @@ recommendation — *what did they recommend, what is the verified status on our 
 today, and which instrument measures it going forward.* All opportunity work in this
 workspace hangs off this document.
 
-**Last verified: 2026-07-22** · Sources: GA4 API (property 370514163), Semrush
+**Last verified: 2026-07-22 (full pass) · 2026-08-04 (Foot & Ankle vertical — see
+re-check note)** · Sources: GA4 API (property 370514163), Semrush
 (project "SHP Spine 2026", Site Audit snapshot Jul 21), direct site checks (network
 allowlist added 2026-07-22 — note: Cloudflare serves a bot challenge to non-browser
 requests, so page-level title/meta checks still need a real-browser pass or Cardinal
@@ -47,6 +48,35 @@ from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
 >   the security level should be checked (an "Under Attack"-style setting sweeping
 >   all paths would look exactly like this).
 > - No new Semrush crawl since Jul 21 (issue counts stand).
+
+> **Re-check 2026-08-04 — Foot & Ankle vertical (GSC May 5–Aug 3 + Semrush keyword
+> pull; supports the Dr. Sorensen / Troy content push — full plan:
+> `playbooks/foot-ankle-troy-content-roadmap.md`):**
+> - ❌ **Cardinal's parallel-URL-structures finding confirmed live on foot topics:**
+>   bunions split across ≥6 URLs (`/conditions/bunions/`, `/bunion-pain/`,
+>   `/bunion-relief/`, legacy `/conditions-we-treat/foot-ankle-conditions/…`,
+>   `/treatment/bunionectomy/`, old blog post); plantar fasciitis ×2; Achilles ×3
+>   plus a no-trailing-slash duplicate indexed separately (pos 16 vs 61). Four
+>   structures total incl. `/specialties/podiatry/…`. No consolidation visible.
+> - ❌ **The TKA/carpal-tunnel title-meta failure class has a foot instance:**
+>   `/treatment/ankle-arthroscopy/` = 3,497 impressions at pos 8.4 with **0 clicks**
+>   (90d) — page-1 ranking, zero capture.
+> - 🟠 Foot pages are in striking distance, not absent: bunions pos ~10.7 ·
+>   bunionectomy ~10.2 · foot-stress-fracture ~10.6 · plantar fasciitis ~20.1 ·
+>   ankle sprain ~20.9 · flatfoot ~30; the `/specialty/foot-ankle-specialists/` hub
+>   itself sits at **pos ~25** on 2.4k impressions.
+> - ❌ **Hyper-local gap quantified for Troy:** zero Troy-modified foot/podiatry
+>   queries in our top-60 foot query set; Southfield (Michfoot legacy) holds the
+>   local equity ("podiatrist southfield" 375 impr pos 3.6; "foot doctor southfield"
+>   241 impr pos 3.0). "podiatrist near me" steady vs. audit baseline: 336 impr /
+>   13 clicks / pos 5.1 (was 328 / 11 / 4.65).
+> - 🟠 **Physician-bio E-E-A-T instance:** "dr sorensen podiatrist" + variants ≈150
+>   impressions at pos 7–9, 2 clicks — a provider not owning his own-name query
+>   (bio schema errors remain Cardinal's open fix, item 10).
+> - Demand context (Semrush US, monthly vol/KD): bunion surgery 33.1k/44 ·
+>   minimally invasive bunion surgery 2.4k/**12** · plantar fasciitis treatment
+>   60.5k/67 · heel pain 49.5k/63 · ingrown toenail removal 22.2k/40 ·
+>   podiatrist troy mi 210/**12**.
 
 ---
 

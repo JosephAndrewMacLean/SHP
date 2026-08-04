@@ -151,6 +151,10 @@ already looking for exactly what you do actually find you.
 
 ## INTERNAL — marketing team notes (remove before sending to Dr. Sorensen)
 
+> **Companion doc:** `playbooks/foot-ankle-troy-content-roadmap.md` — the data-grounded
+> page plan (Semrush volumes + GSC baselines, 2026-08-04) that his answers re-order and
+> unlock. His Part 2 stars set the wave order; Part 3 answers become the page FAQs.
+
 ### What his answers feed (mapped to Cardinal June 2026 recommendations)
 
 | Questionnaire section | What we build from it | Cardinal recommendation it serves |
