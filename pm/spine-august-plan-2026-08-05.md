@@ -3,8 +3,9 @@
 > Built for the marketing meeting. Data sources: the week-of-8/3 new-patient export
 > (`data__20260805`, new patients by service line × provider, first-appt dates 8/3–8/7)
 > and the live `Consolidated Priority To-Do` (Notion) through the 8/4 transcripts.
-> Goal figures use July's plan (spine 352/mo, ortho 522/mo) as the working target —
-> **confirm against the actual August budget** (2026 Budget page).
+> Goals are the confirmed August figures from the **2026 New-Patients-by-Channel budget
+> (7.29)** — core service lines, before-PA basis: spine 305/mo, ortho 446/mo,
+> core total 1,137 (PA/Mid-Level of 123 excluded, matching the booked counts).
 
 ---
 
@@ -12,22 +13,23 @@
 
 **Week 1 (8/3–8/7) booked new patients — from the uploaded export:**
 
-| Service line | Wk-1 booked | If pace holds (×4.4 wks) | Aug goal (July plan) | Run-rate % to plan | Board run-rate target |
+| Service line | Wk-1 booked | If pace holds (×4.2 wks) | Aug goal (2026 budget) | Run-rate % to plan | Board run-rate target |
 |---|---|---|---|---|---|
-| **Spine** | **67** | ~295 | 352 | **~84%** | 60+/wk → **beating it** |
-| **Ortho** | **132** | ~580 | 522 | **~111%** | 120+/wk → **beating it** |
-| Foot | 44 | ~195 | — | — | — |
-| Hand | 9 | ~40 | — | — | — |
-| Pain & Other | 6 | ~27 | — | — | — |
-| Primary Care | 4 | ~18 | — | — | — |
-| **Total** | **262** | ~1,160 | 1,333 | ~87% | — |
+| **Spine** | **67** | ~281 | 305 | **~92%** | 60+/wk → **beating it** |
+| **Ortho** | **132** | ~554 | 446 | **~124%** | 120+/wk → **beating it** |
+| Foot | 44 | ~185 | 197 | ~94% | — |
+| Hand | 9 | ~38 | 94 | ~40% (lumpy) | — |
+| Pain | 6 | ~25 | 70 | ~36% (lumpy) | — |
+| PCP | 4 | ~17 | 25 | ~68% | — |
+| **Total** | **262** | ~1,100 | 1,137 | ~97% | — |
 
 **Spine by provider (Wk 1):** Varghese 20 · Maslak 19 · **McCarty 16** · Salar 11 · Zamorano 1.
 
 **Read:**
-- Spine at 67 is a real step up from July's **56% of plan (201/352)** — if it holds it's ~84%, and it clears the 60+/week stabilization target. Varghese's return (20) is doing exactly what was predicted; Maslak (19) and McCarty (16) round out the core.
+- Spine at 67 is a real step up from July's **64% of plan (201/315, budget basis)** — if it holds it's ~92% of the 305 August budget, and it clears the 60+/week stabilization target. Varghese's return (20) is doing exactly what was predicted; Maslak (19) and McCarty (16) round out the core.
 - **McCarty is the one converting new patients to surgery at benchmark (~8%)** — his 16 are the most valuable of the set. The other three spine surgeons convert at 2–4%, so volume ≠ revenue until that closes (a clinical-ops flag, but it caps this plan's payoff).
 - **Caveats before you report this:** 8/6–8/7 are future bookings (today is 8/5), so the 67 can still move; Friday 8/7 looks light (7 spine). These are *booked*, not *kept* — pair with the booked-to-kept rate. Zamorano at 1 is worth a scheduling look.
+- **Channel split of the 305 spine goal (from the by-Channel budget):** ~**240 B2C + natural (79%)** and ~**65 B2B referrals (21%)** — i.e., section 2 (B2C) owns roughly four-fifths of the spine number and section 3 (B2B) the rest. Weekly, that's ~57 B2C and ~16 B2B new spine patients.
 
 ---
 
