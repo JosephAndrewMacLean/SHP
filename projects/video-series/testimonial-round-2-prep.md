@@ -3,8 +3,9 @@
 **For:** Joe · Michael · Marina (clinical liaison) · **Date:** 2026-08-06
 **Status:** Process ready. Blocked only on Marina's clinical pass + signed authorizations.
 
-This is Michael's action item #3: he has six candidate patients for the next round of
-testimonials and wants to cross-reference specifics from their case studies against the
+This is Michael's action item #3: he has **six to eight** candidate patients for the
+next round of testimonials (six named so far; up to two more may come from the surgeon
+B-roll days) and wants to cross-reference specifics from their case studies against the
 keyword list (item 1) and department outlines (item 2) when contacting them, prioritizing
 younger patients. This doc is how we do that without creating a HIPAA problem.
 
@@ -52,13 +53,28 @@ going. (Also FTC-smart: a range of ages/outcomes reads as typical, not cherry-pi
 5. **Schedule the shoot**, matched to condition-relevant location b-roll where possible
    (e.g., a knee-replacement story shot in the PT gym ties round 2 to the Livonia videos).
 
+## The v1 → v2 bar (set on the 8/6 review call)
+
+Round 1 captured great whole stories. Round 2 keeps the whole story but adds three
+things, systematically, per video:
+
+1. **The handoff moment.** The beat where one part of Synergy handed the patient to
+   another — a back follow-up that became "it's actually your neck," PT → surgeon,
+   recovery → pharmacy before the drive home. Ask for it explicitly, shoot around it,
+   cut to feature it. This is "under one roof" *shown*, never said as a slogan.
+2. **The condition + level, named.** Where it's natural, the patient says it the way
+   people search: "my herniated disc at L4-L5." (Language map in `keyword-targets.md`.)
+3. **A doctor intro quote.** 1–2 lines from the treating physician naming the
+   condition/technique — recorded when crews are on site — matched to the treatment
+   landing page the video will live on. Joe brokers the physician asks.
+
 ---
 
 ## Cross-reference worksheet (fill per candidate — keep OUT of this repo once populated with details)
 
-| Code | Age band | Condition / procedure (per Marina) | Surgeon | Keyword cluster (from keyword-targets.md) | Question prompts to use | Target embed page |
-|---|---|---|---|---|---|---|
-| C1 | 20s | *e.g., herniated disc → microdiscectomy* | *e.g., Dr. Maslak* | herniated disc treatment (22.2K) · microdiscectomy recovery (1.6K) · "back to work" | "What did the pain feel like?" · "Do you really need spine surgery — what did they tell you?" | /conditions/…/herniated-disc |
+| Code | Age band | Condition / procedure (per Marina) | Surgeon | Keyword cluster (from keyword-targets.md) | Handoff moment to feature | Question prompts to use | Target embed page |
+|---|---|---|---|---|---|---|---|
+| C1 | 20s | *e.g., herniated disc → microdiscectomy* | *e.g., Dr. Maslak* | herniated disc treatment (22.2K) · microdiscectomy recovery (1.6K) · "back to work" | *e.g., PT plateau → walked to the surgeon* | "What did the pain feel like?" · "Do you really need spine surgery — what did they tell you?" | /conditions/…/herniated-disc |
 | C2 | 30s | | | | | |
 | C3 | 30s–40s | | | | | |
 | C4 | 50s | | | | | |
@@ -90,10 +106,13 @@ their own words — that's what makes the transcript rank and get cited.
    *(elicits the condition term — herniated disc, stenosis, carpal tunnel)*
 4. **The treatment:** "What procedure did you end up having? What was the day like?"
    *(elicits the procedure term; ASC patients: same-day surgery story)*
-5. **Recovery:** "How long before you were back at work / driving / playing ___?"
+5. **The handoff:** "Was there a moment they sent you across the hall — a different
+   specialist, physical therapy, the pharmacy? How did that go?"
+   *(the round-2 focus: under-one-roof shown in the patient's own words)*
+6. **Recovery:** "How long before you were back at work / driving / playing ___?"
    *(elicits recovery-time numbers — the biggest question cluster in search)*
-6. **Now:** "What can you do today that you couldn't a year ago?"
-7. **Direct address:** "Someone's watching this with the same [condition] — what would
+7. **Now:** "What can you do today that you couldn't a year ago?"
+8. **Direct address:** "Someone's watching this with the same [condition] — what would
    you tell them?" *(snippet-ready, first-person answer)*
 
 **Younger candidates (C1-type):** lean into "in my 20s/30s," return-to-work,

@@ -145,7 +145,7 @@ clean spoken definition.
 - ⚠️ Compliance: no "safer/better than a hospital" claims. Say "designed specifically
   for orthopedic and spine procedures," "you recover at home the same day."
 
-### 4. Testimonials — round 2 (six candidates)
+### 4. Testimonials — round 2 (six to eight candidates)
 
 Match each patient's actual condition/procedure to a Tier-1 term and steer the interview
 so they *name* it (see `testimonial-round-2-prep.md` for the PHI-safe workflow). The
@@ -172,6 +172,47 @@ in their own words: **"Mendelson Kornblum is now Synergy Health Partners"** — 
 finally rebranding the YouTube channel (prerequisite below).
 
 ---
+
+## Clinical ↔ patient language map (the "fluency sheet" promised on the 8/6 call)
+
+Patients search in plain words; clinicians speak anatomy. We want **both in the same
+transcript**: plain terms carry the search volume, clinical terms + vertebra levels
+carry precision for semantic search. Let the patient say it plain, let the clinician
+say it precise — and when the clinical word comes out, pair it: "radiculopathy — what
+most people call sciatica."
+
+| Clinician says | Patients search | On-camera guidance |
+|---|---|---|
+| radiculopathy | sciatica · pinched nerve · "shooting pain down my leg" | Always pair with "sciatica" |
+| cervical spine · C4–C7 | neck pain · neck surgery | Name the level — "the problem was at C4" |
+| lumbar spine · L4–L5 | lower back pain · "herniated disc L4-L5" | Level-specific phrasing is literally how people search |
+| disc herniation | herniated disc · slipped disc · bulging disc | |
+| spinal stenosis | "narrowing of the spine" | Define it in one spoken sentence |
+| cervical fusion / ACDF / "a cage" | neck fusion · neck stabilization surgery | A round-1 patient already says "a cage around my neck" — keep that language in cuts |
+| microdiscectomy · decompression | minimally invasive back surgery | |
+| arthroplasty | knee replacement · hip replacement | Never say "arthroplasty" unpaired |
+| conservative care | "physical therapy first" · non-surgical treatment | The PT-program frame: most patients never need surgery |
+| interventional pain management | injections · nerve blocks | |
+
+Shortcut (Mick's point on the call): **PTs narrate case patterns naturally** — "they
+came in with a C4 issue and we walked them across the hall" — one bite delivers the
+level-specific term AND the handoff story. Ask for case-pattern stories (no real
+patient identifiers) in every staff interview.
+
+## What round 1 already banked (so round 2 fills gaps, not repeats)
+
+The four delivered testimonials (+ a knee story in final polish) already cover: two
+cervical/neck journeys (with natural "cage"/stabilization language; Dr. McCarty and
+Dr. Salar), a complex multi-procedure spine recovery (Dr. Salar), a return-to-sport
+story (pickleball), and PT at Synergy in Livonia with "Sue" name-checked on camera.
+So: neck pain/surgery, spine-surgery decision language, PT-Livonia, and
+return-to-activity are covered.
+
+**Round-2 priority gaps:** sciatica/radiculopathy · herniated disc **with the level
+named** · spinal stenosis · fusion or microdiscectomy recovery · carpal tunnel ·
+knee/hip replacement (runway into the Mendelson ortho films) · and at least one story
+with a clean **handoff moment** — the round-1 "came in for a back follow-up, turned out
+it was the neck" reveal is the model.
 
 ## Question bank — phrase interview questions exactly like this
 
@@ -225,7 +266,11 @@ Saying the words only pays off if publishing carries them. Non-negotiables per v
 4. **Embed each video on its matching page** (PT video → PT + Livonia pages; ASC video →
    surgery-center page; testimonials → matching condition/treatment page) **with
    VideoObject schema** — currently absent on all 423 pages; unlocks video rich results
-   and AI Overview multimedia citation.
+   and AI Overview multimedia citation. **Confirmed 8/6:** the new top-of-funnel
+   treatment landing pages (sciatica treatment, spinal stenosis treatment, …) are the
+   embed homes for testimonials — and each round-2 testimonial gets a 1–2 line **doctor
+   intro quote naming the condition/technique**, so the page, the video, and the search
+   intent all match.
 5. **Capture 9:16 versions** on the shoot day (Cardinal: 16:9 underperforms in feed) and
    end on the **single Synergy end card** (kill the double Mendelson cards).
 6. **UTM-tagged links** in every YouTube description so GA4 shows video → booking.

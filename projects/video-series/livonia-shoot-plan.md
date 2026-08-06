@@ -52,6 +52,13 @@ Synergy Health Partners — Livonia (video-relevant slice)
 > **⚠️ Two Sues in PT.** The roster has **Sue Cash, PT** (spine-care certifications —
 > almost certainly the "key person in PT" Michael heard about) and **Sue Piotrowski,
 > PTA**. Joe: confirm which Sue before pre-interviews so we brief the right person.
+>
+> **Update from the 8/6 review call:** round-1 testimonial patients name-check "Sue"
+> as their PT at the Livonia clinic on camera — so Sue is confirmed patient-facing at
+> Livonia PT, already appears in shot B-roll, and Michael wants her interviewed. Katie
+> is being asked how the department is structured and whether Sue can speak for the
+> program or we add others (Michael's "is that Colin?" on the call ≈ **Cullen Lane**,
+> the PT/OT Manager). Cash-vs.-Piotrowski still needs the formal confirm.
 
 > **❓ Which facility is "the new ASC"?** GSC shows patients searching three names:
 > "synergy surgery center" (962 impressions), "synergy spine and orthopedic surgery
@@ -114,10 +121,24 @@ Shared spec: 2:00 target · shoot 16:9 **and** capture 9:16 for social · natura
 straight-on framing · single Synergy end card (never the legacy Mendelson cards) ·
 lower-third with name + credentials · say brand + "in Livonia" once each.
 
+**Language rules from the 8/6 call:** never say "integrated care model" on camera —
+it's corporate speak. **Show** the handoff instead, and say it warm: "under one roof,"
+first names, "they walked me across the hall." What production keeps hearing from
+patients: *intimacy, above-and-beyond, everyone's on a first-name basis ("it's Sue")* —
+that's the register. And never disparage hospital systems on camera; make the contrast
+by describing us (personal, first-name, carried through the whole process), not them.
+
 ### Video A — Physical Therapy (2:00)
 
 **Search job:** convert the Livonia-PT rankings we already own (~1,500 impressions/90
 days, under 15 clicks). Embed on the PT service page + Livonia location page.
+
+**Scope (per the 8/6 call):** the **whole PT program**, not just spine — back *and*
+knee/joint/sports, since this is the runway into the Mendelson ortho films. Frame it
+conservative-first: most patients get better without surgery; for the ones who need
+it, the surgeons are across the hall — PT as both a destination and the front porch
+of the surgical story. Capture PTs telling **case-pattern stories with levels** ("a
+C4 issue → we brought the surgeon in") — no real patient identifiers.
 
 | Time | Beat | Notes / must-say |
 |---|---|---|
@@ -185,13 +206,30 @@ role-play); surgeon scrubbing in.
 
 ---
 
-## 6. Open items for Joe (the unblock list)
+## 6. Open items after the 8/6 review call
 
-1. Confirm **which Sue** (Sue Cash, PT vs. Sue Piotrowski, PTA) — and that she's game.
-2. Get **pharmacist-in-charge name** (route: Mitch Misiak / Andrew Cox).
-3. Confirm **Katie's surname + sign-off** on ASC shoot timing and topics.
-4. Confirm **which facility is "the new ASC"** + its exact on-camera name.
-5. Confirm **who is Livonia-based** on the PT floor list above.
-6. Ask **one surgeon** (McCarty / Maslak / Varghese) for a 20-minute ASC segment.
-7. Confirm **same-week appointments** is still honorable before we say it on camera.
-8. Send Michael the confirmed names + this doc so pre-interviews can start.
+**Joe owes this week:**
+1. **Today (promised by end of day):** send Michael `keyword-targets.md` — it now
+   includes the clinical↔patient language map, which also covers the end-of-week
+   "fluency sheet" promise from the call.
+2. **Start email chain #1 — department contacts** (draft in the project README):
+   ask Katie for PT structure (can Sue speak for the program, or add Cullen/Edyta?)
+   + ASC access day; Mitch Misiak / Andrew Cox for the pharmacist-in-charge.
+3. **Reply on email chain #2** when Michael sends the 6–8 testimonial names: per
+   candidate — handoff moment + condition/level + doctor-quote ask — via the consent
+   process in `testimonial-round-2-prep.md` (no PHI in email beyond need-to-know).
+4. Confirm **which Sue** (Cash, PT vs. Piotrowski, PTA) and that she's up for camera.
+5. Confirm the **exact on-camera name of the Livonia ASC** (call confirmed the venue
+   is Livonia; the public-facing name still needs the check against GSC-searched names).
+6. **Verify Michael's invoice is paid** — net-30 lands 8/7.
+7. Route the published doctor videos to the **compliance officer** before Michael's
+   team posts them on their LinkedIn/social (Randall out; Joe carries it).
+8. **B-roll sweep** before board/social use: no proprietary info on screens, blur
+   check, background brands in patient-home footage (Michael's flag).
+9. Ask **one surgeon** (McCarty / Maslak / Varghese) for a 20-minute ASC segment, and
+   confirm **same-week appointments** is still honorable before anyone says it on camera.
+
+**Scheduling frame:** PT + pharmacy in one Livonia morning; ASC the same day if access
+allows (Michael's fine coming back a second day). **Board meeting Aug 18** — plan
+around it; the round-1 testimonials are likely to be shown there. Mendelsons: late
+August / September.

@@ -7,10 +7,10 @@
 
 | # | Piece | Status |
 |---|---|---|
-| 1 | Round-1 testimonials (4 patients) | ✅ Shot; Michael showing Marina for the round-2 review |
-| 2 | Livonia department day — PT · Pharmacy · New ASC (three 2:00s) | 🎯 Next shoot day — plan ready, names to confirm |
-| 3 | Round-2 testimonials (6 candidates, younger skew) | Awaiting Marina's clinical pass + consent packets |
-| 4 | Mendelson brothers + Herb legacy film | 🕓 Parked until schedules open (late summer) — ready anytime |
+| 1 | Round-1 testimonials | ✅ 4 delivered + reviewed with Michael 8/6 (strong — board-worthy); a 5th (knee patient met in PT) in final polish; 10–15s 9:16 cutdowns of everything coming next |
+| 2 | Livonia department day — PT · Pharmacy · Livonia ASC (three 2:00s) | 🎯 Green-lit on the 8/6 call — PT + pharmacy one morning, ASC same day if access allows; contacts being confirmed via Katie |
+| 3 | Round-2 testimonials (6–8 candidates, younger skew) | Michael sending names; v2 bar = handoff moment + condition/level named + doctor intro quote; consent packet before contact |
+| 4 | Mendelson brothers + Herb legacy film | 🕓 Late Aug–Sept (vacations; ortho busy) — sequenced after the department videos |
 
 ## Michael's action items → deliverables
 
@@ -44,59 +44,39 @@
 6. ☐ UTM-tagged links in description (video → GA4 → booking attribution)
 7. ☐ Draft-pending-review: marketing + clinical sign-off before public
 
-## Draft reply to Michael (Joe to edit/send)
+## The two email chains (agreed on the 8/6 review call)
 
-> Michael —
+**Chain #1 — department contacts. Joe starts it** (to Katie + ops, cc Michael). Draft:
+
+> Subject: Video shoot — who tells the story in PT, Pharmacy, and the Livonia ASC?
 >
-> Great list. Here's where we are on all four:
+> Katie / team — Michael's crew is planning a morning in Livonia to shoot three short
+> program videos: physical therapy, the pharmacy, and (same day if access works) the
+> surgery center. For each area, who are the right one or two people to speak for the
+> program on camera — and can Michael's team do a 15-minute phone pre-interview with
+> them this week?
 >
-> **1. Key terms — done.** Attached is the keyword doc. Short version: every video gets
-> one primary term said naturally 2–3 times, brand + "in Livonia" once each, and
-> interview questions phrased the way people actually search (there's a question bank in
-> the doc — steal from it verbatim). Biggest gaps we need spoken on camera across the
-> series: sciatica, herniated disc, spinal stenosis, carpal tunnel, knee replacement
-> recovery, and "minimally invasive spine surgery." Also one honest note: the pharmacy
-> piece isn't a search play — it's our "everything under one roof" proof video, and
-> that's the right job for it.
+> For PT specifically: patients in our first testimonials name-check Sue — can she
+> speak for the whole department, or should we add Cullen / Edyta or others? For the
+> pharmacy: who's our pharmacist-in-charge in Livonia? For the ASC: what day/time
+> works around the surgical schedule, and is anything off-limits to film?
 >
-> **2. Livonia day — org chart attached.** PT is mostly named: heads-up that we have two
-> Sues (Sue Cash, our spine-certified PT — almost certainly who you heard about — and
-> Sue Piotrowski, a PTA); I'm confirming which and will send the pharmacy lead and ASC
-> names this week — pharmacy staffing isn't in any of my public data, so I'm pulling
-> those internally. Beat sheets for all three 2:00s are in the shoot plan, with must-say
-> terms baked in. You can run the pre-interviews once I send names; I'd like to join the
-> ASC one personally (some internal sensitivities on how we frame the surgery center —
-> nothing that blocks the shoot).
->
-> **3. Testimonials — yes, with one guardrail.** Love the younger skew; it matches where
-> our patient base is actually going (18–34 share is up 15%→21%). Two process points:
-> let's run the six through Marina exactly as you suggested, and get signed HIPAA
-> authorization + media release *before* case details or contact info move between us —
-> keeps all of us clean. Once Marina confirms conditions/procedures, I'll map each
-> person to the keyword clusters so your interviewers know exactly which terms to draw
-> out. Prep doc attached with the interview arc.
->
-> **4. Mendelsons —** agreed on timing. One pre-load: when we do shoot the brothers,
-> the single most valuable sentence in the whole film is one of them saying "Mendelson
-> Kornblum is now Synergy Health Partners" — the old name still gets ~3,000 searches a
-> quarter and that transcript line captures them.
->
-> **What was missed — two things, both mine:**
-> - **Publishing plumbing.** Before the next upload, the YouTube channel has to be
->   rebranded off @mendelsonortho, and every video needs a transcript, a keyword title,
->   and an embed on the matching site page — otherwise the terms we work to get on
->   camera never get found. I own this checklist.
-> - **Paperwork.** Staff releases for the Livonia day and the patient consent packet
->   (HIPAA authorization + media release + FTC disclosure) for round 2 — I'll get both
->   packets to you before pre-interviews.
->
-> Names to you this week. — Joe
+> The one-page outline of what each video covers is attached. — Joe
+
+**Chain #2 — round-2 testimonials. Michael starts it** (sends Joe the 6–8 names).
+Joe's reply, per candidate — *after* Marina's clinical pass and signed consents, with
+case details kept to clinical-side channels: the **condition + level**, the **handoff
+moment** in their story, the **treatment landing page** the video will live on, and
+the **doctor-quote ask** ("could Dr. ___ give us two lines on this condition/technique
+when you're on site?").
 
 ## Open items (Joe)
 
-The full unblock list is in `livonia-shoot-plan.md` §6 — headline items: which Sue ·
-pharmacy lead name · Katie's sign-off + ASC facility name · surgeon for the ASC segment ·
-consent + release packets to Michael.
+The full post-call unblock list is in `livonia-shoot-plan.md` §6 — headline items:
+**keyword list to Michael today (promised EOD)** · start chain #1 · **invoice check
+(net-30 lands 8/7)** · compliance review before Michael's team posts doctor videos on
+their social (Randall out) · which Sue · pharmacist-in-charge · exact ASC on-camera
+name · B-roll proprietary/blur sweep before the Aug 18 board meeting.
 
 ---
 
