@@ -6,8 +6,14 @@ New pain-medicine physician. **Starts Sept 1.** Photo shoot Aug 10. Work top to 
 scripts are in **`assets/heyl-launch/`** — start at its `README.md`, which covers how to publish,
 who has to review what, and the handful of things you have to create yourself.
 
-*Why each item matters, with the data behind it: `heyl-launch-reference.md`. Task rows for the
-PM sheet: `pm/heyl-launch-tasks.csv`.*
+> **Updated 2026-07-30 for the semantic model.** The Pain Management service line is gone, but its
+> replacement — conditions and treatments — is already live, and **12 of his 13 procedures already
+> have ranking pages.** Most of the content work is naming him on pages that exist rather than
+> writing new ones. Background: `assets/heyl-launch/26-semantic-model-mapping.md`. The data:
+> `27-heyl-treatment-map.csv`.
+
+*Why each item matters, with the numbers: `heyl-launch-reference.md`. Task rows for the PM sheet:
+`pm/heyl-launch-tasks.csv`.*
 
 ---
 
@@ -36,6 +42,11 @@ PM sheet: `pm/heyl-launch-tasks.csv`.*
   ask once. If it's a no, drop it.
 - [ ] **Write the one-page rules sheet** (the three rules above, with approved wording) and send it
   to content, Kristen, Kelly, Blue Ox, and Cardinal.
+- [ ] **Ask Paul three questions.** These gate all of the September work, so ask now:
+  1. Can a provider be linked to a treatment in the CMS? *(If not, that's the one thing worth
+     building — it makes every future physician launch trivial.)*
+  2. Do condition pages already link to their treatments?
+  3. Can the dead `/specialties/pain-management/` URLs be redirected? Map is in `27-`.
 
 ## Before the shoot (by Aug 14)
 
@@ -46,8 +57,9 @@ PM sheet: `pm/heyl-launch-tasks.csv`.*
 - [ ] **Claim his bio URL now: `/providers/jonathan-heyl-do/`.** Block every variant.
   ⚠️ *Oddo, Kevin Lee, and Singh each have two competing bio pages splitting their traffic. Singh's
   misspelled page outranks his real one. Free to prevent, painful to fix later.*
-- [ ] **Map the pain-page URL mess** and send it to Cardinal/Paul. There are six different URL
-  patterns for one service. Don't add a seventh.
+- [ ] **Send Paul the redirect map** from `27-heyl-treatment-map.csv` — 12 dead
+  `/specialties/pain-management/` URLs pointing to their live `/treatment/` equivalents. One of them
+  still ranks at position 6.0, so flag that one to redirect carefully and watch it.
 
 ## Rest of August
 
@@ -56,13 +68,12 @@ PM sheet: `pm/heyl-launch-tasks.csv`.*
 - [ ] Write his page title and description. Check it doesn't duplicate an existing one.
 - [ ] **Spec his page's schema by hand.** Don't let it inherit the template — 446 markup errors are
   still open sitewide.
-- [ ] **Make sure the CMS doesn't auto-link him to kyphoplasty or ketamine.** Both pages are live.
-  Check in staging before publish.
-- [ ] **Rewrite the main pain page** (`/treatment/pain-management/`). It gets ~9,900 searches shown
-  and 50 clicks. Plain language, name the doctors, add "when to see a surgeon vs. a pain doctor."
-- [ ] **Start rebuilding his procedure pages, 2–3 a week.** Easiest first:
-  medial branch block → EMG → genicular nerve block → occipital nerve block → nerve blocks/PNS →
-  RFA → SI joint → epidural injections.
+- [ ] **Check the CMS doesn't auto-link him to kyphoplasty or ketamine.** The live one is
+  `/treatment/kyphoplasty-vertebroplasty/` (8,377 impressions). Check in staging before publish.
+- [ ] **Reframe the old pain page** (`/treatment/pain-management/`) as a **router**, not a
+  department. Keep the URL and its ~9,900 impressions; change it from "here's our department" to
+  "here's what hurts → the condition → the treatment → who does it." Drop the physician roster —
+  doctors attach to treatments now.
 - [ ] **Write the referral one-sheet** for Kristen's team — and say plainly *what not to send him*
   (widespread pain, fibromyalgia, heavy opioid cases). That's what makes referrers trust it.
 - [ ] **Write the internal routing sheet** — when to send someone to Heyl vs. the surgeons vs. the
@@ -75,6 +86,11 @@ PM sheet: `pm/heyl-launch-tasks.csv`.*
 ## Launch week (Sept 1)
 
 - [ ] Bio live.
+- [ ] **Name him on the 12 existing `/treatment/` pages.** This is the launch — those pages already
+  carry 44,264 searches shown between them. It's a data task, not a writing task. List in `27-`.
+- [ ] **Name him on the condition pages he treats** — sciatica, stenosis, radiculopathy, SI joint,
+  and the rest. Also in `27-`. The condition pages already link to the treatments, so this is what
+  makes him findable by what hurts.
 - [ ] Google Business listings live for **Livonia and Sterling Heights** (do it in the GBP screen —
   the API is still pending).
 - [ ] Six directory profiles live: Healthgrades, Vitals, WebMD, Doximity, Zocdoc, NPI.
@@ -89,30 +105,29 @@ PM sheet: `pm/heyl-launch-tasks.csv`.*
 
 ## September–October
 
-> **The content work shrank.** The Pain Management service line is gone, but its replacement —
-> conditions and treatments — is already built, and **12 of his 13 procedures already have ranking
-> pages.** Most of this is naming him on pages that exist, not writing new ones. See
-> `assets/heyl-launch/26-semantic-model-mapping.md`; the data is in `27-heyl-treatment-map.csv`.
+**Only two pages genuinely don't exist. Build those, improve three weak ones, then write.**
 
-- [ ] **Add him as a performing provider on 12 existing `/treatment/` pages.** A data task, not a
-  writing task. The list is in `27-heyl-treatment-map.csv`.
-- [ ] **Ask Paul the three questions in `26-`** — is there a provider↔treatment link in the CMS, do
-  condition pages link to treatments, and can the dead `/specialties/pain-management/` URLs be
-  redirected. That's the whole dependency.
-- [ ] **Build the two pages that genuinely don't exist:** genicular nerve block (5,400 searches,
-  almost no competition) and peripheral nerve stimulation — his #1 priority and the thing he came
-  here to build.
+- [ ] **Build: genicular nerve block.** 5,400 searches a month, almost no competition, and no page
+  anywhere on the site.
+- [ ] **Build: peripheral nerve stimulation.** His #1 priority and the thing he came here to build.
+  Include the temporary 60-day system if Operations confirms it.
 - [ ] **Cover neurogenic claudication where the model wants it** — a new "leg pain when walking"
-  symptom page feeding the existing spinal stenosis page, rather than a third stenosis page.
-  14,800 searches a month, and it fixes a duplicate on the way through. **Still the best single
-  opportunity in this launch.**
-- [ ] Article: **when to see a spine surgeon vs. a pain doctor** *(his idea, and it's the highest-value
+  symptom page feeding the existing spinal stenosis page, *not* a third stenosis page. 14,800
+  searches a month, and it fixes a duplicate on the way through. **Still the best single opportunity
+  in this launch.**
+- [ ] **Merge the duplicate stenosis pages** — `/conditions/lumbar-stenosis/` into
+  `/conditions/spinal-stenosis/`.
+- [ ] **Improve three live-but-weak pages** where his priorities and the numbers line up:
+  radiofrequency ablation (ranks 27.6 against demand sitting at 51–96), occipital nerve block
+  (ranks 19.4 on a 6,600/month term), and EMG.
+- [ ] Article: **when to see a spine surgeon vs. a pain doctor** *(his idea, and the highest-value
   one — it also sends the right patients to the right door)*.
 - [ ] Article: **what an EMG actually tells your doctor** — including whether it hurts and how long
   it takes. Lots of people ask; nobody local answers well.
+- [ ] **Build three condition pages he treats that we don't have:** complex regional pain syndrome,
+  focal headache / occipital neuralgia, and post-surgical pain.
 - [ ] Add FAQ sections with proper markup to his pages. We have **zero** on the whole site today.
 - [ ] Add him and his pages to `/llms.txt` so the AI tools can find him.
-- [ ] Build a peripheral-nerve page. It's his #1 focus and we have nothing on it.
 - [ ] Pitch neurology practices on migraine/occipital nerve blocks — nobody else courts them.
 - [ ] Send Blue Ox a small, targeted ad brief — sized to his real capacity, with the do-not-advertise
   list attached.
@@ -128,10 +143,24 @@ PM sheet: `pm/heyl-launch-tasks.csv`.*
 | Waiting for | Who | Blocks |
 |---|---|---|
 | 5 answers above | Dr. Heyl | His bio, the target list, the 90-day plan |
-| What's live day one | Operations | Every procedure page and ad |
+| What's live day one | Operations | Which treatment pages can name him, and every ad |
+| Can a provider link to a treatment in the CMS? | **Paul** | **The whole September plan** — ask this week |
 | Which insurance he takes | Credentialing | Phone screening |
 | Is Troy happening? | Operations | A third Google listing (Troy is our biggest untapped area) |
 | Boston Scientific patient-database idea | **Compliance — don't touch it yet** | — |
+
+---
+
+## Worth raising with Joe separately
+
+Three things this launch turned up that are bigger than this launch:
+
+- **The symptom layer barely exists.** One page with any traffic. It's the "I don't know what's
+  wrong with me" front door the model was designed around, and it's empty.
+- **Three current pain doctors have duplicate bio pages** splitting their traffic today. Small fix,
+  three physicians who already rank.
+- **An old Mendelson-branded blog post books more patients than any real pain page we own.** There
+  are probably others like it. Worth a sweep before someone tidies them away.
 
 ---
 
