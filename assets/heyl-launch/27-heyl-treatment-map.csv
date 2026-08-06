@@ -1,0 +1,59 @@
+Type,Heyl item (from questionnaire),Live URL,Status,Impressions 90d,Position,Action,Notes
+Treatment,Lumbar epidural injection,/treatment/lumbar-epidural-steroid-injection/,Cleared,1590,11.3,Add Heyl as performing provider,
+Treatment,Caudal epidural injection,/treatment/caudal-esi/,Cleared,9314,8.5,Add Heyl as performing provider,Strong page - 9314 impressions already
+Treatment,Cervical epidural injection,/treatment/injections-esi-facet-nerve-blocks/,Cleared,2098,9.7,Verify coverage then add Heyl,Umbrella page - check if it duplicates the specific injection pages
+Treatment,Medial branch blocks,/treatment/medial-branch-blocks-cervical-lumbar/,Cleared,2103,12.5,Add Heyl as performing provider,Target keyword 8100/mo at difficulty 14
+Treatment,Radiofrequency ablation,/treatment/radiofrequency-ablation/,Cleared,3515,27.6,Add Heyl + improve page,Position 27.6 is weak against a large demand family sitting at position 51-96
+Treatment,Sacroiliac joint injection,/treatment/si-joint-injection/,Cleared,4710,10.4,Add Heyl as performing provider,
+Treatment,Intra-articular joint injection,/treatment/joint-pain-injections/,Cleared,2119,11.0,Add Heyl as performing provider,His priority #4
+Treatment,Trigger-point injection,/treatment/trigger-point-injection/,Cleared,8422,11.4,Add Heyl as performing provider,
+Treatment,Peripheral nerve block,/treatment/peripheral-nerve-injection/,Cleared,7754,8.9,Add Heyl as performing provider,HIS PRIORITY #2 - strongest page in his set and already at position 8.9
+Treatment,Occipital / facial nerve block,/treatment/occipital-nerve-block/,Cleared,706,19.4,Add Heyl + improve page,Target keyword 6600/mo at difficulty 27 - backbone of the neurology referral push
+Treatment,EMG / electrodiagnostic testing,/treatment/emg/,Cleared,1034,9.2,Add Heyl + rewrite,HIS PRIORITY #5 - rewrite drafted in 12-emg-page.md (retarget to this URL)
+Treatment,Spinal cord stimulation,/treatment/spinal-cord-stimulator/,Cleared,2997,18.7,Add Heyl - do NOT feature,Capability not launch identity - never headline this
+Treatment,Genicular nerve block / ablation,NONE,Cleared,0,,BUILD NEW PAGE,GAP - 5400/mo at difficulty 19 and no page exists anywhere
+Treatment,Peripheral nerve stimulation,NONE,Cleared,0,,BUILD NEW PAGE,GAP - HIS PRIORITY #2 and what he came here to build. Include temporary 60-day system if Ops confirms
+Treatment,PRP injections,/treatment/prp-injections/,HOLD,26122,6.9,DO NOT attach Heyl,Strongest treatment page on the site but PRP is on hold until the cash-pay workflow is approved
+Treatment,Basivertebral nerve ablation,NONE,HOLD,0,,No action,Pending infrastructure
+Treatment,MILD / lumbar decompression,NONE,HOLD,0,,No action,Pending and requires alignment with SHP spine surgeons
+Treatment,Kyphoplasty / vertebral augmentation,/treatment/kyphoplasty-vertebroplasty/,NEVER,8377,18.2,BLOCK - verify no link to Heyl,Live page outside his guardrails - this is the URL 09-taxonomy-firewall-check.md must check
+Treatment,Long-term opioid management,,NEVER,,,Never associate,
+Treatment,Stem cell therapy,,NEVER,,,Never associate,
+Condition,Sciatica / radicular pain,/conditions/sciatica/,Treats,98,16.5,Add Heyl to treating providers,Weak page - 98 impressions. Worth improving alongside the launch
+Condition,Cervical radiculopathy,/conditions/cervical-radiculopathy/,Treats,787,15.8,Add Heyl to treating providers,
+Condition,Spinal stenosis,/conditions/spinal-stenosis/,Treats,550,18.3,Add Heyl + CONSOLIDATE,Duplicate of /conditions/lumbar-stenosis/ - merge and cover neurogenic claudication here
+Condition,Lumbar stenosis,/conditions/lumbar-stenosis/,Treats,105,23.2,301 to /conditions/spinal-stenosis/,DUPLICATE - two pages for one condition
+Condition,Degenerative spine conditions,/conditions/degenerative-disc-disease/,Treats,87,23.3,Add Heyl to treating providers,
+Condition,Herniated disc,/conditions/herniated-disc/,Treats,461,17.6,Add Heyl to treating providers,
+Condition,Sacroiliac joint pain,/conditions/si-joint-pain/,Treats,296,23.4,Add Heyl to treating providers,
+Condition,Arthritic back pain,/conditions/arthritic-back-pain/,Treats,1037,9.3,Add Heyl to treating providers,1037 impressions and zero clicks - title/meta fix is the quick win
+Condition,Spondylolisthesis,/conditions/spondylolisthesis/,Treats,1117,10.2,Add Heyl to treating providers,
+Condition,Peripheral mononeuropathy - carpal tunnel,/conditions/carpal-tunnel-syndrome/,Treats,877,15.1,Add Heyl for EMG / non-surgical,Coordinate with Hand - surgical cases stay with Dr. Bohm
+Condition,Peripheral mononeuropathy - Morton's neuroma,/conditions/mortons-neuroma/,Treats,1960,15.4,Add Heyl for nerve blocks,Coordinate with Foot and Ankle
+Condition,Knee osteoarthritis,/conditions/knee-osteoarthritis/,Treats,268,24.2,Add Heyl for genicular block / injection,Non-surgical route for patients who are not replacement candidates
+Condition,Hip osteoarthritis,/conditions/hip-osteoarthritis/,Treats,109,16.9,Add Heyl for injection,
+Condition,Shoulder arthritis,/conditions/shoulder-arthritis/,Treats,1288,21.1,Add Heyl for injection,
+Condition,Complex regional pain syndrome,NONE,Treats,0,,BUILD NEW PAGE,GAP - 480/mo at difficulty 30. His priority #1 area
+Condition,Focal headache / occipital neuralgia,NONE,Treats,0,,BUILD NEW PAGE,GAP - pairs with the occipital nerve block page and the neurology referral push
+Condition,Post-surgical / persistent post-operative pain,NONE,Treats,0,,BUILD NEW PAGE,GAP - no page exists
+Condition,Fibromyalgia,,NEVER,,,Never associate,Explicitly outside his practice
+Condition,Widespread / centralized pain,,NEVER,,,Never associate,Explicitly outside his practice
+Condition,Cancer-related pain,,NEVER,,,Never associate,Not part of his practice
+Symptom,Leg pain when walking,NONE,Entry point,0,,BUILD NEW PAGE,Routes to /conditions/spinal-stenosis/. Captures the 14800/mo neurogenic claudication demand
+Symptom,Numbness and tingling,NONE,Entry point,0,,BUILD NEW PAGE,Routes to nerve conditions and EMG
+Symptom,Nerve pain,NONE,Entry point,0,,BUILD NEW PAGE,His priority #1 in patient language
+Symptom,Back pain,NONE,Entry point,0,,Consider,Highest-volume symptom entry - scope with Cardinal not just this launch
+Symptom,Neck pain,NONE,Entry point,0,,Consider,
+Redirect,Old specialty URL,/specialties/pain-management/emg/,Deprecated,132,7.9,301 to /treatment/emg/,
+Redirect,Old specialty URL,/specialties/pain-management/peripheral-nerve-injection/,Deprecated,1,,301 to /treatment/peripheral-nerve-injection/,
+Redirect,Old specialty URL,/specialties/pain-management/trigger-point-injection/,Deprecated,2,,301 to /treatment/trigger-point-injection/,
+Redirect,Old specialty URL,/specialties/pain-management/lumbar-rfa-radiofrequency-ablation/,Deprecated,1,,301 to /treatment/radiofrequency-ablation/,
+Redirect,Old specialty URL,/specialties/pain-management/lumbar-medial-branch-block/,Deprecated,525,6.0,301 to /treatment/medial-branch-blocks-cervical-lumbar/,Still ranks 6.0 - redirect carefully and monitor
+Redirect,Old specialty URL,/specialties/pain-management/cervical-medial-branch-block/,Deprecated,144,6.7,301 to /treatment/medial-branch-blocks-cervical-lumbar/,
+Redirect,Old specialty URL,/specialties/pain-management/spinal-cord-stimulator/,Deprecated,29,3.7,301 to /treatment/spinal-cord-stimulator/,
+Redirect,Old specialty URL,/specialties/pain-management/caudal-epidural-steroid-injection-caudal-esi/,Deprecated,1,,301 to /treatment/caudal-esi/,
+Redirect,Old specialty URL,/specialties/pain-management/cervical-epidural-steroid-injection/,Deprecated,2,,301 to /treatment/injections-esi-facet-nerve-blocks/,
+Redirect,Old specialty URL,/specialties/pain-management/joint-pain-injections/,Deprecated,137,35.7,301 to /treatment/joint-pain-injections/,
+Redirect,Old specialty URL,/specialties/pain-management/kyphoplasty/,Deprecated,169,14.2,301 to /treatment/kyphoplasty-vertebroplasty/,Never link Heyl to either URL
+Redirect,Old specialty URL,/specialties/pain-management/ketamine-infusion/,Deprecated,159,16.0,Decide with Clinical,No /treatment/ equivalent found - confirm the service is still offered
+Reframe,Deprecated service line,/treatment/pain-management/,Deprecated,9856,18.2,Reframe as non-surgical pain pathway router,Keep the URL and the 9856 impressions - stop being a department listing

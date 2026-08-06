@@ -4,6 +4,19 @@
 **Status:** DRAFT — requires physician review
 **Owner:** Randall · **Target live:** Aug 28
 
+> ⚠️ **Reframed 2026-07-30. Don't rebuild this as a service line.**
+>
+> The Pain Management service line was deliberately deprecated in favour of the symptom → condition →
+> treatment model. This page is the vestige — but it still pulls **9,856 impressions**, and "pain
+> management doctor near me" is a real 2,400/month query, so deleting it throws away demand.
+>
+> **Keep the URL. Change what the page is:** from a department listing to a **router** that sends
+> people into the model — what hurts → the condition → the treatment → who performs it.
+>
+> The "start where you are" block below is already written that way and becomes the point of the
+> page rather than a section of it. **Cut the "our pain physicians" roster** — physicians attach to
+> treatments now, not to a department. See `26-semantic-model-mapping.md`.
+
 ---
 
 ## Why this page, and why it's urgent

@@ -37,6 +37,15 @@ who has to sign off, and the handful of things only you can make.
 | 23 | `23-paid-brief-blue-ox.md` | Ad brief with the compliance list | Hold until 05 is back |
 | 24 | `24-post-exam-checklist.md` | Everything to change when he's certified | Set the reminder |
 | 25 | `25-baseline-snapshot.md` | Fill in before Sept 1 | **Time-sensitive** |
+| 26 | `26-semantic-model-mapping.md` | **How he launches without the Pain Management service line** | **Read before 11, 12, 14, 17** |
+| 27 | `27-heyl-treatment-map.csv` | The mapping data — him → treatments, conditions, redirects | Ready |
+
+> ### ⚠️ Read 26 first
+> The Pain Management service line was deprecated in favour of a symptom → condition → treatment
+> model, and that model is **already live** — ~60 condition pages and ~70 treatment pages.
+> **12 of his 13 cleared procedures already have ranking pages** carrying 44,264 impressions between
+> them. Files **11, 12, 14 and 17 were drafted against the deprecated URLs** and carry correction
+> banners. The net effect is roughly a third of the original content work.
 
 ---
 

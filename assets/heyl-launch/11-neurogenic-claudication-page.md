@@ -1,9 +1,26 @@
 # New page — Leg pain when you walk (neurogenic claudication)
 
-**URL:** `https://synergyhealth.org/conditions/neurogenic-claudication/`
 **Status:** DRAFT — **requires physician review before publishing.** Every clinical statement below
 needs Dr. Heyl's or another SHP physician's sign-off.
 **Owner:** Randall · **Target live:** Sept 15
+
+> ⚠️ **Placement revised 2026-07-30 — the copy is still good, the URL was wrong.**
+>
+> A standalone `/conditions/neurogenic-claudication/` fights the semantic model and adds a **third**
+> stenosis page: `/conditions/spinal-stenosis/` (550 impressions, position 18.3) and
+> `/conditions/lumbar-stenosis/` (105, position 23.2) already duplicate each other.
+>
+> **Split this content across the layers instead:**
+>
+> | Layer | URL | What goes there |
+> |---|---|---|
+> | **Symptom** | `/symptom/leg-pain-when-walking/` *(new)* | The opening, "what it feels like," and the neurogenic-vs-vascular table — this is the "what hurts" entry |
+> | **Condition** | `/conditions/spinal-stenosis/` *(exists)* | Causes, diagnosis, treatment ladder, red flags. Cover neurogenic claudication here as the mechanism. **Consolidate `/conditions/lumbar-stenosis/` into it.** |
+> | **Treatment** | already live | Epidural injection, medial branch block — link out to them |
+>
+> Same 14,800 monthly searches, no competing third page, an existing duplicate fixed on the way
+> through, and it seeds the symptom layer — the one part of the model that was designed and never
+> built. See `26-semantic-model-mapping.md`.
 
 ---
 

@@ -12,10 +12,15 @@
 Dr. Heyl asked us never to associate him with **kyphoplasty**, **long-term opioid management**, or
 **stem cell therapy**, and to hold **PRP** until the workflow is approved.
 
-Two relevant pages are already live on our site:
+Relevant pages already live on our site:
 
-- `/specialties/pain-management/kyphoplasty/` — 169 impressions in 90 days
-- `/specialties/pain-management/ketamine-infusion/` — 159 impressions in 90 days
+- **`/treatment/kyphoplasty-vertebroplasty/` — 8,377 impressions in 90 days** ← the live one, check this first
+- `/specialties/pain-management/kyphoplasty/` — 169 impressions *(deprecated, still indexed)*
+- `/specialties/pain-management/ketamine-infusion/` — 159 impressions *(deprecated; no `/treatment/`
+  equivalent found — confirm with Clinical whether the service is still offered)*
+
+> **Corrected 2026-07-30.** The kyphoplasty page migrated to `/treatment/` and the live version is
+> ~50× larger than the deprecated one. Check both, but the `/treatment/` URL is the one that matters.
 
 If the CMS attaches him to the "Pain Management" specialty and that specialty auto-lists its
 procedures, or auto-inserts a "Providers who perform this" block, **he inherits both pages without

@@ -1,11 +1,33 @@
 # Procedure pages — template and build order
 
-**Owner:** Randall · **Pace:** 2–3 per week from Aug 25 · **Status:** template ready, briefs ready
+**Owner:** Randall · **Status:** substantially reduced — see the correction below
 **Every page requires physician review before publishing.**
+
+> # ⚠️ Read `26-semantic-model-mapping.md` before using this file
+>
+> **This was scoped wrong, and the correction is good news.** It assumed we'd rebuild procedure pages
+> under `/specialties/pain-management/`. Those URLs are deprecated. The migrated `/treatment/*` pages
+> already exist and are far stronger — `/treatment/peripheral-nerve-injection/` has **7,754
+> impressions at position 8.9** where the old URL had **one**.
+>
+> **12 of his 13 cleared procedures already have live, ranking pages carrying 44,264 impressions
+> between them.** We are not building a procedure library.
+>
+> **Revised scope:**
+> - **Name him on 12 existing `/treatment/` pages** — a data operation, see `27-heyl-treatment-map.csv`
+> - **Build 2 pages that genuinely don't exist:** genicular nerve block (5,400/mo, difficulty 19) and
+>   peripheral nerve stimulation (his priority #2)
+> - **Improve 3 weak-but-live pages** where his priorities and the numbers align: radiofrequency
+>   ablation (position 27.6), occipital nerve block (position 19.4), EMG (`12-emg-page.md`)
+> - **301 the deprecated `/specialties/` URLs** to their `/treatment/` equivalents
+>
+> The template and the briefs below are still correct as *writing* guidance — apply them to the
+> `/treatment/` URLs in the map, not to the old ones. **Ignore the build-order table immediately
+> below; use the map instead.**
 
 ---
 
-## Build order
+## Build order *(superseded — see the correction above)*
 
 Ordered by search demand against ranking difficulty, weighted toward Dr. Heyl's stated priorities.
 Do them in this sequence — the early ones are the cheapest wins.

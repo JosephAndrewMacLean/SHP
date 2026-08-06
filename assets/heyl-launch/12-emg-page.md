@@ -1,14 +1,20 @@
 # Rebuild — EMG and nerve conduction testing
 
-**URL:** `https://synergyhealth.org/specialties/pain-management/emg/` *(page exists — rewrite in place)*
+**URL:** `https://synergyhealth.org/treatment/emg/` *(page exists — rewrite in place)*
 **Status:** DRAFT — requires physician review before publishing
 **Owner:** Randall · **Target live:** Sept 15
+
+> ⚠️ **URL corrected 2026-07-30.** This was originally drafted against
+> `/specialties/pain-management/emg/`, which is a deprecated page from the old service-line
+> structure. The live page is **`/treatment/emg/`** — 1,034 impressions at position 9.2, roughly
+> eight times the old one. Rewrite the `/treatment/` page and 301 the old one to it. See
+> `26-semantic-model-mapping.md`.
 
 ---
 
 ## Why this page
 
-The page already exists and ranks at position 7.9 — but earns 2 clicks from 132 impressions in 90
+The page already exists and ranks at position 9.2 — but earns 7 clicks from 1,034 impressions in 90
 days. It's a stub sitting on a good ranking.
 
 | Search term | Monthly searches | Difficulty |

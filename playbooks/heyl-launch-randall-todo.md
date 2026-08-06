@@ -89,8 +89,23 @@ PM sheet: `pm/heyl-launch-tasks.csv`.*
 
 ## September–October
 
-- [ ] **Write the "neurogenic claudication" page.** 14,800 searches a month, barely any competition,
-  and it's a topic he named himself. **Best single opportunity in this launch.**
+> **The content work shrank.** The Pain Management service line is gone, but its replacement —
+> conditions and treatments — is already built, and **12 of his 13 procedures already have ranking
+> pages.** Most of this is naming him on pages that exist, not writing new ones. See
+> `assets/heyl-launch/26-semantic-model-mapping.md`; the data is in `27-heyl-treatment-map.csv`.
+
+- [ ] **Add him as a performing provider on 12 existing `/treatment/` pages.** A data task, not a
+  writing task. The list is in `27-heyl-treatment-map.csv`.
+- [ ] **Ask Paul the three questions in `26-`** — is there a provider↔treatment link in the CMS, do
+  condition pages link to treatments, and can the dead `/specialties/pain-management/` URLs be
+  redirected. That's the whole dependency.
+- [ ] **Build the two pages that genuinely don't exist:** genicular nerve block (5,400 searches,
+  almost no competition) and peripheral nerve stimulation — his #1 priority and the thing he came
+  here to build.
+- [ ] **Cover neurogenic claudication where the model wants it** — a new "leg pain when walking"
+  symptom page feeding the existing spinal stenosis page, rather than a third stenosis page.
+  14,800 searches a month, and it fixes a duplicate on the way through. **Still the best single
+  opportunity in this launch.**
 - [ ] Article: **when to see a spine surgeon vs. a pain doctor** *(his idea, and it's the highest-value
   one — it also sends the right patients to the right door)*.
 - [ ] Article: **what an EMG actually tells your doctor** — including whether it hurts and how long
