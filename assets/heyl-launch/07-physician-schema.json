@@ -1,0 +1,156 @@
+{
+  "_README": [
+    "Physician schema for https://synergyhealth.org/providers/jonathan-heyl-do/",
+    "",
+    "HAND-BUILT ON PURPOSE. Do not let the WordPress provider template generate this page's",
+    "schema. There are 446 structured-data errors open sitewide, including Physician markup on",
+    "all 42 existing bios (22-61 errors each). This page should not join them.",
+    "",
+    "BEFORE PUBLISHING:",
+    "1. Fill every FIXME. Do not publish with a FIXME in place.",
+    "2. Delete this _README key.",
+    "3. Test at https://search.google.com/test/rich-results - must return 0 errors.",
+    "4. Check sameAs: every URL must be a real, live profile that is actually his. An empty",
+    "   sameAs is better than a wrong one. NEVER point sameAs at the @mendelsonortho YouTube",
+    "   channel - that error is already poisoning schema across the site.",
+    "5. Verify medicalSpecialty and availableService against 04-provider-record.md. Only list",
+    "   procedures Operations confirmed.",
+    "",
+    "AFTER HIS SEPTEMBER BOARD EXAM: update the Pain Medicine entry under hasCredential from",
+    "board-eligible to board-certified. Nothing updates automatically. See 24-post-exam-checklist.md."
+  ],
+
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "@id": "https://synergyhealth.org/providers/jonathan-heyl-do/#physician",
+  "name": "Jonathan Heyl, D.O.",
+  "givenName": "Jonathan",
+  "familyName": "Heyl",
+  "honorificSuffix": "D.O.",
+  "url": "https://synergyhealth.org/providers/jonathan-heyl-do/",
+  "image": "FIXME: full URL to the primary portrait from the Aug 10 shoot",
+  "description": "Jonathan Heyl, D.O. is a pain medicine physician at Synergy Health Partners in Livonia and Sterling Heights, Michigan. Board certified in Physical Medicine and Rehabilitation and board eligible in Pain Medicine, he treats spine, joint and peripheral nerve pain using image-guided interventional procedures and electrodiagnostic testing.",
+  "gender": "https://schema.org/Male",
+
+  "medicalSpecialty": [
+    "https://schema.org/PainMedicine",
+    "https://schema.org/PhysicalMedicineAndRehabilitation"
+  ],
+
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "NPI",
+    "value": "FIXME: NPI from Credentialing"
+  },
+
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Board Certification",
+      "about": "Physical Medicine and Rehabilitation",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "American Board of Physical Medicine and Rehabilitation"
+      }
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Fellowship",
+      "about": "Pain Medicine",
+      "recognizedBy": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Michigan"
+      }
+    }
+  ],
+
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Michigan",
+      "url": "https://medicine.umich.edu/",
+      "description": "Pain Medicine Fellowship, Department of Anesthesiology (2025-2026); Physical Medicine and Rehabilitation Residency (2022-2025), Chief Resident"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Lake Erie College of Osteopathic Medicine",
+      "description": "Doctor of Osteopathic Medicine, Bradenton campus (2021)"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Siena Heights University",
+      "description": "B.S. Biology, summa cum laude (2017)"
+    }
+  ],
+
+  "memberOf": [
+    { "@type": "Organization", "name": "International Pain and Spine Intervention Society" },
+    { "@type": "Organization", "name": "North American Spine Society" },
+    { "@type": "Organization", "name": "American Academy of Physical Medicine and Rehabilitation" }
+  ],
+
+  "worksFor": {
+    "@type": "MedicalOrganization",
+    "name": "Synergy Health Partners",
+    "url": "https://synergyhealth.org/"
+  },
+
+  "availableService": [
+    { "@type": "MedicalProcedure", "name": "Epidural steroid injection", "procedureType": "https://schema.org/PercutaneousProcedure" },
+    { "@type": "MedicalProcedure", "name": "Medial branch block", "procedureType": "https://schema.org/PercutaneousProcedure" },
+    { "@type": "MedicalProcedure", "name": "Radiofrequency ablation", "procedureType": "https://schema.org/PercutaneousProcedure" },
+    { "@type": "MedicalProcedure", "name": "Sacroiliac joint injection", "procedureType": "https://schema.org/PercutaneousProcedure" },
+    { "@type": "MedicalProcedure", "name": "Intra-articular joint injection", "procedureType": "https://schema.org/PercutaneousProcedure" },
+    { "@type": "MedicalProcedure", "name": "Trigger point injection", "procedureType": "https://schema.org/PercutaneousProcedure" },
+    { "@type": "MedicalProcedure", "name": "Peripheral nerve block", "procedureType": "https://schema.org/PercutaneousProcedure" },
+    { "@type": "MedicalProcedure", "name": "Occipital nerve block", "procedureType": "https://schema.org/PercutaneousProcedure" },
+    { "@type": "MedicalProcedure", "name": "Genicular nerve block and ablation", "procedureType": "https://schema.org/PercutaneousProcedure" },
+    { "@type": "MedicalProcedure", "name": "Peripheral nerve stimulation", "procedureType": "https://schema.org/PercutaneousProcedure" },
+    { "@type": "MedicalProcedure", "name": "Spinal cord stimulation", "procedureType": "https://schema.org/PercutaneousProcedure" },
+    { "@type": "MedicalTest", "name": "Electromyography (EMG) and nerve conduction study" }
+  ],
+
+  "_COMMENT_availableService": "NEVER add kyphoplasty, vertebral augmentation, opioid management, stem cell therapy, or ketamine infusion. PRP, basivertebral nerve ablation and MILD stay out until Operations clears them.",
+
+  "workLocation": [
+    {
+      "@type": "MedicalClinic",
+      "name": "Synergy Health Partners - Livonia",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "36622 Five Mile Road",
+        "addressLocality": "Livonia",
+        "addressRegion": "MI",
+        "postalCode": "48154",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-855-750-5757"
+    },
+    {
+      "@type": "MedicalClinic",
+      "name": "Synergy Health Partners - Sterling Heights",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "35735 Mound Road",
+        "addressLocality": "Sterling Heights",
+        "addressRegion": "MI",
+        "postalCode": "48310",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-586-261-1960"
+    }
+  ],
+
+  "_COMMENT_workLocation": "FIXME: verify both addresses and phone numbers against the master location list. Values here came from search results, not an authoritative source, and must match the Google Business Profiles character for character.",
+
+  "sameAs": [
+    "FIXME: his Healthgrades profile URL - only after it is claimed and verified",
+    "FIXME: his Doximity profile URL",
+    "FIXME: his Vitals profile URL",
+    "FIXME: his WebMD profile URL"
+  ],
+
+  "_COMMENT_sameAs": "Delete any FIXME you cannot fill with a real, live, verified URL. An empty sameAs array is correct and harmless. A wrong one is an active problem - the sitewide sameAs currently points at a legacy @mendelsonortho YouTube channel, which is exactly the error to avoid repeating.",
+
+  "isAcceptingNewPatients": true
+}
