@@ -18,6 +18,18 @@ the same data Cardinal used.
 **Legend:** ✅ done/confirmed · 🟠 partial/in motion · ❌ not done · ❓ not verifiable
 from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
 
+> **Re-check 2026-08-06 — video baseline, at second-half video-series kickoff:**
+> - ❌ **verified: GSC `type=video` returns ZERO rows for the last 90 days**
+>   (2026-05-06→08-05). Cardinal's video findings (no VideoObject schema on any of 423
+>   pages, no transcripts, channel still @mendelsonortho — Appendix A) now have a
+>   measured search-side baseline: literally no video search presence.
+> - 🎬 In-house response kicked off: **`projects/video-series/`** (Livonia PT/Pharmacy/
+>   ASC 2:00s, round-2 testimonials, Mendelson legacy film). Channel rebrand,
+>   transcripts, keyword titles, VideoObject schema on embed pages, 9:16 + single
+>   Synergy end card are hard pre-publish gates in that project's README.
+> - Instrument going forward: GSC video-type impressions (baseline **0**) + video rich
+>   results (baseline 0, part of the "0 rich results" line).
+>
 > **Re-check 2026-07-22 (evening) — deltas since the morning pass:**
 > - ✅ **Liine → GA4 event forwarding went LIVE** (configured by Joe today, all events,
 >   no filters). `Liine_*` events now flow into GA4: AIC 67 · FTIC 38 · NP_LC 19 ·
@@ -193,7 +205,7 @@ eyeball from any browser. Priority lane first:
 | Nav cleanup (300+ links, 8 panels) (MEDIUM) | ❓ manual | Cardinal/dev |
 | Dedicated stripped-nav paid LPs (MEDIUM) | ❌ (paid still lands on site pages — GA4 landing paths confirm) | Cardinal paid + dev |
 | Spine differentiation messaging (younger surgeons, minimally invasive, tech) (MEDIUM) | ❌ (audit: "not messaged anywhere") | In-house content — feeds paid LPs + hubs |
-| Brand consistency: social/video templates, 9:16, end-card rebrand, account consolidation (MEDIUM/SMALL) | ❓ manual | In-house social/video |
+| Brand consistency: social/video templates, 9:16, end-card rebrand, account consolidation (MEDIUM/SMALL) | 🟠 **in motion 2026-08-06** — second-half video series (`projects/video-series/`) bakes 9:16 capture, single Synergy end card, transcripts + VideoObject schema into pre-publish gates; GSC video baseline verified = 0 rows (90d) | In-house social/video; measure: GSC video-type impressions (baseline 0) |
 | Legacy Mendelson remnants: payment.mendelsonortho.com, YouTube @mendelsonortho, LinkedIn (SMALL but E-E-A-T-critical) | ❌ assumed (YouTube sameAs error persists in schema errors) | One-time fixes; recheck schema after |
 
 ## 6. Paid media audit roadmap — status
