@@ -82,18 +82,38 @@ schedule. It gets vetted at the next monthly scrub.
   promote/hold/park reads due that month.
 - **Quarterly:** full eyeball pass (the Jul 31 exercise), per the SOP.
 
-### 5. Current routing inefficient — continue or re-sort by city? ✅ rerouted — and the tier worry is a non-issue
-Done today, properly: every account now has **exact MMC coordinates**, and all home days were
-re-clustered from scratch on real geometry (76 of 78 days are exactly 10 stops; same-building
-groups kept intact; stop order is a nearest-neighbour drive chain).
+### 5. Routing — REBUILT CITY-FIRST per Kristen's call (Aug 7) ✅
+Kristen's field read was right and the data agreed: the first rebuild still allowed a scheduled
+day to pull from two clusters across town (her W2 example: a 10-stop day drawn from two
+non-adjacent home days; her W1 day that ran east Warren + Dequindre + Southfield + Farmington
+Hills). That rule is gone. The plan is now built the way she specified on the call:
 
-**The important reassurance: re-sorting by geography does NOT mess up the T1/T2 algorithm.**
-Geography and cadence are two separate layers now — home days are *where accounts live*; the
-weekly schedule picks *who is due* (T1 21d · T2 30d · T3 45d) and then drives them as one area.
-A scheduled day consumes **everyone due in that area in one drive**, which is exactly the fix for
-"drive past an account Tuesday and come back Thursday." Where a city still shows up twice in a
-week (≈14% of city-weeks), it's a big city with two genuinely separate clusters (Warren and
-Sterling Heights each hold 2–3), or more than 10 due accounts — not drive-by waste.
+- **City first, then address:** every day starts in one city and *chains* — each next stop is
+  within a few miles of the last. **Audited: no two consecutive stops anywhere in the 8-week
+  plan are more than 5.0 miles apart.** No more lone cross-town stops, period.
+- **Same building = same moment:** buildings ride the chain at distance zero (📝/🏢 flags in the
+  workbook), so four practices in one lobby are four quick stops, not four scattered targets.
+- **Troy/Sterling-Heights-style overlap is allowed** — a chain can cross a city line if the next
+  stop is genuinely a few miles on (that's a corridor, not a jump). Big cities can take
+  consecutive days (Livonia over two days beats Livonia-plus-Southfield in one).
+- **Far pockets become "short runs":** an isolated due account (Trenton, the thumb, Belleville)
+  gets a 1–3 stop day flagged as a short run — pair it with ortho stops or the bonus list —
+  and the engine sweeps everyone else in that pocket whose last visit is 14+ days back, so the
+  drive is never for one door.
+
+**The strategy check Kristen asked for — does the weekly tier mix survive city routing?** Yes:
+
+| Avg per week | Tier 1 | Tier 2 | Tier 3 | Prospects | Stops |
+|---|---|---|---|---|---|
+| Coty — before → after | 12.2 → 11.6 | 9.2 → 10.2 | 1.1 → 1.2 | 16.1 → 16.4 | 38.8 → 39.5 |
+| Jasmine — before → after | 9.2 → 10.0 | 9.2 → 10.2 | 1.5 → 1.9 | 24.0 → 19.0 | 44.0 → 41.1 |
+| Kristen — before → after | 25.0 → 22.0 | 19.6 → 14.8 | 3.1 → 2.4 | 0.8 → 0.5 | 48.5 → 39.6 |
+
+Tier-1 rhythm holds at a **21-day median for all three PLs**. The mix is within a stop or two
+everywhere except Kristen's total volume, which drops ~9 stops/week — and those were exactly the
+scattered cross-town stragglers she was already skipping (like the Warren one). Full per-week
+numbers are on each workbook's new **Weekly Mix** tab, and the whole book grouped by city with
+tier counts is on the new **By City** tab.
 
 ### 6. "Stops in Order" tab doesn't match "Weekly Plan" ✅ fixed
 Fair catch — the old tab listed territory (home days) while Weekly Plan listed calendar days.
@@ -111,6 +131,11 @@ Ex-Sean accounts are woven into Kristen's re-clustered geography — no more bol
   **Allied Internists** are ex-Sean accounts on Kristen's list that MMC says *Coty* owns.
   Move them too, or transfer MMC ownership back?
 
+### 9. Flag the accounts with good notes ✅ shipped
+**684 of 773 accounts carry real field notes in MMC** (Coty's and Jasmine's are often detailed).
+They're flagged **📝** on the *Stops by Day* and *Account List* tabs, with the full note text in
+*Account List → MMC Field Notes* — read it before you walk in.
+
 ---
 
 ## Open items (human calls, owners)
@@ -124,4 +149,4 @@ Ex-Sean accounts are woven into Kristen's re-clustered geography — no more bol
 | MNA record's `Company - ID` field holds junk text in MMC | Santosh | Custom field was mis-filled; repair so imports can match it |
 | Jasmine W1 completion (12/50) | Kristen | "What got in the way?" — huddle question, not a verdict |
 | Monthly scrub cadence (§4) | Kristen | Say yes/no/modify |
-| 15 of Kristen's Tier-1s get only 1 visit this cycle | Kristen + Gautam | Her 217-account book still exceeds 5 days/week; everyone else's T1s get 2–3 visits. Same coverage call as the merge: shift east-side geography to Coty, or accept the stretch |
+| Kristen's book vs clean-drive capacity — **42 of her 95 Tier-1s get only 1 visit this cycle** | Kristen + Gautam | With city-clean routing (no cross-town scatter) her book supports ~40 stops/week honestly; the T1 median holds at 21 days for accounts in rotation, but the tail gets one touch. The fix is unchanged: move east-side geography to Coty, or accept the coverage |

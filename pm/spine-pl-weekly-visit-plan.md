@@ -5,6 +5,20 @@
 **The full stop-level schedule (1,085 scheduled visits, filter by `week` + `pl` — cadence updated Jul 22):** **`pm/pl-weekly-visit-schedule.csv`**
 **Kristen's share pack:** `pm/kristen-share/` (field workbook + handoff note) · **MMC sync:** `pm/mmc-import/`
 
+> ## ⟳ v7 — Aug 7 (later): CITY-FIRST routing per Kristen's call
+> Kristen showed the data: a W2 day pulling 10 stops from two non-adjacent home days — legal
+> under v6's "nearest-cluster top-up," and exactly the cross-town waste she described. Rebuilt to
+> her spec: **every scheduled day is one contiguous drive** — city first, buildings together,
+> **no two consecutive stops more than 5 miles apart anywhere in the plan (audited)**; far
+> pockets run as flagged short runs with a while-I'm-here sweep. Home days are now **city blocks
+> (97 across the team)**. W2–W9 = **962 stops / 120 days**; **Tier-1 median holds at 21 days for
+> all three PLs**, and the weekly tier mix survives city routing within a stop or two (the
+> strategy check Kristen asked for — table in the parking lot §5, per-week numbers on each
+> workbook's **Weekly Mix** tab, book-by-city on the **By City** tab). New: 📝 flags on 684
+> accounts with real MMC field notes. The honest cost: Kristen's clean-drive capacity is ~40
+> stops/week, so **42 of her 95 Tier-1s get one visit this cycle** — the east-side-to-Coty
+> coverage call is now fully quantified (parking lot, open items).
+>
 > ## ⟳ v6 — Aug 7: live-data refresh (read `pm/spine-routing-parking-lot.md` first)
 > Rebuilt end-to-end from the **Aug 7 MMC exports** (companies + people + 91k activities):
 > the cadence clock now runs on **actual logged check-ins**, every account has exact MMC
