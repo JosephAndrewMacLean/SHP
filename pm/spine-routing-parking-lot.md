@@ -147,4 +147,8 @@ They're flagged **📝** on the *Stops by Day* and *Account List* tabs, with the
 | Jasmine W1 completion (12/50) | Kristen | "What got in the way?" — huddle question, not a verdict |
 | Monthly scrub cadence (§4) | Kristen | Say yes/no/modify |
 | MMC hygiene lists (Joe's idea): no-activity-in-5-years, duplicates to delete, missed-account review | Joe | Easy to auto-generate from the Friday export — say the word |
+| **From the W1 field notes** (full brief: `pm/kristen-field-notes-brief-aug7.md`) — park Alliance Washington Twp, Great Lakes Ortho Garden City, Brackney Chiro (structurally blocked, notes are the evidence); VillageMD/Dr. Rosenberg network play | Kristen (huddle) | Non-Spine group, reversible; VillageMD = one relationship, several sites |
+| Henry Ford / Corewell **vendor credentialing** for SHP | Joe finds process · Kristen signs | Both PLs keep hitting "no vendors" walls at system sites; unlocks a class of blocked accounts |
+| **Office hours into routing** ("closes at 3", "(M,W,TH)", closed-door stops) | Joe | Capture from notes at Friday refresh; early-close offices go first on the route |
+| **Notes-back pilot** at Macomb Family Medical Center | Joe + clinic side | Their only objection is the closed loop — prove it here, the prospect converts (feeds PL-D.3) |
 | Kristen's book vs clean-drive capacity — **42 of her 95 Tier-1s get only 1 visit this cycle** | Kristen + Gautam | With city-clean routing (no cross-town scatter) her book supports ~40 stops/week honestly; the T1 median holds at 21 days for accounts in rotation, but the tail gets one touch. The fix is unchanged: move east-side geography to Coty, or accept the coverage |
