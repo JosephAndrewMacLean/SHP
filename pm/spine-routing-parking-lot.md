@@ -31,7 +31,7 @@ due. This true-up reruns every Friday from the MMC export — that's the whole r
 ## The parking-lot items — status
 
 ### 1. Multiple practices in one building ✅ shipped
-The book has **60 shared buildings holding 152 accounts** (same street number + city). They are
+The book has **50 shared buildings holding 131 accounts** (same MMC map pin). They are
 now *atomic*: same home day, consecutive stops, and when any of them is due, the building-mates
 ride along on the same scheduled day. Marked 🏢 in the workbooks' *Stops by Day* tab and listed
 per account in *Account List → Same-building with*.
@@ -46,21 +46,30 @@ due *next* week (pull-forwards). Rule of thumb, in order:
    date-stamping in MMC.
 
 ### 3. New / added accounts — list + how they enter ✅ shipped
-**11 accounts entered the book today** (auto-detected from MMC + Kristen's adds):
+**11 new accounts entered the book today** (1 from Kristen's list + 10 auto-detected MMC creations):
 
-| Account | PL | Why |
-|---|---|---|
-| Enhance Center – Clinton Township | Coty | Kristen: "Enhance Medical Center → CO" (Livonia location was already in the book) |
-| Michigan Neurology Associates – Clinton Twp | Coty | Was in book as "Not sure" → **confirmed keep** per Kristen. ⚠️ Kristen said *Warren* — MMC only has the Clinton Twp record; confirm whether the Warren office needs its own record |
-| Abood Law (Birmingham) | Kristen | Created in MMC Aug 3 |
-| NeuroRestorative (Farmington Hills) | Kristen | Created Jul 30 |
-| Blue Water Primary Care | Kristen | Created Jul 23 — **no street address in MMC; add one** |
-| Yousif Orthopedic Surgery (Troy) | Coty | Created Jul 17 |
-| The Keiser Clinic (Chelsea) | Coty | Created Jul 16 |
-| Macomb Orthopedics | Coty | Created Jul 16 — **no street address in MMC; add one** |
-| Corewell Health Family Medicine (New Baltimore) | Coty | Created Jul 16 |
-| Michigan MSK Medicine | Coty | Created Jul 16 — **no street address in MMC; add one** |
-| infinity Primary Care (Livonia) · Skywalk Internal Medicine (Sterling Hts) | Coty | Created Jul 16 |
+| # | Account | PL | Why |
+|---|---|---|---|
+| 1 | Enhance Center – Clinton Township | Coty | Kristen: "Enhance Medical Center → CO" (the Livonia location was already in the book) |
+| 2 | Abood Law (Birmingham) | Kristen | Created in MMC Aug 3 |
+| 3 | NeuroRestorative (Farmington Hills) | Kristen | Created Jul 30 |
+| 4 | Blue Water Primary Care | Kristen | Created Jul 23 — **no street address in MMC; add one** |
+| 5 | Yousif Orthopedic Surgery (Troy) | Coty | Created Jul 17 |
+| 6 | The Keiser Clinic (Chelsea) | Coty | Created Jul 16 |
+| 7 | Macomb Orthopedics | Coty | Created Jul 16 — **no street address in MMC; add one** |
+| 8 | Corewell Health Family Medicine (New Baltimore) | Coty | Created Jul 16 |
+| 9 | Michigan MSK Medicine | Coty | Created Jul 16 — **no street address in MMC; add one** |
+| 10 | infinity Primary Care (Livonia) | Coty | Created Jul 16 |
+| 11 | Skywalk Internal Medicine (Sterling Hts) | Coty | Created Jul 16 |
+
+Not new, but decided today: **Michigan Neurology Associates – Clinton Twp** was already in the
+book flagged "Not sure" → **confirmed keep** per Kristen. ⚠️ She said *Warren* — MMC only has the
+Clinton Twp record; confirm whether the Warren office needs its own MMC record.
+
+Also cleaned up: **4 duplicate records removed** (Forum Medical Clinic, MDWell, Beaumont Urgent
+Care by Wellstreet, AMC Primary Care each appeared twice with two address strings but one MMC
+pin). The book is now **773 accounts**, one row per MMC record. If any of those really has a
+second office, create it as its own MMC record and Friday's refresh picks it up.
 
 **The standing process (no forms, no emails):** create the account in MMC like normal → the
 Friday refresh detects anything created since the last export → it lands in the owner's book as
@@ -75,7 +84,7 @@ schedule. It gets vetted at the next monthly scrub.
 
 ### 5. Current routing inefficient — continue or re-sort by city? ✅ rerouted — and the tier worry is a non-issue
 Done today, properly: every account now has **exact MMC coordinates**, and all home days were
-re-clustered from scratch on real geometry (76 of 79 days are exactly 10 stops; same-building
+re-clustered from scratch on real geometry (76 of 78 days are exactly 10 stops; same-building
 groups kept intact; stop order is a nearest-neighbour drive chain).
 
 **The important reassurance: re-sorting by geography does NOT mess up the T1/T2 algorithm.**
@@ -115,3 +124,4 @@ Ex-Sean accounts are woven into Kristen's re-clustered geography — no more bol
 | MNA record's `Company - ID` field holds junk text in MMC | Santosh | Custom field was mis-filled; repair so imports can match it |
 | Jasmine W1 completion (12/50) | Kristen | "What got in the way?" — huddle question, not a verdict |
 | Monthly scrub cadence (§4) | Kristen | Say yes/no/modify |
+| 15 of Kristen's Tier-1s get only 1 visit this cycle | Kristen + Gautam | Her 217-account book still exceeds 5 days/week; everyone else's T1s get 2–3 visits. Same coverage call as the merge: shift east-side geography to Coty, or accept the stretch |
