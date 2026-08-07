@@ -82,38 +82,35 @@ schedule. It gets vetted at the next monthly scrub.
   promote/hold/park reads due that month.
 - **Quarterly:** full eyeball pass (the Jul 31 exercise), per the SOP.
 
-### 5. Routing — REBUILT CITY-FIRST per Kristen's call (Aug 7) ✅
-Kristen's field read was right and the data agreed: the first rebuild still allowed a scheduled
-day to pull from two clusters across town (her W2 example: a 10-stop day drawn from two
-non-adjacent home days; her W1 day that ran east Warren + Dequindre + Southfield + Farmington
-Hills). That rule is gone. The plan is now built the way she specified on the call:
+### 5. Routing — v3: WHOLE-ROUTE DAYS (the Joe + Kristen decision, end of Aug 7 call) ✅
+Two rounds of field review got us here. Round one killed cross-town days. Round two, walking
+Coty's week together, caught the remaining sin: two accounts a block apart on 17 Mile Rd landed
+on *different days* because tier priority was still composing each day stop-by-stop. The closing
+decision on the call: **"start from start, sort it by city, run the whole thing, and see if the
+mix takes care of itself."** That is now literally how it works:
 
-- **City first, then address:** every day starts in one city and *chains* — each next stop is
-  within a few miles of the last. **Audited: no two consecutive stops anywhere in the 8-week
-  plan are more than 5.0 miles apart.** No more lone cross-town stops, period.
-- **Same building = same moment:** buildings ride the chain at distance zero (📝/🏢 flags in the
-  workbook), so four practices in one lobby are four quick stops, not four scattered targets.
-- **Troy/Sterling-Heights-style overlap is allowed** — a chain can cross a city line if the next
-  stop is genuinely a few miles on (that's a corridor, not a jump). Big cities can take
-  consecutive days (Livonia over two days beats Livonia-plus-Southfield in one).
-- **Far pockets become "short runs":** an isolated due account (Trenton, the thumb, Belleville)
-  gets a 1–3 stop day flagged as a short run — pair it with ortho stops or the bonus list —
-  and the engine sweeps everyone else in that pocket whose last visit is 14+ days back, so the
-  drive is never for one door.
+- **A scheduled day IS a home route.** The Weekly Plan says `K-R05` — the same R-number as the
+  Territory tab — and you run that whole route, every stop, in its stored drive order. No
+  cherry-picking, nothing to cross-reference. One ID system, calendar = map.
+- **Which routes run each week is still cadence-driven** (T1 21d · T2 30d · T3 45d on actual
+  MMC check-ins): a route comes due when its most-overdue producer does; lapsed producers jump
+  the line; **2 protect slots a week** keep the highest-value routes on rhythm while first
+  passes continue ("business coming in while we build new business" — encoded).
+- **Both routes in the same city run back-to-back days the same week** — the "I was right there
+  yesterday" fix.
+- **Prospect-only routes run once** (first pass), then wait for the 90-day read. Prospects
+  inside producer routes get re-visited when the route reruns (up to 3 polite touches this
+  cycle — the 3rd shows as "huddle read due" so promote/park decisions happen on schedule).
 
-**The strategy check Kristen asked for — does the weekly tier mix survive city routing?** Yes:
-
-| Avg per week | Tier 1 | Tier 2 | Tier 3 | Prospects | Stops |
-|---|---|---|---|---|---|
-| Coty — before → after | 12.2 → 11.6 | 9.2 → 10.2 | 1.1 → 1.2 | 16.1 → 16.4 | 38.8 → 39.5 |
-| Jasmine — before → after | 9.2 → 10.0 | 9.2 → 10.2 | 1.5 → 1.9 | 24.0 → 19.0 | 44.0 → 41.1 |
-| Kristen — before → after | 25.0 → 22.0 | 19.6 → 14.8 | 3.1 → 2.4 | 0.8 → 0.5 | 48.5 → 39.6 |
-
-Tier-1 rhythm holds at a **21-day median for all three PLs**. The mix is within a stop or two
-everywhere except Kristen's total volume, which drops ~9 stops/week — and those were exactly the
-scattered cross-town stragglers she was already skipping (like the Warren one). Full per-week
-numbers are on each workbook's new **Weekly Mix** tab, and the whole book grouped by city with
-tier counts is on the new **By City** tab.
+**The strategy check, on the final model:** Tier-1 median interval **21 days for all three PLs**
+(max 28 Coty / 35 Jasmine / 42 Kristen); every producer route runs at least once; zero Tier-1s
+missed. The weekly tier mix is on each workbook's **Weekly Mix** tab, the book-by-city on
+**By City**. The deferral tail is now just **42 prospect accounts in 12 prospect-only routes**
+(Jasmine 35 · Coty 7) that don't fit this cycle — they hold for September or the 90-day read.
+Trade named honestly: running whole routes means Tier-2s/3s inside T1-heavy routes get seen more
+often than their minimum (extra touches, not missed ones), and route rhythm beats per-account
+rhythm — which is exactly what "does it really matter, if by the end of the week we get it done"
+decided.
 
 ### 6. "Stops in Order" tab doesn't match "Weekly Plan" ✅ fixed
 Fair catch — the old tab listed territory (home days) while Weekly Plan listed calendar days.
@@ -149,4 +146,5 @@ They're flagged **📝** on the *Stops by Day* and *Account List* tabs, with the
 | MNA record's `Company - ID` field holds junk text in MMC | Santosh | Custom field was mis-filled; repair so imports can match it |
 | Jasmine W1 completion (12/50) | Kristen | "What got in the way?" — huddle question, not a verdict |
 | Monthly scrub cadence (§4) | Kristen | Say yes/no/modify |
+| MMC hygiene lists (Joe's idea): no-activity-in-5-years, duplicates to delete, missed-account review | Joe | Easy to auto-generate from the Friday export — say the word |
 | Kristen's book vs clean-drive capacity — **42 of her 95 Tier-1s get only 1 visit this cycle** | Kristen + Gautam | With city-clean routing (no cross-town scatter) her book supports ~40 stops/week honestly; the T1 median holds at 21 days for accounts in rotation, but the tail gets one touch. The fix is unchanged: move east-side geography to Coty, or accept the coverage |

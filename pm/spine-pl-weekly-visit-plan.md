@@ -5,7 +5,18 @@
 **The full stop-level schedule (1,085 scheduled visits, filter by `week` + `pl` — cadence updated Jul 22):** **`pm/pl-weekly-visit-schedule.csv`**
 **Kristen's share pack:** `pm/kristen-share/` (field workbook + handoff note) · **MMC sync:** `pm/mmc-import/`
 
-> ## ⟳ v7 — Aug 7 (later): CITY-FIRST routing per Kristen's call
+> ## ⟳ v8 — Aug 7 (final): whole-route days — "sort it by city and run the whole thing"
+> The closing decision of the Joe/Kristen call, after catching two 17-Mile accounts split across
+> days by tier priority: stop composing days stop-by-stop. **A scheduled day is now a home route
+> (`K-R05` on the calendar = `K-R05` on the map), run in full, in drive order.** Cadence picks
+> WHICH routes run each week (T1 21d · T2 30d · T3 45d on actual check-ins, lapsed first, 2
+> protect slots/week for top-value routes); same-city routes run back-to-back days; the tier mix
+> is judged per week (Weekly Mix tab). Result: **1,023 stops / 120 route-days · T1 median 21 days
+> for all three PLs · zero producer routes skipped · 42 prospects (12 prospect-only routes)
+> defer**. Prospects inside producer routes get up to 3 touches; the 3rd is flagged "huddle read
+> due." One ID system ends the tab confusion for good.
+>
+> ## ⟳ v7 — Aug 7 (earlier): CITY-FIRST routing per Kristen's call
 > Kristen showed the data: a W2 day pulling 10 stops from two non-adjacent home days — legal
 > under v6's "nearest-cluster top-up," and exactly the cross-town waste she described. Rebuilt to
 > her spec: **every scheduled day is one contiguous drive** — city first, buildings together,
