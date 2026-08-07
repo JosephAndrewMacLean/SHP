@@ -5,6 +5,17 @@
 **The full stop-level schedule (1,085 scheduled visits, filter by `week` + `pl` — cadence updated Jul 22):** **`pm/pl-weekly-visit-schedule.csv`**
 **Kristen's share pack:** `pm/kristen-share/` (field workbook + handoff note) · **MMC sync:** `pm/mmc-import/`
 
+> ## ⟳ v6 — Aug 7: live-data refresh (read `pm/spine-routing-parking-lot.md` first)
+> Rebuilt end-to-end from the **Aug 7 MMC exports** (companies + people + 91k activities):
+> the cadence clock now runs on **actual logged check-ins**, every account has exact MMC
+> coordinates, and all home days were re-clustered from real geometry (ex-Sean combined into
+> Kristen's book — no more bolt-on days). Universe is now **777** (11 new accounts added — see
+> parking lot §3); MI Family Practice moved to Coty; W2–W9 = **1,068 stops / 114 days**, T1
+> median interval 21 days, zero producers or accounts missed. W1 recap (68/150 planned stops
+> checked in; person-touch rows vs unique accounts explained), same-building handling (60
+> buildings / 152 accounts), finish-early bonus stops, and the new-account/scrub process all
+> live in **`pm/spine-routing-parking-lot.md`** — the living answers page for the field.
+>
 > ## ⟳ v5 — Jul 31: one row = one day (Kristen's rules restored)
 > Kristen read `K-R11+R12` on the Weekly Plan, looked up R11 (9 stops) and R12 (10 stops) in the
 > Route Days tab, and reasonably concluded she was being sent on a **19-stop day**. She was right

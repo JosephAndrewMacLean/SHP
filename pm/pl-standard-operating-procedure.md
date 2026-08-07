@@ -15,11 +15,12 @@
 
 ## 1. The account universe (what we work, and how it changes)
 
-1.1 The working universe is the **766-account validated spine book** (Kristen 215 incl. the ex-Sean
-book · Jasmine 299 · Coty 252), organized by evidence: **Tier 1** sent ≥1 spine patient (162) ·
-**Tier 2** ortho-only senders (174) · **Tier 3** other-service senders (34) · **Prospects** (396).
-**Wave 1** = the 90 highest-priority proven senders, always first in line each cycle. (Pre-validation
-the book was 848 across four PLs; the Jul 31 eyeball pass removed 82 to the Non-Spine group.)
+1.1 The working universe is the **777-account validated spine book** (Kristen 217 incl. the ex-Sean
+book · Jasmine 299 · Coty 261), organized by evidence: **Tier 1** sent ≥1 spine patient (162) ·
+**Tier 2** ortho-only senders (174) · **Tier 3** other-service senders (34) · **Prospects** (407,
+incl. 11 NEW accounts added Aug 7 from MMC). **Wave 1** = the 90 highest-priority proven senders,
+always first in line each cycle. (History: 848 pre-validation → 766 after the Jul 31 eyeball pass
+→ 777 after the Aug 7 refresh; adds/removals per `pm/spine-routing-parking-lot.md`.)
 
 1.2 **Accounts are never deleted.** An account leaves the working rotation only by being tagged
 into the MMC **"Non-Spine" group** (Kristen's group; nothing else in MMC is altered) or parked to
@@ -97,6 +98,8 @@ touches on Tier-1 accounts *may* be quick-logged; this is optional pending the t
 - **Map My Customers** — system of record: logged visits, Non-Spine group, group-level visit
   frequencies (21/30/45) so Past-Due flags finally match this SOP.
 - **Eyeball files** (`pm/eyeball-check/`) — the validation instrument, per PL, quarterly.
+- **Parking lot** (`pm/spine-routing-parking-lot.md`) — living answers to field routing
+  questions; refreshed with the plan every Friday.
 - **Weekly Spine Scorecard** — Friday truth: B2B spine NPs, visit-days/PL, lapse count, NP/100,
   match-rate.
 - **Materials (open item):** rotating leave-behind set — sciatica, herniated disc, degenerative
@@ -134,3 +137,4 @@ texture → compliance before action. This SOP changes by version, not by drift:
 | 1.0 DRAFT r2 | 2026-07-31 | §4 capacity: 5 spine route-day slots/PL-week (was 3–4 + ortho guard); producer revisits packed into full loop days. Ortho field-day impact flagged for sign-off | pending — Gautam |
 | 1.0 DRAFT r3 | 2026-07-31 | §1.1/§5 scope: validated 766-account book; Sean's 40 accounts merged into Kristen (K-R19…K-R22). Kristen at 215 accounts — 9 of her 22 days lose their prospect first pass; coverage decision flagged | pending — Gautam |
 | 1.0 DRAFT r4 | 2026-07-31 | §4 scheduling: one scheduled day = one route day (~10 stops, one area, mixed tiers, prospects riding along). Replaces stitched loop labels and producer-only days after Kristen's field read. Tier-1 median interval holds at 21 days | pending — Gautam |
+| 1.0 DRAFT r5 | 2026-08-07 | Weekly Friday true-up from live MMC exports (cadence runs on actual check-ins); territory re-clustered on MMC coordinates; same-building accounts visited together; finish-early bonus stops; new-account auto-intake + monthly scrub cadence proposed (`pm/spine-routing-parking-lot.md`) | pending — Gautam |
