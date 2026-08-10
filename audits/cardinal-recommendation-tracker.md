@@ -5,19 +5,66 @@ recommendation — *what did they recommend, what is the verified status on our 
 today, and which instrument measures it going forward.* All opportunity work in this
 workspace hangs off this document.
 
-**Last verified: 2026-07-22** · Sources: GA4 API (property 370514163), Semrush
-(project "SHP Spine 2026", Site Audit snapshot Jul 21), direct site checks (network
-allowlist added 2026-07-22 — note: Cloudflare serves a bot challenge to non-browser
-requests, so page-level title/meta checks still need a real-browser pass or Cardinal
-confirmation), **GSC API (granted 2026-07-22 — live)**, and the audit texts in
-`cardinal-2026-06/`. Instrument validation: our GSC pull of Cardinal's exact audit
-window (2026-03-16→06-13) returns 13,506 clicks / 1,167,350 impressions / 1.16% CTR —
-matching their reported 13,668 / 1,186,066 / 1.15%, so statuses here are measured on
-the same data Cardinal used.
+**Last verified: 2026-08-10** · Sources: GA4 API (property 370514163), Semrush
+(project "SHP Spine 2026", Site Audit snapshot **Aug 4**), **GSC API** (search
+analytics + URL Inspection + sitemaps), **PSI API (field CrUX + lab, keyed —
+`PAGESPEED_API_KEY` now live in the environment)**, and the audit texts in
+`cardinal-2026-06/`. Direct site fetches remain unusable from this environment
+(Cloudflare firewall-blocks our egress range — see the 2026-07-27 measurement
+caveat below); all statuses are API-verified instead. Instrument validation: our
+GSC pull of Cardinal's exact audit window (2026-03-16→06-13) returns 13,506
+clicks / 1,167,350 impressions / 1.16% CTR — matching their reported 13,668 /
+1,186,066 / 1.15%, so statuses here are measured on the same data Cardinal used.
 
 **Legend:** ✅ done/confirmed · 🟠 partial/in motion · ❌ not done · ❓ not verifiable
 from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
 
+> **Re-check 2026-08-10 — deltas since 2026-07-22/27 (SEO-focused pass):**
+> - 📈 **The visibility slide has BOTTOMED and turned.** GSC daily impressions:
+>   mid-June ~12.5k/weekday → mid-July trough ~6.8–7.4k → **first week of Aug back
+>   to ~10.3k/day**. The upturn starts 2026-07-20→27 — exactly when the Cloudflare
+>   challenge exemptions + robots.txt fixes landed. Clicks recovering more slowly
+>   (weekly 890 → 936); GA4 organic sessions still flat at the bottom (Jul closed
+>   3,025; Aug pace ~2,865). Impressions lead clicks lead sessions — watch order.
+> - 🆕 **URL-architecture migration is LIVE** (the March rebuild's condition/treatment
+>   post types — Cardinal's Phase-2 consolidation): old
+>   `/conditions-we-treat/...carpal-tunnel-syndrome/` now **301s to
+>   `/conditions/carpal-tunnel-syndrome/`, Google canonical accepted** (URL
+>   Inspection 2026-08-10). Ranking equity has NOT yet transferred: new URL sits
+>   pos ~16 / 197 impr/28d vs the old #1.37 / ~4,850 impr/28d at audit.
+> - ✅ **All 5 spine condition hubs are PUBLISHED and indexed** under `/conditions/`
+>   (stenosis, herniated disc, sciatica, DDD, spondylolisthesis — plus a bonus
+>   lumbar-stenosis page): ~1,139 impr / 4 clicks / positions 13.6–21.1 over the
+>   last 28d. The Phase-2 "publish" gate is met; the visibility ramp is the next gate.
+> - 🟠 **TKA cluster consolidated in SERPs: 15 competing pages → 3** (hub
+>   `/treatment/total-knee-arthroplasty-tka/` 9,316 impr + comprehensive guide 779 +
+>   partial-knee 26). But **0 clicks on 10,121 impressions (CTR 0.00%)** — the
+>   title/meta rewrite outcome still hasn't landed.
+> - ❌ **Schema errors went UP: 446 → 671** (Aug 4 crawl; checks 2,367 → 3,008 — more
+>   markup is being deployed, so the claim "schema was implemented" is visible in the
+>   data, but it's failing validation). Issue-45 sample: **every error points at the
+>   same `@graph` node (`/@graph/0`)** — one template-level block erroring sitewide;
+>   one fix should clear hundreds. Search Appearance still shows **TRANSLATED_RESULT
+>   only** — zero FAQ/Breadcrumb rich-result impressions.
+> - 🟠 **CWV: LCP fix holding (p75 1.26–1.30s FAST everywhere); CLS still the blocker
+>   at 0.12 on 4/5 pages — but the spine hub now PASSES at 0.10** (PSI field,
+>   2026-08-10). Lab CLS is near-zero (0–0.032), so current templates look clean;
+>   field is a trailing 28-day window — if the image width/height fix shipped, field
+>   should follow. Verify with Paul whether it actually shipped.
+> - Sitemap: **334 submitted, 0 errors / 0 warnings** (GSC) — down from 343, clean.
+>   On-page cleanup continues: dup titles 5→2, dup metas 7→4, missing H1 21→20,
+>   missing meta descriptions 0 holds. Site Health 75 (flat). Broken internal links
+>   754→775 and 4xx 8→9, but link checks nearly doubled (47.5k→83.3k) — likely crawl
+>   scope, re-read next snapshot. Orphaned sitemap pages 57→53.
+> - Backlinks flat: AS 29→30, refdomains ~398. Hospital/association link gate unstarted.
+> - **Owner context (2026-08-10 leadership sync, Gautam/Joe):** strategy framed as
+>   L1 condition content + schema ("finish keyword expansion — the foundation"),
+>   L2 physician-specific differentiation (procedure-mix data pull w/ Santosh →
+>   "famous for" positioning per surgeon), L3 asset assembly (spine-institute
+>   proof points). Asks: exemplar sites from Cardinal's SEO lead of pillar/schema
+>   ecosystems done well, and a progress-measurement view (this tracker + the
+>   instruments below are that view).
+>
 > **Re-check 2026-07-22 (evening) — deltas since the morning pass:**
 > - ✅ **Liine → GA4 event forwarding went LIVE** (configured by Joe today, all events,
 >   no filters). `Liine_*` events now flow into GA4: AIC 67 · FTIC 38 · NP_LC 19 ·
@@ -52,23 +99,21 @@ from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
 
 ## 1. Headline status (what the data says today)
 
-1. **🚨 Cardinal's #1 urgent item appears UNRESOLVED — and it's still costing us.**
-   GA4 organic sessions: **Mar 6,163 → Apr 5,264 → May 3,027 → Jun 3,209 → Jul ~2,750
-   (run-rate)** — the −42% May cliff lands exactly on Cardinal's documented **May 1 CWV
-   regression** (238 Good URLs → 0 by May 13; LCP 3.5s; mobile score 28/100). GSC
-   (granted 2026-07-22) adds search-side evidence: post-audit (Jun 14–Jul 19) vs.
-   audit window, **impressions/day −27%** (12,970→9,531) and **avg position worse by
-   2.4** (10.9→13.3) while CTR ticked up 1.16%→1.38% — a visibility/rankings decline,
-   not a click-through problem. Most concrete casualty: **the carpal tunnel page fell
-   from position 1.37 to position ~17** (impressions −92%/28d) — Cardinal's fastest
-   quick-win no longer has the ranking the win depended on.
-   **Definitive CWV read (PSI field data, run 2026-07-22): the LCP regression is
-   FIXED — p75 now 1.36–1.57s (was 3.5s), lab 52–79/100 (was 28) — but CLS p75 is
-   0.11–0.12 on every page tested, just over the 0.10 threshold, so the site still
-   fails "Good" status.** The remaining blocker is Cardinal's named CLS cause (203
-   images missing width/height — one template fix). Rankings haven't recovered yet;
-   Google re-ranking lags CWV repair, and the AI-bot/Cloudflare posture (items 2–3)
-   is a second suppressor to clear while waiting.
+1. **📈 UPDATE 2026-08-10: the decline has bottomed and visibility is recovering —
+   sessions haven't followed yet.** The full arc: GA4 organic sessions **Mar 6,163 →
+   Apr 5,264 → May 3,027 → Jun 3,209 → Jul 3,025 → Aug ~2,865 pace** (flat at the
+   bottom). But GSC daily impressions show a V: mid-June ~12.5k/weekday → mid-July
+   trough ~6.8–7.4k → **~10.3k/day first week of Aug**, with the turn starting
+   2026-07-20→27, right at the Cloudflare/robots fixes. 28d-vs-28d averages still
+   read negative (impressions −12%, avg position 13.2→14.5) because the window
+   straddles the trough — the daily curve is the truthful read. Two causes are now
+   separable: (a) the May 1 CWV regression — **LCP fixed and holding (p75
+   1.26–1.30s), CLS still failing at 0.12 on 4/5 pages (spine hub now passes at
+   0.10)**; (b) a **URL-architecture migration** (March rebuild's `/conditions/`–
+   `/treatment/` post types) that 301'd legacy URLs — e.g. the carpal tunnel page's
+   old #1-ranked URL redirects to `/conditions/carpal-tunnel-syndrome/` (canonical
+   accepted), which sits at pos ~16 with the ranking equity not yet transferred.
+   Recovery case = finish CLS + let the migration settle + keep crawler access clean.
 2. **✅✅ AI-crawler access FULLY FIXED — externally verified 2026-07-27.** End-to-end
    tests all pass: `/robots.txt` and `/llms.txt` return real content to plain fetches
    **and to AI user agents (ClaudeBot UA → 200, GPTBot UA → 200)**; content pages no
@@ -97,12 +142,17 @@ from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
 5. **Two Phase-1 items verified DONE:** `llms.txt` is live and validly formatted
    (with the challenge caveat above), and missing meta descriptions went from 55
    (June) to **0 flagged** (Semrush Jul 21). Rank Math work is landing.
-6. **Schema remains the big open item:** **446 structured-data markup errors** still
-   flagged (Cardinal: Hospital @type cascade, 22–61 errors/page on 42 physician bios;
-   sameAs → competitor `@mendelsonortho`). **0 FAQ rich-result keywords** in Semrush —
-   unchanged from Cardinal's "zero rich results" baseline.
-7. **New flags Cardinal didn't have:** 754 broken internal links, 1 malformed
-   robots.txt line, 57 orphaned sitemap pages (Semrush Jul 21).
+6. **Schema remains the big open item — and errors are UP: 446 → 671** (Aug 4 crawl).
+   Checks grew 2,367→3,008, i.e. **more markup is being deployed** (consistent with
+   Paul's "top 10 implemented" report), but it's failing validation. The issue-45
+   sample shows **every error pointing at the same `/@graph/0` node** — a single
+   template-level block (Cardinal's Hospital @type cascade) erroring on every page
+   that carries it, so **one template fix should clear hundreds at once**. Outcome
+   metric unchanged: **zero rich results** — GSC Search Appearance (Jul 13–Aug 9)
+   still shows TRANSLATED_RESULT only.
+7. **New flags Cardinal didn't have:** 775 broken internal links (754 on Jul 21;
+   link-check scope nearly doubled between crawls, so treat the delta as noise until
+   the next snapshot), 9 pages 4xx, 53 orphaned sitemap pages (Semrush Aug 4).
 8. **Paid still carries the site:** google/cpc 4,865 sessions vs google/organic 1,666
    (last 30d). The spine hub gets 2,803 sessions/90d at 78% engagement — but only
    **52 of them arrive from organic search** (~4/week). Cardinal's "massive
@@ -110,28 +160,31 @@ from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
 
 ## 2. Verified snapshot — numbers to re-pull each check-in
 
-| Metric | Cardinal baseline (Jun 2026) | Today (2026-07-22) | Instrument |
+| Metric | Cardinal baseline (Jun 2026) | Today (2026-08-10) | Instrument |
 |---|---|---|---|
-| Semrush Site Health | — (not in audit) | **75/100** (+2 vs Jul 16) | Semrush Site Audit, project 30453033 |
-| Organic sessions/month | ~5,000+ (Mar–Apr level) | **~2,750 run-rate, falling** | GA4 `sessionDefaultChannelGroup` |
-| Organic CTR (GSC) | 1.15% (target 1.8–2.2% by day 90) | **1.38%** (Jun 14–Jul 19) — but on −27% impressions/day | GSC API ✅ |
-| Avg position (GSC) | 10.9 (audit window) | **13.3** — rankings sliding | GSC API ✅ |
-| Carpal tunnel page | pos 1.37 · 15,605 impr/90d · 0.03% CTR | **pos ~17 · 401 impr/28d (−92%)** | GSC API ✅ |
-| TKA cluster | 0.06% CTR · 15 competing pages | **0.011% CTR** (18,060 impr/28d) — no consolidation visible | GSC API ✅ |
-| Branded clicks (regex synergy\|mendelson\|kornblum) | ~80% of clicks (Cardinal's broader classification) | 964 clicks · 4.69% CTR · pos 7.1 (Jun 14–Jul 19; lower-bound share ~20% of all clicks — methodology differs, use this as the like-for-like baseline going forward) | GSC API ✅ |
-| Rich-result types in Search Appearance | 1 (Translated Results only) | **still only TRANSLATED_RESULT** in the Jun 14–Jul 19 performance report — **but GSC URL Inspection now detects a Breadcrumbs rich result on the spine hub (verdict PASS, 2026-07-27)**: schema is starting to register. Watch Search Appearance for Breadcrumbs to appear as impressions accrue. | GSC API ✅ |
-| CWV field data (CrUX p75, mobile) | LCP **3.5s** FAIL · CLS 0.11 · lab 28/100 | **LCP 1.36–1.57s FAST** ✅ · **CLS 0.11–0.12 — still > 0.10** ❌ · INP 102–120ms FAST · overall AVERAGE · lab 52–79/100 (5 pages, run 2026-07-22 via `scripts/cwv-check.py`) | PSI API ✅ |
-| Structured-data markup errors | 22–61/page on 42 bios | **446 items** | Semrush Site Audit (issue 45) |
-| FAQ rich-result keywords | 0 rich results in GSC | **0** | Semrush `serp_faq_keywords` |
-| Featured-snippet keywords | — | 33 | Semrush domain_rank |
-| Keywords where AI Overviews appear | near-zero citations | **2,276** (exposure, not citation) | Semrush `serp_ai_overview_keywords` |
-| Local-pack keywords | GBP working (1,781 clicks/90d) | 1,681 | Semrush + GA4 GBP UTMs (~770 sessions/30d) |
-| Referring domains | 130 (GSC, thin) | **408** (Semrush counts wider) · AS 29 | Semrush backlinks_overview |
-| Duplicate titles / dup metas / missing H1 | 5 / 86 / 14 | **5 / 7 / 21** | Semrush issues 6, 15, 103 |
-| Missing meta descriptions | 55 (incl. 7 location pages) | **0 flagged** ✅ | Semrush issue 106 |
-| llms.txt | absent | **live, valid** ✅ | Semrush issues 137/219 |
-| Broken internal links / 4xx pages | 10 internal 4xx | **754 / 8** | Semrush issues 8, 2 |
-| GA4 key events (30d) | conversion tracking "unknown" | `new_patient_intent` 3,981 · `click_to_call` 1,328 · `zocdoc handoff` 1,252 | GA4 |
+| Semrush Site Health | — (not in audit) | **75/100** (flat since Jul 21; errors −28 vs Jul 28) | Semrush Site Audit, project 30453033 |
+| Organic sessions/month | ~5,000+ (Mar–Apr level) | **Jul closed 3,025 · Aug pace ~2,865 — flat at the bottom, no longer falling** | GA4 `sessionDefaultChannelGroup` |
+| Organic CTR (GSC) | 1.15% (target 1.8–2.2% by day 90) | **1.49%** (Jul 13–Aug 9) | GSC API ✅ |
+| Impressions/day (GSC) | 12,970 (audit window) | 28d avg 8,923, **but V-shaped: mid-Jul trough ~6.8–7.4k → ~10.3k first week of Aug** — recovering since the Jul 20–27 Cloudflare/robots fixes | GSC API ✅ |
+| Avg position (GSC) | 10.9 (audit window) | **14.5** (28d avg — straddles the trough; daily reads improving post-Jul 27) | GSC API ✅ |
+| Carpal tunnel page | pos 1.37 · 15,605 impr/90d · 0.03% CTR | **old URL 301s → `/conditions/carpal-tunnel-syndrome/` (canonical accepted); new URL pos 16.3 · 197 impr/28d · 0 clicks** — equity not yet transferred | GSC API + URL Inspection ✅ |
+| TKA cluster | 0.06% CTR · 15 competing pages | **Consolidated to 3 URLs in SERPs** ✅ · but **0 clicks on 10,121 impr/28d (0.00% CTR)** ❌ | GSC API ✅ |
+| 5 spine condition hubs | near-zero presence | **All 5 published + indexed under `/conditions/`** (+ lumbar-stenosis): 1,139 impr · 4 clicks · pos 13.6–21.1 (28d) | GSC API ✅ |
+| Branded vs non-branded clicks | ~80% of clicks branded | **80.5% branded** (3,003 of 3,729); non-branded: 726 clicks · 0.63% CTR · pos 21.3 (Jul 13–Aug 9) — Cardinal's core diagnosis unchanged | GSC API ✅ |
+| Rich-result types in Search Appearance | 1 (Translated Results only) | **still only TRANSLATED_RESULT** (Jul 13–Aug 9; 5 clicks / 2,090 impr). Breadcrumbs detected via URL Inspection on spine hub (2026-07-27) but not yet appearing in Search Appearance | GSC API ✅ |
+| CWV field data (CrUX p75, mobile) | LCP **3.5s** FAIL · CLS 0.11 · lab 28/100 | **LCP 1.26–1.30s FAST** ✅ · **CLS 0.12 on 4/5 pages ❌ — spine hub now PASSES at 0.10** ✅ · INP FAST · overall AVERAGE · lab 60–76/100 · lab CLS ~0 (templates look clean; field trails 28d) (run 2026-08-10 via `scripts/cwv-check.py`) | PSI API ✅ (keyed) |
+| Structured-data markup errors | 22–61/page on 42 bios | **671 items (was 446)** — checks 2,367→3,008 (markup expanding, single `/@graph/0` template node failing sitewide) | Semrush Site Audit (issue 45) |
+| FAQ rich-result impressions | 0 rich results in GSC | **0** (no FAQ/Breadcrumb rows in Search Appearance, Jul 13–Aug 9) | GSC searchAppearance ✅ |
+| Featured-snippet keywords | — | 33 (as of 07-22; not re-pulled 08-10) | Semrush domain_rank |
+| Keywords where AI Overviews appear | near-zero citations | 2,276 (as of 07-22; not re-pulled 08-10) | Semrush `serp_ai_overview_keywords` |
+| Local-pack keywords | GBP working (1,781 clicks/90d) | 1,681 (as of 07-22; not re-pulled 08-10) | Semrush + GA4 GBP UTMs |
+| Referring domains | 130 (GSC, thin) | **398 · AS 30** (was 408 · AS 29 — flat; recount noise) | Semrush backlinks_overview |
+| Duplicate titles / dup metas / missing H1 | 5 / 86 / 14 | **2 / 4 / 20** — steady cleanup | Semrush issues 6, 15, 103 |
+| Missing meta descriptions | 55 (incl. 7 location pages) | **0 flagged** ✅ holds | Semrush issue 106 |
+| llms.txt | absent | **live, valid** ✅ (externally verified 07-27; egress still blocked for re-check, no contrary signal) | Semrush issues 137/219 |
+| Broken internal links / 4xx pages | 10 internal 4xx | **775 / 9** (link checks ~doubled between crawls — delta likely scope noise) | Semrush issues 8, 2 |
+| XML sitemap | 412 URLs, 128 non-indexable | **334 submitted · 0 errors · 0 warnings** | GSC sitemaps ✅ |
+| GA4 key events (30d) | conversion tracking "unknown" | not re-pulled this pass (SEO-focused; see 07-22 values + §6) | GA4 |
 | Google Ads spend visibility | agency-side only | **linked to GA4** — campaign cost/clicks queryable | GA4 (advertiser metrics) |
 
 ## 3. Organic/AIO audit — Phase 1 (Days 1–30) checklist
@@ -140,8 +193,8 @@ Cardinal's own "What success looks like at Day 30," statused:
 
 | # | Phase-1 success criterion | Status | Evidence / unlock |
 |---|---|---|---|
-| 1 | CWV regression identified & fixed; Good URLs recovering | 🟠 **LCP fixed, CLS still failing** | PSI field data 2026-07-22: LCP p75 recovered to 1.36–1.57s (was 3.5s); lab 52–79/100 (was 28). **CLS p75 = 0.11–0.12 on all 5 pages — just over the 0.10 pass line — so pages still aren't "Good."** Remaining fix is Cardinal's named CLS cause: 203 images missing width/height (template change) + testimonial-slider DOM. Rankings haven't recovered yet (GSC position 13.3) — re-ranking lags; finish CLS to complete the recovery case. |
-| 2 | Zero 404s + zero 301s in XML sitemap | 🟠 **trending done** | GSC (Jul 22): sitemap_index 0 errors / 0 warnings, 343 submitted (audit: 412 incl. 128 non-indexable) — cleanup landed. Semrush still flags 2 wrong entries + 8 pages 4xx. |
+| 1 | CWV regression identified & fixed; Good URLs recovering | 🟠 **LCP fixed & holding; CLS the last blocker — first page now passes** | PSI field 2026-08-10: LCP p75 1.26–1.30s FAST on all 5 pages; lab 60–76/100. **CLS p75 = 0.12 on 4/5 pages; the spine hub now PASSES at 0.10.** Lab CLS ≈ 0 on every page — current templates look clean, and field data trails ~28 days, so if the width/height fix shipped the rest should follow within weeks. Confirm with Paul it actually shipped, then watch field CLS cross 0.10. Impressions recovering since Jul 20–27 (see headline 1). |
+| 2 | Zero 404s + zero 301s in XML sitemap | 🟠 **trending done** | GSC (Aug 10): sitemap_index **0 errors / 0 warnings, 334 submitted** (Jul 22: 343; audit: 412 incl. 128 non-indexable) — cleanup continues. Semrush (Aug 4) still flags 9 pages 4xx + 2 sitemap-format entries. |
 | 3 | Zero CSP errors; Clarity + Cloudflare data restored | ❓ | Needs page-level check (env blocks site) or ask Paul: is Clarity data flowing? |
 | 4 | logo.svg <20KB; Hotjar deferred; LCP improved | ❓ | PSI API key answers all three in one call |
 | 5 | Security headers on 100% of pages | ❓ | Needs direct fetch (blocked) — one `curl -I` from any laptop |
@@ -150,18 +203,22 @@ Cardinal's own "What success looks like at Day 30," statused:
 | **Measurement caveat (not a site defect)** | ⚠️ **2026-07-27** | Our monitoring egress range **`160.79.106.0/24`** is now firewall-blocked by Cloudflare (Ray ID `a21bf49b0c648b8e`) after repeated bot-UA test requests tripped bot-fight scoring. Consequence: direct curl checks of the site from sessions return 403 regardless of site state — **use GSC URL Inspection / Semrush / GA4 for verification instead**, or ask Paul for a WAF Skip rule on that range to restore the tripwire. |
 | 6c | Password-protect staging domain synergy.egowebdev.com | ✅ **fixed 2026-07-22** | Was HTTP 200 at morning check; re-verified same day: **HTTP 401** (auth required) |
 | 7 | Homepage meta description live | ✅ | Confirmed in audit (Rank Math) + Semrush: 0 missing sitewide |
-| 8 | Carpal tunnel + TKA titles/metas rewritten | ❌ **and worse** | GSC (Jun 22–Jul 19): TKA CTR 0.011% — unchanged, rewrite not landing. Carpal tunnel: the page **lost its #1 ranking entirely** (pos ~17, impressions −92%) — rewrite is now moot until rankings recover; treat as part of the regression damage |
-| 9 | Archive template duplicate titles/metas fixed | 🟠 | Dup metas 86→7; dup titles still 5 (locations-type taxonomy) |
-| 10 | MedicalOrganization + Physician schema live, error-free | ❌ | 446 markup errors persist; sameAs/competitor fix unverified; GSC Enhancements needs grant |
+| 8 | Carpal tunnel + TKA titles/metas rewritten | ❌ **outcome still absent — now reframed by the URL migration** | GSC (Jul 13–Aug 9): TKA cluster **consolidated 15→3 URLs** (a real Phase-2 win) but **0 clicks on 10,121 impressions — 0.00% CTR** at pos 9.3: whatever title/meta is live isn't earning clicks; re-do against Cardinal's formulas. Carpal tunnel: old #1 URL **301s to `/conditions/carpal-tunnel-syndrome/`** (canonical accepted 2026-08-10); new URL pos ~16, 197 impr/28d — rewrite matters again once equity transfers; strengthen internal links to the new URL now. |
+| 9 | Archive template duplicate titles/metas fixed | 🟠 **nearly done** | Dup metas 86→7→**4**; dup titles 5→**2** (Aug 4 crawl) |
+| 10 | MedicalOrganization + Physician schema live, error-free | ❌ **errors rising with deployment** | **671 markup errors (was 446)**; checks +27% — new markup is shipping but failing validation. Root cause visible in issue-45 detail: every sampled error = the same `/@graph/0` template node → **one template fix clears the bulk**. Zero rich results in Search Appearance still. sameAs/competitor fix unverified. |
 | 11 | 75-query AIO tracking baseline established | ❓ | Ask Cardinal for the query set + baseline. Interim: Semrush AIO-keyword report + manual prompt tests. |
 
 ## 4. Phase 2–3 gates (Days 31–90) — what to check next
 
-- ⬜ **TKA cluster consolidated** to one canonical hub (baseline: 15 pages, 30,143
-  impressions, 0.06% CTR) → GSC page report + Semrush organic_research
-- ⬜ **5 spine condition hubs published** (stenosis, herniated disc, sciatica, DDD,
-  spondylolisthesis — all near-zero today; GA4: stenosis page = 4 visits/90d, 0%
-  engagement) → GA4 landing pages + GSC non-branded impressions
+- 🟠 **TKA cluster consolidated** to one canonical hub (baseline: 15 pages, 30,143
+  impressions, 0.06% CTR) → **✅ consolidation live as of Aug 10: 3 URLs in SERPs,
+  with `/treatment/total-knee-arthroplasty-tka/` the clear canonical (9.3k of 10.1k
+  impr)**. Remaining gate: clicks (0 in last 28d) — title/meta + snippet work.
+- 🟠 **5 spine condition hubs published** (stenosis, herniated disc, sciatica, DDD,
+  spondylolisthesis) → **✅ ALL 5 PUBLISHED + indexed under `/conditions/` (verified
+  2026-08-10; + a lumbar-stenosis page)**. Early visibility only: 1,139 impr /
+  4 clicks / pos 13.6–21.1 per 28d. Next gates: non-branded impression growth,
+  positions <10, GA4 engaged sessions, physician review + FAQPage schema on each.
 - ⬜ **MedicalClinic schema fixed on 8 location pages**; unique metas (✅ metas appear
   done per Semrush) → issue-45 count should drop
 - ⬜ **Southfield 9-URL consolidation** + `/full-service-clinics/` + `/shp-*` 301s →
@@ -229,10 +286,8 @@ eyeball from any browser. Priority lane first:
    Remaining caveat: Cloudflare challenges non-browser requests for HTML pages, so
    title/meta/schema page checks need either a Cloudflare WAF exception, a manual
    browser pass, or Cardinal's confirmation.
-2. 🟡 **PageSpeed Insights API key** — still needed (keyless quota is exhausted;
-   verified 429 on 2026-07-22). Enable "PageSpeed Insights API" in the
-   `synergy-health-partners` GCP project → Credentials → create an API key
-   (restrict it to PSI) → add env var `PAGESPEED_API_KEY` in the Claude environment.
+2. ✅ **PageSpeed Insights API key — LIVE** (verified 2026-08-10: `PAGESPEED_API_KEY`
+   present in the environment; `scripts/cwv-check.py` ran keyed against all 5 pages).
 3. 🟡 **Google Business Profile APIs** — Performance API enablement started
    2026-07-22. Verified same day: the companion **My Business Account Management**
    and **My Business Business Information** APIs are NOT yet enabled in the project
