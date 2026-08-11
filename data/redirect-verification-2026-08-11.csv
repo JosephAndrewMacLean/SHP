@@ -1,0 +1,178 @@
+source,proposed_target,source_http,source_redirects_to_now,category,action_target,confidence,note
+/specialties/spine-back-and-neck/lumbar-laminectomy/,/treatment/lumbar-laminectomy/,301,/treatment/laminectomy/ [200],superseded (site chose a different live target),,High,
+/specialties/orthopedic-services/,/specialty/orthopedic-services/,301,/specialty/orthopedic-services/ [200],done,/specialty/orthopedic-services/,High,
+/specialties/physical-therapy/,/specialty/physical-therapy/,301,/specialty/physical-therapy/ [200],done,/specialty/physical-therapy/,High,
+/specialties/occupational-therapy/hand-therapy/,/treatment/hand-therapy/,301,/treatment/hand-therapy/ [200],done,/treatment/hand-therapy/,High,
+/conditions-we-treat/hand-upper-extremity-conditions/carpal-tunnel-syndrome/,/conditions/carpal-tunnel-syndrome/,301,/conditions/carpal-tunnel-syndrome/ [200],done,/conditions/carpal-tunnel-syndrome/,High,
+/providers/david-h-mendelson-md/,/providers/david-mendelson-md/,301,/providers/david-mendelson-md/ [200],done,/providers/david-mendelson-md/,High,
+/specialties/occupational-therapy/custom-orthoses-splints/,/treatment/custom-orthoses-splints/,301,/treatment/custom-orthoses-splints/ [200],done,/treatment/custom-orthoses-splints/,High,
+/providers/stephen-d-mendelson-md/,/providers/stephen-mendelson-md/,301,/providers/stephen-mendelson-md/ [200],done,/providers/stephen-mendelson-md/,High,
+/conditions-we-treat/spine-neck-back-conditions/neck-fracture-broken-neck/,/conditions/neck-fracture-broken-neck/,301,/conditions/neck-fracture-broken-neck/ [200],done,/conditions/neck-fracture-broken-neck/,High,
+/specialties/hand-upper-extremity/nerve-repair/,/treatment/nerve-repair/,301,/treatment/nerve-repair/ [200],done,/treatment/nerve-repair/,High,
+/providers/kevin-r-lee-md/,/providers/kevin-lee-md/,301,/providers/kevin-lee-md/ [200],done,/providers/kevin-lee-md/,High,
+/providers/jeffrey-b-klein-dpm/,/providers/jeffrey-klein-dpm/,301,/providers/jeffrey-klein-dpm/ [200],done,/providers/jeffrey-klein-dpm/,High,
+/conditions-we-treat/hand-upper-extremity-conditions/hand-arthritis/,/conditions/hand-arthritis/,301,/conditions/hand-arthritis/ [200],done,/conditions/hand-arthritis/,High,
+/specialties/pain-management/trigger-point-injection/,/treatment/trigger-point-injection/,301,/treatment/trigger-point-injection/ [200],done,/treatment/trigger-point-injection/,High,
+/specialties/orthopedic-services/shoulder-arthroscopy/,/treatment/shoulder-arthroscopy/,301,/treatment/shoulder-arthroscopy/ [200],done,/treatment/shoulder-arthroscopy/,High,
+/specialties/pain-management/peripheral-nerve-injection/,/treatment/peripheral-nerve-injection/,301,/treatment/peripheral-nerve-injection/ [200],done,/treatment/peripheral-nerve-injection/,High,
+/specialties/pain-management/spinal-cord-stimulator/,/treatment/spinal-cord-stimulator/,301,/treatment/spinal-cord-stimulator/ [200],done,/treatment/spinal-cord-stimulator/,High,
+/specialties/spine-back-and-neck/sacroiliac-joint-fusion/,/treatment/sacroiliac-joint-fusion/,301,/treatment/sacroiliac-joint-fusion/ [200],done,/treatment/sacroiliac-joint-fusion/,High,
+/conditions-we-treat/foot-ankle-conditions/mortons-neuroma/,/conditions/mortons-neuroma/,301,/conditions/mortons-neuroma/ [200],done,/conditions/mortons-neuroma/,High,
+/providers/jeffrey-d-mendelson-md/,/providers/jeffrey-mendelson-md/,301,/providers/jeffrey-mendelson-md/ [200],done,/providers/jeffrey-mendelson-md/,High,
+/specialties/occupational-therapy/,/specialty/occupational-therapy/,301,/specialty/occupational-therapy/ [200],done,/specialty/occupational-therapy/,High,
+/specialties/spine-back-and-neck/thoracic-lumbar-decompression/,/treatment/thoracic-lumbar-decompression/,301,/treatment/thoracic-lumbar-decompression/ [200],done,/treatment/thoracic-lumbar-decompression/,High,
+/conditions-we-treat/spine-neck-back-conditions/back-fracture-break/,/conditions/back-fracture-break/,301,/conditions/back-fracture-break/ [200],done,/conditions/back-fracture-break/,High,
+/conditions-we-treat/foot-ankle-conditions/bunions/,/conditions/bunions/,301,/conditions/bunions/ [200],done,/conditions/bunions/,High,
+/specialties/hand-upper-extremity/mass-removal/,/treatment/mass-removal/,301,/treatment/mass-removal/ [200],done,/treatment/mass-removal/,High,
+/conditions-we-treat/spine-neck-back-conditions/sciatica/,/conditions/sciatica/,301,/specialty/spine-neck-back/ [200],superseded (site chose a different live target),,High,
+/specialties/hand-upper-extremity/cmc-arthroplasty/,/treatment/cmc-arthroplasty/,301,/treatment/cmc-arthroplasty/ [200],done,/treatment/cmc-arthroplasty/,High,
+/providers/kristina-e-green-dpm/,/providers/kristina-green-dpm/,301,/providers/kristina-green-dpm/ [200],done,/providers/kristina-green-dpm/,High,
+/conditions-we-treat/spine-neck-back-conditions/spinal-stenosis/,/conditions/spinal-stenosis/,301,/conditions/spinal-stenosis/ [200],done,/conditions/spinal-stenosis/,High,
+/providers/anthony-oddo-do/,/providers/anthony-j-oddo-do/,200,,"done — reversed: site kept source as canonical, proposed target redirects to it",,High,
+/specialties/podiatry/bunionectomy/,/treatment/bunionectomy/,301,/treatment/bunionectomy/ [200],done,/treatment/bunionectomy/,High,
+/conditions-we-treat/spine-neck-back-conditions/cervical-radiculopathy/,/conditions/cervical-radiculopathy/,301,/conditions/cervical-radiculopathy/ [200],done,/conditions/cervical-radiculopathy/,High,
+/conditions-we-treat/spine-neck-back-conditions/spondylolisthesis/,/conditions/spondylolisthesis/,301,/conditions/spondylolisthesis/ [200],done,/conditions/spondylolisthesis/,High,
+/specialties/pain-management/joint-pain-injections/,/treatment/joint-pain-injections/,301,/treatment/joint-pain-injections/ [200],done,/treatment/joint-pain-injections/,High,
+/specialties/spine-back-and-neck/microdiscectomy/,/treatment/microdiscectomy/,301,/treatment/microdiscectomy/ [200],done,/treatment/microdiscectomy/,High,
+/providers/noah-kueber/,/providers/noah-kueber-pt/,301,/providers/noah-kueber-pt/ [200],done,/providers/noah-kueber-pt/,High,
+/conditions-we-treat/shoulder/shoulder-arthritis/,/conditions/shoulder-arthritis/,301,/conditions/shoulder-arthritis/ [200],done,/conditions/shoulder-arthritis/,High,
+/providers/amy-mazurek-dpt/,/providers/amy-mazurek-mpt/,301,/providers/amy-mazurek-mpt/ [200],done,/providers/amy-mazurek-mpt/,High,
+/specialties/podiatry/prp-injections/,/treatment/prp-injections/,301,/treatment/prp-injections/ [200],done,/treatment/prp-injections/,High,
+/conditions-we-treat/hand-upper-extremity-conditions/trigger-finger/,/conditions/trigger-finger/,301,/treatment/trigger-finger-release/ [200],superseded (site chose a different live target),,High,
+/specialties/pain-management/emg/,/treatment/emg/,301,/treatment/emg/ [200],done,/treatment/emg/,High,
+/specialties/hand-upper-extremity/tendon-repair/,/treatment/tendon-repair/,301,/treatment/tendon-repair/ [200],done,/treatment/tendon-repair/,High,
+/conditions-we-treat/spine-neck-back-conditions/arthritic-back-pain/,/conditions/arthritic-back-pain/,301,/conditions/arthritic-back-pain/ [200],done,/conditions/arthritic-back-pain/,High,
+/conditions-we-treat/spine-neck-back-conditions/lumbar-stenosis/,/conditions/lumbar-stenosis/,301,/conditions/lumbar-stenosis/ [200],done,/conditions/lumbar-stenosis/,High,
+/specialties/orthopedic-services/elbow-arthroscopy/,/treatment/elbow-arthroscopy/,301,/treatment/elbow-arthroscopy/ [200],done,/treatment/elbow-arthroscopy/,High,
+/specialties/hand-upper-extremity/dupuytren-contracture-release/,/treatment/dupuytren-contracture-release/,301,/treatment/dupuytren-contracture-release/ [200],done,/treatment/dupuytren-contracture-release/,High,
+/specialties/podiatry/toe-arthroplasty/,/treatment/toe-arthroplasty/,301,/treatment/toe-arthroplasty/ [200],done,/treatment/toe-arthroplasty/,High,
+/conditions-we-treat/shoulder/frozen-shoulder/,/conditions/frozen-shoulder/,301,/conditions/frozen-shoulder/ [200],done,/conditions/frozen-shoulder/,High,
+/specialties/hand-upper-extremity/cubital-tunnel-release/,/treatment/cubital-tunnel-release/,301,/treatment/cubital-tunnel-release/ [200],done,/treatment/cubital-tunnel-release/,High,
+/conditions-we-treat/spine-neck-back-conditions/herniated-disc/,/conditions/herniated-disc/,301,/conditions/herniated-disc/ [200],done,/conditions/herniated-disc/,High,
+/conditions-we-treat/hip-conditions/hip-osteoarthritis/,/conditions/hip-osteoarthritis/,301,/conditions/hip-osteoarthritis/ [200],done,/conditions/hip-osteoarthritis/,High,
+/conditions-we-treat/foot-ankle-conditions/plantar-fasciitis/,/conditions/plantar-fasciitis/,301,/conditions/plantar-fasciitis/ [200],done,/conditions/plantar-fasciitis/,High,
+/specialties/podiatry/ankle-arthroscopy/,/treatment/ankle-arthroscopy/,301,/treatment/ankle-arthroscopy/ [200],done,/treatment/ankle-arthroscopy/,High,
+/conditions-we-treat/shoulder/shoulder-dislocation/,/conditions/shoulder-dislocation/,301,/conditions/shoulder-dislocation/ [200],done,/conditions/shoulder-dislocation/,High,
+/conditions-we-treat/knee-conditions/patellar-tendinitis/,/conditions/patellar-tendinitis/,301,/conditions/patellar-tendinitis/ [200],done,/conditions/patellar-tendinitis/,High,
+/conditions-we-treat/hand-arthritis/,/conditions/hand-arthritis/,301,/conditions/hand-arthritis/ [200],done,/conditions/hand-arthritis/,High,
+/conditions-we-treat/knee-conditions/knee-bursitis/,/conditions/knee-bursitis/,301,/conditions/knee-bursitis/ [200],done,/conditions/knee-bursitis/,High,
+/conditions-we-treat/sciatica/,/conditions/sciatica/,301,/conditions/sciatica/ [200],done,/conditions/sciatica/,High,
+/conditions-we-treat/spine-neck-back-conditions/si-joint-pain/,/conditions/si-joint-pain/,301,/conditions/si-joint-pain/ [200],done,/conditions/si-joint-pain/,High,
+/conditions-we-treat/spine/herniated-disc/,/conditions/herniated-disc/,404,,to do — dead URL,/conditions/herniated-disc/,High,
+/conditions-we-treat/wrist-injuries-fractures/,/conditions-we-treat/hand-upper-extremity-conditions/wrist-injuries-fractures/,404,,to do — dead URL,/conditions/wrist-fracture/,High,resolved through site redirect
+/providers/orthopedics/,/providers/specialty/orthopedics/,301,/providers/specialty/orthopedics/ [200],done,/providers/specialty/orthopedics/,High,
+/providers/orthopedics/david-h-mendelson-md/,/providers/david-mendelson-md/,404,,to do — dead URL,/providers/david-mendelson-md/,High,
+/providers/orthopedics/stephen-d-mendelson-md/,/providers/stephen-mendelson-md/,404,,to do — dead URL,/providers/stephen-mendelson-md/,High,
+/providers/pain-management/anthony-j-oddo-do/,/providers/anthony-j-oddo-do/,404,,to do — dead URL,/providers/anthony-oddo-do/,High,resolved through site redirect
+/providers/physician-assistant/brittany-miller-pa-c/,/providers/brittany-miller-pa-c/,301,/providers/brittany-miller-pa-c/ [200],done,/providers/brittany-miller-pa-c/,High,
+/providers/physician-assistant/kelley-gray-allen-pa-c/,/providers/kelley-gray-allen-pa-c/,301,/providers/kelley-gray-allen-pa-c/ [200],done,/providers/kelley-gray-allen-pa-c/,High,
+/providers/podiatry/jeffrey-b-klein-dpm/,/providers/jeffrey-klein-dpm/,404,,to do — dead URL,/providers/jeffrey-klein-dpm/,High,
+/providers/sue-piotrowski-pt/,/providers/sue-piotrowski-pta/,301,/providers/sue-piotrowski-pta/ [200],done,/providers/sue-piotrowski-pta/,High,
+/specialty/orthopedic-services/livonia/,/specialties/orthopedic-services/livonia/,200,,"done — reversed: site kept source as canonical, proposed target redirects to it",,High,
+/specialty/orthopedic-services/sterling-heights/,/specialties/orthopedic-services/sterling-heights/,200,,"done — reversed: site kept source as canonical, proposed target redirects to it",,High,
+/providers/dr-hainish-singh-md/,/providers/hainish-singh-md/,404,,to do — dead URL,/providers/hanish-singh-md/,High,resolved through site redirect
+/specialties/spine-neck-back/,/specialty/spine-neck-back/,301,/specialty/spine-neck-back/ [200],done,/specialty/spine-neck-back/,High,
+/conditions-we-treat/spine-neck-back-conditions/degenerative-disc-disease/,/conditions/degenerative-disc-disease/,404,,to do — dead URL,/conditions/degenerative-disc-disease/,High,
+/conditions-we-treat/spine-neck-back-conditions/scoliosis/,/conditions/scoliosis/,404,,to do — dead URL,/conditions/scoliosis/,High,
+/conditions-we-treat/spine-neck-back/arthritic-back-pain/,/conditions/arthritic-back-pain/,301,/conditions/arthritic-back-pain/ [200],done,/conditions/arthritic-back-pain/,High,
+/our-providers/david-mendelson-md/,/providers/david-mendelson-md/,301,/providers/david-mendelson-md/ [200],done,/providers/david-mendelson-md/,High,
+/our-providers/goo/,/providers/,404,,to do — dead URL,/providers/,High,
+/our-providers/spine/andres-munk-md/,/providers/andres-munk-md/,404,,to do — dead URL,/providers/andres-munk-md/,High,
+/providers/jeffrey-r-mendelson-md/,/providers/jeffrey-mendelson-md/,404,,to do — dead URL,/providers/jeffrey-mendelson-md/,High,
+/providers/kyle-bohm-md/null/,/providers/kyle-bohm-md/,404,,to do — dead URL,/providers/kyle-bohm-md/,High,
+/providers/stephen-e-mendelson-md/,/providers/stephen-mendelson-md/,404,,to do — dead URL,/providers/stephen-mendelson-md/,High,
+/specialties/locations/livonia-orthopedics/,/specialties/orthopedic-services/livonia/,301,/specialty/locations/livonia-orthopedics/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,High,resolved through site redirect
+/specialties/locations/warren-orthopedics/directions/,/specialties/locations/livonia-orthopedics/directions/,404,,to do — dead URL,/specialty/orthopedic-services/,High,manual fix (proposed target dead)
+/specialties/orthopedic-services/southfield/,/specialty/orthopedic-services/southfield/,301,/specialty/orthopedic-services/southfield/ [200],done,/specialty/orthopedic-services/southfield/,High,
+/specialties/specialties/pain-management/,/treatment/pain-management/,301,/specialty/specialties/pain-management/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,High,
+/specialties/spine-back-and-neck-old/disc-arthroplasty/,/specialties/spine-back-and-neck/disc-arthroplasty/,301,/specialty/spine-back-and-neck-old/disc-arthroplasty/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,High,resolved through site redirect
+/specialties/spine-back-and-neck/lumbar-fusion/,/specialties/spine-back-and-neck-old/lumbar-fusion/,301,/specialty/spine-back-and-neck/lumbar-fusion/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,High,manual fix (proposed target dead)
+/specialties/spine-back-and-neck/lumbar-laminectomy-2/,/treatment/lumbar-laminectomy/,301,/specialty/spine-back-and-neck/lumbar-laminectomy-2/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,High,
+/specialties/spine-back-and-neck/thoracic-lumbar-decompression-surgery/,/treatment/thoracic-lumbar-decompression/,301,/specialty/spine-back-and-neck/thoracic-lumbar-decompression-surgery/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,High,
+/specialty/hand-upper-extremity/livonia/,/specialties/hand-upper-extremity/livonia/,404,,to do — dead URL,/specialty/hand-wrist/livonia/,High,manual fix (proposed target dead)
+/specialty/orthopedics/,/specialty/orthopedic-services/,301,/specialty/orthopedic-services/ [200],done,/specialty/orthopedic-services/,High,
+/specialty/pain-management/,/specialties/pain-management/,404,,to do — dead URL,/treatment/pain-management/,High,resolved through site redirect
+/specialty/pain-management/ketamine-infusion/,/specialties/pain-management/ketamine-infusion/,404,,to do — dead URL,/treatment/pain-management/,High,manual fix (proposed target dead)
+/specialty/spine-back-and-neck/port-huron-spine-neck-pain-dr-andres-munk/,/specialties/spine-back-and-neck/port-huron-spine-neck-pain-dr-andres-munk/,404,,to do — dead URL,/providers/andres-munk-md/,High,manual fix (proposed target dead)
+/treatments/,/treatment/,301,/treatment/ [200],done,/treatment/,High,
+/providers/rasheed-abiola-md/,/providers/,404,,to do — dead URL,/providers/,Review,
+/providers/anna-babushkina-md/,/providers/,301,/providers/specialty/hand-wrist/ [200],superseded (site chose a different live target),,Review,
+/providers/gerald-jerry-md/,/providers/,404,,to do — dead URL,/providers/,Review,
+/providers/anna-krinke-pt-dpt/,/providers/,404,,to do — dead URL,/providers/,Review,
+/providers/m-wednesday-hall-do/,/providers/,404,,to do — dead URL,/providers/,Review,
+/providers/terry-viviani-dc/,/providers/,404,,to do — dead URL,/providers/,High,
+/our-providers/orthopedics/herbert-mendelson-md/,/providers/specialty/orthopedics/,404,,to do — dead URL,/providers/specialty/orthopedics/,High,
+/our-providers/orthopedics/katie-rashid-sports-medicine/,/providers/specialty/sports/,404,,to do — dead URL,/providers/specialty/sports/,High,
+/our-providers/pain-management/daniel-feldman-md/,/providers/specialty/pain-management/,404,,to do — dead URL,/providers/specialty/pain-management/,High,
+/our-providers/pain-management/jason-mulawa-md/,/providers/specialty/pain-management/,404,,to do — dead URL,/providers/specialty/pain-management/,High,
+/our-providers/podiatry/deepali-darji-podiatrist/,/providers/specialty/foot-ankle/,404,,to do — dead URL,/providers/specialty/foot-ankle/,High,
+/our-providers/rheumatology/shironda-stewart-md/,/providers/,404,,to do — dead URL,/providers/,High,
+/our-providers/spine/joel-phillips-md/,/providers/specialty/spine/,404,,to do — dead URL,/providers/specialty/spine/,High,
+/our-providers/spine/martin-b-kornblum-md/,/providers/specialty/spine/,404,,to do — dead URL,/providers/specialty/spine/,High,
+/providers/brian-fiani-do-facos/,/providers/specialty/spine/,404,,to do — dead URL,/providers/specialty/spine/,High,
+/providers/chelsea-schoenmaker-pa-c/,/providers/,404,,to do — dead URL,/providers/,High,
+/providers/courtney-watson-pa-c/,/providers/,404,,to do — dead URL,/providers/,High,
+/providers/kellyn-chapman-pa-c/,/providers/,404,,to do — dead URL,/providers/,High,
+/providers/martin-j-kornblum-md/,/providers/specialty/spine/,404,,to do — dead URL,/providers/specialty/spine/,High,
+/providers/martin-kornblum-md/,/providers/specialty/spine/,404,,to do — dead URL,/providers/specialty/spine/,High,
+/providers/orthopedics/emily-ren-md/,/providers/specialty/orthopedics/,404,,to do — dead URL,/providers/specialty/orthopedics/,High,
+/providers/orthopedics/herbert-mendelson-md/,/providers/specialty/orthopedics/,404,,to do — dead URL,/providers/specialty/orthopedics/,High,
+/providers/orthopedics/katie-rashid-sports-medicine/,/providers/specialty/sports/,404,,to do — dead URL,/providers/specialty/sports/,High,
+/providers/orthopedics/peter-lasater-md/,/providers/specialty/orthopedics/,404,,to do — dead URL,/providers/specialty/orthopedics/,High,
+/providers/pain-management/daniel-feldman-md/,/providers/specialty/pain-management/,404,,to do — dead URL,/providers/specialty/pain-management/,High,
+/providers/pain-management/jason-mulawa-md/,/providers/specialty/pain-management/,301,/treatment/pain-management/ [200],superseded (site chose a different live target),,High,
+/providers/pain-management/m-wednesday-hall-do/,/providers/specialty/pain-management/,404,,to do — dead URL,/providers/specialty/pain-management/,High,
+/providers/physician-assistant/bradley-coon-pa-c/,/providers/physician-assistant/,404,,to do — dead URL,/providers/,High,manual fix (proposed target dead)
+/providers/physician-assistant/courtney-watson-pa-c/,/providers/physician-assistant/,404,,to do — dead URL,/providers/,High,manual fix (proposed target dead)
+/providers/physician-assistant/jamie-amster-pa-c/,/providers/physician-assistant/,404,,to do — dead URL,/providers/,High,manual fix (proposed target dead)
+/providers/physician-assistant/natalie-arnold-pa-c/,/providers/physician-assistant/,404,,to do — dead URL,/providers/,High,manual fix (proposed target dead)
+/providers/physician-assistant/sarah-havens-pa-c/,/providers/physician-assistant/,404,,to do — dead URL,/providers/,High,manual fix (proposed target dead)
+/providers/rebecca-oros-pta-lmt/,/providers/,404,,to do — dead URL,/providers/,High,
+/providers/rheumatology/shironda-stewart-md/,/providers/,404,,to do — dead URL,/providers/,High,
+/providers/spine/joel-phillips-md/,/providers/specialty/spine/,404,,to do — dead URL,/providers/specialty/spine/,High,
+/conditions-we-treat/foot-ankle-conditions/sprained-ankle/,/conditions-we-treat/foot-ankle-conditions/ankle-sprain/,301,/specialty/foot-ankle-specialists/ [200],done,/specialty/foot-ankle-specialists/,Review,manual fix (proposed target dead)
+/specialties/hand-upper-extremity/sterling-heights/null/,/specialty/hand-wrist/sterling-heights/,404,,to do — dead URL,/specialty/hand-wrist/sterling-heights/,Review,
+/specialties/locations/livonia-orthopedics/contact-us/,/specialties/orthopedic-services/livonia/,404,,to do — dead URL,/specialty/orthopedic-services/livonia/,Review,resolved through site redirect
+/specialties/locations/livonia-orthopedics/insurance-plans/,/specialties/orthopedic-services/livonia/,404,,to do — dead URL,/specialty/orthopedic-services/livonia/,Review,resolved through site redirect
+/specialties/locations/warren-orthopedics/,/specialty/orthopedic-services/,301,/specialty/locations/warren-orthopedics/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,Review,manual fix (proposed target dead)
+/specialties/locations/warren-orthopedics/contact-us/,/specialty/orthopedic-services/,404,,to do — dead URL,/specialty/orthopedic-services/,Review,manual fix (proposed target dead)
+/specialties/locations/warren-orthopedics/insurance-plans/,/specialty/orthopedic-services/,404,,to do — dead URL,/specialty/orthopedic-services/,Review,manual fix (proposed target dead)
+/specialties/occupational-therapy/skilled-manual-therapy/,/specialty/occupational-therapy/,301,/specialty/occupational-therapy/skilled-manual-therapy/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,Review,
+/specialties/pain-management/non-opioid-surgery/,/specialties/pain-management/,301,/specialty/pain-management/non-opioid-surgery/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,Review,resolved through site redirect
+/specialties/physical-therapy/muscle-joint-pain/,/specialty/physical-therapy/,301,/specialty/physical-therapy/muscle-joint-pain/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,Review,
+/specialties/physicians/,/providers/,301,/specialty/physicians/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,Review,
+/specialties/rheumatology/,/providers/,301,/specialty/rheumatology/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,Review,
+/specialties/specialties/back-neck-spine/,/specialty/spine-neck-back/,301,/specialty/specialties/back-neck-spine/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,Review,
+/specialties/specialties/orthopedics-sports-medicine-2/,/specialty/orthopedic-services/,301,/specialty/specialties/orthopedics-sports-medicine-2/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,Review,
+/specialties/specialties/orthopedics-sports-medicine/,/specialty/orthopedic-services/,301,/specialty/specialties/orthopedics-sports-medicine/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,Review,
+/specialties/spine-back-and-neck-old/lumbar-stenosis/,/conditions/lumbar-stenosis/,301,/specialty/spine-back-and-neck-old/lumbar-stenosis/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,Review,
+/specialties/spine-back-and-neck/anterior-cervical-disc-replacement/,/treatment/disc-replacement-surgery/,301,/specialty/spine-back-and-neck/anterior-cervical-disc-replacement/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,Review,
+/specialties/spine-back-and-neck/anterior-lumbar-interbody-fusion/,/treatment/lumbar-cervical-fusion/,301,/specialty/spine-back-and-neck/anterior-lumbar-interbody-fusion/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,Review,
+/specialties/spine-back-and-neck/laminoplasty/,/specialties/spine-back-and-neck/cervical-laminectomy/,301,/specialty/spine-back-and-neck/laminoplasty/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,Review,resolved through site redirect
+/specialties/spine-back-and-neck/spinal-deformity-surgery/,/specialties/spine-back-and-neck/minimally-invasive-spine-surgery/,301,/specialty/spine-back-and-neck/spinal-deformity-surgery/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,Review,manual fix (proposed target dead)
+/specialties/spine-back-and-neck/spinal-fusion/,/treatment/lumbar-cervical-fusion/,301,/specialty/spine-back-and-neck/spinal-fusion/ [UNCRAWLED],"already redirected — target outside crawl, spot-check",,Review,
+/specialties/synergy-health-partners-orthopedic-urgent-care-livonia/,/orthopedic-urgent-care/,301,/specialty/synergy-health-partners-orthopedic-urgent-care-livonia/ [404],broken redirect — re-point,/specialty/orthopedic-services/,Review,resolved through site redirect
+/specialty/synergy-health-partners-orthopedic-urgent-care-livonia/,/orthopedic-urgent-care/,404,,to do — dead URL,/specialty/orthopedic-services/,Review,resolved through site redirect
+/our-providers/,/providers/,301,/providers/ [200],done,/providers/,High,
+/conditions-we-treat/,/conditions/,301,/conditions/ [200],done,/conditions/,Review,
+/specialty/,/specialties/,200,,"done — reversed: site kept source as canonical, proposed target redirects to it",,Review,
+/treatment-type/non-surgical/,/treatment/,200,,to do — live duplicate,/treatment/,Review,
+/treatment-type/surgical/,/treatment/,200,,to do — live duplicate,/treatment/,Review,
+/conditions-we-treat/facial-pain/,,404,,"NEW — 404 found by crawl, not in original map",/treatment/pain-management/,Review,removed cwt hub; pain mgmt is topical home
+/conditions-we-treat/headaches-migraines/,,404,,"NEW — 404 found by crawl, not in original map",/treatment/pain-management/,Review,removed cwt hub
+/conditions-we-treat/neuralgia/,,404,,"NEW — 404 found by crawl, not in original map",/treatment/pain-management/,Review,removed cwt hub
+/conditions-we-treat/head-neck-2/,,404,,"NEW — 404 found by crawl, not in original map",/specialty/spine-neck-back/,Review,legacy oddity
+/conditions-we-treat/joint-preservation-reconstruction/,,404,,"NEW — 404 found by crawl, not in original map",/specialty/orthopedic-services/,Review,removed cwt hub
+/conditions-we-treat/sports-injuries/,,404,,"NEW — 404 found by crawl, not in original map",/specialty/sports-medicine/,High,removed cwt hub; sports line landing
+/conditions-we-treat/total-joint-care/,,404,,"NEW — 404 found by crawl, not in original map",/specialty/orthopedic-services/,High,removed cwt hub
+/conditions-we-treat/total-joint-replacement-hip-knee-shoulder/,,404,,"NEW — 404 found by crawl, not in original map",/specialty/orthopedic-services/,High,removed cwt hub
+/conditions-we-treat/spine-neck-back-conditions/adolescent-scoliosis/,,404,,"NEW — 404 found by crawl, not in original map",/conditions/scoliosis/,High,live scoliosis condition page
+/conditions-we-treat/spine-neck-back-conditions/spinal-pain/,,404,,"NEW — 404 found by crawl, not in original map",/specialty/spine-neck-back/,High,spine line landing
+/free-webinar-chronic-lower-back-lower-extremity-pain/,,404,,"NEW — 404 found by crawl, not in original map",/specialty/spine-neck-back/,Review,legacy event page
+/herniated-disc-microdiscectomy/,,404,,"NEW — 404 found by crawl, not in original map",/treatment/microdiscectomy/,High,live microdiscectomy page
+/locations/clinic-locations/southfield/spine-neck/,,404,,"NEW — 404 found by crawl, not in original map",/specialty/spine-neck-back/southfield/,High,live Southfield spine landing
+/providers/pain-management/eduardo-icaza-md/,,404,,"NEW — 404 found by crawl, not in original map",/providers/specialty/pain-management/,High,departed pain provider
+/providers/physician-assistant/,,404,,"NEW — 404 found by crawl, not in original map",/providers/,High,PA directory removed
+/providers/rachel-gracz-pt-ot-manager/,,404,,"NEW — 404 found by crawl, not in original map",/providers/,High,departed staff profile
+/specialties/locations/livonia-orthopedics/directions/,,404,,"NEW — 404 found by crawl, not in original map",/specialty/orthopedic-services/livonia/,High,legacy location child
+/conditions-we-treat/foot-ankle-conditions/ankle-sprain/,,404,,"NEW — 404 found by crawl, not in original map",/specialty/foot-ankle-specialists/,High,was itself a proposed target in v1; dead in crawl

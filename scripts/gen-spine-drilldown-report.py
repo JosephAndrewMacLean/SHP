@@ -34,9 +34,9 @@ def delta_pct(cur, prev):
 
 # ---------- totals ----------
 tot = {k: sum(D["types"][g][k] for g in TYPES) for k in ("c4", "i4", "cp", "ip")}
-live_pages = sum(1 for g in TYPES for p in D["types"][g]["pages"] if p["status"] == "Live")
-dead_pages = sum(1 for g in TYPES for p in D["types"][g]["pages"] if p["status"].startswith("404"))
-unk_pages = sum(len(D["types"][g]["pages"]) for g in TYPES) - live_pages - dead_pages
+live_pages = sum(1 for g in TYPES for p in D["types"][g]["pages"] if p.get("crawl") == "200")
+cons_pages = sum(1 for g in TYPES for p in D["types"][g]["pages"] if p.get("crawl") in ("301","302","308"))
+dead_pages = sum(1 for g in TYPES for p in D["types"][g]["pages"] if p.get("crawl") == "404")
 ctr4 = tot["c4"] / tot["i4"] * 100
 ctrp = tot["cp"] / tot["ip"] * 100
 
@@ -108,13 +108,11 @@ def spark(vals, var):
 def page_row(p, var):
     name, path = esc(p["name"]), esc(p["path"])
     status_chip = ""
-    if p["status"].startswith("404"):
+    if p.get("crawl") == "404":
         status_chip = '<span class="chip chip-404">✕ 404</span>'
     redirect_note = ""
-    if p["redirect"]:
-        dest = esc(p["redirect"]["dest"])
-        verb = "301 planned" if p["redirect"]["conf"] == "High" else "301 proposed (review)"
-        redirect_note = f'<div class="rnote">{verb} → <code>{dest}</code></div>'
+    if p.get("pending_301"):
+        redirect_note = f'<div class="rnote">301 pending → <code>{esc(p["pending_301"])}</code></div>'
     dval, dsign = delta_pct(p["i4"], p["ip"])
     if dsign == "+": dcls, arrow = "up", "▲"
     elif dsign == "−": dcls, arrow = "dn", "▼"
@@ -130,11 +128,19 @@ def page_row(p, var):
 
 def section(g, open_=False):
     n = D["types"][g]
-    active = [p for p in n["pages"] if p["i26"] > 0 or p["c26"] > 0]
-    silent = [p for p in n["pages"] if p["i26"] == 0 and p["c26"] == 0 and p["status"] == "Live"]
+    has_act = lambda p: p["i26"] > 0 or p["c26"] > 0
+    active = [p for p in n["pages"] if has_act(p) and p.get("crawl") in ("200", "404")]
+    consolidated = [p for p in n["pages"] if p.get("crawl") in ("301", "302", "308")]
+    silent = [p for p in n["pages"] if not has_act(p) and p.get("crawl") == "200"]
     dval, dsign = delta_pct(n["i4"], n["ip"])
     darrow = "▲" if dsign == "+" else ("▼" if dsign == "−" else "")
     rows = "".join(page_row(p, SERIES_VAR[g]) for p in active)
+    cons_html = ""
+    if consolidated:
+        ci = sum(p["i26"] for p in consolidated); ccl = sum(p["c26"] for p in consolidated)
+        cons_html = (f'<p class="consnote">{len(consolidated)} legacy URLs in this group have been consolidated via 301 redirect '
+                     f'(verified by crawl, Aug 11) and are no longer listed. Their historical activity '
+                     f'({ccl:,} clicks / {ci:,} impressions over 26 wk) remains in the totals above and in the chart.</p>')
     silent_html = ""
     if silent:
         names = " · ".join(esc(p["name"]) for p in sorted(silent, key=lambda x: x["name"]))
@@ -158,6 +164,7 @@ def section(g, open_=False):
 <thead><tr><th>Page</th><th>26-week trend</th><th class="num">Clicks</th><th class="num">Impressions</th><th class="num">CTR</th><th class="num">Δ impr.</th></tr></thead>
 <tbody>{rows}</tbody>
 </table></div>
+{cons_html}
 {silent_html}
 </div>
 </details>"""
@@ -290,6 +297,7 @@ th.num, td.num {{ text-align:right; font-variant-numeric:tabular-nums; }}
 .c-spark {{ width:130px; }}
 details.silent {{ margin:10px 2px 4px; }}
 .silentlist {{ font-size:12.5px; color:var(--ink2); line-height:1.8; }}
+.consnote {{ font-size:12.5px; color:var(--muted); margin:10px 2px 4px; border-top:1px dashed var(--grid); padding-top:8px; }}
 
 .foot {{ color:var(--ink2); font-size:13px; border-top:1px solid var(--hair); margin-top:34px; padding-top:18px; }}
 .foot h3 {{ font-size:12px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); margin:16px 0 6px; }}
@@ -300,7 +308,8 @@ details.silent {{ margin:10px 2px 4px; }}
 <p class="eyebrow">Synergy Health Partners · Organic Search</p>
 <h1>Spine pages — drill-down by page type</h1>
 <p class="meta">Google Search Console, property <code>synergyhealth.org</code> · 26 weeks: <b>Feb 9 – Aug 9, 2026</b> ·
-headline tiles &amp; page tables show the <b>last 4 complete weeks (Jul 13 – Aug 9)</b> vs the prior 4 · prepared Aug 11, 2026</p>
+headline tiles &amp; page tables show the <b>last 4 complete weeks (Jul 13 – Aug 9)</b> vs the prior 4 ·
+URL statuses verified by Screaming Frog crawl · prepared Aug 11, 2026</p>
 
 <div class="tiles">
   <div class="tile"><div class="lab">Clicks · last 4 wk</div><div class="val">{tot["c4"]:,}</div>
@@ -309,14 +318,15 @@ headline tiles &amp; page tables show the <b>last 4 complete weeks (Jul 13 – A
     <div class="sub">{tile_delta(dvalI, dsignI)} vs prior 4 wk ({fmtn(tot["ip"])})</div></div>
   <div class="tile"><div class="lab">CTR · last 4 wk</div><div class="val">{ctr4:.2f}%</div>
     <div class="sub">prior 4 wk: {ctrp:.2f}%</div></div>
-  <div class="tile"><div class="lab">Spine pages tracked</div><div class="val">{live_pages + dead_pages + unk_pages}</div>
-    <div class="sub">{live_pages} live · {dead_pages} dead (404) · {unk_pages} unverified</div></div>
+  <div class="tile"><div class="lab">Spine URLs tracked</div><div class="val">{live_pages + cons_pages + dead_pages}</div>
+    <div class="sub">{live_pages} live · {cons_pages} consolidated (301) · {dead_pages} dead (404)</div></div>
 </div>
 
 <div class="callout"><b>Read this first:</b> provider pages earn ~5 of every 6 spine clicks at ~3.6% CTR — steady, branded
 demand for the surgeons. The condition &amp; treatment pages hold most of the impressions but convert at ~0.2–0.3%.
 A URL migration on <b>Apr 22</b> moved the clinical library from <code>/specialties/…</code> to <code>/treatment/…</code>
-and <code>/conditions/…</code> — visible in the chart below.</div>
+and <code>/conditions/…</code> — visible in the chart below. Per the Aug 11 crawl that consolidation is largely
+implemented: redirected URLs are no longer listed in the tables, though their history stays in the totals.</div>
 
 <div class="card">
 <h2>Weekly Google impressions by page type</h2>
@@ -348,14 +358,16 @@ and <code>/conditions/…</code> — visible in the chart below.</div>
 <dt>Clicks</dt><dd>People who actually clicked through to the page from Google.</dd>
 <dt>CTR (click-through rate)</dt><dd>Clicks ÷ impressions. Spine provider pages run ~3–5%; condition/treatment pages currently ~0.2–0.3%, which is the main fixable gap (title &amp; description rewrites).</dd>
 <dt>Δ impr.</dt><dd>Change in impressions, last 4 weeks (Jul 13 – Aug 9) vs the prior 4 (Jun 15 – Jul 12).</dd>
-<dt>Dead URLs (404)</dt><dd>22 spine URLs return “page not found”. None had search activity in this 26-week window, so they don’t appear in the tables (a ✕ 404 marker appears on any that do). Every one has a proposed redirect in the consolidation map.</dd>
-<dt>“301 planned”</dt><dd>This page is a duplicate or dead URL scheduled to consolidate into the canonical page shown, per the draft redirect map (pending SEO/dev review).</dd>
+<dt>Consolidated (301)</dt><dd>URL now permanently redirects to its canonical page (verified by the Aug 11 Screaming Frog crawl). These rows are removed from the tables; each section notes how many it absorbed.</dd>
+<dt>✕ 404</dt><dd>URL currently returns “page not found” but still appeared in search this window — each has a redirect queued in the implementation file.</dd>
+<dt>“301 pending”</dt><dd>Page is still live but scheduled to consolidate into the canonical URL shown (remaining rows in <code>data/redirects-to-implement-v2-2026-08-11.csv</code>).</dd>
+
 </dl>
 <h3>Method &amp; caveats</h3>
 <p>Source: Google Search Console page-level data (aggregation: by page), spine pages identified by a validated URL pattern
 (topic keywords + the spine provider roster). Google search only — Bing not included. GSC data is finalized through Aug 9;
-weeks run Monday–Sunday. “404 / last seen” reflects Google’s index and GA4 titles, not a live crawl. Pages with zero
-impressions all window are listed inside each section. Full inventory &amp; redirect map: <code>data/</code> folder in the
+weeks run Monday–Sunday. HTTP statuses (200 / 301 / 404) verified by a Screaming Frog list-mode crawl on Aug 11, 2026.
+Live pages with zero impressions all window are listed inside each section. Full inventory &amp; redirect map: <code>data/</code> folder in the
 SHP marketing workspace repo.</p>
 </div>
 </div>

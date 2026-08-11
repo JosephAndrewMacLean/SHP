@@ -1,14 +1,17 @@
 # Extracted datasets
 
-## `redirects-ready-to-implement-2026-08-11.csv`
+## `redirects-to-implement-v2-2026-08-11.csv`  ← CURRENT
 
-The 127 **High-confidence** rows from the redirect map below, as a two-column
-(source, target) path CSV importable straight into the WordPress Redirection plugin.
-All targets verified live, no chains, no dupes; covers ~972K historical impressions.
-The 32 Review rows are NOT in this file — resolve them in `redirect-map-2026-08-11.csv`
-first. Implementation checklist: import as 301s → update internal nav/GBP links that
-point at `/our-providers/` → regenerate the XML sitemap → watch the group regexes in
-`docs/organic-page-groups-regex.md` for the consolidation lift.
+The remaining redirects after reconciling against the Aug 11 Screaming Frog crawl
+(`screamingfrog-crawl-2026-08-11.csv`): 60 (source, target) rows — WP Redirection
+import format. The crawl showed 72 of the original 159 map rows already implemented
+(67 exactly as proposed, 5 reversed/superseded by the site's own choices) and revealed
+the site's active `/specialties/` → `/specialty/` migration plus 18 fresh 404s now
+covered here. Every target verified 200 in the crawl; no chains. Full row-by-row
+reconciliation: `redirect-verification-2026-08-11.csv` (176 rows, category per row;
+19 judgment-call rows remain open under confidence=Review).
+`redirects-ready-to-implement-2026-08-11.csv` (v1, pre-crawl) is **superseded** — do
+not import it.
 
 ## `redirect-map-2026-08-11.csv`
 
