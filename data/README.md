@@ -1,5 +1,15 @@
 # Extracted datasets
 
+## `redirect-map-2026-08-11.csv`
+
+Draft 301 map (159 rows) consolidating the parallel URL structures and dead URLs found in
+the page inventory below: source, destination, cleanup area (A–E), reason, confidence
+(High = mechanical, Review = needs human judgment), and the GSC traffic at stake on each
+source. Winners picked by current performance (90d impressions → 16mo clicks → GA4 views);
+chains pre-flattened. **Draft pending SEO/dev review** — see
+`docs/organic-page-groups-regex.md` for the companion regex groups that measure the
+before/after.
+
 ## `synergyhealth-page-inventory-2026-08-11.csv`
 
 Inventory of every **conditions, specialty, treatment, and provider** page on
