@@ -1,6 +1,7 @@
 # Clinic Capacity Audit — Ortho & Spine (workbook notes)
 
-**File:** `pm/Clinic_Capacity_Audit.xlsx` · **Built:** 2026-08-10 · **Status:** ready for Kelley/Katie use
+**File:** `pm/Clinic_Capacity_Audit.xlsx` · **Built:** 2026-08-10, updated 2026-08-11 (Zamorano/Munk
+excluded from spine counts) · **Status:** ready for Kelley/Katie use
 
 A 16-week physician clinic-capacity audit workbook (weeks of Aug 10 – Nov 23, 2026), rebuilt from
 Katie/Kelley's template with the Ortho & Spine physician roster embedded. Kelley (scheduling / call
@@ -23,8 +24,11 @@ Ortho & Spine physicians only, from `brand/provider-roster-by-service-line.md` (
 synergyhealth.org crawl), cross-checked against the Sept 7 ASC/clinic schedule — all 17 listed
 physicians appear on that schedule:
 
-- **Spine surgeons (6):** Varghese, Salar, Maslak, McCarty, Zamorano (neurosurgeon), Munk (listing
-  pending confirmation). Spine new-patient YTD counts included (volume ≠ conversion).
+- **Spine surgeons counted (4):** Varghese, Salar, Maslak, McCarty. Spine new-patient YTD counts
+  included (counted surgeons total 1,260; volume ≠ conversion).
+- **Not counted toward Spine capacity (practice direction, Aug 11, 2026):** Zamorano (neurosurgeon)
+  and Munk — kept on the tab for reference since both are on the Sept 7 schedule, with their NP
+  figures (51 / 113) excluded from the spine totals.
 - **Spine interventional pain (4):** Oddo, Lee, Kassa, Singh.
 - **Ortho surgeons (7):** Jeffrey/David/Stephen/Alice Mendelson, Bhullar, Mayo, Yacisen — the 7 behind
   the "16 days with 0 out" assumption.
