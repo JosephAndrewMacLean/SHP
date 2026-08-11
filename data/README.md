@@ -1,5 +1,15 @@
 # Extracted datasets
 
+## `redirects-ready-to-implement-2026-08-11.csv`
+
+The 127 **High-confidence** rows from the redirect map below, as a two-column
+(source, target) path CSV importable straight into the WordPress Redirection plugin.
+All targets verified live, no chains, no dupes; covers ~972K historical impressions.
+The 32 Review rows are NOT in this file — resolve them in `redirect-map-2026-08-11.csv`
+first. Implementation checklist: import as 301s → update internal nav/GBP links that
+point at `/our-providers/` → regenerate the XML sitemap → watch the group regexes in
+`docs/organic-page-groups-regex.md` for the consolidation lift.
+
 ## `redirect-map-2026-08-11.csv`
 
 Draft 301 map (159 rows) consolidating the parallel URL structures and dead URLs found in

@@ -1,0 +1,1030 @@
+<title>Spine Pages — Organic Search Drill-Down</title>
+<style>
+:root {
+  color-scheme: light;
+  --page:#f4f7f8; --surface:#fcfdfd; --surface2:#eef2f4; --ink:#101a20; --ink2:#46545d;
+  --muted:#64747e; --grid:#e2e8eb; --hair:#d5dde1; --accent:#2a78d6;
+  --s-prov:#2a78d6; --s-cond:#eb6834; --s-trt:#1baf7a; --s-spec:#eda100; --s-oth:#e87ba4;
+  --crit:#d03b3b; --good:#006300; --chip404:#fbeaea; --tipbg:#101a20; --tipink:#f2f6f8;
+  --k-prov:#3987e5; --k-cond:#d95926; --k-trt:#199e70; --k-spec:#c98500; --k-oth:#d55181;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page:#0c1114; --surface:#161c20; --surface2:#1d2530; --ink:#edf3f5; --ink2:#b4c1c8;
+    --muted:#7f8d95; --grid:#242e34; --hair:#303c43; --accent:#3987e5;
+    --s-prov:#3987e5; --s-cond:#d95926; --s-trt:#199e70; --s-spec:#c98500; --s-oth:#d55181;
+    --crit:#e66767; --good:#0ca30c; --chip404:#3a2020; --tipbg:#edf3f5; --tipink:#101a20;
+    --k-prov:#2a78d6; --k-cond:#eb6834; --k-trt:#1baf7a; --k-spec:#eda100; --k-oth:#e87ba4;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page:#0c1114; --surface:#161c20; --surface2:#1d2530; --ink:#edf3f5; --ink2:#b4c1c8;
+  --muted:#7f8d95; --grid:#242e34; --hair:#303c43; --accent:#3987e5;
+  --s-prov:#3987e5; --s-cond:#d95926; --s-trt:#199e70; --s-spec:#c98500; --s-oth:#d55181;
+  --crit:#e66767; --good:#0ca30c; --chip404:#3a2020; --tipbg:#edf3f5; --tipink:#101a20;
+  --k-prov:#2a78d6; --k-cond:#eb6834; --k-trt:#1baf7a; --k-spec:#eda100; --k-oth:#e87ba4;
+}
+* { box-sizing:border-box; }
+body { background:var(--page); color:var(--ink); margin:0;
+  font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; }
+.wrap { max-width:1060px; margin:0 auto; padding:34px 26px 64px; }
+code { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.86em; }
+a { color:var(--accent); }
+
+.eyebrow { font-size:11.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-weight:600; }
+h1 { font-size:29px; line-height:1.2; margin:6px 0 4px; letter-spacing:-.015em; text-wrap:balance; }
+.meta { color:var(--ink2); font-size:13.5px; margin:0 0 26px; }
+.meta b { color:var(--ink); font-weight:600; }
+
+.tiles { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin-bottom:14px; }
+.tile { background:var(--surface); border:1px solid var(--hair); border-radius:8px; padding:14px 16px 12px; }
+.tile .lab { font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); font-weight:600; }
+.tile .val { font-size:27px; font-weight:650; letter-spacing:-.01em; margin:2px 0 0; }
+.tile .sub { font-size:12.5px; color:var(--ink2); }
+.d { font-variant-numeric:tabular-nums; font-size:12.5px; font-weight:600; color:var(--ink2); }
+.d.up { color:var(--good); } .d.dn { color:var(--crit); }
+
+.callout { background:var(--surface2); border-left:3px solid var(--accent); border-radius:0 8px 8px 0;
+  padding:11px 16px; font-size:13.8px; color:var(--ink2); margin:0 0 26px; }
+.callout b { color:var(--ink); }
+
+.card { background:var(--surface); border:1px solid var(--hair); border-radius:10px; padding:20px 22px 14px; margin-bottom:26px; }
+.card h2 { font-size:16px; margin:0 0 2px; }
+.card .sub { color:var(--muted); font-size:13px; margin:0 0 12px; }
+.chartbox { position:relative; }
+.chartbox svg { width:100%; height:auto; display:block; }
+.ln { fill:none; stroke-width:2; }
+.grid { stroke:var(--grid); stroke-width:1; }
+.anno { stroke:var(--muted); stroke-width:1; stroke-dasharray:4 4; }
+.leader { stroke-width:1; opacity:.55; fill:none; }
+.annot { font-size:11px; fill:var(--muted); }
+.tick { font-size:11px; fill:var(--muted); text-anchor:end; font-variant-numeric:tabular-nums; }
+.tick.tx { text-anchor:middle; }
+.endlbl { font-size:11.5px; fill:var(--ink2); font-weight:600; }
+.endlbl .mut2 { font-weight:500; }
+.mut2 { fill:var(--muted); color:var(--muted); }
+.cross { stroke:var(--muted); stroke-width:1; stroke-dasharray:2 3; opacity:0; }
+.tip { position:absolute; pointer-events:none; background:var(--tipbg); color:var(--tipink);
+  border-radius:7px; padding:8px 11px; font-size:12px; line-height:1.5; opacity:0; transition:opacity .12s;
+  box-shadow:0 4px 14px rgba(0,0,0,.18); min-width:180px; z-index:5; }
+.tip .tw-lab { font-weight:650; margin-bottom:2px; }
+.tip .row { display:flex; justify-content:space-between; gap:14px; align-items:center; }
+.tip .key { display:inline-block; width:12px; height:3px; border-radius:2px; margin-right:6px; vertical-align:2px; }
+.tip .row .val { font-weight:650; font-variant-numeric:tabular-nums; }
+.tip .row .nm { opacity:.8; }
+@media (prefers-reduced-motion: reduce) { .tip { transition:none; } }
+
+details.tblv { margin-top:8px; border-top:1px solid var(--grid); padding-top:8px; }
+details.tblv summary, details.silent summary { cursor:pointer; color:var(--ink2); font-size:13px; }
+details.tblv table { border-collapse:collapse; font-size:12.5px; margin-top:8px; font-variant-numeric:tabular-nums; }
+details.tblv th, details.tblv td { padding:3px 10px; text-align:right; border-bottom:1px solid var(--grid); }
+details.tblv th[scope=row] { text-align:left; font-weight:500; color:var(--ink2); }
+
+.sec { background:var(--surface); border:1px solid var(--hair); border-radius:10px; margin-bottom:14px; }
+.sec summary { list-style:none; display:flex; align-items:center; gap:12px; padding:15px 18px; cursor:pointer; flex-wrap:wrap; }
+.sec summary::-webkit-details-marker { display:none; }
+.sec summary:focus-visible { outline:2px solid var(--accent); outline-offset:2px; border-radius:10px; }
+.dot { width:11px; height:11px; border-radius:3px; flex:none; }
+.sec-name { font-weight:650; font-size:15.5px; display:flex; flex-direction:column; min-width:210px; }
+.sec-sub { font-weight:400; font-size:12px; color:var(--muted); max-width:420px; }
+.sec-stats { display:flex; gap:18px; margin-left:auto; align-items:baseline; flex-wrap:wrap; }
+.ss { font-size:13px; color:var(--ink2); white-space:nowrap; }
+.ss b { font-size:15px; color:var(--ink); font-variant-numeric:tabular-nums; }
+.ss.mut { color:var(--muted); font-size:12.5px; }
+.tw { color:var(--muted); transition:transform .15s; }
+.sec[open] .tw { transform:rotate(90deg); }
+@media (prefers-reduced-motion: reduce) { .tw { transition:none; } }
+.secbody { padding:0 18px 14px; }
+.tscroll { overflow-x:auto; }
+table.pt { width:100%; border-collapse:collapse; font-size:13.5px; min-width:680px; }
+table.pt th { text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--muted); font-weight:600; padding:8px 10px; border-bottom:1px solid var(--hair); }
+table.pt td { padding:9px 10px; border-bottom:1px solid var(--grid); vertical-align:middle; }
+table.pt tbody tr:last-child td { border-bottom:none; }
+th.num, td.num { text-align:right; font-variant-numeric:tabular-nums; }
+.pname { font-weight:600; }
+.ppath { color:var(--muted); font-size:11.5px; word-break:break-all; }
+.rnote { font-size:11.5px; color:var(--ink2); margin-top:2px; }
+.rnote code { color:var(--ink2); }
+.chip { display:inline-block; font-size:10.5px; font-weight:650; letter-spacing:.03em; border-radius:99px;
+  padding:1px 8px; vertical-align:1px; }
+.chip-404 { background:var(--chip404); color:var(--crit); }
+.spark { width:120px; height:26px; display:block; }
+.sp-a { opacity:.14; stroke:none; }
+.sp-l { fill:none; stroke-width:1.4; }
+.c-spark { width:130px; }
+details.silent { margin:10px 2px 4px; }
+.silentlist { font-size:12.5px; color:var(--ink2); line-height:1.8; }
+
+.foot { color:var(--ink2); font-size:13px; border-top:1px solid var(--hair); margin-top:34px; padding-top:18px; }
+.foot h3 { font-size:12px; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); margin:16px 0 6px; }
+.foot dl { margin:0; } .foot dt { font-weight:600; color:var(--ink); } .foot dd { margin:0 0 8px; }
+</style>
+
+<div class="wrap">
+<p class="eyebrow">Synergy Health Partners · Organic Search</p>
+<h1>Spine pages — drill-down by page type</h1>
+<p class="meta">Google Search Console, property <code>synergyhealth.org</code> · 26 weeks: <b>Feb 9 – Aug 9, 2026</b> ·
+headline tiles &amp; page tables show the <b>last 4 complete weeks (Jul 13 – Aug 9)</b> vs the prior 4 · prepared Aug 11, 2026</p>
+
+<div class="tiles">
+  <div class="tile"><div class="lab">Clicks · last 4 wk</div><div class="val">717</div>
+    <div class="sub"><span class="d up">▲ 7%</span> vs prior 4 wk (673)</div></div>
+  <div class="tile"><div class="lab">Impressions · last 4 wk</div><div class="val">55.9K</div>
+    <div class="sub"><span class="d dn">▼ 2%</span> vs prior 4 wk (56.9K)</div></div>
+  <div class="tile"><div class="lab">CTR · last 4 wk</div><div class="val">1.28%</div>
+    <div class="sub">prior 4 wk: 1.18%</div></div>
+  <div class="tile"><div class="lab">Spine pages tracked</div><div class="val">137</div>
+    <div class="sub">114 live · 22 dead (404) · 1 unverified</div></div>
+</div>
+
+<div class="callout"><b>Read this first:</b> provider pages earn ~5 of every 6 spine clicks at ~3.6% CTR — steady, branded
+demand for the surgeons. The condition &amp; treatment pages hold most of the impressions but convert at ~0.2–0.3%.
+A URL migration on <b>Apr 22</b> moved the clinical library from <code>/specialties/…</code> to <code>/treatment/…</code>
+and <code>/conditions/…</code> — visible in the chart below.</div>
+
+<div class="card">
+<h2>Weekly Google impressions by page type</h2>
+<p class="sub">26 weeks, Mon–Sun. Hover for weekly values (impressions, with clicks in parentheses).</p>
+<div class="chartbox" id="chartbox">
+<svg viewBox="0 0 960 320" role="img" aria-label="Line chart of weekly Google impressions for five spine page types, Feb 9 to Aug 9 2026. The specialty pages line collapses in late April while treatments and conditions rise — the April 22 URL migration.">
+<line class="grid" x1="46" y1="290.0" x2="824" y2="290.0"/><text class="tick" x="38" y="294.0">0</text><line class="grid" x1="46" y1="222.0" x2="824" y2="222.0"/><text class="tick" x="38" y="226.0">3K</text><line class="grid" x1="46" y1="154.0" x2="824" y2="154.0"/><text class="tick" x="38" y="158.0">6K</text><line class="grid" x1="46" y1="86.0" x2="824" y2="86.0"/><text class="tick" x="38" y="90.0">9K</text><line class="grid" x1="46" y1="18.0" x2="824" y2="18.0"/><text class="tick" x="38" y="22.0">12K</text>
+<line class="anno" x1="366.5" y1="18" x2="366.5" y2="290"/><text class="annot" x="372.5" y="30">Apr 22 — /treatment/ URLs first appear in search</text>
+<path class="ln" style="stroke:var(--s-prov)" d="M46.0,201.9 L77.1,209.0 L108.2,203.1 L139.4,207.0 L170.5,214.9 L201.6,210.7 L232.7,200.6 L263.8,208.8 L295.0,205.7 L326.1,196.6 L357.2,193.4 L388.3,173.4 L419.4,177.4 L450.6,188.1 L481.7,187.2 L512.8,205.4 L543.9,201.7 L575.0,186.3 L606.2,178.6 L637.3,185.0 L668.4,200.2 L699.5,195.4 L730.6,202.3 L761.8,193.4 L792.9,195.8 L824.0,194.6"/><circle class="end" style="fill:var(--s-prov)" cx="824.0" cy="194.6" r="3.5"/><path class="ln" style="stroke:var(--s-cond)" d="M46.0,232.3 L77.1,213.5 L108.2,207.3 L139.4,232.2 L170.5,212.7 L201.6,213.7 L232.7,210.4 L263.8,241.8 L295.0,240.7 L326.1,262.3 L357.2,208.0 L388.3,112.6 L419.4,168.1 L450.6,54.2 L481.7,51.0 L512.8,56.0 L543.9,80.0 L575.0,81.1 L606.2,71.7 L637.3,152.4 L668.4,203.7 L699.5,201.7 L730.6,213.2 L761.8,160.0 L792.9,121.7 L824.0,130.0"/><circle class="end" style="fill:var(--s-cond)" cx="824.0" cy="130.0" r="3.5"/><path class="ln" style="stroke:var(--s-trt)" d="M46.0,290.0 L77.1,290.0 L108.2,290.0 L139.4,290.0 L170.5,290.0 L201.6,290.0 L232.7,290.0 L263.8,290.0 L295.0,290.0 L326.1,290.0 L357.2,265.7 L388.3,227.8 L419.4,203.0 L450.6,96.2 L481.7,169.8 L512.8,185.5 L543.9,200.2 L575.0,185.3 L606.2,180.1 L637.3,228.8 L668.4,232.9 L699.5,219.4 L730.6,235.5 L761.8,223.7 L792.9,194.3 L824.0,191.5"/><circle class="end" style="fill:var(--s-trt)" cx="824.0" cy="191.5" r="3.5"/><path class="ln" style="stroke:var(--s-spec)" d="M46.0,45.9 L77.1,105.5 L108.2,83.2 L139.4,77.3 L170.5,155.2 L201.6,131.0 L232.7,135.9 L263.8,157.2 L295.0,103.6 L326.1,115.6 L357.2,203.5 L388.3,258.3 L419.4,276.3 L450.6,279.3 L481.7,276.4 L512.8,279.3 L543.9,277.1 L575.0,277.4 L606.2,273.3 L637.3,281.3 L668.4,286.2 L699.5,285.3 L730.6,284.3 L761.8,284.0 L792.9,282.8 L824.0,284.9"/><circle class="end" style="fill:var(--s-spec)" cx="824.0" cy="284.9" r="3.5"/><path class="ln" style="stroke:var(--s-oth)" d="M46.0,250.0 L77.1,246.6 L108.2,254.4 L139.4,246.1 L170.5,241.9 L201.6,254.0 L232.7,248.8 L263.8,256.1 L295.0,250.8 L326.1,246.9 L357.2,249.8 L388.3,272.4 L419.4,275.5 L450.6,281.9 L481.7,281.6 L512.8,283.8 L543.9,283.9 L575.0,283.6 L606.2,281.8 L637.3,283.2 L668.4,285.4 L699.5,283.3 L730.6,284.2 L761.8,284.9 L792.9,285.1 L824.0,285.7"/><circle class="end" style="fill:var(--s-oth)" cx="824.0" cy="285.7" r="3.5"/>
+<text class="endlbl" x="834" y="134.0"><tspan style="fill:var(--s-cond)">—</tspan> Conditions <tspan class="mut2">7.1K</tspan></text><text class="endlbl" x="834" y="195.5"><tspan style="fill:var(--s-trt)">—</tspan> Treatments <tspan class="mut2">4.3K</tspan></text><path class="leader" style="stroke:var(--s-prov)" d="M829.0,194.6 L830.0,206.5"/><text class="endlbl" x="834" y="210.5"><tspan style="fill:var(--s-prov)">—</tspan> Providers <tspan class="mut2">4.2K</tspan></text><text class="endlbl" x="834" y="288.9"><tspan style="fill:var(--s-spec)">—</tspan> Specialty <tspan class="mut2">226</tspan></text><path class="leader" style="stroke:var(--s-oth)" d="M829.0,285.7 L830.0,299.9"/><text class="endlbl" x="834" y="303.9"><tspan style="fill:var(--s-oth)">—</tspan> Other <tspan class="mut2">190</tspan></text>
+<text class="tick tx" x="46.0" y="312">Feb 9</text><text class="tick tx" x="170.5" y="312">Mar 9</text><text class="tick tx" x="295.0" y="312">Apr 6</text><text class="tick tx" x="419.4" y="312">May 4</text><text class="tick tx" x="543.9" y="312">Jun 1</text><text class="tick tx" x="668.4" y="312">Jun 29</text><text class="tick tx" x="792.9" y="312">Jul 27</text>
+<line id="cross" class="cross" x1="0" x2="0" y1="18" y2="290"/>
+<rect id="hover" x="46" y="18" width="778" height="272" fill="transparent"/>
+</svg>
+<div class="tip" id="tip"></div>
+</div>
+<details class="tblv"><summary>Weekly data table (impressions / clicks)</summary>
+<div class="tscroll"><table>
+<thead><tr><th>Week of</th><th>Providers</th><th>Conditions</th><th>Treatments</th><th>Specialty</th><th>Other</th></tr></thead>
+<tbody><tr><th scope="row">Feb 9</th><td>3,888<span class='mut2'> / 142</span></td><td>2,545<span class='mut2'> / 5</span></td><td>0<span class='mut2'> / 0</span></td><td>10,768<span class='mut2'> / 13</span></td><td>1,765<span class='mut2'> / 28</span></td></tr><tr><th scope="row">Feb 16</th><td>3,574<span class='mut2'> / 136</span></td><td>3,376<span class='mut2'> / 5</span></td><td>0<span class='mut2'> / 0</span></td><td>8,138<span class='mut2'> / 13</span></td><td>1,915<span class='mut2'> / 52</span></td></tr><tr><th scope="row">Feb 23</th><td>3,836<span class='mut2'> / 142</span></td><td>3,649<span class='mut2'> / 4</span></td><td>0<span class='mut2'> / 0</span></td><td>9,125<span class='mut2'> / 20</span></td><td>1,570<span class='mut2'> / 37</span></td></tr><tr><th scope="row">Mar 2</th><td>3,663<span class='mut2'> / 115</span></td><td>2,550<span class='mut2'> / 5</span></td><td>0<span class='mut2'> / 0</span></td><td>9,385<span class='mut2'> / 17</span></td><td>1,937<span class='mut2'> / 44</span></td></tr><tr><th scope="row">Mar 9</th><td>3,312<span class='mut2'> / 123</span></td><td>3,410<span class='mut2'> / 6</span></td><td>0<span class='mut2'> / 0</span></td><td>5,945<span class='mut2'> / 13</span></td><td>2,123<span class='mut2'> / 42</span></td></tr><tr><th scope="row">Mar 16</th><td>3,500<span class='mut2'> / 131</span></td><td>3,366<span class='mut2'> / 8</span></td><td>0<span class='mut2'> / 0</span></td><td>7,014<span class='mut2'> / 15</span></td><td>1,587<span class='mut2'> / 23</span></td></tr><tr><th scope="row">Mar 23</th><td>3,944<span class='mut2'> / 126</span></td><td>3,512<span class='mut2'> / 2</span></td><td>0<span class='mut2'> / 0</span></td><td>6,800<span class='mut2'> / 9</span></td><td>1,816<span class='mut2'> / 45</span></td></tr><tr><th scope="row">Mar 30</th><td>3,581<span class='mut2'> / 118</span></td><td>2,126<span class='mut2'> / 3</span></td><td>0<span class='mut2'> / 0</span></td><td>5,859<span class='mut2'> / 8</span></td><td>1,496<span class='mut2'> / 44</span></td></tr><tr><th scope="row">Apr 6</th><td>3,717<span class='mut2'> / 134</span></td><td>2,177<span class='mut2'> / 4</span></td><td>0<span class='mut2'> / 0</span></td><td>8,222<span class='mut2'> / 8</span></td><td>1,728<span class='mut2'> / 46</span></td></tr><tr><th scope="row">Apr 13</th><td>4,122<span class='mut2'> / 151</span></td><td>1,221<span class='mut2'> / 2</span></td><td>0<span class='mut2'> / 0</span></td><td>7,695<span class='mut2'> / 6</span></td><td>1,900<span class='mut2'> / 55</span></td></tr><tr><th scope="row">Apr 20</th><td>4,261<span class='mut2'> / 137</span></td><td>3,618<span class='mut2'> / 3</span></td><td>1,071<span class='mut2'> / 1</span></td><td>3,815<span class='mut2'> / 18</span></td><td>1,775<span class='mut2'> / 50</span></td></tr><tr><th scope="row">Apr 27</th><td>5,143<span class='mut2'> / 159</span></td><td>7,827<span class='mut2'> / 13</span></td><td>2,744<span class='mut2'> / 2</span></td><td>1,399<span class='mut2'> / 4</span></td><td>775<span class='mut2'> / 15</span></td></tr><tr><th scope="row">May 4</th><td>4,966<span class='mut2'> / 163</span></td><td>5,376<span class='mut2'> / 7</span></td><td>3,838<span class='mut2'> / 8</span></td><td>605<span class='mut2'> / 2</span></td><td>638<span class='mut2'> / 3</span></td></tr><tr><th scope="row">May 11</th><td>4,496<span class='mut2'> / 163</span></td><td>10,401<span class='mut2'> / 16</span></td><td>8,548<span class='mut2'> / 14</span></td><td>473<span class='mut2'> / 4</span></td><td>356<span class='mut2'> / 0</span></td></tr><tr><th scope="row">May 18</th><td>4,536<span class='mut2'> / 164</span></td><td>10,545<span class='mut2'> / 16</span></td><td>5,305<span class='mut2'> / 11</span></td><td>600<span class='mut2'> / 0</span></td><td>369<span class='mut2'> / 0</span></td></tr><tr><th scope="row">May 25</th><td>3,734<span class='mut2'> / 140</span></td><td>10,322<span class='mut2'> / 32</span></td><td>4,612<span class='mut2'> / 7</span></td><td>471<span class='mut2'> / 3</span></td><td>273<span class='mut2'> / 2</span></td></tr><tr><th scope="row">Jun 1</th><td>3,896<span class='mut2'> / 161</span></td><td>9,263<span class='mut2'> / 23</span></td><td>3,963<span class='mut2'> / 12</span></td><td>567<span class='mut2'> / 2</span></td><td>267<span class='mut2'> / 2</span></td></tr><tr><th scope="row">Jun 8</th><td>4,573<span class='mut2'> / 180</span></td><td>9,214<span class='mut2'> / 23</span></td><td>4,619<span class='mut2'> / 4</span></td><td>554<span class='mut2'> / 4</span></td><td>283<span class='mut2'> / 0</span></td></tr><tr><th scope="row">Jun 15</th><td>4,914<span class='mut2'> / 153</span></td><td>9,631<span class='mut2'> / 21</span></td><td>4,848<span class='mut2'> / 13</span></td><td>736<span class='mut2'> / 7</span></td><td>360<span class='mut2'> / 1</span></td></tr><tr><th scope="row">Jun 22</th><td>4,633<span class='mut2'> / 147</span></td><td>6,069<span class='mut2'> / 20</span></td><td>2,701<span class='mut2'> / 6</span></td><td>384<span class='mut2'> / 1</span></td><td>300<span class='mut2'> / 1</span></td></tr><tr><th scope="row">Jun 29</th><td>3,962<span class='mut2'> / 114</span></td><td>3,807<span class='mut2'> / 10</span></td><td>2,517<span class='mut2'> / 10</span></td><td>167<span class='mut2'> / 1</span></td><td>202<span class='mut2'> / 1</span></td></tr><tr><th scope="row">Jul 6</th><td>4,174<span class='mut2'> / 144</span></td><td>3,894<span class='mut2'> / 13</span></td><td>3,114<span class='mut2'> / 6</span></td><td>209<span class='mut2'> / 2</span></td><td>295<span class='mut2'> / 2</span></td></tr><tr><th scope="row">Jul 13</th><td>3,871<span class='mut2'> / 145</span></td><td>3,390<span class='mut2'> / 21</span></td><td>2,404<span class='mut2'> / 3</span></td><td>253<span class='mut2'> / 5</span></td><td>257<span class='mut2'> / 1</span></td></tr><tr><th scope="row">Jul 20</th><td>4,261<span class='mut2'> / 164</span></td><td>5,736<span class='mut2'> / 18</span></td><td>2,926<span class='mut2'> / 4</span></td><td>264<span class='mut2'> / 0</span></td><td>227<span class='mut2'> / 1</span></td></tr><tr><th scope="row">Jul 27</th><td>4,154<span class='mut2'> / 152</span></td><td>7,426<span class='mut2'> / 26</span></td><td>4,222<span class='mut2'> / 3</span></td><td>316<span class='mut2'> / 5</span></td><td>217<span class='mut2'> / 0</span></td></tr><tr><th scope="row">Aug 3</th><td>4,208<span class='mut2'> / 138</span></td><td>7,057<span class='mut2'> / 20</span></td><td>4,344<span class='mut2'> / 8</span></td><td>226<span class='mut2'> / 3</span></td><td>190<span class='mut2'> / 0</span></td></tr></tbody></table></div></details>
+</div>
+
+<details class="sec" open>
+<summary>
+  <span class="dot" style="background:var(--s-prov)"></span>
+  <span class="sec-name">Provider pages<span class="sec-sub">Spine surgeons, pain physicians, chiro &amp; spine-certified PT — /providers/ and legacy /our-providers/</span></span>
+  <span class="sec-stats">
+    <span class="ss"><b>599</b> clicks</span>
+    <span class="ss"><b>16.5K</b> impressions</span>
+    <span class="ss"><b>3.63%</b> CTR</span>
+    <span class="ss mut">▼ 7% impr. vs prior 4 wk</span>
+    <span class="ss mut">20 pages</span>
+  </span>
+  <span class="tw">▸</span>
+</summary>
+<div class="secbody">
+<div class="tscroll"><table class="pt">
+<thead><tr><th>Page</th><th>26-week trend</th><th class="num">Clicks</th><th class="num">Impressions</th><th class="num">CTR</th><th class="num">Δ impr.</th></tr></thead>
+<tbody><tr>
+<td class="c-page"><div class="pname">Scott Mccarty MD </div><code class="ppath">/providers/scott-mccarty-md/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 1,044 (wk of Apr 27)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 1,044 (wk of Apr 27)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,7.9 L4.8,9.2 L9.6,8.3 L14.4,5.1 L19.2,9.1 L24.0,5.6 L28.8,7.3 L33.6,8.7 L38.4,9.4 L43.2,7.3 L48.0,9.1 L52.8,3.0 L57.6,10.1 L62.4,10.0 L67.2,6.2 L72.0,12.0 L76.8,11.4 L81.6,10.7 L86.4,11.8 L91.2,10.1 L96.0,10.1 L100.8,9.0 L105.6,11.1 L110.4,6.9 L115.2,10.0 L120.0,11.4 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,7.9 L4.8,9.2 L9.6,8.3 L14.4,5.1 L19.2,9.1 L24.0,5.6 L28.8,7.3 L33.6,8.7 L38.4,9.4 L43.2,7.3 L48.0,9.1 L52.8,3.0 L57.6,10.1 L62.4,10.0 L67.2,6.2 L72.0,12.0 L76.8,11.4 L81.6,10.7 L86.4,11.8 L91.2,10.1 L96.0,10.1 L100.8,9.0 L105.6,11.1 L110.4,6.9 L115.2,10.0 L120.0,11.4"/><circle style="fill:var(--s-prov)" cx="120.0" cy="11.4" r="2.2"/></svg></td>
+<td class="num">136</td>
+<td class="num">2,747</td>
+<td class="num">4.95%</td>
+<td class="num c-delta"><span class="d up">▲ 3%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Kevin Lee MD </div><code class="ppath">/providers/kevin-lee-md/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 610 (wk of Apr 27)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 610 (wk of Apr 27)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,17.6 L52.8,3.0 L57.6,4.2 L62.4,4.0 L67.2,6.3 L72.0,6.4 L76.8,7.9 L81.6,4.2 L86.4,5.5 L91.2,5.3 L96.0,8.2 L100.8,3.6 L105.6,5.2 L110.4,6.9 L115.2,4.7 L120.0,5.1 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,17.6 L52.8,3.0 L57.6,4.2 L62.4,4.0 L67.2,6.3 L72.0,6.4 L76.8,7.9 L81.6,4.2 L86.4,5.5 L91.2,5.3 L96.0,8.2 L100.8,3.6 L105.6,5.2 L110.4,6.9 L115.2,4.7 L120.0,5.1"/><circle style="fill:var(--s-prov)" cx="120.0" cy="5.1" r="2.2"/></svg></td>
+<td class="num">65</td>
+<td class="num">2,137</td>
+<td class="num">3.04%</td>
+<td class="num c-delta"><span class="d up">▲ 1%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Mohamed Salar MD </div><code class="ppath">/providers/mohamed-salar-md/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 624 (wk of Jul 6)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 624 (wk of Jul 6)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,4.5 L4.8,6.5 L9.6,6.3 L14.4,9.2 L19.2,8.6 L24.0,10.0 L28.8,4.4 L33.6,10.5 L38.4,4.3 L43.2,5.0 L48.0,5.1 L52.8,9.3 L57.6,9.1 L62.4,8.1 L67.2,10.3 L72.0,11.6 L76.8,8.8 L81.6,9.8 L86.4,5.1 L91.2,6.5 L96.0,6.6 L100.8,3.0 L105.6,8.6 L110.4,7.3 L115.2,6.8 L120.0,5.9 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,4.5 L4.8,6.5 L9.6,6.3 L14.4,9.2 L19.2,8.6 L24.0,10.0 L28.8,4.4 L33.6,10.5 L38.4,4.3 L43.2,5.0 L48.0,5.1 L52.8,9.3 L57.6,9.1 L62.4,8.1 L67.2,10.3 L72.0,11.6 L76.8,8.8 L81.6,9.8 L86.4,5.1 L91.2,6.5 L96.0,6.6 L100.8,3.0 L105.6,8.6 L110.4,7.3 L115.2,6.8 L120.0,5.9"/><circle style="fill:var(--s-prov)" cx="120.0" cy="5.9" r="2.2"/></svg></td>
+<td class="num">83</td>
+<td class="num">1,976</td>
+<td class="num">4.20%</td>
+<td class="num c-delta"><span class="d dn">▼ 11%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Anthony J Oddo DO </div><code class="ppath">/providers/anthony-j-oddo-do/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 580 (wk of Apr 13)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 580 (wk of Apr 13)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,16.4 L4.8,16.0 L9.6,15.6 L14.4,17.0 L19.2,16.8 L24.0,16.9 L28.8,10.8 L33.6,6.1 L38.4,4.0 L43.2,3.0 L48.0,3.2 L52.8,6.4 L57.6,10.4 L62.4,9.9 L67.2,6.1 L72.0,10.3 L76.8,7.9 L81.6,6.6 L86.4,6.3 L91.2,8.3 L96.0,10.3 L100.8,11.6 L105.6,9.3 L110.4,4.1 L115.2,8.0 L120.0,6.9 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,16.4 L4.8,16.0 L9.6,15.6 L14.4,17.0 L19.2,16.8 L24.0,16.9 L28.8,10.8 L33.6,6.1 L38.4,4.0 L43.2,3.0 L48.0,3.2 L52.8,6.4 L57.6,10.4 L62.4,9.9 L67.2,6.1 L72.0,10.3 L76.8,7.9 L81.6,6.6 L86.4,6.3 L91.2,8.3 L96.0,10.3 L100.8,11.6 L105.6,9.3 L110.4,4.1 L115.2,8.0 L120.0,6.9"/><circle style="fill:var(--s-prov)" cx="120.0" cy="6.9" r="2.2"/></svg></td>
+<td class="num">31</td>
+<td class="num">1,847</td>
+<td class="num">1.68%</td>
+<td class="num c-delta"><span class="d up">▲ 15%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Jeffrey Varghese MD </div><code class="ppath">/providers/jeffrey-varghese-md/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 558 (wk of Feb 23)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 558 (wk of Feb 23)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,4.4 L4.8,3.0 L9.6,3.0 L14.4,3.9 L19.2,7.2 L24.0,5.5 L28.8,5.1 L33.6,6.3 L38.4,9.9 L43.2,10.5 L48.0,7.3 L52.8,9.0 L57.6,7.9 L62.4,9.4 L67.2,9.3 L72.0,12.4 L76.8,11.5 L81.6,11.8 L86.4,9.8 L91.2,7.6 L96.0,5.5 L100.8,9.2 L105.6,9.8 L110.4,7.4 L115.2,7.9 L120.0,9.6 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,4.4 L4.8,3.0 L9.6,3.0 L14.4,3.9 L19.2,7.2 L24.0,5.5 L28.8,5.1 L33.6,6.3 L38.4,9.9 L43.2,10.5 L48.0,7.3 L52.8,9.0 L57.6,7.9 L62.4,9.4 L67.2,9.3 L72.0,12.4 L76.8,11.5 L81.6,11.8 L86.4,9.8 L91.2,7.6 L96.0,5.5 L100.8,9.2 L105.6,9.8 L110.4,7.4 L115.2,7.9 L120.0,9.6"/><circle style="fill:var(--s-prov)" cx="120.0" cy="9.6" r="2.2"/></svg></td>
+<td class="num">46</td>
+<td class="num">1,595</td>
+<td class="num">2.88%</td>
+<td class="num c-delta"><span class="d dn">▼ 4%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Brian Kassa DO </div><code class="ppath">/providers/brian-kassa-do/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 814 (wk of May 4)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 814 (wk of May 4)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,13.5 L4.8,15.3 L9.6,12.8 L14.4,14.7 L19.2,16.9 L24.0,16.2 L28.8,14.4 L33.6,14.5 L38.4,14.7 L43.2,14.8 L48.0,13.7 L52.8,13.7 L57.6,3.0 L62.4,12.2 L67.2,14.8 L72.0,16.0 L76.8,16.1 L81.6,15.0 L86.4,13.6 L91.2,15.2 L96.0,14.8 L100.8,15.3 L105.6,15.2 L110.4,15.5 L115.2,15.4 L120.0,15.2 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,13.5 L4.8,15.3 L9.6,12.8 L14.4,14.7 L19.2,16.9 L24.0,16.2 L28.8,14.4 L33.6,14.5 L38.4,14.7 L43.2,14.8 L48.0,13.7 L52.8,13.7 L57.6,3.0 L62.4,12.2 L67.2,14.8 L72.0,16.0 L76.8,16.1 L81.6,15.0 L86.4,13.6 L91.2,15.2 L96.0,14.8 L100.8,15.3 L105.6,15.2 L110.4,15.5 L115.2,15.4 L120.0,15.2"/><circle style="fill:var(--s-prov)" cx="120.0" cy="15.2" r="2.2"/></svg></td>
+<td class="num">60</td>
+<td class="num">1,245</td>
+<td class="num">4.82%</td>
+<td class="num c-delta"><span class="d dn">▼ 8%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Hanish Singh MD </div><code class="ppath">/providers/hanish-singh-md/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 329 (wk of Jun 22)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 329 (wk of Jun 22)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,19.5 L52.8,13.2 L57.6,9.7 L62.4,10.3 L67.2,10.6 L72.0,9.0 L76.8,11.0 L81.6,6.9 L86.4,4.0 L91.2,3.0 L96.0,9.0 L100.8,7.6 L105.6,8.3 L110.4,9.3 L115.2,5.4 L120.0,5.1 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,19.5 L52.8,13.2 L57.6,9.7 L62.4,10.3 L67.2,10.6 L72.0,9.0 L76.8,11.0 L81.6,6.9 L86.4,4.0 L91.2,3.0 L96.0,9.0 L100.8,7.6 L105.6,8.3 L110.4,9.3 L115.2,5.4 L120.0,5.1"/><circle style="fill:var(--s-prov)" cx="120.0" cy="5.1" r="2.2"/></svg></td>
+<td class="num">25</td>
+<td class="num">1,051</td>
+<td class="num">2.38%</td>
+<td class="num c-delta"><span class="d dn">▼ 7%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Kevin R Lee MD </div><code class="ppath">/providers/kevin-r-lee-md/</code><div class="rnote">301 planned → <code>/providers/kevin-lee-md/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 884 (wk of Apr 13)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 884 (wk of Apr 13)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,5.8 L4.8,6.9 L9.6,4.2 L14.4,6.4 L19.2,7.0 L24.0,7.1 L28.8,5.2 L33.6,8.3 L38.4,7.6 L43.2,3.0 L48.0,9.9 L52.8,17.5 L57.6,18.4 L62.4,17.6 L67.2,18.4 L72.0,18.7 L76.8,18.6 L81.6,16.9 L86.4,15.9 L91.2,17.9 L96.0,18.4 L100.8,16.9 L105.6,17.8 L110.4,16.6 L115.2,17.1 L120.0,17.1 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,5.8 L4.8,6.9 L9.6,4.2 L14.4,6.4 L19.2,7.0 L24.0,7.1 L28.8,5.2 L33.6,8.3 L38.4,7.6 L43.2,3.0 L48.0,9.9 L52.8,17.5 L57.6,18.4 L62.4,17.6 L67.2,18.4 L72.0,18.7 L76.8,18.6 L81.6,16.9 L86.4,15.9 L91.2,17.9 L96.0,18.4 L100.8,16.9 L105.6,17.8 L110.4,16.6 L115.2,17.1 L120.0,17.1"/><circle style="fill:var(--s-prov)" cx="120.0" cy="17.1" r="2.2"/></svg></td>
+<td class="num">26</td>
+<td class="num">1,035</td>
+<td class="num">2.51%</td>
+<td class="num c-delta"><span class="d up">▲ 2%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Anthony Oddo DO </div><code class="ppath">/providers/anthony-oddo-do/</code><div class="rnote">301 planned → <code>/providers/anthony-j-oddo-do/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 421 (wk of Apr 27)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 421 (wk of Apr 27)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,17.7 L52.8,3.0 L57.6,4.0 L62.4,13.2 L67.2,5.9 L72.0,8.8 L76.8,10.8 L81.6,6.2 L86.4,9.0 L91.2,9.6 L96.0,12.5 L100.8,12.5 L105.6,12.5 L110.4,13.9 L115.2,13.1 L120.0,11.7 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,17.7 L52.8,3.0 L57.6,4.0 L62.4,13.2 L67.2,5.9 L72.0,8.8 L76.8,10.8 L81.6,6.2 L86.4,9.0 L91.2,9.6 L96.0,12.5 L100.8,12.5 L105.6,12.5 L110.4,13.9 L115.2,13.1 L120.0,11.7"/><circle style="fill:var(--s-prov)" cx="120.0" cy="11.7" r="2.2"/></svg></td>
+<td class="num">49</td>
+<td class="num">858</td>
+<td class="num">5.71%</td>
+<td class="num c-delta"><span class="d dn">▼ 16%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Joseph Maslak MD </div><code class="ppath">/providers/joseph-maslak-md/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 280 (wk of Feb 9)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 280 (wk of Feb 9)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,3.0 L4.8,10.2 L9.6,10.1 L14.4,9.4 L19.2,9.9 L24.0,4.1 L28.8,10.8 L33.6,10.7 L38.4,12.9 L43.2,9.9 L48.0,7.8 L52.8,7.9 L57.6,7.1 L62.4,4.4 L67.2,9.4 L72.0,12.0 L76.8,6.3 L81.6,6.6 L86.4,8.5 L91.2,5.5 L96.0,9.8 L100.8,9.6 L105.6,6.9 L110.4,10.0 L115.2,8.1 L120.0,9.9 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,3.0 L4.8,10.2 L9.6,10.1 L14.4,9.4 L19.2,9.9 L24.0,4.1 L28.8,10.8 L33.6,10.7 L38.4,12.9 L43.2,9.9 L48.0,7.8 L52.8,7.9 L57.6,7.1 L62.4,4.4 L67.2,9.4 L72.0,12.0 L76.8,6.3 L81.6,6.6 L86.4,8.5 L91.2,5.5 L96.0,9.8 L100.8,9.6 L105.6,6.9 L110.4,10.0 L115.2,8.1 L120.0,9.9"/><circle style="fill:var(--s-prov)" cx="120.0" cy="9.9" r="2.2"/></svg></td>
+<td class="num">43</td>
+<td class="num">800</td>
+<td class="num">5.38%</td>
+<td class="num c-delta"><span class="d dn">▼ 2%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Lucia Zamorano MD FAANOS FICS </div><code class="ppath">/providers/lucia-zamorano-md-faanos-fics/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 170 (wk of Jun 15)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 170 (wk of Jun 15)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,9.2 L86.4,3.0 L91.2,5.7 L96.0,9.4 L100.8,11.2 L105.6,14.2 L110.4,10.6 L115.2,9.8 L120.0,9.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,9.2 L86.4,3.0 L91.2,5.7 L96.0,9.4 L100.8,11.2 L105.6,14.2 L110.4,10.6 L115.2,9.8 L120.0,9.0"/><circle style="fill:var(--s-prov)" cx="120.0" cy="9.0" r="2.2"/></svg></td>
+<td class="num">9</td>
+<td class="num">411</td>
+<td class="num">2.19%</td>
+<td class="num c-delta"><span class="d dn">▼ 23%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Francis Elwart DC </div><code class="ppath">/providers/francis-elwart-dc/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 123 (wk of Jun 22)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 123 (wk of Jun 22)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,12.3 L4.8,14.4 L9.6,13.2 L14.4,14.5 L19.2,10.0 L24.0,19.6 L28.8,15.5 L33.6,17.3 L38.4,15.4 L43.2,11.0 L48.0,10.0 L52.8,3.3 L57.6,4.8 L62.4,5.9 L67.2,6.3 L72.0,4.6 L76.8,12.9 L81.6,7.7 L86.4,4.6 L91.2,3.0 L96.0,12.9 L100.8,14.1 L105.6,14.9 L110.4,12.3 L115.2,12.8 L120.0,10.2 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,12.3 L4.8,14.4 L9.6,13.2 L14.4,14.5 L19.2,10.0 L24.0,19.6 L28.8,15.5 L33.6,17.3 L38.4,15.4 L43.2,11.0 L48.0,10.0 L52.8,3.3 L57.6,4.8 L62.4,5.9 L67.2,6.3 L72.0,4.6 L76.8,12.9 L81.6,7.7 L86.4,4.6 L91.2,3.0 L96.0,12.9 L100.8,14.1 L105.6,14.9 L110.4,12.3 L115.2,12.8 L120.0,10.2"/><circle style="fill:var(--s-prov)" cx="120.0" cy="10.2" r="2.2"/></svg></td>
+<td class="num">9</td>
+<td class="num">258</td>
+<td class="num">3.49%</td>
+<td class="num c-delta"><span class="d dn">▼ 27%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Kyle Truscott DC </div><code class="ppath">/providers/kyle-truscott-dc/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 96 (wk of Jun 15)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 96 (wk of Jun 15)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,14.0 L4.8,10.1 L9.6,13.2 L14.4,18.4 L19.2,15.9 L24.0,17.4 L28.8,18.4 L33.6,15.7 L38.4,10.9 L43.2,15.1 L48.0,13.4 L52.8,6.5 L57.6,12.6 L62.4,3.8 L67.2,8.2 L72.0,10.5 L76.8,14.7 L81.6,12.2 L86.4,3.0 L91.2,5.1 L96.0,13.6 L100.8,12.0 L105.6,10.5 L110.4,14.2 L115.2,11.3 L120.0,11.5 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,14.0 L4.8,10.1 L9.6,13.2 L14.4,18.4 L19.2,15.9 L24.0,17.4 L28.8,18.4 L33.6,15.7 L38.4,10.9 L43.2,15.1 L48.0,13.4 L52.8,6.5 L57.6,12.6 L62.4,3.8 L67.2,8.2 L72.0,10.5 L76.8,14.7 L81.6,12.2 L86.4,3.0 L91.2,5.1 L96.0,13.6 L100.8,12.0 L105.6,10.5 L110.4,14.2 L115.2,11.3 L120.0,11.5"/><circle style="fill:var(--s-prov)" cx="120.0" cy="11.5" r="2.2"/></svg></td>
+<td class="num">11</td>
+<td class="num">213</td>
+<td class="num">5.16%</td>
+<td class="num c-delta"><span class="d dn">▼ 24%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Andres Munk MD </div><code class="ppath">/providers/andres-munk-md/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 522 (wk of Apr 27)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 522 (wk of Apr 27)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,15.0 L4.8,14.5 L9.6,15.0 L14.4,15.0 L19.2,14.7 L24.0,15.6 L28.8,12.3 L33.6,14.9 L38.4,15.0 L43.2,13.2 L48.0,12.3 L52.8,3.0 L57.6,9.1 L62.4,9.9 L67.2,10.0 L72.0,12.9 L76.8,12.1 L81.6,9.9 L86.4,9.4 L91.2,15.0 L96.0,22.8 L100.8,22.8 L105.6,22.8 L110.4,22.6 L115.2,22.7 L120.0,20.2 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,15.0 L4.8,14.5 L9.6,15.0 L14.4,15.0 L19.2,14.7 L24.0,15.6 L28.8,12.3 L33.6,14.9 L38.4,15.0 L43.2,13.2 L48.0,12.3 L52.8,3.0 L57.6,9.1 L62.4,9.9 L67.2,10.0 L72.0,12.9 L76.8,12.1 L81.6,9.9 L86.4,9.4 L91.2,15.0 L96.0,22.8 L100.8,22.8 L105.6,22.8 L110.4,22.6 L115.2,22.7 L120.0,20.2"/><circle style="fill:var(--s-prov)" cx="120.0" cy="20.2" r="2.2"/></svg></td>
+<td class="num">1</td>
+<td class="num">99</td>
+<td class="num">1.01%</td>
+<td class="num c-delta"><span class="d dn">▼ 83%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Sue Cash PT </div><code class="ppath">/providers/sue-cash-pt/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 83 (wk of May 11)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 83 (wk of May 11)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,16.7 L4.8,17.5 L9.6,18.9 L14.4,17.9 L19.2,14.8 L24.0,15.8 L28.8,18.9 L33.6,18.7 L38.4,19.1 L43.2,17.7 L48.0,17.9 L52.8,20.1 L57.6,16.0 L62.4,3.0 L67.2,17.5 L72.0,18.7 L76.8,15.5 L81.6,16.3 L86.4,13.6 L91.2,15.0 L96.0,16.7 L100.8,17.5 L105.6,16.7 L110.4,16.7 L115.2,17.2 L120.0,18.4 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,16.7 L4.8,17.5 L9.6,18.9 L14.4,17.9 L19.2,14.8 L24.0,15.8 L28.8,18.9 L33.6,18.7 L38.4,19.1 L43.2,17.7 L48.0,17.9 L52.8,20.1 L57.6,16.0 L62.4,3.0 L67.2,17.5 L72.0,18.7 L76.8,15.5 L81.6,16.3 L86.4,13.6 L91.2,15.0 L96.0,16.7 L100.8,17.5 L105.6,16.7 L110.4,16.7 L115.2,17.2 L120.0,18.4"/><circle style="fill:var(--s-prov)" cx="120.0" cy="18.4" r="2.2"/></svg></td>
+<td class="num">3</td>
+<td class="num">95</td>
+<td class="num">3.16%</td>
+<td class="num c-delta"><span class="d dn">▼ 21%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Fatema Taher PT OMPT OCS </div><code class="ppath">/providers/fatema-taher-pt-ompt-ocs/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 96 (wk of Jun 15)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 96 (wk of Jun 15)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,16.1 L4.8,22.2 L9.6,20.9 L14.4,20.5 L19.2,21.1 L24.0,21.8 L28.8,21.3 L33.6,20.9 L38.4,20.7 L43.2,19.7 L48.0,17.6 L52.8,16.8 L57.6,10.3 L62.4,16.8 L67.2,14.9 L72.0,19.7 L76.8,16.1 L81.6,11.1 L86.4,3.0 L91.2,15.3 L96.0,16.8 L100.8,18.8 L105.6,18.8 L110.4,20.9 L115.2,19.0 L120.0,17.2 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,16.1 L4.8,22.2 L9.6,20.9 L14.4,20.5 L19.2,21.1 L24.0,21.8 L28.8,21.3 L33.6,20.9 L38.4,20.7 L43.2,19.7 L48.0,17.6 L52.8,16.8 L57.6,10.3 L62.4,16.8 L67.2,14.9 L72.0,19.7 L76.8,16.1 L81.6,11.1 L86.4,3.0 L91.2,15.3 L96.0,16.8 L100.8,18.8 L105.6,18.8 L110.4,20.9 L115.2,19.0 L120.0,17.2"/><circle style="fill:var(--s-prov)" cx="120.0" cy="17.2" r="2.2"/></svg></td>
+<td class="num">2</td>
+<td class="num">77</td>
+<td class="num">2.60%</td>
+<td class="num c-delta"><span class="d dn">▼ 58%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Crystal Langholff DPT </div><code class="ppath">/providers/crystal-langholff-dpt/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 32 (wk of May 4)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 32 (wk of May 4)</title><path class="sp-a" style="fill:var(--s-prov)" d="M0.0,16.8 L4.8,18.6 L9.6,19.2 L14.4,18.0 L19.2,18.0 L24.0,21.1 L28.8,17.4 L33.6,18.6 L38.4,20.5 L43.2,21.8 L48.0,21.1 L52.8,15.5 L57.6,3.0 L62.4,18.0 L67.2,15.5 L72.0,18.6 L76.8,12.4 L81.6,5.5 L86.4,18.0 L91.2,15.5 L96.0,17.4 L100.8,18.0 L105.6,12.4 L110.4,16.1 L115.2,18.6 L120.0,13.6 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-prov)" d="M0.0,16.8 L4.8,18.6 L9.6,19.2 L14.4,18.0 L19.2,18.0 L24.0,21.1 L28.8,17.4 L33.6,18.6 L38.4,20.5 L43.2,21.8 L48.0,21.1 L52.8,15.5 L57.6,3.0 L62.4,18.0 L67.2,15.5 L72.0,18.6 L76.8,12.4 L81.6,5.5 L86.4,18.0 L91.2,15.5 L96.0,17.4 L100.8,18.0 L105.6,12.4 L110.4,16.1 L115.2,18.6 L120.0,13.6"/><circle style="fill:var(--s-prov)" cx="120.0" cy="13.6" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">50</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d up">▲ 35%</span></td>
+</tr></tbody>
+</table></div>
+<details class="silent"><summary>3 live spine pages with zero Google impressions in all 26 weeks</summary><p class="silentlist">Anthony J Oddo DO · Spine · Spine Neck Back</p></details>
+</div>
+</details><details class="sec" >
+<summary>
+  <span class="dot" style="background:var(--s-cond)"></span>
+  <span class="sec-name">Condition pages<span class="sec-sub">Spine, neck &amp; back conditions — /conditions/ and legacy /conditions-we-treat/</span></span>
+  <span class="sec-stats">
+    <span class="ss"><b>85</b> clicks</span>
+    <span class="ss"><b>23.6K</b> impressions</span>
+    <span class="ss"><b>0.36%</b> CTR</span>
+    <span class="ss mut">▲ 1% impr. vs prior 4 wk</span>
+    <span class="ss mut">30 pages</span>
+  </span>
+  <span class="tw">▸</span>
+</summary>
+<div class="secbody">
+<div class="tscroll"><table class="pt">
+<thead><tr><th>Page</th><th>26-week trend</th><th class="num">Clicks</th><th class="num">Impressions</th><th class="num">CTR</th><th class="num">Δ impr.</th></tr></thead>
+<tbody><tr>
+<td class="c-page"><div class="pname">Neck Fracture Broken Neck </div><code class="ppath">/conditions/neck-fracture-broken-neck/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 8,235 (wk of May 18)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 8,235 (wk of May 18)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,17.4 L52.8,7.9 L57.6,14.4 L62.4,6.5 L67.2,3.0 L72.0,3.7 L76.8,5.7 L81.6,6.1 L86.4,5.6 L91.2,12.1 L96.0,15.7 L100.8,16.2 L105.6,16.7 L110.4,13.0 L115.2,11.1 L120.0,13.5 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,17.4 L52.8,7.9 L57.6,14.4 L62.4,6.5 L67.2,3.0 L72.0,3.7 L76.8,5.7 L81.6,6.1 L86.4,5.6 L91.2,12.1 L96.0,15.7 L100.8,16.2 L105.6,16.7 L110.4,13.0 L115.2,11.1 L120.0,13.5"/><circle style="fill:var(--s-cond)" cx="120.0" cy="13.5" r="2.2"/></svg></td>
+<td class="num">68</td>
+<td class="num">15,557</td>
+<td class="num">0.44%</td>
+<td class="num c-delta"><span class="d dn">▼ 11%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Back Fracture Break </div><code class="ppath">/conditions/back-fracture-break/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 2,372 (wk of May 11)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 2,372 (wk of May 11)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,16.5 L52.8,10.8 L57.6,8.9 L62.4,3.0 L67.2,8.7 L72.0,7.8 L76.8,8.5 L81.6,8.0 L86.4,6.4 L91.2,15.1 L96.0,20.4 L100.8,19.6 L105.6,20.1 L110.4,12.9 L115.2,7.1 L120.0,5.5 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,16.5 L52.8,10.8 L57.6,8.9 L62.4,3.0 L67.2,8.7 L72.0,7.8 L76.8,8.5 L81.6,8.0 L86.4,6.4 L91.2,15.1 L96.0,20.4 L100.8,19.6 L105.6,20.1 L110.4,12.9 L115.2,7.1 L120.0,5.5"/><circle style="fill:var(--s-cond)" cx="120.0" cy="5.5" r="2.2"/></svg></td>
+<td class="num">8</td>
+<td class="num">5,494</td>
+<td class="num">0.15%</td>
+<td class="num c-delta"><span class="d up">▲ 52%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Cervical Radiculopathy </div><code class="ppath">/conditions/cervical-radiculopathy/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 288 (wk of Aug 3)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 288 (wk of Aug 3)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,18.0 L67.2,18.1 L72.0,16.1 L76.8,16.3 L81.6,17.4 L86.4,14.7 L91.2,18.9 L96.0,20.6 L100.8,19.5 L105.6,18.9 L110.4,21.0 L115.2,12.5 L120.0,3.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,18.0 L67.2,18.1 L72.0,16.1 L76.8,16.3 L81.6,17.4 L86.4,14.7 L91.2,18.9 L96.0,20.6 L100.8,19.5 L105.6,18.9 L110.4,21.0 L115.2,12.5 L120.0,3.0"/><circle style="fill:var(--s-cond)" cx="120.0" cy="3.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">527</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d up">▲ 99%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Lumbar Stenosis </div><code class="ppath">/conditions/lumbar-stenosis/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 141 (wk of Aug 3)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 141 (wk of Aug 3)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,20.7 L96.0,19.0 L100.8,19.9 L105.6,20.2 L110.4,20.9 L115.2,9.0 L120.0,3.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,20.7 L96.0,19.0 L100.8,19.9 L105.6,20.2 L110.4,20.9 L115.2,9.0 L120.0,3.0"/><circle style="fill:var(--s-cond)" cx="120.0" cy="3.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">275</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d up">▲ 317%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">SI Joint Pain </div><code class="ppath">/conditions/si-joint-pain/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 96 (wk of Aug 3)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 96 (wk of Aug 3)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,18.0 L91.2,5.1 L96.0,18.0 L100.8,18.6 L105.6,18.8 L110.4,5.5 L115.2,9.0 L120.0,3.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,18.0 L91.2,5.1 L96.0,18.0 L100.8,18.6 L105.6,18.8 L110.4,5.5 L115.2,9.0 L120.0,3.0"/><circle style="fill:var(--s-cond)" cx="120.0" cy="3.0" r="2.2"/></svg></td>
+<td class="num">2</td>
+<td class="num">267</td>
+<td class="num">0.75%</td>
+<td class="num c-delta"><span class="d up">▲ 72%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Degenerative Disc Disease </div><code class="ppath">/conditions/degenerative-disc-disease/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 124 (wk of Aug 3)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 124 (wk of Aug 3)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,19.0 L110.4,14.8 L115.2,14.1 L120.0,3.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,19.0 L110.4,14.8 L115.2,14.1 L120.0,3.0"/><circle style="fill:var(--s-cond)" cx="120.0" cy="3.0" r="2.2"/></svg></td>
+<td class="num">1</td>
+<td class="num">255</td>
+<td class="num">0.39%</td>
+<td class="num c-delta"><span class="d up">▲ new</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Herniated Disc </div><code class="ppath">/conditions/herniated-disc/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 118 (wk of Aug 3)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 118 (wk of Aug 3)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,11.3 L72.0,11.0 L76.8,17.2 L81.6,6.4 L86.4,18.4 L91.2,14.9 L96.0,17.4 L100.8,20.8 L105.6,18.9 L110.4,17.6 L115.2,11.0 L120.0,3.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,11.3 L72.0,11.0 L76.8,17.2 L81.6,6.4 L86.4,18.4 L91.2,14.9 L96.0,17.4 L100.8,20.8 L105.6,18.9 L110.4,17.6 L115.2,11.0 L120.0,3.0"/><circle style="fill:var(--s-cond)" cx="120.0" cy="3.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">245</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d up">▲ 102%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Ankylosing Spondylitis </div><code class="ppath">/conditions/ankylosing-spondylitis/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 358 (wk of Jul 6)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 358 (wk of Jul 6)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,12.7 L72.0,10.2 L76.8,15.4 L81.6,13.8 L86.4,9.9 L91.2,7.4 L96.0,12.0 L100.8,3.0 L105.6,18.6 L110.4,20.7 L115.2,20.6 L120.0,18.8 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,12.7 L72.0,10.2 L76.8,15.4 L81.6,13.8 L86.4,9.9 L91.2,7.4 L96.0,12.0 L100.8,3.0 L105.6,18.6 L110.4,20.7 L115.2,20.6 L120.0,18.8"/><circle style="fill:var(--s-cond)" cx="120.0" cy="18.8" r="2.2"/></svg></td>
+<td class="num">2</td>
+<td class="num">239</td>
+<td class="num">0.84%</td>
+<td class="num c-delta"><span class="d dn">▼ 78%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Scoliosis </div><code class="ppath">/conditions/scoliosis/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 84 (wk of Jul 6)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 84 (wk of Jul 6)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,21.6 L91.2,10.1 L96.0,5.9 L100.8,3.0 L105.6,3.2 L110.4,10.4 L115.2,14.9 L120.0,11.8 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,21.6 L91.2,10.1 L96.0,5.9 L100.8,3.0 L105.6,3.2 L110.4,10.4 L115.2,14.9 L120.0,11.8"/><circle style="fill:var(--s-cond)" cx="120.0" cy="11.8" r="2.2"/></svg></td>
+<td class="num">1</td>
+<td class="num">217</td>
+<td class="num">0.46%</td>
+<td class="num c-delta"><span class="d "> ±0%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Spinal Stenosis </div><code class="ppath">/conditions/spinal-stenosis/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 122 (wk of May 18)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 122 (wk of May 18)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,20.7 L67.2,3.0 L72.0,8.2 L76.8,12.0 L81.6,13.5 L86.4,16.8 L91.2,19.7 L96.0,15.1 L100.8,19.9 L105.6,17.6 L110.4,19.6 L115.2,13.5 L120.0,8.1 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,20.7 L67.2,3.0 L72.0,8.2 L76.8,12.0 L81.6,13.5 L86.4,16.8 L91.2,19.7 L96.0,15.1 L100.8,19.9 L105.6,17.6 L110.4,19.6 L115.2,13.5 L120.0,8.1"/><circle style="fill:var(--s-cond)" cx="120.0" cy="8.1" r="2.2"/></svg></td>
+<td class="num">3</td>
+<td class="num">203</td>
+<td class="num">1.48%</td>
+<td class="num c-delta"><span class="d up">▲ 62%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Spondylolisthesis </div><code class="ppath">/conditions/spondylolisthesis/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 492 (wk of May 11)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 492 (wk of May 11)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,22.8 L52.8,19.9 L57.6,18.9 L62.4,3.0 L67.2,18.4 L72.0,21.1 L76.8,21.4 L81.6,21.3 L86.4,21.7 L91.2,21.7 L96.0,21.2 L100.8,21.3 L105.6,21.7 L110.4,21.4 L115.2,21.7 L120.0,20.7 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,22.8 L52.8,19.9 L57.6,18.9 L62.4,3.0 L67.2,18.4 L72.0,21.1 L76.8,21.4 L81.6,21.3 L86.4,21.7 L91.2,21.7 L96.0,21.2 L100.8,21.3 L105.6,21.7 L110.4,21.4 L115.2,21.7 L120.0,20.7"/><circle style="fill:var(--s-cond)" cx="120.0" cy="20.7" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">159</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d up">▲ 7%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Arthritic Back Pain </div><code class="ppath">/conditions/arthritic-back-pain/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 641 (wk of May 11)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 641 (wk of May 11)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,22.1 L52.8,21.9 L57.6,21.3 L62.4,3.0 L67.2,21.6 L72.0,21.8 L76.8,22.2 L81.6,22.0 L86.4,22.2 L91.2,21.8 L96.0,22.4 L100.8,22.3 L105.6,22.3 L110.4,21.4 L115.2,22.6 L120.0,22.4 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,22.1 L52.8,21.9 L57.6,21.3 L62.4,3.0 L67.2,21.6 L72.0,21.8 L76.8,22.2 L81.6,22.0 L86.4,22.2 L91.2,21.8 L96.0,22.4 L100.8,22.3 L105.6,22.3 L110.4,21.4 L115.2,22.6 L120.0,22.4"/><circle style="fill:var(--s-cond)" cx="120.0" cy="22.4" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">103</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d dn">▼ 3%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Sciatica </div><code class="ppath">/conditions/sciatica/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 60 (wk of Jul 6)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 60 (wk of Jul 6)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,3.0 L105.6,13.0 L110.4,22.0 L115.2,21.3 L120.0,16.7 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,3.0 L105.6,13.0 L110.4,22.0 L115.2,21.3 L120.0,16.7"/><circle style="fill:var(--s-cond)" cx="120.0" cy="16.7" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">57</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d dn">▼ 5%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Spinal Pain </div><code class="ppath">/conditions-we-treat/spine-neck-back-conditions/spinal-pain/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 11 (wk of Jul 13)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 11 (wk of Jul 13)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,23.0 L4.8,21.2 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,12.1 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,15.7 L91.2,13.9 L96.0,17.5 L100.8,23.0 L105.6,3.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,23.0 L4.8,21.2 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,12.1 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,15.7 L91.2,13.9 L96.0,17.5 L100.8,23.0 L105.6,3.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-cond)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">11</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d dn">▼ 8%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Neck Fracture Broken Neck </div><code class="ppath">/conditions-we-treat/spine-neck-back-conditions/neck-fracture-broken-neck/</code><div class="rnote">301 planned → <code>/conditions/neck-fracture-broken-neck/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 3,017 (wk of Feb 23)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 3,017 (wk of Feb 23)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,10.3 L4.8,6.0 L9.6,3.0 L14.4,12.6 L19.2,5.5 L24.0,5.5 L28.8,11.2 L33.6,12.8 L38.4,12.4 L43.2,17.9 L48.0,21.0 L52.8,22.9 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,10.3 L4.8,6.0 L9.6,3.0 L14.4,12.6 L19.2,5.5 L24.0,5.5 L28.8,11.2 L33.6,12.8 L38.4,12.4 L43.2,17.9 L48.0,21.0 L52.8,22.9 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-cond)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Back Fracture Break </div><code class="ppath">/conditions-we-treat/spine-neck-back-conditions/back-fracture-break/</code><div class="rnote">301 planned → <code>/conditions/back-fracture-break/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 495 (wk of Feb 16)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 495 (wk of Feb 16)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,4.9 L4.8,3.0 L9.6,4.8 L14.4,3.0 L19.2,14.4 L24.0,13.1 L28.8,11.9 L33.6,13.5 L38.4,14.2 L43.2,15.0 L48.0,19.5 L52.8,22.9 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,4.9 L4.8,3.0 L9.6,4.8 L14.4,3.0 L19.2,14.4 L24.0,13.1 L28.8,11.9 L33.6,13.5 L38.4,14.2 L43.2,15.0 L48.0,19.5 L52.8,22.9 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-cond)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Spondylolisthesis </div><code class="ppath">/conditions-we-treat/spine-neck-back-conditions/spondylolisthesis/</code><div class="rnote">301 planned → <code>/conditions/spondylolisthesis/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 1,073 (wk of Mar 23)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 1,073 (wk of Mar 23)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,22.6 L4.8,21.4 L9.6,22.8 L14.4,22.8 L19.2,22.6 L24.0,21.4 L28.8,3.0 L33.6,21.3 L38.4,20.4 L43.2,22.6 L48.0,22.8 L52.8,22.8 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,22.6 L4.8,21.4 L9.6,22.8 L14.4,22.8 L19.2,22.6 L24.0,21.4 L28.8,3.0 L33.6,21.3 L38.4,20.4 L43.2,22.6 L48.0,22.8 L52.8,22.8 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-cond)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Spine Neck Back Conditions </div><code class="ppath">/conditions-we-treat/spine-neck-back-conditions/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 301 (wk of Mar 9)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 301 (wk of Mar 9)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,19.2 L4.8,20.1 L9.6,20.6 L14.4,8.2 L19.2,3.0 L24.0,14.5 L28.8,17.4 L33.6,17.8 L38.4,18.8 L43.2,19.4 L48.0,19.5 L52.8,23.0 L57.6,22.9 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,19.2 L4.8,20.1 L9.6,20.6 L14.4,8.2 L19.2,3.0 L24.0,14.5 L28.8,17.4 L33.6,17.8 L38.4,18.8 L43.2,19.4 L48.0,19.5 L52.8,23.0 L57.6,22.9 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-cond)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Spinal Stenosis </div><code class="ppath">/conditions-we-treat/spine-neck-back-conditions/spinal-stenosis/</code><div class="rnote">301 planned → <code>/conditions/spinal-stenosis/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 179 (wk of Mar 16)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 179 (wk of Mar 16)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,22.8 L4.8,21.7 L9.6,17.7 L14.4,9.3 L19.2,8.3 L24.0,3.0 L28.8,5.9 L33.6,12.8 L38.4,11.3 L43.2,13.1 L48.0,22.9 L52.8,23.0 L57.6,22.9 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,22.8 L4.8,21.7 L9.6,17.7 L14.4,9.3 L19.2,8.3 L24.0,3.0 L28.8,5.9 L33.6,12.8 L38.4,11.3 L43.2,13.1 L48.0,22.9 L52.8,23.0 L57.6,22.9 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-cond)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Sciatica </div><code class="ppath">/conditions-we-treat/spine-neck-back-conditions/sciatica/</code><div class="rnote">301 planned → <code>/conditions/sciatica/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 137 (wk of Mar 23)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 137 (wk of Mar 23)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,11.2 L4.8,12.1 L9.6,12.5 L14.4,8.0 L19.2,13.7 L24.0,14.4 L28.8,3.0 L33.6,9.7 L38.4,15.6 L43.2,10.0 L48.0,16.9 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,11.2 L4.8,12.1 L9.6,12.5 L14.4,8.0 L19.2,13.7 L24.0,14.4 L28.8,3.0 L33.6,9.7 L38.4,15.6 L43.2,10.0 L48.0,16.9 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-cond)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Cervical Radiculopathy </div><code class="ppath">/conditions-we-treat/spine-neck-back-conditions/cervical-radiculopathy/</code><div class="rnote">301 planned → <code>/conditions/cervical-radiculopathy/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 86 (wk of Feb 16)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 86 (wk of Feb 16)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,20.2 L4.8,3.0 L9.6,19.0 L14.4,18.3 L19.2,13.2 L24.0,17.2 L28.8,20.0 L33.6,22.8 L38.4,22.1 L43.2,23.0 L48.0,23.0 L52.8,22.5 L57.6,23.0 L62.4,22.1 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,20.2 L4.8,3.0 L9.6,19.0 L14.4,18.3 L19.2,13.2 L24.0,17.2 L28.8,20.0 L33.6,22.8 L38.4,22.1 L43.2,23.0 L48.0,23.0 L52.8,22.5 L57.6,23.0 L62.4,22.1 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-cond)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Herniated Disc </div><code class="ppath">/conditions-we-treat/spine-neck-back-conditions/herniated-disc/</code><div class="rnote">301 planned → <code>/conditions/herniated-disc/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 5 (wk of Apr 20)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 5 (wk of Apr 20)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,19.0 L4.8,11.0 L9.6,19.0 L14.4,23.0 L19.2,19.0 L24.0,23.0 L28.8,19.0 L33.6,19.0 L38.4,11.0 L43.2,23.0 L48.0,3.0 L52.8,23.0 L57.6,19.0 L62.4,23.0 L67.2,15.0 L72.0,19.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,19.0 L4.8,11.0 L9.6,19.0 L14.4,23.0 L19.2,19.0 L24.0,23.0 L28.8,19.0 L33.6,19.0 L38.4,11.0 L43.2,23.0 L48.0,3.0 L52.8,23.0 L57.6,19.0 L62.4,23.0 L67.2,15.0 L72.0,19.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-cond)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Arthritic Back Pain </div><code class="ppath">/conditions-we-treat/spine-neck-back-conditions/arthritic-back-pain/</code><div class="rnote">301 planned → <code>/conditions/arthritic-back-pain/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 5 (wk of Feb 16)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 5 (wk of Feb 16)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,11.0 L4.8,3.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,19.0 L28.8,15.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,11.0 L4.8,3.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,19.0 L28.8,15.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-cond)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Lumbar Stenosis </div><code class="ppath">/conditions-we-treat/spine-neck-back-conditions/lumbar-stenosis/</code><div class="rnote">301 planned → <code>/conditions/lumbar-stenosis/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 2 (wk of Feb 16)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 2 (wk of Feb 16)</title><path class="sp-a" style="fill:var(--s-cond)" d="M0.0,23.0 L4.8,3.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,13.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-cond)" d="M0.0,23.0 L4.8,3.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,13.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-cond)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr></tbody>
+</table></div>
+<details class="silent"><summary>6 live spine pages with zero Google impressions in all 26 weeks</summary><p class="silentlist">Adolescent Scoliosis · Head Neck 2 · Herniated Disc · Neck Pain · SI Joint Pain · Sciatica</p></details>
+</div>
+</details><details class="sec" >
+<summary>
+  <span class="dot" style="background:var(--s-trt)"></span>
+  <span class="sec-name">Treatment pages<span class="sec-sub">Spine procedures &amp; injections — /treatment/ (launched in search Apr 22)</span></span>
+  <span class="sec-stats">
+    <span class="ss"><b>18</b> clicks</span>
+    <span class="ss"><b>13.9K</b> impressions</span>
+    <span class="ss"><b>0.13%</b> CTR</span>
+    <span class="ss mut">▲ 5% impr. vs prior 4 wk</span>
+    <span class="ss mut">15 pages</span>
+  </span>
+  <span class="tw">▸</span>
+</summary>
+<div class="secbody">
+<div class="tscroll"><table class="pt">
+<thead><tr><th>Page</th><th>26-week trend</th><th class="num">Clicks</th><th class="num">Impressions</th><th class="num">CTR</th><th class="num">Δ impr.</th></tr></thead>
+<tbody><tr>
+<td class="c-page"><div class="pname">Kyphoplasty Vertebroplasty </div><code class="ppath">/treatment/kyphoplasty-vertebroplasty/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 2,201 (wk of Aug 3)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 2,201 (wk of Aug 3)</title><path class="sp-a" style="fill:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,17.9 L72.0,18.6 L76.8,19.9 L81.6,16.9 L86.4,15.4 L91.2,18.0 L96.0,13.9 L100.8,8.7 L105.6,16.4 L110.4,13.1 L115.2,4.4 L120.0,3.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,17.9 L72.0,18.6 L76.8,19.9 L81.6,16.9 L86.4,15.4 L91.2,18.0 L96.0,13.9 L100.8,8.7 L105.6,16.4 L110.4,13.1 L115.2,4.4 L120.0,3.0"/><circle style="fill:var(--s-trt)" cx="120.0" cy="3.0" r="2.2"/></svg></td>
+<td class="num">3</td>
+<td class="num">6,059</td>
+<td class="num">0.05%</td>
+<td class="num c-delta"><span class="d up">▲ 53%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Caudal ESI </div><code class="ppath">/treatment/caudal-esi/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 974 (wk of May 4)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 974 (wk of May 4)</title><path class="sp-a" style="fill:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,20.5 L52.8,10.8 L57.6,3.0 L62.4,4.3 L67.2,7.5 L72.0,8.0 L76.8,6.1 L81.6,4.9 L86.4,6.7 L91.2,9.8 L96.0,12.2 L100.8,10.4 L105.6,11.8 L110.4,11.4 L115.2,9.8 L120.0,9.1 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,20.5 L52.8,10.8 L57.6,3.0 L62.4,4.3 L67.2,7.5 L72.0,8.0 L76.8,6.1 L81.6,4.9 L86.4,6.7 L91.2,9.8 L96.0,12.2 L100.8,10.4 L105.6,11.8 L110.4,11.4 L115.2,9.8 L120.0,9.1"/><circle style="fill:var(--s-trt)" cx="120.0" cy="9.1" r="2.2"/></svg></td>
+<td class="num">3</td>
+<td class="num">2,432</td>
+<td class="num">0.12%</td>
+<td class="num c-delta"><span class="d dn">▼ 6%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Laminectomy </div><code class="ppath">/treatment/laminectomy/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 867 (wk of May 18)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 867 (wk of May 18)</title><path class="sp-a" style="fill:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,12.4 L52.8,12.5 L57.6,19.4 L62.4,5.3 L67.2,3.0 L72.0,8.9 L76.8,9.9 L81.6,5.0 L86.4,7.2 L91.2,16.0 L96.0,18.3 L100.8,16.7 L105.6,11.8 L110.4,13.9 L115.2,13.5 L120.0,16.3 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,12.4 L52.8,12.5 L57.6,19.4 L62.4,5.3 L67.2,3.0 L72.0,8.9 L76.8,9.9 L81.6,5.0 L86.4,7.2 L91.2,16.0 L96.0,18.3 L100.8,16.7 L105.6,11.8 L110.4,13.9 L115.2,13.5 L120.0,16.3"/><circle style="fill:var(--s-trt)" cx="120.0" cy="16.3" r="2.2"/></svg></td>
+<td class="num">2</td>
+<td class="num">1,584</td>
+<td class="num">0.13%</td>
+<td class="num c-delta"><span class="d up">▲ 8%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Medial Branch Blocks Cervical Lumbar </div><code class="ppath">/treatment/medial-branch-blocks-cervical-lumbar/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 307 (wk of Aug 3)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 307 (wk of Aug 3)</title><path class="sp-a" style="fill:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,7.3 L72.0,3.8 L76.8,8.0 L81.6,11.1 L86.4,7.1 L91.2,6.3 L96.0,13.7 L100.8,15.2 L105.6,16.1 L110.4,6.2 L115.2,8.9 L120.0,3.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,7.3 L72.0,3.8 L76.8,8.0 L81.6,11.1 L86.4,7.1 L91.2,6.3 L96.0,13.7 L100.8,15.2 L105.6,16.1 L110.4,6.2 L115.2,8.9 L120.0,3.0"/><circle style="fill:var(--s-trt)" cx="120.0" cy="3.0" r="2.2"/></svg></td>
+<td class="num">1</td>
+<td class="num">887</td>
+<td class="num">0.11%</td>
+<td class="num c-delta"><span class="d up">▲ 16%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Thoracic Lumbar Decompression </div><code class="ppath">/treatment/thoracic-lumbar-decompression/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 388 (wk of Jun 15)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 388 (wk of Jun 15)</title><path class="sp-a" style="fill:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,16.9 L57.6,6.8 L62.4,7.5 L67.2,9.3 L72.0,8.8 L76.8,12.2 L81.6,11.9 L86.4,3.0 L91.2,15.2 L96.0,17.7 L100.8,17.9 L105.6,19.0 L110.4,15.9 L115.2,15.3 L120.0,14.4 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,16.9 L57.6,6.8 L62.4,7.5 L67.2,9.3 L72.0,8.8 L76.8,12.2 L81.6,11.9 L86.4,3.0 L91.2,15.2 L96.0,17.7 L100.8,17.9 L105.6,19.0 L110.4,15.9 L115.2,15.3 L120.0,14.4"/><circle style="fill:var(--s-trt)" cx="120.0" cy="14.4" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">530</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d dn">▼ 28%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Spinal Cord Stimulator </div><code class="ppath">/treatment/spinal-cord-stimulator/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 372 (wk of May 11)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 372 (wk of May 11)</title><path class="sp-a" style="fill:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,6.0 L57.6,3.4 L62.4,3.0 L67.2,4.1 L72.0,7.0 L76.8,9.8 L81.6,4.6 L86.4,6.8 L91.2,17.9 L96.0,18.8 L100.8,19.4 L105.6,19.1 L110.4,16.5 L115.2,13.8 L120.0,14.5 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,6.0 L57.6,3.4 L62.4,3.0 L67.2,4.1 L72.0,7.0 L76.8,9.8 L81.6,4.6 L86.4,6.8 L91.2,17.9 L96.0,18.8 L100.8,19.4 L105.6,19.1 L110.4,16.5 L115.2,13.8 L120.0,14.5"/><circle style="fill:var(--s-trt)" cx="120.0" cy="14.5" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">523</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d dn">▼ 3%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">SI Joint Injection </div><code class="ppath">/treatment/si-joint-injection/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 835 (wk of May 4)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 835 (wk of May 4)</title><path class="sp-a" style="fill:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,18.2 L52.8,4.9 L57.6,3.0 L62.4,5.8 L67.2,7.9 L72.0,10.9 L76.8,13.9 L81.6,14.4 L86.4,14.9 L91.2,21.3 L96.0,22.4 L100.8,21.3 L105.6,20.8 L110.4,20.4 L115.2,18.6 L120.0,20.1 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,18.2 L52.8,4.9 L57.6,3.0 L62.4,5.8 L67.2,7.9 L72.0,10.9 L76.8,13.9 L81.6,14.4 L86.4,14.9 L91.2,21.3 L96.0,22.4 L100.8,21.3 L105.6,20.8 L110.4,20.4 L115.2,18.6 L120.0,20.1"/><circle style="fill:var(--s-trt)" cx="120.0" cy="20.1" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">504</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d "> ±0%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Sacroiliac Joint Fusion </div><code class="ppath">/treatment/sacroiliac-joint-fusion/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 448 (wk of May 18)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 448 (wk of May 18)</title><path class="sp-a" style="fill:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,20.6 L52.8,17.4 L57.6,7.7 L62.4,5.5 L67.2,3.0 L72.0,5.5 L76.8,9.2 L81.6,6.6 L86.4,10.2 L91.2,17.9 L96.0,18.5 L100.8,19.4 L105.6,17.7 L110.4,19.9 L115.2,18.4 L120.0,17.5 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,20.6 L52.8,17.4 L57.6,7.7 L62.4,5.5 L67.2,3.0 L72.0,5.5 L76.8,9.2 L81.6,6.6 L86.4,10.2 L91.2,17.9 L96.0,18.5 L100.8,19.4 L105.6,17.7 L110.4,19.9 L115.2,18.4 L120.0,17.5"/><circle style="fill:var(--s-trt)" cx="120.0" cy="17.5" r="2.2"/></svg></td>
+<td class="num">3</td>
+<td class="num">415</td>
+<td class="num">0.72%</td>
+<td class="num c-delta"><span class="d dn">▼ 29%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Injections ESI Facet Nerve Blocks </div><code class="ppath">/treatment/injections-esi-facet-nerve-blocks/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 507 (wk of May 11)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 507 (wk of May 11)</title><path class="sp-a" style="fill:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,10.4 L62.4,3.0 L67.2,14.4 L72.0,16.2 L76.8,15.3 L81.6,17.6 L86.4,13.8 L91.2,18.5 L96.0,20.9 L100.8,20.8 L105.6,21.9 L110.4,21.6 L115.2,20.0 L120.0,20.1 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,10.4 L62.4,3.0 L67.2,14.4 L72.0,16.2 L76.8,15.3 L81.6,17.6 L86.4,13.8 L91.2,18.5 L96.0,20.9 L100.8,20.8 L105.6,21.9 L110.4,21.6 L115.2,20.0 L120.0,20.1"/><circle style="fill:var(--s-trt)" cx="120.0" cy="20.1" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">211</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d dn">▼ 54%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Lumbar Cervical Fusion </div><code class="ppath">/treatment/lumbar-cervical-fusion/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 396 (wk of May 18)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 396 (wk of May 18)</title><path class="sp-a" style="fill:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,11.1 L52.8,11.5 L57.6,5.1 L62.4,3.6 L67.2,3.0 L72.0,10.4 L76.8,13.2 L81.6,12.8 L86.4,14.7 L91.2,20.4 L96.0,22.0 L100.8,21.7 L105.6,21.3 L110.4,20.4 L115.2,19.4 L120.0,20.4 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,11.1 L52.8,11.5 L57.6,5.1 L62.4,3.6 L67.2,3.0 L72.0,10.4 L76.8,13.2 L81.6,12.8 L86.4,14.7 L91.2,20.4 L96.0,22.0 L100.8,21.7 L105.6,21.3 L110.4,20.4 L115.2,19.4 L120.0,20.4"/><circle style="fill:var(--s-trt)" cx="120.0" cy="20.4" r="2.2"/></svg></td>
+<td class="num">1</td>
+<td class="num">208</td>
+<td class="num">0.48%</td>
+<td class="num c-delta"><span class="d dn">▼ 21%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Lumbar Epidural Steroid Injection </div><code class="ppath">/treatment/lumbar-epidural-steroid-injection/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 318 (wk of Jun 8)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 318 (wk of Jun 8)</title><path class="sp-a" style="fill:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,7.8 L72.0,6.5 L76.8,6.4 L81.6,3.0 L86.4,10.7 L91.2,18.2 L96.0,16.2 L100.8,20.4 L105.6,21.4 L110.4,20.2 L115.2,20.0 L120.0,19.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,7.8 L72.0,6.5 L76.8,6.4 L81.6,3.0 L86.4,10.7 L91.2,18.2 L96.0,16.2 L100.8,20.4 L105.6,21.4 L110.4,20.2 L115.2,20.0 L120.0,19.0"/><circle style="fill:var(--s-trt)" cx="120.0" cy="19.0" r="2.2"/></svg></td>
+<td class="num">1</td>
+<td class="num">181</td>
+<td class="num">0.55%</td>
+<td class="num c-delta"><span class="d dn">▼ 57%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Lumbar Laminectomy </div><code class="ppath">/treatment/lumbar-laminectomy/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 1,046 (wk of May 11)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 1,046 (wk of May 11)</title><path class="sp-a" style="fill:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,22.4 L57.6,22.4 L62.4,3.0 L67.2,18.0 L72.0,17.9 L76.8,20.8 L81.6,21.1 L86.4,18.3 L91.2,22.2 L96.0,21.6 L100.8,22.5 L105.6,22.5 L110.4,22.8 L115.2,22.2 L120.0,22.5 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,22.4 L57.6,22.4 L62.4,3.0 L67.2,18.0 L72.0,17.9 L76.8,20.8 L81.6,21.1 L86.4,18.3 L91.2,22.2 L96.0,21.6 L100.8,22.5 L105.6,22.5 L110.4,22.8 L115.2,22.2 L120.0,22.5"/><circle style="fill:var(--s-trt)" cx="120.0" cy="22.5" r="2.2"/></svg></td>
+<td class="num">1</td>
+<td class="num">102</td>
+<td class="num">0.98%</td>
+<td class="num c-delta"><span class="d dn">▼ 74%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Microdiscectomy </div><code class="ppath">/treatment/microdiscectomy/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 3,149 (wk of May 11)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 3,149 (wk of May 11)</title><path class="sp-a" style="fill:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,22.2 L57.6,22.1 L62.4,3.0 L67.2,22.5 L72.0,22.6 L76.8,22.4 L81.6,22.6 L86.4,22.6 L91.2,22.8 L96.0,22.8 L100.8,22.9 L105.6,22.9 L110.4,22.9 L115.2,22.9 L120.0,22.7 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,22.2 L57.6,22.1 L62.4,3.0 L67.2,22.5 L72.0,22.6 L76.8,22.4 L81.6,22.6 L86.4,22.6 L91.2,22.8 L96.0,22.8 L100.8,22.9 L105.6,22.9 L110.4,22.9 L115.2,22.9 L120.0,22.7"/><circle style="fill:var(--s-trt)" cx="120.0" cy="22.7" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">91</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d dn">▼ 36%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Spinal Decompression </div><code class="ppath">/treatment/spinal-decompression/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 171 (wk of Jun 22)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 171 (wk of Jun 22)</title><path class="sp-a" style="fill:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,18.0 L91.2,3.0 L96.0,19.1 L100.8,20.9 L105.6,20.5 L110.4,20.7 L115.2,20.3 L120.0,20.3 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,18.0 L91.2,3.0 L96.0,19.1 L100.8,20.9 L105.6,20.5 L110.4,20.7 L115.2,20.3 L120.0,20.3"/><circle style="fill:var(--s-trt)" cx="120.0" cy="20.3" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">87</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d dn">▼ 67%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Disc Replacement Surgery </div><code class="ppath">/treatment/disc-replacement-surgery/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 36 (wk of Jun 15)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 36 (wk of Jun 15)</title><path class="sp-a" style="fill:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,22.4 L86.4,3.0 L91.2,9.1 L96.0,11.3 L100.8,5.2 L105.6,4.7 L110.4,16.9 L115.2,12.4 L120.0,12.4 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-trt)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,22.4 L86.4,3.0 L91.2,9.1 L96.0,11.3 L100.8,5.2 L105.6,4.7 L110.4,16.9 L115.2,12.4 L120.0,12.4"/><circle style="fill:var(--s-trt)" cx="120.0" cy="12.4" r="2.2"/></svg></td>
+<td class="num">3</td>
+<td class="num">82</td>
+<td class="num">3.66%</td>
+<td class="num c-delta"><span class="d dn">▼ 28%</span></td>
+</tr></tbody>
+</table></div>
+
+</div>
+</details><details class="sec" >
+<summary>
+  <span class="dot" style="background:var(--s-spec)"></span>
+  <span class="sec-name">Specialty pages<span class="sec-sub">Spine service-line landings &amp; procedure library — /specialty/ and /specialties/</span></span>
+  <span class="sec-stats">
+    <span class="ss"><b>13</b> clicks</span>
+    <span class="ss"><b>1,059</b> impressions</span>
+    <span class="ss"><b>1.23%</b> CTR</span>
+    <span class="ss mut">▼ 29% impr. vs prior 4 wk</span>
+    <span class="ss mut">28 pages</span>
+  </span>
+  <span class="tw">▸</span>
+</summary>
+<div class="secbody">
+<div class="tscroll"><table class="pt">
+<thead><tr><th>Page</th><th>26-week trend</th><th class="num">Clicks</th><th class="num">Impressions</th><th class="num">CTR</th><th class="num">Δ impr.</th></tr></thead>
+<tbody><tr>
+<td class="c-page"><div class="pname">Spine Neck Back </div><code class="ppath">/specialty/spine-neck-back/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 681 (wk of Apr 27)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 681 (wk of Apr 27)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,18.0 L52.8,3.0 L57.6,13.0 L62.4,14.6 L67.2,10.7 L72.0,12.0 L76.8,9.5 L81.6,10.3 L86.4,5.3 L91.2,14.3 L96.0,18.2 L100.8,17.0 L105.6,15.6 L110.4,15.3 L115.2,13.7 L120.0,16.4 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,18.0 L52.8,3.0 L57.6,13.0 L62.4,14.6 L67.2,10.7 L72.0,12.0 L76.8,9.5 L81.6,10.3 L86.4,5.3 L91.2,14.3 L96.0,18.2 L100.8,17.0 L105.6,15.6 L110.4,15.3 L115.2,13.7 L120.0,16.4"/><circle style="fill:var(--s-spec)" cx="120.0" cy="16.4" r="2.2"/></svg></td>
+<td class="num">13</td>
+<td class="num">1,057</td>
+<td class="num">1.23%</td>
+<td class="num c-delta"><span class="d dn">▼ 17%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Kyphoplasty </div><code class="ppath">/specialties/pain-management/kyphoplasty/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 44 (wk of Apr 27)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 44 (wk of Apr 27)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,21.6 L4.8,18.9 L9.6,20.3 L14.4,21.2 L19.2,19.8 L24.0,18.5 L28.8,18.0 L33.6,18.9 L38.4,19.8 L43.2,17.5 L48.0,20.3 L52.8,3.0 L57.6,13.9 L62.4,15.7 L67.2,8.5 L72.0,18.9 L76.8,18.0 L81.6,20.7 L86.4,18.9 L91.2,15.3 L96.0,21.6 L100.8,21.2 L105.6,22.5 L110.4,22.5 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,21.6 L4.8,18.9 L9.6,20.3 L14.4,21.2 L19.2,19.8 L24.0,18.5 L28.8,18.0 L33.6,18.9 L38.4,19.8 L43.2,17.5 L48.0,20.3 L52.8,3.0 L57.6,13.9 L62.4,15.7 L67.2,8.5 L72.0,18.9 L76.8,18.0 L81.6,20.7 L86.4,18.9 L91.2,15.3 L96.0,21.6 L100.8,21.2 L105.6,22.5 L110.4,22.5 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">2</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d dn">▼ 94%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Cervical Fusion </div><code class="ppath">/specialties/spine-back-and-neck/cervical-fusion/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 5,121 (wk of Mar 2)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 5,121 (wk of Mar 2)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,5.5 L4.8,6.4 L9.6,3.9 L14.4,3.0 L19.2,13.6 L24.0,10.2 L28.8,12.1 L33.6,13.7 L38.4,11.3 L43.2,10.4 L48.0,18.3 L52.8,22.1 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,5.5 L4.8,6.4 L9.6,3.9 L14.4,3.0 L19.2,13.6 L24.0,10.2 L28.8,12.1 L33.6,13.7 L38.4,11.3 L43.2,10.4 L48.0,18.3 L52.8,22.1 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Lumbar Laminectomy </div><code class="ppath">/specialties/spine-back-and-neck/lumbar-laminectomy/</code><div class="rnote">301 planned → <code>/treatment/lumbar-laminectomy/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 2,118 (wk of Feb 9)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 2,118 (wk of Feb 9)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,3.0 L4.8,12.2 L9.6,7.6 L14.4,5.4 L19.2,11.3 L24.0,15.3 L28.8,12.7 L33.6,14.3 L38.4,11.3 L43.2,12.3 L48.0,15.9 L52.8,22.2 L57.6,22.7 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,3.0 L4.8,12.2 L9.6,7.6 L14.4,5.4 L19.2,11.3 L24.0,15.3 L28.8,12.7 L33.6,14.3 L38.4,11.3 L43.2,12.3 L48.0,15.9 L52.8,22.2 L57.6,22.7 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Spine Back and Neck </div><code class="ppath">/specialties/spine-back-and-neck/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 1,092 (wk of Mar 23)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 1,092 (wk of Mar 23)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,6.4 L4.8,9.6 L9.6,7.6 L14.4,13.3 L19.2,11.9 L24.0,7.4 L28.8,3.0 L33.6,4.8 L38.4,3.2 L43.2,8.2 L48.0,13.1 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,6.4 L4.8,9.6 L9.6,7.6 L14.4,13.3 L19.2,11.9 L24.0,7.4 L28.8,3.0 L33.6,4.8 L38.4,3.2 L43.2,8.2 L48.0,13.1 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Sacroiliac Joint Fusion </div><code class="ppath">/specialties/spine-back-and-neck/sacroiliac-joint-fusion/</code><div class="rnote">301 planned → <code>/treatment/sacroiliac-joint-fusion/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 1,171 (wk of Apr 6)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 1,171 (wk of Apr 6)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,8.6 L4.8,16.5 L9.6,20.4 L14.4,20.4 L19.2,21.0 L24.0,11.6 L28.8,16.9 L33.6,20.4 L38.4,3.0 L43.2,6.7 L48.0,22.0 L52.8,22.9 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,8.6 L4.8,16.5 L9.6,20.4 L14.4,20.4 L19.2,21.0 L24.0,11.6 L28.8,16.9 L33.6,20.4 L38.4,3.0 L43.2,6.7 L48.0,22.0 L52.8,22.9 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Caudal Epidural Steroid Injection Caudal ESI </div><code class="ppath">/specialties/pain-management/caudal-epidural-steroid-injection-caudal-esi/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 875 (wk of Feb 9)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 875 (wk of Feb 9)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,3.0 L4.8,16.1 L9.6,15.7 L14.4,14.1 L19.2,10.2 L24.0,15.9 L28.8,14.7 L33.6,13.6 L38.4,12.8 L43.2,13.8 L48.0,19.3 L52.8,22.9 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,3.0 L4.8,16.1 L9.6,15.7 L14.4,14.1 L19.2,10.2 L24.0,15.9 L28.8,14.7 L33.6,13.6 L38.4,12.8 L43.2,13.8 L48.0,19.3 L52.8,22.9 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Anterior Cervical Discectomy Fusion </div><code class="ppath">/specialties/spine-back-and-neck/anterior-cervical-discectomy-fusion/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 410 (wk of Feb 9)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 410 (wk of Feb 9)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,3.0 L4.8,9.1 L9.6,7.0 L14.4,11.0 L19.2,15.7 L24.0,12.2 L28.8,8.3 L33.6,8.3 L38.4,9.3 L43.2,12.4 L48.0,13.0 L52.8,21.0 L57.6,22.6 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,3.0 L4.8,9.1 L9.6,7.0 L14.4,11.0 L19.2,15.7 L24.0,12.2 L28.8,8.3 L33.6,8.3 L38.4,9.3 L43.2,12.4 L48.0,13.0 L52.8,21.0 L57.6,22.6 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Thoracic Lumbar Decompression </div><code class="ppath">/specialties/spine-back-and-neck/thoracic-lumbar-decompression/</code><div class="rnote">301 planned → <code>/treatment/thoracic-lumbar-decompression/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 396 (wk of Mar 2)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 396 (wk of Mar 2)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,9.0 L4.8,11.6 L9.6,11.4 L14.4,3.0 L19.2,10.7 L24.0,10.8 L28.8,12.5 L33.6,13.6 L38.4,13.4 L43.2,12.7 L48.0,12.3 L52.8,18.4 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,9.0 L4.8,11.6 L9.6,11.4 L14.4,3.0 L19.2,10.7 L24.0,10.8 L28.8,12.5 L33.6,13.6 L38.4,13.4 L43.2,12.7 L48.0,12.3 L52.8,18.4 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Thoracic Lumbar Fusion </div><code class="ppath">/specialties/spine-back-and-neck/thoracic-lumbar-fusion/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 325 (wk of Feb 23)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 325 (wk of Feb 23)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,8.4 L4.8,3.2 L9.6,3.0 L14.4,7.2 L19.2,13.8 L24.0,10.9 L28.8,8.0 L33.6,10.4 L38.4,8.2 L43.2,6.8 L48.0,14.3 L52.8,22.1 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,8.4 L4.8,3.2 L9.6,3.0 L14.4,7.2 L19.2,13.8 L24.0,10.9 L28.8,8.0 L33.6,10.4 L38.4,8.2 L43.2,6.8 L48.0,14.3 L52.8,22.1 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Lumbar RFA Radiofrequency Ablation </div><code class="ppath">/specialties/pain-management/lumbar-rfa-radiofrequency-ablation/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 280 (wk of Feb 9)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 280 (wk of Feb 9)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,3.0 L4.8,10.4 L9.6,15.7 L14.4,14.6 L19.2,13.0 L24.0,12.5 L28.8,17.5 L33.6,16.1 L38.4,15.6 L43.2,17.9 L48.0,20.2 L52.8,22.7 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,3.0 L4.8,10.4 L9.6,15.7 L14.4,14.6 L19.2,13.0 L24.0,12.5 L28.8,17.5 L33.6,16.1 L38.4,15.6 L43.2,17.9 L48.0,20.2 L52.8,22.7 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Lumbar Medial Branch Block </div><code class="ppath">/specialties/pain-management/lumbar-medial-branch-block/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 109 (wk of Feb 16)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 109 (wk of Feb 16)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,6.5 L4.8,3.0 L9.6,14.6 L14.4,17.1 L19.2,12.5 L24.0,15.5 L28.8,15.8 L33.6,17.3 L38.4,16.2 L43.2,16.2 L48.0,17.5 L52.8,14.2 L57.6,15.1 L62.4,13.5 L67.2,10.3 L72.0,13.1 L76.8,11.6 L81.6,8.7 L86.4,6.9 L91.2,15.3 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,6.5 L4.8,3.0 L9.6,14.6 L14.4,17.1 L19.2,12.5 L24.0,15.5 L28.8,15.8 L33.6,17.3 L38.4,16.2 L43.2,16.2 L48.0,17.5 L52.8,14.2 L57.6,15.1 L62.4,13.5 L67.2,10.3 L72.0,13.1 L76.8,11.6 L81.6,8.7 L86.4,6.9 L91.2,15.3 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d dn">▼ 100%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Spinal Cord Stimulator </div><code class="ppath">/specialties/pain-management/spinal-cord-stimulator/</code><div class="rnote">301 planned → <code>/treatment/spinal-cord-stimulator/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 274 (wk of Apr 6)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 274 (wk of Apr 6)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,12.6 L4.8,17.0 L9.6,18.2 L14.4,17.3 L19.2,16.4 L24.0,19.8 L28.8,21.3 L33.6,20.4 L38.4,3.0 L43.2,20.4 L48.0,21.8 L52.8,20.5 L57.6,22.9 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,12.6 L4.8,17.0 L9.6,18.2 L14.4,17.3 L19.2,16.4 L24.0,19.8 L28.8,21.3 L33.6,20.4 L38.4,3.0 L43.2,20.4 L48.0,21.8 L52.8,20.5 L57.6,22.9 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">SI Sacroiliac Injection </div><code class="ppath">/specialties/pain-management/si-sacroiliac-injection/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 184 (wk of Apr 13)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 184 (wk of Apr 13)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,17.1 L4.8,16.2 L9.6,17.1 L14.4,15.1 L19.2,16.3 L24.0,13.7 L28.8,13.1 L33.6,18.0 L38.4,16.8 L43.2,3.0 L48.0,7.7 L52.8,22.7 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,17.1 L4.8,16.2 L9.6,17.1 L14.4,15.1 L19.2,16.3 L24.0,13.7 L28.8,13.1 L33.6,18.0 L38.4,16.8 L43.2,3.0 L48.0,7.7 L52.8,22.7 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Port Huron Spine Neck Pain Dr Andres Munk </div><code class="ppath">/specialties/spine-back-and-neck/port-huron-spine-neck-pain-dr-andres-munk/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 111 (wk of May 4)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 111 (wk of May 4)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,21.9 L4.8,21.9 L9.6,19.8 L14.4,21.7 L19.2,22.3 L24.0,14.0 L28.8,10.0 L33.6,12.0 L38.4,11.8 L43.2,8.6 L48.0,9.8 L52.8,9.7 L57.6,3.0 L62.4,5.2 L67.2,13.8 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,21.9 L4.8,21.9 L9.6,19.8 L14.4,21.7 L19.2,22.3 L24.0,14.0 L28.8,10.0 L33.6,12.0 L38.4,11.8 L43.2,8.6 L48.0,9.8 L52.8,9.7 L57.6,3.0 L62.4,5.2 L67.2,13.8 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Cervical Medial Branch Block </div><code class="ppath">/specialties/pain-management/cervical-medial-branch-block/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 28 (wk of Jun 22)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 28 (wk of Jun 22)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,18.0 L4.8,13.7 L9.6,16.6 L14.4,5.1 L19.2,5.1 L24.0,19.4 L28.8,13.0 L33.6,15.9 L38.4,20.1 L43.2,8.7 L48.0,18.7 L52.8,10.9 L57.6,15.9 L62.4,10.9 L67.2,13.0 L72.0,15.9 L76.8,10.9 L81.6,8.0 L86.4,10.9 L91.2,3.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,18.0 L4.8,13.7 L9.6,16.6 L14.4,5.1 L19.2,5.1 L24.0,19.4 L28.8,13.0 L33.6,15.9 L38.4,20.1 L43.2,8.7 L48.0,18.7 L52.8,10.9 L57.6,15.9 L62.4,10.9 L67.2,13.0 L72.0,15.9 L76.8,10.9 L81.6,8.0 L86.4,10.9 L91.2,3.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d dn">▼ 100%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Microdiscectomy </div><code class="ppath">/specialties/spine-back-and-neck/microdiscectomy/</code><div class="rnote">301 planned → <code>/treatment/microdiscectomy/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 63 (wk of Mar 2)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 63 (wk of Mar 2)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,20.1 L4.8,19.2 L9.6,20.8 L14.4,3.0 L19.2,15.4 L24.0,12.8 L28.8,14.4 L33.6,16.0 L38.4,18.2 L43.2,9.7 L48.0,16.3 L52.8,22.7 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,20.1 L4.8,19.2 L9.6,20.8 L14.4,3.0 L19.2,15.4 L24.0,12.8 L28.8,14.4 L33.6,16.0 L38.4,18.2 L43.2,9.7 L48.0,16.3 L52.8,22.7 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Cervical Epidural Steroid Injection </div><code class="ppath">/specialties/pain-management/cervical-epidural-steroid-injection/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 83 (wk of Feb 23)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 83 (wk of Feb 23)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,15.0 L4.8,13.6 L9.6,3.0 L14.4,17.2 L19.2,8.8 L24.0,22.8 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,22.5 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,15.0 L4.8,13.6 L9.6,3.0 L14.4,17.2 L19.2,8.8 L24.0,22.8 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,22.5 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Disc Arthroplasty </div><code class="ppath">/specialties/spine-back-and-neck/disc-arthroplasty/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 29 (wk of May 4)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 29 (wk of May 4)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,23.0 L4.8,23.0 L9.6,22.3 L14.4,23.0 L19.2,23.0 L24.0,18.2 L28.8,21.6 L33.6,21.6 L38.4,16.1 L43.2,17.5 L48.0,8.5 L52.8,8.5 L57.6,3.0 L62.4,21.6 L67.2,13.3 L72.0,7.8 L76.8,9.9 L81.6,9.9 L86.4,9.9 L91.2,22.3 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,23.0 L4.8,23.0 L9.6,22.3 L14.4,23.0 L19.2,23.0 L24.0,18.2 L28.8,21.6 L33.6,21.6 L38.4,16.1 L43.2,17.5 L48.0,8.5 L52.8,8.5 L57.6,3.0 L62.4,21.6 L67.2,13.3 L72.0,7.8 L76.8,9.9 L81.6,9.9 L86.4,9.9 L91.2,22.3 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d dn">▼ 100%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Lumbar Fusion </div><code class="ppath">/specialties/spine-back-and-neck-old/lumbar-fusion/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 5 (wk of Mar 9)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 5 (wk of Mar 9)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,11.0 L4.8,23.0 L9.6,19.0 L14.4,11.0 L19.2,3.0 L24.0,11.0 L28.8,15.0 L33.6,23.0 L38.4,7.0 L43.2,23.0 L48.0,11.0 L52.8,19.0 L57.6,15.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,11.0 L4.8,23.0 L9.6,19.0 L14.4,11.0 L19.2,3.0 L24.0,11.0 L28.8,15.0 L33.6,23.0 L38.4,7.0 L43.2,23.0 L48.0,11.0 L52.8,19.0 L57.6,15.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Minimally Invasive Spine Surgery </div><code class="ppath">/specialties/spine-back-and-neck/minimally-invasive-spine-surgery/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 5 (wk of Mar 16)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 5 (wk of Mar 16)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,23.0 L4.8,19.0 L9.6,15.0 L14.4,7.0 L19.2,15.0 L24.0,3.0 L28.8,19.0 L33.6,3.0 L38.4,23.0 L43.2,23.0 L48.0,7.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,23.0 L4.8,19.0 L9.6,15.0 L14.4,7.0 L19.2,15.0 L24.0,3.0 L28.8,19.0 L33.6,3.0 L38.4,23.0 L43.2,23.0 L48.0,7.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">Spine Neck Back </div><code class="ppath">/specialties/spine-neck-back/</code><div class="rnote">301 planned → <code>/specialty/spine-neck-back/</code></div></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 1 (wk of Apr 20)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 1 (wk of Apr 20)</title><path class="sp-a" style="fill:var(--s-spec)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,3.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-spec)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,3.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-spec)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr></tbody>
+</table></div>
+<details class="silent"><summary>6 live spine pages with zero Google impressions in all 26 weeks</summary><p class="silentlist">Cervical Laminectomy · Expert Spine Surgery Options with Synergy Health Partners · Livonia · Lumbar Epidural Steroid Injection Lumbar ESI · Southfield · Sterling Heights</p></details>
+</div>
+</details><details class="sec" >
+<summary>
+  <span class="dot" style="background:var(--s-oth)"></span>
+  <span class="sec-name">Other spine URLs<span class="sec-sub">Legacy blog &amp; pre-rebrand URLs that match spine topics</span></span>
+  <span class="sec-stats">
+    <span class="ss"><b>2</b> clicks</span>
+    <span class="ss"><b>891</b> impressions</span>
+    <span class="ss"><b>0.22%</b> CTR</span>
+    <span class="ss mut">▼ 23% impr. vs prior 4 wk</span>
+    <span class="ss mut">22 pages</span>
+  </span>
+  <span class="tw">▸</span>
+</summary>
+<div class="secbody">
+<div class="tscroll"><table class="pt">
+<thead><tr><th>Page</th><th>26-week trend</th><th class="num">Clicks</th><th class="num">Impressions</th><th class="num">CTR</th><th class="num">Δ impr.</th></tr></thead>
+<tbody><tr>
+<td class="c-page"><div class="pname">/minimally-invasive-lumbar-decompression-mild-procedure/ </div><code class="ppath">/minimally-invasive-lumbar-decompression-mild-procedure/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 368 (wk of May 4)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 368 (wk of May 4)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,10.9 L4.8,12.3 L9.6,12.5 L14.4,7.5 L19.2,3.9 L24.0,3.2 L28.8,8.3 L33.6,12.5 L38.4,12.3 L43.2,10.9 L48.0,6.2 L52.8,3.7 L57.6,3.0 L62.4,9.9 L67.2,9.1 L72.0,13.5 L76.8,12.6 L81.6,12.1 L86.4,10.8 L91.2,12.8 L96.0,14.7 L100.8,13.8 L105.6,14.3 L110.4,12.8 L115.2,13.5 L120.0,14.5 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,10.9 L4.8,12.3 L9.6,12.5 L14.4,7.5 L19.2,3.9 L24.0,3.2 L28.8,8.3 L33.6,12.5 L38.4,12.3 L43.2,10.9 L48.0,6.2 L52.8,3.7 L57.6,3.0 L62.4,9.9 L67.2,9.1 L72.0,13.5 L76.8,12.6 L81.6,12.1 L86.4,10.8 L91.2,12.8 L96.0,14.7 L100.8,13.8 L105.6,14.3 L110.4,12.8 L115.2,13.5 L120.0,14.5"/><circle style="fill:var(--s-oth)" cx="120.0" cy="14.5" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">677</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d dn">▼ 8%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/neck-back-care/ </div><code class="ppath">/neck-back-care/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 29 (wk of Jul 27)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 29 (wk of Jul 27)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,21.6 L4.8,22.3 L9.6,20.2 L14.4,22.3 L19.2,21.6 L24.0,22.3 L28.8,22.3 L33.6,22.3 L38.4,20.9 L43.2,19.6 L48.0,20.9 L52.8,18.9 L57.6,15.4 L62.4,16.8 L67.2,14.0 L72.0,12.0 L76.8,18.2 L81.6,17.5 L86.4,18.2 L91.2,14.7 L96.0,18.9 L100.8,10.6 L105.6,12.0 L110.4,4.4 L115.2,3.0 L120.0,6.4 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,21.6 L4.8,22.3 L9.6,20.2 L14.4,22.3 L19.2,21.6 L24.0,22.3 L28.8,22.3 L33.6,22.3 L38.4,20.9 L43.2,19.6 L48.0,20.9 L52.8,18.9 L57.6,15.4 L62.4,16.8 L67.2,14.0 L72.0,12.0 L76.8,18.2 L81.6,17.5 L86.4,18.2 L91.2,14.7 L96.0,18.9 L100.8,10.6 L105.6,12.0 L110.4,4.4 L115.2,3.0 L120.0,6.4"/><circle style="fill:var(--s-oth)" cx="120.0" cy="6.4" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">96</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d up">▲ 123%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/the-mendelson-kornblum-difference/ </div><code class="ppath">/the-mendelson-kornblum-difference/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 229 (wk of Mar 9)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 229 (wk of Mar 9)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,12.3 L4.8,4.9 L9.6,13.0 L14.4,15.1 L19.2,3.0 L24.0,6.0 L28.8,13.7 L33.6,19.9 L38.4,20.6 L43.2,18.7 L48.0,17.6 L52.8,21.0 L57.6,18.5 L62.4,19.2 L67.2,21.3 L72.0,19.2 L76.8,19.5 L81.6,19.6 L86.4,19.5 L91.2,19.0 L96.0,20.2 L100.8,17.1 L105.6,20.1 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,12.3 L4.8,4.9 L9.6,13.0 L14.4,15.1 L19.2,3.0 L24.0,6.0 L28.8,13.7 L33.6,19.9 L38.4,20.6 L43.2,18.7 L48.0,17.6 L52.8,21.0 L57.6,18.5 L62.4,19.2 L67.2,21.3 L72.0,19.2 L76.8,19.5 L81.6,19.6 L86.4,19.5 L91.2,19.0 L96.0,20.2 L100.8,17.1 L105.6,20.1 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">33</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d dn">▼ 82%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/did-you-know-si-joint-is-a-significant-cause-of-low-back-pain/ </div><code class="ppath">/did-you-know-si-joint-is-a-significant-cause-of-low-back-pain/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 108 (wk of Mar 16)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 108 (wk of Mar 16)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,15.6 L4.8,18.0 L9.6,20.6 L14.4,17.4 L19.2,14.9 L24.0,3.0 L28.8,9.1 L33.6,20.8 L38.4,22.4 L43.2,21.0 L48.0,21.3 L52.8,21.1 L57.6,11.5 L62.4,20.4 L67.2,19.1 L72.0,21.3 L76.8,21.9 L81.6,22.4 L86.4,22.4 L91.2,22.4 L96.0,23.0 L100.8,22.6 L105.6,22.4 L110.4,22.1 L115.2,21.5 L120.0,21.9 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,15.6 L4.8,18.0 L9.6,20.6 L14.4,17.4 L19.2,14.9 L24.0,3.0 L28.8,9.1 L33.6,20.8 L38.4,22.4 L43.2,21.0 L48.0,21.3 L52.8,21.1 L57.6,11.5 L62.4,20.4 L67.2,19.1 L72.0,21.3 L76.8,21.9 L81.6,22.4 L86.4,22.4 L91.2,22.4 L96.0,23.0 L100.8,22.6 L105.6,22.4 L110.4,22.1 L115.2,21.5 L120.0,21.9"/><circle style="fill:var(--s-oth)" cx="120.0" cy="21.9" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">22</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d up">▲ 175%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/did-you-know-mendelson-kornblum-orthopedics-has-same-day-appointments-for-acute-injuries/ </div><code class="ppath">/did-you-know-mendelson-kornblum-orthopedics-has-same-day-appointments-for-acute-injuries/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 123 (wk of Mar 9)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 123 (wk of Mar 9)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,20.2 L4.8,19.6 L9.6,18.9 L14.4,20.1 L19.2,3.0 L24.0,19.6 L28.8,21.0 L33.6,21.5 L38.4,21.4 L43.2,19.1 L48.0,17.5 L52.8,19.6 L57.6,20.6 L62.4,22.0 L67.2,22.2 L72.0,22.7 L76.8,22.5 L81.6,22.0 L86.4,20.7 L91.2,21.9 L96.0,22.2 L100.8,20.1 L105.6,20.6 L110.4,22.5 L115.2,22.8 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,20.2 L4.8,19.6 L9.6,18.9 L14.4,20.1 L19.2,3.0 L24.0,19.6 L28.8,21.0 L33.6,21.5 L38.4,21.4 L43.2,19.1 L48.0,17.5 L52.8,19.6 L57.6,20.6 L62.4,22.0 L67.2,22.2 L72.0,22.7 L76.8,22.5 L81.6,22.0 L86.4,20.7 L91.2,21.9 L96.0,22.2 L100.8,20.1 L105.6,20.6 L110.4,22.5 L115.2,22.8 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">19</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d dn">▼ 57%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/mendelson-kornblum-orthopedics-pain-management-spine-is-recognized-five-times-in-hour-magazine-top-docs-2011/ </div><code class="ppath">/mendelson-kornblum-orthopedics-pain-management-spine-is-recognized-five-times-in-hour-magazine-top-docs-2011/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 33 (wk of May 4)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 33 (wk of May 4)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,16.9 L4.8,15.7 L9.6,16.3 L14.4,13.3 L19.2,8.5 L24.0,9.7 L28.8,16.3 L33.6,13.3 L38.4,16.9 L43.2,13.3 L48.0,4.8 L52.8,15.1 L57.6,3.0 L62.4,14.5 L67.2,18.2 L72.0,18.8 L76.8,21.8 L81.6,15.1 L86.4,14.5 L91.2,9.1 L96.0,20.6 L100.8,14.5 L105.6,15.7 L110.4,20.6 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,16.9 L4.8,15.7 L9.6,16.3 L14.4,13.3 L19.2,8.5 L24.0,9.7 L28.8,16.3 L33.6,13.3 L38.4,16.9 L43.2,13.3 L48.0,4.8 L52.8,15.1 L57.6,3.0 L62.4,14.5 L67.2,18.2 L72.0,18.8 L76.8,21.8 L81.6,15.1 L86.4,14.5 L91.2,9.1 L96.0,20.6 L100.8,14.5 L105.6,15.7 L110.4,20.6 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">2</td>
+<td class="num">16</td>
+<td class="num">12.50%</td>
+<td class="num c-delta"><span class="d dn">▼ 71%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/degenerative-disc-disease-treatment/ </div><code class="ppath">/degenerative-disc-disease-treatment/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 13 (wk of Feb 16)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 13 (wk of Feb 16)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,21.5 L4.8,3.0 L9.6,6.1 L14.4,4.5 L19.2,12.2 L24.0,12.2 L28.8,21.5 L33.6,19.9 L38.4,19.9 L43.2,10.7 L48.0,6.1 L52.8,13.8 L57.6,13.8 L62.4,19.9 L67.2,12.2 L72.0,16.8 L76.8,23.0 L81.6,21.5 L86.4,7.6 L91.2,18.4 L96.0,23.0 L100.8,21.5 L105.6,10.7 L110.4,21.5 L115.2,19.9 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,21.5 L4.8,3.0 L9.6,6.1 L14.4,4.5 L19.2,12.2 L24.0,12.2 L28.8,21.5 L33.6,19.9 L38.4,19.9 L43.2,10.7 L48.0,6.1 L52.8,13.8 L57.6,13.8 L62.4,19.9 L67.2,12.2 L72.0,16.8 L76.8,23.0 L81.6,21.5 L86.4,7.6 L91.2,18.4 L96.0,23.0 L100.8,21.5 L105.6,10.7 L110.4,21.5 L115.2,19.9 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">11</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d dn">▼ 21%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/insurance-billing/self-pay-spine-neck-back/ </div><code class="ppath">/insurance-billing/self-pay-spine-neck-back/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 17 (wk of May 18)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 17 (wk of May 18)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,15.9 L62.4,10.1 L67.2,3.0 L72.0,11.2 L76.8,7.7 L81.6,15.9 L86.4,5.4 L91.2,12.4 L96.0,23.0 L100.8,23.0 L105.6,20.6 L110.4,23.0 L115.2,21.8 L120.0,19.5 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,15.9 L62.4,10.1 L67.2,3.0 L72.0,11.2 L76.8,7.7 L81.6,15.9 L86.4,5.4 L91.2,12.4 L96.0,23.0 L100.8,23.0 L105.6,20.6 L110.4,23.0 L115.2,21.8 L120.0,19.5"/><circle style="fill:var(--s-oth)" cx="120.0" cy="19.5" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">6</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d dn">▼ 75%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/neck-pain-post/ </div><code class="ppath">/neck-pain-post/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 10 (wk of May 4)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 10 (wk of May 4)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,21.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,17.0 L38.4,19.0 L43.2,23.0 L48.0,13.0 L52.8,13.0 L57.6,3.0 L62.4,21.0 L67.2,19.0 L72.0,21.0 L76.8,21.0 L81.6,21.0 L86.4,19.0 L91.2,23.0 L96.0,23.0 L100.8,21.0 L105.6,17.0 L110.4,23.0 L115.2,21.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,21.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,17.0 L38.4,19.0 L43.2,23.0 L48.0,13.0 L52.8,13.0 L57.6,3.0 L62.4,21.0 L67.2,19.0 L72.0,21.0 L76.8,21.0 L81.6,21.0 L86.4,19.0 L91.2,23.0 L96.0,23.0 L100.8,21.0 L105.6,17.0 L110.4,23.0 L115.2,21.0 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">4</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d up">▲ 33%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/synergy-health-partners-mendelson-kornblum-in-the-arthritis-foundation-2021-jingle-bell-run/ </div><code class="ppath">/synergy-health-partners-mendelson-kornblum-in-the-arthritis-foundation-2021-jingle-bell-run/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 4 (wk of May 11)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 4 (wk of May 11)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,3.0 L67.2,18.0 L72.0,13.0 L76.8,13.0 L81.6,13.0 L86.4,13.0 L91.2,18.0 L96.0,23.0 L100.8,8.0 L105.6,18.0 L110.4,23.0 L115.2,18.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,3.0 L67.2,18.0 L72.0,13.0 L76.8,13.0 L81.6,13.0 L86.4,13.0 L91.2,18.0 L96.0,23.0 L100.8,8.0 L105.6,18.0 L110.4,23.0 L115.2,18.0 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">2</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d dn">▼ 67%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/category/spine/ </div><code class="ppath">/category/spine/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 2 (wk of Jul 13)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 2 (wk of Jul 13)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,13.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,3.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,13.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,3.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">2</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d up">▲ new</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/mendelson-kornblum-orthopedics-is-a-multi-specialty-practice-that-offers-hope-and-relief-for-chronic-pain-sufferers/ </div><code class="ppath">/mendelson-kornblum-orthopedics-is-a-multi-specialty-practice-that-offers-hope-and-relief-for-chronic-pain-sufferers/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 1,280 (wk of Mar 2)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 1,280 (wk of Mar 2)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,5.5 L4.8,4.3 L9.6,7.2 L14.4,3.0 L19.2,4.4 L24.0,13.9 L28.8,6.0 L33.6,7.9 L38.4,4.5 L43.2,3.6 L48.0,6.1 L52.8,19.1 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,5.5 L4.8,4.3 L9.6,7.2 L14.4,3.0 L19.2,4.4 L24.0,13.9 L28.8,6.0 L33.6,7.9 L38.4,4.5 L43.2,3.6 L48.0,6.1 L52.8,19.1 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">1</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d up">▲ new</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/whats-new-mendelson-kornblum-newsletter/ </div><code class="ppath">/whats-new-mendelson-kornblum-newsletter/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 1 (wk of Jun 22)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 1 (wk of Jun 22)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,3.0 L96.0,3.0 L100.8,3.0 L105.6,3.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,3.0 L96.0,3.0 L100.8,3.0 L105.6,3.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">1</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d dn">▼ 67%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/wp-content/uploads/2026/01/neck-fracture_broken-neck.webp/ </div><code class="ppath">/wp-content/uploads/2026/01/neck-fracture_broken-neck.webp/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 1 (wk of Jul 13)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 1 (wk of Jul 13)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,3.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,3.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">1</td>
+<td class="num">0.00%</td>
+<td class="num c-delta"><span class="d up">▲ new</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/locations/clinic-locations/southfield/spine-neck/ </div><code class="ppath">/locations/clinic-locations/southfield/spine-neck/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 235 (wk of Mar 23)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 235 (wk of Mar 23)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,9.5 L4.8,8.4 L9.6,10.3 L14.4,6.6 L19.2,12.9 L24.0,3.8 L28.8,3.0 L33.6,3.8 L38.4,6.9 L43.2,5.2 L48.0,13.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,9.5 L4.8,8.4 L9.6,10.3 L14.4,6.6 L19.2,12.9 L24.0,3.8 L28.8,3.0 L33.6,3.8 L38.4,6.9 L43.2,5.2 L48.0,13.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/herniated-disc-microdiscectomy/ </div><code class="ppath">/herniated-disc-microdiscectomy/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 103 (wk of Apr 20)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 103 (wk of Apr 20)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,20.1 L4.8,18.1 L9.6,19.5 L14.4,21.6 L19.2,22.0 L24.0,22.0 L28.8,22.0 L33.6,18.1 L38.4,6.5 L43.2,5.5 L48.0,3.0 L52.8,8.8 L57.6,11.9 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,20.1 L4.8,18.1 L9.6,19.5 L14.4,21.6 L19.2,22.0 L24.0,22.0 L28.8,22.0 L33.6,18.1 L38.4,6.5 L43.2,5.5 L48.0,3.0 L52.8,8.8 L57.6,11.9 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/free-webinar-chronic-lower-back-lower-extremity-pain/ </div><code class="ppath">/free-webinar-chronic-lower-back-lower-extremity-pain/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 53 (wk of Mar 16)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 53 (wk of Mar 16)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,4.9 L4.8,6.0 L9.6,15.8 L14.4,22.2 L19.2,13.9 L24.0,3.0 L28.8,19.2 L33.6,21.1 L38.4,17.7 L43.2,14.7 L48.0,20.4 L52.8,19.2 L57.6,18.8 L62.4,19.6 L67.2,15.8 L72.0,21.5 L76.8,23.0 L81.6,22.6 L86.4,12.4 L91.2,20.4 L96.0,22.2 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,4.9 L4.8,6.0 L9.6,15.8 L14.4,22.2 L19.2,13.9 L24.0,3.0 L28.8,19.2 L33.6,21.1 L38.4,17.7 L43.2,14.7 L48.0,20.4 L52.8,19.2 L57.6,18.8 L62.4,19.6 L67.2,15.8 L72.0,21.5 L76.8,23.0 L81.6,22.6 L86.4,12.4 L91.2,20.4 L96.0,22.2 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d dn">▼ 100%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/self-pay-options/spine-neck-back/ </div><code class="ppath">/self-pay-options/spine-neck-back/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 4 (wk of May 4)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 4 (wk of May 4)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,8.0 L4.8,13.0 L9.6,13.0 L14.4,23.0 L19.2,23.0 L24.0,18.0 L28.8,23.0 L33.6,8.0 L38.4,18.0 L43.2,23.0 L48.0,13.0 L52.8,8.0 L57.6,3.0 L62.4,18.0 L67.2,13.0 L72.0,18.0 L76.8,18.0 L81.6,13.0 L86.4,18.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,8.0 L4.8,13.0 L9.6,13.0 L14.4,23.0 L19.2,23.0 L24.0,18.0 L28.8,23.0 L33.6,8.0 L38.4,18.0 L43.2,23.0 L48.0,13.0 L52.8,8.0 L57.6,3.0 L62.4,18.0 L67.2,13.0 L72.0,18.0 L76.8,18.0 L81.6,13.0 L86.4,18.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d dn">▼ 100%</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/self-pay-options/spine/ </div><code class="ppath">/self-pay-options/spine/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 3 (wk of May 4)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 3 (wk of May 4)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,16.3 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,16.3 L48.0,23.0 L52.8,9.7 L57.6,3.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,23.0 L4.8,23.0 L9.6,23.0 L14.4,16.3 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,16.3 L48.0,23.0 L52.8,9.7 L57.6,3.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/wp-content/uploads/2024/05/anatomical-renderings-of-modular-anterior-cervical-discectomy-and-fusion-acdf-construct.png/ </div><code class="ppath">/wp-content/uploads/2024/05/anatomical-renderings-of-modular-anterior-cervical-discectomy-and-fusion-acdf-construct.png/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 2 (wk of Feb 23)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 2 (wk of Feb 23)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,23.0 L4.8,23.0 L9.6,3.0 L14.4,13.0 L19.2,13.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,3.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,23.0 L4.8,23.0 L9.6,3.0 L14.4,13.0 L19.2,13.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,3.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/wp-content/uploads/2024/05/shp-mendelson-ortho-spine-logo-11-x-4-in-copy-1024x372.png/ </div><code class="ppath">/wp-content/uploads/2024/05/shp-mendelson-ortho-spine-logo-11-x-4-in-copy-1024x372.png/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 1 (wk of Feb 9)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 1 (wk of Feb 9)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,3.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,3.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,3.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,3.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr><tr>
+<td class="c-page"><div class="pname">/wp-content/uploads/2024/11/kevin-lee-web-profile-copy-4.png/ </div><code class="ppath">/wp-content/uploads/2024/11/kevin-lee-web-profile-copy-4.png/</code></td>
+<td class="c-spark"><svg class="spark" viewBox="0 0 120 26" role="img" aria-label="Weekly impressions, Feb 9 – Aug 9. Peak 1 (wk of Feb 9)"><title>Weekly impressions, Feb 9 – Aug 9. Peak 1 (wk of Feb 9)</title><path class="sp-a" style="fill:var(--s-oth)" d="M0.0,3.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0 L120,26 L0,26 Z"/><path class="sp-l" style="stroke:var(--s-oth)" d="M0.0,3.0 L4.8,23.0 L9.6,23.0 L14.4,23.0 L19.2,23.0 L24.0,23.0 L28.8,23.0 L33.6,23.0 L38.4,23.0 L43.2,23.0 L48.0,23.0 L52.8,23.0 L57.6,23.0 L62.4,23.0 L67.2,23.0 L72.0,23.0 L76.8,23.0 L81.6,23.0 L86.4,23.0 L91.2,23.0 L96.0,23.0 L100.8,23.0 L105.6,23.0 L110.4,23.0 L115.2,23.0 L120.0,23.0"/><circle style="fill:var(--s-oth)" cx="120.0" cy="23.0" r="2.2"/></svg></td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">—</td>
+<td class="num c-delta"><span class="d "> —</span></td>
+</tr></tbody>
+</table></div>
+
+</div>
+</details>
+
+<div class="foot">
+<h3>How to read this</h3>
+<dl>
+<dt>Impressions</dt><dd>How many times a page appeared anywhere in Google results — reach, not visits.</dd>
+<dt>Clicks</dt><dd>People who actually clicked through to the page from Google.</dd>
+<dt>CTR (click-through rate)</dt><dd>Clicks ÷ impressions. Spine provider pages run ~3–5%; condition/treatment pages currently ~0.2–0.3%, which is the main fixable gap (title &amp; description rewrites).</dd>
+<dt>Δ impr.</dt><dd>Change in impressions, last 4 weeks (Jul 13 – Aug 9) vs the prior 4 (Jun 15 – Jul 12).</dd>
+<dt>Dead URLs (404)</dt><dd>22 spine URLs return “page not found”. None had search activity in this 26-week window, so they don’t appear in the tables (a ✕ 404 marker appears on any that do). Every one has a proposed redirect in the consolidation map.</dd>
+<dt>“301 planned”</dt><dd>This page is a duplicate or dead URL scheduled to consolidate into the canonical page shown, per the draft redirect map (pending SEO/dev review).</dd>
+</dl>
+<h3>Method &amp; caveats</h3>
+<p>Source: Google Search Console page-level data (aggregation: by page), spine pages identified by a validated URL pattern
+(topic keywords + the spine provider roster). Google search only — Bing not included. GSC data is finalized through Aug 9;
+weeks run Monday–Sunday. “404 / last seen” reflects Google’s index and GA4 titles, not a live crawl. Pages with zero
+impressions all window are listed inside each section. Full inventory &amp; redirect map: <code>data/</code> folder in the
+SHP marketing workspace repo.</p>
+</div>
+</div>
+
+<script>
+const CD = {"weeks": ["Feb 9", "Feb 16", "Feb 23", "Mar 2", "Mar 9", "Mar 16", "Mar 23", "Mar 30", "Apr 6", "Apr 13", "Apr 20", "Apr 27", "May 4", "May 11", "May 18", "May 25", "Jun 1", "Jun 8", "Jun 15", "Jun 22", "Jun 29", "Jul 6", "Jul 13", "Jul 20", "Jul 27", "Aug 3"], "ymax": 12000, "series": {"Providers": [3888, 3574, 3836, 3663, 3312, 3500, 3944, 3581, 3717, 4122, 4261, 5143, 4966, 4496, 4536, 3734, 3896, 4573, 4914, 4633, 3962, 4174, 3871, 4261, 4154, 4208], "Conditions": [2545, 3376, 3649, 2550, 3410, 3366, 3512, 2126, 2177, 1221, 3618, 7827, 5376, 10401, 10545, 10322, 9263, 9214, 9631, 6069, 3807, 3894, 3390, 5736, 7426, 7057], "Treatments": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1071, 2744, 3838, 8548, 5305, 4612, 3963, 4619, 4848, 2701, 2517, 3114, 2404, 2926, 4222, 4344], "Specialty": [10768, 8138, 9125, 9385, 5945, 7014, 6800, 5859, 8222, 7695, 3815, 1399, 605, 473, 600, 471, 567, 554, 736, 384, 167, 209, 253, 264, 316, 226], "Other": [1765, 1915, 1570, 1937, 2123, 1587, 1816, 1496, 1728, 1900, 1775, 775, 638, 356, 369, 273, 267, 283, 360, 300, 202, 295, 257, 227, 217, 190]}, "clicks": {"Providers": [142, 136, 142, 115, 123, 131, 126, 118, 134, 151, 137, 159, 163, 163, 164, 140, 161, 180, 153, 147, 114, 144, 145, 164, 152, 138], "Conditions": [5, 5, 4, 5, 6, 8, 2, 3, 4, 2, 3, 13, 7, 16, 16, 32, 23, 23, 21, 20, 10, 13, 21, 18, 26, 20], "Treatments": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 8, 14, 11, 7, 12, 4, 13, 6, 10, 6, 3, 4, 3, 8], "Specialty": [13, 13, 20, 17, 13, 15, 9, 8, 8, 6, 18, 4, 2, 4, 0, 3, 2, 4, 7, 1, 1, 2, 5, 0, 5, 3], "Other": [28, 52, 37, 44, 42, 23, 45, 44, 46, 55, 50, 15, 3, 0, 0, 2, 2, 0, 1, 1, 1, 2, 1, 1, 0, 0]}, "geom": {"cw": 960, "pl": 46, "pr": 136}};
+const box = document.getElementById('chartbox'), tip = document.getElementById('tip'),
+      cross = document.getElementById('cross'), hover = document.getElementById('hover'),
+      svg = box.querySelector('svg');
+const ORDER = ["Providers", "Conditions", "Treatments", "Specialty", "Other"];
+const KVAR = {"Providers": "--k-prov", "Conditions": "--k-cond", "Treatments": "--k-trt", "Specialty": "--k-spec", "Other": "--k-oth"};
+function showWeek(w, clientY) {
+  w = Math.max(0, Math.min(25, w));
+  const r = svg.getBoundingClientRect();
+  const sx = CD.geom.cw / r.width;
+  const cx = CD.geom.pl + w * (CD.geom.cw - CD.geom.pl - CD.geom.pr) / 25;
+  cross.setAttribute('x1', cx); cross.setAttribute('x2', cx); cross.style.opacity = 1;
+  const kvar = KVAR;
+  let rows = ORDER.map(g =>
+    `<div class="row"><span class="nm"><span class="key" style="background:var(${kvar[g]})"></span>${g}</span>` +
+    `<span class="val">${CD.series[g][w].toLocaleString()} <span style="opacity:.6;font-weight:400">(${CD.clicks[g][w]})</span></span></div>`).join('');
+  tip.innerHTML = `<div class="tw-lab">Week of ${CD.weeks[w]}</div>` + rows;
+  tip.style.opacity = 1;
+  const bx = box.getBoundingClientRect();
+  let lx = (cx / sx) + 14; if (lx + 210 > bx.width) lx = (cx / sx) - 224;
+  tip.style.left = lx + 'px';
+  tip.style.top = Math.max(0, ((clientY ?? (bx.top + 120)) - bx.top) - 40) + 'px';
+  return w;
+}
+let kw = 12;
+svg.setAttribute('tabindex', '0');
+svg.setAttribute('aria-label', svg.getAttribute('aria-label') + ' Focus the chart and use left and right arrow keys to step through weeks; values also appear in the weekly data table below.');
+svg.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight') { kw = showWeek(kw + 1); e.preventDefault(); }
+  else if (e.key === 'ArrowLeft') { kw = showWeek(kw - 1); e.preventDefault(); }
+  else if (e.key === 'Escape') { tip.style.opacity = 0; cross.style.opacity = 0; }
+});
+svg.addEventListener('blur', () => { tip.style.opacity = 0; cross.style.opacity = 0; });
+hover.addEventListener('pointermove', e => {
+  const r = svg.getBoundingClientRect();
+  const px = (e.clientX - r.left) * (CD.geom.cw / r.width);
+  kw = showWeek(Math.round((px - CD.geom.pl) / ((CD.geom.cw - CD.geom.pl - CD.geom.pr) / 25)), e.clientY);
+});
+hover.addEventListener('mouseleave', () => { tip.style.opacity = 0; cross.style.opacity = 0; });
+</script>
