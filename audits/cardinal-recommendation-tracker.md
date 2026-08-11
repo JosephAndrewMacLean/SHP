@@ -50,6 +50,33 @@ from here yet (unlock noted) · ⬜ scheduled later in Cardinal's roadmap
 
 ---
 
+> **Re-check 2026-08-11 — Screaming Frog list-mode crawl (585 URLs: full clinical/provider
+> inventory + redirect map), reconciled in `data/redirect-verification-2026-08-11.csv`:**
+> - 🟠→✅-trending **Parallel URL structures (Cardinal Tech item): consolidation is
+>   substantially implemented.** 267 of 585 URLs now 301 — the `/conditions-we-treat/`
+>   tree redirects into `/conditions/` + `/specialty/` equivalents, and an active
+>   **`/specialties/` → `/specialty/` (singular) migration** is underway (site chose
+>   singular — the taxonomy-governance decision is made). 67 of our 159 draft map rows
+>   were found already implemented exactly as drafted; **60 redirects remain**
+>   (`data/redirects-to-implement-v2-2026-08-11.csv`, targets crawl-verified 200) plus
+>   19 judgment calls.
+> - ✅ **Carpal tunnel duplicate resolved at URL level:** `/conditions-we-treat/…/
+>   carpal-tunnel-syndrome/` (Cardinal's #1-ranking page pre-regression) now 301s to
+>   `/conditions/carpal-tunnel-syndrome/` — ranking recovery should be watched on the
+>   `/conditions/` URL.
+> - 🟠 **GSC-side migration evidence (26-wk weekly series, spine set):** `/treatment/`
+>   URLs first earned impressions **Apr 22**; `/specialties/` spine sub-pages fell out
+>   of search Apr 27–May 15. Cardinal audited mid-migration — their "4 competing
+>   structures" snapshot is already partially historical.
+> - ❌ New dead ends found: **22 fresh 404s** (incl. departed providers Icaza & Gracz,
+>   removed cwt hub pages, `/providers/physician-assistant/` directory) — covered in v2
+>   file. 21 existing site redirects land on targets outside the crawl list (marked
+>   spot-check).
+> - Spine reporting now live: `reports/spine-drilldown-2026-08-11.html` (artifact) —
+>   surgeon-scoped provider view; weekly spine series confirms Cardinal's "reach
+>   without conversion" diagnosis unchanged (clinical spine pages ~0.2–0.4% CTR vs
+>   surgeons 4.2%).
+
 ## 1. Headline status (what the data says today)
 
 1. **🚨 Cardinal's #1 urgent item appears UNRESOLVED — and it's still costing us.**
