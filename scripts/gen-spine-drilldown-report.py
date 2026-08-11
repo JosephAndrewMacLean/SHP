@@ -3,15 +3,30 @@
 import json, html
 
 D = json.load(open("report_data.json"))
+
+# Scope: Providers = spine SURGEONS only (roster: Varghese, Salar, Maslak, McCarty,
+# Zamorano, Munk; legacy surgeon URLs Kornblum/Fiani/Phillips kept for history).
+SURGEONS = ("varghese", "salar", "maslak", "mccarty", "zamorano", "munk",
+            "kornblum", "fiani", "phillips")
+_prov = D["types"]["Providers"]
+_excluded = [p for p in _prov["pages"] if not any(n in p["path"] for n in SURGEONS)]
+EXC_C4 = sum(p["c4"] for p in _excluded); EXC_I4 = sum(p["i4"] for p in _excluded)
+EXC_N = len(_excluded)
+_prov["pages"] = [p for p in _prov["pages"] if any(n in p["path"] for n in SURGEONS)]
+for k in ("c4", "i4", "cp", "ip", "c26", "i26"):
+    _prov[k] = sum(p[k[0] == "c" and k or k] if False else p[k] for p in _prov["pages"])
+_prov["weekly"] = [[sum(p["spark_c"][w] for p in _prov["pages"]),
+                   sum(p["spark"][w] for p in _prov["pages"])] for w in range(26)]
+
 WEEKS = D["weeks"]                      # 26 labels, "Feb 9" .. "Aug 3"
 TYPES = ["Providers", "Conditions", "Treatments", "Specialty", "Other"]
 TYPE_LABEL = {
-    "Providers": "Provider pages", "Conditions": "Condition pages",
+    "Providers": "Spine surgeon pages", "Conditions": "Condition pages",
     "Treatments": "Treatment pages", "Specialty": "Specialty pages",
     "Other": "Other spine URLs",
 }
 TYPE_SUB = {
-    "Providers": "Spine surgeons, pain physicians, chiro & spine-certified PT — /providers/ and legacy /our-providers/",
+    "Providers": "Profile pages for the spine surgical team — Varghese, Salar, Maslak, McCarty, Zamorano (neurosurgery), Munk. Pain, chiro, PT & directory pages excluded.",
     "Conditions": "Spine, neck & back conditions — /conditions/ and legacy /conditions-we-treat/",
     "Treatments": "Spine procedures & injections — /treatment/ (launched in search Apr 22)",
     "Specialty": "Spine service-line landings & procedure library — /specialty/ and /specialties/",
@@ -135,6 +150,11 @@ def section(g, open_=False):
     dval, dsign = delta_pct(n["i4"], n["ip"])
     darrow = "▲" if dsign == "+" else ("▼" if dsign == "−" else "")
     rows = "".join(page_row(p, SERIES_VAR[g]) for p in active)
+    exc_html = ""
+    if g == "Providers" and EXC_N:
+        exc_html = (f'<p class="consnote">Scope note: {EXC_N} other spine-bench provider pages (interventional pain, '
+                    f'chiropractic, PT and directory pages) are excluded from this report at the requested surgeon-only scope — '
+                    f'they earned {EXC_C4:,} clicks / {EXC_I4:,} impressions in the last 4 weeks.</p>')
     cons_html = ""
     if consolidated:
         ci = sum(p["i26"] for p in consolidated); ccl = sum(p["c26"] for p in consolidated)
@@ -164,6 +184,7 @@ def section(g, open_=False):
 <thead><tr><th>Page</th><th>26-week trend</th><th class="num">Clicks</th><th class="num">Impressions</th><th class="num">CTR</th><th class="num">Δ impr.</th></tr></thead>
 <tbody>{rows}</tbody>
 </table></div>
+{exc_html}
 {cons_html}
 {silent_html}
 </div>
@@ -309,7 +330,7 @@ details.silent {{ margin:10px 2px 4px; }}
 <h1>Spine pages — drill-down by page type</h1>
 <p class="meta">Google Search Console, property <code>synergyhealth.org</code> · 26 weeks: <b>Feb 9 – Aug 9, 2026</b> ·
 headline tiles &amp; page tables show the <b>last 4 complete weeks (Jul 13 – Aug 9)</b> vs the prior 4 ·
-URL statuses verified by Screaming Frog crawl · prepared Aug 11, 2026</p>
+URL statuses verified by Screaming Frog crawl · provider scope: spine surgeons only · prepared Aug 11, 2026</p>
 
 <div class="tiles">
   <div class="tile"><div class="lab">Clicks · last 4 wk</div><div class="val">{tot["c4"]:,}</div>
@@ -322,11 +343,13 @@ URL statuses verified by Screaming Frog crawl · prepared Aug 11, 2026</p>
     <div class="sub">{live_pages} live · {cons_pages} consolidated (301) · {dead_pages} dead (404)</div></div>
 </div>
 
-<div class="callout"><b>Read this first:</b> provider pages earn ~5 of every 6 spine clicks at ~3.6% CTR — steady, branded
-demand for the surgeons. The condition &amp; treatment pages hold most of the impressions but convert at ~0.2–0.3%.
-A URL migration on <b>Apr 22</b> moved the clinical library from <code>/specialties/…</code> to <code>/treatment/…</code>
-and <code>/conditions/…</code> — visible in the chart below. Per the Aug 11 crawl that consolidation is largely
-implemented: redirected URLs are no longer listed in the tables, though their history stays in the totals.</div>
+<div class="callout"><b>Read this first:</b> the six spine surgeons&rsquo; profile pages earn {D["types"]["Providers"]["c4"]:,} of
+{tot["c4"]:,} spine clicks ({D["types"]["Providers"]["c4"]/tot["c4"]*100:.0f}%) at
+{ctr(D["types"]["Providers"]["c4"], D["types"]["Providers"]["i4"])} CTR — steady, branded demand. The condition &amp; treatment pages
+hold most of the impressions but convert at ~0.2–0.4%. A URL migration on <b>Apr 22</b> moved the clinical library from
+<code>/specialties/…</code> to <code>/treatment/…</code> and <code>/conditions/…</code> — visible in the chart. Per the Aug 11 crawl
+that consolidation is largely implemented: redirected URLs are no longer listed, though their history stays in the totals.
+Provider scope: <b>spine surgeons only</b>; the wider bench (pain, chiro, PT) is footnoted in the surgeon section.</div>
 
 <div class="card">
 <h2>Weekly Google impressions by page type</h2>
