@@ -1,7 +1,6 @@
-# Gautam Review — Ortho & Spine (Pre-Board)
+# Weekly Marketing Meeting — Agenda
 
-**When:** ____ August 2026 · 30 min · **Attendees:** Gautam, Joe, ____
-**Purpose:** the three things Gautam wants reviewed ahead of next week's board meeting.
+**Week of Aug 10, 2026** · This week's focus: the three things Gautam wants reviewed ahead of next week's board meeting.
 
 ## 1) Ortho & Spine performance — Joe
 
