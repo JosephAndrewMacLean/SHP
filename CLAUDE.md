@@ -19,6 +19,12 @@ healthcare organization. It contains a team of specialized marketing subagents.
   something new. Note: this environment's network policy blocks fetching synergyhealth.org
   directly — verify site state via Semrush (project "SHP Spine 2026", ID 30453033),
   GA4, or GSC instead.
+- **Clinical-operations ground truth for scheduling lives in `ops/`** — the clinic
+  utilization SOP and the physician PTO / patient-accessibility SOP, plus dated
+  change-review memos reconciling them against meeting transcripts. Use these when
+  work touches scheduling capacity, provider availability, or patient access. Key
+  marketing hook: any physician under 70% utilization triggers a Clinical Ops →
+  Marketing support request (campaigns, provider promotion, PL events).
 - This is **healthcare marketing**. Non-negotiables on all work:
   - No PHI or unconsented patient stories (HIPAA).
   - No unsubstantiated health claims or superiority claims (FTC).

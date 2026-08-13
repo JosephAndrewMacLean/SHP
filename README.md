@@ -64,6 +64,9 @@ The **marketing-director** can coordinate several specialists for a single campa
 .claude/agents/        the eight specialist agents
 audits/                Cardinal (June 2026) audit texts + live recommendation tracker
 brand/brand-brief.md   shared brand, voice, audience, and compliance guardrails
+ops/                   clinical-operations SOPs (clinic utilization, physician PTO / patient access) + change reviews
+playbooks/             strategy playbooks (master game plan, spine, call center, physician liaison)
+pm/                    task list, ideas bank, scripts, and PM ecosystem working files
 .mcp.json              MCP servers (Google Analytics, Search Console) loaded into every session
 scripts/               MCP launchers (ga-mcp.sh, gsc-mcp.sh — shared credential handling)
 docs/                  setup guides + data-sources roadmap (what measures what)
