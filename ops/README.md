@@ -12,6 +12,7 @@ utilization SOP names the Marketing Team as a formal escalation path.
 | [sop-clinic-utilization-schedule-optimization.md](sop-clinic-utilization-schedule-optimization.md) | Daily utilization review: ≥90% target, patients-per-hour and double-booking standards, PA escalation at 100%/85%/70% thresholds, marketing-support triggers | Effective 6/24/2026 · Owner: Director of Clinical Scheduling |
 | [sop-physician-pto-patient-accessibility.md](sop-physician-pto-patient-accessibility.md) | Physician PTO rules: 66% clinic-capacity floor per service line, 3-month notice for extended PTO, 16-week rolling coverage audit, escalation ladder | **Draft** — unfilled `[EMAIL ADDRESS]`, no effective date; publish directive issued week of Aug 10 |
 | [sop-change-review-2026-08-13.md](sop-change-review-2026-08-13.md) | Reconciliation of both SOPs against the week's Otter/Notion meetings (Aug 5–12): decided changes, open conflicts, verification list | Review queue for SOP owners |
+| [new-patient-access-watchlist-2026-08-13.md](new-patient-access-watchlist-2026-08-13.md) | Early-warning list: everything in flight that could move new-patient access, ordered by when the decision is needed (template go-live, Aug 21 PTO deadline, Sept 7 pile-up, Q4 risks) | Working assessment |
 
 Both SOPs are faithful markdown conversions of the Word originals uploaded
 2026-08-13; the Word files remain the formatting source of record. Anything
