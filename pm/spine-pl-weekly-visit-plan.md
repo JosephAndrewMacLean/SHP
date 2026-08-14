@@ -5,6 +5,16 @@
 **The full stop-level schedule (1,085 scheduled visits, filter by `week` + `pl` — cadence updated Jul 22):** **`pm/pl-weekly-visit-schedule.csv`**
 **Kristen's share pack:** `pm/kristen-share/` (field workbook + handoff note) · **MMC sync:** `pm/mmc-import/`
 
+> ## ⟳ v9 — Aug 14: Friday refresh (W2 credited, book corrections, urgent-care rule)
+> W2 recap: Jasmine 35/49 (71%) · Kristen 28/48 · Coty 26/45 planned stops checked in. W3–W9
+> rebuilt on actual check-ins — nothing restarts (standing rule per Kristen). Book now **862**:
+> 4 accounts restored per Kristen (never in the Jul 16 cut; incl. HF Primary Care Orchard Lake
+> N at T1), **all 85 owned urgent cares added** (Joe's rule — acute back/neck pathway), 1
+> Olympia-network practice removed per Jasmine's field read, NextGen Vitality auto-entered. New
+> Friday safety net: an **off-book watch list** of accounts the team visits that aren't in the
+> book. T1 median: Coty 21 · Jasmine 21 · Kristen 28 (her restored, larger book on a 7-week
+> runway); zero Tier-1s unplanned. ⚠️ PHI-in-notes hygiene item raised — see parking lot.
+>
 > ## ⟳ v8 — Aug 7 (final): whole-route days — "sort it by city and run the whole thing"
 > The closing decision of the Joe/Kristen call, after catching two 17-Mile accounts split across
 > days by tier priority: stop composing days stop-by-stop. **A scheduled day is now a home route

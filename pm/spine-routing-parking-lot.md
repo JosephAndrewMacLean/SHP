@@ -28,6 +28,47 @@ due. This true-up reruns every Friday from the MMC export — that's the whole r
 
 ---
 
+## Aug 14 refresh — W2 recap + what changed
+
+**W2 (Aug 10–14) planned vs checked in:** Jasmine **35/49 (71%)** · Kristen 28/48 (58%) ·
+Coty 26/45 (58%). Jasmine tripled her W1 rate — the city routes are getting worked. The W3–W9
+plan is rebuilt from these actual check-ins: **everything the team did is credited; nothing
+restarts** (standing rule, per Kristen's Aug 14 ask — a refresh always picks up where the field
+left off).
+
+**Book changes (now 862 accounts):**
+- **4 restored per Kristen** — Nova Health UC Southfield (T2), Corewell UC Farmington Hills N
+  (Prospect), One Health Orchard Lake (Prospect), HF Primary Care Orchard Lake N (T1). Root
+  cause: they were **never in the Jul 16 cut** — not removed, not eyeballed; she'd been working
+  them all along. The safety net for this now runs every Friday: any account a PL actually
+  visited that sits outside the book+Non-Spine surfaces on an **off-book watch list** (117
+  currently — mostly ortho-book by design; top spine-relevant candidates: **Draugelis &
+  Draugelis** (15 visits — the auto/BI firm), Rehabilitation Physicians – Novi (physiatry, 11)).
+- **All urgent cares are in the spine list** (Joe's rule, Aug 14): 85 owned urgent cares added
+  as prospects. Exception kept out: Blue Water UC (Kristen's own "95% Medicaid" eyeball) —
+  reverse it if she wants it back.
+- **1 removal via field read:** MEDICAL GROUP PRACTICE PC (Olympia) → Non-Spine — Jasmine's
+  notes show three visits concluding they only refer inside the Olympia network.
+- NextGen Vitality (Kristen's new MMC account, Aug 11) auto-entered as a prospect.
+
+**⚠️ One urgent hygiene item — patient names in CRM notes.** The thank-you entries frequently
+name referred patients (an initial + last name, sometimes full names, occasionally with
+insurance details). The program rule is **no patient-identifying information in writing** — MMC
+is a third-party CRM and these notes travel in exports. Fix going forward: log *"TY for recent
+referral"* with **no patient identifiers** — the discreet in-person thank-you stays exactly as
+is. Ask Santosh about scrubbing the historical pattern. This needs Kristen's voice at the
+huddle, framed as protecting the team.
+
+**Kristen's asks from the Aug 14 call (logged):**
+1. **One place to enter tier/visit data** instead of a daily spreadsheet → Joe/Joel to propose:
+   the check-in flow already writes MMC; the missing piece is her rollup view. On the list.
+2. **Referral→tier→company tracking** → that's the referral-match pipeline (Santosh) feeding the
+   Weekly Mix; will demo at the next huddle.
+3. **MMC account-update requests come as one packaged import + a walkthrough**, not ad-hoc
+   lists of seven accounts. Adopted.
+
+---
+
 ## The parking-lot items — status
 
 ### 1. Multiple practices in one building ✅ shipped
