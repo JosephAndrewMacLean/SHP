@@ -36,6 +36,34 @@ Internal referral-operations analytics — aggregate counts only, no patient-lev
 | Attorney / telehealth intake | 6 | 24 days | 21 days |
 | **All matched** | **68** | **30 days** | **21 days** |
 
+## Which practice types feed which service lines
+
+Referring practice type (from our CRM classification of the matched referrer) × the SHP
+service line the patient was referred **to**:
+
+| Referring practice type | Spine | Podiatry | Ortho / other | Telehealth intake | Total | % to spine |
+|---|---|---|---|---|---|---|
+| PCP | **12** | 4 | 21 | 0 | **37** | 32% |
+| Urgent care | 1 | 2 | 9 | 1 | 13 | 8% |
+| No MMC record (unmatched) | **5** | 0 | 2 | 0 | 7 | **71%** |
+| Pediatrics | 0 | 1 | 3 | 1 | 5 | 0% |
+| Orthopedic | 1 | 0 | 3 | 0 | 4 | 25% |
+| Attorney / Legal | 0 | 0 | 0 | 4 | 4 | 0% |
+| Pain | 1 | 0 | 1 | 0 | 2 | 50% |
+| Chiropractor / PT / other | 3 | 0 | 1 | 0 | 4 | — |
+| **Total** | **23** | **7** | **39** | **6** | **75** | 31% |
+
+Reads worth noting:
+
+- **PCPs are the volume engine and the spine engine** — half the report, and a third of
+  their referrals landed in spine. The tiered PCP book is pointed at the right people.
+- **Urgent care skews ortho, not spine (1 of 13)** — they're valuable, but as a general
+  ortho feeder; spine expectations for the UC sweep should be set accordingly.
+- **The referrers we've never tracked skew hardest to spine (5 of 7)** — spine patients are
+  arriving from providers with no CRM record. Those names go on the add-to-book list each
+  week; this row shrinking over time is a health metric for list coverage.
+- **Attorney/legal feeds the telehealth intake channel exactly as designed** (4 of 4).
+
 ## What this changes
 
 1. **The visit cadence is sitting on the conversion curve.** Tier 1 accounts are worked every
