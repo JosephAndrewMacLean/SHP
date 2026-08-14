@@ -67,6 +67,14 @@ huddle, framed as protecting the team.
 3. **MMC account-update requests come as one packaged import + a walkthrough**, not ad-hoc
    lists of seven accounts. Adopted.
 
+**Influence tracking is live (Aug 14 PM).** The weekly B2B results report is now matched
+referrer-side against MMC visit activity: **91% of the 75 new patients came from providers a
+PL had visited; median visit→appointment lag 30 days (spine 43)**. Two standing artifacts:
+`pm/spine-influence-weekly.csv` (+ `.md` method doc) — visits by tier vs. B2B spine referrals
+per week, updated each Friday refresh — and `pm/b2b-time-to-referral-insights-aug14.md`, the
+shareable brief for Santosh/Gautam. This is the first cut of Kristen's ask #2. Aggregates
+only; no patient data in either file.
+
 ---
 
 ## The parking-lot items — status
