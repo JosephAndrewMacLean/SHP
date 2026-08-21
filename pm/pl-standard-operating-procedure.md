@@ -15,12 +15,13 @@
 
 ## 1. The account universe (what we work, and how it changes)
 
-1.1 The working universe is the **773-account validated spine book** (Kristen 217 incl. the ex-Sean
-book · Jasmine 296 · Coty 260), organized by evidence: **Tier 1** sent ≥1 spine patient (162) ·
-**Tier 2** ortho-only senders (174) · **Tier 3** other-service senders (34) · **Prospects** (403,
-incl. 11 NEW accounts added Aug 7 from MMC). **Wave 1** = the 90 highest-priority proven senders,
-always first in line each cycle. (History: 848 pre-validation → 766 after the Jul 31 eyeball pass
-→ 773 after the Aug 7 refresh: 11 new in, 4 duplicate records out; details in
+1.1 The working universe is the **862-account validated spine book** (Kristen 252 incl. the ex-Sean
+book · Jasmine 310 · Coty 300), organized by evidence: **Tier 1** sent ≥1 spine patient (164) ·
+**Tier 2** ortho-only senders (174) · **Tier 3** other-service senders (34) · **Prospects** (490).
+**Wave 1** = the 90 highest-priority proven senders, always first in line each cycle. (History:
+848 pre-validation → 766 after the Jul 31 eyeball pass → 773 after Aug 7 (11 new in, 4 duplicate
+records out) → 862 after Aug 14 (4 restored per Kristen + all 85 owned urgent cares in) → Aug 21:
+NeuroRestorative out to Non-Spine, Commerce Primary Care in at Tier 1; details in
 `pm/spine-routing-parking-lot.md`.)
 
 1.2 **Accounts are never deleted.** An account leaves the working rotation only by being tagged

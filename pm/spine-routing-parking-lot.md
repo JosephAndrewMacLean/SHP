@@ -28,6 +28,77 @@ due. This true-up reruns every Friday from the MMC export — that's the whole r
 
 ---
 
+## Aug 21 refresh — W3 recap + entering W4 (no early repeats)
+
+**W3 (Aug 17–21) planned vs checked in:** Coty **36/46 (78%)** · Jasmine 32/47 (68%) ·
+Kristen 29/49 (59%) — best week yet (last-activity basis; exact per-stop stats when the
+activities export arrives). **W4–W9 was repaired, not rebuilt:** every route's next run is
+recomputed from actual visits, and the no-early-repeat rule is asserted — nothing visited in
+W1–W3 comes back before its cadence. Stops visited <14 days before their route runs carry a
+**"visited — skip unless needed"** flag.
+
+**Changes this refresh:**
+- **NeuroRestorative → Non-Spine** (team request). It leaves K-R11 (now 9 stops); already in
+  the Non-Spine import.
+- **Commerce Primary Care, PC → Tier 1, Kristen** (Joe's ask): 8800 Commerce Rd, on **K-R23,
+  first run W4 (Aug 24)** — R23 was pulled forward from Sep 14; the whole block was ~87 days
+  stale. The receipts: **Sydney Frantz NP (the Aug 11 spine referral to Dr. McCarty) practices
+  at Commerce Primary Care** — Kristen's last visit there was May 26, a 77-day visit→referral
+  lag. This closes the last unresolved W2 spine-referrer mapping.
+- W3-planned routes that didn't check in during W3 come back **when actually due, not
+  blindly at W4**: K-R04 → W4; C-R10 → W5; **J-R06 → W7** (its stops were mostly worked in
+  W2, so a W4 rerun would have repeated 2-week-old visits — the no-repeat rule held it to
+  early September). Routes whose only planned run was W3 get their cadence comeback:
+  **K-R11, K-R13, J-R07/R09/R10, C-R01, C-R25** (7 routes). **10 runs deferred to next
+  cycle** (all repeats, non-producers, or due past Sep 21). Honest flag on one: **J-R33
+  (prospect-only) slipped NOT because it can wait — its 90-day reads are ~3 months overdue —
+  but because Jasmine's book is 30 routes for 30 slots with zero slack.** Producers outranked
+  it; it goes first in line next cycle (or a W9 finish-early bonus run if she has a light day).
+
+**W2 spine referrers — all 18 now mapped** (fresh people export): Kotsonis DO → **Silver Pine
+Medical Group – Sterling Heights** (in book, Kristen strategic; visited Jun 22, 51d lag) ·
+Frantz NP → **Commerce Primary Care** (above) · Turfe DO → **Corewell IM – Dearborn Heights**
+(OFF-BOOK; visited Aug 6 — 5-day lag!) · **Sam Bernstein Law** (off-book; visited Jul 9, 34d
+lag) · **Giroux and Pappas Law** (off-book; visited May 28, 76d lag). **Add candidates with
+referral evidence:** Corewell IM Dearborn Heights, Sam Bernstein Law, Giroux & Pappas — the
+two firms are direct-to-spine attorney referrers now, same evidence rule that seated Morse;
+attorney-channel handling is Kristen/Gautam's call (compliance guardrails apply).
+
+**Skip-flag rule (made explicit this week):** a scheduled stop whose last visit is still inside
+its tier window (21/30/45/45) at that week's Friday shows **"visited &lt;date&gt; — skip (next due
+&lt;date&gt;)"** — 130 of 793 planned stops carry it. The 90-day prospect *read* stays what it always
+was: a promote/hold/park huddle decision at the 3rd touch, not a drive-past rule.
+
+**Adversarial verification findings (6-agent check before shipping, all fixed or logged):**
+- Two Aug-14 restored accounts had tier/group mismatches in the MMC import — **Nova Health UC
+  (T2) and HF Primary Care Orchard Lake N (T1) were still tagged `Spine Prospect – 45d`**, so
+  MMC's past-due engine would have tracked them at the wrong cadence. Fixed to T2-30d / T1-21d.
+- The import's **First Planned Week column was still carrying Aug-14 dates** (109 rows pointed
+  at weeks that no longer exist). Recomputed for all 862 rows from the actual W4–W9 schedule;
+  deferred-route accounts now say so explicitly.
+- **Structural finding, not fixed (a decision, not a bug):** at 15 route-days/week, each account
+  appears **once** in the 6-week horizon — an effective ~42-day revisit vs the 21-day T1 target.
+  The book's stated cadences need ~175 stops/week; capacity is ~135 (July insight §5, still
+  true, now bigger book). Options for Joe/Kristen: give T1-heavy routes second runs at the
+  expense of prospect blocks (Wave-1-first), add field days, or accept ~5–6-week T1 rhythm.
+- Two never-visited prospects (The Keiser Clinic, Total UC – Romeo) sit on deferred routes and
+  get no first pass this cycle — queued next cycle.
+- MMC has **56 company names duplicated across 123 records** — name-based joins misattribute
+  visits (a verifier initially "found" 6 extra early repeats that way; by ID it's 0). We join
+  by ID everywhere; noted for the data-ops list.
+- **21 off-cycle prospect accounts carried a stale "Touched since Jul 22" label** in the MMC
+  import (incl. The Keiser Clinic — never visited at all, and three urgent cares last visited
+  in 2023). Relabeled honestly ("Never visited — needs first touch" / "Not scheduled this
+  cycle — last visit <date>"). These 69 off-cycle prospects are the next scrub's raw material.
+
+**Data ask:** this refresh ran on companies + people exports only, using each account's
+last-activity date (all 862 book accounts matched the export; one account's latest activity is
+an email masking an older visit; 7 never-visited prospects have no activity at all). **Include
+the activities export Friday** to fill the tracker's W3 check-in row and restore
+multi-visit stats.
+
+---
+
 ## Aug 14 refresh — W2 recap + what changed
 
 **W2 (Aug 10–14) planned vs checked in:** Jasmine **35/49 (71%)** · Kristen 28/48 (58%) ·

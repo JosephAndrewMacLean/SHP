@@ -5,6 +5,23 @@
 **The full stop-level schedule (1,085 scheduled visits, filter by `week` + `pl` — cadence updated Jul 22):** **`pm/pl-weekly-visit-schedule.csv`**
 **Kristen's share pack:** `pm/kristen-share/` (field workbook + handoff note) · **MMC sync:** `pm/mmc-import/`
 
+> ## ⟳ v10 — Aug 21: Friday refresh (W3 credited, W4–W9 repaired to actuals — no early repeats)
+> W3 recap: **Coty 36/46 (78%) · Jasmine 32/47 (68%) · Kristen 29/49 (59%)** — best completion
+> week yet. Entering W4, the no-repeat rule is enforced two ways, asserted against the Aug 21
+> export: **no route re-runs before its cadence** (route-level, zero violations), and **every
+> stop still inside its tier window (T1 21d · T2 30d · T3 45d · Prospect 45d) at its scheduled
+> week carries a "visited — skip (next due …)" flag** (130 of 793 stops; drive past unless
+> there's a reason to walk in). The Aug 14 plan was **repaired,
+> not rebuilt**: W3-planned routes that didn't check in return when actually due (K-R04 → W4,
+> C-R10 → W5, J-R06 → W7 — its stops were worked in W2, so W4 would repeat them early); 7 routes
+> whose only run was W3 get their cadence comeback (K-R11, K-R13, J-R07/R09/R10, C-R01, C-R25);
+> 10 low-urgency runs deferred to next cycle (logged; one prospect-only block, J-R33, slips a
+> cycle). Book changes: **NeuroRestorative → Non-Spine** (team request) · **Commerce Primary Care
+> PC added at Tier 1 on Kristen (K-R23, first run W4)** — its NP, Sydney Frantz, sent the Aug 11
+> spine referral. This refresh ran on the companies/people exports (last-activity basis; all 862
+> matched, 7 never-visited prospects have no activity); **please include the activities export
+> next week** so the tracker's W3 check-in row and multi-visit stats can be filled.
+>
 > ## ⟳ v9 — Aug 14: Friday refresh (W2 credited, book corrections, urgent-care rule)
 > W2 recap: Jasmine 35/49 (71%) · Kristen 28/48 · Coty 26/45 planned stops checked in. W3–W9
 > rebuilt on actual check-ins — nothing restarts (standing rule per Kristen). Book now **862**:

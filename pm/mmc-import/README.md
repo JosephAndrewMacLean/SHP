@@ -8,8 +8,8 @@ past-due flags — instead of in a spreadsheet nobody opens in the field.
 
 | File | What it is |
 |---|---|
-| `mmc-company-update-IMPORT.csv` | **762 rows** — one per validated company (766 locations; 4 two-location practices share one Company ID). Keyed on **Company ID** (from MMC's own export, so matching is exact). Adds spine plan fields incl. the **v2 route days (K-R01…)** and each account's first planned week of the Aug 3 → Sep 28 cycle; keeps each account's existing Groups. |
-| `mmc-non-spine-group-IMPORT.csv` | **82 rows** — the accounts PLs marked **"No"** in the Jul 31 eyeball pass. Tags them into Kristen's **`Non-Spine`** group and strips only our `Spine …` plan groups; every other existing group is preserved. `Next Action` carries the PL's reason (e.g. "95% Medicaid," "closed," "competition"). **Reversible** — remove the group tag and the account re-enters the next regeneration. |
+| `mmc-company-update-IMPORT.csv` | **862 rows** — one per validated company (766 locations; 4 two-location practices share one Company ID). Keyed on **Company ID** (from MMC's own export, so matching is exact). Adds spine plan fields incl. the **v2 route days (K-R01…)** and each account's first planned week of the Aug 3 → Sep 28 cycle; keeps each account's existing Groups. |
+| `mmc-non-spine-group-IMPORT.csv` | **84 rows** — the accounts PLs marked **"No"** in the Jul 31 eyeball pass. Tags them into Kristen's **`Non-Spine`** group and strips only our `Spine …` plan groups; every other existing group is preserved. `Next Action` carries the PL's reason (e.g. "95% Medicaid," "closed," "competition"). **Reversible** — remove the group tag and the account re-enters the next regeneration. |
 | `mmc-import-TEST-3rows.csv` | First 3 rows of the company update — run this first. |
 
 ## Columns → MMC mapping
