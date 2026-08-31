@@ -1,19 +1,19 @@
 company,mmc_company_id,practice_type,low_confidence_rows,current_book_tier,book_pl,referrals_total,spine_total,spine_2026,telehealth,podiatry,other_lines,first_referral,last_referral,evidence_grade,action_flag
-DMC Orthopedics - Commerce Township,568c9052-985c-48fa-b5bc-44baafba3dea,Orthopedic,0,Tier 1,Kristen,16,16,11,0,0,0,2025-10-14,2026-08-18,Repeat spine (strong T1),
-Park Medical Centers,92913d4d-edc4-462b-aecf-ef3f54198f09,PCP / IM / FM,0,Tier 1,Kristen,58,15,11,0,2,41,2025-06-11,2026-08-14,Repeat spine (strong T1),
+Park Medical Centers,92913d4d-edc4-462b-aecf-ef3f54198f09,PCP / IM / FM,0,Tier 1,Kristen,61,17,13,0,2,42,2025-06-11,2026-08-28,Repeat spine (strong T1),
+DMC Orthopedics - Commerce Township,568c9052-985c-48fa-b5bc-44baafba3dea,Orthopedic,0,Tier 1,Kristen,17,17,12,0,0,0,2025-10-14,2026-08-28,Repeat spine (strong T1),
 Park Medical Centers - Canton,047f1f57-d796-4b0d-b2d0-b5d576ad50ea,PCP / IM / FM,0,Tier 1,Jasmine,30,15,7,0,1,14,2025-06-02,2026-08-18,Repeat spine (strong T1),
-Levan Internists,1972528818,PCP / IM / FM,1,Tier 2,Jasmine,62,13,7,1,1,47,2025-06-16,2026-08-10,Repeat spine (strong T1),Tier 2 WITH SPINE — promote to T1
+Levan Internists,1972528818,PCP / IM / FM,1,Tier 2,Jasmine,63,14,8,1,1,47,2025-06-16,2026-08-25,Repeat spine (strong T1),Tier 2 WITH SPINE — promote to T1
 Synergy Medical Primary Care,5cb01f9c-faec-4c04-b600-f0eba085f6a3,PCP / IM / FM,0,Tier 1,Jasmine,53,13,6,0,1,39,2025-06-02,2026-08-14,Repeat spine (strong T1),
-Macomb Internal Medicine,5271bbd8-dfe5-4d54-a0a2-f5547050cafe,PCP / IM / FM,0,Tier 1,Kristen,14,11,4,0,0,3,2025-06-25,2026-08-20,Repeat spine (strong T1),
+Macomb Internal Medicine,5271bbd8-dfe5-4d54-a0a2-f5547050cafe,PCP / IM / FM,0,Tier 1,Kristen,15,12,5,0,0,3,2025-06-25,2026-08-24,Repeat spine (strong T1),
 North Valley Internal Medicine,063204da-544e-4bdd-a18b-f483a5c16ad9,PCP / IM / FM,0,Tier 1,Coty,11,9,4,0,1,1,2025-06-12,2026-08-14,Repeat spine (strong T1),
 Lakeview Medical Center,64ed5116-24c0-4278-8d87-a7ca5f7d76c4,PCP / IM / FM,0,Tier 1,Coty,23,8,5,3,0,12,2025-07-01,2026-08-06,Repeat spine (strong T1),
 Henry Ford Primary Care Center - 160,b6033c7f-ac4e-4957-b3b0-519077da6c8d,PCP / IM / FM,0,Tier 1,Kristen,12,8,5,0,3,1,2025-08-29,2026-08-13,Repeat spine (strong T1),
 Grand River Medical Associates,218209bd-0e83-4585-b5e7-1455814e77b1,PCP / IM / FM,0,Tier 1,Jasmine,9,8,2,0,0,1,2025-06-12,2026-06-30,Repeat spine (strong T1),
-Oakland Family Practice,13ba57d5-6bc6-4d44-8d40-efd8e7131d2e,PCP / IM / FM,1,Tier 1,Kristen,52,6,3,1,2,43,2025-06-04,2026-08-18,Repeat spine (strong T1),
+Oakland Family Practice,13ba57d5-6bc6-4d44-8d40-efd8e7131d2e,PCP / IM / FM,1,Tier 1,Kristen,54,6,3,1,2,45,2025-06-04,2026-08-27,Repeat spine (strong T1),
 Be Well Medical Center,1174554364,PCP / IM / FM,0,Tier 1,Coty,29,6,3,1,1,21,2025-06-27,2026-07-29,Repeat spine (strong T1),
+Stonebrooke Family Physicians,c9013f02-25d6-4df2-96f8-b4f1e9936878,PCP / IM / FM,0,Tier 1,Kristen,26,6,4,0,4,16,2025-06-18,2026-08-25,Repeat spine (strong T1),
 Macomb Medical Clinic,1992782320,PCP / IM / FM,0,Tier 1,Coty,24,6,2,1,1,16,2025-08-04,2026-08-18,Repeat spine (strong T1),
 MI Family Practice,6aee51ce-625f-4968-96c5-5d9a6936bf27,PCP / IM / FM,0,Tier 1,Coty,24,6,2,0,0,18,2025-06-09,2026-07-23,Repeat spine (strong T1),
-Stonebrooke Family Physicians,c9013f02-25d6-4df2-96f8-b4f1e9936878,PCP / IM / FM,0,Tier 1,Kristen,24,6,4,0,4,14,2025-06-18,2026-07-23,Repeat spine (strong T1),
 NORLIVO INTERNAL MEDICINE,74262c96-dd4b-4b92-acd7-c43ebba4c04f,PCP / IM / FM,0,Tier 1,Jasmine,17,6,3,0,0,11,2025-06-02,2026-07-31,Repeat spine (strong T1),
 GARDEN CITY FAMILY PHYSICIANS,be4c4280-49d5-443c-b413-3471ee753d27,PCP / IM / FM,0,Tier 1,Kristen,13,6,3,0,0,7,2025-07-31,2026-05-18,Repeat spine (strong T1),
 The Family Doctor,23a703a6-5bde-4887-845c-b78a61128817,PCP / IM / FM,0,Tier 1,Coty,12,6,2,0,0,6,2025-07-07,2026-07-31,Repeat spine (strong T1),
@@ -29,28 +29,28 @@ Silver Pine Medical Group - Sterling Heights,cac69af6-f814-4339-a4f4-d8cd7112ec3
 Lifetime Family Care,b70053c3-f0fd-41de-9386-95fcc448a738,PCP / IM / FM,0,Tier 1,Kristen,14,5,3,2,0,7,2025-06-02,2026-08-11,Repeat spine (strong T1),
 Premier Medicine Medical Center - Livonia,13842362-6701-47f3-95cc-140ea17bd264,PCP / IM / FM,0,Tier 1,Jasmine,12,5,3,1,0,6,2025-07-02,2026-06-19,Repeat spine (strong T1),
 A1 Family Medicine,b1a9167c-0bb6-47bd-b50a-ff18a973875f,PCP / IM / FM,0,Tier 1,Jasmine,10,5,1,0,0,5,2025-06-23,2026-06-30,Repeat spine (strong T1),
+NextGen Vitality,de4283ce-62ba-4417-9008-a03e8d75671f,PCP / IM / FM,0,Prospect,Kristen,6,5,2,1,0,0,2025-10-01,2026-08-28,Repeat spine (strong T1),PROSPECT WITH SPINE — promote to T1
 Office of George Nassif MD,1225209075,PCP / IM / FM,0,Tier 1,Coty,5,5,4,0,0,0,2025-10-08,2026-06-15,Repeat spine (strong T1),
 Great Lakes Medicine,a29bc662-1f09-48ea-a1f5-efe24cc01eeb,PCP / IM / FM,5,NOT IN BOOK,,5,5,2,0,0,0,2025-09-03,2026-07-20,Repeat spine (strong T1),PRODUCER NOT IN BOOK
 Pulmonary & Medical Associates,dda630a5-9d61-49cd-bec6-61084e47ddb9,PCP / IM / FM,0,Tier 1,Kristen,21,4,2,1,1,15,2025-06-04,2026-08-14,Repeat spine (strong T1),
 Village Medical - Livonia,e3d707da-675d-4d7c-9356-2f53ec4d8a2e,PCP / IM / FM,0,Tier 1,Kristen,13,4,2,0,0,9,2025-06-12,2026-06-23,Repeat spine (strong T1),
 Lily’s Medical Group,0aec7757-4391-42a3-94f2-3cfa9ea9aa99,PCP / IM / FM,3,NOT IN BOOK,,12,4,3,2,1,5,2025-07-15,2026-08-18,Repeat spine (strong T1),PRODUCER NOT IN BOOK
-Village Medical Farmington,8a6ae159-0242-4272-b933-bd11fc117733,PCP / IM / FM,2,Tier 1,Kristen,10,4,2,0,0,6,2025-07-18,2026-06-26,Repeat spine (strong T1),
+Village Medical Farmington,8a6ae159-0242-4272-b933-bd11fc117733,PCP / IM / FM,2,Tier 1,Kristen,11,4,2,0,0,7,2025-07-18,2026-08-25,Repeat spine (strong T1),
 DEIGHTON FAMILY PRACTICE - use this one,a6779fd4-289a-49f7-8602-76dc1bf5764c,PCP / IM / FM,0,Tier 1,Kristen,9,4,3,0,0,5,2025-08-15,2026-08-17,Repeat spine (strong T1),
+"AGHA INTERNAL MEDICINE AND ASSOCIATES, PC",85fd21cb-8cbc-4ead-9b3d-0cdbecdf7638,PCP / IM / FM,0,Tier 1,Kristen,8,4,2,0,0,4,2025-06-19,2026-08-26,Repeat spine (strong T1),
 MEDPRO PRIMARY CARE - Waltz Rd,5ba2b7d1-0a31-458d-95a0-4ba47f0574a0,PCP / IM / FM,0,Tier 1,Coty,6,4,2,0,1,1,2025-07-24,2026-05-18,Repeat spine (strong T1),
 "FARMINGTON HILLS  FAMILY PHYSICIANS, PLLC",cc6d8767-1fad-4a5b-b658-38a67ea47a1c,PCP / IM / FM,0,Tier 1,Kristen,6,4,2,0,0,2,2025-07-17,2026-02-24,Repeat spine (strong T1),
 Hermann Banks MD PC,31597599-5a74-4f7a-8cb0-0ebbb4b41303,Neurology,0,Tier 1,Kristen,5,4,3,1,0,0,2025-10-31,2026-06-29,Repeat spine (strong T1),
-NextGen Vitality,de4283ce-62ba-4417-9008-a03e8d75671f,PCP / IM / FM,0,Prospect,Kristen,5,4,1,1,0,0,2025-10-01,2026-04-15,Repeat spine (strong T1),PROSPECT WITH SPINE — promote to T1
 Park Internal Medicine,1402505e-8030-4222-ac59-577fa4458cd9,PCP / IM / FM,0,Prospect,Jasmine,4,4,1,0,0,0,2025-07-02,2026-03-13,Repeat spine (strong T1),PROSPECT WITH SPINE — promote to T1
 Barry S Meyer DO PC,a183eb7c-8d61-4470-8154-52f7dbff87b5,PCP / IM / FM,0,Tier 1,Coty,4,4,1,0,0,0,2025-08-14,2026-05-27,Repeat spine (strong T1),
 CoreMed - Commerce,eab7d954-a523-466a-a75b-3eca7bf9c6d0,PCP / IM / FM,0,Tier 1,Kristen,4,4,1,0,0,0,2025-06-03,2026-03-12,Repeat spine (strong T1),
+Faith Internal Medicine & Urgent Care,677326d2-4ba2-4a49-a6f1-e7633a9a8401,PCP / IM / FM,0,Tier 1,Coty,20,3,2,0,2,15,2025-06-12,2026-08-24,Repeat spine (strong T1),
 MNP,40477f1c-8f50-4f86-8e7e-a5431b7f2fe6,PCP / IM / FM,0,Tier 1,Kristen,19,3,2,0,1,15,2025-08-21,2026-08-10,Repeat spine (strong T1),
-Faith Internal Medicine & Urgent Care,677326d2-4ba2-4a49-a6f1-e7633a9a8401,PCP / IM / FM,0,Tier 1,Coty,19,3,2,0,1,15,2025-06-12,2026-07-22,Repeat spine (strong T1),
 Shaun Jayakar MD,f56a8949-cb8d-4abd-8405-0a939eec72d2,PCP / IM / FM,0,Tier 2,Coty,14,3,0,1,0,10,2025-06-23,2026-07-08,Repeat spine (strong T1),Tier 2 WITH SPINE — promote to T1
 Livonia Family Medical Center,68ceff67-99ac-4ef7-a162-918f93bbdf38,PCP / IM / FM,0,Tier 1,Jasmine,13,3,2,0,2,8,2025-06-13,2026-08-17,Repeat spine (strong T1),
 "WAYNE MEDICAL CENTER, PLLC",bc73cba3-b59d-4259-8bb7-6129abd353ab,PCP / IM / FM,0,Tier 2,Kristen,12,3,1,0,0,9,2025-06-10,2026-08-06,Repeat spine (strong T1),Tier 2 WITH SPINE — promote to T1
 CANTON FAMILY HEALTH LLC,3acfe2ff-d550-4785-99aa-a1ea91ef7da4,PCP / IM / FM,0,Tier 1,Jasmine,10,3,3,1,0,6,2025-11-10,2026-08-17,Repeat spine (strong T1),
 Levine Clinic of Chiropractic,e19f7675-d86b-445b-ad8d-c06409bfde92,Chiropractor,0,Tier 1,Kristen,8,3,3,2,0,3,2026-02-05,2026-08-07,Repeat spine (strong T1),
-"AGHA INTERNAL MEDICINE AND ASSOCIATES, PC",85fd21cb-8cbc-4ead-9b3d-0cdbecdf7638,PCP / IM / FM,0,Tier 1,Kristen,7,3,1,0,0,4,2025-06-19,2026-06-08,Repeat spine (strong T1),
 "MARY LEE, MD, PC",d62a30ae-10fe-4408-a2cc-7b0aa9422bb8,PCP / IM / FM,0,Tier 1,Kristen,7,3,1,0,0,4,2025-06-20,2026-08-11,Repeat spine (strong T1),
 City Medical - Madison Heights,63cd155b-cebc-4ccb-ae48-e9fd30422380,PCP / IM / FM,1,Prospect,Jasmine,6,3,3,0,0,3,2025-06-03,2026-08-05,Repeat spine (strong T1),PROSPECT WITH SPINE — promote to T1
 Powers Family Medicine,00-761-7874,PCP / IM / FM,0,Tier 1,Kristen,5,3,2,0,0,2,2025-06-19,2026-04-20,Repeat spine (strong T1),
@@ -60,13 +60,13 @@ Pain Clinic of Michigan,bdc96513-2e4b-4263-916b-792d4001c0b0,Pain,1,Prospect,Jas
 Delta Urgent Care,0d9a0431-68d2-418b-8bc3-e5dcde51a781,Urgent care,0,Prospect,Kristen,3,3,1,0,0,0,2025-10-14,2026-06-12,Repeat spine (strong T1),PROSPECT WITH SPINE — promote to T1
 Specialists in Rehabilitation Medicine,8c808cf3-9148-4a0b-8ea0-2d0882a9424e,Physical Therapy,0,Tier 1,Coty,3,3,1,0,0,0,2025-07-09,2026-04-07,Repeat spine (strong T1),
 Core Institute/Henry Ford Motor City Orthopedics & PT- Southfield,b2290856-de23-4322-aabc-b2436529feac,Orthopedic,1,Tier 1,Jasmine,3,3,2,0,0,0,2025-10-22,2026-05-12,Repeat spine (strong T1),
-Hesselberg Chiropractic,83b9dec3-57ee-4777-b000-fcb1c228e6c7,Chiropractor,0,Tier 1,Kristen,48,2,0,45,0,1,2025-06-10,2026-07-31,Repeat spine (strong T1),
+Hesselberg Chiropractic,83b9dec3-57ee-4777-b000-fcb1c228e6c7,Chiropractor,0,Tier 1,Kristen,49,2,0,46,0,1,2025-06-10,2026-08-14,Repeat spine (strong T1),
 Frank Lanzilote DO-Family Practice,1d143d90-6122-41e7-ae14-c14d4e4317b4,PCP / IM / FM,0,Tier 1,Jasmine,37,2,2,1,1,33,2025-07-18,2026-08-17,Repeat spine (strong T1),
 OAK STREET HEALTH CHERRY HILL,0cc06713-910b-4b74-ba14-7cd3d76b3c62,PCP / IM / FM,0,Tier 1,Jasmine,32,2,2,0,1,29,2025-06-24,2026-08-19,Repeat spine (strong T1),
 Macomb Physicians Group,fdefbf3e-907d-4d68-bbd3-2d70f4818b7a,PCP / IM / FM,0,Tier 1,Coty,29,2,0,0,1,26,2025-06-19,2026-07-30,Repeat spine (strong T1),
 Corewell Health Urgent Care - Warren West,9152636b-052e-44f2-ab21-a7abf86561ff,Urgent care,4,Prospect,Kristen,23,2,1,0,1,20,2025-07-23,2026-08-12,Repeat spine (strong T1),PROSPECT WITH SPINE — promote to T1
 Oak Street Health - Eastgate,23fb6135-419b-4880-ae64-4a97e9244f37,PCP / IM / FM,7,Tier 1,Coty,17,2,0,0,0,15,2025-06-27,2026-07-16,Repeat spine (strong T1),
-Corwell Health - Farmington,7b335c19-3210-419e-888b-e9aabe43f40a,PCP / IM / FM,0,Tier 3,Kristen,12,2,0,0,2,8,2025-07-02,2026-06-12,Repeat spine (strong T1),Tier 3 WITH SPINE — promote to T1
+Corwell Health - Farmington,7b335c19-3210-419e-888b-e9aabe43f40a,PCP / IM / FM,0,Tier 3,Kristen,13,2,0,0,2,9,2025-07-02,2026-08-27,Repeat spine (strong T1),Tier 3 WITH SPINE — promote to T1
 "PILLAY INTERNAL MEDICINE ASSOCIATES, PLLC",f5f4f354-94f3-42a1-a3be-10f8a64cdaae,PCP / IM / FM,0,Tier 1,Kristen,11,2,1,0,0,9,2025-09-24,2026-08-19,Repeat spine (strong T1),
 Oakland Primary Care,1952660706,PCP / IM / FM,0,Tier 1,Coty,8,2,2,0,0,6,2025-09-19,2026-06-15,Repeat spine (strong T1),
 Troy Internal Medicine,227a3faf-d636-4f07-adbf-db1d49776b27,PCP / IM / FM,0,Tier 2,Kristen,8,2,0,0,1,5,2025-06-02,2026-08-03,Repeat spine (strong T1),Tier 2 WITH SPINE — promote to T1
@@ -77,6 +77,7 @@ Preferred Medical Group,1356443600,PCP / IM / FM,0,Tier 1,Coty,7,2,1,0,1,4,2025-
 Tri-County Medical Clinic,1386634749,PCP / IM / FM,0,Tier 1,Kristen,7,2,1,0,0,5,2025-06-11,2026-02-03,Repeat spine (strong T1),
 Associates in Internal Medicine - MHP,1639309131,PCP / IM / FM,3,Tier 3,Kristen,7,2,1,0,4,1,2025-07-02,2026-07-07,Repeat spine (strong T1),Tier 3 WITH SPINE — promote to T1
 Millenium Associated Physicians - 130A,1972588259,PCP / IM / FM,0,Tier 2,Kristen,7,2,1,0,0,5,2025-07-23,2026-07-30,Repeat spine (strong T1),Tier 2 WITH SPINE — promote to T1
+Cornerstone Garfield Family Practice - Ascension,67778aa6-f0ab-4aac-80f9-0de0c25b2ac8,PCP / IM / FM,0,Tier 2,Coty,7,2,1,0,1,4,2025-09-10,2026-08-26,Repeat spine (strong T1),Tier 2 WITH SPINE — promote to T1
 Corewell Health Wayne Hospital Family Medicine -  Canton,1022591b-a2f2-47ed-a718-e764042f930d,PCP / IM / FM,0,Tier 1,Jasmine,6,2,1,0,1,3,2025-06-18,2026-08-05,Repeat spine (strong T1),
 Associates in Family Practice,1205856432,PCP / IM / FM,0,Tier 1,Kristen,6,2,1,0,0,4,2025-06-18,2026-04-20,Repeat spine (strong T1),
 DMC Orthopedics & Sports Medicine - Warren,1285806067,Sports / Athletics,0,Tier 1,Coty,6,2,1,0,0,4,2025-07-24,2026-02-17,Repeat spine (strong T1),
@@ -103,50 +104,51 @@ Henry Ford Orthopedics & Sports Medicine - Chesterfield,0200933e-44d0-4869-8ddd-
 "TRUST FAMILY CARE CENTER, PLLC",10524116-5eb6-4e8c-b740-351bf86df478,PCP / IM / FM,2,NOT IN BOOK,,3,2,0,0,0,1,2025-08-04,2026-05-27,Repeat spine (strong T1),PRODUCER NOT IN BOOK
 MICHIGAN PREMIER INTERNISTS,1a1e59ec-5621-4caa-a9e9-b4d86b5218e7,PCP / IM / FM,0,NOT IN BOOK,,3,2,0,0,0,1,2025-06-11,2025-10-29,Repeat spine (strong T1),PRODUCER NOT IN BOOK
 Pulmonary & Internal Medicine Specialists,2fc64685-2270-4f5f-827a-7788409cd5cd,PCP / IM / FM,1,NOT IN BOOK,,3,2,0,0,0,1,2025-07-21,2025-08-28,Repeat spine (strong T1),PRODUCER NOT IN BOOK
+Corewell Internal Medicine Southfield,5eb6a409-5e7b-430f-a462-af3a919cfc22,PCP / IM / FM,0,Tier 1,Kristen,3,2,1,0,0,1,2025-06-02,2026-08-25,Repeat spine (strong T1),
 White Lake Family Medicine,6f873c6d-498d-4d61-b717-d6648675da4e,PCP / IM / FM,0,NOT IN BOOK,,3,2,0,0,0,1,2025-06-06,2025-08-13,Repeat spine (strong T1),PRODUCER NOT IN BOOK
 SHEIKH MEDICAL CENTER,7c32d0b4-c83f-4756-924c-9c8c74996a39,PCP / IM / FM,0,Tier 1,Kristen,3,2,1,0,0,1,2025-06-02,2026-06-12,Repeat spine (strong T1),
+Hoover Primary Care Medical Group,d2472b07-69ea-403b-b954-d5d8227b1364,PCP / IM / FM,0,NOT IN BOOK,,3,2,2,0,0,1,2026-07-22,2026-08-25,Repeat spine (strong T1),PRODUCER NOT IN BOOK
 Chronic Pain Institute,11ed7e07-a278-4fda-90ea-e3baede80121,Pain,0,Tier 1,Coty,2,2,2,0,0,0,2026-06-23,2026-06-30,Repeat spine (strong T1),
 Lakewood Primary Care,39254718-ba1d-4862-adfb-cd292a8eda27,PCP / IM / FM,0,NOT IN BOOK,,2,2,2,0,0,0,2026-08-05,2026-08-07,Repeat spine (strong T1),PRODUCER NOT IN BOOK
-Corewell Internal Medicine Southfield,5eb6a409-5e7b-430f-a462-af3a919cfc22,PCP / IM / FM,0,Tier 1,Kristen,2,2,1,0,0,0,2025-06-02,2026-04-21,Repeat spine (strong T1),
 My Health Urgent Care (Ascension) - Howell,60644d75-2bd6-461f-8737-d149ab8c0ed3,Urgent care,0,Prospect,Coty,2,2,0,0,0,0,2025-06-02,2025-06-03,Repeat spine (strong T1),PROSPECT WITH SPINE — promote to T1
 Premiere Pediatrics,a8abc02a-95b9-4318-b876-60471f8fff0e,Pediatrics,1,Tier 1,Coty,2,2,2,0,0,0,2026-01-21,2026-06-16,Repeat spine (strong T1),
 Plymouth physical therapy services,cd5ff85f-ef03-49bb-bf33-ee98e3b500ec,Physical Therapy,2,Tier 1,Jasmine,2,2,1,0,0,0,2025-12-15,2026-06-10,Repeat spine (strong T1),
 Yale Community Heath Center - VA Clinic,ef22f4d0-c253-4bff-8a60-2a5eaa3168df,PCP / IM / FM,1,Tier 1,Kristen,40,1,1,0,0,39,2025-06-12,2026-08-20,T1-merit (1 spine),
-Michigan Auto Law,8bd62ae0-e836-472d-84f6-a85688fd5524,Attorney / Legal,0,Tier 1,Kristen,20,1,1,18,0,1,2026-03-09,2026-07-10,T1-merit (1 spine),
+Michigan Auto Law,8bd62ae0-e836-472d-84f6-a85688fd5524,Attorney / Legal,0,Tier 1,Kristen,22,1,1,20,0,1,2026-03-09,2026-08-10,T1-merit (1 spine),
 Henry Ford Primary Care - Orchard Lake Road North,960ab807-be26-45c0-bbf9-135ef0a45ae0,PCP / IM / FM,0,Tier 1,Kristen,17,1,1,1,2,13,2025-06-05,2026-08-11,T1-merit (1 spine),
+Brentwood Pediatric Associates,9dfbaa38-07b2-4017-9d71-ff4cd2ce42f7,Pediatrics,0,Tier 1,Kristen,17,1,1,0,1,15,2025-06-11,2026-08-28,T1-merit (1 spine),
 "Trinity Health IHA Medical Group, Primary Care - Southeast Livonia",6b70f9d5-4063-4208-85f4-1d780fabaacc,PCP / IM / FM,0,Tier 1,Jasmine,15,1,1,1,2,11,2025-06-18,2026-08-06,T1-merit (1 spine),
-Brentwood Pediatric Associates,9dfbaa38-07b2-4017-9d71-ff4cd2ce42f7,Pediatrics,0,Tier 1,Kristen,15,1,1,0,1,13,2025-06-11,2026-07-20,T1-merit (1 spine),
 Freedom Medical Clinic (Trinity),e0d8c74a-31fe-4da6-9aa4-6a2357088b6a,PCP / IM / FM,0,Tier 2,Jasmine,15,1,0,0,0,14,2025-07-09,2026-06-18,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 SUNNY PEDIATRICS AND FAMILY,2f39cd70-3e7f-4323-8222-52b01a24c007,Pediatrics,2,Tier 2,Kristen,14,1,0,0,1,12,2025-06-19,2026-07-09,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 Office of Steven Trombly MD,1407867815,PCP / IM / FM,0,Tier 1,Coty,12,1,1,0,0,11,2025-06-09,2026-06-29,T1-merit (1 spine),
 Providence Park Pediatrics - Novi,9db7de95-514d-45c7-8a73-449a08d1d590,Pediatrics,0,Tier 1,Kristen,12,1,1,0,2,9,2025-08-12,2026-08-07,T1-merit (1 spine),
 EPIC Southfield - Telegraph Rd office,e9338159-c4f0-4329-a188-50fd3d8a5ddb,PCP / IM / FM,0,Tier 1,Coty,11,1,1,0,0,10,2025-06-11,2026-07-27,T1-merit (1 spine),
+Partners in Internal Medicine,2bc5b4b8-9395-4f0a-bc36-8f7ffd755481,PCP / IM / FM,0,Prospect,Jasmine,10,1,0,0,1,8,2025-06-05,2026-08-24,T1-merit (1 spine),PROSPECT WITH SPINE — promote to T1
 Village Medical - Novi,60ca59a0-452f-4fea-8aff-cf4ef63862b7,PCP / IM / FM,0,Tier 2,Jasmine,10,1,0,0,5,4,2025-08-19,2026-08-12,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 Dedicated Senior Medical Center East Jefferson,044c28d6-68de-4f3e-855a-8606d4729ace,PCP / IM / FM,0,Prospect,Jasmine,9,1,0,0,0,8,2025-07-23,2026-07-02,T1-merit (1 spine),PROSPECT WITH SPINE — promote to T1
 Office of Robert Brateman,1548224769,PCP / IM / FM,0,Tier 2,Jasmine,9,1,0,0,0,8,2025-08-25,2026-06-16,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
-Partners in Internal Medicine,2bc5b4b8-9395-4f0a-bc36-8f7ffd755481,PCP / IM / FM,0,Prospect,Jasmine,9,1,0,0,1,7,2025-06-05,2026-06-08,T1-merit (1 spine),PROSPECT WITH SPINE — promote to T1
 Applebaum & Stone,89b27066-bd8f-45eb-b2ec-e3196a89a16c,Attorney / Legal,0,Tier 1,Kristen,9,1,1,8,0,0,2026-02-26,2026-07-10,T1-merit (1 spine),
 WEST OAKLAND INTERNISTS,b9dc6f52-5aa2-459e-98a8-79b4da67dc8a,PCP / IM / FM,0,Tier 2,Jasmine,9,1,0,0,5,3,2025-09-18,2026-07-22,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 Primal Recovery and PT,d7144e2d-aac6-4f68-a775-78db28d6b445,Physical Therapy,0,Tier 2,Kristen,9,1,1,0,0,8,2025-09-22,2026-07-28,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 Legend Health - Now One Health,078d2fa6-e81c-41d1-95f2-04234d511192,PCP / IM / FM,0,Tier 2,Kristen,8,1,1,0,5,2,2025-06-25,2026-08-05,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 Get Well Urgent Care Madison Heights,346a1335-a97f-4a1a-9847-77f9e71383c3,Urgent care,5,Tier 1,Kristen,8,1,0,1,1,5,2025-06-16,2026-08-20,T1-merit (1 spine),
+Pryde Athletics and Physical Therapy,70091951-e0bd-42eb-9eb7-c5be5ce88649,Physical Therapy,3,Tier 2,Kristen,8,1,1,0,0,7,2025-07-07,2026-08-28,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 Victor Valentino Law,740ceb33-170d-402e-b5c2-8c204cf2bdf4,Attorney / Legal,0,Tier 1,Kristen,8,1,1,7,0,0,2026-03-27,2026-07-02,T1-merit (1 spine),
 Corewell Health Family Care of Novi,74e299c3-f9b1-4d54-8e8d-b63af23ba7fd,PCP / IM / FM,0,Tier 2,Jasmine,8,1,0,0,0,7,2025-06-05,2026-06-02,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 "IHA, Primary Care - Cherry Hill Village",88f17311-2f10-4d7d-b250-085575fb31c1,PCP / IM / FM,1,Tier 2,Jasmine,8,1,0,0,0,7,2025-06-17,2026-04-23,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 Springfield Urgent Care - Highland,d438e399-8a2a-4a42-81d4-73f667a29ce6,Urgent care,7,Prospect,Coty,8,1,0,0,1,6,2025-09-22,2026-08-10,T1-merit (1 spine),PROSPECT WITH SPINE — promote to T1
 "FAMILY CARE CENTER OF HAMTRAMCK, PC",f4a7f5a0-d8e0-49ff-874a-04f12057fc5f,PCP / IM / FM,0,Tier 1,Kristen,8,1,1,2,0,5,2025-06-09,2026-08-12,T1-merit (1 spine),
 Henry Ford Macomb Internal Medicine,1841213436,PCP / IM / FM,0,Tier 1,Coty,7,1,0,0,0,6,2025-06-19,2026-07-22,T1-merit (1 spine),
+Macomb Pediatrics - Clinton Township,9e284312-a8af-43ff-9b39-5d4a8c1ed834,Pediatrics,0,NOT IN BOOK,,7,1,0,0,1,5,2025-07-02,2026-08-27,T1-merit (1 spine),PRODUCER NOT IN BOOK
 Trinity URGENT CARE CANTON,c78e3b81-c68a-4687-a4e9-a88863c2c873,Urgent care,4,Prospect,Jasmine,7,1,0,0,1,5,2025-06-17,2026-08-07,T1-merit (1 spine),PROSPECT WITH SPINE — promote to T1
 Trinity IHA Orthopedics - Schoolcraft,e5c5b135-ecad-42bb-bbbc-011dd2c4a225,Orthopedic,0,Tier 2,Jasmine,7,1,1,0,1,5,2025-06-11,2026-07-20,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
+Village Medical - Northville West,1255345930,PCP / IM / FM,0,Tier 1,Kristen,6,1,1,0,0,5,2026-01-12,2026-08-24,T1-merit (1 spine),
 GROSSE POINTE PARK INTERNAL MEDICINE CENTER,4182fa5f-6d87-4037-9102-1014f5d60056,PCP / IM / FM,5,Tier 2,Kristen,6,1,1,0,0,5,2025-06-27,2026-07-09,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 BN Nandish MD,4dee089f-61d1-4d13-9fca-62b8d8ffc312,PCP / IM / FM,0,Tier 2,Jasmine,6,1,0,0,0,5,2025-07-03,2026-04-03,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 Hope Medical Center,58979922-388f-454f-97f0-c730f11f6434,PCP / IM / FM,0,Tier 2,Coty,6,1,0,0,0,5,2025-06-19,2026-08-14,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 BEAUMONT FAMILY MEDICINE BELLEVILLE,61a031d7-889d-4b90-8391-8647f4be87ec,PCP / IM / FM,1,Tier 1,Jasmine,6,1,1,1,0,4,2026-04-27,2026-05-18,T1-merit (1 spine),
-Cornerstone Garfield Family Practice - Ascension,67778aa6-f0ab-4aac-80f9-0de0c25b2ac8,PCP / IM / FM,0,Tier 2,Coty,6,1,0,0,1,4,2025-09-10,2026-07-06,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 Family Care Physicians PC,9d72636b-2e2d-4e54-b69a-aab72e18f8a9,PCP / IM / FM,0,Tier 2,Jasmine,6,1,0,0,1,4,2025-06-19,2026-04-28,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
-Macomb Pediatrics - Clinton Township,9e284312-a8af-43ff-9b39-5d4a8c1ed834,Pediatrics,0,NOT IN BOOK,,6,1,0,0,1,4,2025-07-02,2026-07-30,T1-merit (1 spine),PRODUCER NOT IN BOOK
 Oakland Internal Medicine Associates - Henry Ford,1053422006,PCP / IM / FM,0,Tier 2,Coty,5,1,0,0,0,4,2025-10-17,2026-04-23,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
-Village Medical - Northville West,1255345930,PCP / IM / FM,0,Tier 1,Kristen,5,1,1,0,0,4,2026-01-12,2026-08-05,T1-merit (1 spine),
 Imad George MD P.C. MHP,24a73c28-f1ec-4808-8b5a-4d6702f86f8a,PCP / IM / FM,0,NOT IN BOOK,,5,1,0,0,2,2,2025-08-11,2026-07-15,T1-merit (1 spine),PRODUCER NOT IN BOOK
 Millennium Affiliated Physicians - 130B,27e5353b-7c0d-406b-be13-0d0eb3c3e200,PCP / IM / FM,0,Tier 2,Kristen,5,1,0,0,2,2,2025-08-04,2026-07-14,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 Rochester Primary Care,52b21544-4438-4ade-810b-2ce607128ed8,PCP / IM / FM,0,Tier 3,Kristen,5,1,0,0,0,4,2025-06-11,2026-03-19,T1-merit (1 spine),Tier 3 WITH SPINE — promote to T1
@@ -154,12 +156,14 @@ Henry Ford Warren Family Physicians,6771a475-3022-40fd-9db9-b8e0291f7082,PCP / I
 Epic Primary Care - Ferndale,8d70ed21-9cc0-4e04-a934-e01ab1155823,PCP / IM / FM,0,Tier 1,Coty,5,1,1,0,0,4,2025-11-17,2026-05-05,T1-merit (1 spine),
 Corewell Health-East,04ad9387-b1fe-45cd-bd14-73188de8e04a,PCP / IM / FM,0,Tier 1,Kristen,4,1,1,0,0,3,2025-07-15,2026-08-07,T1-merit (1 spine),
 Corewell Urgent Care - Royal Oak,0705419c-d214-479c-befc-96609a540921,Urgent care,0,Tier 3,Kristen,4,1,0,0,1,2,2025-07-24,2026-06-15,T1-merit (1 spine),Tier 3 WITH SPINE — promote to T1
+John R Medical Clinic,1720079437,PCP / IM / FM,0,Tier 2,Coty,4,1,0,0,0,3,2025-09-25,2026-08-24,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 Berkley Urgent Care,1774d7c7-2d8b-42c6-9dac-78c2a9cf3ed8,Urgent care,0,Tier 1,Kristen,4,1,1,0,1,2,2026-04-23,2026-08-06,T1-merit (1 spine),
 Progressive Health Care,1790797207,PCP / IM / FM,0,Tier 2,Coty,4,1,0,0,0,3,2025-07-10,2026-05-14,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 "CHARLES G GODOSHIAN, MD, PC",1a773df8-9f15-454d-a12a-8fd6751d4903,PCP / IM / FM,0,Tier 2,Kristen,4,1,0,0,2,1,2025-06-06,2026-07-27,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 Corewell Internal Medicine Midway,2ce334a8-959e-4c7d-9b94-f3d5cb4183a3,PCP / IM / FM,0,Tier 2,Coty,4,1,0,0,0,3,2025-09-16,2026-07-15,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 Tri County Neurology,3d10a23f-49c8-4b30-b87f-ae7465e0f588,Neurology,0,Tier 2,Jasmine,4,1,0,1,0,2,2025-10-27,2026-07-06,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 Michigan Primary Care - Eastpointe,4328f444-1a86-4fbb-9849-e8a159cce3e2,PCP / IM / FM,0,Tier 2,Jasmine,4,1,0,0,0,3,2025-08-21,2026-06-04,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
+Restorative Physical Medicine - Brighton,664225f4-387f-4458-bce4-0fe6ff18f13e,Pain,0,Prospect,Coty,4,1,1,0,1,2,2025-07-25,2026-08-24,T1-merit (1 spine),PROSPECT WITH SPINE — promote to T1
 Rochester Medical Group,c82c9d5d-f644-42a6-8149-43868624eb50,PCP / IM / FM,0,Tier 1,Coty,4,1,1,0,3,0,2025-07-14,2026-08-10,T1-merit (1 spine),
 Oak Street Health,cce6f965-cad7-4eb7-baf6-90f4191f2dea,PCP / IM / FM,1,Prospect,Jasmine,4,1,0,0,0,3,2025-07-22,2025-09-25,T1-merit (1 spine),PROSPECT WITH SPINE — promote to T1
 Vital Medicine,d96ab765-7e8d-447c-b9a1-72f2bcda2283,PCP / IM / FM,0,Tier 2,Coty,4,1,0,0,0,3,2025-08-20,2026-06-18,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
@@ -170,8 +174,8 @@ Corewell Health Taylor Hospital Family Medicine,116ecff0-69a2-4ab9-86a0-22de7c1a
 Normandy Family Practice,1265482095,PCP / IM / FM,0,Tier 2,Coty,3,1,0,0,0,2,2025-08-07,2026-04-01,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 Office of Lillman Dwarka MD,144c374c-b718-48c1-9b9f-daffbf7ba530,PCP / IM / FM,0,NOT IN BOOK,,3,1,0,0,0,2,2025-06-02,2025-11-19,T1-merit (1 spine),PRODUCER NOT IN BOOK
 "APOLLO HEALTH SERVICES, PC",1689099f-fc6b-4174-9111-5dce70adbd66,PCP / IM / FM,0,Tier 1,Jasmine,3,1,1,0,0,2,2025-10-30,2026-03-31,T1-merit (1 spine),
-John R Medical Clinic,1720079437,PCP / IM / FM,0,Tier 2,Coty,3,1,0,0,0,2,2025-09-25,2026-06-25,T1-merit (1 spine),Tier 2 WITH SPINE — promote to T1
 Michigan Institute for Neurological Disorders (MIND) - Farmington Hills,1962472241,Pain,0,Tier 3,Coty,3,1,1,0,0,2,2026-03-24,2026-05-01,T1-merit (1 spine),Tier 3 WITH SPINE — promote to T1
+Gregory Gould DO,1bdbcaac-c199-419d-b5a3-2b7eab4315d3,PCP / IM / FM,0,Prospect,Coty,3,1,1,0,0,2,2025-06-10,2026-08-24,T1-merit (1 spine),PROSPECT WITH SPINE — promote to T1
 Trinity Health IHA Medical Group Primary Care - Canton,25a91d51-ca80-40cd-88ea-8b37beaa2ea8,PCP / IM / FM,0,Tier 1,Jasmine,3,1,1,0,0,2,2025-07-01,2026-07-06,T1-merit (1 spine),
 MALI AND MALI PEDIATRICS - use this one,2e26f7de-9e76-464a-a322-fbef639b64d7,Pediatrics,1,NOT IN BOOK,,3,1,0,0,0,2,2025-08-12,2025-12-03,T1-merit (1 spine),PRODUCER NOT IN BOOK
 Prism Medical Group - Family Medicine Ste 160,302f7a03-fbf7-4ffa-ad89-f1a3c3c580c1,PCP / IM / FM,0,Prospect,Coty,3,1,0,0,1,1,2025-07-17,2025-09-05,T1-merit (1 spine),PROSPECT WITH SPINE — promote to T1
@@ -221,7 +225,6 @@ Henry Ford Medical Center Internal & Family Medicine - Commerce,b62b6c0d-23c2-40
 "WAYNE COMMUNITY HEALTH CENTERS, INC",b89491cd-a8b2-4493-8dba-2e2146e504a0,PCP / IM / FM,0,NOT IN BOOK,,2,1,1,0,0,1,2026-08-04,2026-08-06,T1-merit (1 spine),PRODUCER NOT IN BOOK
 Park Medical Center (Medicaid),c4cc522a-15ee-4dcb-8312-cc7b7efdf995,PCP / IM / FM,0,Tier 1,Jasmine,2,1,1,0,0,1,2026-01-13,2026-01-19,T1-merit (1 spine),
 Byron Medical Group,d0991686-438d-4fe9-84fd-07bb3b2bbec1,PCP / IM / FM,0,Prospect,Coty,2,1,0,0,0,1,2025-09-26,2025-10-08,T1-merit (1 spine),PROSPECT WITH SPINE — promote to T1
-Hoover Primary Care Medical Group,d2472b07-69ea-403b-b954-d5d8227b1364,PCP / IM / FM,0,NOT IN BOOK,,2,1,1,0,0,1,2026-07-22,2026-08-20,T1-merit (1 spine),PRODUCER NOT IN BOOK
 Jawad Agha MD - Hazel Park Urgent Care,e2ff9b74-2f79-451c-a250-faabdd5cdea5,PCP / IM / FM,0,Prospect,Kristen,2,1,0,0,0,1,2025-06-19,2025-06-19,T1-merit (1 spine),PROSPECT WITH SPINE — promote to T1
 Lupo Chiropractic Center,ea3dd183-15b5-491c-b6b5-55d6404f4a22,Chiropractor,0,Tier 1,Kristen,2,1,0,1,0,0,2025-10-15,2026-02-12,T1-merit (1 spine),
 Core Med  - White Lake,ecbe00dd-1c49-4028-a575-d8852e23deba,PCP / IM / FM,0,NOT IN BOOK,,2,1,0,0,1,0,2025-08-05,2025-11-25,T1-merit (1 spine),PRODUCER NOT IN BOOK
@@ -239,6 +242,7 @@ Suzanne Romadan MD,15026899-b09b-464e-b26a-4486bbf3eea1,PCP / IM / FM,0,NOT IN B
 Trinity IHA Pediatrics - Domino's Farms,16bd8198-306b-4789-8dc0-841b092264f5,Pediatrics,1,NOT IN BOOK,,1,1,1,0,0,0,2026-05-27,2026-05-27,T1-merit (1 spine),PRODUCER NOT IN BOOK
 Cornerstone Lakefront Internists,16c0ac85-6d3c-4c74-97b4-385a2a7fac00,PCP / IM / FM,0,Tier 1,Kristen,1,1,1,0,0,0,2026-02-10,2026-02-10,T1-merit (1 spine),
 McLaren Macomb Neurology,1bbdc392-4094-4dce-8e3e-18e33a01eb19,Neurology,1,NOT IN BOOK,,1,1,1,0,0,0,2026-06-03,2026-06-03,T1-merit (1 spine),PRODUCER NOT IN BOOK
+CROSSOVER HEALTH - ROYAL OAK,2024c27b-934c-438a-b4a9-9f569f25bfd5,PCP / IM / FM,0,NOT IN BOOK,,1,1,1,0,0,0,2026-08-24,2026-08-24,T1-merit (1 spine),PRODUCER NOT IN BOOK
 Holistic Chiropractic,238493f1-252e-44f0-8f33-c840c2ac0e34,Chiropractor,1,NOT IN BOOK,,1,1,0,0,0,0,2025-08-14,2025-08-14,T1-merit (1 spine),PRODUCER NOT IN BOOK
 Premier Family Medicine - Livingston,24e0dcd5-ef5f-4db1-af06-f9751bb1d6a8,PCP / IM / FM,0,Prospect,Coty,1,1,0,0,0,0,2025-12-31,2025-12-31,T1-merit (1 spine),PROSPECT WITH SPINE — promote to T1
 Hartland Medicine,27f8fc51-febd-43df-8d52-3402d39efb8f,PCP / IM / FM,0,NOT IN BOOK,,1,1,1,0,0,0,2026-01-23,2026-01-23,T1-merit (1 spine),PRODUCER NOT IN BOOK
@@ -247,6 +251,7 @@ HEALTHY LIVING INTERNAL MEDICINE -2190,37d3727a-bceb-4683-8b2f-7877e66d02a5,PCP 
 "IMMEDIATE CARE MEDICAL CENTER, PC",385dee98-3fbb-4b0d-b39e-a336562f26d0,PCP / IM / FM,0,Prospect,Jasmine,1,1,0,0,0,0,2025-06-06,2025-06-06,T1-merit (1 spine),PROSPECT WITH SPINE — promote to T1
 DEARBORN HEIGHTS MEDICAL CENTER,3d95d010-52eb-4841-9316-22220693c3bd,Unknown,0,NOT IN BOOK,,1,1,0,0,0,0,2025-10-14,2025-10-14,T1-merit (1 spine),PRODUCER NOT IN BOOK
 Mercy Family Care Center,3dfcef6a-be30-4421-b9ae-e70c90558ff6,PCP / IM / FM,0,NOT IN BOOK,,1,1,1,0,0,0,2026-08-03,2026-08-03,T1-merit (1 spine),PRODUCER NOT IN BOOK
+Waterford Clinic and Urgent Care,48a82421-a6d1-4f19-a9ae-b0175f5da78a,Urgent care,0,NOT IN BOOK,,1,1,1,0,0,0,2026-08-26,2026-08-26,T1-merit (1 spine),PRODUCER NOT IN BOOK
 McLaren Macomb Family First,4d131d76-2f91-472e-bf42-c1ae3f5f7622,PCP / IM / FM,1,NOT IN BOOK,,1,1,1,0,0,0,2026-07-07,2026-07-07,T1-merit (1 spine),PRODUCER NOT IN BOOK
 Franklin Medical Consultants,559bee40-1fa3-437d-9e4b-692838015293,PCP / IM / FM,0,NOT IN BOOK,,1,1,0,0,0,0,2025-11-24,2025-11-24,T1-merit (1 spine),PRODUCER NOT IN BOOK
 "ALAN L FELDMAN, DO, PC",5d0e63d7-bdd3-445e-a627-ef0ea5dc48f7,PCP / IM / FM,0,NOT IN BOOK,,1,1,0,0,0,0,2025-10-27,2025-10-27,T1-merit (1 spine),PRODUCER NOT IN BOOK
@@ -275,20 +280,20 @@ Tedd March,e1818c9d-7718-4454-ab0c-0a8e8c3b9f7f,PCP / IM / FM,0,NOT IN BOOK,,1,1
 Trinity IHA Primary & Urgent Care - South Lyon,efc01329-3254-49cb-8fd4-1a6de92fe5ba,PCP / IM / FM,0,NOT IN BOOK,,1,1,0,0,0,0,2025-08-25,2025-08-25,T1-merit (1 spine),PRODUCER NOT IN BOOK
 Sudha Nannapaneni MD,f9518cc9-e8e8-4517-8250-4768d176ee8c,PCP / IM / FM,0,Tier 1,Coty,1,1,1,0,0,0,2026-01-20,2026-01-20,T1-merit (1 spine),
 Trinity Medical Center,fd916cf0-7e60-4f1d-bf81-a8f9d6051c63,PCP / IM / FM,0,NOT IN BOOK,,1,1,0,0,0,0,2025-08-05,2025-08-05,T1-merit (1 spine),PRODUCER NOT IN BOOK
-Mike Morse Law Firm,2dd4a698-eeec-4552-98ba-d85b130bcc56,Attorney / Legal,0,Tier 1,Kristen,168,0,0,164,1,3,2025-08-28,2026-08-05,No spine yet,T1 — feeds telehealth intake (spine outcomes not visible in this tab)
-Berry Johnson Health,1134320930,PCP / IM / FM,0,Tier 3,Kristen,26,0,0,0,24,2,2025-07-21,2026-08-20,No spine yet,
+Mike Morse Law Firm,2dd4a698-eeec-4552-98ba-d85b130bcc56,Attorney / Legal,0,Tier 1,Kristen,171,0,0,167,1,3,2025-08-28,2026-08-17,No spine yet,T1 — feeds telehealth intake (spine outcomes not visible in this tab)
+Berry Johnson Health,1134320930,PCP / IM / FM,0,Tier 3,Kristen,27,0,0,0,25,2,2025-07-21,2026-08-24,No spine yet,
 Physician HealthCare Network Urgent Care and Walk In- Fort Gratiot,4c053f65-6667-471a-9d5b-ee08b564d031,PCP / IM / FM,0,Tier 1,Kristen,26,0,0,0,0,26,2025-06-16,2026-08-20,No spine yet,T1 WITH NO SPINE since 6/2025 — review
+Henry Ford Health - Family Medicine 8 Mile Livonia,22476694-35cd-4d2b-b17f-07cee1f1db4b,PCP / IM / FM,0,Tier 2,Kristen,21,0,0,0,5,16,2025-06-11,2026-08-24,No spine yet,
 Haller and Hug Internal Medicine,9019b0af-745f-41ea-a4ab-4e72321359d9,PCP / IM / FM,0,Tier 2,Kristen,21,0,0,0,15,6,2025-07-25,2026-07-28,No spine yet,
-Henry Ford Health - Family Medicine 8 Mile Livonia,22476694-35cd-4d2b-b17f-07cee1f1db4b,PCP / IM / FM,0,Tier 2,Kristen,20,0,0,0,5,15,2025-06-11,2026-08-18,No spine yet,
 Patrick Kut MD PC,eca14fb7-48cb-4968-b258-b97a854b34c1,PCP / IM / FM,0,Tier 2,Kristen,20,0,0,0,0,20,2025-06-16,2026-08-12,No spine yet,
 Port Huron Medicine Associates,1245235654,PCP / IM / FM,1,Tier 1,Kristen,18,0,0,0,0,18,2025-06-19,2026-08-20,No spine yet,T1 WITH NO SPINE since 6/2025 — review
+DEDICATED SENIOR MEDICAL CENTER - Southfield,12deaf83-0f5e-4bd5-bf07-a4026935ffd1,PCP / IM / FM,4,Tier 3,Jasmine,18,0,0,0,4,14,2025-07-02,2026-08-26,No spine yet,
 Corewell Health Wayne Hospital Internal Medicine - Canton,1c7828ed-eebc-45ad-a838-28fbb2264e48,PCP / IM / FM,1,Tier 2,Jasmine,18,0,0,1,1,16,2025-06-11,2026-08-17,No spine yet,
-DEDICATED SENIOR MEDICAL CENTER - Southfield,12deaf83-0f5e-4bd5-bf07-a4026935ffd1,PCP / IM / FM,4,Tier 3,Jasmine,17,0,0,0,4,13,2025-07-02,2026-08-17,No spine yet,
 "PRAVEEN MODI, MD, PC",63a72095-741a-43fe-b865-a1f6398ee484,PCP / IM / FM,0,Tier 2,Kristen,17,0,0,0,0,17,2025-07-24,2026-08-19,No spine yet,
 Dedicated Senior Medical Center - Warren,95ae3078-f17c-44de-af58-d9fc8e58f4de,PCP / IM / FM,0,Tier 2,Jasmine,17,0,0,0,1,16,2025-11-21,2026-08-10,No spine yet,
 Mitchell Medical Center,3a600778-0104-4e04-b9d4-feb46e567bd7,PCP / IM / FM,9,Tier 1,Kristen,16,0,0,0,0,16,2025-06-19,2026-08-06,No spine yet,T1 WITH NO SPINE since 6/2025 — review
+Premier Internists - Suite 180,23ff4711-fcf4-4eb3-bd86-aa07b5332791,PCP / IM / FM,0,Tier 2,Kristen,14,0,0,0,12,2,2025-07-24,2026-08-28,No spine yet,
 Kajy Law,3b453978-15f0-429d-ab43-67d84178b21f,Attorney / Legal,0,Tier 1,Kristen,14,0,0,14,0,0,2026-02-26,2026-08-03,No spine yet,T1 — feeds telehealth intake (spine outcomes not visible in this tab)
-Premier Internists - Suite 180,23ff4711-fcf4-4eb3-bd86-aa07b5332791,PCP / IM / FM,0,Tier 2,Kristen,13,0,0,0,11,2,2025-07-24,2026-07-27,No spine yet,
 Ross Law,86e7413a-57df-4cba-adee-c6d0a8e55b63,Attorney / Legal,0,Tier 1,Kristen,13,0,0,12,0,1,2026-04-30,2026-08-05,No spine yet,T1 — feeds telehealth intake (spine outcomes not visible in this tab)
 "FERRIS, MARY C, MEDICAL GROUP",a5a045ce-889d-4018-81f5-3fd8d3d7af6b,PCP / IM / FM,0,Tier 1,Kristen,13,0,0,2,0,11,2025-06-10,2026-07-09,No spine yet,T1 — feeds telehealth intake (spine outcomes not visible in this tab)
 Cornerstone St. Clair Internists,cc9cf66d-2e3c-4e56-9aeb-85ba4b7e600c,PCP / IM / FM,1,Tier 2,Kristen,13,0,0,0,0,13,2025-08-20,2026-08-12,No spine yet,
@@ -313,14 +318,15 @@ Physician HealthCare Network,1134195258,PCP / IM / FM,1,Tier 2,Kristen,7,0,0,0,0
 Eastpointe Family Physicians,1578685921,PCP / IM / FM,0,Tier 1,Jasmine,7,0,0,2,0,5,2025-10-07,2026-05-15,No spine yet,T1 — feeds telehealth intake (spine outcomes not visible in this tab)
 Dedicated Senior Medical Center - Eastpointe,461fe196-5467-4d92-bec8-0125858453c8,PCP / IM / FM,0,Tier 2,Jasmine,7,0,0,0,1,6,2025-07-02,2026-08-12,No spine yet,
 Physician HeathCare Network - Michele Raymond DO,6904e522-5104-4c29-ae02-e787473b0edf,PCP / IM / FM,0,Tier 2,Kristen,7,0,0,0,0,7,2025-06-26,2026-04-16,No spine yet,
-Pryde Athletics and Physical Therapy,70091951-e0bd-42eb-9eb7-c5be5ce88649,Physical Therapy,3,Tier 2,Kristen,7,0,0,0,0,7,2025-07-07,2026-08-11,No spine yet,
 Safir Law,797c97ec-e6b4-42b3-920e-e16a6364e0c9,Attorney / Legal,0,Tier 1,Kristen,7,0,0,7,0,0,2025-10-01,2026-05-29,No spine yet,T1 — feeds telehealth intake (spine outcomes not visible in this tab)
 John Mullally MD PC,b257a3dd-4296-4f0d-89f2-7d9f845a231e,PCP / IM / FM,0,Tier 1,Kristen,7,0,0,0,0,7,2025-06-24,2026-04-28,No spine yet,T1 WITH NO SPINE since 6/2025 — review
 Novi Medicine,bd0ee186-9de1-49f1-b6f7-85fc538efd3b,PCP / IM / FM,0,Tier 3,Jasmine,7,0,0,0,7,0,2025-09-23,2026-08-17,No spine yet,
 Wadhams Family Care,16b28f94-4956-4a84-8936-0ae7dbe24994,PCP / IM / FM,0,Tier 2,Kristen,6,0,0,0,0,6,2025-06-12,2026-05-28,No spine yet,
 Excel Health,1730132077,PCP / IM / FM,0,NOT IN BOOK,,6,0,0,0,2,4,2025-06-06,2026-07-14,No spine yet,
+APH - Pavillion IM Use this one,2042f8c4-062b-497d-93cd-a5501bc57707,PCP / IM / FM,0,Tier 2,Kristen,6,0,0,0,2,4,2025-08-05,2026-08-27,No spine yet,
 Corewell Health Farmington Hills Hospital Family Medicine,3edb39b0-eee8-436d-b215-e28e186500be,PCP / IM / FM,0,Tier 2,Kristen,6,0,0,0,0,6,2025-06-27,2026-07-24,No spine yet,
 UofM Canton Health Center General Medicine,400aeb1f-6186-4eb7-98c8-0544491af836,PCP / IM / FM,0,Tier 2,Jasmine,6,0,0,1,1,4,2025-07-03,2026-07-14,No spine yet,
+Henry Ford Internists - Farmington Hills 150,85ababc7-e294-4225-8cc7-28b8a5b1b9e2,PCP / IM / FM,0,Tier 2,Kristen,6,0,0,1,1,4,2025-06-19,2026-08-27,No spine yet,
 Corewell Health Family Medicine - Farmington Hills,f4e08b14-ec91-4b48-b82c-2c7f762bf721,PCP / IM / FM,0,Tier 2,Kristen,6,0,0,0,3,3,2025-11-12,2026-08-03,No spine yet,
 Souva PT and Performance,ff1e6dda-d122-4127-b4fe-e380950051e4,Physical Therapy,0,Tier 2,Kristen,6,0,0,0,0,6,2025-12-19,2026-05-26,No spine yet,
 Plumbrook Medical Center,1013009901,PCP / IM / FM,0,Tier 2,Kristen,5,0,0,0,1,4,2025-08-04,2026-02-02,No spine yet,
@@ -329,16 +335,15 @@ ESSENTIAL CARE FAMILY MEDICINE,131adcde-9fdc-45db-af94-831482a14212,PCP / IM / F
 "Lawrence Lipnik MD,",1366444705,PCP / IM / FM,0,Prospect,Jasmine,5,0,0,0,0,5,2025-06-16,2026-08-17,No spine yet,
 Legacy Family Medicine,1558340356,PCP / IM / FM,0,Tier 2,Kristen,5,0,0,0,0,5,2025-10-15,2026-06-05,No spine yet,
 MHP Internal Medicine,1699828632,PCP / IM / FM,0,Tier 2,Coty,5,0,0,0,0,5,2025-06-11,2026-05-27,No spine yet,
-APH - Pavillion IM Use this one,2042f8c4-062b-497d-93cd-a5501bc57707,PCP / IM / FM,0,Tier 2,Kristen,5,0,0,0,1,4,2025-08-05,2026-04-20,No spine yet,
 Prism Medical Group - Internal Medicine,2e8aa328-e0cf-478e-8b39-00f6628c15ac,PCP / IM / FM,0,Tier 2,Coty,5,0,0,0,0,5,2025-07-15,2026-03-26,No spine yet,
 Total Urgent Care - Imlay City,6cdc4f2a-f64d-445d-b603-11a563abda77,Urgent care,0,Prospect,Kristen,5,0,0,0,0,5,2025-09-04,2026-01-12,No spine yet,
 Sterling Heights Urgent Care,719fbbb9-0131-4ed6-bfd7-14646d9c41fb,Urgent care,0,Tier 2,Kristen,5,0,0,0,1,4,2025-12-03,2026-04-17,No spine yet,
 MDVip - Southfield,795ab9a0-8c97-4995-83b6-2fe8b10fcf2a,PCP / IM / FM,0,Tier 2,Kristen,5,0,0,0,1,4,2025-11-10,2026-08-13,No spine yet,
 Corewell Urgent Care - Garden City,7db80555-4d31-47b0-904c-cd43fb08b2ee,Urgent care,0,Tier 2,Kristen,5,0,0,0,2,3,2025-09-17,2026-06-22,No spine yet,
 Pavilion Family Practice - use this one,81d28e80-f8a8-4a1f-a027-35e8a21e8366,PCP / IM / FM,0,Tier 2,Kristen,5,0,0,0,1,4,2025-08-19,2026-06-22,No spine yet,
-Henry Ford Internists - Farmington Hills 150,85ababc7-e294-4225-8cc7-28b8a5b1b9e2,PCP / IM / FM,0,Tier 2,Kristen,5,0,0,1,0,4,2025-06-19,2026-05-04,No spine yet,
 Dedicated senior Medical Center Detroit North,85d28577-5be8-4372-8c7e-9a349c62e50d,PCP / IM / FM,0,Tier 2,Jasmine,5,0,0,0,0,5,2025-09-22,2026-06-03,No spine yet,
 Jefferson Family Practice (Cornerstone),9b2159ca-9617-4ade-8a25-85a92fcca972,PCP / IM / FM,0,Tier 1,Kristen,5,0,0,3,1,1,2025-06-06,2026-03-12,No spine yet,T1 — feeds telehealth intake (spine outcomes not visible in this tab)
+Premier Pediatrics Dearborn Heights,bb55a71e-e12b-49be-9449-435cdc38cca4,Pediatrics,0,Tier 2,Kristen,5,0,0,1,0,4,2026-01-22,2026-07-29,No spine yet,
 Office of David Mandy DO,da57adc9-a2cf-4705-886d-76146cbbde06,Pediatrics,0,Tier 2,Kristen,5,0,0,0,1,4,2025-12-12,2026-08-10,No spine yet,
 Care Choice LLC,ec8b9b1e-8728-4ac2-a391-aa0574a58e5d,PCP / IM / FM,0,NOT IN BOOK,,5,0,0,0,0,5,2025-08-27,2025-10-27,No spine yet,
 Dr. Carley and Associates,045c37c9-22cf-4959-b217-ecbbf986a60c,PCP / IM / FM,0,Tier 2,Kristen,4,0,0,0,0,4,2025-08-26,2026-05-14,No spine yet,
@@ -357,7 +362,6 @@ Beaumont Associated Family Care - Warren,81c6691d-f02d-49d9-940d-49ca3462c7fa,PC
 Grosse Pointe Physicians and Surgeons,8c2316fd-41e0-4fe5-b02a-8a481768ec08,PCP / IM / FM,0,Tier 2,Kristen,4,0,0,0,0,4,2025-12-08,2026-08-20,No spine yet,
 "MEDICAL GROUP PRACTICE, PC (remove)",931a0b27-6417-43b6-a15a-c3eac7f8203a,PCP / IM / FM,0,NOT IN BOOK,,4,0,0,0,0,4,2025-08-22,2026-07-24,No spine yet,
 MHP - West,ad377c20-ff69-40a9-a224-4a5787ab13bb,PCP / IM / FM,0,Tier 2,Kristen,4,0,0,0,1,3,2026-03-10,2026-08-14,No spine yet,
-Premier Pediatrics Dearborn Heights,bb55a71e-e12b-49be-9449-435cdc38cca4,Pediatrics,0,Tier 2,Kristen,4,0,0,0,0,4,2026-01-22,2026-05-29,No spine yet,
 Oak Street Health – Hazel Park,e3a99c41-ef87-4be9-8e02-1ca4d4db2c36,PCP / IM / FM,0,Prospect,Coty,4,0,0,0,0,4,2025-08-19,2025-12-04,No spine yet,
 Lexington Family Medicine,e91e6824-c768-4d8f-a1d0-2c6cb005cc47,PCP / IM / FM,0,Tier 1,Kristen,4,0,0,1,0,3,2025-09-04,2026-07-10,No spine yet,T1 — feeds telehealth intake (spine outcomes not visible in this tab)
 Physician HeathCare Network - Marysville,f6ae01d5-e2aa-485f-93b1-7586e5fdcd26,PCP / IM / FM,0,Tier 2,Kristen,4,0,0,0,0,4,2025-09-17,2026-04-08,No spine yet,
@@ -369,6 +373,7 @@ MD VIP - Trenton,0e7f5d40-b8a0-4524-96a4-2229c7d1e5e7,PCP / IM / FM,0,Tier 2,Jas
 Allied Internists,1063423176,PCP / IM / FM,0,Tier 2,Kristen,3,0,0,0,0,3,2025-09-17,2026-07-14,No spine yet,
 Cornerstone Internal Medicine,1124006333,PCP / IM / FM,0,Tier 1,Coty,3,0,0,0,0,3,2025-11-12,2026-04-10,No spine yet,T1 WITH NO SPINE since 6/2025 — review
 Shores Internal Medicine,1154434975,PCP / IM / FM,0,Tier 2,Coty,3,0,0,1,0,2,2025-12-05,2026-06-24,No spine yet,
+Corondan Medical,1376594887,PCP / IM / FM,0,Tier 2,Coty,3,0,0,0,0,3,2025-10-15,2026-08-27,No spine yet,
 Southfield Pediatrics,1508856048,Pediatrics,0,NOT IN BOOK,,3,0,0,0,1,2,2025-08-25,2026-06-22,No spine yet,
 Henry Ford Family Medicine/Internal Medicine  - Novi,15ebb26a-5efc-4ce7-9eb1-60fb9bd5f6c9,PCP / IM / FM,1,Prospect,Jasmine,3,0,0,1,0,2,2025-07-01,2026-07-31,No spine yet,
 Pioneer Medical Associates - Warren,1750481842,PCP / IM / FM,0,Tier 2,Kristen,3,0,0,0,0,3,2025-06-20,2026-03-18,No spine yet,
@@ -377,6 +382,7 @@ University Orthopedic Specialists,1790722338,Orthopedic,0,Prospect,Coty,3,0,0,0,
 Henry Ford Medical Center - Warren,1932273448,PCP / IM / FM,1,Prospect,Kristen,3,0,0,0,0,3,2025-10-21,2026-05-13,No spine yet,
 Physicians in Family Medicine,1932288693,PCP / IM / FM,0,Tier 2,Coty,3,0,0,0,0,3,2025-09-19,2026-06-09,No spine yet,
 Get Well Urgent Care - Sterling Heights,1bcc2e23-5fc1-428c-ad41-dc35c5345bf7,Urgent care,0,Tier 1,Kristen,3,0,0,1,0,2,2025-12-30,2026-05-26,No spine yet,T1 — feeds telehealth intake (spine outcomes not visible in this tab)
+Corewell Health Urgent Care,1d0a3fc4-bd55-4b73-b1fa-eb6ad99ce4e0,Urgent care,0,NOT IN BOOK,,3,0,0,0,0,3,2026-07-13,2026-08-25,No spine yet,
 Michigan Urgent Care - Livonia,1d453948-16d6-4da0-a7d9-80b603bedb9b,Urgent care,0,Tier 2,Jasmine,3,0,0,0,0,3,2026-01-12,2026-07-02,No spine yet,
 Christensen Law,1ddf5ef9-8562-4164-9faa-60a49c6aa066,Attorney / Legal,0,Tier 1,Kristen,3,0,0,3,0,0,2026-04-02,2026-05-26,No spine yet,T1 — feeds telehealth intake (spine outcomes not visible in this tab)
 "AMITY INTERNAL MEDICINE, PC - MDVIP",2017eed7-ed9d-4f91-9331-1ef38e38e724,PCP / IM / FM,0,NOT IN BOOK,,3,0,0,0,1,2,2025-07-30,2025-09-26,No spine yet,
@@ -391,7 +397,6 @@ Elite Family Medicine,3b700a13-2f3b-4e83-bd1f-61bd1cca19e6,PCP / IM / FM,0,Tier 
 FAMILY FIRST HEALTHCARE ARMADA,4577fb37-d9fa-4419-b6fb-c03631ab0fb4,PCP / IM / FM,0,NOT IN BOOK,,3,0,0,0,0,3,2025-08-26,2026-04-28,No spine yet,
 Superior Family Medicine - Health Venters Detroit -use this onea,49af378b-9c15-4649-815d-958a79af2f84,PCP / IM / FM,0,Tier 2,Kristen,3,0,0,1,0,2,2025-06-03,2026-07-09,No spine yet,
 Corewell Urgent Care - Troy Big Beaver,511c5edc-9fe5-44dc-b631-69f48c935e73,Urgent care,0,Prospect,Kristen,3,0,0,0,0,3,2026-02-20,2026-07-13,No spine yet,
-Restorative Physical Medicine - Brighton,664225f4-387f-4458-bce4-0fe6ff18f13e,Pain,0,Prospect,Coty,3,0,0,0,1,2,2025-07-25,2026-07-23,No spine yet,
 Correct Cornerstone Pediatrics - 9 Mile,73e281ce-3e3c-4048-afb7-bb11160a109f,Pediatrics,0,NOT IN BOOK,,3,0,0,0,0,3,2025-10-24,2026-08-12,No spine yet,
 Sam Bernstein Law,763b439e-f902-4c9a-b7a7-345cf16d00e0,Attorney / Legal,0,NOT IN BOOK,,3,0,0,3,0,0,2026-03-27,2026-07-22,No spine yet,
 BASEL BRIKHO MEDICAL GROUP - use this one,7f38b648-2666-44e3-ad8a-135b873364c5,PCP / IM / FM,0,Tier 2,Kristen,3,0,0,0,0,3,2026-05-05,2026-08-03,No spine yet,
@@ -413,7 +418,6 @@ BEAUMONT ATHENS CLINIC TAYLOR,07d227b8-b9ff-4616-9f9b-f3e3ac05f4b1,PCP / IM / FM
 Providence Family & Athletic Medicine,0b63a258-0396-414a-a240-3ffdff24c7d4,PCP / IM / FM,0,Prospect,Coty,2,0,0,0,0,2,2026-06-24,2026-08-13,No spine yet,
 Michigan Orthopaedic & Spine Surgeons,0c7e4fda-32b4-4999-afc5-3ead3985f8c9,Orthopedic,0,NOT IN BOOK,,2,0,0,0,0,2,2025-08-11,2026-06-03,No spine yet,
 Waypointe Internal Medicine,1164469821,PCP / IM / FM,0,Tier 2,Kristen,2,0,0,0,0,2,2025-10-21,2026-03-20,No spine yet,
-Corondan Medical,1376594887,PCP / IM / FM,0,Tier 2,Coty,2,0,0,0,0,2,2025-10-15,2026-04-01,No spine yet,
 Michigan Neurology and Spine Center,137ab9e0-c65d-4932-9dc5-f8b83b872e50,Pain,0,Tier 1,Kristen,2,0,0,0,0,2,2025-10-09,2026-05-12,No spine yet,T1 WITH NO SPINE since 6/2025 — review
 Somerset Family Medicine - Sterling Heights,1386634632,PCP / IM / FM,0,Prospect,Coty,2,0,0,0,0,2,2026-02-19,2026-02-24,No spine yet,
 Woods Cardiovascular Internal Medicine Associates - Macomb,1396736724,PCP / IM / FM,0,Prospect,Coty,2,0,0,0,0,2,2025-09-10,2025-10-23,No spine yet,
@@ -430,8 +434,7 @@ Office of Jeff The DO,1710940242,PCP / IM / FM,0,Tier 2,Jasmine,2,0,0,2,0,0,2026
 Saurabh Gupta MD,1912926510,PCP / IM / FM,0,Tier 2,Coty,2,0,0,0,0,2,2026-07-06,2026-07-21,No spine yet,
 Beaumont Family Medicine - Sterling Heights,1952519001,PCP / IM / FM,0,Tier 3,Kristen,2,0,0,0,0,2,2026-04-16,2026-07-17,No spine yet,
 Downriver Internists,1992798961,PCP / IM / FM,0,Tier 2,Kristen,2,0,0,0,0,2,2026-05-11,2026-05-14,No spine yet,
-Gregory Gould DO,1bdbcaac-c199-419d-b5a3-2b7eab4315d3,PCP / IM / FM,0,Prospect,Coty,2,0,0,0,0,2,2025-06-10,2025-06-24,No spine yet,
-Corewell Health Urgent Care,1d0a3fc4-bd55-4b73-b1fa-eb6ad99ce4e0,Urgent care,0,NOT IN BOOK,,2,0,0,0,0,2,2026-07-13,2026-07-28,No spine yet,
+Wigod & Falzon,1da57554-aa50-483a-b1a8-060ff843ff7c,Attorney / Legal,0,Tier 1,Kristen,2,0,0,2,0,0,2026-06-17,2026-08-12,No spine yet,T1 — feeds telehealth intake (spine outcomes not visible in this tab)
 TRINITY HEALTH URGENT CARE- Livonia,21da51f8-241e-484b-9dac-cd0c99714ca6,Urgent care,0,Prospect,Jasmine,2,0,0,0,0,2,2025-11-12,2025-12-17,No spine yet,
 Clarkston Medical Group,24639120-4fbe-4135-8d9e-1409bb0fd8cb,PCP / IM / FM,0,Tier 2,Coty,2,0,0,0,0,2,2025-06-20,2026-04-17,No spine yet,
 Croswell Clinic - McKenzie Health System,2ac1e0f1-866e-4ffa-a132-1099d6d87433,PCP / IM / FM,0,Tier 2,Kristen,2,0,0,0,0,2,2025-06-24,2026-03-31,No spine yet,
@@ -457,6 +460,7 @@ Doctors urgent care,5d20f222-29ea-4029-b53a-fb46b570224a,Urgent care,0,Prospect,
 John Vassallo MD -Howell,61237db8-8f80-4520-af3b-5c71bf4de45f,PCP / IM / FM,2,NOT IN BOOK,,2,0,0,0,0,2,2026-04-14,2026-07-28,No spine yet,
 Maplecrest Medical Urgent Care,65b1fbb3-7ede-4c04-85dd-5d6d03be8a00,Urgent care,0,NOT IN BOOK,,2,0,0,0,0,2,2025-08-18,2025-09-16,No spine yet,
 North Macomb Medical Associates,7250fa4c-09c2-418b-94d4-8badec5b77f7,PCP / IM / FM,0,Tier 1,Coty,2,0,0,0,0,2,2025-08-13,2026-06-09,No spine yet,T1 WITH NO SPINE since 6/2025 — review
+Partners in internal medicine,786ed37c-07e8-4c29-9917-ecab0fe8d600,PCP / IM / FM,2,Prospect,Jasmine,2,0,0,0,0,2,2025-08-05,2026-08-25,No spine yet,
 BEAUMONT FAMILY MEDICINE GARDEN CITY,796ef668-29ca-4cac-84b8-fd8125eb6bde,PCP / IM / FM,0,Tier 3,Jasmine,2,0,0,0,1,1,2025-09-17,2026-03-30,No spine yet,
 Marko Law,7adfcce2-7d98-4f4d-aaa5-95eb30889397,Attorney / Legal,0,Tier 2,Kristen,2,0,0,2,0,0,2026-05-15,2026-05-21,No spine yet,
 Michigan Institute for Neurological Disorders (MIND) - Roseville,7d9074be-0dfe-445c-9ff8-65b5eadde58e,Pain,0,Tier 3,Coty,2,0,0,0,0,2,2025-10-28,2026-01-27,No spine yet,
@@ -480,6 +484,7 @@ Troy Health Center,c80937d7-1504-43ae-af51-bb0f13603168,PCP / IM / FM,0,Tier 2,C
 Shelby Pediatric Associates & Child Lung Center,cbb6770d-0a7e-4610-a0a9-34566000818b,Pediatrics,0,NOT IN BOOK,,2,0,0,0,0,2,2025-09-15,2025-12-09,No spine yet,
 CENTER FOR INTERNAL MEDICINE CONTINUITY CLINIC,ce969d89-5e72-4361-9024-039ad31f5bc3,PCP / IM / FM,0,Tier 2,Jasmine,2,0,0,0,0,2,2025-08-15,2026-01-13,No spine yet,
 Alliance - Macomb,cfa43a87-0a00-4e16-8816-57177ce29fb3,PCP / IM / FM,0,Tier 2,Coty,2,0,0,0,1,1,2026-05-04,2026-07-09,No spine yet,
+Toma & Yaldo Medical Center,d1255d1a-17e8-4765-bfe5-45c6c087c8ed,PCP / IM / FM,0,Tier 2,Kristen,2,0,0,0,0,2,2026-07-07,2026-08-24,No spine yet,
 "*NOVAMEDICA, PLLC",d2a011ae-fad5-4195-a59b-93376dd15321,PCP / IM / FM,0,Prospect,Jasmine,2,0,0,0,0,2,2025-12-05,2026-07-31,No spine yet,
 Universal Clinic & Urgent Care,d689dac9-8b56-4f6e-9ba4-8bf3eb8e3550,PCP / IM / FM,0,Prospect,Kristen,2,0,0,0,0,2,2025-08-29,2025-11-05,No spine yet,
 NEU Urgent Care,d753c22b-95f8-492b-a038-1ae4d67bd1af,Urgent care,0,Prospect,Kristen,2,0,0,0,1,1,2025-12-11,2025-12-15,No spine yet,
@@ -518,6 +523,7 @@ Midwest Center for Dermatology - Warren,1205831005,Unknown,0,Tier 2,Coty,1,0,0,0
 "MICHAEL DUCATO, MD, PC",1226fb9f-b48d-4314-8a3b-0d8800bc60e1,PCP / IM / FM,0,NOT IN BOOK,,1,0,0,0,0,1,2026-08-03,2026-08-03,No spine yet,
 Kids First Pediatrics,1235164872,Pediatrics,0,NOT IN BOOK,,1,0,0,0,0,1,2026-01-06,2026-01-06,No spine yet,
 Office of Robin Samyn MD,1275525198,PCP / IM / FM,0,NOT IN BOOK,,1,0,0,0,1,0,2025-09-18,2025-09-18,No spine yet,
+Chesterfield Family Medicine (Henry Ford),1275554073,PCP / IM / FM,0,NOT IN BOOK,,1,0,0,0,0,1,2026-08-25,2026-08-25,No spine yet,
 Morang-Chester Clinic,1275592412,PCP / IM / FM,1,NOT IN BOOK,,1,0,0,0,0,1,2025-08-26,2025-08-26,No spine yet,
 "WILLIAMS FAMILY AND SPORTS MEDICAL CENTER, PLC",128e9f0f-8074-4052-b91d-e71905388022,PCP / IM / FM,0,Tier 3,Kristen,1,0,0,0,1,0,2026-06-04,2026-06-04,No spine yet,
 "Beaumont Royal Oak - Hospital Consultants, PC",1295719409,Unknown,0,NOT IN BOOK,,1,0,0,0,0,1,2025-06-13,2025-06-13,No spine yet,
@@ -547,7 +553,6 @@ Downriver Internists - Wayne,1982992715,PCP / IM / FM,0,Prospect,Coty,1,0,0,0,0,
 Livewell Medical Clinic,1a50a3fe-5c81-47ac-8c33-c39f41b5453f,PCP / IM / FM,0,NOT IN BOOK,,1,0,0,1,0,0,2025-08-28,2025-08-28,No spine yet,
 Paint Creek Obstetrics & Gynecology,1b53bbad-bbc8-4c92-9f9c-9e7d2f94adb2,OB/GYN,0,NOT IN BOOK,,1,0,0,0,0,1,2025-11-03,2025-11-03,No spine yet,
 Family Foot & Ankle Specialist,1b944dbb-4d2b-4590-a30d-2227bb90bb2e,Podiatry,1,NOT IN BOOK,,1,0,0,0,1,0,2026-05-19,2026-05-19,No spine yet,
-Wigod & Falzon,1da57554-aa50-483a-b1a8-060ff843ff7c,Attorney / Legal,0,Tier 1,Kristen,1,0,0,1,0,0,2026-06-17,2026-06-17,No spine yet,T1 — feeds telehealth intake (spine outcomes not visible in this tab)
 Stonebridge Orthopedics,1f3f6af6-8827-4f8a-97ff-61005f2d675d,Orthopedic,0,Prospect,Coty,1,0,0,0,0,1,2025-09-19,2025-09-19,No spine yet,
 Henry Ford Internal Medicine - Sterling Heights,20a601f2-ef2f-40db-b5ec-481cf50305de,PCP / IM / FM,0,NOT IN BOOK,,1,0,0,0,1,0,2025-08-07,2025-08-07,No spine yet,
 Cros-Lex Family Medicine,21d9f5fd-1f98-4de4-86b8-a0bdf373564d,PCP / IM / FM,0,NOT IN BOOK,,1,0,0,0,0,1,2025-06-26,2025-06-26,No spine yet,
@@ -600,7 +605,6 @@ PEDIATRIC AND ADOLESCENT CARE ASSOCIATES,737db59d-0144-4c00-84f1-d0493904d41a,PC
 Rochester Hills Family Physicians (Corewell),757de7dd-5282-4788-934b-4beb9c13112f,PCP / IM / FM,0,Prospect,Coty,1,0,0,0,0,1,2025-06-25,2025-06-25,No spine yet,
 Lee Internal Medicine Associates,75ea223f-c300-42c0-a4bd-67bba222b532,PCP / IM / FM,0,NOT IN BOOK,,1,0,0,0,0,1,2025-11-12,2025-11-12,No spine yet,
 RS MEDICAL use,76b2bcf3-c674-4728-bf50-cf4cf36702f4,PCP / IM / FM,0,NOT IN BOOK,,1,0,0,0,0,1,2025-09-30,2025-09-30,No spine yet,
-Partners in internal medicine,786ed37c-07e8-4c29-9917-ecab0fe8d600,PCP / IM / FM,1,Prospect,Jasmine,1,0,0,0,0,1,2025-08-05,2025-08-05,No spine yet,
 Precise Chiropractic,7949ef7e-580c-41cc-b7ee-5a5d6dadc605,Chiropractor,0,Tier 2,Coty,1,0,0,0,0,1,2026-06-29,2026-06-29,No spine yet,
 TRINITY HEALTH HENDERSON ACADEMIC PRIMARY CARE,7ac7058a-1f78-4861-9d33-ed797f6c4387,PCP / IM / FM,0,NOT IN BOOK,,1,0,0,0,0,1,2025-12-01,2025-12-01,No spine yet,
 Imlay City Family Practice,7ae80a42-d910-4617-8771-09fa8c95c4fc,PCP / IM / FM,0,NOT IN BOOK,,1,0,0,0,0,1,2026-04-08,2026-04-08,No spine yet,
@@ -671,7 +675,6 @@ Northville-Novi Family Medicine,cbf5b149-d8d1-45d2-bc13-27eac5b85f34,PCP / IM / 
 Berkley Primary Care,ccf33cc6-8519-40b6-9e5b-fb3167a271ba,PCP / IM / FM,1,Prospect,Coty,1,0,0,0,0,1,2025-07-30,2025-07-30,No spine yet,
 Oak Street Health - Pontiac,cd8b866d-11d1-48a3-a982-19f2b245445f,PCP / IM / FM,0,NOT IN BOOK,,1,0,0,0,0,1,2026-02-02,2026-02-02,No spine yet,
 IHA Family Medicine,cfc1a768-52b4-4363-b4f1-1d54ec8e1b8c,PCP / IM / FM,0,Prospect,Jasmine,1,0,0,0,0,1,2026-03-04,2026-03-04,No spine yet,
-Toma & Yaldo Medical Center,d1255d1a-17e8-4765-bfe5-45c6c087c8ed,PCP / IM / FM,0,Tier 2,Kristen,1,0,0,0,0,1,2026-07-07,2026-07-07,No spine yet,
 Eastside Neurosurgery - Macomb,d361f230-715e-4c7e-87a9-bf50246f42f4,Neurology,0,NOT IN BOOK,,1,0,0,0,0,1,2025-09-11,2025-09-11,No spine yet,
 GoHealth Urgent Care (Henry Ford) - Fraser,d4620d29-9f8b-4d7a-bb42-364dcc4d9820,Urgent care,1,Prospect,Coty,1,0,0,0,0,1,2026-08-17,2026-08-17,No spine yet,
 Rehabilitation Physicians - Novi,d67a719c-6631-4330-b6db-60e46206f57f,Physical Therapy,0,NOT IN BOOK,,1,0,0,0,0,1,2025-06-13,2025-06-13,No spine yet,
