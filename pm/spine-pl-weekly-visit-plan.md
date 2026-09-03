@@ -5,6 +5,27 @@
 **The full stop-level schedule (1,085 scheduled visits, filter by `week` + `pl` — cadence updated Jul 22):** **`pm/pl-weekly-visit-schedule.csv`**
 **Kristen's share pack:** `pm/kristen-share/` (field workbook + handoff note) · **MMC sync:** `pm/mmc-import/`
 
+> ## ⟳ v12 — Sep 3: +111 approved adds woven in; W6–W9 repaired; adherence finding
+> **Book is now 973** (Kristen 322 · Jasmine 320 · Coty 331): Joe's Y/N pass on the referral-
+> evidence add list landed 111 accounts (T1 52 · T2 43 · Prospect 16), incl. **8 deliberate
+> Non-Spine reversals** (Great Lakes Medicine, Joel Wellness…). 70 slot into existing routes
+> (nearest-route, ≤10 stops), **6 new routes built** (K-R34…R38, C-R43). W5 (Aug 31) untouched —
+> in flight. W6–W9 rebuilt from Sep 3 actuals: no route re-runs inside cadence (asserted),
+> in-cadence stops skip-flagged, due-order verified. **Every add is placed:** 106 ride a
+> W6–W9 run of their home route; 3 join this week's still-unrun W5 routes (K-R21 ×2,
+> C-R14 ×1 — now 10-stop days); 2 prospects carry honest next-cycle labels in the import.
+> All 52 Tier-1 adds ride scheduled runs; the four whose routes had already run their W5 day
+> are rescued — K-R19 (Franklin Medical · Burhani · Feldman DO) and
+> J-R16 (Western Wayne Physicians) return at their 21-day mark in W8 (Sep 21); three swaps
+> traded up to make room (in: K-R19, J-R16, J-R08 · out: K-R28, J-R34, J-R21 — each evictee
+> keeps its due date in the deferred queue). **57 due runs deferred to next cycle, logged.**
+> **W4 adherence finding:** everyone works the book (136/148 stops
+> on-book) but week-assignment slipped — Jasmine 32/47 on-plan, Kristen 19/43, **Coty 0/49
+> on-plan while running other weeks' book routes in full (R21/R27/R28 10-for-10 in W4;
+> R30 + R13 to open W5)**. Cadence credits it all
+> (nothing restarts); the cost is that the most-overdue T1 blocks keep waiting. Huddle topic,
+> with capacity math: 973 accounts at stated cadences ≈ 200 stops/week vs ~135 capacity.
+>
 > ## ⟳ v10 — Aug 21: Friday refresh (W3 credited, W4–W9 repaired to actuals — no early repeats)
 > W3 recap: **Coty 36/46 (78%) · Jasmine 32/47 (68%) · Kristen 29/49 (59%)** — best completion
 > week yet. Entering W4, the no-repeat rule is enforced two ways, asserted against the Aug 21

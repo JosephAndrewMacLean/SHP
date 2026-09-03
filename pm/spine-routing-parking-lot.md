@@ -28,6 +28,60 @@ due. This true-up reruns every Friday from the MMC export — that's the whole r
 
 ---
 
+## Sep 3 refresh — the 111 adds land; W4 recap; the adherence finding
+
+**Book: 862 → 973** (Kristen 322 · Jasmine 320 · Coty 331 | T1 216 · T2 217 · T3 34 ·
+Prospect 506). Joe's Y/N pass on the referral-evidence list: **111 added** (52 straight to
+Tier 1 on spine receipts), 35 declined, 6 ownership flags honored — 2 adds reassigned (Epic Medical →
+Jasmine; Trust Family Care → Kristen) and 4 marked another PL's account and declined
+(Pulmonary & IM Specialists, Trinity IHA Neuro AA — Coty's; Trinity IHA Peds Domino's,
+Farah Podiatry — Jasmine's). **8 Non-Spine reversals** are deliberate re-adds (Great Lakes
+Medicine, Joel Wellness Clinic, Beacon Orthopedics, Michigan Spine Institute, et al.) —
+pulled from the Non-Spine import (now 76). Placement: 70 into existing routes ≤10 stops,
+**6 new routes** — K-R34 (Sterling Hts/Shelby ×10), K-R35 (Troy/Royal Oak), K-R36
+(Bloomfield/Franklin), K-R37 (Hamtramck/Grosse Pointe ×10), K-R38 (Novi/South Lyon),
+C-R43 (Rochester Hills). Two W4-evidence candidates (Crossover Health Royal Oak, Waterford
+Clinic & UC) arrived after Joe's sheet — on next week's review list.
+
+**Where every add landed in the schedule.** 106 of the 111 ride a scheduled W6–W9 run of
+their home route. 3 join this week's still-unrun W5 routes — Kristen's R21 (Pediatric and
+Adolescent Care Associates, Michigan Urgent Care & Occupational Health) and Coty's R14
+(Foot & Ankle Specialists of SE Michigan – Warren) had zero check-ins as of the Sep 3
+export, so the new stops were appended to those day cards (both now 10 stops). 2 prospect
+adds wait for next cycle with honest labels in the import (Pediatric Consultants of Troy –
+Shelby Twp on K-R12; Imlay City Family Practice on K-R32 — every slot those routes could
+take is held by a more-overdue producer run). All 52 Tier-1 adds ride scheduled runs; **the
+four that would otherwise have missed the cycle are rescued:**
+Franklin Medical Consultants, Burhani Medical Center and Alan L Feldman DO ride K-R19's
+W8 return (Kristen ran R19 on Sep 1–2, before Joe's sheet landed — the route comes back
+exactly at its 21-day mark, week of Sep 21), and Western Wayne Physicians rides J-R16's
+W8 return. Three swaps made room, each trading up: **K-R19** (6 T1, incl. the 3 T1 adds) in
+for K-R28 (1 T1, due Jun 30) · **J-R16** (2 T1, incl. the T1 add) in for J-R34 (0 T1, due Jul 30) ·
+**J-R08** (two active T1 spine senders due Sep 17 + University Pain Clinic add) in for
+J-R21 (a Tier-2 reactivation route lapsed since Oct 2025 — first in line next cycle,
+flagged, not forgotten). Every displaced route keeps its due date in the import
+("Deferred to next cycle — route due …").
+
+**W4 recap (Aug 24–28) — the adherence finding.** Check-ins: 149 stops (Kristen 47 ·
+Jasmine 48 · Coty 54). Everyone is working the book (136/148 unique accounts visited are
+book accounts ✓) — but the *week assignment* slipped: **Jasmine 32/47 planned stops (68%) ·
+Kristen 19/43 (44%) · Coty 0/49 (0%)**. Coty instead ran three complete book routes in W4
+(R21, R27, R28 at 10/10) plus R15/R16 at 8/10 — none from his W4 plan — and opened W5 by
+running R30 and R13 in full (Aug 31 / Sep 2). Nothing restarts — the
+cadence engine credits every visit where it landed and reschedules accordingly. The real
+cost: **the most-overdue Tier-1 blocks keep not being the ones that get run** (his R17/R20,
+overdue since early Aug, slipped again). Huddle framing: route-ORDER discipline, not effort —
+volume is fine, sequence is the plan's whole value.
+
+**Capacity, restated with the bigger book:** 973 accounts at 21/30/45/45 cadences ≈ **200
+stops/week needed vs ~135 delivered** — the gap grew with the adds. W6–W9 schedules the 60
+most-overdue runs (due-order verified); **57 due runs deferred** to next cycle (incl. the
+W5 routes' own 21/30-day returns and the 3 swap evictions), each logged with its due date
+in the plan files and the import. Options unchanged: Wave-1-first weighting, more field days, a 4th PL, or
+accept ~6-week effective T1 rhythm.
+
+---
+
 ## Aug 21 refresh — W3 recap + entering W4 (no early repeats)
 
 **W3 (Aug 17–21) planned vs checked in:** Coty **36/46 (78%)** · Jasmine 32/47 (68%) ·
@@ -90,6 +144,13 @@ was: a promote/hold/park huddle decision at the 3rd touch, not a drive-past rule
   import (incl. The Keiser Clinic — never visited at all, and three urgent cares last visited
   in 2023). Relabeled honestly ("Never visited — needs first touch" / "Not scheduled this
   cycle — last visit <date>"). These 69 off-cycle prospects are the next scrub's raw material.
+
+**Sep 3 data-ops notes:** (1) one book row has a Company ID that no longer exists in MMC —
+Ruffini DC PC, Richard J (C-R15, Coty; visits log by name with no company link). The update
+import will no-op that row; Santosh: recreate/link the record. (2) Sep-3 adds that landed on
+W5-plan routes are all handled in-cycle: 3 join this week's un-run day cards (K-R21, C-R14)
+and 4 ride the W8 returns of K-R19/J-R16 (those routes ran their W5 day Sep 1–2, before the
+adds); only 2 prospect adds (K-R12, K-R32) wait for next cycle, labeled in the import.
 
 **Data ask:** this refresh ran on companies + people exports only, using each account's
 last-activity date (all 862 book accounts matched the export; one account's latest activity is
