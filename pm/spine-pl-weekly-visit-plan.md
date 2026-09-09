@@ -1,0 +1,318 @@
+# Spine PL Week-by-Week Visit Plan — Jul 22 → Oct 2, 2026
+
+**Date:** 2026-07-21 · **Runs on:** the scored 808-account book + 85 built route days + Sean's 40-account overlay
+**Owners:** Kristen (lead), Jasmine, Coty, Sean (conditional) · **Ops:** Joe · **Fills tracker:** PL-A.5 (cadence live), PL-B (protect + recover), feeds SP-B.2 (scorecard)
+**The full stop-level schedule (1,085 scheduled visits, filter by `week` + `pl` — cadence updated Jul 22):** **`pm/pl-weekly-visit-schedule.csv`**
+**Kristen's share pack:** `pm/kristen-share/` (field workbook + handoff note) · **MMC sync:** `pm/mmc-import/`
+
+> ## ⟳ v12 — Sep 3: +111 approved adds woven in; W6–W9 repaired; adherence finding
+> **Book is now 973** (Kristen 322 · Jasmine 320 · Coty 331): Joe's Y/N pass on the referral-
+> evidence add list landed 111 accounts (T1 52 · T2 43 · Prospect 16), incl. **8 deliberate
+> Non-Spine reversals** (Great Lakes Medicine, Joel Wellness…). 70 slot into existing routes
+> (nearest-route, ≤10 stops), **6 new routes built** (K-R34…R38, C-R43). W5 (Aug 31) untouched —
+> in flight. W6–W9 rebuilt from Sep 3 actuals: no route re-runs inside cadence (asserted),
+> in-cadence stops skip-flagged, due-order verified. **Every add is placed:** 106 ride a
+> W6–W9 run of their home route; 3 join this week's still-unrun W5 routes (K-R21 ×2,
+> C-R14 ×1 — now 10-stop days); 2 prospects carry honest next-cycle labels in the import.
+> All 52 Tier-1 adds ride scheduled runs; the four whose routes had already run their W5 day
+> are rescued — K-R19 (Franklin Medical · Burhani · Feldman DO) and
+> J-R16 (Western Wayne Physicians) return at their 21-day mark in W8 (Sep 21); three swaps
+> traded up to make room (in: K-R19, J-R16, J-R08 · out: K-R28, J-R34, J-R21 — each evictee
+> keeps its due date in the deferred queue). **57 due runs deferred to next cycle, logged.**
+> **W4 adherence finding:** everyone works the book (136/148 stops
+> on-book) but week-assignment slipped — Jasmine 32/47 on-plan, Kristen 19/43, **Coty 0/49
+> on-plan while running other weeks' book routes in full (R21/R27/R28 10-for-10 in W4;
+> R30 + R13 to open W5)**. Cadence credits it all
+> (nothing restarts); the cost is that the most-overdue T1 blocks keep waiting. Huddle topic,
+> with capacity math: 973 accounts at stated cadences ≈ 200 stops/week vs ~135 capacity.
+>
+> ## ⟳ v10 — Aug 21: Friday refresh (W3 credited, W4–W9 repaired to actuals — no early repeats)
+> W3 recap: **Coty 36/46 (78%) · Jasmine 32/47 (68%) · Kristen 29/49 (59%)** — best completion
+> week yet. Entering W4, the no-repeat rule is enforced two ways, asserted against the Aug 21
+> export: **no route re-runs before its cadence** (route-level, zero violations), and **every
+> stop still inside its tier window (T1 21d · T2 30d · T3 45d · Prospect 45d) at its scheduled
+> week carries a "visited — skip (next due …)" flag** (130 of 793 stops; drive past unless
+> there's a reason to walk in). The Aug 14 plan was **repaired,
+> not rebuilt**: W3-planned routes that didn't check in return when actually due (K-R04 → W4,
+> C-R10 → W5, J-R06 → W7 — its stops were worked in W2, so W4 would repeat them early); 7 routes
+> whose only run was W3 get their cadence comeback (K-R11, K-R13, J-R07/R09/R10, C-R01, C-R25);
+> 10 low-urgency runs deferred to next cycle (logged; one prospect-only block, J-R33, slips a
+> cycle). Book changes: **NeuroRestorative → Non-Spine** (team request) · **Commerce Primary Care
+> PC added at Tier 1 on Kristen (K-R23, first run W4)** — its NP, Sydney Frantz, sent the Aug 11
+> spine referral. This refresh ran on the companies/people exports (last-activity basis; all 862
+> matched, 7 never-visited prospects have no activity); **please include the activities export
+> next week** so the tracker's W3 check-in row and multi-visit stats can be filled.
+>
+> ## ⟳ v9 — Aug 14: Friday refresh (W2 credited, book corrections, urgent-care rule)
+> W2 recap: Jasmine 35/49 (71%) · Kristen 28/48 · Coty 26/45 planned stops checked in. W3–W9
+> rebuilt on actual check-ins — nothing restarts (standing rule per Kristen). Book now **862**:
+> 4 accounts restored per Kristen (never in the Jul 16 cut; incl. HF Primary Care Orchard Lake
+> N at T1), **all 85 owned urgent cares added** (Joe's rule — acute back/neck pathway), 1
+> Olympia-network practice removed per Jasmine's field read, NextGen Vitality auto-entered. New
+> Friday safety net: an **off-book watch list** of accounts the team visits that aren't in the
+> book. T1 median: Coty 21 · Jasmine 21 · Kristen 28 (her restored, larger book on a 7-week
+> runway); zero Tier-1s unplanned. ⚠️ PHI-in-notes hygiene item raised — see parking lot.
+>
+> ## ⟳ v8 — Aug 7 (final): whole-route days — "sort it by city and run the whole thing"
+> The closing decision of the Joe/Kristen call, after catching two 17-Mile accounts split across
+> days by tier priority: stop composing days stop-by-stop. **A scheduled day is now a home route
+> (`K-R05` on the calendar = `K-R05` on the map), run in full, in drive order.** Cadence picks
+> WHICH routes run each week (T1 21d · T2 30d · T3 45d on actual check-ins, lapsed first, 2
+> protect slots/week for top-value routes); same-city routes run back-to-back days; the tier mix
+> is judged per week (Weekly Mix tab). Result: **1,023 stops / 120 route-days · T1 median 21 days
+> for all three PLs · zero producer routes skipped · 42 prospects (12 prospect-only routes)
+> defer**. Prospects inside producer routes get up to 3 touches; the 3rd is flagged "huddle read
+> due." One ID system ends the tab confusion for good.
+>
+> ## ⟳ v7 — Aug 7 (earlier): CITY-FIRST routing per Kristen's call
+> Kristen showed the data: a W2 day pulling 10 stops from two non-adjacent home days — legal
+> under v6's "nearest-cluster top-up," and exactly the cross-town waste she described. Rebuilt to
+> her spec: **every scheduled day is one contiguous drive** — city first, buildings together,
+> **no two consecutive stops more than 5 miles apart anywhere in the plan (audited)**; far
+> pockets run as flagged short runs with a while-I'm-here sweep. Home days are now **city blocks
+> (97 across the team)**. W2–W9 = **962 stops / 120 days**; **Tier-1 median holds at 21 days for
+> all three PLs**, and the weekly tier mix survives city routing within a stop or two (the
+> strategy check Kristen asked for — table in the parking lot §5, per-week numbers on each
+> workbook's **Weekly Mix** tab, book-by-city on the **By City** tab). New: 📝 flags on 684
+> accounts with real MMC field notes. The honest cost: Kristen's clean-drive capacity is ~40
+> stops/week, so **42 of her 95 Tier-1s get one visit this cycle** — the east-side-to-Coty
+> coverage call is now fully quantified (parking lot, open items).
+>
+> ## ⟳ v6 — Aug 7: live-data refresh (read `pm/spine-routing-parking-lot.md` first)
+> Rebuilt end-to-end from the **Aug 7 MMC exports** (companies + people + 91k activities):
+> the cadence clock now runs on **actual logged check-ins**, every account has exact MMC
+> coordinates, and all home days were re-clustered from real geometry (ex-Sean combined into
+> Kristen's book — no more bolt-on days). Universe is now **773** (11 new accounts in, 4
+> duplicate records out — see parking lot §3); MI Family Practice moved to Coty; W2–W9 =
+> **1,050 stops / 113 days**, T1 median interval 21 days, zero producers or accounts missed.
+> W1 recap (68/150 planned stops checked in; person-touch rows vs unique accounts explained),
+> same-building handling (50 buildings / 131 accounts), finish-early bonus stops, and the
+> new-account/scrub process all
+> live in **`pm/spine-routing-parking-lot.md`** — the living answers page for the field.
+>
+> ## ⟳ v5 — Jul 31: one row = one day (Kristen's rules restored)
+> Kristen read `K-R11+R12` on the Weekly Plan, looked up R11 (9 stops) and R12 (10 stops) in the
+> Route Days tab, and reasonably concluded she was being sent on a **19-stop day**. She was right
+> to stop: those stitched labels were unreadable, and worse, the merge had quietly turned 9 of her
+> days into **producer-only loops with the prospects stripped out** — not the rule the team agreed
+> to ("10 stops a day with the mix of Tier 1 / 2 / 3 / prospects").
+>
+> **The fix — the calendar is now built the way the field actually works.** Every scheduled day is
+> **one real route day: ~10 stops, one area, mixed tiers**, built from whoever is due that week
+> (T1 21d · T2 30d · T3 45d) with **prospects from the same area riding along to fill it** — the
+> original "prospects ride along inside every route day" rule, now applied to revisits too.
+> Day IDs are self-describing: **`K-W1D1` = Kristen, week 1, day 1**. No stitched labels, nothing
+> to add up, and the Stops column *is* the day. Each stop still shows its **home route day
+> (R01…R22)** so the territory reference, the MMC `Route Day` field, and everything Kristen has
+> already learned still hold — the home days are the geography, the W-D days are the calendar.
+>
+> **Result across the team:** 117 scheduled days · 1,116 stops · **98 days at exactly 10 stops**
+> (17 lighter days fall at the end of Coty's and Jasmine's cycle, once their books are fully
+> covered — those slots are flex). **Achieved Tier-1 interval: median exactly 21 days** for all
+> three PLs. **Zero producers unplanned and zero accounts untouched this cycle** — the 234-stop
+> backlog is gone, because ride-alongs use seats that producer-only loops wasted. Days are built
+> from one home day plus, at most, a neighbouring one that shares a city or ZIP — no more Port
+> Huron stitched to Clinton Township.
+>
+> ⚠️ **What the merge still costs, unchanged and unhidden:** Kristen carries 215 accounts against
+> ~450 stop-slots but needs ~530 to hold every rhythm. The engine now protects breadth first —
+> nobody gets a third visit while a producer has none — so her **Tier-1 mean interval stretches to
+> 24.7 days (median 21, worst case 42)** on the tail of her book. That is the price of 215
+> accounts at 5 days a week, and it's the Kristen/Gautam call from the last round: hand the
+> east-side days (R19–R22) to Coty, or accept the stretch.
+>
+> ## ⟳ v4 — Jul 31 (earlier): Sean's book merged into Kristen
+> Per Joe: **Sean's 40 accounts and 4 route days are now Kristen's** — they append as
+> **K-R19…K-R22** (Warren · Sterling Heights · Clinton Twp · St. Clair Shores) so none of her
+> existing day numbers shift. Kristen now carries **215 accounts across 22 days** — the largest
+> book on the team — and Sean no longer appears as a PL in the app, workbooks, or MMC import
+> (his Group tag becomes `Spine Reassigned – ex-Sean book` so the history stays filterable).
+> **Cycle-1 touch credit was deliberately NOT carried over:** Kristen has never called on these
+> accounts, so each first visit is flagged **“new-PL intro”** (32 stops) rather than counted as a
+> 21-day revisit against a visit she didn't make. That surfaced **4 lapsed repeat-spine producers
+> in the ex-Sean book** — Ryan Medical Associates, Michigan Compassionate Care, Get Well Urgent
+> Care Madison Heights, Brigid Healthcare — which now get recovery visits in **W1–W2**.
+> ⚠️ **The cost, stated plainly:** Kristen's 5 slots/week were already full. All 96 of her
+> producers still hold the 21-day rhythm (nothing proven was dropped), but **9 of her 22 days no
+> longer get a full first pass — 54 prospect stops are deferred to Oct+** (was 1 day / 6 prospects
+> before the merge). If those prospects matter this cycle, the options are handing the east-side
+> days (K-R19…R22 are all Macomb-side geography) to Coty, who has flex in W8–W9, or a 6th day.
+> Kristen + Gautam decide; nothing here is locked.
+>
+> ## ⟳ v3 — Jul 31: universe validated, routes regenerated
+> All four PL eyeball files came back (**848/848 rows answered**): **766 accounts validated in,
+> 82 removed to the MMC Non-Spine group** (74 of them prospects; full log in
+> `pm/eyeball-check/eyeball-results-2026-07-31.csv`). Route days were rebuilt on the validated
+> book — **81 days (Kristen 18 · Jasmine 31 · Coty 28 · Sean 4), IDs now `K-R01…`**, 73 of them
+> keeping the original coordinate-clustered stop order, 8 re-packed by ZIP
+> (`pm/pl-route-days.csv` + per-PL workbooks in `pm/route-days-v2/`).
+> **Cycle 1 (Jul 22–31) stands as executed** — those planned touches are credited, so nobody gets an
+> early revisit ("two weeks is too soon"). **Cycle 2 restarts the week count: W1–W9, Aug 3 → Sep 28,
+> at 5 route-day slots per PL-week (Joe, Jul 31 — supersedes the 3–4-day guard; Sean runs 2, his
+> 40-account book can't support more without breaking the 21-day rhythm). 1,197 planned stops in
+> 141 full-day entries:** 57 first-pass days (8–10 stops), 83 producer-loop days — same-week
+> revisits due on rhythm (T1 21d · T2 30d · T3/prospect 45d) packed into single drives of ≤10
+> stops, labeled like `R03+R07` — and 1 sweep. Every Tier-1 producer is planned at least once; the
+> 2 lapsed repeats never touched in cycle 1 (Office of George Nassif MD, Oakland Primary Care)
+> lead W1 (Aug 3). Backlog collapsed from 234 stops to **one day (Kristen R18 — its 3 producers
+> are swept in W2; 6 prospects wait)**. ⚠️ **Two flags for the Monday huddle:** (1) the 5-slot
+> model consumes the field days the old plan reserved for ortho — Kristen's T1-heavy book fills
+> all 5 slots every week of the cycle (zero flex), Jasmine/Coty free up only in W8–W9 — Kristen +
+> Gautam need to bless that trade or we rebalance her book; (2) Coty's 82 "Not sure" rows are
+> still in these routes pending Joel's consolidation. **The sections below describe the old
+> calendar (`Day NN` IDs, weeks numbered from Jul 20) and are superseded** by
+> `pm/pl-weekly-visit-schedule.csv` (`C1-W1/C1-W2` executed rows + cycle-2 `W1…W9` rows), the app
+> (`pm/spine-routes-app.html`), and the `pm/route-days-v2/` workbooks. One ownership flag:
+> **Levan Internists moved Coty → Jasmine** (his note: already being called on by Jasmine) pending
+> Kristen's confirmation.
+
+> **What "lucrative" means here:** attributed 2026 spine patients per account (not kept-visit-confirmed),
+> weighted by lapse urgency — a proven referrer nobody has visited in 4+ weeks outranks everything,
+> because that volume is already flowing and is cheapest to lose. Prospects are pre-mixed into every
+> route day by geography, so working the day = working the mix. Week starts are Mondays (scorecard-aligned);
+> PLs pick the weekday for each route day and **stamp the date into MMC** (the 85 days currently have zero
+> planned dates).
+
+---
+
+## 1. The engine rules (how the calendar below was built)
+
+| Rule | Setting | Why |
+|---|---|---|
+| Spine-day capacity | K: 3 days W1 · 4 W2–W4 · **3.5 W5+** · J/C: 3 W1 · 4 W2–W4 · 3 W5+ · Sean: 2/2/then ~1 | Leaves ~1–2 field days/week for the ortho book (GOV-B.2: hold ortho 130–140/wk) — the full-cadence plan needs 207 visits/wk vs ~155 capacity, so this is the explicit trade |
+| Day order, first pass | Lapsed-producer spine first, then day spine total, then Wave-1 count | Protect before prospect — **all 36 lapsed repeat-spine referrers get their recovery visit in W1–W2** (22 in W1) |
+| Revisit cycle **(Kristen's cadence v2, Jul 22)** | **ALL Tier 1 — Wave 1 included — every 21 days** (Kristen: “two weeks is too soon — we get annoying”) **· Tier 2 every ~30d · Tier 3 every ~45d**, prospect days once + flex; Wave 1 keeps priority by going first in line each cycle | Achieved medians: **Tier 1 = 3.0 wk · Tier 2 = 4.0 wk** — on spec |
+| Protect overlays | Lapsed producers ≥5 spine → single-stop pull-forwards in **W1** (Applebaum & Stone, Vanstone, DMC West Bloomfield, Stonebrooke); every remaining lapsed repeat-spine → pulled into **W2** (MedPro, Oakland Family Practice, Metro Medical, Lifetime Family Care, Garden City Family Physicians, Medical Clinic of Northville) | No proven repeat referrer waits past Jul 31 |
+| Producer sweeps | Proven stops stranded on low-value tail days get swept as mini-days every 3 weeks from W5 (Kristen: D08/D13/D15/D17 — her Wave-2 tail, 34 stops) instead of running those full 10-stop prospect days | Covers the tail's 46 spine patients without burning full days on cold geography |
+| Reassess rule — promote/hold/park **(updated Jul 22)** | Nothing is deleted. At ~2 touches (≈90 days at prospect rhythm) the PL's field read decides: **promote** (more potential → tighter rhythm) · **hold** (45d) · **park** (backlog, revisit next quarter). Some accounts need MORE than 2 touches — the note after each touch powers the call | Field judgment over mechanical drops; rotation still earns its slots |
+
+**The mix, by design:** W1–W4 is the expansion blitz — **~183 prospect first-touches ride along** with
+the protect sweep (30–46% of stops are producers). From W5 the rotation flips to **protect-and-convert
+mode (76–87% producer stops)** because biweekly producer cycles consume the 3-day allocation.
+**Leadership dial:** keeping the 4th spine day after W4 buys ~10 more prospect first-touches/PL/week;
+at 3 days, **264 of 466 prospects** get touched by Oct 2 and **272 accounts are explicitly deferred**
+(204 prospects · 59 ortho cross-sell · 9 other — flagged `Backlog (Oct+)` in the MMC import;
+**zero spine-producing accounts are deferred**). Moving Wave 1 from 14 to 21 days bought back
+~30 prospect first-touches — relationship comfort AND more coverage. Pull from backlog only
+when a rotation slot opens.
+
+---
+
+## 2. Week 1 — Wed Jul 22 → Fri Jul 25 (the protect week)
+
+The single most valuable field week of the quarter: 45 producer stops, 22 of them lapsed repeat-spine.
+
+**Kristen — Days 05, 02, 03 + 4 pull-forward stops (34 stops · Farmington Hills / Ypsilanti / Southfield / Livonia)**
+| Priority visit | Spine '26 | Why now |
+|---|---|---|
+| **Hesselberg Chiropractic** (Ypsilanti, D05) | **23** | #2 account in the company; **no visit since Apr 27** |
+| **Michigan Auto Law** (Farmington Hills, D02) | **10** | #3 account; unvisited since Apr 29 |
+| Henry Ford Primary Care Center-160 (D02) | 5 | Lapsed repeat referrer |
+| Ross Law (Southfield, D03) | 5 | Lapsed attorney, 5-patient class |
+| Park Medical Centers (Livonia, D03) | 5 | On-cadence protect anchor |
+| *Pull-forwards:* Applebaum & Stone · Vanstone Injury Law · DMC West Bloomfield · Stonebrooke Family Physicians | 5 each | Lapsed 6–20 weeks; single-stop detours this week, their full days come W2–W3 |
+
+**Jasmine — Days 02, 05, 09 (30 stops · Farmington Hills / Eastpointe / Livonia)**
+Top: QuickDoc Urgent Care (4, lapsed) · Oak Street Health Cherry Hill (3, lapsed) · NORLIVO Internal
+Medicine (3, lapsed) · then 3 one-spine reactivations (Apollo Health, Plymouth PT, Eastpointe Family
+Physicians) with ~17 prospects riding along.
+
+**Coty — Days 01, 04, 03 (30 stops · Berkley / Warren / St. Clair Shores corridor)**
+Top: Be Well Medical Center (3, lapsed) · Chronic Pain Institute (2, lapsed) · The Family Doctor (2) ·
+DMC Ortho & Sports Medicine-Warren + Office of Steven Trombly MD (one-spine converts).
+
+**Sean — Days 03, 02 (20 stops · Sterling Heights / Warren) — CONDITIONAL**
+Top: MI Family Practice (3) · Ryan Medical Associates, Michigan Compassionate Care, Get Well Urgent
+Care Madison Heights, Brigid Healthcare (2 each, all lapsed). **Gate: Kristen confirms by Thu Jul 24
+whether Sean's Jun-9 stall is real. If he's out, Coty absorbs all four Sean days on a one-week delay** —
+all four sit in Coty's east-side geography (Sterling Heights ×2, Warren, St. Clair Shores).
+
+---
+
+## 3. The money list — the ten highest-value visits each week (team-wide)
+
+**W1 (Jul 22):** Hesselberg 23 · Michigan Auto Law 10 · Henry Ford PCC-160 5 · Ross Law 5 · Park
+Medical 5 · DMC West Bloomfield 5 · Stonebrooke 5 · Applebaum & Stone 5 · Vanstone 5 (all Kristen) ·
+QuickDoc UC 4 (Jasmine). *9 of 10 are recovery visits — this is the leak being plugged.*
+
+**W2 (Jul 27):** **Mike Morse Law Firm 75** (Kristen D01 — recently visited, now enters the biweekly
+key-account rotation) · Lakeview Medical Center 7 (Coty — quiet since Apr 30) · Comprehensive
+Healthcare Associates 6 (Jasmine) · DMC West Bloomfield 5 · Stonebrooke 5 · Applebaum & Stone 5 (full-day
+follow-ups) · Canton Family Health 4 (Jasmine) · Macomb Internal Medicine 4 (Sean/Coty) · Beaumont
+Redford 3 · DMC Orthopedics-Commerce 3.
+
+**W3 (Aug 3):** first biweekly revisit wave — Hesselberg 23 · Michigan Auto Law 10 · Park Medical-
+Canton 5 (Jasmine FP) · Henry Ford PCC-160 5 · Ross Law 5 · Park Medical 5 · **Kajy Law 5 + Vanstone 5**
+(Kristen D11 FP — completes the attorney set) · QuickDoc 4 · Be Well 3.
+
+From W4 the money list is stable: the ~15 accounts above rotate on 2-week cycles; the CSV carries the
+week-by-week detail.
+
+---
+
+## 4. Per-PL calendar (route-day tokens: `D05·FP` = Day 05 first pass, `·rev` = cadence revisit)
+
+> **Cadence update (Jul 22):** with Wave 1 biweekly / Tier 1 every 3 weeks / ortho monthly, the exact
+> day-to-week mapping below shifted slightly — **the schedule CSV and the app are the authoritative
+> week-by-week source**; the tables below are directional patterns.
+
+**Kristen (180-account book, 18 days — full pass done by W4, then a clean A/B fortnight template)**
+| Week | Days | Stops |
+|---|---|---|
+| W1 Jul 22 | D05·FP D02·FP D03·FP + 4 overlays | 34 |
+| W2 Jul 27 | **D01·FP (Morse)** D07·FP D10·FP D09·FP + 6 pull-fwd repeats — her heaviest week | 46 |
+| W3 Aug 3 | D05 D02 D03·rev + D11·FP D06·FP | 33 |
+| W4 Aug 10 | D01 D07 D10 D09·rev + D04·FP | 31 |
+| W5+ | **Week A:** D05 D02 D03 D06 (+D11/D09/D04 rotating) · **Week B:** D01 D07 D10 D09 D04 — plus the **Wave-2 sweep block (D08/D13/D15/D17 proven stops) every 3rd week**; Port Huron D16·FP lands W7, Novi D14·FP W10 | 28–35 |
+
+**Jasmine (310 accounts, 31 days — pass runs through W11; producer cycle locks in from W3)**
+| Week | Days | Stops |
+|---|---|---|
+| W1 | D02 D05 D09·FP | 30 |
+| W2 | D07 D11 D12 D01·FP | 40 |
+| W3 | D02 D05 D09·rev + D03 D06 D19·FP | 36 |
+| W4 | D01 D11 D12·rev + D17 D20 D21·FP | 35 |
+| W5–W11 | 5–8 producer revisits + **1 new FP day/wk** (D08→D04→D10→D15→D13→D14→D18) + tail-proven sweeps | 18–24 |
+
+**Coty (318 accounts, 32 days — same shape as Jasmine)**
+| Week | Days | Stops |
+|---|---|---|
+| W1 | D01 D04 D03·FP | 30 |
+| W2 | D12 D17 D06 D02·FP | 40 |
+| W3 | D01 D04·rev + D11 D18 D19·FP | 38 |
+| W4 | D06 D03 D12·rev + D20 D21 D22·FP | 36 |
+| W5–W11 | 5–8 producer revisits + ~1 new FP day/wk (D07→D08/D09→D05→D10→D14) + tail-proven sweeps | 18–26 |
+
+**Sean (40 routed accounts, 4 days — conditional, Coty fallback)**
+| Week | Days | Stops |
+|---|---|---|
+| W1 | D03 D02·FP | 20 |
+| W2 | D01 D04·FP | 20 |
+| W3+ | alternating producer sweeps: D02/D04 · D03/D01 | 5–10 |
+
+Deferred first-pass tail (lowest-scored days, worked only if slots open): Kristen 6 · Jasmine 11 ·
+Coty 13 days → **276-account October backlog** (mostly prospects; their proven stops are already
+covered by the W5+ sweeps, so nothing that has produced spine is left behind except 6
+outer-geography one-spine singles).
+
+---
+
+## 5. What to measure weekly (feeds the Weekly Spine Scorecard)
+
+- **Protect integrity:** lapsed repeat-spine count (baseline 32 → target 0 by Aug 1, stay 0).
+- **Cycle discipline:** % of repeat-spine accounts visited in the last 21 days (target 100%).
+- **Conversion progress:** one-spine accounts with a 2nd 2026 spine patient (the 92-account swing
+  vote — every 15 conversions ≈ +10 spine/mo).
+- **Mix honesty:** producer vs prospect stop share vs this plan's curve (39%→87% producer W1→W11).
+- **Lag reminder:** median visit→first-appointment lag is 31 days — W1–W2 work reads in the
+  patient line **weeks 3–6 (mid-Aug on)**; judge the plan on September, not the first fortnight.
+
+**Compliance rails (unchanged, non-negotiable):** attorney/no-fault visits are service-based only —
+no payments, gifts, or inducements (AKS/Stark hygiene); payer-fit is still Unknown book-wide, so no
+same-week-access promises to HMO panels until Kelly's Tier-1 payer pass lands; no PHI in any
+report-back.
+
+### Cross-references
+`pm/pl-weekly-visit-schedule.csv` (this plan, stop level) · `pm/spine-pl-account-insights.md` (the
+why) · `pm/spine-target-accounts-SCORED.csv` (the book) · `pm/pl-route-days.csv` (day geometry) ·
+`pm/master-task-list.csv` PL-A.5/PL-B (updated 2026-07-21)
