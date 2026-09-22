@@ -54,3 +54,9 @@ Counted from the referring **people** on the report, then aggregated to their **
 - `pl_touch60` is correlation, not proven causation — read trends, not single cells.
 - Spine converts slower (median ~43 days visit→appt vs ~30 overall), so expect spine
   outcomes to respond to a T1 visit ramp ~4–6 weeks later.
+- **Tier basis by row:** rows through W8 (Sep 21) bucket check-ins by the tier in force that week
+  (862-account book to W4, 973-account Sep 3 book W5–W8). From W9 (Sep 28) buckets use the Sep 22
+  tiers (971 accounts, Joel's 2026-evidence moves). Cadence targets change the same week (T1 14d ·
+  T2/T3 24d · P 75d), so read the T1 share of check-ins as the new plan's adherence measure.
+- W5–W7 check-in rows were filled Sep 22 from the 12-month activities export; their `newpts_*`
+  columns wait for the weekly B2B/spine reports (W5 spine = 21 from the official list).

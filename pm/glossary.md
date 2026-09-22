@@ -27,7 +27,7 @@ says so — **corrections welcome; flag anything that doesn't match how the team
 | **MMC** | Map My Customers — the field CRM the PLs log visits in. |
 | **The book / universe** | **766 validated target accounts** since Jul 31 — the PLs eyeball-reviewed all 848 (808 core + Sean's 40) and 82 moved to the Non-Spine group. |
 | **Evidence band** | What an account has actually sent us in 2026: **Repeat Spine Referrer** (2+ spine patients) · **One Spine Patient** · **Ortho Referrer** (ortho but no spine) · **Other Patient Referrer** (pain/hand/foot only) · **Visit / Prospect** (no attributed patients). |
-| **Tier 1 / 2 / 3 / Prospect** | Tier 1 = sent ≥1 spine patient · Tier 2 = ortho referrers · Tier 3 = other-service referrers · Prospect = spine-adjacent, nothing attributed yet. Current book (Sep 3, 973): **T1 216 · T2 217 · T3 34 · Prospect 506** — Joe's Sep 3 referral-evidence adds (+111, incl. 8 Non-Spine reversals). Validated book Jul 31 was T1 162 · T2 174 · T3 34 · Prospect 396; pre-validation core split 146/156/37/469. |
+| **Tier 1 / 2 / 3 / Prospect** | Tier 1 = sent ≥1 spine patient · Tier 2 = ortho referrers · Tier 3 = other-service referrers · Prospect = spine-adjacent, nothing attributed yet. Current book (Sep 22, 971): **T1 237 · T2 259 · T3 25 · Prospect 450** — tiers refreshed from Joel's MMC tier tracking on 2026 evidence (89 moves applied, none downward; `pm/mmc-import/tier-reconciliation-sep22.csv`). Sep 3 was 216 · 217 · 34 · 506 on 973. Validated book Jul 31 was T1 162 · T2 174 · T3 34 · Prospect 396; pre-validation core split 146/156/37/469. |
 | **Wave 1** | The first-priority 90 accounts (all proven spine senders) — first in line at the 21-day Tier-1 rhythm (Jul 22: Kristen moved off 14-day — “two weeks is too soon”). |
 | **Target Score (0–100)** | Ranking number: up to 88 points from actual referral production, up to 12 from context (specialty fit, recent visits, reachability, data confidence). Prioritization only — not a revenue measure. |
 | **Operating lane / Next Action** | The account's job in the plan: Protect · Reactivation · Convert · Cross-sell · Expansion/Test. |
@@ -42,8 +42,9 @@ says so — **corrections welcome; flag anything that doesn't match how the team
 | **NP per 100 visit-days** | Productivity ratio (2026 YTD: Kristen 67 · Jasmine 30 · Coty 18 · Sean 14). Directional — referrals lag visits. |
 | **Cold referral** | A matched referral patient whose practice had **no completed MMC visit on or before the patient's first appointment** — i.e., a referral we never field-touched first. 2026 YTD: only **6 of 1,287** matched patients. Measures sequence (visit came first), not proof of causation; unmatched rows (~17.5%) aren't in the denominator. |
 | **Lag (visit→first appointment)** | Days between the last completed visit to a practice and an attributed patient's first appointment. **Median 31 days; 83% within 60.** Timing context, not proof the visit caused the patient. |
+| **Cell (K-A01…, Sep 22)** | The home route since Sep 22: up to ~10 producers that sit together (check-in GPS) plus the prospects nearest to them. `A` = holds Tier 1s (14-day rhythm) · `B` = Tier 2/3 only (3–4 weeks) · `C` = prospects only (60–90 days, runs on slack). A scheduled day = the cell's **due** stops, Tier 1 first, prospects filling the rest — nothing inside its window is listed. Outposts (<4 accounts) never take a whole day. Replaces the K-R01… route days below. |
 | **Home route day (K-R01…)** | The **geography reference**: city-block clusters of ≤10 accounts (97 across the team, built Aug 7 from MMC cities + exact pins; small neighbouring towns merge only within ~7 miles). It's the value in MMC's `Route Day` field and the *Territory* tab — you drive *scheduled days*, not home days. |
-| **Scheduled day** | **Gone as a separate idea (Aug 7, final):** the calendar now schedules whole **home routes** — the Weekly Plan row `W2 · K-R05` means run route R05 that week, every stop, in drive order. Cadence (T1 21d · T2 30d · T3 45d on actual MMC check-ins) decides WHICH routes run each week; lapsed producers jump the line; same-city routes run back-to-back days; the tier mix is judged per week on the Weekly Mix tab. |
+| **Scheduled day** | **Gone as a separate idea (Aug 7, final):** the calendar now schedules whole **home routes** — the Weekly Plan row `W2 · K-R05` means run route R05 that week, every stop, in drive order. Cadence (from Sep 28: T1 14d · T2/T3 24d · prospects 75d, on actual MMC check-ins) decides WHICH cells run each week; lapsed producers jump the line; same-city routes run back-to-back days; the tier mix is judged per week on the Weekly Mix tab. |
 | **Lapsed (in MMC)** | No completed **logged** visit in 4+ weeks. **Field correction (Jul 22, Kristen):** texts and phone calls are NOT captured in MMC — several "lapsed" top accounts (e.g., Hesselberg) are actively maintained by text weekly. Read lapse flags as *"check this — either the relationship needs a visit OR our tracking missed the touch,"* never as an accusation. Open team question: how to capture high-value text/call touches without drowning PLs in data entry (one option: quick-log touches for Tier 1 only). |
 | **Protect Radar / Money List** | App screens: every proven referrer ranked by yield + days since visit; and the week's highest-value visits. |
 
@@ -63,9 +64,9 @@ ignored** — i.e., the feature exists but isn't trusted or used today.
 frequencies live somewhere the export doesn't capture (per-person settings, routes, a newer MMC
 feature), the "64 of 2,349" understates reality — tell Joe and we re-pull before repeating it.
 
-**Don't confuse it with Planned Cadence:** the plan's target rhythm — **updated Jul 22 per
-Kristen (v2): ALL Tier 1 incl. Wave 1 = 21d · Tier 2 = 30d · Tier 3 = 45d · Prospect = 45-day
-first pass** — lives in the app and workbook and is *not* in MMC yet. The MMC sync (`pm/mmc-import/`) proposes setting them **once per spine
+**Don't confuse it with Planned Cadence:** the plan's target rhythm — **updated Sep 19 per
+Kristen, effective Sep 28: ALL Tier 1 = 14d · Tier 2 = 24d · Tier 3 = 24d · Prospect = 75d (60–90),
+attorneys on phone cadence** (Jul 22 – Sep 27 it was 21 / 30 / 45 / 45) — lives in the app and workbook and is *not* in MMC yet. The MMC sync (`pm/mmc-import/`) proposes setting them **once per spine
 group** in MMC so the Past-Due engine finally works for us instead of being ignored.
 
 ## Payers & compliance

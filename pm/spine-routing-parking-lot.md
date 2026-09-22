@@ -28,6 +28,73 @@ due. This true-up reruns every Friday from the MMC export — that's the whole r
 
 ---
 
+## Sep 22 refresh — NEW CADENCE from Mon Sep 28 (T1 14d · T2/T3 3–4 wks · prospects sprinkled)
+
+**Why:** September's patient line is soft and Kristen wants the T1/T2 touches expedited (Joe + Kristen call, Sep 19). **Effective
+Monday Sep 28 = W9.** Basis = the Sep 3 workbooks (the loosened-T2 book — every account kept) with Joel's tier tracking
+and the PL-chat corrections applied, cadence clock from the Sep 22 MMC activities export (visits through Sep 22).
+
+**The cadence (all three PLs):** Tier 1 every **14 days** · Tier 2 **and Tier 3** every **3–4 weeks** (planned at 24 days —
+T3s are kept and counted like T2s, "they're already sending") · prospects every **60–90 days** (planned at 75), **sprinkled
+into every week, never a prospect-only week**. Kristen runs the same cadence and may swap a text/call at some offices; her
+**18 attorney accounts (13 T1 · 4 T2 · 1 P) are off the drive routes** — MMC group `Spine Attorney – phone cadence`.
+
+**Book: 973 → 971** (Kristen 320 · Jasmine 317 · Coty 334 | **T1 237 · T2 259 · T3 25 · Prospect 450**). PL-chat corrections
+applied exactly: Glazer Spine Center stays with **Coty under the Glazer name** and absorbs the Ruffini DC duplicate (same
+building, Ruffini record dropped) · **THE CORE INSTITUTE NOVI → Coty** · **Allied Internists → Coty** · **Aquino Integrative
+→ Coty** · **MD Urgent Care removed (permanently closed)** · South East Michigan Medical Associates stays on Kristen (it was
+already hers; read the thread as another PL flagging it and Kristen claiming it — shout if that's backwards).
+
+**Tiers (Joel's `mmc_tier_tracking`, applied with one rule):** his moves are applied where the evidence is **2026** — the
+"sent since we started" test — and **no proven sender is demoted**. 89 moves applied (21 up to Tier 1, incl. the six W5
+spine-list senders; 56 to Tier 2; 12 to Tier 3). **204 not applied**, all logged with reasons in
+`pm/mmc-import/tier-reconciliation-sep22.csv`: 116 Tier-1 moves rest on 2025-only spine referrals (Joel's file counts
+from Jan 2025), 65 Tier-2/3 moves on 2025-only ortho/other, and **23 are demotions of accounts with 2026 spine patients**
+(six of them Joe's Sep 3 adds, e.g. Great Lakes Medicine, 5 spine) — Joel's attribution source clearly differs from the
+master workbook; Joel + Santosh to align the definition before the next file.
+
+**The routes are now cells** (72: Kristen 28 · Jasmine 18 · Coty 26 — `K-A01…`): up to ~10 producers that sit together
+(check-in GPS) plus the prospects nearest to them. `A` = holds Tier 1s (14-day rhythm) · `B` = Tier 2/3 only · `C` =
+prospects only (runs on slack). **A day = the cell's DUE stops**, Tier 1 first (due Tier 1s from cells within 12 miles ride
+along), then prospects to fill to ~10 — nothing inside its window is listed, so the skip-flag era is over. Two **outposts**
+never take a whole day (Tedd March – Monroe, a Tier 1; Family First Healthcare – Armada) — pair them with a nearby trip.
+Prospect-only far pockets with no slack this cycle: Jasmine 5 cells (40 prospects), Coty 7 cells (12) — honest "Not in
+W9–W14 plan" labels in the import.
+
+**W9 (Sep 28) is the transition week, per Kristen:** every T1/T2/T3 stop already on the Sep 3 W9 plan is kept (marked
+"kept from Sep 3 plan"; a kept stop visited <10 days earlier says "your call"); the plan's prospects gave way to due
+producers nearby.
+
+**What the cadence actually delivers in W9–W14 (30 days × ~10 stops per PL):**
+
+| | Tier 1 visits per account | Tier 2 | Prospects touched |
+|---|---|---|---|
+| Jasmine | **all 41 at 3× (every 2 weeks)** | 35 at 2×, 12 at 1×, 14 none | 75 of 208 |
+| Coty | 41 at 3×, 19 at 2×, 1 none | 10 at 2×, 30 at 1×, 20 none | 70 of 204 |
+| Kristen | 34 at 3×, 67 at 2×, 19 at 1×, 2 none | **25 of 134 get a drive visit** | 0 of 37 |
+
+Kristen's line is the capacity truth, not a bug: 122 drive Tier 1s at 14 days need 61 stops/week before a single Tier 2.
+Per her call ("tier ones every two weeks — I may skip some and text"), the plan is **Tier-1-first**. The alternative is one
+switch away for next Friday: **balanced** (T1 and T2 both about every 6 weeks). Her decision, and the Gautam capacity
+conversation (`pm/pl-capacity-model-sep9.xlsx`) just got sharper: the team's drive Tier 1s alone at 14d = **112 stops/week
+of 150**.
+
+**Check-ins, filled from the export (company-day):** W5 **143** (K 37 · J 46 · C 60; T1 share 19%) · W6 **120** (K 42 · J 36 ·
+C 42; 23%) · W7 **140** (K 54 · J 37 · C 49; 29%). Activity held; the T1 share is what the new cadence should move.
+
+**For Joe:** `pm/ownership-mismatches-sep22.csv` — 10 more book-vs-MMC-owner mismatches between active PLs (e.g. Premiere,
+Hartland and Livingston Pediatrics on Coty's routes but Kristen-owned; Macomb Internal Medicine and Emcura on Kristen's,
+Coty-owned; Epic Medical Center on Jasmine's, Coty-owned) — Y/N and I'll move them; Glazer needs its MMC owner switched to
+Coty (Santosh). **Add candidates:** MedCare Urgent Care (W5 spine sender, no MMC record at all) and five accounts Joel's
+file moved to Tier 1 since Aug 3 that aren't in the book — Surgeons Choice Medical Center, Katherine A Repp NP, Crossover
+Health Royal Oak, Waterford Clinic & UC, Elite Internal Medicine.
+
+**Data-ops:** the activities export was cut off mid-row (one row lost; export straight from MMC next time) · Ruffini →
+Glazer merge in MMC · "S. Crossley MD" hangs off the HENRY FORD HEALTH umbrella record · Joel's tier definitions vs the
+program's 2026 rule (above).
+
+---
+
 ## Sep 3 refresh — the 111 adds land; W4 recap; the adherence finding
 
 **Book: 862 → 973** (Kristen 322 · Jasmine 320 · Coty 331 | T1 216 · T2 217 · T3 34 ·

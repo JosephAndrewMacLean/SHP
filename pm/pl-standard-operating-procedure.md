@@ -15,14 +15,15 @@
 
 ## 1. The account universe (what we work, and how it changes)
 
-1.1 The working universe is the **973-account validated spine book** (Kristen 322 incl. the ex-Sean
-book · Jasmine 320 · Coty 331), organized by evidence: **Tier 1** sent ≥1 spine patient (216) ·
-**Tier 2** ortho-only senders (217) · **Tier 3** other-service senders (34) · **Prospects** (506).
+1.1 The working universe is the **971-account validated spine book** (Kristen 320 incl. the ex-Sean
+book · Jasmine 317 · Coty 334), organized by evidence: **Tier 1** sent ≥1 spine patient (237) ·
+**Tier 2** ortho-only senders (259) · **Tier 3** other-service senders (25) · **Prospects** (450).
 **Wave 1** = the 90 highest-priority proven senders, always first in line each cycle. (History:
 848 pre-validation → 766 after the Jul 31 eyeball pass → 773 after Aug 7 (11 new in, 4 duplicate
 records out) → 862 after Aug 14 (4 restored + urgent-care sweep) → Aug 21: NeuroRestorative out, Commerce
-Primary Care in → **973 after Sep 3** (Joe's Y/N pass on the 15-month referral-evidence list:
-+111 incl. 8 Non-Spine reversals); details in
+Primary Care in → 973 after Sep 3 (Joe's Y/N pass on the 15-month referral-evidence list:
++111 incl. 8 Non-Spine reversals) → **971 after Sep 22** (Ruffini duplicate merged into Glazer, MD Urgent
+Care closed; tiers refreshed from Joel's tracking on 2026 evidence); details in
 `pm/spine-routing-parking-lot.md`.)
 
 1.2 **Accounts are never deleted.** An account leaves the working rotation only by being tagged
@@ -56,15 +57,15 @@ regenerates routes, schedule, app, and MMC import. No side-channel edits to the 
   prospect = *"send us a handful — let us show you what we're about."*
 - **Leave-behind** from the rotating set (see §7 Materials) + coordinator card + direct line.
 
-## 4. Cadence standard (Kristen's cadence, Jul 22)
+## 4. Cadence standard (Kristen, Sep 19 call — effective Mon Sep 28)
 
 | Class | Rhythm | Notes |
 |---|---|---|
-| Tier 1 (incl. Wave 1) | **every 21 days** | Wave 1 goes first in line each cycle; 14-day was rejected as "too soon — we get annoying" |
-| Tier 2 (ortho senders) | **every 30 days** | All-in cross-sell — these already trust us |
-| Tier 3 | **every 45 days** | |
-| Prospects | **45-day first pass**, then per the 90-day read | Promote / Hold / Park |
-| Capacity | **5 scheduled days per PL-week** (Kristen, Jasmine, Coty). Each is one real route day — **~10 stops, one area, mixed tiers**: producers due that week, with prospects from the same area riding along to fill it. Day IDs are `K-W1D1` (week 1, day 1); home route days `R01…` stay the geography reference. Light slots at cycle-end are flex | **Changed Jul 31 (Joe) — supersedes the prior "3–4 days + 1–2 protected ortho days" guard. ⚠️ Under this setting Kristen's Tier-1-heavy book fills all 5 slots every week (no ortho field days); flagged for Kristen + Gautam at approval** |
+| Tier 1 (incl. Wave 1) | **every 14 days** | Sep 19 (Kristen): expedite T1/T2 touches — "hit tier ones every two weeks." Kristen runs the same cadence and may substitute a text/call at some offices; her attorney accounts are worked by phone (no drive route) |
+| Tier 2 (ortho senders) | **every 3–4 weeks (planned at 24 days)** | All-in cross-sell — these already trust us |
+| Tier 3 | **every 3–4 weeks (24 days)** | Kept — "count the tier threes the same way we count the tier twos, they're already sending" (Kristen, Sep 19) |
+| Prospects | **every 60–90 days (planned at 75), sprinkled into every week** | Never a prospect-only week; producers first, prospects fill the day |
+| Capacity | **5 scheduled days per PL-week** (Kristen, Jasmine, Coty). Each is one real day in one **cell** (`K-A01…` = Tier-1 cell, `…B…` = Tier-2/3, `…C…` = prospects): the day lists the cell's **due** stops (Tier 1 first, most overdue first; due Tier 1s from cells within 12 miles ride along), then prospects to fill it to ~10. Nothing inside its window is listed. Light slots at cycle-end are flex | **Changed Jul 31 (Joe) — supersedes the prior "3–4 days + 1–2 protected ortho days" guard. ⚠️ Under this setting Kristen's Tier-1-heavy book fills all 5 slots every week (no ortho field days); flagged for Kristen + Gautam at approval** |
 
 A visit = a **logged MMC check-in**. Texts and calls are real relationship work but are invisible
 to the CRM; a lapse flag therefore means *"check this,"* never *"you failed."* High-value text/call
@@ -143,3 +144,4 @@ texture → compliance before action. This SOP changes by version, not by drift:
 | 1.0 DRAFT r5 | 2026-08-07 | Weekly Friday true-up from live MMC exports (cadence runs on actual check-ins); territory re-clustered on MMC coordinates; same-building accounts visited together; finish-early bonus stops; new-account auto-intake + monthly scrub cadence proposed (`pm/spine-routing-parking-lot.md`) | pending — Gautam |
 | 1.0 DRAFT r6 | 2026-08-07 | §4 routing per Kristen: city-first contiguous drive chains (≤5-mile legs, audited), far-pocket short runs with while-I'm-here sweep, 📝 field-note flags; weekly tier-mix check added (By City / Weekly Mix tabs) | pending — Gautam |
 | 1.0 DRAFT r7 | 2026-08-07 | §4 final (Joe+Kristen call): a scheduled day IS a home route, run whole, in drive order; cadence selects which routes run each week (lapsed first, 2 protect slots, same-city routes back-to-back); tier mix judged weekly | pending — Gautam |
+| 1.0 DRAFT r8 | 2026-09-22 | §4 cadence per Kristen (Sep 19 call), effective Sep 28: T1 14d · T2 and T3 3–4 wks · prospects 60–90d sprinkled; routes rebuilt as cells (due-stop days); Kristen's attorneys on phone cadence; §1.1 book 971 with tiers refreshed on 2026 evidence | pending — Gautam |

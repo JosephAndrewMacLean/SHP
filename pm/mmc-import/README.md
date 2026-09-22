@@ -1,6 +1,6 @@
 # Map My Customers sync — getting the spine plan into the CRM
 
-**Owner:** Santosh (import) + Joe (fields/design) · **Updated:** 2026-07-31 (post-validation)
+**Owner:** Santosh (import) + Joe (fields/design) · **Updated:** 2026-09-22 (new cadence, effective Sep 28)
 **Goal:** the plan lives where the PLs already work — MMC map filters, visit frequencies, and
 past-due flags — instead of in a spreadsheet nobody opens in the field.
 
@@ -8,8 +8,8 @@ past-due flags — instead of in a spreadsheet nobody opens in the field.
 
 | File | What it is |
 |---|---|
-| `mmc-company-update-IMPORT.csv` | **862 rows** — one per validated company (766 locations; 4 two-location practices share one Company ID). Keyed on **Company ID** (from MMC's own export, so matching is exact). Adds spine plan fields incl. the **v2 route days (K-R01…)** and each account's first planned week of the Aug 3 → Sep 28 cycle; keeps each account's existing Groups. |
-| `mmc-non-spine-group-IMPORT.csv` | **84 rows** — the accounts PLs marked **"No"** in the Jul 31 eyeball pass. Tags them into Kristen's **`Non-Spine`** group and strips only our `Spine …` plan groups; every other existing group is preserved. `Next Action` carries the PL's reason (e.g. "95% Medicaid," "closed," "competition"). **Reversible** — remove the group tag and the account re-enters the next regeneration. |
+| `mmc-company-update-IMPORT.csv` | **971 rows** — one per book account (Sep 22: Ruffini duplicate and the closed MD Urgent Care removed). Keyed on **Company ID**. Sep 22 fields: refreshed `Spine Tier` (Joel's tracking, 2026 evidence — see `tier-reconciliation-sep22.csv`), the new **cells** in `Route Day` (`K-A01…` = Tier-1 cell, `…B…` = Tier-2/3 cell, `…C…` = prospect cell; `Phone cadence` = Kristen's attorney accounts), `Visit Frequency Days` on the new cadence (**14 / 24 / 24 / 75**, attorneys 30), and `First Planned Week` = the first W9–W14 day the account is on (or an honest reason it isn't). |
+| `mmc-non-spine-group-IMPORT.csv` | **78 rows** — the accounts PLs marked **"No"** in the Jul 31 eyeball pass. Tags them into Kristen's **`Non-Spine`** group and strips only our `Spine …` plan groups; every other existing group is preserved. `Next Action` carries the PL's reason (e.g. "95% Medicaid," "closed," "competition"). **Reversible** — remove the group tag and the account re-enters the next regeneration. |
 | `mmc-import-TEST-3rows.csv` | First 3 rows of the company update — run this first. |
 
 ## Columns → MMC mapping
@@ -18,9 +18,9 @@ past-due flags — instead of in a spreadsheet nobody opens in the field.
 |---|---|---|
 | `Company ID` | Company ID (match key) | **Update-existing import — do not create new records.** MMC's import supports updates when Company ID is supplied. |
 | `Company Name` | Name | For eyeballing only — don't remap names. |
-| `Groups` | Groups | Pre-built as *existing groups + the spine plan group* (`Spine T1 – 21d` / `Spine T2 – 30d` / `Spine T3 – 45d` / `Spine Prospect – 45d`, plus `Spine Wave 1` and `Spine Sean Priority`), so a replace-style import is safe. Verify on the 3-row test that existing groups persist. In the non-spine file this column is *existing groups minus `Spine …` + `Non-Spine`*. |
+| `Groups` | Groups | Pre-built as *existing groups + the spine plan group* (`Spine T1 – 14d` / `Spine T2 – 24d` / `Spine T3 – 24d` / `Spine Prospect – 75d` / `Spine Attorney – phone cadence`, plus `Spine Wave 1` and `Spine Sean Priority`), so a replace-style import is safe. Verify on the 3-row test that existing groups persist. In the non-spine file this column is *existing groups minus `Spine …` + `Non-Spine`*. |
 | `Spine Tier` · `Spine Wave` · `Spine Target Score` · `Referral Evidence` · `2026 Spine Patients` · `Route Day` · `First Planned Week` · `Next Action` | **Custom fields** (create once) | These make the map filterable by the plan. `Route Day` = the **v2** day, e.g. `K-R01` (Kristen Route day 01). `First Planned Week` is a date (cycle 2, W1 = Aug 3), `Touched Jul 22–31 — next per 90-day read`, or `Backlog (Oct+)`. |
-| `Visit Frequency Days` | reference only | Set frequency **on the spine groups in-app** (Settings → Groups) rather than per company — one setting each, and MMC's past-due engine starts flagging lapses automatically. Cadence per Kristen (Jul 22): **T1 = 21 · T2 = 30 · T3 = 45 · Prospect = 45**. Today only **64 of 2,349 owned accounts have any frequency configured**, which is why nothing ever shows past due. The `Non-Spine` group gets **no frequency** — that's the point. |
+| `Visit Frequency Days` | reference only | Set frequency **on the spine groups in-app** (Settings → Groups) rather than per company — one setting each, and MMC's past-due engine starts flagging lapses automatically. Cadence per Kristen (Sep 19 call, effective Sep 28): **T1 = 14 · T2 = 24 · T3 = 24 · Prospect = 75** (attorneys: phone cadence, 30 in-person). Today only **64 of 2,349 owned accounts have any frequency configured**, which is why nothing ever shows past due. The `Non-Spine` group gets **no frequency** — that's the point. |
 
 ## Run order (≈30 minutes)
 
@@ -31,7 +31,7 @@ past-due flags — instead of in a spreadsheet nobody opens in the field.
    page for errors.
 4. Run `mmc-non-spine-group-IMPORT.csv` with the same saved matching — 82 accounts pick up the
    `Non-Spine` group and drop their `Spine …` plan groups.
-5. Settings → Groups: set visit frequency on the `Spine …` groups (**21 / 30 / 45 / 45** days). No
+5. Settings → Groups: set visit frequency on the `Spine …` groups (**14 / 24 / 24 / 75** days; none on `Spine Attorney – phone cadence`). No
    frequency on `Non-Spine`.
 6. Tell the PLs: filter the map by `Spine Wave 1` (or the Route Day custom field) → build the day's
    route in-app → check in on arrival. Google-Maps links per route day are in each PL's
