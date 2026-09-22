@@ -19,7 +19,7 @@ past-due flags — instead of in a spreadsheet nobody opens in the field.
 | `Company ID` | Company ID (match key) | **Update-existing import — do not create new records.** MMC's import supports updates when Company ID is supplied. |
 | `Company Name` | Name | For eyeballing only — don't remap names. |
 | `Groups` | Groups | Pre-built as *existing groups + the spine plan group* (`Spine T1 – 14d` / `Spine T2 – 24d` / `Spine T3 – 24d` / `Spine Prospect – 75d` / `Spine Attorney – phone cadence`, plus `Spine Wave 1` and `Spine Sean Priority`), so a replace-style import is safe. Verify on the 3-row test that existing groups persist. In the non-spine file this column is *existing groups minus `Spine …` + `Non-Spine`*. |
-| `Spine Tier` · `Spine Wave` · `Spine Target Score` · `Referral Evidence` · `2026 Spine Patients` · `Route Day` · `First Planned Week` · `Next Action` | **Custom fields** (create once) | These make the map filterable by the plan. `Route Day` = the **v2** day, e.g. `K-R01` (Kristen Route day 01). `First Planned Week` is a date (cycle 2, W1 = Aug 3), `Touched Jul 22–31 — next per 90-day read`, or `Backlog (Oct+)`. |
+| `Spine Tier` · `Spine Wave` · `Spine Target Score` · `Referral Evidence` · `2026 Spine Patients` · `Route Day` · `First Planned Week` · `Next Action` | **Custom fields** (create once) | These make the map filterable by the plan. `Route Day` = the account's **cell** since Sep 22 (`K-A01…` Tier-1 cell, `…B…` Tier-2/3, `…C…` prospects; `Phone cadence` = Kristen's attorney accounts). `First Planned Week` is the Monday of the first W9–W14 day the account is on (Sep 28 → Nov 2), or `Not in W9–W14 plan — <tier> due <date>`, `Outpost — pair with a nearby day…`, or `Phone cadence (Kristen) — no drive route`. |
 | `Visit Frequency Days` | reference only | Set frequency **on the spine groups in-app** (Settings → Groups) rather than per company — one setting each, and MMC's past-due engine starts flagging lapses automatically. Cadence per Kristen (Sep 19 call, effective Sep 28): **T1 = 14 · T2 = 24 · T3 = 24 · Prospect = 75** (attorneys: phone cadence, 30 in-person). Today only **64 of 2,349 owned accounts have any frequency configured**, which is why nothing ever shows past due. The `Non-Spine` group gets **no frequency** — that's the point. |
 
 ## Run order (≈30 minutes)
@@ -51,7 +51,7 @@ credentials (contact: Alexa Ordoñez); developer docs at **developers.mapmycusto
 - **Push:** weekly planned-visit schedule + tier/wave changes (no more manual imports).
 - **Pull:** completed visits nightly → auto-fill the Weekly Spine Scorecard (visit-days per PL,
   protect-list lapses, % visits into the spine book) and fire a lapse alert when a repeat-spine
-  account passes 21 days unvisited.
+  account passes its cadence (14 / 24 / 75 days) unvisited.
 Owner: Santosh; pairs with the MMC↔NextGen crosswalk already tracked (ATTR-B.1).
 
 ## Cautions
