@@ -14,7 +14,7 @@
 > P 460**; 68 moves applied, 225 logged-not-applied). Routes are now **71 cells** (`K-A01…`) and a day = the due
 > stops in and around the cell, Tier 1 first, prospects filling — no skip flags to read. **W9 keeps every T1/T2/T3 stop
 > from the Sep 3 plan** and swaps its prospects for due producers. Over W9–W14: Jasmine's Tier 1s 41 of 41 at three visits
-> (every 2 weeks) with 49 of 55 Tier 2s twice; Coty's Tier 1s 51 of 61 at three; Kristen's 91 of 122 at two or
+> (every 2 weeks) with 49 of 55 Tier 2s twice; Coty's Tier 1s 54 of 61 at three; Kristen's 91 of 122 at two or
 > three, at the cost of 92 of her 124 Tier 2s (her call: Tier-1-first; "balanced" is one switch away). Check-ins
 > W5–W7 filled from the Sep 22 export (143 · 120 · 140).
 >

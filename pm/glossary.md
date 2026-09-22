@@ -25,7 +25,7 @@ says so — **corrections welcome; flag anything that doesn't match how the team
 | Term | Meaning |
 |---|---|
 | **MMC** | Map My Customers — the field CRM the PLs log visits in. |
-| **The book / universe** | **971 target accounts** (Sep 22) in 70 cells — 766 validated Jul 31 → 973 after the Sep 3 adds → 971 after the Sep 22 merges/removals; every change logged in `pm/spine-routing-parking-lot.md`. |
+| **The book / universe** | **971 target accounts** (Sep 22) in 71 cells — 766 validated Jul 31 → 973 after the Sep 3 adds → 971 after the Sep 22 merges/removals; every change logged in `pm/spine-routing-parking-lot.md`. |
 | **Evidence band** | What an account has actually sent us in 2026: **Repeat Spine Referrer** (2+ spine patients) · **One Spine Patient** · **Ortho Referrer** (ortho but no spine) · **Other Patient Referrer** (pain/hand/foot only) · **Visit / Prospect** (no attributed patients). |
 | **Tier 1 / 2 / 3 / Prospect** | Tier 1 = sent ≥1 spine patient · Tier 2 = ortho referrers · Tier 3 = other-service referrers · Prospect = spine-adjacent, nothing attributed yet. Current book (Sep 22, 971): **T1 237 · T2 238 · T3 36 · Prospect 460** — tiers refreshed from Joel's MMC tier tracking on 2026 evidence (68 moves applied, none downward; `pm/mmc-import/tier-reconciliation-sep22.csv`). Sep 3 was 216 · 217 · 34 · 506 on 973. Validated book Jul 31 was T1 162 · T2 174 · T3 34 · Prospect 396; pre-validation core split 146/156/37/469. |
 | **Wave 1** | The first-priority 90 accounts (all proven spine senders) — first in line at the Tier-1 rhythm — **14 days since Sep 28** (Jul 22–Sep 27 it ran at 21 days). |

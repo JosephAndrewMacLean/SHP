@@ -65,10 +65,10 @@ Tier 1s (14-day rhythm) · `B` = Tier 2/3 only · `C` = prospects only (runs on 
 around a cell**: the cell's due producers plus due producers within 8 miles (12 when a day would otherwise run short),
 Tier 1 first, most overdue first; then the day's prospect slot(s) from pools within 8 miles of the day's producers.
 Nothing inside its window is listed — the skip-flag era is over. Far pockets run as short flagged days (3+ stops, per
-Kristen's Aug 7 rule); 4 accounts sit alone or in pairs too far from anything to make a day — flagged "Outpost" in
-the import (e.g. Tedd March – Monroe, a Tier 1): pair them with a nearby trip. Prospect-only far pockets with no slack
-this cycle: Jasmine 5 cells (35 prospects), Coty 7 (30), Kristen 0 (0) — honest "Not in W9–W14 plan"
-labels in the import.
+Kristen's Aug 7 rule); 6 accounts sit alone or in pairs too far from anything to make a day — flagged "Outpost" in
+the import (e.g. Tedd March – Monroe, a Tier 1): pair them with a nearby trip. Prospect-only far pockets never run as
+a day this cycle: Jasmine 5 cells, Coty 7, Kristen 0 — 47 of their prospects get no touch and carry honest "Not in W9–W14
+plan" labels in the import (the rest ride along on neighbouring days).
 
 **W9 (Sep 28) is the transition week, per Kristen:** every T1/T2/T3 drive stop on the Sep 3 W9 plan is kept — by Sep 3
 tiers Kristen 35 · Jasmine 16 · Coty 17 (only Kristen's two attorney stops back out); with the Sep 22 promotions the kept
@@ -82,10 +82,10 @@ the kept stops; a day's prospect slot goes to its own Sep 3 prospects only if th
 | | Tier 1 visits per account | Tier 2 | Tier 3 | Prospects touched | Prospects per week W9→W14 |
 |---|---|---|---|---|---|
 | Jasmine | **41 at 3×** | 49 at 2×, 6 at 1× | 9 at 2×, 1 at 1× | 54 of 211 | 0 · 5 · 10 · 23 · 5 · 11 |
-| Coty | 51 at 3×, 9 at 2×, 1 none | 14 at 2×, 37 at 1×, 4 none | 1 at 2×, 8 at 1×, 2 none | 39 of 207 | 6 · 5 · 11 · 8 · 6 · 3 |
+| Coty | 54 at 3×, 5 at 2×, 1 at 1×, 1 none | 14 at 2×, 38 at 1×, 3 none | 9 at 1×, 2 none | 40 of 207 | 6 · 5 · 11 · 8 · 6 · 4 |
 | Kristen | 8 at 3×, 83 at 2×, 31 at 1× | **13 at 2×, 19 at 1×, 92 none** | 5 at 1×, 10 none | 22 of 41 | 1 · 5 · 4 · 4 · 4 · 4 |
 
-(8 of the 75 W10–W14 days carry no prospect — none was due within 8 miles that week.) Kristen's line is the
+(7 of the 75 W10–W14 days carry no prospect — none was due within 8 miles that week.) Kristen's line is the
 capacity truth, not a bug: 122 drive Tier 1s at 14 days need 61 stops/week before a single Tier 2. Per her call ("tier
 ones every two weeks — I may skip some and text"), the plan is **Tier-1-first**: 92 of her 124 drive Tier 2s and 10 of
 15 Tier 3s get no drive visit in the six weeks (they keep their due dates in the import), and 31 of her Tier 1s get one
@@ -108,8 +108,10 @@ one Kristen point carried 394 check-ins across 45 companies) and each company's 
 address zip; never-visited accounts sit at their zip or town centroid. 4 accounts check in 14/10/25/54 miles from their
 MMC address — placed at the address zip and flagged "verify" in the import (St Clair Orthpaedics & Sports Medicine - Macomb; MICHIGAN ORTHOPEDIC SPECIALISTS - Farmington Hills; Hesselberg Chiropractic; Elia & Ponto Law): MMC address or
 the office the PL actually visits? 10 book accounts have no city in MMC (parsed from the address; one bad zip). Days are
-compact except far pockets: 9 of 90 days span more than 20 miles (Jasmine W9 J-A06, Jasmine W9 J-A01, Kristen W10 K-A27, Jasmine W10 J-A08, Jasmine W11 J-A06, Jasmine W11 J-A04…) and 1 single legs
-exceed 15 miles — rural Port Huron/Yale/Imlay City runs and W9 transition days built on the Sep 3 geography.
+mostly compact: 10 of 90 days span more than 20 miles (Jasmine W9 J-A06, Jasmine W9 J-A01, Kristen W10 K-A27, Jasmine W10 J-A08, Jasmine W11 J-A06, Jasmine W11 J-A04…) and 1 single legs exceed 15 miles — rural
+Port Huron/Croswell runs, W9 transition days built on the Sep 3 geography, and metro days where the 8→12→15-mile borrow
+rule reached across town to fill a day. A day's cell ID is its anchor, not a promise of content — read "Primary Area" for
+where the day actually goes.
 
 **Data-ops:** the activities export was cut off mid-row (one row lost; export straight from MMC next time) · Ruffini →
 Glazer merge in MMC (the app's W5 history day for Coty's R15 no longer shows the dropped Ruffini record; the ledger keeps
@@ -354,8 +356,6 @@ schedule. It gets vetted at the next monthly scrub.
 - **Quarterly:** full eyeball pass (the Jul 31 exercise), per the SOP.
 
 ### 5. Routing — v3: WHOLE-ROUTE DAYS (the Joe + Kristen decision, end of Aug 7 call) ✅
-
-> **Superseded Sep 22:** days are now cells' due stops on the 14/24/24/75 cadence — see the Sep 22 section. Kept for the Aug 7 reasoning.
 
 > **Superseded Sep 22:** days are now cells' due stops on the 14/24/24/75 cadence — see the Sep 22 section. Kept for the Aug 7 reasoning.
 Two rounds of field review got us here. Round one killed cross-town days. Round two, walking
