@@ -17,7 +17,7 @@
 
 1.1 The working universe is the **971-account validated spine book** (Kristen 320 incl. the ex-Sean
 book · Jasmine 317 · Coty 334), organized by evidence: **Tier 1** sent ≥1 spine patient (237) ·
-**Tier 2** ortho-only senders (259) · **Tier 3** other-service senders (25) · **Prospects** (450).
+**Tier 2** ortho-only senders (238) · **Tier 3** other-service senders (36) · **Prospects** (460).
 **Wave 1** = the 90 highest-priority proven senders, always first in line each cycle. (History:
 848 pre-validation → 766 after the Jul 31 eyeball pass → 773 after Aug 7 (11 new in, 4 duplicate
 records out) → 862 after Aug 14 (4 restored + urgent-care sweep) → Aug 21: NeuroRestorative out, Commerce
@@ -65,7 +65,7 @@ regenerates routes, schedule, app, and MMC import. No side-channel edits to the 
 | Tier 2 (ortho senders) | **every 3–4 weeks (planned at 24 days)** | All-in cross-sell — these already trust us |
 | Tier 3 | **every 3–4 weeks (24 days)** | Kept — "count the tier threes the same way we count the tier twos, they're already sending" (Kristen, Sep 19) |
 | Prospects | **every 60–90 days (planned at 75), sprinkled into every week** | Never a prospect-only week; producers first, prospects fill the day |
-| Capacity | **5 scheduled days per PL-week** (Kristen, Jasmine, Coty). Each is one real day in one **cell** (`K-A01…` = Tier-1 cell, `…B…` = Tier-2/3, `…C…` = prospects): the day lists the cell's **due** stops (Tier 1 first, most overdue first; due Tier 1s from cells within 12 miles ride along), then prospects to fill it to ~10. Nothing inside its window is listed. Light slots at cycle-end are flex | **Changed Jul 31 (Joe) — supersedes the prior "3–4 days + 1–2 protected ortho days" guard. ⚠️ Under this setting Kristen's Tier-1-heavy book fills all 5 slots every week (no ortho field days); flagged for Kristen + Gautam at approval** |
+| Capacity | **5 scheduled days per PL-week** (Kristen, Jasmine, Coty). Each is one real day in one **cell** (`K-A01…` = Tier-1 cell, `…B…` = Tier-2/3, `…C…` = prospects): the day lists the cell's **due** stops (Tier 1 first, most overdue first; due Tier 1s and then Tier 2/3s from cells within 12 miles ride along), then prospects to fill it to ~10 (never a prospect-only day while producers nearby are due). Nothing inside its window is listed. Light slots at cycle-end are flex | **Changed Jul 31 (Joe) — supersedes the prior "3–4 days + 1–2 protected ortho days" guard. ⚠️ Under this setting Kristen's Tier-1-heavy book fills all 5 slots every week (no ortho field days); flagged for Kristen + Gautam at approval** |
 
 A visit = a **logged MMC check-in**. Texts and calls are real relationship work but are invisible
 to the CRM; a lapse flag therefore means *"check this,"* never *"you failed."* High-value text/call

@@ -29,7 +29,7 @@ past-due flags — instead of in a spreadsheet nobody opens in the field.
 2. Check the 3 companies in-app: existing groups intact, spine group added, custom fields populated.
 3. Run the full `mmc-company-update-IMPORT.csv` with the saved matching. Review the import-history
    page for errors.
-4. Run `mmc-non-spine-group-IMPORT.csv` with the same saved matching — 82 accounts pick up the
+4. Run `mmc-non-spine-group-IMPORT.csv` with the same saved matching — 78 accounts pick up the
    `Non-Spine` group and drop their `Spine …` plan groups.
 5. Settings → Groups: set visit frequency on the `Spine …` groups (**14 / 24 / 24 / 75** days; none on `Spine Attorney – phone cadence`). No
    frequency on `Non-Spine`.

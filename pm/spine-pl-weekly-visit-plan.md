@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-21 · **Runs on:** the scored 808-account book + 85 built route days + Sean's 40-account overlay
 **Owners:** Kristen (lead), Jasmine, Coty, Sean (conditional) · **Ops:** Joe · **Fills tracker:** PL-A.5 (cadence live), PL-B (protect + recover), feeds SP-B.2 (scorecard)
-**The full stop-level schedule (1,085 scheduled visits, filter by `week` + `pl` — cadence updated Jul 22):** **`pm/pl-weekly-visit-schedule.csv`**
+**The full stop-level schedule (filter by `week` + `pl`; cadence updated Sep 22, effective Sep 28):** **`pm/pl-weekly-visit-schedule.csv`**
 **Kristen's share pack:** `pm/kristen-share/` (field workbook + handoff note) · **MMC sync:** `pm/mmc-import/`
 
 > ## ⟳ v13 — Sep 22: NEW CADENCE effective Mon Sep 28 (T1 14d · T2/T3 3–4 wks · prospects sprinkled); routes rebuilt as cells
@@ -10,10 +10,10 @@
 > prospects every 60–90 days sprinkled into every week**, all three PLs; Kristen's 18 attorney accounts move to a phone
 > cadence (off the drive routes). Basis = the Sep 3 book; **971 accounts** after the PL-chat corrections (Glazer/Ruffini
 > merged under Coty, Core Institute Novi + Allied + Aquino → Coty, MD Urgent Care closed) with tiers refreshed from Joel's
-> tracking on 2026 evidence (**T1 237 · T2 259 · T3 25 · P 450**; 89 moves applied, 204 logged-not-applied). Routes are now
-> **72 cells** (`K-A01…`) and a day = the cell's due stops, Tier 1 first, prospects filling — no skip flags to read.
+> tracking on 2026 evidence (**T1 237 · T2 238 · T3 36 · P 460**; 68 moves applied, 225 logged-not-applied). Routes are now
+> **76 cells** (`K-A01…`) and a day = the due stops in and around the cell, Tier 1 first, prospects filling — no skip flags to read.
 > **W9 keeps every T1/T2/T3 stop from the Sep 3 plan** and swaps its prospects for due producers. Over W9–W14: Jasmine's
-> Tier 1s every 2 weeks (3×), Coty's 2–3×, Kristen's 2–3× at the cost of 109 of her 134 Tier 2s (her call: Tier-1-first;
+> Tier 1s every 2 weeks (3×) with every Tier 2 twice, Coty's 3×, Kristen's 2–3× at the cost of 95 of her 124 Tier 2s (her call: Tier-1-first;
 > "balanced" is one switch away). Check-ins W5–W7 filled from the Sep 22 export (143 · 120 · 140).
 >
 > ## ⟳ v12 — Sep 3: +111 approved adds woven in; W6–W9 repaired; adherence finding

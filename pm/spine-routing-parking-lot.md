@@ -39,44 +39,45 @@ T3s are kept and counted like T2s, "they're already sending") · prospects every
 into every week, never a prospect-only week**. Kristen runs the same cadence and may swap a text/call at some offices; her
 **18 attorney accounts (13 T1 · 4 T2 · 1 P) are off the drive routes** — MMC group `Spine Attorney – phone cadence`.
 
-**Book: 973 → 971** (Kristen 320 · Jasmine 317 · Coty 334 | **T1 237 · T2 259 · T3 25 · Prospect 450**). PL-chat corrections
+**Book: 973 → 971** (Kristen 320 · Jasmine 317 · Coty 334 | **T1 237 · T2 238 · T3 36 · Prospect 460**). PL-chat corrections
 applied exactly: Glazer Spine Center stays with **Coty under the Glazer name** and absorbs the Ruffini DC duplicate (same
 building, Ruffini record dropped) · **THE CORE INSTITUTE NOVI → Coty** · **Allied Internists → Coty** · **Aquino Integrative
 → Coty** · **MD Urgent Care removed (permanently closed)** · South East Michigan Medical Associates stays on Kristen (it was
 already hers; read the thread as another PL flagging it and Kristen claiming it — shout if that's backwards).
 
 **Tiers (Joel's `mmc_tier_tracking`, applied with one rule):** his moves are applied where the evidence is **2026** — the
-"sent since we started" test — and **no proven sender is demoted**. 89 moves applied (21 up to Tier 1, incl. the six W5
-spine-list senders; 56 to Tier 2; 12 to Tier 3). **204 not applied**, all logged with reasons in
-`pm/mmc-import/tier-reconciliation-sep22.csv`: 116 Tier-1 moves rest on 2025-only spine referrals (Joel's file counts
-from Jan 2025), 65 Tier-2/3 moves on 2025-only ortho/other, and **23 are demotions of accounts with 2026 spine patients**
-(six of them Joe's Sep 3 adds, e.g. Great Lakes Medicine, 5 spine) — Joel's attribution source clearly differs from the
+"sent since we started" test — and **no proven sender is demoted**. 68 moves applied (21 up to Tier 1, incl. the six W5
+spine-list senders; 35 to Tier 2; 12 to Tier 3). **225 not applied**, all logged with reasons in
+`pm/mmc-import/tier-reconciliation-sep22.csv`: 29 Tier-1 moves rest on 2025-only spine referrals (Joel's file counts
+from Jan 2025), 83 more rest on a 2025 spine referral plus a 2026 referral of unknown service line (Joel to classify), 63 Tier-2/3 moves on 2025-only ortho/other, and **50 are demotions** — 23 of Tier-1 accounts that have 2026 spine patients
+(six of them Joe's Sep 3 adds, e.g. Great Lakes Medicine, 5 spine) and 27 of Tier 2/3 senders — Joel's attribution source clearly differs from the
 master workbook; Joel + Santosh to align the definition before the next file.
 
-**The routes are now cells** (72: Kristen 28 · Jasmine 18 · Coty 26 — `K-A01…`): up to ~10 producers that sit together
+**The routes are now cells** (76: Kristen 29 · Jasmine 18 · Coty 29 — `K-A01…`): up to ~10 producers that sit together
 (check-in GPS) plus the prospects nearest to them. `A` = holds Tier 1s (14-day rhythm) · `B` = Tier 2/3 only · `C` =
-prospects only (runs on slack). **A day = the cell's DUE stops**, Tier 1 first (due Tier 1s from cells within 12 miles ride
-along), then prospects to fill to ~10 — nothing inside its window is listed, so the skip-flag era is over. Two **outposts**
+prospects only (runs on slack). **A day = the cell's DUE stops**, Tier 1 first (due Tier 1s, then due Tier 2/3s, from cells within 12 miles ride
+along), then prospects to fill to ~10 (two slots on Coty/Jasmine days when ≤8 producers are due; one on every Kristen day) — nothing inside its window is listed, so the skip-flag era is over. Two **outposts**
 never take a whole day (Tedd March – Monroe, a Tier 1; Family First Healthcare – Armada) — pair them with a nearby trip.
-Prospect-only far pockets with no slack this cycle: Jasmine 5 cells (40 prospects), Coty 7 cells (12) — honest "Not in
+Prospect-only far pockets with no slack this cycle: Jasmine 5 cells (39 prospects), Coty 10 cells (37), Kristen 1 (2) — honest "Not in
 W9–W14 plan" labels in the import.
 
-**W9 (Sep 28) is the transition week, per Kristen:** every T1/T2/T3 stop already on the Sep 3 W9 plan is kept (marked
+**W9 (Sep 28) is the transition week, per Kristen:** every T1/T2/T3 stop already on the Sep 3 W9 plan is kept (matched by MMC Company ID; marked
 "kept from Sep 3 plan"; a kept stop visited <10 days earlier says "your call"); the plan's prospects gave way to due
-producers nearby.
+producers within 12 miles of the kept stops (Tier 1 first).
 
 **What the cadence actually delivers in W9–W14 (30 days × ~10 stops per PL):**
 
-| | Tier 1 visits per account | Tier 2 | Prospects touched |
-|---|---|---|---|
-| Jasmine | **all 41 at 3× (every 2 weeks)** | 35 at 2×, 12 at 1×, 14 none | 75 of 208 |
-| Coty | 41 at 3×, 19 at 2×, 1 none | 10 at 2×, 30 at 1×, 20 none | 70 of 204 |
-| Kristen | 34 at 3×, 67 at 2×, 19 at 1×, 2 none | **25 of 134 get a drive visit** | 0 of 37 |
+| | Tier 1 visits per account | Tier 2 | Tier 3 | Prospects touched |
+|---|---|---|---|---|
+| Jasmine | **40 at 3×, 1 at 2×** | 52 at 2×, 3 at 1× | 10 at 2× | 43 of 211 |
+| Coty | 50 at 3×, 10 at 2×, 1 none | 18 at 2×, 35 at 1×, 2 none | 2 at 2×, 7 at 1×, 2 none | 35 of 207 |
+| Kristen | 19 at 3×, 71 at 2×, 30 at 1×, 2 none | **12 at 2×, 17 at 1×, 95 none** | 5 at 1×, 10 none | 20 of 41 (one a day) |
 
 Kristen's line is the capacity truth, not a bug: 122 drive Tier 1s at 14 days need 61 stops/week before a single Tier 2.
-Per her call ("tier ones every two weeks — I may skip some and text"), the plan is **Tier-1-first**. The alternative is one
-switch away for next Friday: **balanced** (T1 and T2 both about every 6 weeks). Her decision, and the Gautam capacity
-conversation (`pm/pl-capacity-model-sep9.xlsx`) just got sharper: the team's drive Tier 1s alone at 14d = **112 stops/week
+Per her call ("tier ones every two weeks — I may skip some and text"), the plan is **Tier-1-first**: 95 of her 124
+drive Tier 2s and 10 of 15 Tier 3s get no drive visit in the six weeks (they keep their due dates in the import). The
+alternative is one switch away for next Friday: **balanced** (T1 and T2 both about every 6 weeks). Her decision, and the Gautam capacity
+conversation (`pm/pl-capacity-model-sep9.xlsx`) just got sharper: the team's 224 drive Tier 1s alone at 14d = **112 stops/week
 of 150**.
 
 **Check-ins, filled from the export (company-day):** W5 **143** (K 37 · J 46 · C 60; T1 share 19%) · W6 **120** (K 42 · J 36 ·
@@ -374,7 +375,7 @@ Ex-Sean accounts are woven into Kristen's re-clustered geography — no more bol
 - **MI Family Practice → Coty** (matches MMC, where Coty already owns it).
 - ⚠️ Same situation, needs Kristen's call: **Aquino Integrative Internal Medicine** and
   **Allied Internists** are ex-Sean accounts on Kristen's list that MMC says *Coty* owns.
-  Move them too, or transfer MMC ownership back?
+  Move them too, or transfer MMC ownership back? **Sep 22: resolved — both moved to Coty per the PL chat (see the Sep 22 section).**
 
 ### 9. Flag the accounts with good notes ✅ shipped
 **684 of 773 accounts carry real field notes in MMC** (Coty's and Jasmine's are often detailed).
@@ -388,7 +389,7 @@ They're flagged **📝** on the *Stops by Day* and *Account List* tabs, with the
 | Item | Owner | Note |
 |---|---|---|
 | 18 ex-Sean accounts still **owned by Sean Sweeney in MMC** | Santosh (bulk owner transfer → Kristen) | Import updates our plan fields, not record ownership |
-| Aquino + Allied Internists — Kristen or Coty? | Kristen | See §8 |
+| Aquino + Allied Internists — Kristen or Coty? | **Resolved Sep 22: Coty** (PL chat) | See §8 |
 | Michigan Neurology Associates **Warren** office | Kristen/Coty | MMC only has Clinton Twp; add Warren record if it's a real second location |
 | 3 new accounts missing street addresses | Their owners | Blue Water Primary Care · Macomb Orthopedics · Michigan MSK Medicine — can't be routed accurately until fixed |
 | MNA record's `Company - ID` field holds junk text in MMC | Santosh | Custom field was mis-filled; repair so imports can match it |
