@@ -36,10 +36,11 @@ corrections applied; cadence clock from the Sep 22 MMC activities export (visits
 
 **The cadence (all three PLs):** Tier 1 every **14 days** · Tier 2 **and Tier 3** every **3–4 weeks** (due at 24 days —
 T3s are kept and counted like T2s, "they're already sending") · prospects every **60–90 days** (due at 75), **sprinkled
-into every week — at least one prospect on every day, two where the day has room; never a prospect-only week**. A stop is
-listed in the week its due date falls, so revisits land 10–17 days apart for Tier 1 and 21–28 for Tier 2/3. Kristen runs
-the same cadence and may swap a text/call at some offices; her **18 attorney accounts (13 T1 · 4 T2 · 1 P) are off the
-drive routes** — MMC group `Spine Attorney – phone cadence`.
+into every week — a prospect slot is held on every day and filled whenever a prospect is due within 8 miles, and a day
+with fewer due producers fills up with prospects; never a prospect-only week**. A stop is listed in the week its due date
+falls, so revisits land 10–17 days apart for Tier 1 and 21–28 for Tier 2/3. Kristen runs the same cadence and may swap a
+text/call at some offices; her **18 attorney accounts (13 T1 · 4 T2 · 1 P) are off the drive routes** — MMC group
+`Spine Attorney – phone cadence`.
 
 **Book: 973 → 971** (Kristen 320 · Jasmine 317 · Coty 334 | **T1 237 · T2 238 · T3 36 · Prospect 460**). PL-chat corrections
 applied exactly: Glazer Spine Center stays with **Coty under the Glazer name** and absorbs the Ruffini DC duplicate (same
@@ -58,35 +59,39 @@ plus a 2026 referral of unknown service line (Joel to classify), 63 Tier-2/3 mov
 Lakes Medicine, 5 spine) and 27 of Tier 2/3 senders. Joel's attribution source clearly differs from the master
 workbook; Joel + Santosh to align the definition before the next file.
 
-**The routes are now cells** (76: Kristen 29 · Jasmine 18 · Coty 29 — `K-A01…`): up to ~10 producers that sit together
-(check-in GPS) plus the prospects nearest to them. `A` = holds Tier 1s (14-day rhythm) · `B` = Tier 2/3 only · `C` =
-prospects only (runs on slack). **A day = the due stops in and around a cell**: the cell's due producers plus due
-producers within 8 miles (12 when a day would otherwise run short), Tier 1 first, most overdue first; then the day's
-prospect slots from pools within 8 miles of the day's producers. Nothing inside its window is listed — the skip-flag era
-is over. 11 accounts sit in cells too small for a day of their own (e.g. Tedd March – Monroe, a Tier 1; Family First
-Healthcare – Armada) — flagged "Outpost" in the import: pair them with a nearby trip. Prospect-only far pockets with no
-slack this cycle: Jasmine 6 cells (49 prospects), Coty 10 (37), Kristen 1 (2) — honest "Not in W9–W14 plan" labels in
-the import.
+**The routes are now cells** (70: Kristen 30 · Jasmine 18 · Coty 22 — `K-A01…`): up to ~10 producers that sit together
+(check-in GPS; never-visited accounts sit at their zip/town centroid) plus the prospects nearest to them. `A` = holds
+Tier 1s (14-day rhythm) · `B` = Tier 2/3 only · `C` = prospects only (runs on slack). **A day = the due stops in and
+around a cell**: the cell's due producers plus due producers within 8 miles (12 when a day would otherwise run short),
+Tier 1 first, most overdue first; then the day's prospect slot(s) from pools within 8 miles of the day's producers.
+Nothing inside its window is listed — the skip-flag era is over. Far pockets run as short flagged days (3+ stops, per
+Kristen's Aug 7 rule); 4 accounts sit alone or in pairs too far from anything to make a day — flagged "Outpost" in
+the import (e.g. Tedd March – Monroe, a Tier 1): pair them with a nearby trip. Prospect-only far pockets with no slack
+this cycle: Jasmine 6 cells (49 prospects), Coty 6 (29), Kristen 0 (0) — honest "Not in W9–W14 plan"
+labels in the import.
 
-**W9 (Sep 28) is the transition week, per Kristen:** every T1/T2/T3 stop already on the Sep 3 W9 plan is kept (matched by
-MMC Company ID — Kristen 36 · Jasmine 22 · Coty 19; marked "kept from Sep 3 plan" wherever it lands; a kept stop visited
-<10 days earlier says "your call"); the plan's prospects gave way to due producers within 10 miles of the kept stops,
-with the day's prospect slot(s) filled from that day's own Sep 3 prospects first.
+**W9 (Sep 28) is the transition week, per Kristen:** every T1/T2/T3 drive stop on the Sep 3 W9 plan is kept — by Sep 3
+tiers Kristen 35 · Jasmine 16 · Coty 17 (only Kristen's two attorney stops back out); with the Sep 22 promotions the kept
+stops read Kristen 36 · Jasmine 22 · Coty 19 — matched by MMC Company ID, marked "kept from Sep 3 plan" wherever they land, and a
+kept stop visited <10 days earlier says "your call". The plan's prospects gave way to due producers within 10 miles of
+the kept stops; a day's prospect slot goes to its own Sep 3 prospects only if they are due, so W9 carries few prospects
+(Kristen 0 · Jasmine 0 · Coty 6) and the sprinkle runs in full from W10.
 
 **What the cadence actually delivers in W9–W14 (30 days × ~10 stops per PL):**
 
 | | Tier 1 visits per account | Tier 2 | Tier 3 | Prospects touched | Prospects per week W9→W14 |
 |---|---|---|---|---|---|
-| Jasmine | **41 at 3×** | 45 at 2×, 9 at 1×, 1 none | 6 at 2×, 3 at 1×, 1 none | 59 of 211 | 5 · 10 · 6 · 19 · 5 · 14 |
-| Coty | 50 at 3×, 10 at 2×, 1 none | 16 at 2×, 34 at 1×, 5 none | 2 at 2×, 6 at 1×, 3 none | 47 of 207 | 6 · 5 · 13 · 8 · 10 · 5 |
-| Kristen | 11 at 3×, 83 at 2×, 28 at 1× | **14 at 2×, 9 at 1×, 101 none** | 2 at 2×, 3 at 1×, 10 none | 23 of 41 | 3 · 5 · 6 · 3 · 3 · 3 |
+| Jasmine | **40 at 3×, 1 at 2×** | 51 at 2×, 4 at 1× | 9 at 2×, 1 at 1× | 53 of 211 | 0 · 8 · 8 · 23 · 5 · 9 |
+| Coty | 55 at 3×, 5 at 2×, 1 none | 14 at 2×, 36 at 1×, 5 none | 11 at 1× | 44 of 207 | 6 · 5 · 11 · 8 · 7 · 7 |
+| Kristen | 8 at 3×, 85 at 2×, 29 at 1× | **11 at 2×, 22 at 1×, 91 none** | 5 at 1×, 10 none | 21 of 41 | 0 · 4 · 5 · 4 · 4 · 4 |
 
-Kristen's line is the capacity truth, not a bug: 122 drive Tier 1s at 14 days need 61 stops/week before a single Tier 2.
-Per her call ("tier ones every two weeks — I may skip some and text"), the plan is **Tier-1-first**: 101 of her 124
-drive Tier 2s and 10 of 15 Tier 3s get no drive visit in the six weeks (they keep their due dates in the import), and
-28 of her Tier 1s get one visit rather than two or three. The alternative is one switch away for next Friday:
-**balanced** (T1 and T2 both about every 6 weeks). Her decision — and the Gautam capacity conversation
-(`pm/pl-capacity-model-sep9.xlsx`) just got sharper: the team's 224 drive Tier 1s alone at 14d = **112 stops/week of 150**.
+(7 of the 75 W10–W14 days carry no prospect — none was due within 8 miles that week.) Kristen's line is the
+capacity truth, not a bug: 122 drive Tier 1s at 14 days need 61 stops/week before a single Tier 2. Per her call ("tier
+ones every two weeks — I may skip some and text"), the plan is **Tier-1-first**: 91 of her 124 drive Tier 2s and 10 of
+15 Tier 3s get no drive visit in the six weeks (they keep their due dates in the import), and 29 of her Tier 1s get one
+visit rather than two or three. The alternative is one switch away for next Friday: **balanced** (T1 and T2 both about
+every 6 weeks). Her decision — and the Gautam capacity conversation (`pm/pl-capacity-model-sep9.xlsx`) just got sharper:
+the team's 224 drive Tier 1s alone at 14d = **112 stops/week of 150**.
 
 **Check-ins, filled from the export (company-day):** W5 **143** (K 37 · J 46 · C 60; T1 share 19%) · W6 **120** (K 42 · J 36 · C 42; T1 share 22%) · W7 **140** (K 54 · J 37 · C 49; T1 share 29%). Activity held; the T1
 share is what the new cadence should move.
@@ -100,8 +105,8 @@ UC, Elite Internal Medicine.
 
 **Data-ops:** the activities export was cut off mid-row (one row lost; export straight from MMC next time) · Ruffini →
 Glazer merge in MMC (the app's W5 history day for Coty's R15 no longer shows the dropped Ruffini record; the ledger keeps
-it) · "S. Crossley MD" hangs off the HENRY FORD HEALTH umbrella record · Joel's tier definitions vs the program's 2026
-rule (above).
+it) · "S. Crossley MD" hangs off the HENRY FORD HEALTH umbrella record · 12 book accounts have no city in MMC (address
+parsed instead) · Joel's tier definitions vs the program's 2026 rule (above).
 
 ---
 
@@ -341,6 +346,8 @@ schedule. It gets vetted at the next monthly scrub.
 - **Quarterly:** full eyeball pass (the Jul 31 exercise), per the SOP.
 
 ### 5. Routing — v3: WHOLE-ROUTE DAYS (the Joe + Kristen decision, end of Aug 7 call) ✅
+
+> **Superseded Sep 22:** days are now cells' due stops on the 14/24/24/75 cadence — see the Sep 22 section. Kept for the Aug 7 reasoning.
 Two rounds of field review got us here. Round one killed cross-town days. Round two, walking
 Coty's week together, caught the remaining sin: two accounts a block apart on 17 Mile Rd landed
 on *different days* because tier priority was still composing each day stop-by-stop. The closing
@@ -409,4 +416,4 @@ They're flagged **📝** on the *Stops by Day* and *Account List* tabs, with the
 | Henry Ford / Corewell **vendor credentialing** for SHP | Joe finds process · Kristen signs | Both PLs keep hitting "no vendors" walls at system sites; unlocks a class of blocked accounts |
 | **Office hours into routing** ("closes at 3", "(M,W,TH)", closed-door stops) | Joe | Capture from notes at Friday refresh; early-close offices go first on the route |
 | **Notes-back pilot** at Macomb Family Medical Center | Joe + clinic side | Their only objection is the closed loop — prove it here, the prospect converts (feeds PL-D.3) |
-| Kristen's book vs capacity — **Sep 22: 28 of her 122 drive Tier 1s get one visit in W9–W14, 101 of 124 Tier 2s none** (Tier-1-first per Kristen; balanced option available) | Gautam (capacity call) | See the Sep 22 section |
+| Kristen's book vs capacity — **Sep 22: 29 of her 122 drive Tier 1s get one visit in W9–W14, 91 of 124 Tier 2s none** (Tier-1-first per Kristen; balanced option available) | Gautam (capacity call) | See the Sep 22 section |

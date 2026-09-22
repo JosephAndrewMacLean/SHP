@@ -7,16 +7,16 @@
 
 > ## ⟳ v13 — Sep 22: NEW CADENCE effective Mon Sep 28 (T1 14d · T2/T3 3–4 wks · prospects sprinkled); routes rebuilt as cells
 > Per Kristen (Sep 19 call): expedite the Tier 1/Tier 2 touches — **T1 every 14 days, T2 and T3 every 3–4 weeks (T3 kept),
-> prospects every 60–90 days sprinkled into every week (at least one per day)**, all three PLs; Kristen's 18 attorney
-> accounts move to a phone cadence (off the drive routes). Basis = the Sep 3 book; **971 accounts** after the PL-chat
-> corrections (Glazer/Ruffini merged under Coty, Core Institute Novi + Allied + Aquino → Coty, MD Urgent Care closed) with
-> tiers refreshed from Joel's tracking on 2026 evidence (**T1 237 · T2 238 · T3 36 · P 460**; 68 moves applied, 225
-> logged-not-applied). Routes are now **76 cells** (`K-A01…`) and a day = the due stops in and around the cell, Tier 1
-> first, prospects filling — no skip flags to read. **W9 keeps every T1/T2/T3 stop from the Sep 3 plan** and swaps its
-> prospects for due producers. Over W9–W14: Jasmine's Tier 1s 41 of 41 at three visits (every 2 weeks) with 45 of 55
-> Tier 2s twice; Coty's Tier 1s 50 of 61 at three; Kristen's 94 of 122 at two or three, at the cost of 101 of her
-> 124 Tier 2s (her call: Tier-1-first; "balanced" is one switch away). Check-ins W5–W7 filled from the Sep 22 export
-> (143 · 120 · 140).
+> prospects every 60–90 days sprinkled into every week (a slot on every day, filled when one is due nearby)**, all three
+> PLs; Kristen's 18 attorney accounts move to a phone cadence (off the drive routes). Basis = the Sep 3 book; **971
+> accounts** after the PL-chat corrections (Glazer/Ruffini merged under Coty, Core Institute Novi + Allied + Aquino →
+> Coty, MD Urgent Care closed) with tiers refreshed from Joel's tracking on 2026 evidence (**T1 237 · T2 238 · T3 36 ·
+> P 460**; 68 moves applied, 225 logged-not-applied). Routes are now **70 cells** (`K-A01…`) and a day = the due
+> stops in and around the cell, Tier 1 first, prospects filling — no skip flags to read. **W9 keeps every T1/T2/T3 stop
+> from the Sep 3 plan** and swaps its prospects for due producers. Over W9–W14: Jasmine's Tier 1s 40 of 41 at three visits
+> (every 2 weeks) with 51 of 55 Tier 2s twice; Coty's Tier 1s 55 of 61 at three; Kristen's 93 of 122 at two or
+> three, at the cost of 91 of her 124 Tier 2s (her call: Tier-1-first; "balanced" is one switch away). Check-ins
+> W5–W7 filled from the Sep 22 export (143 · 120 · 140).
 >
 > ## ⟳ v12 — Sep 3: +111 approved adds woven in; W6–W9 repaired; adherence finding
 > **Book is now 973** (Kristen 322 · Jasmine 320 · Coty 331): Joe's Y/N pass on the referral-
@@ -194,7 +194,7 @@
 |---|---|---|
 | Spine-day capacity | K: 3 days W1 · 4 W2–W4 · **3.5 W5+** · J/C: 3 W1 · 4 W2–W4 · 3 W5+ · Sean: 2/2/then ~1 | Leaves ~1–2 field days/week for the ortho book (GOV-B.2: hold ortho 130–140/wk) — the full-cadence plan needs 207 visits/wk vs ~155 capacity, so this is the explicit trade |
 | Day order, first pass | Lapsed-producer spine first, then day spine total, then Wave-1 count | Protect before prospect — **all 36 lapsed repeat-spine referrers get their recovery visit in W1–W2** (22 in W1) |
-| Revisit cycle **(Kristen's cadence v2, Jul 22)** | **ALL Tier 1 — Wave 1 included — every 21 days** (Kristen: “two weeks is too soon — we get annoying”) **· Tier 2 every ~30d · Tier 3 every ~45d**, prospect days once + flex; Wave 1 keeps priority by going first in line each cycle | Achieved medians: **Tier 1 = 3.0 wk · Tier 2 = 4.0 wk** — on spec |
+| Revisit cycle **(Kristen's cadence v2, Jul 22)** | **ALL Tier 1 — Wave 1 included — every 21 days** (Kristen: “two weeks is too soon — we get annoying”) **· Tier 2 every ~30d · Tier 3 every ~45d**, prospect days once + flex; Wave 1 keeps priority by going first in line each cycle | Achieved medians: **Tier 1 = 3.0 wk · Tier 2 = 4.0 wk** — on spec  **Superseded Sep 22 (v13): T1 14d · T2/T3 24d · P 75d, attorneys on phone cadence.** |
 | Protect overlays | Lapsed producers ≥5 spine → single-stop pull-forwards in **W1** (Applebaum & Stone, Vanstone, DMC West Bloomfield, Stonebrooke); every remaining lapsed repeat-spine → pulled into **W2** (MedPro, Oakland Family Practice, Metro Medical, Lifetime Family Care, Garden City Family Physicians, Medical Clinic of Northville) | No proven repeat referrer waits past Jul 31 |
 | Producer sweeps | Proven stops stranded on low-value tail days get swept as mini-days every 3 weeks from W5 (Kristen: D08/D13/D15/D17 — her Wave-2 tail, 34 stops) instead of running those full 10-stop prospect days | Covers the tail's 46 spine patients without burning full days on cold geography |
 | Reassess rule — promote/hold/park **(updated Jul 22)** | Nothing is deleted. At ~2 touches (≈90 days at prospect rhythm) the PL's field read decides: **promote** (more potential → tighter rhythm) · **hold** (45d) · **park** (backlog, revisit next quarter). Some accounts need MORE than 2 touches — the note after each touch powers the call | Field judgment over mechanical drops; rotation still earns its slots |

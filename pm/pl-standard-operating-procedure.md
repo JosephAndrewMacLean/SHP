@@ -65,7 +65,7 @@ regenerates routes, schedule, app, and MMC import. No side-channel edits to the 
 | Tier 2 (ortho senders) | **every 3–4 weeks (planned at 24 days)** | All-in cross-sell — these already trust us |
 | Tier 3 | **every 3–4 weeks (24 days)** | Kept — "count the tier threes the same way we count the tier twos, they're already sending" (Kristen, Sep 19) |
 | Prospects | **every 60–90 days (planned at 75), sprinkled into every week** | Never a prospect-only week; producers first, prospects fill the day |
-| Capacity | **5 scheduled days per PL-week** (Kristen, Jasmine, Coty). Each is one real day in one **cell** (`K-A01…` = Tier-1 cell, `…B…` = Tier-2/3, `…C…` = prospects): the day lists the cell's **due** stops (Tier 1 first, most overdue first; due Tier 1s and then Tier 2/3s from cells within 12 miles ride along), then prospects to fill it to ~10 (never a prospect-only day while producers nearby are due). Nothing inside its window is listed. Light slots at cycle-end are flex | **Changed Jul 31 (Joe) — supersedes the prior "3–4 days + 1–2 protected ortho days" guard. ⚠️ Under this setting Kristen's Tier-1-heavy book fills all 5 slots every week (no ortho field days); flagged for Kristen + Gautam at approval** |
+| Capacity | **5 scheduled days per PL-week** (Kristen, Jasmine, Coty). Each is one real day in one **cell** (`K-A01…` = Tier-1 cell, `…B…` = Tier-2/3, `…C…` = prospects): the day lists the cell's **due** stops (Tier 1 first, most overdue first; due Tier 1s and then Tier 2/3s within 8 miles ride along — 12 when a day would run short), then prospects to fill it to ~10 (never a prospect-only day while producers nearby are due). Nothing inside its window is listed. Light slots at cycle-end are flex | **Changed Jul 31 (Joe) — supersedes the prior "3–4 days + 1–2 protected ortho days" guard. ⚠️ Under this setting Kristen's Tier-1-heavy book fills all 5 slots every week (no ortho field days); flagged for Kristen + Gautam at approval** |
 
 A visit = a **logged MMC check-in**. Texts and calls are real relationship work but are invisible
 to the CRM; a lapse flag therefore means *"check this,"* never *"you failed."* High-value text/call
@@ -100,7 +100,7 @@ touches on Tier-1 accounts *may* be quick-logged; this is optional pending the t
 - **Spine Routes app** — the daily driver: ranked days, per-stop message, payer chip, navigation,
   check-ins, Friday export. PLs touch nothing else day-to-day.
 - **Map My Customers** — system of record: logged visits, Non-Spine group, group-level visit
-  frequencies (21/30/45) so Past-Due flags finally match this SOP.
+  frequencies (14 / 24 / 24 / 75 from Sep 28) so Past-Due flags finally match this SOP.
 - **Eyeball files** (`pm/eyeball-check/`) — the validation instrument, per PL, quarterly.
 - **Parking lot** (`pm/spine-routing-parking-lot.md`) — living answers to field routing
   questions; refreshed with the plan every Friday.
