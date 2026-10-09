@@ -34,36 +34,32 @@ due. This true-up reruns every Friday from the MMC export — that's the whole r
 on one date — MMC logs a row per person seen, so raw rows overcount by ~5×). A planned stop counts as checked in whoever logged it.
 
 **What happened in W9 (Sep 28–Oct 2) and W10 (Oct 5–9):** the volume of field work held — 143 visit-days in W9, 111 in W10 with
-the export cut on the Friday — and most of it landed on book accounts, but a large share landed on accounts that were **not on that
-week's day lists**. In W9 only 6 of the 15 planned days were driven as lists (J-A09, J-A06, J-A07, J-A01 at 8–9 of 10 stops; C-A11 and
-C-A05 at 8–9), eight days got 0–2 of their stops, and the territory that drove least of its lists still logged 46 visit-days, 27 of
-them on Tier 1/2 book accounts. That reads as *the new day lists not being the lists in hand* (W9 was built the Monday it started, from
-the Sep 3 W9 stops), not as a volume problem. **Huddle question, not a verdict:** are all three working from the Sep 22 workbooks or the
-app, and did the lists reach them before Sep 28? Tier 1 share of check-ins rose from W8's 20% to 46% in W9 and 32% in W10.
+the export cut on the Friday — and most of it landed on book accounts (77 other book accounts in W9: T1 26 · T2 20 · T3 3 · P 28), but
+a large share landed on accounts that were **not on that week's day lists**. Day lists driven as lists in W9: 6 of 15 (C-A05 8/10, C-A11 9/10, J-A01 8/10, J-A06 8/10, J-A07 8/10, J-A09 9/10). Day lists that
+got 0–2 of their stops: 9 (C-A01 0/10, C-A03 0/10, C-A07 0/10, J-A05 0/10, K-A02 0/10, K-A03 0/9, K-A04 0/10, K-A15 2/10, K-A30 0/10). W10: 6 of 15 (C-A13 8/10, J-A03 7/10, J-A08 7/10, J-A10 7/10, K-A11 6/10, K-A13 9/10) driven; 7 (C-A02 0/10, C-A04 2/10, C-A14 1/10, C-A15 2/7, J-A12 0/10, K-A23 1/10, K-A27 1/10) at 0–2. The Sep 22 workbooks went out six days before W9 began, so this reads as
+*the day lists not being the lists in hand on the road*, not as a volume problem. **Huddle question, not a verdict:** are all three
+working from the Sep 22 workbooks or the app, and is the Friday workbook reaching the phone? Tier 1 share of check-ins rose from W8's
+20% to 46% in W9 and 32% in W10.
 
-| Week | Day lists | Planned stops | Checked in (distinct accounts) | Other book accounts visited (distinct, by tier) | Non-book (distinct) | Visit-days |
-|---|---|---|---|---|---|---|
-| W9 | Kristen's day lists | 49 | 2 of 49 | 35 (T1 13 · T2 12 · T3 0 · P 10) | 9 | 46 |
-| W9 | Jasmine's day lists | 50 | 33 of 50 | 12 (T1 1 · T2 1 · T3 1 · P 9) | 1 | 46 |
-| W9 | Coty's day lists | 50 | 17 of 50 | 30 (T1 12 · T2 7 · T3 2 · P 9) | 2 | 51 |
-| W9 | all three | 149 | 52 of 149 | 77 | 12 | 143 |
-| W10 | Kristen's day lists | 50 | 21 of 50 | 9 (T1 5 · T2 4 · T3 0 · P 0) | 5 | 35 |
-| W10 | Jasmine's day lists | 50 | 24 of 50 | 10 (T1 0 · T2 0 · T3 0 · P 10) | 1 | 36 |
-| W10 | Coty's day lists | 47 | 13 of 47 | 22 (T1 0 · T2 5 · T3 3 · P 14) | 5 | 40 |
-| W10 | all three | 147 | 58 of 147 | 41 | 11 | 111 |
+| Week | Planned stops | Checked in (distinct accounts) | Other book accounts visited (distinct) | Non-book (distinct) | Visit-days |
+|---|---|---|---|---|---|
+| W9 | 149 | 52 of 149 | 77 | 12 | 143 |
+| W10 | 147 | 58 of 147 | 41 | 11 | 111 |
+
+Per-list detail (every planned stop with its check-in status) is in `pm/pl-weekly-visit-schedule.csv` (`actual_status`, weeks W9/W10) and in the app.
 
 **True-up (the Friday loop):** every check-in through Oct 9 reset that account's clock; whatever wasn't visited stays due. Cells are
 unchanged (same 71 home routes); a cell counts as "run" in W9/W10 only where at least half its planned stops were checked in
 (6 cells in W9, 6 in W10), so the no-back-to-back-weeks rule starts from what actually happened.
 On the trued-up clocks **131 of the 224 drive Tier 1s are past their 14-day window on Oct 12** (two weeks of partial list adherence).
-First planned week for those 131: W11 83 · W12 31 · W13 12 · W14 4 · never 1 ("never" = Tedd March, Coty — an outpost 15+ miles from every Coty day; pair it with a trip that way).
+First planned week for those 131: W11 84 · W12 30 · W13 13 · W14 3 · never 1 ("never" = Tedd March, Coty — an outpost 15+ miles from every Coty day; pair it with a trip that way).
 New this refresh: a **stranded-Tier-1 pass** — a Tier 1 overdue by a full extra cycle (28+ days) whose cell doesn't earn a day is pulled
-onto the nearest day of the week within 12 miles, displacing a prospect first (then the least-overdue Tier 2/3): 19 placed, 18 displaced.
+onto the nearest day of the week within 12 miles that has room or a displaceable stop (a prospect first, then the least-overdue Tier 2/3): 23 placed, 22 displaced; 66 more met the test but had no such day within reach that week (they stay due and surface the following week).
 
-**W11–W16 (Oct 12 → Nov 20), rebuilt on the trued-up clocks:** W11 148 stops (T1 108 · T2 25 · T3 4 · P 11); W12 144 stops (T1 78 · T2 36 · T3 5 · P 25); W13 140 stops (T1 89 · T2 22 · T3 5 · P 24); W14 145 stops (T1 79 · T2 40 · T3 6 · P 20); W15 149 stops (T1 98 · T2 35 · T3 2 · P 14); W16 148 stops (T1 78 · T2 38 · T3 7 · P 25).
-Kristen: Tier 1s 11 of 122 at three visits, 89 at two, 22 once, 0 none · Tier 2s 34 of 124 touched · prospects 9 of 41. Jasmine: Tier 1s 39 of 41 at three visits, 2 at two, 0 once, 0 none · Tier 2s 55 of 55 touched · prospects 70 of 211. Coty: Tier 1s 56 of 61 at three visits, 4 at two, 0 once, 1 none · Tier 2s 47 of 55 touched · prospects 40 of 207.
-Short days (<8 stops): 4 (Kristen W12 K-A01 = 5, Kristen W13 K-A03 = 6, Coty W13 C-A15 = 4, Jasmine W14 J-A10 = 7). Cells that don't earn a day this cycle (5-day cap;
-their due stops ride neighbouring days only when within reach): Kristen 11 (11 A-class; 65 producers due in them on Oct 12, 32 of those get no stop this cycle: Tier 2 26 · Tier 3 6); Jasmine 5 (5 C-class; 0 producers due in them on Oct 12, 0 of those get no stop this cycle: none); Coty 11 (4 A-class + 7 C-class; 18 producers due in them on Oct 12, 1 of those get no stop this cycle: Tier 1 1). Kristen's line is
+**W11–W16 (Oct 12 → Nov 20), rebuilt on the trued-up clocks:** W11 148 stops (T1 109 · T2 25 · T3 4 · P 10); W12 144 stops (T1 77 · T2 36 · T3 5 · P 26); W13 140 stops (T1 91 · T2 22 · T3 5 · P 22); W14 146 stops (T1 81 · T2 40 · T3 6 · P 19); W15 149 stops (T1 98 · T2 35 · T3 2 · P 14); W16 148 stops (T1 77 · T2 38 · T3 7 · P 26).
+Kristen: Tier 1s 13 of 122 at three visits, 88 at two, 21 once, 0 none · Tier 2s 34 of 124 touched · prospects 6 of 41. Jasmine: Tier 1s 39 of 41 at three visits, 2 at two, 0 once, 0 none · Tier 2s 55 of 55 touched · prospects 71 of 211. Coty: Tier 1s 56 of 61 at three visits, 4 at two, 0 once, 1 none · Tier 2s 47 of 55 touched · prospects 40 of 207.
+Short days (<8 stops): 3 (Kristen W12 K-A01 = 5, Kristen W13 K-A03 = 6, Coty W13 C-A15 = 4). Cells that don't earn a day this cycle (5-day cap;
+their due stops ride neighbouring days only when within reach; 'due' = due by Fri Oct 16): Kristen 11 (11 A-class; 65 producers due in them on Oct 12, 32 of those get no stop this cycle: Tier 2 26 · Tier 3 6); Jasmine 5 (5 C-class; 0 producers due in them on Oct 12, 0 of those get no stop this cycle: none); Coty 11 (4 A-class + 7 C-class; 18 producers due in them on Oct 12, 1 of those get no stop this cycle: Tier 1 1). Kristen's line is
 still the Tier-1-first capacity story from Sep 22 — her book cannot carry 122 Tier 1s at 14 days inside 50 stops a week.
 
 **Tracker check-ins (visit-days):** W8 **146** (K 45 · J 43 · C 58; T1 share 20%) · W9 **143** (K 46 · J 46 · C 51; T1 share 46%) · W10 **111** (K 35 · J 36 · C 40; T1 share 32%).
@@ -543,4 +539,4 @@ They're flagged **📝** on the *Stops by Day* and *Account List* tabs, with the
 | Henry Ford / Corewell **vendor credentialing** for SHP | Joe finds process · Kristen signs | Both PLs keep hitting "no vendors" walls at system sites; unlocks a class of blocked accounts |
 | **Office hours into routing** ("closes at 3", "(M,W,TH)", closed-door stops) | Joe | Capture from notes at Friday refresh; early-close offices go first on the route |
 | **Notes-back pilot** at Macomb Family Medical Center | Joe + clinic side | Their only objection is the closed loop — prove it here, the prospect converts (feeds PL-D.3) |
-| Kristen's book vs capacity — **Sep 22: 31 of her 122 drive Tier 1s get one visit in W9–W14, 92 of 124 Tier 2s none** (Tier-1-first per Kristen; balanced option available) — **Oct 9 plan: 27 Tier 1s once, 89 of 124 Tier 2s none in W11–W16** | Gautam (capacity call) | See the Sep 22 and Oct 9 sections |
+| Kristen's book vs capacity — **Sep 22: 31 of her 122 drive Tier 1s get one visit in W9–W14, 92 of 124 Tier 2s none** (Tier-1-first per Kristen; balanced option available) — **Oct 9 plan: 21 Tier 1s once, 90 of 124 Tier 2s none in W11–W16** | Gautam (capacity call) | See the Sep 22 and Oct 9 sections |
