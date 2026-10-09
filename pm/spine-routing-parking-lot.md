@@ -28,6 +28,49 @@ due. This true-up reruns every Friday from the MMC export — that's the whole r
 
 ---
 
+## Oct 9 refresh — W9/W10 recap (first two weeks of the new cadence), true-up, W11–W16 plan
+
+**Input:** the Oct 9 MMC *All Activity* export (full history to Fri Oct 9). Units below are **visit-days** (one PL at one practice
+on one date — MMC logs a row per person seen, so rows overcount by ~4×). Check-ins are counted whoever logged them.
+
+**W9 (Sep 28–Oct 2) and W10 (Oct 5–9) against the Sep 22 plan:**
+
+| Week | PL | Planned stops | Completed (check-in on a planned stop) | Off-plan book accounts visited (by tier) | Non-book | Visit-days |
+|---|---|---|---|---|---|---|
+| W9 | Kristen | 49 | **2 (4%)** | 35 (T1 13 · T2 12 · T3 0 · P 10) | 9 | 46 |
+| W9 | Jasmine | 50 | **33 (66%)** | 12 (T1 1 · T2 1 · T3 1 · P 9) | 1 | 46 |
+| W9 | Coty | 50 | **17 (34%)** | 30 (T1 12 · T2 7 · T3 2 · P 9) | 2 | 51 |
+| W10 | Kristen | 50 | **21 (42%)** | 9 (T1 5 · T2 4 · T3 0 · P 0) | 5 | 35 |
+| W10 | Jasmine | 50 | **24 (48%)** | 10 (T1 0 · T2 0 · T3 0 · P 10) | 1 | 36 |
+| W10 | Coty | 47 | **13 (28%)** | 22 (T1 0 · T2 5 · T3 3 · P 14) | 5 | 40 |
+
+How to read it: **volume held** (W9 143 visit-days, W10 111 with the export cut Friday) and most of it landed on book accounts —
+but a large share landed on accounts that were *not that week's list*. W9 was the transition week built from the Sep 3 W9 stops; the
+pattern (Jasmine's cells J-A09/J-A06/J-A07/J-A01 at 8–9 of 10 while J-A05 got 0; Kristen's K-A15 at 2 of 10 and four days at 0 while
+she still logged 46 visit-days, 25 of them on Tier 1/2 book accounts) reads as *the new day lists not being the lists in hand*, not
+as a volume problem. Huddle question, not a verdict: are all three working from the Sep 22 workbooks / the app, and did W9 arrive in time?
+Tier 1 share of check-ins did move the right way: W8 20% → W9 46% → W10 32%.
+
+**True-up (the Friday loop):** every check-in through Oct 9 reset that account's clock; whatever wasn't visited stays due. Cells are
+unchanged (same 71 home routes); a cell counts as "run" in W9/W10 only where at least half its planned stops were checked in
+(6 cells in W9, 6 in W10), so the no-back-to-back-weeks rule starts from what actually happened.
+On the trued-up clocks **131 of the 224 drive Tier 1s are past their 14-day window on Oct 12** (two weeks of partial plan adherence); W11 carries 73 of them and the rest follow in W12 — the first fortnight is catch-up by design.
+
+**W11–W16 (Oct 12 → Nov 20), rebuilt on the trued-up clocks:** W11 147 stops (T1 98 · T2 29 · T3 4 · P 16); W12 144 stops (T1 79 · T2 36 · T3 4 · P 25); W13 140 stops (T1 89 · T2 22 · T3 5 · P 24); W14 145 stops (T1 83 · T2 38 · T3 7 · P 17); W15 149 stops (T1 99 · T2 34 · T3 2 · P 14); W16 148 stops (T1 76 · T2 37 · T3 7 · P 28).
+Kristen: Tier 1s 10 of 122 at three visits, 85 at two, 27 once, 0 none · Tier 2s 35 of 124 touched · prospects 12 of 41. Jasmine: Tier 1s 39 of 41 at three visits, 2 at two, 0 once, 0 none · Tier 2s 55 of 55 touched · prospects 70 of 211. Coty: Tier 1s 57 of 61 at three visits, 2 at two, 1 once, 1 none · Tier 2s 44 of 55 touched · prospects 42 of 207.
+Short days (<8 stops): 5 (Coty W11 C-A15 = 7, Kristen W12 K-A01 = 5, Kristen W13 K-A03 = 6, Coty W13 C-A15 = 4, Jasmine W14 J-A10 = 7). Cells with nothing due this cycle:
+Kristen 11 · Jasmine 5 (all C-class prospect cells) · Coty 11.
+
+**Tracker check-ins (visit-days):** W8 **146** (K 45 · J 43 · C 58; T1 share 20%) · W9 **143** (K 46 · J 46 · C 51; T1 share 46%) · W10 **111** (K 35 · J 36 · C 40; T1 share 32%).
+W8 is bucketed on the Sep 3 tiers (like W5–W7), W9–W10 on the Sep 22 tiers. Spine new-patient columns still wait on the weekly spine list.
+
+**Files refreshed:** `pm/route-days-v2/Spine-Route-Days-{PL}.xlsx` (+ `dated/…_2026-10-09.xlsx`) · `pm/pl-weekly-visit-schedule.csv`
+(W9/W10 rows now carry `actual_status`; W11–W16 stops) · `pm/pl-scheduled-days.csv` · `pm/spine-routes-app.html` (14 weeks) ·
+`pm/mmc-import/mmc-company-update-IMPORT.csv` (First Planned Week) · `pm/spine-influence-weekly.csv` (W8–W10) ·
+`pm/b2b-relationship-opportunities-2026.xlsx` (visit-days now through Oct 9).
+
+---
+
 ## Oct 9 — B2B referral analysis (Jan 1 → Sep 25): spine by week, growth, who sends to whom
 
 **Ask (Joe, Oct 9):** spine B2B referrals by week and the growth rate since Jan 1; the MMC company behind each
@@ -73,6 +116,7 @@ names the alternatives; Dr. Cooke (DMC) is placed row by row because his tags sp
 have no Synergy doctor on the sheet yet and sit at service-line level only. Spine lands with S McCarty (155 spine of 161), M Salar MD (87 spine of 90), J Varghese MD (70 spine of 73), J Maslak MD (61 spine of 65), A Munk MD (26 spine of 26), L Zamorano (5 spine of 5).
 
 
+
 **Relationships to create / grow (asked Oct 9; `pm/b2b-relationship-opportunities-2026.xlsx` + `.csv`):**
 the referral flow × book × roster × visits, sorted into buckets. What converts to spine in 2026: PCP 21% · Attorney 43% · Orthopedic 45% · Urgent care 16% · Chiropractic 54% · PT 18% · Pain 29% · Pediatrics 8% · Neurology 27%
 — chiropractors and attorneys at 2–3× the PCP rate.
@@ -81,7 +125,7 @@ the referral flow × book × roster × visits, sorted into buckets. What convert
 3. **Convert (14)** volume senders with little spine (≈44 spine of headroom Jan–Sep 25 at their type's rate): Lakes Urgent Care - Livonia (50/4) · Frank Lanzilote DO-Family Practice (33/2) · Oakland Family Practice (29/3) · OAK STREET HEALTH CHERRY HILL (27/3) · Yale Community Heath Center - VA Clinic (26/1) · Berry Johnson Health (24/0).
 4. **Expand (20)** Tier 1s where 1–3 of 5+ clinicians send: Hesselberg Chiropractic (34/22) · Park Medical Centers (39/13) · DMC Orthopedics - Commerce Township (7/7) · Lakeview Medical Center (14/6) · Macomb Internal Medicine (8/6).
 5. **Claim (27)** in MMC, sending, in nobody's book — add with the suggested tier/PL. **Create (45)** no MMC record at all.
-6. **Dormant (63)** Tier 1/2 with zero 2026 referrals — 13 with 3+ visit-days since Mar 3 and nothing back, 12 never visited (33 Tier 1 · 30 Tier 2). Re-qualify or move to Prospect — that is the visit capacity for 2–5. The 25 pediatric Tier 1/2 accounts (61 visit-days, 6 spine) are the first candidates.
+6. **Dormant (63)** Tier 1/2 with zero 2026 referrals — 25 with 3+ visit-days since Mar 3 and nothing back, 9 never visited (33 Tier 1 · 30 Tier 2). Re-qualify or move to Prospect — that is the visit capacity for 2–5. The 25 pediatric Tier 1/2 accounts (68 visit-days, 6 spine) are the first candidates.
 7. **Prospect pool (220)** MMC companies of high-yield types not in the book: Chiropractic 80 · PT 40 · Urgent care 28 · Pain 24 · Orthopedic 23 · Neurology 14 · Attorney 11; `fits_cell` says which route day each sits in.
 Signals about accounts, not verdicts on PLs; tiers come from Joel's tracking + the Sep 3 adds; no inducements in any outreach.
 
@@ -477,6 +521,7 @@ They're flagged **📝** on the *Stops by Day* and *Account List* tabs, with the
 
 | Item | Owner | Note |
 |---|---|---|
+| **W9/W10 plan adherence — the day lists vs what was driven** (Kristen 2 of 49 planned in W9 with 46 visit-days; Coty 17/50; Jasmine 33/50) | Kristen (huddle) | Oct 9 refresh section — confirm the Sep 22 workbooks/app are the lists in hand; no verdict implied |
 | **Relationship buckets — Protect 4 · Deepen 6 · Convert 14 · Expand 20 · Claim 27 · Dormant 63** — decide the tier moves (Deepen up, Dormant down) | Kristen + Gautam | `pm/b2b-relationship-opportunities-2026.xlsx` Summary tab |
 | **Add-to-MMC candidates from the B2B referrer list** (40 strings, 12 spine; Corewell UC sites + other urgent cares) | Santosh / Joel | Oct 9 section · *Unmatched Referrers* tab in `pm/b2b-spine-growth-2026.xlsx` |
 | **Intake: capture referring doctor + location on every call** (18 "not asked" strings, 27 referrals, 4 spine) | Call center (script) · Kristen | Oct 9 section · *Source Not Captured* tab |
