@@ -29,7 +29,7 @@ the consumer/organic side — *not* the referral side.
 **Layer 2 — But more volume hasn't converted.** After the Line launch, spine landing-page visits
 rose **+44% (26→33/day)** and new-patient-intent CTR went **26%→30%**, yet **new patients/day barely
 moved (6.8→7.2)**. Pouring more traffic in has already been tried and did **not** move the number.
-Causes: a departed liaison (Sean, ~2–3 NP/week), **insurance/candidate mismatch** after the click,
+Causes: a departed liaison (Kessia, ~6 spine NP/month wound down Mar–May — corrected 7/21; previously misattributed to Sean, who is active), **insurance/candidate mismatch** after the click,
 broken Line conversion tracking, and broader paid targeting pulling **lower-quality** traffic.
 
 **Layer 3 — The binding constraint is qualification + surgical conversion.** **3 of 4 spine
@@ -52,7 +52,7 @@ conversion in parallel.
 | Recover the B2C/organic spine hole (−71) | Surgical conversion / order-writing (3 of 4 physicians) |
 | Qualify patients (insurance + clinical candidacy) before booking | ASC scheduling capacity & OR days |
 | Route qualified patients to the **higher-converting** spine surgeons | Physician productivity decisions |
-| Grow referrals **realistically** (recover Sean's loss + tiered expansion) | Scheduling-system consolidation (12–18 mo) |
+| Grow referrals **realistically** (recover the Kessia-era loss + tiered expansion) | Scheduling-system consolidation (12–18 mo) |
 | Fix attribution + Line conversion tracking + phone/access friction | Medicaid / hospital-affiliation / portal (structural) |
 
 **We do NOT commit to lifting referrals 79 → 150.** That misreads the gap (referrals are above
@@ -69,7 +69,7 @@ To add ~**25 qualified spine NPs/week** (47 → 72) without the impossible refer
 |---|---|---|
 | **A. Qualify + route existing traffic** | **+6 to +9** | The Jul 13 paradox is unconverted demand — insurance pre-screen + candidate routing recaptures it without new spend |
 | **B. Recover B2C / organic hole** | **+7 to +11** | The −71 lives here: spine SEO (80% of Randall), the 5 condition hubs, website booking, differentiation |
-| **C. Referral engine (realistic)** | **+5 to +8** | Recover Sean's −2–3/wk + tiered account expansion; measure qualified yield, not visits |
+| **C. Referral engine (realistic)** | **+5 to +8** | Recover Kessia's ~6/mo + tiered account expansion; measure qualified yield, not visits |
 | **D. Fix leaks (attribution + Line tracking + access)** | **+3 to +5** | Stop wasting paid spend and losing self-reschedulers; make paid spine dollars actually convert |
 | **Total** | **+21 to +33/week** | Brackets the +25 needed; hit the **65 floor first**, then 72 |
 
@@ -104,7 +104,7 @@ To add ~**25 qualified spine NPs/week** (47 → 72) without the impossible refer
 - **Do NOT scale paid spend on broken tracking** — B2C CPA already blew up $200→$2,000. Fix tracking (D) first.
 
 ### C. Referral engine — realistic growth — Owner: **Kristen + Cody + Jasmine**
-- **Recover the Sean loss** (~2–3 NP/week) first — that's the fastest referral win.
+- **Recover the Kessia-era loss** (~6 spine NP/month) first — that's the fastest referral win. (Sean is active; verify his Jun-9 activity stall.)
 - **Tiered spine target-account list** (Tier 1/2/3) across ortho, pain, chiro, urgent care, PCP, PT —
   weighted to **Sterling Heights (defend vs. Corewell/Beaumont)** and the **Southfield/Troy ramp**.
   (Cody sustains 15 NP/week before a 4th PL is added.)
@@ -133,7 +133,7 @@ activity is the NP fruit of late August).
 
 ### Weeks 1–2 · Jul 16–31 — Stand up
 Qualification + routing rubric live · insurance pre-screen at intake · **fix Line tracking** ·
-NextGen↔MMC crosswalk started · scorecard launched · recover Sean's referral loss · ship spine
+NextGen↔MMC crosswalk started · scorecard launched · recover Kessia's referral loss · ship spine
 differentiation + referrer one-pager · 2→3 spine SEO pages · reserve same-week spine slots.
 
 ### GATE 1 — **Aug 30: clear the 65 floor + prove qualification works**
@@ -144,7 +144,7 @@ differentiation + referrer one-pager · 2→3 spine SEO pages · reserve same-we
 | Spine NP-per-100 PL visits | trending up (quality, not just visits) |
 | Line conversion tracking | **functional & validated** |
 | B2C/organic spine | recovering toward budget; website-booking share up |
-| Referral run-rate | Sean loss recovered; Tier 1/2 accounts active |
+| Referral run-rate | Kessia loss recovered; Tier 1/2 accounts active |
 
 ### GATE 2 — **Sept 30: operating at 72/week**
 | Metric | Target |
@@ -172,7 +172,7 @@ differentiation + referrer one-pager · 2→3 spine SEO pages · reserve same-we
 - **Insurance/Medicaid structural mismatch** → pre-qualify at intake; lean on the **Harmony Health
   Direct Pay** program for non-covered/uninsured candidates rather than losing them.
 - **Target conflict** → working figure **317/month (72/week)**; budget doc says **321** — reconcile with Santosh.
-- **Referrals over-promised** → capped at a realistic recover-Sean + tiered-expansion lift, not 150.
+- **Referrals over-promised** → capped at a realistic recover-Kessia + tiered-expansion lift, not 150.
 
 ## 8. Compliance gates (blocking)
 Physician review on clinical/spine content (E-E-A-T/YMYL) · no PHI / no unconsented patient stories

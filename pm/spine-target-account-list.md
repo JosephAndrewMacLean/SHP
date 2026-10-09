@@ -1,37 +1,38 @@
 # Spine Target-Account List + First-Week PL Action Plan
 
-**Owner:** Kristen (PL lead) · **Team:** Cody, Jasmine · **Sponsor:** Gautam · **Ops:** Joe / Santosh
+**Owner:** Kristen (PL lead) · **Team:** Coty, Jasmine · **Sponsor:** Gautam · **Ops:** Joe / Santosh
 **Fills tracker tasks:** PL-A (tiered spine target-account universe) + PL-B (recover & expand spine referrals)
-**Status:** operating artifact, ready to run this week · **Date:** 2026-07-17
+**Status:** operating artifact · **Date:** 2026-07-17 · **Updated 2026-07-21 with real referral yield**
 
-> **✅ REAL DATA NOW WIRED IN.** The illustrative seed rows below are **superseded** by the real
-> Map My Customer export — **`pm/spine-target-accounts-DATA.csv`** (1,975 real spine-feeder accounts,
-> Jul 16 2026 snapshot). Use the CSV as the working list; the seed rows/rubric below explain how it
-> was built. Only the per-account **spine-NP yield** is still missing (needs the NextGen crosswalk).
+> **✅✅ v2 — REAL REFERRAL YIELD NOW WIRED IN (Jul 21).** The Jul 17 proxy tiering below is
+> **superseded** by the referral-weighted scored book from the v4 operating report:
+> **`pm/spine-target-accounts-SCORED.csv`** — **808 accounts** (Kristen 180 · Jasmine 310 · Coty 318),
+> scored 0–100 on actual 2026 attributed patients, tiered (**Tier 1 = 146 proven-spine · Tier 2 = 156
+> ortho · Tier 3 = 37 other · Prospect = 469**), **Wave 1 = 90**, with per-account spine/ortho/other
+> counts, visit→appt lag, stamped cadence and next action. Companion files:
+> `pm/spine-referral-company-outcomes.csv` (the 385-company referral ledger),
+> `pm/sean-prospects-DATA.csv`, `pm/pl-route-days.csv` (85 built route days).
+> **Read the mined insights + this week's actions in `pm/spine-pl-account-insights.md`, and the
+> week-by-week field calendar (Jul 22 → Oct 2) in `pm/spine-pl-weekly-visit-plan.md` /
+> `pm/pl-weekly-visit-schedule.csv`.**
+> `pm/spine-target-accounts-DATA.csv` (1,975 accounts) remains the wider prospecting universe only.
 
-## 0. Real account universe (from Map My Customer, Jul 16 2026) — `spine-target-accounts-DATA.csv`
+## 0. Account universe — corrected picture (Jul 21)
 
-Filtered the 3,529 MMC company records to **1,975 spine-relevant feeder accounts** (excluded
-"DO NOT CALL"), auto-categorized and tiered by feeder value + engagement recency + hub proximity.
+- **Proxy tiers (Jul 17: T1 209 · T2 356 · T3 1,410) are retired.** Real evidence tiers: only
+  **146 accounts have ≥1 attributed 2026 spine patient** (54 repeat + 92 one-spine); 365 spine
+  patients total in the 808 book; **top 10 accounts = 41%** of it.
+- **🚨 Correction to the Jul 17 orphan finding: Sean has NOT departed — Kessia did.** Sean Sweeney
+  is a current owner (272 accounts, producing since March, 40 routed priorities) — though his last
+  logged visit is **Jun 9 (verify)**. **Kessia's** volume ended Mar–May, her owner-email matches
+  nothing in MMC, and the ~290 companies she visited Jan–Mar are the real orphan pool (~6 B2B
+  spine/mo before wind-down). **PL-B.1 = Kessia-book recovery + Sean coverage check.**
+- Ownership snapshot (spine-relevant, Jul 16 MMC): Coty 1,029 · Kristen 562 · Jasmine 486 ·
+  Sean 272 · unowned (incl. Kessia-era) — reassign per `pm/spine-pl-account-insights.md` §1.
 
-- **By tier:** **T1 = 209** (high-value feeders, visited in the last ~6 mo — *the immediate hit list*) ·
-  T2 = 356 · T3 = 1,410.
-- **By feeder type:** Primary Care 1,034 · Urgent Care 205 · **Orthopedics 204** · **Pain Management 134** ·
-  **Chiropractic 114** · Physical Therapy 83 · **Spine 65** · Neurology 33 · **Attorney (WC/PI) 33** ·
-  Rheumatology 21 · PM&R 20 · Sports Med 16 · **Neurosurgery 11** · ER 2.
-- **By hub:** Livonia 310 · Sterling Heights 250 · Troy 198 · Southfield 157 · Port Huron 33 · Other/Metro 1,027.
-
-> **🚨 Biggest immediate finding — orphaned accounts.** Current PL ownership of spine-relevant accounts:
-> **Coty 738 · Jasmine 428 · Kristen 407 · Sean 251 · Roshelle Brockman 12 · (no owner) 139.**
-> **Sean has departed, so his 251 accounts + the 139 unowned = ~390 spine-feeder accounts with no
-> active liaison.** Reassigning these is the single fastest referral action (task **PL-B.1**) — it needs
-> zero new prospecting, just re-ownership and a visit.
-
-> **How tiers were assigned (applied to the real data):** feeder weight (Pain/PM&R/Spine/Neurosurgery = 5;
-> Chiro/Neurology = 4; Ortho/Rheum/PT/ER/Attorney/Sports = 3; PCP/Urgent Care = 2) × engagement recency
-> (visited ≤180 days). **T1** = weight ≥4 **and** recently visited; **T2** = weight ≥4 stale, or ≥3 recent;
-> **T3** = everything else (broad PCP/urgent-care base). This is a proxy until real per-account spine-NP
-> yield lands — then re-tier on **actual qualified spine NPs** (§1 rubric).
+> The §1 rubric below still governs **payer gating and qualified-yield re-tiering** — payer fit is
+> Unknown on all 808 accounts (Kelly is scoring Tier 1 first), and "qualified" still means
+> insurance-accepted + imaging-appropriate + pathway-fit, which attributed counts can't prove.
 
 ---
 
@@ -39,14 +40,17 @@ Filtered the 3,529 MMC company records to **1,975 spine-relevant feeder accounts
 > row and the tiering rubric. **Work from the CSV, not the seed rows.** See §5 for remaining data gaps.
 
 > **Reality anchor.** Referral spine is already **above budget (79 vs. ~65)**. This list is a
-> **realistic qualified lift** — recover Sean's ~2–3 NP/week, then a tiered-expansion push toward
-> **~95–110 qualified spine NPs/month** — NOT a run at 79 → 150. Lead KPI is **qualified spine NPs
-> per PL** and **NP per 100 visits**, never raw visits or touches.
+> **realistic qualified lift** — protect the 60-account repeat-spine base (~46/mo), recover the
+> Kessia-era book (~6 spine/mo) and cover Sean's stall, then convert one-spine accounts toward
+> **~95–115 qualified spine NPs/month** — NOT a run at 79 → 150 (the per-account math doesn't
+> close; see `pm/spine-pl-account-insights.md` §2). Lead KPI is **qualified spine NPs per PL**
+> and **NP per 100 visits**, never raw visits or touches.
 
 > **Guardrails (blocking).** Relationships are earned on **clinical merit, service, and same-week
 > access — never payment or inducement** (anti-kickback / Stark). **No PHI** in any referral comm
-> without authorization. Closed-loop report-back is **HIPAA-compliant** only. SHP **takes no
-> Medicaid** — payer fit is a tiering criterion, not an afterthought.
+> without authorization. Closed-loop report-back is **HIPAA-compliant** only. **Medicaid is accepted
+> at select providers only — verify per provider** (`brand/current-state.md` Payer reality); payer
+> fit is a tiering criterion, not an afterthought.
 
 ---
 
@@ -100,7 +104,7 @@ is confirmed in-network with that plan. WC/PI and Auto No-Fault are commercial-e
 
 **Decision rules baked in:**
 - Payer gate always wins over score (no Medicaid-dominant Tier 1).
-- A former Sean account that was producing enters as **Tier 1 by default** (recovery priority) until re-scored on real data.
+- A former **Kessia** account that was producing enters as **Tier 1 by default** (recovery priority) until re-scored on real data.
 - Tier 3 accounts that produce **0 qualified spine NPs over 2 cadence cycles** get **dropped** — reallocate that field time to a Tier-1 backlog account (OODA loop, PL-C).
 
 ---
@@ -113,7 +117,7 @@ is confirmed in-network with that plan. WC/PI and Auto No-Fault are commercial-e
 
 Account Type ∈ {ortho, chiro, pain mgmt, urgent care, PCP, PT, PM&R, ER, WC-PI attorney}.
 Territory ∈ {Livonia, Sterling Heights, Southfield, Troy, Port Huron}.
-Assigned PL ∈ {Kristen, Cody, Jasmine}.
+Assigned PL ∈ {Kristen, Coty, Jasmine}.
 
 > All rows below are **[SEED]**. Replace with the real MMC export (PL-A.1). Seeded so each feeder
 > type × hub shows a realistic, complete row — copy the *shape*, not the data.
@@ -123,10 +127,10 @@ Assigned PL ∈ {Kristen, Cody, Jasmine}.
 | [SEED] Metro West Orthopaedic Group | Livonia | ortho | Livonia | Jasmine | 1 | 9 | — | 14 | Low — commercial/Medicare | Active |
 | [SEED] Livonia Family PCP Associates | Livonia | PCP | Livonia | Jasmine | 2 | 2 | — | 30 | Low | Active |
 | [SEED] Riverside Physical Therapy | Livonia | PT | Livonia | Jasmine | 3 | 0 | — | 60 | Low | Prospect |
-| [SEED] Sterling Spine & Pain Center | Sterling Heights | pain mgmt | Sterling Heights | Cody | 1 | 11 | — | 14 | Low — verify no Medicaid line | Active (defend) |
-| [SEED] Lakeside Chiropractic | Sterling Heights | chiro | Sterling Heights | Cody | 1 | 6 | — | 14 | Med — WC/PI mix, screen payer | Active (defend) |
-| [SEED] M-59 Urgent Care | Sterling Heights | urgent care | Sterling Heights | Cody | 2 | 1 | — | 21 | Low | Active |
-| [SEED] Macomb PM&R Associates | Sterling Heights | PM&R | Sterling Heights | Cody | 2 | 3 | — | 21 | Low | Active |
+| [SEED] Sterling Spine & Pain Center | Sterling Heights | pain mgmt | Sterling Heights | Coty | 1 | 11 | — | 14 | Low — verify no Medicaid line | Active (defend) |
+| [SEED] Lakeside Chiropractic | Sterling Heights | chiro | Sterling Heights | Coty | 1 | 6 | — | 14 | Med — WC/PI mix, screen payer | Active (defend) |
+| [SEED] M-59 Urgent Care | Sterling Heights | urgent care | Sterling Heights | Coty | 2 | 1 | — | 21 | Low | Active |
+| [SEED] Macomb PM&R Associates | Sterling Heights | PM&R | Sterling Heights | Coty | 2 | 3 | — | 21 | Low | Active |
 | [SEED] Northland WC/PI Law (attorney) | Southfield | WC-PI attorney | Southfield | Kristen | 1 | 7 | — | 14 | Low — WC/PI commercial-equiv | Active |
 | [SEED] Southfield Pain Institute | Southfield | pain mgmt | Southfield | Kristen | 1 | 5 | — | 14 | Med — confirm Medicaid share | Active (ramp) |
 | [SEED] Greenfield PCP Partners | Southfield | PCP | Southfield | Kristen | 2 | 1 | — | 30 | **High — screen Medicaid** | Prospect |
@@ -137,8 +141,9 @@ Assigned PL ∈ {Kristen, Cody, Jasmine}.
 | [SEED] Port Huron Pain & Spine | Port Huron | pain mgmt | Port Huron | Jasmine | 2 | 3 | — | 30 | Med — confirm payer | Active |
 | [SEED] Blue Water PCP Group | Port Huron | PCP | Port Huron | Jasmine | 3 | 0 | — | 60 | Med | Prospect |
 
-**Status vocabulary:** `Active (defend)` · `Active (ramp)` · `Active` · `Prospect` · `Recover-Sean` ·
-`Watch` · `Drop-candidate` · `Dropped`.
+**Status vocabulary:** `Active (defend)` · `Active (ramp)` · `Active` · `Prospect` · `Recover-Kessia` ·
+`Watch` · `Drop-candidate` · `Dropped`. *(The SCORED csv's `Operating Lane` / `Next Action` columns
+now carry this role — Protect / Reactivation / Expansion / Cross-Sell.)*
 
 ---
 
@@ -150,7 +155,7 @@ Weighting follows the mandate — **defend Sterling Heights** (Corewell/Beaumont
 
 | Hub | Primary PL | Strategic posture | Weighting |
 |---|---|---|---|
-| **Sterling Heights** | **Cody** | **Defend** vs. Corewell/Beaumont — hold every producing account, tight 14-day cadence | Heavy |
+| **Sterling Heights** | **Coty** | **Defend** vs. Corewell/Beaumont — hold every producing account, tight 14-day cadence | Heavy |
 | **Southfield** | **Kristen** | **Ramp** — Oakland deepening; Kristen models the top-producer method on new accounts | Heavy (growth) |
 | **Troy** | **Kristen** | **Ramp** — the Oakland ortho/spine unlock; net-new Tier-1 hunting | Heavy (growth) |
 | **Livonia** | **Jasmine** | **Rebalance from ortho toward spine feeders** — hold base, convert coverage to spine | Medium |
@@ -169,21 +174,26 @@ Weighting follows the mandate — **defend Sterling Heights** (Corewell/Beaumont
 
 ## 4. First-week action plan (Jul 17–24) — owner-assigned, day-by-day
 
+> **⚠️ Superseded mid-week (Jul 21):** the export/crosswalk/tiering rows below landed via the v4
+> operating report (PL-A.1–A.3 effectively done), and the recovery target is **Kessia's book, not
+> Sean's**. Work from the current action table in `pm/spine-pl-account-insights.md` §4 —
+> re-protection sweep first, route dates stamped, Sean stall verified. Rows kept for the record.
+
 Ties directly to tracker **PL-A.1 → PL-A.3** and **PL-B.1**. The week's outcome: a real (non-seed)
-account universe exported, feeder-crosswalked, first-pass tiered, Sean's accounts re-owned and
-re-visited, and cadence rules set.
+account universe exported, feeder-crosswalked, first-pass tiered, the departed-book accounts re-owned
+and re-visited, and cadence rules set.
 
 | Day | Owner | Action | KPI / definition of done | Decision rule |
 |---|---|---|---|---|
 | **Thu 7/17** | **Kristen + Santosh** | Pull the **Map My Customer export** of all current accounts; request the **NextGen spine-NP-by-referrer** cut for the crosswalk (PL-A.1). | Raw account universe in the sheet; NextGen request logged. | If NextGen referrer field is billing-overwritten, flag to Santosh/Joe now — attribution fix (PL-D) is a dependency, don't wait on it to start tiering. |
-| **Thu 7/17** | **Kristen** | Reconstruct **Sean's book**: list every account he owned + last-known spine yield (PL-B.1). Mark each `Recover-Sean`, default **Tier 1**. | Sean account list complete; owners reassigned by hub. | Any Sean account with a live contact → **re-visit within 7 days**. |
+| **Thu 7/17** | **Kristen** | Reconstruct the **departed liaison's book** (**Kessia**, per Jul 21 correction): list every account + last-known spine yield (PL-B.1). Mark each `Recover-Kessia`, default **Tier 1**. | Kessia account list complete; owners reassigned by hub. | Any Kessia account with a live contact → **re-visit within 7 days**. |
 | **Fri 7/18** | **Kristen + team** | Build the **feeder crosswalk** — bucket every account into the 9 types (ortho, chiro, pain mgmt, urgent care, PCP, PT, PM&R, ER, WC-PI attorney) (PL-A.2). | 100% of accounts typed; untyped = 0. | Untypeable/duplicate accounts → merge or mark `Watch`, don't tier yet. |
-| **Fri 7/18** | **Cody** | **Sterling Heights defense sweep**: confirm every producing SH account still owned, no lapses since Sean. | SH producing accounts all `Active (defend)` with a named owner. | Any lapsed SH account → schedule visit next week. |
-| **Mon 7/21** | **Kristen, Cody, Jasmine** | **First-pass tiering** using §1 rubric (score A+B+C, apply payer gate) (PL-A.3). | Every non-seed account has a Tier + payer/eligibility risk note. | Missing payer data → default **payer risk = High**, cap at Tier 2 until confirmed. |
+| **Fri 7/18** | **Coty** | **Producing-account defense sweep**: confirm every producing account still owned, no lapses since the Kessia wind-down / Sean stall. | Producing accounts all `Active (defend)` with a named owner. | Any lapsed producing account → schedule visit next week. |
+| **Mon 7/21** | **Kristen, Coty, Jasmine** | **First-pass tiering** using §1 rubric (score A+B+C, apply payer gate) (PL-A.3). | Every non-seed account has a Tier + payer/eligibility risk note. | Missing payer data → default **payer risk = High**, cap at Tier 2 until confirmed. |
 | **Mon 7/21** | **Kristen + Joe** | **Territory de-overlap pass**: resolve every 2-owner account to a single hub owner per §3. | Overlap count = 0. | Tie → account goes to hub-proximity owner. |
-| **Tue 7/22** | **Cody + Jasmine** | Begin **Sean-recovery + Tier-1 visits**; reserve **same-week access** as the opening pitch; leave the referrer one-pager (deep spine bench, conservative-to-surgical pathway). | First recovery visits logged; qualified-NP tracking (not visit count) started. | Practice asks "how do I refer?" → give the named coordinator + secure path same visit. |
+| **Tue 7/22** | **Coty + Jasmine** | Begin **Kessia-recovery + Tier-1 protect visits**; reserve **same-week access** as the opening pitch; leave the referrer one-pager (deep spine bench, conservative-to-surgical pathway). | First recovery visits logged; qualified-NP tracking (not visit count) started. | Practice asks "how do I refer?" → give the named coordinator + secure path same visit. |
 | **Wed 7/23** | **Kristen** | **Set cadence per tier** (14 / 21–30 / 45–60) and stamp `Planned cadence (days)` on every account (PL-A.5 preview). | Cadence populated for 100% of tiered accounts. | Tier 3 gets touch-only until it proves a qualified NP. |
-| **Thu 7/24** | **Kristen + Joe** | **Week-1 OODA review**: qualified spine NPs per PL, NP/100 visits, accounts tiered, overlap eliminated, Sean accounts re-visited. | Baseline scorecard populated; PL-A marked from Not Started → In Progress. | Cody's run-rate feeds the **4th-PL trigger** (sustained 15 NP/wk before any hire). |
+| **Thu 7/24** | **Kristen + Joe** | **Week-1 OODA review**: qualified spine NPs per PL, NP/100 visits, accounts tiered, overlap eliminated, Kessia-era accounts re-visited. | Baseline scorecard populated; PL-A marked from Not Started → In Progress. | Coty's run-rate feeds the **4th-PL trigger** (sustained 15 NP/wk before any hire). |
 
 **Standing rules for the week (and after):**
 - **Measure qualified NP yield, not visits.** A visit that doesn't produce a qualified, insured,
@@ -199,15 +209,20 @@ re-visited, and cadence rules set.
 ## 5. What must come from the practice (real data gaps to fill)
 
 The list can't be trusted until these replace the seed data. Owners noted; this is the blocker list.
+*(Status refreshed 2026-07-21 after the v4 operating report.)*
 
-1. **MMC full account export** — every current account with contact, type, last-visit date. → Kristen (PL-A.1)
-2. **NextGen spine-NP-by-referring-practice** — the historical + 90-day spine NP counts that fill the
-   two volume columns. **Blocked by the referring-physician field being overwritten by billing** and
-   **no MMC↔NextGen crosswalk** — this is the attribution dependency (PL-D). Until fixed, historical
-   columns are best-estimate. → Santosh + Joe
-3. **Sean's account book** — the actual list of accounts and their yields he owned before departure. → Kristen
-4. **Payer mix per account** — enough to apply the payer-fit gate (esp. **Medicaid share**, since SHP
-   takes none). Where unknown, default to High risk / cap at Tier 2. → practice + intake/Kelly
+1. ~~**MMC full account export**~~ **✅ DONE (Jul 21)** — 3,529 companies + activity in the v4 report;
+   scored book in `pm/spine-target-accounts-SCORED.csv`. → Kristen (PL-A.1)
+2. **NextGen spine-NP-by-referring-practice** — **~82.5% now solved** via the report's deterministic
+   referral→MMC match (`pm/spine-referral-company-outcomes.csv`); **278 rows / 31 spine patients
+   still unresolved** (top-15 disambiguation list in `pm/spine-pl-account-insights.md` §1.9); the
+   referring-physician overwrite fix is still open. → Santosh + Joe
+3. ~~**Sean's account book**~~ **✅ CORRECTED + DONE (Jul 21)** — Sean is active
+   (`pm/sean-prospects-DATA.csv`); the departed book to recover is **Kessia's** (~290 visited
+   companies, no current owner). → Kristen
+4. **Payer mix per account** — **still the #1 gap: Payer Fit = Unknown on all 808.** Kelly scores
+   the 146 Tier-1 accounts first (esp. **Medicaid share** — select-provider acceptance only — and
+   HMO referral-required plans). Where unknown, default High risk / cap at Tier 2. → intake/Kelly
 5. **Same-week access confirmation** — how many spine slots ops can actually reserve for referrals, so
    PLs don't over-promise speed the schedule can't deliver. → Joe + Katie
 6. **Named referral coordinator + secure referral path** (line/fax/portal) — the "how to refer"
