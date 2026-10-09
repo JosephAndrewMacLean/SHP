@@ -28,6 +28,55 @@ due. This true-up reruns every Friday from the MMC export — that's the whole r
 
 ---
 
+## Oct 9 — B2B referral analysis (Jan 1 → Sep 25): spine by week, growth, who sends to whom
+
+**Ask (Joe, Oct 9):** spine B2B referrals by week and the growth rate since Jan 1; the MMC company behind each
+referring doctor; and which outside doctor sends to which Synergy doctor. Built from Joel's
+*B2B_Referrals_Matched_ServiceLine* (service line per PER number — his column V is the only service-line source;
+his NextGen "First Resource" column was **not** used, per Kristen) joined to Kristen's *B2B Referrals Jan 1–Sep 25*
+(referring doctor, Synergy doctor seen) on PER number + date, plus the Oct 9 MMC people export for company names.
+**No patient-level data anywhere in the outputs** (PER numbers and names stay in the raw sheets).
+
+**Files (all in `pm/`):**
+- `b2b-spine-growth-2026.xlsx` — Summary · Weekly Spine · Monthly & Growth · Top Companies (spine) · Referrer → Company ·
+  Doctor → Doctor · Telehealth → Service Line · Synergy Doctors · Unmatched Referrers · Source Not Captured
+- `b2b-spine-weekly-2026.csv` (39 weeks) · `b2b-referrer-company-2026.csv` (1,028 referrer strings as written) ·
+  `b2b-company-rollup-2026.csv` (525 MMC companies, spellings merged) · `b2b-doctor-to-doctor-2026.csv`
+
+**Headline numbers:** YTD spine **524 of 2,188** B2B rows (24%); monthly Jan 48 · Feb 55 · Mar 62 · Apr 66 · May 82 ·
+Jun 58 · Jul 47 · Aug 79 · Sep-to-25th 27 (matches Joel's pivot). Jan → Aug **+65%** (7.4%/month compounded);
+Q1 165 → Q2 206 (+25%) → Q3-to-Sep-25 153; weekly trend on the 35 complete weeks Jan 5–Aug 31 runs 13.2 → 15.7
+spine/week. Joel's pivot has Jan–Aug spine **497 actual vs 492 budget** — on plan. September rows (5 · 5 · 6) are entry
+lag, not a verdict (the sheet "does not have last week"). 144 of the 524 came in via the telehealth/auto channel.
+
+**Top spine senders (merged by MMC company):** Mike Morse Law Firm 53 (Tier 1, Kristen) · Hesselberg Chiropractic 22 (Tier 1, Kristen) · Park Medical Centers 13 (Tier 1, Kristen) · Park Medical Centers - Canton 13 (Tier 1, Jasmine) · Michigan Auto Law 11 (Tier 1, Kristen) · DMC SPORTS MEDICINE NOVI 11 (Tier 1, Jasmine) · Levan Internists 9 (Tier 1, Jasmine) · Synergy Medical Primary Care 7 (Tier 1, Jasmine).
+
+**Mapping coverage:** 955 of 1,028 referrer strings matched to an MMC person/company (96% of referral rows, 504 of 524
+spine rows). The same provider appears under several spellings (four spellings of Michigan Auto Law, four of
+Dr. Cooke at DMC) — the *Top Companies* tab is the merged view; *Referrer → Company* keeps the strings as written.
+Where a provider sits at several MMC companies, Kristen's PL tag on the row (then the credential, then tier) picks
+the company and the note names the alternatives; 12 strings stay flagged AMBIGUOUS. 37 matches are **LOW**
+(partial name, generic brand entry, note in parentheses) — check before acting on them.
+
+**Two gaps worth a decision:**
+1. **Add-to-MMC candidates — 54 referrer strings have no MMC person or company** (54 referrals, 14 spine).
+   Spine senders among them: Bernard NP, Kywona (1); Crandall DO, Laura Ann (1); DMC-Huron Valley (1); Dr. Michaels - not specified (1); Gojcaj, Drita (1); HF Rochester Community (1); Hollowell MD, Sylvia Kristine (1); MedCare Urgent Care (1); Northland Medical (1); Sabbagh MD, Mahoud Nabil (1); Sawka DO, Jaroslaw (1); Schramm MD, Danielle M (1); Tanir Avci MD, Narin (1); Youssef PA-C, Andrew (1).
+   Brand sites MMC tracks elsewhere but not at this location: Corewell UC Grosse Pointe, Corewell UC Sterling Heights, Corewell UC- Shelby, Corewell Urgent Care -Taylor, Corewell Urgent Care Livonia, Corewell Urgent Care Warren East, Corewell- Grosse Pointe UC. Other urgent cares not in MMC:
+   Corewell Urgent Care Tilch, LAKE URGENT CARE, Med Pro Urgent  Care Madison Heights, MedCare Urgent Care, Springfield Urgent Care - Brighton, Taylor Urgent Care, The Heights UC - Deaborn, WellNow Urgent Care Fort Gratiot. Full list: *Unmatched Referrers* tab. Owner: Santosh/Joel (MMC adds) → then they enter the book through the normal add path (§3).
+2. **Intake capture — 19 strings are call notes saying the doctor/location was never asked** ("Urgent Care — location
+   not asked", "ref by doctor — we did not get name", …): 28 referrals, 5 spine with no source to credit. That is an
+   intake-script fix (see `pm/spine-intake-qualification-script.md`), not a mapping problem. *Source Not Captured* tab.
+
+**Doctor-to-doctor:** built from Kristen's *Doctor* column for the 1,880 in-person rows, plus her unheaded column N
+(first Synergy doctor seen after telehealth) for 58 of the 308 telehealth rows (28 spine). The other 250 telehealth rows
+have no Synergy doctor on the sheet yet and sit at service-line level only. Spine lands with S McCarty (155 spine of 161), M Salar MD (87 spine of 90), J Varghese MD (70 spine of 73), J Maslak MD (61 spine of 65), A Munk MD (26 spine of 26), L Zamorano (5 spine of 5).
+
+**Basis note:** the weekly tracker (`pm/spine-influence-weekly.csv`) counts spine new patients by PL activity
+attribution (Aug: 23/12/15/14/21); this analysis counts by appointment/telehealth date (23/13/16/18/20). Close, not
+identical — don't paste one into the other.
+
+---
+
 ## Sep 22 refresh — NEW CADENCE from Mon Sep 28 (T1 14d · T2/T3 3–4 wks · prospects sprinkled)
 
 **Why:** Kristen wants the Tier 1/Tier 2 touches expedited (Joe + Kristen call, Sep 19). **Effective Monday Sep 28 = W9.**
@@ -414,6 +463,9 @@ They're flagged **📝** on the *Stops by Day* and *Account List* tabs, with the
 
 | Item | Owner | Note |
 |---|---|---|
+| **Add-to-MMC candidates from the B2B referrer list** (54 strings, 14 spine; Corewell UC sites + other urgent cares) | Santosh / Joel | Oct 9 section · *Unmatched Referrers* tab in `pm/b2b-spine-growth-2026.xlsx` |
+| **Intake: capture referring doctor + location on every call** (19 "not asked" strings, 28 referrals, 5 spine) | Call center (script) · Kristen | Oct 9 section · *Source Not Captured* tab |
+| **Confirm the LOW / AMBIGUOUS company matches** before they drive outreach (37 LOW, 12 ambiguous) | Kristen | `match` / `match_note` columns in `pm/b2b-referrer-company-2026.csv` |
 | 18 ex-Sean accounts still **owned by Sean Sweeney in MMC** | Santosh (bulk owner transfer → Kristen) | Import updates our plan fields, not record ownership |
 | Aquino + Allied Internists — Kristen or Coty? | **Resolved Sep 22: Coty** (PL chat) | See §8 |
 | Michigan Neurology Associates **Warren** office | Kristen/Coty | MMC only has Clinton Twp; add Warren record if it's a real second location |
