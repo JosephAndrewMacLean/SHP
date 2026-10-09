@@ -26,7 +26,6 @@ Lakes Urgent Care,Lakes Urgent Care - Livonia,S Mendelson MD,5,5,0,0,Ortho
 "Parslow PA, Michael",Yale Community Heath Center - VA Clinic,J Yacisen MD,5,5,0,0,Ortho
 "Weathersby MD, Liza",Beaumont Medical Center - Redford,B Mayo MD,5,5,0,0,Ortho
 "Antone MD, May",Henry Ford Primary Care Center - 160,J Maslak MD,4,4,0,4,Spine
-"Cooke, Christopher",DMC SPORTS MEDICINE NOVI,S McCarty,4,4,0,4,Spine
 "Levine DC, Richard",Levine Clinic of Chiropractic,S McCarty,4,3,1,4,Spine
 "Rollins DO, William F",Park Medical Centers - Canton,M Salar MD,4,4,0,4,Spine
 "Wanis MD, Magdy",Lakeview Medical Center,M Salar MD,4,4,0,4,Spine
@@ -100,6 +99,8 @@ Lakes Urgent Care,Lakes Urgent Care - Livonia,J Mendelson MD,3,3,0,0,Ortho
 "Balysh DO, Erica",Lifetime Family Care,M Salar MD,2,2,0,2,Spine
 "Banks, Hermann Darwin",Hermann Banks MD PC,M Salar MD,2,2,0,2,Spine
 "Bully MD, Tammie",Bully Family Physicians,S McCarty,2,2,0,2,Spine
+"Cooke, Christopher",DMC Orthopedics - Commerce Township,S McCarty,2,2,0,2,Spine
+"Cooke, Christopher",DMC SPORTS MEDICINE NOVI,S McCarty,2,2,0,2,Spine
 "Deogun MD, Kuldip S",Chronic Pain Institute,J Varghese MD,2,2,0,2,Spine
 "Francu MD, Angelica",GARDEN CITY FAMILY PHYSICIANS,J Maslak MD,2,2,0,2,Spine
 "Francu MD, Angelica",GARDEN CITY FAMILY PHYSICIANS,M Salar MD,2,2,0,2,Spine
@@ -272,7 +273,7 @@ Blue Water Urgent Care,Blue Water Urgent Care - Port Huron,A Munk MD,1,1,0,1,Spi
 "COOKE MD, CHRISTOPHER LEE",DMC SPORTS MEDICINE NOVI,S McCarty,1,1,0,1,Spine
 "CROSSLEY MD, STEVEN",HENRY FORD HEALTH,S McCarty,1,1,0,1,Spine
 "Canto MD, Cheryl",Port Huron Medicine Associates,A Munk MD,1,1,0,1,Spine
-Chiro ref - doctor name not asked,,J Varghese MD,1,1,0,1,Spine
+Chiro ref - doctor name not asked,Chiro-Care of Livonia,J Varghese MD,1,1,0,1,Spine
 Christensen Law,Christensen Law,J Varghese MD,1,0,1,1,Spine
 "Cichowlas DO, Michael",Schoenherr Parkway Family Practice,S McCarty,1,1,0,1,Spine
 "Claibroue MD, Deidre",CROSSOVER HEALTH - ROYAL OAK,J Maslak MD,1,1,0,1,Spine
@@ -628,7 +629,7 @@ Brentwood Pediatrics,Brentwood Pediatric Associates,D Mendelson MD,1,1,0,0,Ortho
 "Byrne MD, John",Michigan Adult and Child Medicine,K Bohm MD,1,1,0,0,Hand
 "CHANDY NP, JERRY","TRENTON TOTAL HEALTH CARE CENTER, PC",B Mayo MD,1,1,0,0,Ortho
 COREWELL UC ALLEN PARK,Corewell Urgent Care - Allen Park,K Bohm MD,1,1,0,0,Hand
-COREWELL UC- Farmington Hills,Corewell Health Urgent Care,D Mendelson MD,1,1,0,0,Ortho
+COREWELL UC- Farmington Hills,Corrwell Urgent Care - Farmington Hills North,D Mendelson MD,1,1,0,0,Ortho
 "CRUZ PA, MICHELLE ELIZABETH (Warren Urgent Care)",Warren Urgent Care,D Mendelson MD,1,1,0,0,Ortho
 "Calcut MD, Terry",Covenant Community Care - Grosse Pointe,K Bohm MD,1,1,0,0,Hand
 "Cameron MD, Mary A",SHEIKH MEDICAL CENTER,S Mendelson MD,1,1,0,0,Ortho
@@ -670,23 +671,23 @@ Corewell Urgent Care -Taylor,,B Mayo MD,1,1,0,0,Ortho
 Corewell Urgent Care Allen Park,Corewell Urgent Care - Allen Park,S Mendelson MD,1,1,0,0,Ortho
 Corewell Urgent Care Dearborn,BEAUMONT URGENT CARE BY WELLSTREET,J B Klein DPM,1,1,0,0,Foot
 Corewell Urgent Care FH N,Corrwell Urgent Care - Farmington Hills North,K Bohm MD,1,1,0,0,Hand
-Corewell Urgent Care Farm Hills,Corewell Health Urgent Care,J B Klein DPM,1,1,0,0,Foot
-Corewell Urgent Care Farmington Hills,Corewell Health Urgent Care,P Bhullar MD,1,1,0,0,Ortho
-Corewell Urgent Care Farmington Hills,Corewell Health Urgent Care,"R Leff, DPM",1,1,0,0,Foot
+Corewell Urgent Care Farm Hills,Corrwell Urgent Care - Farmington Hills North,J B Klein DPM,1,1,0,0,Foot
+Corewell Urgent Care Farmington Hills,Corrwell Urgent Care - Farmington Hills North,P Bhullar MD,1,1,0,0,Ortho
+Corewell Urgent Care Farmington Hills,Corrwell Urgent Care - Farmington Hills North,"R Leff, DPM",1,1,0,0,Foot
 Corewell Urgent Care Garden City,Corewell Health Urgent Care - Garden City,J B Klein DPM,1,1,0,0,Foot
 Corewell Urgent Care Garden City,Corewell Health Urgent Care - Garden City,"K Green, DPM",1,1,0,0,Foot
 Corewell Urgent Care Garden City,Corewell Health Urgent Care - Garden City,P Bhullar MD,1,1,0,0,Ortho
-Corewell Urgent Care Livonia,,K Bohm MD,1,1,0,0,Hand
+Corewell Urgent Care Livonia,Beaumont urgent care northville,K Bohm MD,1,1,0,0,Hand
 Corewell Urgent Care Royal Oak,Corewell Urgent Care - Royal Oak,"R Leff, DPM",1,1,0,0,Foot
 Corewell Urgent Care Saint Clair Shores,Corewell Health Urgent Care -SAINT CLAIR SHORES,J Yacisen MD,1,1,0,0,Ortho
-Corewell Urgent Care Tilch,,K Bohm MD,1,1,0,0,Hand
+Corewell Urgent Care Tilch,Beaumont Urgent Care - Macomb,K Bohm MD,1,1,0,0,Hand
 Corewell Urgent Care Troy,Corewell Urgent Care - Troy Big Beaver,D Mendelson MD,1,1,0,0,Ortho
 Corewell Urgent Care Troy,Corewell Urgent Care - Troy Big Beaver,J Yacisen MD,1,1,0,0,Ortho
 Corewell Urgent Care Troy - 19/SqLK,Corewell Health Urgent Care - Troy Square Lake,J Yacisen MD,1,1,0,0,Ortho
-Corewell Urgent Care Warren East,,S Mendelson MD,1,1,0,0,Ortho
+Corewell Urgent Care Warren East,Corewell Urgent Care - Warren,S Mendelson MD,1,1,0,0,Ortho
 Corewell Urgent Care Wayne,BEAUMONT URGENT CARE BY WELLSTREET,J Mendelson MD,1,1,0,0,Ortho
 Corewell Urgent Care specific location not asked,,P Bhullar MD,1,1,0,0,Ortho
-Corewell Urgent Care- Haggerty,Corewell Health Urgent Care,L PA Clinic,1,1,0,0,PA / Mid-Level
+Corewell Urgent Care- Haggerty,Beaumont urgent care northville,L PA Clinic,1,1,0,0,PA / Mid-Level
 Corewell Urgent- Troy,Corewell Urgent Care - Troy Big Beaver,S Mendelson MD,1,1,0,0,Ortho
 Corewell- Grosse Pointe UC,,A Mendelson MD,1,1,0,0,Ortho
 "Corondan MD, Victor",Corondan Medical,B Mayo MD,1,1,0,0,Ortho
@@ -891,7 +892,7 @@ Get well UC SF,Get Well Urgent Care Southfield,J B Klein DPM,1,1,0,0,Foot
 "Haverman MD, Jessica",BEAUMONT FAMILY MEDICINE GARDEN CITY,B Mayo MD,1,1,0,0,Ortho
 Hazel Park Urgent Care,Jawad Agha MD - Hazel Park Urgent Care,J B Klein DPM,1,1,0,0,Foot
 Henry Ford Go Health,Henry Ford Go Health Urgent Care,D Mendelson MD,1,1,0,0,Ortho
-Henry Ford Urgent Care - need location,Henry Ford urgent care Livonia,B Mayo MD,1,1,0,0,Ortho
+Henry Ford Urgent Care - need location,HENRY FORD WALK IN CLINIC,B Mayo MD,1,1,0,0,Ortho
 "Hernandez DO, Maridel A",Maridel Hernadez MD,G Jerry MD,1,1,0,0,Ortho
 "Hertz DO, Ronald",Henry Ford Main Internal Medicine - Grosse Pointe,A Oddo DO,1,1,0,0,Pain & Other
 "Hesselberg DC, Jason Joseph",Hesselberg Chiropractic,S Mendelson MD,1,0,1,0,Ortho
@@ -1018,7 +1019,7 @@ Kristen Jones,,B Mayo MD,1,1,0,0,Ortho
 "Kurjakovic PA-C, Amar",Macomb Medical Clinic,"K Sorensen, DPM",1,1,0,0,Foot
 "Kurzawa MD, Mark R",Normandy Family Practice,D Mendelson MD,1,1,0,0,Ortho
 "Kut, Patrick",Patrick Kut MD PC,G Jerry MD,1,1,0,0,Ortho
-LAKE URGENT CARE,,P Bhullar MD,1,1,0,0,Ortho
+LAKE URGENT CARE,Lakes Urgent Care - Livonia,P Bhullar MD,1,1,0,0,Ortho
 LAKES UC,Lakes Urgent Care - Livonia,K Bohm MD,1,1,0,0,Hand
 LAKES URGENT CARE,Lakes Urgent Care - Livonia,L PA Clinic,1,1,0,0,PA / Mid-Level
 LAKES URGENT CARE,Lakes Urgent Care - Livonia,S Mendelson MD,1,1,0,0,Ortho
@@ -1103,7 +1104,7 @@ Matt Ross,Ross Law,S Mendelson MD,1,0,1,0,Ortho
 "McMall DO, Medeleine Mae",ORCHARD PRIMARY CARE,J Mendelson MD,1,1,0,0,Ortho
 "Mckenzie MD, Keith",The Family Doctor,D Mendelson MD,1,1,0,0,Ortho
 "Mckenzie MD, Keith",The Family Doctor,J Yacisen MD,1,1,0,0,Ortho
-Med Pro Urgent  Care Madison Heights,,D Mendelson MD,1,1,0,0,Ortho
+Med Pro Urgent  Care Madison Heights,MedPro Primary Care,D Mendelson MD,1,1,0,0,Ortho
 "Mehock DO, Courtney",Henry Ford Health Medical Center - Seven Mile Road,K Bohm MD,1,1,0,0,Hand
 "Mendelsohn MD, Lawerence",Internal Medicine Physicians #170,J Mendelson MD,1,1,0,0,Ortho
 "Meri MD, Abdel Wahab",Barclay Internists,B Mayo MD,1,1,0,0,Ortho
@@ -1112,7 +1113,7 @@ Michigan Auto Law,Michigan Auto Law,J Maslak MD,1,0,1,0,(blank)
 Michigan Compassionate Care,Michigan Compassionate Care,B Mayo MD,1,1,0,0,Ortho
 Michigan Compassionate Care,Michigan Compassionate Care,J Yacisen MD,1,1,0,0,Ortho
 Michigan Health Urgent Care Livonia,Michigan Urgent Care - Livonia,B Mayo MD,1,1,0,0,Ortho
-Michigan Orthopedics - spec not asked,MICHIGAN ORTHOPAEDIC INSTITUTE,B Kassa DO,1,1,0,0,Pain & Other
+Michigan Orthopedics - spec not asked,ORTHOPEDIC INSTITUTE OF MICHIGAN,B Kassa DO,1,1,0,0,Pain & Other
 Michigan Urgent Care,Michigan urgent care,D Mendelson MD,1,1,0,0,Ortho
 Michigan Urgent Care - Livonia,Michigan Urgent Care - Livonia,B Mayo MD,1,1,0,0,Ortho
 Michigan Urgent Care Livonia,Michigan Urgent Care - Livonia,D Mendelson MD,1,1,0,0,Ortho
@@ -1127,7 +1128,7 @@ Mike Morse,Mike Morse Law Firm,"R Leff, DPM",1,1,0,0,Foot
 "Modi MD, Praveen K","PRAVEEN MODI, MD, PC",P Bhullar MD,1,1,0,0,Ortho
 "Modi MD, Praveen K","PRAVEEN MODI, MD, PC",S Mendelson MD,1,1,0,0,Ortho
 "Modi, Praveen K","PRAVEEN MODI, MD, PC",B Mayo MD,1,1,0,0,Ortho
-"Mohamed DO, Adbah",,J Mendelson MD,1,1,0,0,Ortho
+"Mohamed DO, Adbah",Dedicated Senior Medical Center - Warren,J Mendelson MD,1,1,0,0,Ortho
 "Mohammed MD, Abu Fazal Shaik","SOUTH EAST MICHIGAN MEDICAL ASSOCIATES, PC","R Leff, DPM",1,1,0,0,Foot
 "Molnar MD, Heather",Haller and Hug Internal Medicine,"R Leff, DPM",1,1,0,0,Foot
 "Molteni, Sandra L",Dedicated senior Medical Center Detroit North,K Lee MD,1,1,0,0,Pain & Other
@@ -1179,7 +1180,7 @@ PRYDE ATHETICS,Pryde Athletics and Physical Therapy,B Mayo MD,1,1,0,0,Ortho
 "Palaniswamy MD, Sujini",Chesterfield Family Medicine (Henry Ford),K Bohm MD,1,1,0,0,Hand
 "Panozzo DO, Kristen",Henry Ford Warren Family Physicians,J Yacisen MD,1,1,0,0,Ortho
 "Panozzo DO, Kristen",Henry Ford Warren Family Physicians,K Bohm MD,1,1,0,0,Hand
-"Parachuri MD, Radha/ Trivedi MD, Archi",,K Lee MD,1,1,0,0,Pain & Other
+"Parachuri MD, Radha/ Trivedi MD, Archi",METROPOLITAN MEDICAL ASSOCIATES,K Lee MD,1,1,0,0,Pain & Other
 "Parrinello, Frank","IHA, Primary Care - Cherry Hill Village",P Bhullar MD,1,1,0,0,Ortho
 "Patel MD, Poonam",Dedicated Senior Medical Center - Eastpointe,B Kassa DO,1,1,0,0,Pain & Other
 "Patel MD, Poonam",Dedicated Senior Medical Center - Eastpointe,K Bohm MD,1,1,0,0,Hand
@@ -1281,7 +1282,7 @@ Ryan Smith DO,Oakland Primary Care,S Mendelson MD,1,1,0,0,Ortho
 "Sadasivan MD, Sushma",Park Family Practice - Novi,D Mendelson MD,1,1,0,0,Ortho
 "Saeed, Sajjad",Internal Medicine Associates Port Huron,J Mendelson MD,1,1,0,0,Ortho
 Safir Law,Safir Law,K Bohm MD,1,0,1,0,Hand
-"Saleh MD,  - Berkley UC",Berkley Urgent Care,J Yacisen MD,1,1,0,0,Ortho
+"Saleh MD,  - Berkley UC",Saleh Muslah Medical Center,J Yacisen MD,1,1,0,0,Ortho
 "Salisbury MD, Brittany S",Trinity IHA Academic Family Medicine - Livonia,S Mendelson MD,1,1,0,0,Ortho
 "Samohin MD, Alexandros J",Dedicated Senior Medical Center - Eastpointe,J Mendelson MD,1,1,0,0,Ortho
 "Samona MD, tassia",Associates in Internal Medicine - MHP,J B Klein DPM,1,1,0,0,Foot
@@ -1369,7 +1370,7 @@ Sterling Heights Urgent Care,Sterling Heights Urgent Care,J Yacisen MD,1,1,0,0,O
 "Tam DO, Susan",Epic Primary Care - Ferndale,P Bhullar MD,1,1,0,0,Ortho
 "Tangalos MD, Phillip",Silver Pine Medical Group - Sterling Heights,J Mendelson MD,1,1,0,0,Ortho
 "Tatangelo MD, Marco",Providence Park Pediatrics - Novi,P Bhullar MD,1,1,0,0,Ortho
-Taylor Urgent Care,,S Mendelson MD,1,1,0,0,Ortho
+Taylor Urgent Care,Taylor walk-in clinic,S Mendelson MD,1,1,0,0,Ortho
 "Thabolingam MD, Raveend",Excel Health,K Lee MD,1,1,0,0,Pain & Other
 The Heights UC - Deaborn,,J B Klein DPM,1,1,0,0,Foot
 "Thibault MD, Steven J",Silver Pine Medical Group - Sterling Heights,B Mayo MD,1,1,0,0,Ortho
@@ -1431,7 +1432,7 @@ Urgent Care-spec location not asked,,S Mendelson MD,1,0,1,0,Ortho
 "Vasiq MD, Muhammad",Michigan Compassionate Care,B Mayo MD,1,1,0,0,Ortho
 "Vasiq MD, Muhammad",Michigan Compassionate Care,J B Klein DPM,1,1,0,0,Foot
 "Vasiq MD, Muhammad",Michigan Compassionate Care,K Bohm MD,1,1,0,0,Hand
-"Vasiq MD, Muhhammad",Michigan Compassionate Care,B Mayo MD,1,1,0,0,Ortho
+"Vasiq MD, Muhhammad",,B Mayo MD,1,1,0,0,Ortho
 "Vasquez MD, Peter",OAK STREET HEALTH CHERRY HILL,A Mendelson MD,1,1,0,0,Ortho
 "Vasquez MD, Peter",OAK STREET HEALTH CHERRY HILL,A Oddo DO,1,1,0,0,Pain & Other
 "Vasquez MD, Peter",OAK STREET HEALTH CHERRY HILL,J B Klein DPM,1,1,0,0,Foot

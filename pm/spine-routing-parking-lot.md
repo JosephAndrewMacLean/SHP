@@ -49,22 +49,23 @@ Q1 165 → Q2 206 (+25%) → Q3-to-Sep-25 153; weekly trend on the 35 complete w
 spine/week. Joel's pivot has Jan–Aug spine **497 actual vs 492 budget** — on plan. September rows (5 · 5 · 6) are entry
 lag, not a verdict (the sheet "does not have last week"). 144 of the 524 came in via the telehealth/auto channel.
 
-**Top spine senders (merged by MMC company):** Mike Morse Law Firm 53 (Tier 1, Kristen) · Hesselberg Chiropractic 22 (Tier 1, Kristen) · Park Medical Centers 13 (Tier 1, Kristen) · Park Medical Centers - Canton 13 (Tier 1, Jasmine) · Michigan Auto Law 11 (Tier 1, Kristen) · DMC SPORTS MEDICINE NOVI 11 (Tier 1, Jasmine) · Levan Internists 9 (Tier 1, Jasmine) · Synergy Medical Primary Care 7 (Tier 1, Jasmine).
+**Top spine senders (merged by MMC company):** Mike Morse Law Firm 53 (Tier 1, Kristen) · Hesselberg Chiropractic 22 (Tier 1, Kristen) · Park Medical Centers 13 (Tier 1, Kristen) · Park Medical Centers - Canton 13 (Tier 1, Jasmine) · Michigan Auto Law 11 (Tier 1, Kristen) · Levan Internists 9 (Tier 1, Jasmine) · DMC SPORTS MEDICINE NOVI 9 (Tier 1, Jasmine) · Synergy Medical Primary Care 7 (Tier 1, Jasmine).
 
-**Mapping coverage:** 955 of 1,028 referrer strings matched to an MMC person/company (96% of referral rows, 504 of 524
-spine rows). The same provider appears under several spellings (four spellings of Michigan Auto Law, four of
-Dr. Cooke at DMC) — the *Top Companies* tab is the merged view; *Referrer → Company* keeps the strings as written.
-Where a provider sits at several MMC companies, Kristen's PL tag on the row (then the credential, then tier) picks
-the company and the note names the alternatives; 12 strings stay flagged AMBIGUOUS. 37 matches are **LOW**
-(partial name, generic brand entry, note in parentheses) — check before acting on them.
+**Mapping coverage:** 963 of 1,028 referrer strings matched to an MMC person/company (96% of referral rows, 505 of 524
+spine rows). The same provider appears under several spellings (five spellings of Michigan Auto Law alone) — the
+*Top Companies* tab is the merged view; *Referrer → Company* keeps the strings as written. Where a provider sits at
+several MMC companies, Kristen's PL tag on the row (then the credential, then tier) picks the company and the note
+names the alternatives; Dr. Cooke (DMC) is placed row by row because his tags split between Novi and Commerce.
+16 strings stay flagged AMBIGUOUS and 2 are a surname several MMC people share (human pick). 33 matches are
+**LOW** (partial name, generic brand entry, note in parentheses) — check before acting on them.
 
 **Two gaps worth a decision:**
-1. **Add-to-MMC candidates — 54 referrer strings have no MMC person or company** (54 referrals, 14 spine).
-   Spine senders among them: Bernard NP, Kywona (1); Crandall DO, Laura Ann (1); DMC-Huron Valley (1); Dr. Michaels - not specified (1); Gojcaj, Drita (1); HF Rochester Community (1); Hollowell MD, Sylvia Kristine (1); MedCare Urgent Care (1); Northland Medical (1); Sabbagh MD, Mahoud Nabil (1); Sawka DO, Jaroslaw (1); Schramm MD, Danielle M (1); Tanir Avci MD, Narin (1); Youssef PA-C, Andrew (1).
-   Brand sites MMC tracks elsewhere but not at this location: Corewell UC Grosse Pointe, Corewell UC Sterling Heights, Corewell UC- Shelby, Corewell Urgent Care -Taylor, Corewell Urgent Care Livonia, Corewell Urgent Care Warren East, Corewell- Grosse Pointe UC. Other urgent cares not in MMC:
-   Corewell Urgent Care Tilch, LAKE URGENT CARE, Med Pro Urgent  Care Madison Heights, MedCare Urgent Care, Springfield Urgent Care - Brighton, Taylor Urgent Care, The Heights UC - Deaborn, WellNow Urgent Care Fort Gratiot. Full list: *Unmatched Referrers* tab. Owner: Santosh/Joel (MMC adds) → then they enter the book through the normal add path (§3).
-2. **Intake capture — 19 strings are call notes saying the doctor/location was never asked** ("Urgent Care — location
-   not asked", "ref by doctor — we did not get name", …): 28 referrals, 5 spine with no source to credit. That is an
+1. **Add-to-MMC candidates — 44 referrer strings have no MMC person or company** (44 referrals, 13 spine).
+   Spine senders among them: Bernard NP, Kywona (1); Crandall DO, Laura Ann (1); DMC-Huron Valley (1); Gojcaj, Drita (1); HF Rochester Community (1); Hollowell MD, Sylvia Kristine (1); MedCare Urgent Care (1); Northland Medical (1); Sabbagh MD, Mahoud Nabil (1); Sawka DO, Jaroslaw (1); Schramm MD, Danielle M (1); Tanir Avci MD, Narin (1); Youssef PA-C, Andrew (1).
+   Brand sites MMC tracks elsewhere but not at this location: Corewell UC Grosse Pointe, Corewell UC Sterling Heights, Corewell UC- Shelby, Corewell Urgent Care -Taylor, Corewell- Grosse Pointe UC. Other urgent cares not in MMC:
+   MedCare Urgent Care, Springfield Urgent Care - Brighton, The Heights UC - Deaborn, WellNow Urgent Care Fort Gratiot. Full list: *Unmatched Referrers* tab. Owner: Santosh/Joel (MMC adds) → then they enter the book through the normal add path (§3).
+2. **Intake capture — 18 strings are call notes saying the doctor/location was never asked** ("Urgent Care — location
+   not asked", "ref by doctor — we did not get name", …): 27 referrals, 4 spine with no source to credit. That is an
    intake-script fix (see `pm/spine-intake-qualification-script.md`), not a mapping problem. *Source Not Captured* tab.
 
 **Doctor-to-doctor:** built from Kristen's *Doctor* column for the 1,880 in-person rows, plus her unheaded column N
@@ -463,9 +464,9 @@ They're flagged **📝** on the *Stops by Day* and *Account List* tabs, with the
 
 | Item | Owner | Note |
 |---|---|---|
-| **Add-to-MMC candidates from the B2B referrer list** (54 strings, 14 spine; Corewell UC sites + other urgent cares) | Santosh / Joel | Oct 9 section · *Unmatched Referrers* tab in `pm/b2b-spine-growth-2026.xlsx` |
-| **Intake: capture referring doctor + location on every call** (19 "not asked" strings, 28 referrals, 5 spine) | Call center (script) · Kristen | Oct 9 section · *Source Not Captured* tab |
-| **Confirm the LOW / AMBIGUOUS company matches** before they drive outreach (37 LOW, 12 ambiguous) | Kristen | `match` / `match_note` columns in `pm/b2b-referrer-company-2026.csv` |
+| **Add-to-MMC candidates from the B2B referrer list** (44 strings, 13 spine; Corewell UC sites + other urgent cares) | Santosh / Joel | Oct 9 section · *Unmatched Referrers* tab in `pm/b2b-spine-growth-2026.xlsx` |
+| **Intake: capture referring doctor + location on every call** (18 "not asked" strings, 27 referrals, 4 spine) | Call center (script) · Kristen | Oct 9 section · *Source Not Captured* tab |
+| **Confirm the LOW / AMBIGUOUS company matches** before they drive outreach (33 LOW, 16 ambiguous) | Kristen | `match` / `match_note` columns in `pm/b2b-referrer-company-2026.csv` |
 | 18 ex-Sean accounts still **owned by Sean Sweeney in MMC** | Santosh (bulk owner transfer → Kristen) | Import updates our plan fields, not record ownership |
 | Aquino + Allied Internists — Kristen or Coty? | **Resolved Sep 22: Coty** (PL chat) | See §8 |
 | Michigan Neurology Associates **Warren** office | Kristen/Coty | MMC only has Clinton Twp; add Warren record if it's a real second location |
