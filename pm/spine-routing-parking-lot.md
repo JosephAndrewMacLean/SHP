@@ -51,7 +51,7 @@ lag, not a verdict (the sheet "does not have last week"). 144 of the 524 came in
 
 **Top spine senders (merged by MMC company):** Mike Morse Law Firm 53 (Tier 1, Kristen) · Hesselberg Chiropractic 22 (Tier 1, Kristen) · Park Medical Centers 13 (Tier 1, Kristen) · Park Medical Centers - Canton 13 (Tier 1, Jasmine) · Michigan Auto Law 11 (Tier 1, Kristen) · Levan Internists 9 (Tier 1, Jasmine) · DMC SPORTS MEDICINE NOVI 9 (Tier 1, Jasmine) · Synergy Medical Primary Care 7 (Tier 1, Jasmine).
 
-**Mapping coverage:** 966 of 1,028 referrer strings matched to an MMC person/company (97% of referral rows, 506 of 524
+**Mapping coverage:** 967 of 1,028 referrer strings matched to an MMC person/company (97% of referral rows, 506 of 524
 spine rows). The same provider appears under several spellings (five spellings of Michigan Auto Law alone) — the
 *Top Companies* tab is the merged view; *Referrer → Company* keeps the strings as written. Where a provider sits at
 several MMC companies, Kristen's PL tag on the row (then the credential, then tier) picks the company and the note
@@ -60,10 +60,10 @@ names the alternatives; Dr. Cooke (DMC) is placed row by row because his tags sp
 **LOW** (partial name, generic brand entry, note in parentheses) — check before acting on them.
 
 **Two gaps worth a decision:**
-1. **Add-to-MMC candidates — 41 referrer strings have no MMC person or company** (41 referrals, 12 spine).
+1. **Add-to-MMC candidates — 40 referrer strings have no MMC person or company** (40 referrals, 12 spine).
    Spine senders among them: Bernard NP, Kywona (1); Crandall DO, Laura Ann (1); DMC-Huron Valley (1); HF Rochester Community (1); Hollowell MD, Sylvia Kristine (1); MedCare Urgent Care (1); Northland Medical (1); Sabbagh MD, Mahoud Nabil (1); Sawka DO, Jaroslaw (1); Schramm MD, Danielle M (1); Tanir Avci MD, Narin (1); Youssef PA-C, Andrew (1).
-   Brand sites MMC tracks elsewhere but not at this location: Corewell UC Grosse Pointe, Corewell UC Sterling Heights, Corewell UC- Shelby, Corewell Urgent Care -Taylor, Corewell- Grosse Pointe UC. Other urgent cares not in MMC:
-   MedCare Urgent Care, Springfield Urgent Care - Brighton, The Heights UC - Deaborn, WellNow Urgent Care Fort Gratiot. Full list: *Unmatched Referrers* tab. Owner: Santosh/Joel (MMC adds) → then they enter the book through the normal add path (§3).
+   Brand sites MMC tracks elsewhere but not at this location: Corewell UC Grosse Pointe, Corewell UC Sterling Heights, Corewell UC- Shelby, Corewell Urgent Care -Taylor, Corewell- Grosse Pointe UC, Feinstein DO, Max, Springfield Urgent Care - Brighton, WellNow Urgent Care Fort Gratiot. Other urgent cares not in MMC:
+   MedCare Urgent Care, The Heights UC - Deaborn. Full list: *Unmatched Referrers* tab. Owner: Santosh/Joel (MMC adds) → then they enter the book through the normal add path (§3).
 2. **Intake capture — 18 strings are call notes saying the doctor/location was never asked** ("Urgent Care — location
    not asked", "ref by doctor — we did not get name", …): 27 referrals, 4 spine with no source to credit. That is an
    intake-script fix (see `pm/spine-intake-qualification-script.md`), not a mapping problem. *Source Not Captured* tab.
@@ -72,16 +72,17 @@ names the alternatives; Dr. Cooke (DMC) is placed row by row because his tags sp
 (first Synergy doctor seen after telehealth) for 58 of the 308 telehealth rows (28 spine). The other 250 telehealth rows
 have no Synergy doctor on the sheet yet and sit at service-line level only. Spine lands with S McCarty (155 spine of 161), M Salar MD (87 spine of 90), J Varghese MD (70 spine of 73), J Maslak MD (61 spine of 65), A Munk MD (26 spine of 26), L Zamorano (5 spine of 5).
 
+
 **Relationships to create / grow (asked Oct 9; `pm/b2b-relationship-opportunities-2026.xlsx` + `.csv`):**
 the referral flow × book × roster × visits, sorted into buckets. What converts to spine in 2026: PCP 21% · Attorney 43% · Orthopedic 45% · Urgent care 16% · Chiropractic 54% · PT 18% · Pain 29% · Pediatrics 8% · Neurology 27%
 — chiropractors and attorneys at 2–3× the PCP rate.
 1. **Protect (4)** Tier 1 spine senders that slowed: Ross Law (15/5) · Schoenherr Family Practice (8/6) · Stonebrooke Family Physicians (22/5) · Office of George Nassif MD (4/4).
 2. **Deepen (6)** Prospect/Tier 2 already sending 2+ spine → tier up: Maan Askar MD - 13 Mile (12/3) · City Medical - Madison Heights (3/3) · Silver Pine Medical Group - Sterling Heights (6/2) · Bully Family Physicians (4/2) · NextGen Vitality (3/2) · Sterling Medical Center & Urgent Care (3/2).
 3. **Convert (14)** volume senders with little spine (≈44 spine of headroom Jan–Sep 25 at their type's rate): Lakes Urgent Care - Livonia (50/4) · Frank Lanzilote DO-Family Practice (33/2) · Oakland Family Practice (29/3) · OAK STREET HEALTH CHERRY HILL (27/3) · Yale Community Heath Center - VA Clinic (26/1) · Berry Johnson Health (24/0).
-4. **Expand (17)** Tier 1s where 1–3 of 5+ clinicians send: Park Medical Centers (39/13) · DMC Orthopedics - Commerce Township (7/7) · Lakeview Medical Center (14/6) · Macomb Internal Medicine (8/6) · North Valley Internal Medicine (4/4).
-5. **Claim (27)** in MMC, sending, in nobody's book — add with the suggested tier/PL. **Create (46)** no MMC record at all.
-6. **Dormant (63)** Tier 1/2 with zero 2026 referrals — 34 visited 5+ times since Mar 3 with nothing back, 12 never visited (33 Tier 1 · 30 Tier 2). Re-qualify or move to Prospect — that is the visit capacity for 2–5. The 25 pediatric Tier 1/2 accounts (456 visits, 6 spine) are the first candidates.
-7. **Prospect pool (272)** MMC companies of high-yield types not in the book: Chiropractic 94 · PT 48 · Orthopedic 33 · Urgent care 33 · Pain 31 · Neurology 22 · Attorney 11; `fits_cell` says which route day each sits in.
+4. **Expand (20)** Tier 1s where 1–3 of 5+ clinicians send: Hesselberg Chiropractic (34/22) · Park Medical Centers (39/13) · DMC Orthopedics - Commerce Township (7/7) · Lakeview Medical Center (14/6) · Macomb Internal Medicine (8/6).
+5. **Claim (27)** in MMC, sending, in nobody's book — add with the suggested tier/PL. **Create (45)** no MMC record at all.
+6. **Dormant (63)** Tier 1/2 with zero 2026 referrals — 13 with 3+ visit-days since Mar 3 and nothing back, 12 never visited (33 Tier 1 · 30 Tier 2). Re-qualify or move to Prospect — that is the visit capacity for 2–5. The 25 pediatric Tier 1/2 accounts (61 visit-days, 6 spine) are the first candidates.
+7. **Prospect pool (220)** MMC companies of high-yield types not in the book: Chiropractic 80 · PT 40 · Urgent care 28 · Pain 24 · Orthopedic 23 · Neurology 14 · Attorney 11; `fits_cell` says which route day each sits in.
 Signals about accounts, not verdicts on PLs; tiers come from Joel's tracking + the Sep 3 adds; no inducements in any outreach.
 
 **Basis note:** the weekly tracker (`pm/spine-influence-weekly.csv`) counts spine new patients by PL activity
@@ -476,8 +477,8 @@ They're flagged **📝** on the *Stops by Day* and *Account List* tabs, with the
 
 | Item | Owner | Note |
 |---|---|---|
-| **Relationship buckets — Protect 4 · Deepen 6 · Convert 14 · Expand 17 · Claim 27 · Dormant 63** — decide the tier moves (Deepen up, Dormant down) | Kristen + Gautam | `pm/b2b-relationship-opportunities-2026.xlsx` Summary tab |
-| **Add-to-MMC candidates from the B2B referrer list** (41 strings, 12 spine; Corewell UC sites + other urgent cares) | Santosh / Joel | Oct 9 section · *Unmatched Referrers* tab in `pm/b2b-spine-growth-2026.xlsx` |
+| **Relationship buckets — Protect 4 · Deepen 6 · Convert 14 · Expand 20 · Claim 27 · Dormant 63** — decide the tier moves (Deepen up, Dormant down) | Kristen + Gautam | `pm/b2b-relationship-opportunities-2026.xlsx` Summary tab |
+| **Add-to-MMC candidates from the B2B referrer list** (40 strings, 12 spine; Corewell UC sites + other urgent cares) | Santosh / Joel | Oct 9 section · *Unmatched Referrers* tab in `pm/b2b-spine-growth-2026.xlsx` |
 | **Intake: capture referring doctor + location on every call** (18 "not asked" strings, 27 referrals, 4 spine) | Call center (script) · Kristen | Oct 9 section · *Source Not Captured* tab |
 | **Confirm the LOW / AMBIGUOUS company matches** before they drive outreach (33 LOW, 16 ambiguous) | Kristen | `match` / `match_note` columns in `pm/b2b-referrer-company-2026.csv` |
 | 18 ex-Sean accounts still **owned by Sean Sweeney in MMC** | Santosh (bulk owner transfer → Kristen) | Import updates our plan fields, not record ownership |
