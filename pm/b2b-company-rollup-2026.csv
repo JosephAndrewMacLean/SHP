@@ -49,7 +49,7 @@ Pulmonary & Medical Associates,dda630a5-9d61-49cd-bec6-61084e47ddb9,Tier 1,Krist
 Mitchell Medical Center,3a600778-0104-4e04-b9d4-feb46e567bd7,Tier 1,Kristen,K-A03,14,2,8,0,0,3,1,0,0,1,1,0,2026-01-21,2026-08-06,3,0,0,"BLACKWELL PA, KATHERINE (9); Sabbagh, David (4); Sabbagh MD, David (1)",J Yacisen MD (8); B Kassa DO (3); A Munk MD (2); H Foster PA (1)
 MNP,40477f1c-8f50-4f86-8e7e-a5431b7f2fe6,Tier 1,Kristen,K-A06,13,2,11,0,0,0,0,0,0,0,2,0,2026-01-27,2026-08-07,2,0,0,"Shropshire NP, Kasheena (12); Shropshire, Kasheena (1)",J Yacisen MD (4); D Mendelson MD (4); J Mendelson MD (2); J Varghese MD (2)
 Faith Internal Medicine & Urgent Care,677326d2-4ba2-4a49-a6f1-e7633a9a8401,Tier 1,Coty,C-A14,13,2,7,2,2,0,0,0,0,0,2,0,2026-01-22,2026-09-02,3,0,0,"Jacob MbChB, Laith J (11); Jacob MD, Laith (1); Faith Medical and UC (1)",B Mayo MD (4); K Bohm MD (2); P Bhullar MD (2); D Mendelson MD (1)
-Michigan Compassionate Care,33d0c0aa-7d47-450d-9673-71acb651321c,Tier 1,Kristen,K-A17,9,2,5,1,1,0,0,0,0,2,0,0,2026-01-14,2026-05-11,2,0,0,"Vasiq MD, Muhammad (7); Michigan Compassionate Care (2)",J Yacisen MD (3); A Munk MD (2); B Mayo MD (2); K Bohm MD (1)
+Michigan Compassionate Care,33d0c0aa-7d47-450d-9673-71acb651321c,Tier 1,Kristen,K-A17,10,2,6,1,1,0,0,0,0,2,0,0,2026-01-13,2026-05-11,3,0,0,"Vasiq MD, Muhammad (7); Michigan Compassionate Care (2); Vasiq MD, Muhhammad (1)",B Mayo MD (3); J Yacisen MD (3); A Munk MD (2); K Bohm MD (1)
 Oak Street Health - Eastgate,23fb6135-419b-4880-ae64-4a97e9244f37,Tier 1,Coty,C-A11,8,2,5,0,0,1,0,0,0,0,2,0,2026-02-25,2026-09-09,4,0,0,"Ferraiuolo NP, Diana F (4); SUEDE NP, KRISTINA (2); Stefansi NP,  Diana (1); STEFANSKI NP, DIANA (1)",D Mendelson MD (3); A Munk MD (2); S Mendelson MD (1); A Oddo DO (1)
 Livonia Family Medical Center,68ceff67-99ac-4ef7-a162-918f93bbdf38,Tier 1,Jasmine,J-A07,8,2,5,0,1,0,0,0,0,0,1,1,2026-01-07,2026-08-17,2,0,0,"Burry DO, Michael (5); Tobin DO, Keith M (3)",P Bhullar MD (2); S McCarty (2); D Mendelson MD (2); J B Klein DPM (1)
 Village Medical - Livonia,e3d707da-675d-4d7c-9356-2f53ec4d8a2e,Tier 1,Kristen,K-A24,7,2,3,1,0,1,0,0,0,2,0,0,2026-02-04,2026-06-26,6,0,0,"Rosenfeld DO, Sherri (2); Village Medical Livonia (1); Erickson DO, Martin (1); Van Oast PA, Joann (1); Jackson DO, Paul (1); Village Medical (1)",J Mendelson MD (2); M Salar MD (1); S McCarty (1); K Bohm MD (1)
@@ -188,6 +188,7 @@ Corwell health orthopedics Canton,48d727c6-d942-4dbb-b457-0839ac8e1b68,Tier 1,Ja
 Greg Monroe DO PC,4de0cfd4-93f7-4efa-a4ed-25a3ceaf173b,Tier 1,Kristen,K-A29,1,1,0,0,0,0,0,0,0,1,0,0,2026-01-07,2026-01-07,1,0,0,"Monroe DO, Gregory (1)",S McCarty (1)
 Giroux and Pappas Law,4f663210-8bbe-456b-8ec9-9ce8a0b3fccd,Tier 2,Kristen,Phone cadence,1,1,0,0,0,0,0,0,1,0,0,1,2026-07-27,2026-07-27,1,0,0,Giroux & Pappas (1),J Varghese MD [after telehealth] (1)
 Accurate Care,58ce6981-3668-40d7-a9ea-7f6ba4719e33,Prospect,Kristen,K-A17,1,1,0,0,0,0,0,0,1,1,0,0,2026-02-20,2026-02-20,1,0,0,"Schwartz DO, Allan (1)",
+Integrative Family Care,5dc1c26e-27ff-48e0-a625-f7bd13fbec29,Tier 1,Coty,C-A05,1,1,0,0,0,0,0,0,0,0,1,0,2026-04-21,2026-04-21,1,0,0,"Gojcaj, Drita (1)",J Varghese MD (1)
 Huron Family Practice Center,60ee8106-1f15-4abf-95a1-c2184761b159,Tier 1,Kristen,K-A03,1,1,0,0,0,0,0,0,1,0,1,0,2026-05-22,2026-05-22,1,0,0,"Whitten PA-C, Autumn A (1)",
 Roberts Orthopedic Services,680822f2-58d4-4f67-b09b-01ccd6f95892,Tier 1,Jasmine,J-A02,1,1,0,0,0,0,0,0,0,0,1,0,2026-05-22,2026-05-22,1,0,0,"NZOMA, JONATHAN KYULU (1)",S McCarty (1)
 Legacy Family Care,6a6a4408-2a28-4e5b-aea6-b70d4b47d57c,Tier 1,Kristen,K-A22,1,1,0,0,0,0,0,0,0,0,1,0,2026-06-01,2026-06-01,1,0,0,"Koza MD, Heather (1)",M Salar MD (1)
@@ -385,6 +386,7 @@ Kids First Pediatrics,1235164872,Tier 2,Kristen,K-A23,1,0,1,0,0,0,0,0,0,0,0,0,20
 Normandy Family Practice,1265482095,Tier 2,Coty,C-A08,1,0,1,0,0,0,0,0,0,0,0,0,2026-04-01,2026-04-01,1,0,0,"Kurzawa MD, Mark R (1)",D Mendelson MD (1)
 Chesterfield Family Medicine (Henry Ford),1275554073,not in spine book,,,1,0,0,1,0,0,0,0,0,0,0,0,2026-08-25,2026-08-25,1,0,0,"Palaniswamy MD, Sujini (1)",K Bohm MD (1)
 "WILLIAMS FAMILY AND SPORTS MEDICAL CENTER, PLC",128e9f0f-8074-4052-b91d-e71905388022,Tier 3,Kristen,K-A22,1,0,0,0,1,0,0,0,0,0,0,0,2026-06-04,2026-06-04,1,0,0,"Williams DO, Joseph L (1)","R Leff, DPM (1)"
+City Medical - Southgate,1326021262,Tier 2,Jasmine,J-A12,1,0,0,1,0,0,0,0,0,0,0,0,2026-05-08,2026-05-08,1,0,0,"Omar PA-C, Nabeel (1)",K Bohm MD (1)
 Care Medical Clinic of Canton,1356380513,Tier 2,Jasmine,J-A08,1,0,0,1,0,0,0,0,0,0,0,0,2026-05-08,2026-05-08,1,0,0,"Debrincat, Paul G (1)",K Bohm MD (1)
 "MEDICAL CENTER PEDIATRICS, PLLC",137b9944-574d-47c1-9f8c-99541123fc30,Tier 2,Kristen,K-A15,1,0,0,0,1,0,0,0,0,0,0,0,2026-05-07,2026-05-07,1,0,0,"LIPPITT MD,  DENISE (1)","R Leff, DPM (1)"
 CANTON FOOT & Ankle SPECIALISTS,13dc6a74-7486-4022-8993-7eaf6b95734e,Tier 2,Jasmine,J-A08,1,0,1,0,0,0,0,0,0,0,0,0,2026-01-20,2026-01-20,1,0,0,"SEMMA, BRANDON (1)",S Mendelson MD (1)
