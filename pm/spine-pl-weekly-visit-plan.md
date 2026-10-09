@@ -7,11 +7,12 @@
 
 > ## ⟳ v14 — Oct 9: first true-up on the new cadence; W11–W16 (Oct 12 → Nov 20) rebuilt on actual check-ins
 > The Oct 9 MMC export reset every account's clock to its last real check-in (through Fri Oct 9); what wasn't visited stays due.
-> Cells unchanged (71). **W9 against the Sep 22 plan:** Kristen 2 of 49 planned stops checked in (but 46 visit-days,
-> 35 of them on other book accounts), Jasmine 33 of 50, Coty 17 of 50; W10 21/50 · 24/50 · 13/47.
-> Volume held; the day lists largely weren't the lists driven — a huddle question (are the Sep 22 workbooks/app in hand?), not a verdict.
-> W11–W16: W11 147 stops (T1 98 · T2 29 · T3 4 · P 16) … Tier 1s at three visits in six weeks: Jasmine 39 of 41, Coty 57 of 61,
-> Kristen 10 of 122 (+85 at two; Tier-1-first still costs 89 of 124 Tier 2s a visit). Check-ins W8–W10 filled (146 · 143 · 111).
+> Cells unchanged (71). **W9/W10 against the Sep 22 plan:** field volume held (143 and 111 visit-days) but only 6 of the 15 planned
+> days were driven as lists each week (52 of 149 planned stops checked in W9, 58 of 147 in W10) — a
+> "lists in hand" question for the huddle, not a verdict. 131 of 224 drive Tier 1s were past 14 days on Oct 12: first week W11 83 · W12 31 · W13 12 · W14 4 · never 1.
+> New: a stranded-Tier-1 pass pulls a Tier 1 overdue by a full cycle onto the nearest day when its cell doesn't earn one (19 placed).
+> W11–W16: W11 148 stops (T1 108 · T2 25 · T3 4 · P 11) … Tier 1s at three visits in six weeks: Jasmine 39 of 41, Coty 56 of 61,
+> Kristen 11 of 122 (+89 at two; Tier-1-first still costs 90 of 124 Tier 2s a visit). Check-ins W8–W10 filled (146 · 143 · 111).
 >
 > ## ⟳ v13 — Sep 22: NEW CADENCE effective Mon Sep 28 (T1 14d · T2/T3 3–4 wks · prospects sprinkled); routes rebuilt as cells
 > Per Kristen (Sep 19 call): expedite the Tier 1/Tier 2 touches — **T1 every 14 days, T2 and T3 every 3–4 weeks (T3 kept),
