@@ -1,0 +1,65 @@
+report_week,company,mmc_company_id,book_tier,book_pl,ref_type,newpts_total,newpts_spine,newpts_podiatry,newpts_ortho_other,newpts_telehealth,pl_visit_before_appt,last_pl_visit,min_lag_days
+Aug 14 report,Lakes Urgent Care - Livonia,73107e68-fc7f-46d0-bef4-ee26e9dc0099,Tier 1,Jasmine,Urgent care,4,0,1,3,0,yes,2026-07-21,14
+Aug 14 report,Mike Morse Law Firm,2dd4a698-eeec-4552-98ba-d85b130bcc56,Tier 1,Kristen,Attorney / Legal,3,0,0,0,3,yes,2026-06-24,21
+Aug 14 report,Lakewood Primary Care,39254718-ba1d-4862-adfb-cd292a8eda27,Unlisted,,PCP,2,2,0,0,0,yes,2026-06-22,44
+Aug 14 report,"WAYNE COMMUNITY HEALTH CENTERS, INC",b89491cd-a8b2-4493-8dba-2e2146e504a0,Unlisted,,PCP,2,1,0,1,0,yes,2026-05-19,77
+Aug 14 report,Frank Lanzilote DO-Family Practice,1d143d90-6122-41e7-ae14-c14d4e4317b4,Tier 1,Jasmine,PCP,2,0,0,2,0,yes,2026-07-31,3
+Aug 14 report,MNP,40477f1c-8f50-4f86-8e7e-a5431b7f2fe6,Tier 1,Kristen,PCP,2,0,0,2,0,yes,2026-06-22,45
+Aug 14 report,Doctors urgent care,5d20f222-29ea-4029-b53a-fb46b570224a,Prospect,Jasmine,Urgent care,2,0,0,2,0,yes,2026-07-30,7
+Aug 14 report,Pulmonary & Medical Associates,dda630a5-9d61-49cd-bec6-61084e47ddb9,Tier 1,Kristen,PCP,2,0,0,2,0,yes,2026-07-13,23
+Aug 14 report,Plymouth physical therapy specialist,06-472-9992,Unlisted,,Physical Therapy,1,1,0,0,0,yes,2026-07-21,14
+Aug 14 report,Legend Health - Now One Health,078d2fa6-e81c-41d1-95f2-04234d511192,Tier 2,Kristen,PCP,1,1,0,0,0,yes,2026-05-27,70
+Aug 14 report,Lily’s Medical Group,0aec7757-4391-42a3-94f2-3cfa9ea9aa99,Unlisted,,PCP,1,1,0,0,0,yes,2026-06-22,42
+Aug 14 report,City Medical - Southgate,1326021262,Tier 2,Jasmine,PCP,1,1,0,0,0,yes,2026-04-22,105
+Aug 14 report,Macomb Medical Clinic,1992782320,Tier 1,Coty,PCP,1,1,0,0,0,yes,2026-07-02,33
+Aug 14 report,QuickDoc Urgent Care,20e3535a-e9f3-4760-9cd8-6e86789495da,Tier 1,Jasmine,Urgent care,1,1,0,0,0,yes,2026-05-12,86
+Aug 14 report,Michigan Surgery Specialists PC,4c4aa1b6-62de-4eb2-ad73-9aecff9153dd,Unlisted,,Physician office (type not set),1,1,0,0,0,yes,2026-07-09,29
+Aug 14 report,DMC Orthopedics - Commerce Township,568c9052-985c-48fa-b5bc-44baafba3dea,Tier 1,Kristen,Orthopedic,1,1,0,0,0,yes,2026-07-07,27
+Aug 14 report,Lakeview Medical Center,64ed5116-24c0-4278-8d87-a7ca5f7d76c4,Tier 1,Coty,PCP,1,1,0,0,0,yes,2026-07-30,7
+Aug 14 report,Village Medical - Walled Lake,6c29d59b-0b61-4f52-b7a7-f29818051f07,Unlisted,,PCP,1,1,0,0,0,yes,2025-12-12,238
+Aug 14 report,Pain Clinic of Michigan - Troy,a04caf22-eaed-4ceb-9ebe-445dd911f769,Unlisted,,Pain,1,1,0,0,0,yes,2026-07-20,15
+Aug 14 report,"WAYNE MEDICAL CENTER, PLLC",bc73cba3-b59d-4259-8bb7-6129abd353ab,Tier 2,Kristen,PCP,1,1,0,0,0,yes,2026-07-06,31
+Aug 14 report,Levine Clinic of Chiropractic,e19f7675-d86b-445b-ad8d-c06409bfde92,Tier 1,Kristen,Chiropractor,1,1,0,0,0,yes,2026-05-08,91
+Aug 14 report,DMC PRIMARY AND SPECIALTY CARE WEST BLOOMFIELD,e1df3a06-b408-47d1-8333-8e5c30e7bc97,Tier 1,Kristen,PCP,1,1,0,0,0,yes,2026-07-31,7
+Aug 14 report,Medical Clinic of Northville,ebcb6f7a-eb6b-4759-81d9-516e3dc36b67,Tier 1,Kristen,PCP,1,1,0,0,0,yes,2026-06-04,60
+Aug 14 report,Dr. Michaels - not specified (no CRM record),,No CRM record,,Unmatched (no MMC record),1,1,0,0,0,no,,
+Aug 14 report,"Marsheh MD, Nicolas (no CRM record)",,No CRM record,,Unmatched (no MMC record),1,1,0,0,0,no,,
+Aug 14 report,"Al Khouri MD, Raad (no CRM record)",,No CRM record,,Unmatched (no MMC record),1,1,0,0,0,no,,
+Aug 14 report,"Randall DO, Scot (no CRM record)",,No CRM record,,Unmatched (no MMC record),1,1,0,0,0,no,,
+Aug 14 report,"Abramowicz PA, Jan (no CRM record)",,No CRM record,,Unmatched (no MMC record),1,1,0,0,0,no,,
+Aug 14 report,Emcura Medical,04-725-1351,Prospect,Kristen,Urgent care,1,0,1,0,0,yes,2026-07-29,6
+Aug 14 report,Corewell Health-East,04ad9387-b1fe-45cd-bd14-73188de8e04a,Tier 1,Kristen,PCP,1,0,0,1,0,yes,2026-07-13,25
+Aug 14 report,LIVINGSTON PEDIATRICS CENTER,0abe56b9-ecf8-4706-9f08-0290ed41462d,Unlisted,,Orthopedic,1,0,0,1,0,yes,2025-06-05,424
+Aug 14 report,Corewell Health Wayne Hospital Family Medicine -  Canton,1022591b-a2f2-47ed-a718-e764042f930d,Tier 1,Jasmine,PCP,1,0,0,1,0,yes,2026-08-04,1
+Aug 14 report,"MICHAEL DUCATO, MD, PC",1226fb9f-b48d-4314-8a3b-0d8800bc60e1,Unlisted,,PCP,1,0,0,1,0,yes,2026-03-17,139
+Aug 14 report,Village Medical - Northville West,1255345930,Tier 1,Kristen,PCP,1,0,0,1,0,yes,2026-06-04,62
+Aug 14 report,Oakland Family Practice,13ba57d5-6bc6-4d44-8d40-efd8e7131d2e,Tier 1,Kristen,PCP,1,0,0,1,0,yes,2026-06-15,50
+Aug 14 report,Eastlake Pediatrics,1558300699,Unlisted,,Pediatrics,1,0,0,1,0,yes,2026-07-21,16
+Aug 14 report,Berkley Urgent Care,1774d7c7-2d8b-42c6-9dac-78c2a9cf3ed8,Tier 1,Kristen,Urgent care,1,0,0,1,0,yes,2026-08-04,2
+Aug 14 report,Corewell Health Wayne Hospital Internal Medicine - Canton,1c7828ed-eebc-45ad-a838-28fbb2264e48,Tier 2,Jasmine,PCP,1,0,1,0,0,yes,2026-08-04,1
+Aug 14 report,TRINITY HEALTH URGENT CARE- Livonia,21da51f8-241e-484b-9dac-cd0c99714ca6,Prospect,Jasmine,Urgent care,1,0,0,1,0,yes,2026-07-21,17
+Aug 14 report,Troy Internal Medicine,227a3faf-d636-4f07-adbf-db1d49776b27,Tier 2,Kristen,PCP,1,0,0,1,0,yes,2026-05-15,80
+Aug 14 report,UofM Canton Health Center Adult Medicine & Pediatrics,23783a21-557a-406e-a930-d9d15e509c4d,Unlisted,,Pediatrics,1,0,0,0,1,yes,2026-06-11,41
+Aug 14 report,METROPOLITAN MEDICAL ASSOCIATES,297c1d83-ce5b-4ce5-b393-97b656f9b2c7,Tier 2,Kristen,PCP,1,0,0,1,0,yes,2026-07-13,21
+Aug 14 report,Springfield Urgent Care - Saline,3d40aad9-2039-45f6-9354-c7898a0e9edd,Prospect,Coty,Urgent care,1,0,0,1,0,yes,2026-03-16,140
+Aug 14 report,David Weissman MD,4847379a-d2bb-413e-81a8-16188564aef7,Unlisted,,PCP,1,0,1,0,0,yes,2026-05-21,74
+Aug 14 report,VanStone Injury Law,5ffbe2ff-83ec-4e24-8d4f-4071334a9c5c,Tier 1,Kristen,Attorney / Legal,1,0,0,0,1,yes,2026-02-27,136
+Aug 14 report,Village Medical - Novi,60ca59a0-452f-4fea-8aff-cf4ef63862b7,Tier 2,Jasmine,Pain,1,0,0,1,0,yes,2026-08-03,0
+Aug 14 report,"PRAVEEN MODI, MD, PC",63a72095-741a-43fe-b865-a1f6398ee484,Tier 2,Kristen,PCP,1,0,0,1,0,yes,2026-06-04,62
+Aug 14 report,Livonia Family Medical Center,68ceff67-99ac-4ef7-a162-918f93bbdf38,Tier 1,Jasmine,PCP,1,0,0,1,0,yes,2026-06-26,40
+Aug 14 report,"Trinity Health IHA Medical Group, Primary Care - Southeast Livonia",6b70f9d5-4063-4208-85f4-1d780fabaacc,Tier 1,Jasmine,PCP,1,0,0,1,0,yes,2026-06-26,41
+Aug 14 report,GREENFIELD PEDIATRICS,7ecd408b-3b0b-496a-a756-1a75d9a0ffcb,Unlisted,,Pediatrics,1,0,1,0,0,yes,2026-05-29,68
+Aug 14 report,BASEL BRIKHO MEDICAL GROUP - use this one,7f38b648-2666-44e3-ad8a-135b873364c5,Tier 2,Kristen,PCP,1,0,0,1,0,yes,2026-06-05,59
+Aug 14 report,Corewell Internal Medicine - Family Practice DEARBORN HEIGHTS,88431ac1-44b1-4daf-a322-1fb70f0223f1,Unlisted,,PCP,1,0,0,1,0,yes,2026-06-30,34
+Aug 14 report,LAKES INTERNAL MEDICINE - 2150,8b9ada78-08d8-45f0-8d09-c043db61a6fd,Unlisted,,PCP,1,0,1,0,0,yes,2026-07-31,4
+Aug 14 report,Plymouth urgent care walk-in clinic,8c60e9e4-e4af-426d-912d-3340bea956f4,Prospect,Jasmine,Orthopedic,1,0,0,1,0,yes,2026-07-13,21
+Aug 14 report,Corewell Urgent Care - Warren,92cfc6be-2092-454e-81f2-3b21f66f5746,Prospect,Kristen,Urgent care,1,0,0,1,0,yes,2026-07-15,20
+Aug 14 report,Dedicated Senior Medical Center - Warren,95ae3078-f17c-44de-af58-d9fc8e58f4de,Tier 2,Jasmine,Orthopedic,1,0,0,1,0,yes,2026-07-31,7
+Aug 14 report,Providence Park Pediatrics - Novi,9db7de95-514d-45c7-8a73-449a08d1d590,Tier 1,Kristen,Pediatrics,1,0,0,1,0,yes,2026-06-01,67
+Aug 14 report,Get Well Urgent Care,a839f0c3-df5e-4b4a-b1ff-dbcb2a88c72e,Prospect,Jasmine,Urgent care,1,0,0,0,1,yes,2026-07-20,7
+Aug 14 report,Lifetime Family Care,b70053c3-f0fd-41de-9386-95fcc448a738,Tier 1,Kristen,PCP,1,0,0,1,0,yes,2026-06-15,50
+Aug 14 report,Comprehensive Healthcare Associates and Prevention Medicine,c7781046-a235-49fa-ac8e-4b8d6354c618,Tier 1,Jasmine,PCP,1,0,0,1,0,yes,2026-07-09,26
+Aug 14 report,Office of David Mandy DO,da57adc9-a2cf-4705-886d-76146cbbde06,Tier 2,Kristen,Pediatrics,1,0,0,1,0,yes,2026-05-14,84
+Aug 14 report,Corewell Health Family Medicine - Farmington Hills,f4e08b14-ec91-4b48-b82c-2c7f762bf721,Tier 2,Kristen,PCP,1,0,1,0,0,yes,2026-05-08,87
+Aug 14 report,"CRUET MD, MIGUELANGELO (no CRM record)",,No CRM record,,Unmatched (no MMC record),1,0,0,1,0,no,,
+Aug 14 report,"BLACKWELL PA, KATHERINE (no CRM record)",,No CRM record,,Unmatched (no MMC record),1,0,0,1,0,no,,

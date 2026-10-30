@@ -71,13 +71,13 @@ there is the highest-leverage, lowest-cost lever** in the whole system.
 ### Weeks 1–2 · Jul 16–31 — Stand up the plumbing
 - **CC:** ship qualify→route→capture spine script + insurance pre-screen; source becomes a required
   field; self-reschedule recovery queue; access SLAs + dashboard.
-- **PL:** build + tier the spine target-account list; recover Sean's lost referrals; referrer one-pager.
+- **PL:** build + tier the spine target-account list; recover Kessia's orphaned referrals (corrected 7/21: Kessia departed, Sean is active); referrer one-pager.
 - **B2C:** 80% SEO to spine; 2→3 spine pages; ship spine differentiation.
 - **Tracking:** **fix Line conversion tracking (Week-1 blocker)**; start MMC↔NextGen crosswalk; launch scorecard.
 
 ### GATE 1 — **Aug 30: clear the 65 floor + prove qualification**
 Spine ≥ **65/week** · qualified-booking rate defined & rising · Line tracking functional · B2C
-recovering toward budget · Sean's referral loss recovered · ortho holding **130–140/week**.
+recovering toward budget · Kessia's referral loss recovered · ortho holding **130–140/week**.
 
 ### GATE 2 — **Sept 30: operating at 72/week**
 Spine **72/week (4-wk avg, ~317/mo)** · surgical candidates routed to higher-converting surgeons ·

@@ -15,7 +15,7 @@ referral channel measurable, tiered, and coached, instead of "spray and pray."
 
 ## The realistic mandate
 - **Do NOT chase 79 → 150.** That's ~2× the line's budgeted referral share and misreads the gap.
-- **Do** recover the **~2–3 spine NPs/week lost when Sean departed**, then add a **credible tiered-
+- **Do** recover the **Kessia-era book (~6 spine NPs/month) orphaned by her departure** (corrected 7/21 — Sean is active but has no logged visits since Jun 9; verify), then add a **credible tiered-
   expansion lift** → target the PL contribution from ~79 toward **~95–110/month**, measured in
   **qualified** spine NPs, not visits.
 - Coach the team toward the top producer's efficiency (Kristen ≈ **70 NP per 100 visits**; team
@@ -72,7 +72,7 @@ referral→booked→kept rate · account tier mix · new Tier-1 accounts opened 
 source-attribution completeness · same-week referral fill · closed-loop report-back rate.
 
 ## 30 / 60 / 90 action plan
-- **Days 1–30:** build + tier the spine target-account list; recover Sean's lost referrals; ship the
+- **Days 1–30:** build + tier the spine target-account list; recover Kessia's orphaned accounts + verify Sean coverage; ship the
   referrer one-pager; reserve same-week referral slots; start MMC↔NextGen crosswalk; capture top-producer playbook.
 - **Days 31–60:** 2× active spine accounts live; ride-along coaching; closed-loop report-back running;
   qualified-yield KPI replacing activity metrics; rebalance territories to spine.

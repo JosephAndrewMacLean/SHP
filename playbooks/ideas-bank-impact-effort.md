@@ -17,7 +17,7 @@ the **Ideas Bank** tab in the Google Sheet; promote a winner by setting its *Lin
 | Fix Troy Maps/GBP + kill the "Oakland MRI" call misdirect | Local "near me" is highest-converting; Troy calls misdirect today | High | Low | $ | Paul |
 | Weekly OODA scorecard review (2–3 problems/wk, measure, stack) | This is the method behind the ortho turnaround | High | Low | $ | Joe |
 | Recover the 166 self-reschedulers with a daily re-book queue | 166 canceled/no-show patients self-rebooked online & kept | Med | Low | $ | Kelly |
-| Recover Sean's lost referral accounts first | His departure cost ~2–3 spine NP/week | Med | Low | $ | Kristen |
+| Recover Kessia's orphaned referral accounts first (corrected 7/21: Sean is active) | Her departure orphaned ~290 visited companies (~6 spine NP/month) | Med | Low | $ | Kristen |
 | Kill worst-CPA paid Zocdoc "Sponsored" spine spend | ~52% capture, ~$136/captured — worst efficiency | Med | Low | $ | Paul |
 | Ship spine differentiation messaging (MIS, neurosurgeon, younger surgeons) | Creative audit: spine has NO differentiation today | Med | Low | $ | Randall |
 | Apply the ortho promo playbook to spine (Tue–Thu pushes) | Ortho went 75%→125% in ~60 days via promos + ops | Med | Low | $ | Joe |
